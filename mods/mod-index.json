@@ -134,6 +134,15 @@
         "version": "0.91.0+1.10.4+1.20.1",
         "version_id": "rdpIJ7r3"
     },
+    "B3Eg0WhA": {
+        "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
+        "name": "Fabrication & Forgery",
+        "pinned": false,
+        "project_id": "B3Eg0WhA",
+        "selected": true,
+        "version": "3.4.9+1.20-forge",
+        "version_id": "jFSLdznD"
+    },
     "B5uMasrz": {
         "checksum": "1f70f91f6d588b07dc51724ceb8840961172025f3815a65f87c85cd5e2f0deba50bf27fd168b302c28cc72010546b015b5b05799c242c95e3749beb3fcf1c748",
         "name": "Dust's Keymap",
@@ -459,13 +468,13 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "8751ffd19d128886c4a31b1556eff3e95530b7b85a5c7029c72d3e8c84d9378c8aed4d61946cc40af595264d3e2ca990260422354923cced264943e997d1cfa4",
+        "checksum": "4792f28ad32a491064e6d4e7b6b20c919a57823d69780d1c5a456826263e252dc882db523b93009fa6f27a8e117daa4372f8911faaa2e231fa257740c7bee62b",
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.2.16+mc1.20.1",
-        "version_id": "WqH4m6Io"
+        "version": "0.2.18+mc1.20.1",
+        "version_id": "5UhQey9d"
     },
     "soWqucCB": {
         "checksum": "5606e7964a49c5954249daee145ff148804d91901d813c92db47f1f82cf58667eb87cf873c0e493e928e3ad1368be521f5ee6799ec9b6c3fcf1b2dc954fd1c28",
