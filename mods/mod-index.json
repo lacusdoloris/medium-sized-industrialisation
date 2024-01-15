@@ -1,0 +1,452 @@
+{
+    "BrgaSWzF": {
+        "name": "Starry Skies",
+        "project_id": "BrgaSWzF",
+        "version": "2.4.0",
+        "version_id": "qlDt4clF",
+        "checksum": "98f9c8e3f91b6f9a7438d82e888ecf94b54f71fb58c940c98317f7d8691105922d7c1debcfe26f5959beb3e4d2b8b0a8be1f411dba4e1957ca5e7df916cf6beb",
+        "selected": true,
+        "pinned": false
+    },
+    "Aqlf1Shp": {
+        "name": "Forgified Fabric API",
+        "project_id": "Aqlf1Shp",
+        "version": "0.91.0+1.10.4+1.20.1",
+        "version_id": "rdpIJ7r3",
+        "checksum": "460da1574b16925ba22337b17112874183719d5cac25f1ed683a4cde2b29566aad8fd082c6b701de2c0c66dfc515c2464e9fbf23de18d9e5418c28a81011ccb6",
+        "selected": false,
+        "pinned": false
+    },
+    "9s6osm5g": {
+        "name": "Cloth Config API",
+        "project_id": "9s6osm5g",
+        "version": "11.1.118+forge",
+        "version_id": "nr1znv5v",
+        "checksum": "2f6c78de05f0c60fcd61a05ee272618a6522f8039805ab8c97b28c9cd123ff55ff7153224203f824261e509a478cee2ae100a5d428ae488239d089916a70e6ed",
+        "selected": false,
+        "pinned": false
+    },
+    "u58R1TMW": {
+        "name": "Sinytra Connector",
+        "project_id": "u58R1TMW",
+        "version": "1.0.0-beta.32+1.20.1",
+        "version_id": "x3KdstVI",
+        "checksum": "5a2d02d6088834f78e251a73aea8db981160d74de9cee7070578bb4203b30dd8bca9f7d789f9dc2a8eea3bdfafce9c5862eabbe805976c6bbb47feb10dd78009",
+        "selected": true,
+        "pinned": false
+    },
+    "FYpiwiBR": {
+        "name": "Connector Extras",
+        "project_id": "FYpiwiBR",
+        "version": "1.9.2+1.20.1",
+        "version_id": "3jLavA1z",
+        "checksum": "350aa27c2665d5293a726f5ccf8607b163a3626ff1de24cb85f28f7bf9917238ed8664d0d387f404d00b37f2f938482391584b265ff054cd42a27440cd60e151",
+        "selected": true,
+        "pinned": false
+    },
+    "xsng1aJf": {
+        "name": "Big Globe",
+        "project_id": "xsng1aJf",
+        "version": "3.12.0",
+        "version_id": "KNm7yQUG",
+        "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",
+        "selected": true,
+        "pinned": false
+    },
+    "sk9rgfiA": {
+        "name": "Embeddium",
+        "project_id": "sk9rgfiA",
+        "version": "0.2.16+mc1.20.1",
+        "version_id": "WqH4m6Io",
+        "checksum": "8751ffd19d128886c4a31b1556eff3e95530b7b85a5c7029c72d3e8c84d9378c8aed4d61946cc40af595264d3e2ca990260422354923cced264943e997d1cfa4",
+        "selected": true,
+        "pinned": false
+    },
+    "oY2B1pjg": {
+        "name": "Embeddium (Rubidium) Extra",
+        "project_id": "oY2B1pjg",
+        "version": "0.5.3.1+mc1.20.1-build.110",
+        "version_id": "PSRJ0h1d",
+        "checksum": "2c4f32911b8e98ad03178de09320c446264668a03fa224c354a60b19d6bfa0cfc8ede6048098bc20c48891d5b844cb610adbbe205794f12a834a3aa13e47be6e",
+        "selected": true,
+        "pinned": false
+    },
+    "S1tndFDa": {
+        "name": "TexTrue's Embeddium Options",
+        "project_id": "S1tndFDa",
+        "version": "0.1.3+mc1.20.1",
+        "version_id": "cYEJFXPq",
+        "checksum": "4cd7d83691617b36f7cdb3072df379ae199c1b0a4ffd4bcc9a5273bae2c1e053ada98b84c711c931a96543b8b50c095aaebed4d555a087e3d47caf606f37c1f1",
+        "selected": true,
+        "pinned": false
+    },
+    "8BmcQJ2H": {
+        "name": "Geckolib",
+        "project_id": "8BmcQJ2H",
+        "version": "4.4",
+        "version_id": "6AmfrKIK",
+        "checksum": "fc4d7a335e52565562395b988b8f494a2b66954329e6ba48a74692b0f50b119500191a01ac860651d7196871edc14257e520f37c97ef0756480fc6ea0a8d262b",
+        "selected": true,
+        "pinned": false
+    },
+    "7tG215v7": {
+        "name": "GregTechCEu Modern",
+        "project_id": "7tG215v7",
+        "version": "mc1.20.1-1.0.20.b-forge",
+        "version_id": "bF7u6LSb",
+        "checksum": "cbfaa6c5bb4175945f54ad435ffb8d403e89ec5f01d49f0f80cbb1e317f1dc1a9bd1e9e11deea3be5dc7d2d2d28048bf1b6fee66adcac26e42b3d6578bb230d9",
+        "selected": true,
+        "pinned": false
+    },
+    "sbJh4AZw": {
+        "name": "Occultism",
+        "project_id": "sbJh4AZw",
+        "version": "1.20.1-1.104.0",
+        "version_id": "SXSljrEU",
+        "checksum": "d61366b046f62c1afd19bbac8b0f4cd30e63e315dfeceada8241a5dca10937289c01e212f7cdb3f596cd03fcf91f9d322ef1c795805befa9d8c78f1069d591d2",
+        "selected": true,
+        "pinned": false
+    },
+    "692GClaE": {
+        "name": "Modonomicon",
+        "project_id": "692GClaE",
+        "version": "1.20.1-1.54.4",
+        "version_id": "xgHNJzyG",
+        "checksum": "8699bd4471a09031badb88036152342f15297efa5f89013cceb193a065f0e0bfaaa51c6ff78c456ccee74de4fa26a67d91079d934f200b3920aaff59bbc0891d",
+        "selected": false,
+        "pinned": false
+    },
+    "vvuO3ImH": {
+        "name": "Curios API",
+        "project_id": "vvuO3ImH",
+        "version": "5.4.7+1.20.1",
+        "version_id": "3VUlU5Ga",
+        "checksum": "66273272521a0212011df2b12f46a46dc40bc0f5e089b95e7fdf5bb407033c8c2af8e97a18108fdc91d3d8c32d30731f566f41d08544586caf1ebc17edd0497c",
+        "selected": false,
+        "pinned": false
+    },
+    "PuyPazRT": {
+        "name": "SmartBrainLib",
+        "project_id": "PuyPazRT",
+        "version": "1.13",
+        "version_id": "oLNiEUfG",
+        "checksum": "761bd34cb8897de5471a999248e6212941221532cfc26a3352d82c211e0ddf5daa9a147204a08a597d2a2e4afc558df3432032c6d170021493837519c47f390b",
+        "selected": false,
+        "pinned": false
+    },
+    "fRiHVvU7": {
+        "name": "EMI",
+        "project_id": "fRiHVvU7",
+        "version": "1.1.0+1.20.1+forge",
+        "version_id": "yJKM4MT2",
+        "checksum": "410e1856f27bd3b642a2faaa847c3d95ae6311da169bff9e09295a13f5cab3324fd422a249d9585650d499123ffe233272bceee43f1ea87ee6042a1afa128220",
+        "selected": true,
+        "pinned": false
+    },
+    "gBCHLwcG": {
+        "name": "Squake: Ari's fork",
+        "project_id": "gBCHLwcG",
+        "version": "3.0.1",
+        "version_id": "nUnYQlF8",
+        "checksum": "392d31eca6a1fdbd863bc19fa389d2588f874298f34093d5446f0e551cd546597846a7486de28655a7b720efb8a6cf3615f0151a8fec2c3a04d5ad83a51dc941",
+        "selected": true,
+        "pinned": false
+    },
+    "lo90fZoB": {
+        "name": "Heracles",
+        "project_id": "lo90fZoB",
+        "version": "1.1.7",
+        "version_id": "BgK36Jkb",
+        "checksum": "b8812e55401eddb73d64adbc88dcbdbccf6c7afca97ebe838ffec356383e12d741ba35a957737810de40070803d8ec1ac7abe67af5080ad362d8ce25f508905f",
+        "selected": true,
+        "pinned": false
+    },
+    "G1hIVOrD": {
+        "name": "Resourceful Lib",
+        "project_id": "G1hIVOrD",
+        "version": "2.1.20",
+        "version_id": "P0GVeAtv",
+        "checksum": "1e00db12fb673c271f3f894473916e335c635f7518bbbab9bd8d02bef77a18e5af19796a2370c7c3f0ba3db14d840aed61b0f6fc50abf703180b85d9a035bde7",
+        "selected": false,
+        "pinned": false
+    },
+    "nvQzSEkH": {
+        "name": "Jade \ud83d\udd0d",
+        "project_id": "nvQzSEkH",
+        "version": "11.7.1",
+        "version_id": "cqz4BTbh",
+        "checksum": "634cdd2329662484e8fd48bbf2307a1547c9f16ad9f89f3ead7d0e4ea589f357491757b5e01c98e1136952d998fce2735eff658a9ae2793aa44edd4d385aa201",
+        "selected": true,
+        "pinned": false
+    },
+    "EuTS81Z3": {
+        "name": "Modular Routers",
+        "project_id": "EuTS81Z3",
+        "version": "12.0.1+mc1.20.1",
+        "version_id": "etNAESKo",
+        "checksum": "8537a73d436017ef8a15c91e3a6294ae04312bdec1b585adcc41617b0510fb4a0aa7d28b27998f18bf0a095ce23a94db1f789dc8932244498630c43cfa7057f7",
+        "selected": true,
+        "pinned": false
+    },
+    "LNytGWDc": {
+        "name": "Create",
+        "project_id": "LNytGWDc",
+        "version": "1.20.1-0.5.1.f",
+        "version_id": "HNYrbfZZ",
+        "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
+        "selected": true,
+        "pinned": false
+    },
+    "FTeXqI9v": {
+        "name": "Create: New Age",
+        "project_id": "FTeXqI9v",
+        "version": "1.1.1",
+        "version_id": "rvYVvldk",
+        "checksum": "b9c785d6d2385f12864db2ed8a232ca5284c7d19249ba90c8f6d142988d8249a65d4fb9308858af26a36eff16b820a40f3346c566d89b61fe26ef0cbc83bc71f",
+        "selected": true,
+        "pinned": false
+    },
+    "2u6LRnMa": {
+        "name": "Botarium",
+        "project_id": "2u6LRnMa",
+        "version": "2.3.1",
+        "version_id": "aB6vOqFQ",
+        "checksum": "d2e041ce2f0bde06775e09173a5c318cc4fac08e2350fa94aac559c1a557e0ce99f39372c79943f4fd6f921faed09c3e5e260b0b2ff978ebbc03c8ab03c9c43f",
+        "selected": false,
+        "pinned": false
+    },
+    "ZzjhlDgM": {
+        "name": "Create: Steam 'n' Rails",
+        "project_id": "ZzjhlDgM",
+        "version": "1.5.3-forge-mc1.20.1",
+        "version_id": "LLyO2sHq",
+        "checksum": "dcb415ab12a674095441255d8a38586dbfdfd01190a784cd03e701bf4a7a3177a9c0eda9d2ae25e4ee581ba99180d20a50ad9f76a18f1644957c0af344377bf1",
+        "selected": true,
+        "pinned": false
+    },
+    "8shC1gFX": {
+        "name": "BetterF3",
+        "project_id": "8shC1gFX",
+        "version": "7.0.2",
+        "version_id": "xo6HmgWj",
+        "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
+        "selected": true,
+        "pinned": false
+    },
+    "B5uMasrz": {
+        "name": "Dust's Keymap",
+        "project_id": "B5uMasrz",
+        "version": "0.9.0-beta.1+1.20.1-forge",
+        "version_id": "uQyJAqKe",
+        "checksum": "1f70f91f6d588b07dc51724ceb8840961172025f3815a65f87c85cd5e2f0deba50bf27fd168b302c28cc72010546b015b5b05799c242c95e3749beb3fcf1c748",
+        "selected": true,
+        "pinned": false
+    },
+    "umyGl7zF": {
+        "name": "KubeJS",
+        "project_id": "umyGl7zF",
+        "version": "2001.6.4-build.120+forge",
+        "version_id": "Br93DtM2",
+        "checksum": "48075dd7e639ad7eb8d7987e3c059e91234fd6ff56bd14f7fe960839e5a01828c85682371dd23ce6ffb964cc23691e3dfa40e5870bcd9ea2e8bc0cf1c2c3e132",
+        "selected": true,
+        "pinned": false
+    },
+    "lhGA9TYQ": {
+        "name": "Architectury API",
+        "project_id": "lhGA9TYQ",
+        "version": "9.1.12+forge",
+        "version_id": "gyJ7kDpb",
+        "checksum": "7d8b83c39740440332e140de430799353734364718e16bbe3091063ad267aad5ac28467f1897e6d384a8b79f371ad4a5ce4ee4a44ff5e4f847140de53abf1cee",
+        "selected": false,
+        "pinned": false
+    },
+    "sk9knFPE": {
+        "name": "Rhino",
+        "project_id": "sk9knFPE",
+        "version": "2001.2.2-build.18+forge",
+        "version_id": "w5HiejeN",
+        "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
+        "selected": false,
+        "pinned": false
+    },
+    "T38eAZQC": {
+        "name": "KubeJS Create",
+        "project_id": "T38eAZQC",
+        "version": "2001.2.5-build.2+forge",
+        "version_id": "hei9cDRa",
+        "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
+        "selected": true,
+        "pinned": false
+    },
+    "soWqucCB": {
+        "name": "Reactive Alchemy",
+        "project_id": "soWqucCB",
+        "version": "1.20.1-7c",
+        "version_id": "ilCfbKZq",
+        "checksum": "5606e7964a49c5954249daee145ff148804d91901d813c92db47f1f82cf58667eb87cf873c0e493e928e3ad1368be521f5ee6799ec9b6c3fcf1b2dc954fd1c28",
+        "selected": true,
+        "pinned": false
+    },
+    "nU0bVIaL": {
+        "name": "Patchouli",
+        "project_id": "nU0bVIaL",
+        "version": "1.20.1-84-forge",
+        "version_id": "JMtc0mTS",
+        "checksum": "d6ecdc347f0c418bd82c9096ca8e3db428e67b245d915d8a484268af99f8ea7e0cb6040cb26be42aa935baf4cb4fbab598449adc6a17f2197ee79504493a5a3b",
+        "selected": false,
+        "pinned": false
+    },
+    "eMWmEr1R": {
+        "name": "Embers Rekindled",
+        "project_id": "eMWmEr1R",
+        "version": "1.20.1-1.1.1",
+        "version_id": "Se0nBtlw",
+        "checksum": "9c0b8598cdb7e79066bfc46e37b26ab835a1669fbe212a43d26f0d0fb8895b09f5f2144dcccdc94da83bc4f18fa205941ca207a2663d7926a2a105b5318a21c9",
+        "selected": true,
+        "pinned": false
+    },
+    "u6dRKJwZ": {
+        "name": "Just Enough Items",
+        "project_id": "u6dRKJwZ",
+        "version": "15.2.0.27",
+        "version_id": "HU1FUi8s",
+        "checksum": "c6eb4078b21e465a331bd64ef0460b6d0217dab4036c82a83dea9a6b7c145e7c5fee2015ac662490eada7c160cc8388ec70cb97fe31658866b36a2697a7a0ec2",
+        "selected": true,
+        "pinned": false
+    },
+    "jjuIRIVr": {
+        "name": "MEGA Cells",
+        "project_id": "jjuIRIVr",
+        "version": "forge-2.2.9",
+        "version_id": "DNnDa1IV",
+        "checksum": "5fc7dd6adcb99b3492f71340b9b773df6ee035b9955f02a7a2ea38d6de8e692a52a62a957a13b87a70a863cb8d01e4f9b29b0cc5c5167301dd031ea6fb9ebc4a",
+        "selected": true,
+        "pinned": false
+    },
+    "XxWD5pD3": {
+        "name": "Applied Energistics 2",
+        "project_id": "XxWD5pD3",
+        "version": "15.0.20",
+        "version_id": "YO5wVxT7",
+        "checksum": "70ef866fd13ba93e6cecd8d27e2310ee13078df485f70936bb5f97ff8bb451ddcf4541ca93ef03a02e320ab3b5f5112a3d1fe2b12482fa46436530059c551a7e",
+        "selected": true,
+        "pinned": false
+    },
+    "24BlI6Ao": {
+        "name": "Fullblock Energistics",
+        "project_id": "24BlI6Ao",
+        "version": "forge-1.6-1.20.1",
+        "version_id": "9sjD5f0U",
+        "checksum": "463991664f0518554b2144d392fa28e95111be3551232ebcbf808227329c2c2aaad94f0b64dd8497521e9c895bac0d0f569ffdd1c4764ffc0ca3dfaaa7bfe18d",
+        "selected": true,
+        "pinned": false
+    },
+    "1zZJrh9c": {
+        "name": "Little Logistics",
+        "project_id": "1zZJrh9c",
+        "version": "1.20.1.1",
+        "version_id": "TgyyhU8M",
+        "checksum": "b50ff3cd9954ae35566ff4d93afd57c394b85cb325f4d78ca8d8f8c9ed4376f4071cac5d1afd06d083eb00c604e457463144bc8788083c4c8baf11577a308330",
+        "selected": true,
+        "pinned": false
+    },
+    "N4D9AicU": {
+        "name": "RFTools Dimensions",
+        "project_id": "N4D9AicU",
+        "version": "1.20-11.0.5",
+        "version_id": "4966r5JZ",
+        "checksum": "1ca4686d4b52d4716410885faffea02618e179ffe89a944a699395927d5a1cfaba2ba983b6388a739a9cb4ef4a19cdcc28950b3b680c072790b2072f5ddc590f",
+        "selected": true,
+        "pinned": false
+    },
+    "hIO8IsD8": {
+        "name": "RFTools Base",
+        "project_id": "hIO8IsD8",
+        "version": "1.20-5.0.2",
+        "version_id": "SybYUK3U",
+        "checksum": "dfa1d03d69676199cbef6d5b4d85432c4910c57b153deb3287a34850b4325cf99415d433675dfde00c07e6e19645d9bd289e152bffee9dc3bd55b35cc335e085",
+        "selected": false,
+        "pinned": false
+    },
+    "1Zu0uTEE": {
+        "name": "McJtyLib",
+        "project_id": "1Zu0uTEE",
+        "version": "1.20-8.0.3",
+        "version_id": "vA8GsEKt",
+        "checksum": "2c885b902f9999aa0be0ce7eb6d26ed85bed08504048ab85a739f74067a8132095f59c9535e1574dd67fb6a2f2305e7ef2197dca5a41f4367ebc7f9d1bdc4f9e",
+        "selected": false,
+        "pinned": false
+    },
+    "e0IclJLr": {
+        "name": "RFTools Builder",
+        "project_id": "e0IclJLr",
+        "version": "1.20-6.0.3",
+        "version_id": "3B4cHGfE",
+        "checksum": "17608c32c351865c55337134e20be8d3aff5eec151cb81c08b5a0159e352ab0cd8374eec51df7a14e5899d1f6f0430acd525951d4bbcadd1f7748286dec3c7e9",
+        "selected": true,
+        "pinned": false
+    },
+    "7n3HbHSE": {
+        "name": "RFTools Utility",
+        "project_id": "7n3HbHSE",
+        "version": "1.20-6.0.5",
+        "version_id": "v85dnRYJ",
+        "checksum": "5a6c563f44caa11d994f0a333c3f34267a12f2ba0d1cbc370971af2144f13ab72fb2f6cdd890577cdaac9ef6ffdcb3e2f29f8bc8866202725e471510daeb67c6",
+        "selected": true,
+        "pinned": false
+    },
+    "jH6iiqkd": {
+        "name": "Productive Bees",
+        "project_id": "jH6iiqkd",
+        "version": "1.20.1-12.2.6",
+        "version_id": "RQ3frPMt",
+        "checksum": "2bc7177d407f9638fa44deb1d6ff949ca821127f0c2a1be59a93ba5c8dcc2dc704d0ed26aaa68e6d50ee13b5c32a8b09f6ca31af8ad379d7b28dd878bcbd2dca",
+        "selected": true,
+        "pinned": false
+    },
+    "38tpSycf": {
+        "name": "The Bumblezone - NeoForge/Forge",
+        "project_id": "38tpSycf",
+        "version": "7.2.2+1.20.1-forge",
+        "version_id": "O2GUFLlP",
+        "checksum": "e51f61f20c5671f892c2b217aa8d8d44637a7c98e36eae5f64a5cceeedd9838ed376560e0ad181d484125391312ccd9fa0ac6cfa52e08225d210c60cbdc1f03c",
+        "selected": true,
+        "pinned": false
+    },
+    "aC3cM3Vq": {
+        "name": "Mouse Tweaks",
+        "project_id": "aC3cM3Vq",
+        "version": "1.20-2.25-forge",
+        "version_id": "stb5nE30",
+        "checksum": "73308cace1ab8e646dfe07112044a735575a7286af3e8db33c4a94a69ac26102b9a7f821d1b2fcb612f39f13f7dd80fa49b47b61b5ce8163cc08dd3549b55146",
+        "selected": true,
+        "pinned": false
+    },
+    "r0v8vy1s": {
+        "name": "Alternate Current",
+        "project_id": "r0v8vy1s",
+        "version": "forge-mc1.20-1.7.0",
+        "version_id": "kC6SY4Zp",
+        "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
+        "selected": true,
+        "pinned": false
+    },
+    "ZtdULK5c": {
+        "name": "Eccentric Tome",
+        "project_id": "ZtdULK5c",
+        "version": "1.20.1-1.10.2",
+        "version_id": "kcO6KikB",
+        "checksum": "a47b1e52a8be1688c2a3018e3bf222de4d9789e4595f31c7a8058fbf4fa919c3b7e2573c4d464dd47473f62949e160976ce7de01aeeeee492bdea56dd261cba9",
+        "selected": true,
+        "pinned": false
+    },
+    "FWtAXlpg": {
+        "name": "Reinforced Chests",
+        "project_id": "FWtAXlpg",
+        "version": "2.4.2+1.20",
+        "version_id": "7YudDLPR",
+        "checksum": "468dadae5df820ce4b67eb503767ae042ae101fa78d58986d9b986aeca4517fd355d74ca35c522afa38ba6a3c6d5d07c6dd187139ac7d43c8f1ae505fe895e6b",
+        "selected": true,
+        "pinned": false
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "plugins": [
+        "@babel/plugin-transform-classes",
+        "@babel/plugin-transform-new-target",
+        "@babel/plugin-proposal-numeric-separator"
+    ]
+}
