@@ -70,6 +70,10 @@
     "create:asurine",
     "create:cut_deepslate",
     "minecraft:smooth_basalt",
-    "create:veridium"
+    "create:veridium",
+    "minecraft:cobbled_deepslate",
+    "minecraft:polished_andesite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_granite"
   ]
 }
