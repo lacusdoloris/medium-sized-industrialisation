@@ -1,0 +1,21 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+		"stone_state": "gtceu:cassiterite_ore",
+		"deepslate_state": "gtceu:deepslate_cassiterite_ore",
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "256.0L",
+				"peak":  "0.5L",
+				"limit": "0L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.5,
+			"max": 8.0,
+			"average": 3.5
+		}
+	}
+}

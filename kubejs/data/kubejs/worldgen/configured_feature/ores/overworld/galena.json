@@ -1,0 +1,21 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+		"stone_state": "gtceu:galena_ore",
+		"deepslate_state": "gtceu:deepslate_galena_ore",
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "300.0L",
+				"peak":  "0.15L",
+				"limit": "0.0L"
+			}
+		},
+		"radius": {
+			"type": "linear_low",
+			"min": 2.5,
+			"max": 6.0,
+			"average": 3.0
+		}
+	}
+}

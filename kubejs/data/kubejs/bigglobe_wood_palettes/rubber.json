@@ -1,0 +1,29 @@
+{
+	"blocks": {
+		"log": "gtceu:rubber_log",
+        "wood": "gtceu:rubber_log",
+		"planks": "gtceu:rubber_planks",
+        "leaves": "gtceu:rubber_leaves",
+        "sapling": "gtceu:rubber_sapling",
+
+        "stairs": "minecraft:acacia_stairs",
+		"slab": "minecraft:acacia_slab",
+		"fence": "minecraft:acacia_fence",
+		"fence_gate": "minecraft:acacia_fence_gate",
+		"door": "minecraft:acacia_door",
+		"trapdoor": "minecraft:acacia_trapdoor",
+		"pressure_plate": "minecraft:acacia_pressure_plate",
+		"button": "minecraft:acacia_button",
+		"potted_sapling": "minecraft:potted_acacia_sapling",
+		"standing_sign": "minecraft:acacia_sign",
+		"wall_sign": "minecraft:acacia_wall_sign",
+        "stripped_log": "minecraft:stripped_acacia_log",
+		"stripped_wood": "minecraft:stripped_acacia_wood"
+	},
+	"features": {
+		"sapling_grow": "kubejs:trees/rubber_artificial",
+		"natural_surface": "kubejs:trees/rubber_natural",
+		"skylands": "kubejs:trees/rubber_skyland"
+	},
+	"biomes": "kubejs:bigglobe_wood_palette/rubber"
+}

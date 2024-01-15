@@ -1,0 +1,21 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+		"stone_state": "gtceu:stibnite_ore",
+		"deepslate_state": "gtceu:stibnite_ore",
+		"chance": {
+			"template": "bigglobe:ores/ramp_up_taper_out_2",
+			"inputs": {
+				"delay": "768.0L",
+				"peak":  "0.55L",
+				"limit": "0.105L"
+			}
+		},
+		"radius": {
+			"type": "linear_high",
+			"min": 2.5,
+			"max": 5.0,
+			"average": 3.0
+		}
+	}
+}

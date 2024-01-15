@@ -1,0 +1,16 @@
+{
+    "type": "bigglobe:script",
+    "config": {
+        "script": {
+            "debug_name": "CustomFlatOverworldBedrock",
+            "source": [
+                "if (distantHorizons: return(false))",
+                "++originY",
+                "",
+                "random.if(0.95: setBlockState(originX, originY, originZ, 'minecraft:bedrock'))",
+                "else(setBlockState(originX, originY, originZ, 'minecraft:obsidian'))",
+                "return(true)"
+            ]
+        }
+    }
+}

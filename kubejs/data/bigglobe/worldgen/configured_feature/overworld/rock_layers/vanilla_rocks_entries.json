@@ -1,0 +1,35 @@
+{
+	"type": "bigglobe:overworld_rock_layer_entry",
+	"config": {
+		"group": "bigglobe:overworld/rock_layers/vanilla_rocks",
+		"entries": {
+			"defaults": {
+				"weight": 1.0,
+				"center": {
+					"type": "sum",
+					"layers": [
+						{ "type": "smooth", "scaleX": 128, "scaleY": 128, "amplitude": 16.0 },
+						{ "type": "smooth", "scaleX":  64, "scaleY":  64, "amplitude":  8.0 },
+						{ "type": "smooth", "scaleX":  32, "scaleY":  32, "amplitude":  4.0 }
+					]
+				},
+				"thickness": {
+					"type": "sum",
+					"layers": [
+						{ "type": "smooth", "scaleX": 32, "scaleY": 32, "amplitude": 4.0 },
+						{ "type": "smooth", "scaleX": 16, "scaleY": 16, "amplitude": 2.0 },
+						{ "type": "smooth", "scaleX":  8, "scaleY":  8, "amplitude": 1.0 }
+					]
+				}
+			},
+			"variations": [
+				{ "smooth_state": "create:cut_andesite",  "cobble_state": "minecraft:andesite" },
+				{ "smooth_state": "create:cut_diorite",   "cobble_state": "minecraft:diorite"  },
+				{ "smooth_state": "create:cut_granite",   "cobble_state": "minecraft:granite"  },
+				{ "smooth_state": "create:cut_calcite",   "cobble_state": "minecraft:calcite"           },
+				{ "smooth_state": "create:cut_dripstone", "cobble_state": "minecraft:dripstone_block"   },
+				{ "smooth_state": "create:cut_tuff",      "cobble_state": "minecraft:tuff"              }
+			]
+		}
+	}
+}
