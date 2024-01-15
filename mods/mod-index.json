@@ -53,6 +53,15 @@
         "version": "7.2.2+1.20.1-forge",
         "version_id": "O2GUFLlP"
     },
+    "5ibSyLAz": {
+        "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
+        "name": "Inventory Sorting",
+        "pinned": false,
+        "project_id": "5ibSyLAz",
+        "selected": true,
+        "version": "1.9.0-1.20",
+        "version_id": "tr2ZGtz4"
+    },
     "692GClaE": {
         "checksum": "8699bd4471a09031badb88036152342f15297efa5f89013cceb193a065f0e0bfaaa51c6ff78c456ccee74de4fa26a67d91079d934f200b3920aaff59bbc0891d",
         "name": "Modonomicon",
@@ -457,6 +466,15 @@
         "selected": false,
         "version": "5.4.7+1.20.1",
         "version_id": "3VUlU5Ga"
+    },
+    "wxKGvopS": {
+        "checksum": "7693020d2aa003eef0055771d2f92a0304d73339be66d8e3118143f68dfbd69de19567088608f519fdb11f9413cd1149aeef677a6681698f2ac8091c21749d7e",
+        "name": "Forgero",
+        "pinned": false,
+        "project_id": "wxKGvopS",
+        "selected": true,
+        "version": "0.11.11+1.20.1",
+        "version_id": "jzv2zzpA"
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",
