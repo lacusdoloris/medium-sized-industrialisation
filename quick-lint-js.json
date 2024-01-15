@@ -1,0 +1,19 @@
+{
+    "globals": {
+        "ServerEvents": true,
+        "GTCEuStartupEvents": true,
+        "Java": true,
+        "Ingredient": true,
+        "Item": true,
+        "Fluid": true,
+        "GTMaterialIconSet": true,
+        "GTElements": true,
+        "GTMaterialFlags": true,
+        "ItemEvents": true,
+        "FluidAmounts": true,
+        "StartupEvents": true,
+        "GTMaterials": true,
+        "GTValues": true,
+        "PropertyKey": true
+    }
+}

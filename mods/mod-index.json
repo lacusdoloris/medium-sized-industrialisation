@@ -71,6 +71,15 @@
         "version": "1.20.1-1.54.4",
         "version_id": "xgHNJzyG"
     },
+    "73mSSnCf": {
+        "checksum": "67e3e6ea5a7960f541d7fd1f92553f0d63f7c203dc708af5b7a0e6a9840fba5097eff85cddf0c2ef4be109455cc7a21945b3af64bafa2ef267bf9a89e98a6c5d",
+        "name": "Silent Gear",
+        "pinned": false,
+        "project_id": "73mSSnCf",
+        "selected": true,
+        "version": "3.5.3",
+        "version_id": "Z6h0bZ2L"
+    },
     "7n3HbHSE": {
         "checksum": "5a6c563f44caa11d994f0a333c3f34267a12f2ba0d1cbc370971af2144f13ab72fb2f6cdd890577cdaac9ef6ffdcb3e2f29f8bc8866202725e471510daeb67c6",
         "name": "RFTools Utility",
@@ -134,6 +143,15 @@
         "version": "0.9.0-beta.1+1.20.1-forge",
         "version_id": "uQyJAqKe"
     },
+    "BQhuHQo4": {
+        "checksum": "2fda462ede52f7376defb1ab61bdeb589f85c6b4279d029d78128adbb7e1f39b21a7dc9cf79e8d3d535a5bd12286443db505cc0c527c37f8b1981a80a8994f26",
+        "name": "Silent Lib",
+        "pinned": false,
+        "project_id": "BQhuHQo4",
+        "selected": false,
+        "version": "8.0.0",
+        "version_id": "WGt4877n"
+    },
     "BrgaSWzF": {
         "checksum": "98f9c8e3f91b6f9a7438d82e888ecf94b54f71fb58c940c98317f7d8691105922d7c1debcfe26f5959beb3e4d2b8b0a8be1f411dba4e1957ca5e7df916cf6beb",
         "name": "Starry Skies",
@@ -187,6 +205,15 @@
         "selected": false,
         "version": "2.1.20",
         "version_id": "P0GVeAtv"
+    },
+    "IhBYAM6m": {
+        "checksum": "b23581b4c6ad4cbec6e95c176077959a62ce63e34db952688d93f9d54a14577ab32af165c09fe1f283825768ecbd7371a94a4f6e9d3a6375184b47b6abe6a1d5",
+        "name": "Enhanced Workbenches",
+        "pinned": false,
+        "project_id": "IhBYAM6m",
+        "selected": true,
+        "version": "1.1+1.20.1",
+        "version_id": "reJvM5cv"
     },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
@@ -341,6 +368,15 @@
         "version": "forge-2.2.9",
         "version_id": "DNnDa1IV"
     },
+    "kU1G12Nn": {
+        "checksum": "2bee945b4149214f1c23097bff5341af1e995724ed2b527af7cf419c24349c96b1339e2e10e0f39dd78bc32929aad51d951bd09398aad850a66a147ef0c3ce2b",
+        "name": "Create Crafts & Additions",
+        "pinned": false,
+        "project_id": "kU1G12Nn",
+        "selected": true,
+        "version": "1.20.1-1.1.1",
+        "version_id": "DVqXwgYF"
+    },
     "lhGA9TYQ": {
         "checksum": "7d8b83c39740440332e140de430799353734364718e16bbe3091063ad267aad5ac28467f1897e6d384a8b79f371ad4a5ce4ee4a44ff5e4f847140de53abf1cee",
         "name": "Architectury API",
@@ -450,13 +486,13 @@
         "version_id": "HU1FUi8s"
     },
     "umyGl7zF": {
-        "checksum": "48075dd7e639ad7eb8d7987e3c059e91234fd6ff56bd14f7fe960839e5a01828c85682371dd23ce6ffb964cc23691e3dfa40e5870bcd9ea2e8bc0cf1c2c3e132",
+        "checksum": "73afceaf53e82b98b07c9ca357735789da658a29f8b531157e883383b7f5973999f85273101d7f23993b7476a03553adb146439b50993d827adf03b33869fbf8",
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
         "selected": true,
-        "version": "2001.6.4-build.120+forge",
-        "version_id": "Br93DtM2"
+        "version": "2001.6.4-build.127+forge",
+        "version_id": "lmLSVeVQ"
     },
     "vvuO3ImH": {
         "checksum": "66273272521a0212011df2b12f46a46dc40bc0f5e089b95e7fdf5bb407033c8c2af8e97a18108fdc91d3d8c32d30731f566f41d08544586caf1ebc17edd0497c",
@@ -466,15 +502,6 @@
         "selected": false,
         "version": "5.4.7+1.20.1",
         "version_id": "3VUlU5Ga"
-    },
-    "wxKGvopS": {
-        "checksum": "7693020d2aa003eef0055771d2f92a0304d73339be66d8e3118143f68dfbd69de19567088608f519fdb11f9413cd1149aeef677a6681698f2ac8091c21749d7e",
-        "name": "Forgero",
-        "pinned": false,
-        "project_id": "wxKGvopS",
-        "selected": true,
-        "version": "0.11.11+1.20.1",
-        "version_id": "jzv2zzpA"
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",
