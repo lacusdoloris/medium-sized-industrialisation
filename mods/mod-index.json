@@ -53,6 +53,15 @@
         "version": "7.2.2+1.20.1-forge",
         "version_id": "O2GUFLlP"
     },
+    "3mW8PdUo": {
+        "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
+        "name": "Coordinates Display",
+        "pinned": false,
+        "project_id": "3mW8PdUo",
+        "selected": true,
+        "version": "4.0.0",
+        "version_id": "kfXGP9zw"
+    },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
         "name": "Inventory Sorting",
@@ -430,6 +439,15 @@
         "selected": true,
         "version": "0.5.3.1+mc1.20.1-build.110",
         "version_id": "PSRJ0h1d"
+    },
+    "qbbO7Jns": {
+        "checksum": "59439ff42cc97288a0caf4acc368751e3d88f977fc56e2fd52f5adae588a6f6f0c94864c892e9fa56b096fd2fff54f83468b21d2c73eb01ee2f19ba23a417dcc",
+        "name": "EMI Loot",
+        "pinned": false,
+        "project_id": "qbbO7Jns",
+        "selected": true,
+        "version": "0.6.5+1.20.1",
+        "version_id": "7fjkgVEh"
     },
     "r0v8vy1s": {
         "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
