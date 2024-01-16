@@ -547,5 +547,14 @@
         "selected": true,
         "version": "3.12.0",
         "version_id": "KNm7yQUG"
+    },
+    "zqcxr7u0": {
+        "checksum": "95ec00dd3e9189154c9fad6dfc63ebeb45734a281b23723f6173d9c900bb29cf9eb001c3ea85916ec1023e9381c5bf67ba1901aa1a2302ed82911958c1e261c2",
+        "name": "Simple Veinminer",
+        "pinned": false,
+        "project_id": "zqcxr7u0",
+        "selected": true,
+        "version": "1.4.2",
+        "version_id": "qJADByum"
     }
 }
