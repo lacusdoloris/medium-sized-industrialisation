@@ -12,3 +12,6 @@ kubejs/startup_scripts/@recipes
 
 # this doesn't need to be in the repo.
 config/fabric/indigo-renderer.properties
+
+logs/*
+!logs/.gitkeep
