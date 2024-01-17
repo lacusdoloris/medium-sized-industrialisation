@@ -101,7 +101,7 @@
     "7tG215v7": {
         "checksum": "cbfaa6c5bb4175945f54ad435ffb8d403e89ec5f01d49f0f80cbb1e317f1dc1a9bd1e9e11deea3be5dc7d2d2d28048bf1b6fee66adcac26e42b3d6578bb230d9",
         "name": "GregTechCEu Modern",
-        "pinned": false,
+        "pinned": true,
         "project_id": "7tG215v7",
         "selected": true,
         "version": "mc1.20.1-1.0.20.b-forge",
@@ -135,13 +135,13 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "460da1574b16925ba22337b17112874183719d5cac25f1ed683a4cde2b29566aad8fd082c6b701de2c0c66dfc515c2464e9fbf23de18d9e5418c28a81011ccb6",
+        "checksum": "1bc92b5e9007e12acaf16f91dc656b61104600c14229eb51ba0b5bf8e3a6fc148bfb97e8f8edf33b51da9f0c4973ebdcf7aeab588d6d1363acc2c8837f0d8008",
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.91.0+1.10.4+1.20.1",
-        "version_id": "rdpIJ7r3"
+        "version": "0.91.0+1.10.5+1.20.1",
+        "version_id": "BO4fgdx5"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -180,13 +180,13 @@
         "version_id": "qlDt4clF"
     },
     "EuTS81Z3": {
-        "checksum": "8537a73d436017ef8a15c91e3a6294ae04312bdec1b585adcc41617b0510fb4a0aa7d28b27998f18bf0a095ce23a94db1f789dc8932244498630c43cfa7057f7",
+        "checksum": "a77ebc3fd25f28cf31c84f7773b19d8c4406e7e3cfae10e0ee25d44cc701f761bc61dc76544310f99c50a9fa98579701f5ff1ea6cc6b759275fa6057d85d751e",
         "name": "Modular Routers",
         "pinned": false,
         "project_id": "EuTS81Z3",
         "selected": true,
-        "version": "12.0.1+mc1.20.1",
-        "version_id": "etNAESKo"
+        "version": "12.1.0",
+        "version_id": "KCWBJtIT"
     },
     "FTeXqI9v": {
         "checksum": "b9c785d6d2385f12864db2ed8a232ca5284c7d19249ba90c8f6d142988d8249a65d4fb9308858af26a36eff16b820a40f3346c566d89b61fe26ef0cbc83bc71f",
@@ -223,6 +223,15 @@
         "selected": false,
         "version": "2.1.20",
         "version_id": "P0GVeAtv"
+    },
+    "Ha28R6CL": {
+        "checksum": "15e1b1a96f940d0dc41d0954009fda4376e5419b2c364145fafb401d82462d0d5d2e0899c8899a72618dac4fcb08963c8a45aa6b4652c74282a77ee98f395c95",
+        "name": "Fabric Language Kotlin",
+        "pinned": false,
+        "project_id": "Ha28R6CL",
+        "selected": true,
+        "version": "1.10.17+kotlin.1.9.22",
+        "version_id": "JjrWZ7m8"
     },
     "IhBYAM6m": {
         "checksum": "b23581b4c6ad4cbec6e95c176077959a62ce63e34db952688d93f9d54a14577ab32af165c09fe1f283825768ecbd7371a94a4f6e9d3a6375184b47b6abe6a1d5",
