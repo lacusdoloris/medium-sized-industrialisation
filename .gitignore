@@ -7,9 +7,6 @@ kubejs/startup_scripts/index.js
 kubejs/client_scripts/index.js
 kubejs/probe/
 
-# generated only
-kubejs/startup_scripts/@recipes
-
 # this doesn't need to be in the repo.
 config/fabric/indigo-renderer.properties
 
