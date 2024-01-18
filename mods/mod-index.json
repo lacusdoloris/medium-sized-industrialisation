@@ -71,6 +71,15 @@
         "version": "1.6.1+fabric1.20.4",
         "version_id": "8w9SsgMR"
     },
+    "4VJrCEMZ": {
+        "checksum": "501dba5ea5f03af1756116bad9333a17fc0847effe9cda11f24a4bec0281a166d1acb0d94a1f537968954dc106f2f40830eb04f0787424db7772eb0ade474c59",
+        "name": "Gregicality Rocketry",
+        "pinned": false,
+        "project_id": "4VJrCEMZ",
+        "selected": true,
+        "version": "mc1.20.1-0.1.3-aa-forge",
+        "version_id": "vRzzW1T8"
+    },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
         "name": "Inventory Sorting",
