@@ -197,6 +197,15 @@
         "version": "2.4.0",
         "version_id": "qlDt4clF"
     },
+    "DYtfQEYj": {
+        "checksum": "47599aff77955cfee4f458088a7bc2cd91f7c9c9e70a0afb42c0a23f3c316237a69002f33b38cad756c58a0ffd2762edfbad41f779bc495953b6d0d05585e003",
+        "name": "Effortless Building",
+        "pinned": false,
+        "project_id": "DYtfQEYj",
+        "selected": true,
+        "version": "3.7",
+        "version_id": "BzwWTsxS"
+    },
     "EuTS81Z3": {
         "checksum": "a77ebc3fd25f28cf31c84f7773b19d8c4406e7e3cfae10e0ee25d44cc701f761bc61dc76544310f99c50a9fa98579701f5ff1ea6cc6b759275fa6057d85d751e",
         "name": "Modular Routers",
