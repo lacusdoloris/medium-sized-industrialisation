@@ -43,7 +43,7 @@ recipes:
   hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
-  hardGlassRecipes: false
+  hardGlassRecipes: true
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
@@ -63,7 +63,7 @@ recipes:
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
-  flintAndSteelRequireSteel: true
+  flintAndSteelRequireSteel: false
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
@@ -116,12 +116,12 @@ worldgen:
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
     # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
     # Default: 512 (requires restarting the server / re-opening the world)
-    oreGenerationChunkCacheSize: 512
+    oreGenerationChunkCacheSize: 0
 
     # Sets the maximum number of chunks for which ore indicators may be cached.
     # If you register any custom veins with very large indicator ranges (or modify existing ones that way), you may need to increase this value.
     # Default: 2048 (requires restarting the server / re-opening the world)
-    oreIndicatorChunkCacheSize: 2048
+    oreIndicatorChunkCacheSize: 0
 
 machines:
   # Whether insufficient energy supply should reset Machine recipe progress to zero.
@@ -290,4 +290,3 @@ dev:
   # Dump all registered GT models/blockstates/etc?
   # Default: false
   dumpAssets: false
-
