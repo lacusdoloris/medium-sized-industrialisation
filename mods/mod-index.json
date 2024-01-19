@@ -90,13 +90,13 @@
         "version_id": "tr2ZGtz4"
     },
     "692GClaE": {
-        "checksum": "8699bd4471a09031badb88036152342f15297efa5f89013cceb193a065f0e0bfaaa51c6ff78c456ccee74de4fa26a67d91079d934f200b3920aaff59bbc0891d",
+        "checksum": "82325d909f4e0471f373a035c3ea307835c97becdbf4355e31fed5947c6eab6fdd869986105b2ef9a0a64e0e9fd362ff8f4941505b83a0fd152453e0e0f0f39a",
         "name": "Modonomicon",
         "pinned": false,
         "project_id": "692GClaE",
         "selected": false,
-        "version": "1.20.1-1.54.4",
-        "version_id": "xgHNJzyG"
+        "version": "1.20.1-1.55.0",
+        "version_id": "RuVM4SXg"
     },
     "73mSSnCf": {
         "checksum": "67e3e6ea5a7960f541d7fd1f92553f0d63f7c203dc708af5b7a0e6a9840fba5097eff85cddf0c2ef4be109455cc7a21945b3af64bafa2ef267bf9a89e98a6c5d",
@@ -331,6 +331,15 @@
         "selected": true,
         "version": "2001.2.5-build.2+forge",
         "version_id": "hei9cDRa"
+    },
+    "XExdLWCQ": {
+        "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
+        "name": "Pretty Pipes",
+        "pinned": false,
+        "project_id": "XExdLWCQ",
+        "selected": true,
+        "version": "1.15.0",
+        "version_id": "LqsTdtjN"
     },
     "XxWD5pD3": {
         "checksum": "70ef866fd13ba93e6cecd8d27e2310ee13078df485f70936bb5f97ff8bb451ddcf4541ca93ef03a02e320ab3b5f5112a3d1fe2b12482fa46436530059c551a7e",
