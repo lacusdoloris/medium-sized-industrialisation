@@ -287,6 +287,15 @@
         "version": "201.5.5",
         "version_id": "C3BmhD5L"
     },
+    "MbejSZ2E": {
+        "checksum": "5b3ef73fcf5d15b11e97e8923dfadd0fbc4d9612e0a03baf86946058bee78aa8ec41b31373f43ab1ed04b3556f28d5677c480876a892c14e8d69dc57d817f7b7",
+        "name": "Energy Meter",
+        "pinned": false,
+        "project_id": "MbejSZ2E",
+        "selected": true,
+        "version": "1.20.1-1.0.0+forge",
+        "version_id": "UyNuFWXF"
+    },
     "N4D9AicU": {
         "checksum": "1ca4686d4b52d4716410885faffea02618e179ffe89a944a699395927d5a1cfaba2ba983b6388a739a9cb4ef4a19cdcc28950b3b680c072790b2072f5ddc590f",
         "name": "RFTools Dimensions",
