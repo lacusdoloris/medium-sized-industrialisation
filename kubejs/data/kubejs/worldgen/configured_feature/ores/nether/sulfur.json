@@ -1,0 +1,11 @@
+{
+	"type": "bigglobe:nether_ore",
+	"config": {
+		"blocks": {
+			"minecraft:netherrack": "gtceu:netherrack_sulfur_ore"
+		},
+		"chance": "0.5",
+		"radius": { "type": "bigglobe:average", "min": 3.0, "max": 8.0, "average": 4.0 },
+		"biomes": "kubejs:sulfur_ore_biomes"
+	}
+}
