@@ -1,0 +1,596 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	default_quest_shape: ""
+	filename: "00__the_primitive_age"
+	group: "485BC5018A891421"
+	icon: "create_new_age:generator_coil"
+	id: "621F5DCDEC7C827E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"Iron has a long history throughout human society, from the &dmeteorite iron&r of the early Iron Age to thee complex &dironworking&r processes of the early modern era."
+				""
+				"In the interest of getting you into the &aLow Voltage&r tier as quickly as possible, this is significantly abstracted away. Unlike in real life, you can obtain &aWrought Iron&r by simply smelting iron ingots again. "
+				""
+				"&aWrought Iron&r is the &atier material&r for the &aLow Voltage&r tier (replacing steel), so you're going to need a lot. "
+				""
+				"&cDo not re-smelt all of your iron.&r The two types of iron are &onot&r interchangable. You will need regular iron, too."
+			]
+			id: "70299F6D0B671948"
+			subtitle: "Stick some iron in your mouth and pull the trigger!"
+			tasks: [{
+				count: 64L
+				id: "71635A3517F7D4E7"
+				item: "gtceu:wrought_iron_plate"
+				type: "item"
+			}]
+			title: "Iron 2"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70299F6D0B671948"]
+			description: [
+				"&dGregTech&r machines are made up of several components such as motors, circuits, and wires. Every single machine is made up of exactly one &amachine hull&r, which is made from a &amachine casing&r combined with tier-specific plates and wires."
+				""
+				"Machine casings are made of &aeight tier material plates&r (in this case, wrought iron plates) in a chest shape."
+				""
+				"Hold on to your casings; it's likely you made them &etoo early&r and can't craft hulls yet."
+			]
+			hide_dependent_lines: true
+			id: "05F0896CE8F0B7C0"
+			tasks: [{
+				count: 8L
+				id: "55E59E9E1F5059EF"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			title: "First Casing"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"&aSticky Resin&r is a byproduct of chopping down &arubber trees&r. These trees naturally grow in hotter parts of the overworld."
+				""
+				"If you don't get enough from chopping them, &dpressing&r the resultant logs will squeeze some out. Yuck!"
+			]
+			id: "47009408B5746D5F"
+			tasks: [{
+				count: 64L
+				id: "4DC9A0D836B873CD"
+				item: "gtceu:sticky_resin"
+				title: "Sticky Resin"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"In order to make &arubber&r for cables, you need sulfur. Where do you get sulfur? The &9Nether(lands)&r, of course."
+				""
+				"This normally isn't even worth mentioning, but Nether portals function &ba bit differently&r; entrance portals only function &l&aat the bottom of the world&r. (Exit portals will still form anywhere in the overworld)."
+				""
+				"You might want to consider getting a Create &aElevator&r set up at this point."
+			]
+			id: "49C36B48DDBFFCC6"
+			rewards: [{
+				id: "027AFFD4199B802E"
+				item: {
+					Count: 1b
+					id: "wenospeakumbrellarino:umbrella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "63E62B1B497E6ADE"
+				type: "dimension"
+			}]
+			title: "Worse Than Frisia"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49C36B48DDBFFCC6"]
+			description: [
+				"&aSulfur&r can be found in massive veins in the &aNether&r in the &dAshen Wastes&r and &dNether Wastes&r biomes. "
+				""
+				"You can get sulfur dust from smelting the raw sulfur. Duh!"
+			]
+			id: "204E3B62FC3FDC23"
+			tasks: [{
+				count: 16L
+				id: "2CC24EAC4F78DEE1"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			title: "Sulfur with an F"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["47009408B5746D5F"]
+			description: [
+				"If you use a &apress&r on &dSticky Resin&r, you'll get &aRaw Rubber Pulp&r. "
+				""
+				"Just one, though. "
+			]
+			id: "212C31C5C891836D"
+			tasks: [{
+				count: 64L
+				id: "676B781142C0C261"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			title: "Raw Rubber"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"204E3B62FC3FDC23"
+				"212C31C5C891836D"
+			]
+			description: [
+				"Mix &aRaw Rubber Pulp&r and &aSulfur Dust&r in a &6heated basin&r to get &aLiquid Rubber&r. "
+				""
+				"I'm not evil. I won't make you pipette fluids. Please only hit the checkbox when you've actually done it!"
+			]
+			icon: "gtceu:rubber_bucket"
+			id: "0D4436DD0D650674"
+			tasks: [{
+				id: "2CF299D75F15FAA0"
+				title: "Rubber Bars"
+				type: "checkmark"
+			}]
+			title: "Rubber Bars"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0D4436DD0D650674"
+				"39BEE00A0E068CB5"
+				"29823463D2E80DB2"
+			]
+			description: ["&aCables&r are the primary form of energy transmission within &dGregTech&r. They are &awires&r wrapped in a form of plastic or rubber."]
+			id: "56F0F1D144AA8F41"
+			tasks: [
+				{
+					count: 16L
+					id: "73F62B270E43ED9C"
+					item: { Count: 16b, id: "gtceu:tin_single_cable" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "2FE1047D1CDCBD47"
+					item: "gtceu:red_alloy_single_cable"
+					type: "item"
+				}
+			]
+			title: "Cables"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"The &aRolling Mill&r is a &aCreate Additions&r machine that is used to turn plates into &drods&r, and rods into &dwires&r."
+				""
+				"This is very inefficient (a lathe and wiremill, respectively, will get you twice as many per ingot) but it works until you have electricity."
+			]
+			hide_dependent_lines: true
+			id: "29823463D2E80DB2"
+			tasks: [{
+				id: "01D875CB16DCFC43"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"&aRed Alloy&r is an extremely important alloy for the early game. It's made by mixing &dcopper dust&r and &dredstone dust&r together in a mixer and then smelting the result."
+				""
+				"The later electrical recipes make this significantly less punishing redstone consumption-wise."
+			]
+			id: "39BEE00A0E068CB5"
+			tasks: [{
+				count: 24L
+				id: "7ABDD3468D7B7E32"
+				item: "gtceu:red_alloy_dust"
+				type: "item"
+			}]
+			title: "Red Alloy"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"The old reliable &aCoke Oven&r... everyone's used one of these. From the ancient &dRailcraft&r coke ovens (ironically, a mod mostly known for its multiblock machines and not its minecart functionality) to the more modern &dImmersive Engineering&r ones, they're a staple of functionally every single progression modpack ever made."
+				""
+				"This is no exception. The original charcoal recipe is &cdisabled&r, so if you want any you're going to need to build some of these."
+				""
+				"The Coke Brick recipe has been less punitively difficult so you can make like twenty of these and have them running 24/7 easily."
+			]
+			id: "5C1D408B89B4A2FF"
+			optional: true
+			tasks: [{
+				count: 8L
+				id: "5C43E3C837DDCD18"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "Coke Processing"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C1D408B89B4A2FF"]
+			description: [
+				"Give me forty eight minutes of your time, I'll give you 32 charcoal blocks in return. "
+				""
+				"Don't use them all at once."
+			]
+			id: "08DB1BC1149983BC"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "2D4691A1ACD0E14B"
+				item: "gtceu:charcoal_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "473861A86CDF0583"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "Charcoal"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C1D408B89B4A2FF"]
+			description: [
+				"Through the magic of &aCreate Crafts \\& Additions&r, the &astraw&r can be used to feed liquid fuel to &aBlaze Burners&r. "
+				""
+				"Consider this a good outlet for your creosote. (Just don't cry about minecart tracks if you use it all up.)"
+			]
+			id: "3FCF0A7D4254DB6F"
+			optional: true
+			rewards: [{
+				id: "61807C115AE99EF3"
+				item: {
+					Count: 1b
+					id: "minecraft:rail"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"I'm stupid and burnt all my creosote\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2131B39727B88502"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			title: "Straww"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"212C31C5C891836D"
+				"29823463D2E80DB2"
+			]
+			description: [
+				"The &aResin-coated Circuit Board&r is your first circuit board. It uses a &dwood plank&r (or plate) coated in &dsticky resin&r with &dcopper wires&r applied to it."
+				""
+				"There's two recipes for this:"
+				""
+				"- The &eeasier, hand-crafted&r version which takes eight wires (and, thus, eight copper ingots)"
+				"- The &dsequenced assembly&r version which only takes three wires (and, thus, three ingots). "
+				""
+				"Pick whichever one you prefer."
+			]
+			id: "3B10982B75DBEA5D"
+			rewards: [{
+				id: "29313CFA9028507F"
+				item: "create:deployer"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "4423391B58DE7EA4"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Circuit Boards"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"Iron is already magnetic. (All elements are magnetic.) A more accurate way of describing this would be &apermanently magnetic iron&r, like a bar magnet."
+				""
+				"Nevertheless, &aMagnetic Iron&r is required for building both &dCreate: New Age&r magnets and &aMotors&r, a component you need for most machines in some form."
+				""
+				"It can be made by applying &aRedstone&r to regular &aIron Ingots&r. "
+			]
+			id: "14F8B5FF6779FCDA"
+			tasks: [{
+				count: 16L
+				id: "57E0DCA9C4C4B673"
+				item: { Count: 16b, id: "gtceu:magnetic_iron_ingot" }
+				type: "item"
+			}]
+			title: "Magnetic Iron"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["14F8B5FF6779FCDA"]
+			description: [
+				"&aMagnetic&r blocks form the outside structure of a turbine. The stronger the magnet, the more RF/t a turbine generates (but also the more stress it uses)."
+				""
+				"Each basic magnet will cost you &dsixteen iron&r, and you need &dtwelve magnets&r per generator coil, or &c192 ingots&r for a complete circle. "
+			]
+			id: "2355694D2F89321A"
+			rewards: [{
+				count: 7
+				id: "2A1DF943B8CE9B90"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1F68FF60FB3F6249"
+				item: { Count: 8b, id: "create_new_age:magnetite_block" }
+				type: "item"
+			}]
+			title: "Magnetic Generation"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"14F8B5FF6779FCDA"
+				"56F0F1D144AA8F41"
+			]
+			description: [
+				"The &aElectric Motor&r is the first and most important \"component\" you will make."
+				""
+				"Most &9machines&r are made up of several &9components&r, such as motors, conveyors, or pumps. Each tier has their own set of componenets."
+				""
+				"You'll be needing to make a lot of these!"
+			]
+			id: "10929AE92C571AE0"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				count: 5L
+				id: "0A56CC5FAD884435"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			title: "&9Components&r: Motors"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"56F0F1D144AA8F41"
+				"3B10982B75DBEA5D"
+				"000079EED3BDE2F5"
+			]
+			description: [
+				"Combining your &dcomponents&r, some &dcables&r, your &dcircuit board&r, and a &dwrought iron plate&r, you get your first circuit!"
+				""
+				"The &oprimary form&r of progression in GregTech is through &acircuit progression&r. Each tier has within itself &dmultiple circuits&r, with the latter ones generally being more efficient to produce in some way than the first one."
+				""
+				"We can worry about that later, though. For now, bask in the glory of your handcrafted breadboard."
+			]
+			id: "273AF8ED27438CFE"
+			tasks: [{
+				count: 8L
+				id: "2312E29CBA4150C6"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "&aCircuit Number One&r"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["10929AE92C571AE0"]
+			description: [
+				"Once you have your low-voltage machines... they're not going to be very useful without a &apower supply&r."
+				""
+				"Your early-game power generation solution will be the &aNew Age&r magnetic generators. These are a set of &agenerator coils&r (up to eight in a row) placed inside a ring of magnets, and connected to a &acarbon brush&r which collects the power."
+				""
+				"A single coil with twelve magnets in the ring produces 90RF/t at 256RPM."
+			]
+			id: "2B25EB53099B4626"
+			tasks: [
+				{
+					id: "118416209B425DCE"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+				{
+					id: "2B0B33C906BECB6B"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+			]
+			title: "Pretty Turbines"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["29823463D2E80DB2"]
+			description: [
+				"Every &acircuit&r needs a set of &delectronic components&r mounted onto the circuit board to function."
+				""
+				"In the case of your first LV circuit, it needs &aresistors&r and &avacuum tubes&r. "
+				""
+				"Resistors are made of &acopper wire&r, &acarbon dust&r (you can use coal or charcoal for this), and &apaper&r stuck together with some &aglue-like&r material. You might want to consider setting up a &ewheat farm&r for dough."
+			]
+			id: "000079EED3BDE2F5"
+			tasks: [
+				{
+					count: 32L
+					id: "4978410598D4F83C"
+					item: { Count: 32b, id: "gtceu:resistor" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1069863D6CE72E7D"
+					item: { Count: 32b, id: "gtceu:vacuum_tube" }
+					type: "item"
+				}
+			]
+			title: "Basic Electronic Components"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"56F0F1D144AA8F41"
+				"05F0896CE8F0B7C0"
+			]
+			description: [
+				"The humble &amachine hull&r. These are at the core of every single machine."
+				""
+				"You can make it with a single &acasing&r, some &acables&r, and some &airon&r."
+			]
+			id: "16105D268A18BB51"
+			tasks: [{
+				count: 8L
+				id: "688BA4C236DF9716"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "&aLow Voltage Hulls&r"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B25EB53099B4626"]
+			description: [
+				"&dGregTech&r uses an entirely &adifferent&r power system to most. Unlike a lot of mods, where power is a single scalar quantity (RF), GTEU consists of two parts: a &avoltage&r and an &aamperage&r."
+				""
+				"Like monads, GTEU is significantly easier to understand by using rather than explaining. That said, here's an attempt anyway."
+				""
+				"&aVoltage&r can be conceptualised as the size of a single \"packet\" of energy over a wire. Each wire, machine, and generator fits into a &6voltage tier&r (these tiers have names, see the chapter listing) which specifies the maximum size of an energy packett a wire can transfer, a machine can use, or a generator can produce."
+				""
+				"&aAmperage&r is only relevant to wires; the number of amps is the maximum number of packets of energy a wire can carry. Thus, a wire's maximum capacity is expressed as (VOLTAGE_TIER) * (AMPERAGE_CAPACITY); a 4A LV wire can carry four amps of LV energy, or 128EU/t. (But each machine on the wire can only accept up to 32EU/t)."
+				""
+				"In any case, you can convert between RF and GTEU at a 4:1 ratio using a power converter. I doubt you'll be able to supply more than 4 amps yet (hence why this quest calls for a 4A converter), but in practice there's no reason to ever not use the 16A converters."
+			]
+			id: "6146BF353E480854"
+			rewards: [
+				{
+					id: "4475703DCA7C775F"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Benjamin C. Pierce"
+							pages: ["[\"\",\"Here's the thing. You said a \\\"monad is a monoid in the category of endofunctors.\\\"\",\"\\n\",\"\\n\",\"Is it in the same family? Yes. No one's arguing that.\"]"]
+							resolved: 1b
+							title: "Basic Category Theory for Computer Scientists "
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D9FF7861D84AD0"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Dr. Liam O’Connor"
+							pages: ["{\"clickEvent\":{\"action\":\"open_url\",\"value\":\"http://learnyouanagda.liamoc.net/pages/introduction.html\"},\"text\":\"http://learnyouanagda.liamoc.net/pages/introduction.html\"}"]
+							resolved: 1b
+							title: "Learn You an Agda"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "A monad is just a monoid in the category of endofunctors, what's the problem?"
+			tasks: [{
+				id: "5AE40DD8E7BFAB78"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "&aLow Voltage Power&r"
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"273AF8ED27438CFE"
+				"6146BF353E480854"
+				"16105D268A18BB51"
+			]
+			description: [
+				"If you've reached this, &ayou've done it&r! You beat the primitive era! You unlocked electricity!"
+				""
+				"Now you can progress through the &alow-voltage&r tier. You should consider looking into &aOccultism&r for passive resources, setting up &aquarrries&r using Create and &aLittle Logistics&r for strip-mining large chunks of the world, or getting a &aPretty Pipes&r storage network running."
+				""
+				"The world is your oyster."
+			]
+			id: "4E722FB95D8BE0E0"
+			shape: "octagon"
+			tasks: [{
+				id: "0ECCD8A630BF8754"
+				title: "I Survived The Primitive Era"
+				type: "checkmark"
+			}]
+			title: "analphabetapolothology"
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"\"Brass\" and \"Bronze\" can both be thought of as closer to &dcategories&r of &dcopper alloys&r, rather than specific alloys in themselves."
+				""
+				"All Create recipes that previously used exclusively &9brass&r can now also ue &9bronze&r; this frees you up from having to use up &dSphalerite&r for your Create machinery."
+			]
+			icon: "gtceu:copper_plate"
+			id: "3B87D8899AE25D1C"
+			optional: true
+			tasks: [{
+				id: "73333CF5D1227434"
+				title: "Copper Alloys"
+				type: "checkmark"
+			}]
+			title: "Copper Alloys"
+			x: 3.5d
+			y: 1.5d
+		}
+	]
+	title: "Primitive Era - Butterfly Effect"
+}

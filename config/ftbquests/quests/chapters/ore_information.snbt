@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ore_information"
+	group: "14EE7AEE0EF05AEE"
+	icon: {
+		Count: 1b
+		id: "bigglobe:slingshot"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "60485E061990F889"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Ore Information"
+}

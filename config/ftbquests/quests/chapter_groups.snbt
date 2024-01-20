@@ -1,3 +1,10 @@
 {
-	chapter_groups: [{ id: "485BC5018A891421", title: "And In The End..." }]
+	chapter_groups: [
+		{ id: "485BC5018A891421", title: "24 Hours" }
+		{ id: "5C8339123D1A28F8", title: "John Carter, M.D." }
+		{ id: "7C284955C6501D53", title: "One More For the Road" }
+		{ id: "19706AF5FF13B9E4", title: "A Hole in the Heart" }
+		{ id: "14EE7AEE0EF05AEE", title: "Getting to Know You" }
+		{ id: "4482075E2ECE24D0", title: "Submod Guides" }
+	]
 }

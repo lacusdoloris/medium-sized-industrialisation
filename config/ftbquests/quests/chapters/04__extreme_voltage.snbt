@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "04__extreme_voltage"
+	group: "7C284955C6501D53"
+	icon: "gtceu:micro_processor_computer"
+	id: "7F2FB255ED44F681"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "EV - Meteor"
+}

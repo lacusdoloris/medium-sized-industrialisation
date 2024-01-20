@@ -1,0 +1,14 @@
+{
+    "block.create_new_age.magnetite_block": "Basic Magnet",
+    "block.create_new_age.fluxuated_magnetite": "Fluxated Magnet",
+
+    "block.create.brass_casing": "Copper Alloy Casing",
+    "block.create.brass_funnel": "Copper Alloy Funnel",
+    "block.create.brass_tunnel": "Copper Alloy Tunnel",
+    "item.create.brass_hand": "Copper Alloy Hand",
+    
+    "tag.item.nijika.valid_boat_bottoms": "Boat Materials",
+    "tag.item.nijika.glues": "Glues",
+    "tag.item.nijika.carbon_rich_dusts": "Carbon-rich Dusts",
+    "tag.item.nijika.copper_alloy_plates": "Copper Alloy Plates"
+}

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "07__zed_pm"
+	group: "19706AF5FF13B9E4"
+	icon: "gtceu:zero_point_module"
+	id: "16148AE1A66AE2AE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "ZPM - no title"
+}

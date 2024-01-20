@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:dusts/coal",
+        "#forge:dusts/charcoal",
+        "#forge:dusts/carbon"
+    ]
+}

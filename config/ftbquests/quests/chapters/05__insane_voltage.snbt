@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05__insane_voltage"
+	group: "7C284955C6501D53"
+	icon: "gtceu:micro_processor_mainframe"
+	id: "309580C111B666D2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "IV - Everything About My Precious You"
+}

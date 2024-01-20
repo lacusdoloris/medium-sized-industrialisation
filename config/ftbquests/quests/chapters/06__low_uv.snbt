@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "06__low_uv"
+	group: "7C284955C6501D53"
+	icon: "gtceu:luv_conveyor_module"
+	id: "2AA15CBD5BA42A2A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "LuV - Wish Upon a Star"
+}

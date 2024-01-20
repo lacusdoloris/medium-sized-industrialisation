@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "01__low_voltagee"
+	group: "485BC5018A891421"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "10C4569F14DA9A97"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "LV - The End of the World With You"
+}

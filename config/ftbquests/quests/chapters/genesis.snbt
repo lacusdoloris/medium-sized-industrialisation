@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "genesis"
 	group: "485BC5018A891421"
@@ -7,6 +8,321 @@
 	id: "1D337685AF92C8E5"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "Genesis"
+	quests: [
+		{
+			description: [
+				"Welcome to the pack. This brief quest chapter will give you the most important information about how the pack works."
+				""
+				"Please note that this quest book gives minimal rewards. It is intended as a guide, not a checklist. "
+			]
+			id: "473EF5FF75ACB3EC"
+			tasks: [{
+				id: "5C53A347BBB40D7B"
+				title: "The Rebel Path"
+				type: "checkmark"
+			}]
+			title: "The Rebel Path"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"When first starting, you might notice the movement is a bit... different."
+				""
+				"This pack uses the &aSquake&r mod for movement which provides &dQuake/Source Engine&r movement capabilities to your character. Try it out by holding down &djump&r and the sideways directional keys."
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:firework_rocket"
+				tag: {
+					Fireworks: {
+						Flight: 1b
+					}
+				}
+			}
+			id: "1E6B4A28FBC75E7F"
+			tasks: [{
+				id: "230956D7D86F6F74"
+				type: "checkmark"
+			}]
+			title: "Beachside Talks"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"This pack uses the &aBig Globe&r mod for world generation. As the name states, this means the world is &osignificantly&r bigger in the vertical axis."
+				""
+				"Specifically, the world now extends from &a-1024&r at the bedrock layer to &a1024&r blocks into the sky, with all major world features extending both higher and lower in the world as appropriate. This is where the quake movement comes in handy!"
+			]
+			icon: "bigglobe:soul_magma"
+			id: "5A4B379F055EDF13"
+			rewards: [{
+				id: "3DF1FA54807B4122"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			subtitle: "Your first step into a slightly larger world..."
+			tasks: [{
+				id: "64B90D299BCA31CF"
+				type: "checkmark"
+			}]
+			title: "My Lucky Day"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"This pack is &oexplicitly&r designed to be played in exclusively &aPeaceful Mode&r, and no other difficulty."
+				""
+				"Don't even try it."
+			]
+			icon: "minecraft:zombie_head"
+			id: "563721449DFF6964"
+			subtitle: "Peaceful Mode"
+			tasks: [{
+				id: "365F202694EF6621"
+				title: "Peaceful Mode"
+				type: "checkmark"
+			}]
+			title: "Dots"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"This pack is &onot designed&r for people who are new to modded Minecraft. "
+				""
+				"You should have experience with &dother technology packs&r, as well as some common mods such as &aCreate&r and &aApplied Energistics&r. This quest book &cwill not guide you through them."
+				""
+				"It's recommended you've at least looked at a &dGregTech&r pack before, but this pack &ois&r designed for &aboth experienced and fresh&r GT players alike."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "02D2B9E85B21DADB"
+			subtitle: "A Note On Complexity"
+			tasks: [{
+				id: "237953A758F4D788"
+				title: "A Note on Complexity"
+				type: "checkmark"
+			}]
+			title: "RAY"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: ["This will be one of your only gifts. Use wisely, and don't lose it."]
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "479B9A742EB15E47"
+			rewards: [{
+				id: "20EA654D7F4C39A5"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							embers: {
+								0: {
+									Count: 1b
+									id: "embers:ancient_codex"
+								}
+							}
+							forgero: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "forgero:forgero_guide"
+									}
+								}
+							}
+							littlelogistics: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							modularrouters: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "modularrouters:book"
+									}
+								}
+							}
+							occultism: {
+								0: {
+									Count: 1b
+									id: "occultism:dictionary_of_spirits"
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+									}
+								}
+							}
+							productivebees: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "productivebees:guide"
+									}
+								}
+							}
+							reactive: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "reactive:journal"
+									}
+								}
+							}
+							rftoolsbase: {
+								0: {
+									Count: 1b
+									id: "rftoolsbase:manual"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "The Eccentric Tome"
+			tasks: [{
+				id: "03573A797B1D6A60"
+				title: "Eccentric Tome"
+				type: "checkmark"
+			}]
+			title: "Forsaken Autumn"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"It's &cnot recommended&r to continue down the actual questline until you have &dstacks and stacks&r of ingots, a decent &dworking knowledge of automation with Create&r, and a nice &dflat area&r to lay down your factory. "
+				""
+				"The main questline &awill not&r hold your hand. It is terse and only lays out &athe required&r steps; use your brain and/or EMI! "
+				""
+				"This quest is &l&amandatory&r to begin the main quest. If you think you're too smart to skip to resource requirementss, &cno you are not.&r"
+			]
+			id: "714A323489D928B7"
+			rewards: [{
+				id: "526BF6A3107D6B6C"
+				item: {
+					Count: 1b
+					id: "minecraft:written_book"
+					tag: {
+						author: "Fuyukaii"
+						pages: [
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://forsakenautumn.bandcamp.com/album/whenere-2\"},\"text\":\"Whenere - Forsaken Autumn\"}"
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://17berlinwall.bandcamp.com/album/reflect\"},\"text\":\"Reflect - Seventeen Years Old And Berlin Wall\"}"
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/3jEYq79usjL1nY0OjlXuIp\"},\"text\":\"Pink - RAY\"}"
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://testcardrecords2017.bandcamp.com/album/all-shimmer-in-a-day\"},\"text\":\"All Shimmer In A Day - My Lucky Day\"}"
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/4mF2gRfHof8jXkW3ay0Ggu\"},\"text\":\"Marble Town - Beachside Talks\"}"
+							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/2K5lKrTrHnXD4J5cO1IGAm\"},\"text\":\"Blank - Dots \"}"
+						]
+						resolved: 1b
+						title: "Shoegaze"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 128L
+					id: "1C4C227C0A1E7560"
+					item: { Count: 64b, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "077D4BF724464CFD"
+					item: { Count: 64b, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "684DFC229D715517"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "00590BE89F601121"
+					item: { Count: 64b, id: "minecraft:dried_kelp" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "42CBD77A1B190893"
+					item: { Count: 32b, id: "gtceu:brass_ingot" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "040DD2E0A2BE9FA3"
+					item: { Count: 64b, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			title: "I Won't Hold Your Hand"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"If you're used to other GregTech packs having &aore chunks&r; read on."
+				""
+				"Due to the way Big Globe works, ore generation is done &ain parallel&r to keep the extremely high world generation performance, but this sadly limit ores to a single type per vein. The extreme world height makes up for it, though."
+			]
+			icon: "gtceu:deepslate_malachite_ore"
+			id: "03A2D5E11DC16E01"
+			subtitle: "A note on ores"
+			tasks: [{
+				id: "13DBB8F2AE81816D"
+				title: "Ore Veins"
+				type: "checkmark"
+			}]
+			title: "Seventeen Years Old and Berlin Wall"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"If you're reading this, it's probably using &aHeracles&r, the Modrinth-native quest book viewer."
+				""
+				"You might be used to other packs that use FTB Quests. Good news! If you download and install it, it'll pick up the quests automatically!"
+				""
+				"The questbook is actually written using FTB Quests and then converted to Heracles automatically for distribution. I prefer Heracle's UI for playing, but FTB Quests for editing."
+			]
+			id: "4F8CA0650119CB61"
+			tasks: [{
+				id: "66DCFF01F238FE74"
+				title: "Heracles?"
+				type: "checkmark"
+			}]
+			title: "Heracles?"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "Fading Lights"
 }

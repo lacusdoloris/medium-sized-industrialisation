@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "02__medium_voltage"
+	group: "5C8339123D1A28F8"
+	icon: "gtceu:mv_electric_motor"
+	id: "282F9DDDF16E6415"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "MV - Blue Monday"
+}

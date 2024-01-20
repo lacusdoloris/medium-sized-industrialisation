@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "08__ultra_voltage"
+	group: "19706AF5FF13B9E4"
+	icon: "gtceu:crystal_processor_mainframe"
+	id: "0DC5414F214D2E09"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "UV - GENERATION"
+}

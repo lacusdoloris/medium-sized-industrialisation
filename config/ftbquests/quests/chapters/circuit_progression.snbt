@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "circuit_progression"
+	group: "14EE7AEE0EF05AEE"
+	icon: "gtceu:hv_circuit_assembler"
+	id: "26320CFA7DDCA0A2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Circuit Progression"
+}

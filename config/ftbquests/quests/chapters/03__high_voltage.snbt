@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "03__high_voltage"
+	group: "5C8339123D1A28F8"
+	icon: "gtceu:hv_electric_motor"
+	id: "3F3396F6396322C1"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "HV - Nemophila"
+}
