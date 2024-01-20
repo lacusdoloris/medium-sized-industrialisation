@@ -153,13 +153,13 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "1bc92b5e9007e12acaf16f91dc656b61104600c14229eb51ba0b5bf8e3a6fc148bfb97e8f8edf33b51da9f0c4973ebdcf7aeab588d6d1363acc2c8837f0d8008",
+        "checksum": "c9aa4c1740025af36e1f6f4a397d1e6ecd714fde4a2d55f28b2688972b3d72b060afc04f9b561f1fe30f177e467e8d9db8b0264d6b11306ab3c2a950e72c1e1d",
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.91.0+1.10.5+1.20.1",
-        "version_id": "BO4fgdx5"
+        "version": "0.91.0+1.10.8+1.20.1",
+        "version_id": "q5kbwIvk"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -459,13 +459,13 @@
         "version_id": "gyJ7kDpb"
     },
     "lo90fZoB": {
-        "checksum": "b8812e55401eddb73d64adbc88dcbdbccf6c7afca97ebe838ffec356383e12d741ba35a957737810de40070803d8ec1ac7abe67af5080ad362d8ce25f508905f",
+        "checksum": "07a9714e97f9e1f0a34103f60adc26b2b0fb53972a994e5dbab0437556369d489c88029cac7bcf31cdaf3af42d13632b5f95a8399b96eb3af518606a3363cbe7",
         "name": "Heracles",
         "pinned": false,
         "project_id": "lo90fZoB",
         "selected": true,
-        "version": "1.1.7",
-        "version_id": "BgK36Jkb"
+        "version": "1.1.8",
+        "version_id": "CcJk2Nz6"
     },
     "nU0bVIaL": {
         "checksum": "d6ecdc347f0c418bd82c9096ca8e3db428e67b245d915d8a484268af99f8ea7e0cb6040cb26be42aa935baf4cb4fbab598449adc6a17f2197ee79504493a5a3b",
@@ -513,13 +513,13 @@
         "version_id": "kC6SY4Zp"
     },
     "sbJh4AZw": {
-        "checksum": "5fe1eda9e4ea3402091fed192a1112ec71d856c82393ec5ac2a3c9b3c2caa7f73d21b2bb2b1ea10e048d5885478b63da1382121e207257d558776913326b1c3d",
+        "checksum": "43bddae95224beb4779f5fb89ec4afdc6974879d22e13b8cc8c959ed9b6233ff9bfbf7c4cfd59625beef6d1308e0296a312a927697708710d85fd2ab9ec201c1",
         "name": "Occultism",
         "pinned": false,
         "project_id": "sbJh4AZw",
         "selected": true,
-        "version": "1.20.1-1.104.1",
-        "version_id": "jQ5V6flv"
+        "version": "1.20.1-1.105.0",
+        "version_id": "netb6aYq"
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
@@ -585,13 +585,13 @@
         "version_id": "lmLSVeVQ"
     },
     "vvuO3ImH": {
-        "checksum": "66273272521a0212011df2b12f46a46dc40bc0f5e089b95e7fdf5bb407033c8c2af8e97a18108fdc91d3d8c32d30731f566f41d08544586caf1ebc17edd0497c",
+        "checksum": "9d8e0a3209dc495ccd9177835cabe07d141cb960736366a8a9f050a8c0bf525547a81be72393dcee115ea81f859ad75caf0983a08b05adde158bd3f68d7fca81",
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.4.7+1.20.1",
-        "version_id": "3VUlU5Ga"
+        "version": "5.5.0+1.20.1",
+        "version_id": "rAPky5mo"
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",
