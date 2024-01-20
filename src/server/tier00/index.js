@@ -5,6 +5,29 @@ const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mate
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
+    // coke oven tweaks.
+    // this makes it dramatically easier, no more fucking brick mould
+    event.remove({id: "gtceu:shaped/compressed_coke_clay"});
+    
+    event.shapeless(
+        "gtceu:compressed_coke_clay",
+        ["1x #forge:ingots/clay", "2x minecraft:sand"]
+    ).id("nijika:tier00/less_evil_coke_clay");
+
+    event.remove({id: "gtceu:shaped/coke_oven"});
+    event.shaped(
+        "gtceu:coke_oven",
+        ["PBP", "B B", "PBP"],
+        {P: "#forge:plates/iron", B: "gtceu:coke_oven_bricks"}
+    ).id("nijika:tier00/coke_oven");
+
+    event.remove({id: "gtceu:shaped/coke_oven_hatch"});
+    // not actually a fluid barrel... but who cares?
+    event.shapeless(
+        "gtceu:coke_oven_hatch",
+        ["gtceu:coke_oven_bricks", "#forge:barrels/wooden"]
+    ).id("nijika:tier00/coke_oven_hatch");
+
     // wrought iron in vanilla GT requires smelting nuggets and using a compressor... 
     // but that sucks, so we just add a direct smelting recipe.
     event.smelting("gtceu:wrought_iron_ingot", "#forge:ingots/iron")
