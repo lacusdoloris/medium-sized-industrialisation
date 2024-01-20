@@ -80,8 +80,7 @@ export const doTier00Content = (event) => {
         .loops(1)
         .id("nijika:tier00/easier_resin_printed_circuits");
 
-    // swap the manual magnetic iron recipe for one that uses sequential fabricaTION.
-    event.remove({id: "gtceu:shapeless/iron_magnetic_stick"});
+    // add sequenced assembly alternative for magnetic iron
     event.recipes.create.sequenced_assembly(
         "1x gtceu:magnetic_iron_ingot",
         "minecraft:iron_ingot",
