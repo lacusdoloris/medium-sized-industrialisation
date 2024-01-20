@@ -4,16 +4,16 @@
 export const doTier01Content = (event) => {
     // im so sorry.
     event.recipes.create.sequenced_assembly(
-        "1x gtceu:iron_small_gear",
-        "1x gtceu:iron_plate",
+        "1x gtceu:wrought_iron_small_gear",
+        "1x gtceu:wrought_iron_plate",
         [
             event.recipes.create.deploying(
-                "gtceu:iron_plate", ["gtceu:iron_plate", "#forge:rods/iron"]
+                "gtceu:wrought_iron_plate", ["gtceu:wrought_iron_plate", "#forge:rods/wrought_iron"]
             ),
             event.recipes.create.pressing(
-                "gtceu:iron_plate", ["gtceu:iron_plate"]
+                "gtceu:wrought_iron_plate", ["gtceu:wrought_iron_plate"]
             )
         ]
-    ).transitionalItem("gtceu:iron_plate").loops(4).id("nijika:tier01/evil_gear_recipe");
+    ).transitionalItem("gtceu:wrought_iron_plate").loops(4).id("nijika:tier01/evil_gear_recipe");
 
 }
