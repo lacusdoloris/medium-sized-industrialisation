@@ -16,3 +16,6 @@ logs/*
 .vscode
 # auto-generated from FTB quests
 config/heracles
+
+# used for building quests
+./odysseus
