@@ -409,6 +409,7 @@
 				"We can worry about that later, though. For now, bask in the glory of your handcrafted breadboard."
 			]
 			id: "273AF8ED27438CFE"
+			shape: "square"
 			tasks: [{
 				count: 8L
 				id: "2312E29CBA4150C6"
@@ -484,6 +485,7 @@
 				"You can make it with a single &acasing&r, some &acables&r, and some &airon&r."
 			]
 			id: "16105D268A18BB51"
+			shape: "square"
 			tasks: [{
 				count: 8L
 				id: "688BA4C236DF9716"
@@ -538,6 +540,7 @@
 					type: "item"
 				}
 			]
+			shape: "square"
 			subtitle: "A monad is just a monoid in the category of endofunctors, what's the problem?"
 			tasks: [{
 				id: "5AE40DD8E7BFAB78"
@@ -592,5 +595,6 @@
 			y: 1.5d
 		}
 	]
+	subtitle: ["Using Create instead of steam"]
 	title: "Primitive Era - Butterfly Effect"
 }

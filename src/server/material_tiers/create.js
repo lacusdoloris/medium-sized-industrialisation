@@ -1,44 +1,5 @@
-/**
- * @typedef {Object} CableTier
- * @property {string} name
- * @property {string} plate_primary
- * @property {string} plate_secondary
- * @property {string} cable
- */
 
-/**
- * @returns {CableTier}
- */
-const _tierFn = (name, plate_primary, plate_secondary, cable) => {
-    return {
-        name: name,
-        plate_primary: plate_primary,
-        plate_secondary: plate_secondary,
-        cable: cable,
-    }
-}
-
-
-// TODO (less urgent): replace asseembler recipes too
-export const GT_MACHINE_TIERS = [
-    _tierFn("lv", "wrought_iron", "iron", "tin"),
-    _tierFn("mv", "steel", "wrought_iron", "copper"),
-    _tierFn("hv", "aluminium", "polyethylene", "gold"),
-    _tierFn("ev", "stainless_steel", "polyethylene", "aluminium"),
-    _tierFn("iv", "titanium", "polytetrafluoroethylene", "platinum"),
-    _tierFn("luv", "tungsten_steel", "polytetrafluoroethylene", "niobium_titanium"),
-    _tierFn("zpm", "rhodium_plated_palladium", "polytetrafluoroethylene", "vanadium_gallium"),
-    _tierFn("uv", "naquadah_alloy", "polybenzimidazole", "yttrium_barium_cuprate"),
-    _tierFn("uhv", "darmstadium", "polybenzimidazole", "europium"),
-]
-
-const GT_WIRE_TYPES = [
-    [1, "single"], 
-    [2, "double"], 
-    [4, "quadruple"], 
-    [8, "octal"], 
-    [16, "hex"],
-]
+import { GT_WIRE_TYPES } from "./definition";
 
 // don't want to make it obviously superior to the bending machine, so this only supports a 
 // short list.
@@ -49,52 +10,16 @@ const SPECIFIC_PLATES = [
     "magnetic_iron",
     "rubber",
     "wrought_iron",
-]
+];
 
-/**
- * Rewrites machine hulls and casing to move their materials up an additional tier.
- * 
- * @param {Internal.RecipesEventJS} event
- */
-export const applyHullcasingTiers = (event) => {
-    for (let tier of GT_MACHINE_TIERS) {
-        event.remove({id: `gtceu:shaped/casing_${tier.name}`});
-        event.remove({id: `gtceu:assembler/casing_${tier.name}`});
-        event.remove({id: `gtceu:shaped/${tier.name}_machine_hull`});
-        event.remove({id: `gtceu:arc_furnace/arc_${tier.name}_machine_casing`});
 
-        event.shaped(
-            `1x gtceu:${tier.name}_machine_casing`,
-            ["PPP", "P P", "PPP"],
-            {P: `#forge:plates/${tier.plate_primary}`}
-        ).id(`gtceu:shaped/casing_${tier.name}`);
-
-        event.recipes.gtceu.assembler(`gtceu:assembler/casing_${tier.name}`)
-            .itemInputs(`8x #forge:plates/${tier.plate_primary}`)
-            .itemOutputs(`1x gtceu:${tier.name}_machine_casing`)
-            .circuit(8)
-            .EUt(16)
-            .duration(50);
-
-        event.shaped(
-            `1x gtceu:${tier.name}_machine_hull`,
-            ["SPS", "CHC"],
-            {
-                S: `#forge:plates/${tier.plate_secondary}`,
-                P: `#forge:plates/${tier.plate_primary}`,
-                C: `gtceu:${tier.cable}_single_cable`,
-                H: `gtceu:${tier.name}_machine_casing`
-            }
-        ).id(`gtceu:shaped/${tier.name}_machine_hull`);
-    }
-}
 
 /**
  * Adds automatic Create-based recipes for LV/MV tier materials.
  *  
  * @param {Internal.RecipesEventJS} event
  */
-export const addCreateLvMvMaterialRecipes = (event, addRod) => {
+const addCreateLvMvMaterialRecipes = (event, addRod) => {
     /** @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material */
     const addWireRecipes = (material, addRod) => {
         // let the record show that I got really fucking confused by this and wondered why
@@ -184,16 +109,25 @@ export const addCreateLvMvMaterialRecipes = (event, addRod) => {
     });
 }
 
+
 /**
  * Adds pressing recipes for the plates that are otherwise missing it.
  * 
  * @param {Internal.RecipesEventJS} event
  */
-export const addPressingRecipes = (event) => {
+const addPressingRecipes = (event) => {
     for (let plate of SPECIFIC_PLATES) {
         event.recipes.create.pressing(
             `1x gtceu:${plate}_plate`,
             `1x #forge:ingots/${plate}`
         ).id(`nijika:common/pressing/${plate}`);
     }
+}
+
+/**
+ * Adds early-game Create recipes.
+ */
+export const addCreateRecipes = (event) => {
+    addCreateLvMvMaterialRecipes(event);
+    addPressingRecipes(event);
 }

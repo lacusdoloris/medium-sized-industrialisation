@@ -4,11 +4,13 @@
  */
 
 import { doCleanups } from "./cleanups";
+import { adjustMaterialTierRecipes } from "./material_tiers";
 import { addCreateLvMvMaterialRecipes, addPressingRecipes, applyHullcasingTiers } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
 import { doModRecipes } from "./mods";
 import { setupItemTags } from "./tags";
 import { doTier00Content } from "./tier00";
+import { doTier01Content } from "./tier01";
 
 
 ServerEvents.tags("items", setupItemTags);
@@ -16,13 +18,13 @@ ServerEvents.tags("items", setupItemTags);
 ServerEvents.recipes((event) => {
     // == COMMON == //
     doCleanups(event);
-    applyHullcasingTiers(event);
+    adjustMaterialTierRecipes(event);
 
     adjustVariousMiscRecipes(event);
     doModRecipes(event);
 
     // == EARLYGAME == //
-    addCreateLvMvMaterialRecipes(event);
-    addPressingRecipes(event);
+
     doTier00Content(event);
+    doTier01Content(event);
 });
