@@ -2,6 +2,10 @@ yarn.lock
 node_modules
 .parcel-cache
 
+localpack.toml
+*.zip
+*.mrpack
+
 kubejs/server_scripts/index.js
 kubejs/startup_scripts/index.js
 kubejs/client_scripts/index.js

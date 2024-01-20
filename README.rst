@@ -3,6 +3,16 @@ Bigger Industrialisation
 
 This is a GregTech + Big Globe modpack for Minecraft 1.20.
 
+Installing
+----------
+
+I'm planning to publish this to Modrinth. Until then, you can get the 
+`latest artifact <https://nightly.link/Fuyukai/bigger-industrialisation/workflows/ci/mizuki>`_
+built automatically from the modpack sources.
+
+Just import it into Prism Launcher directly. Please note that Prism doesn't seem to use the 
+``name`` field in the index correctly.
+
 Building & Setting Up
 ---------------------
 
@@ -11,7 +21,7 @@ BI uses a bundling setup for the KubeJS scripts.
 1. ``yarn install`` to actually install all of the dev dependencies
 2. ``yarn run build-dev`` builds the development (unminified) ``index.js`` files
 
-Actual mod management is done via ``Kamuidrome <https://github.com/Fuyukai/Kamuidrome>``_, so...
+Actual mod management is done via `Kamuidrome <https://github.com/Fuyukai/Kamuidrome>`_, so...
 
 1. ``pipx install git+https://github.com/Fuyukai/Kamuidrome.git`` (I always use the bleeding edge
    version because it's my own project!)

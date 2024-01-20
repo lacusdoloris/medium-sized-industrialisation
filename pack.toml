@@ -10,8 +10,6 @@ game_version = "1.20.1"
 include_directories = [
     "kubejs",
     "defaultconfigs",
-    "logs",
-    ".vscode",
 ]
 
 [loader]
