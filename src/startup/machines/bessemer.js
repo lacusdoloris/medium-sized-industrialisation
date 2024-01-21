@@ -27,13 +27,13 @@ export const addBessemerMultiblock = (builder) => {
             )
             .aisle(
                 // Middle gap: invar floor, firebricks wall, two layeers of limestone, firebricks
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FXXXF#",
+                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIIIF#",
             )
             .aisle(
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FXXXF#",
+                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIMIF#",
             )
             .aisle(
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FXXXF#",
+                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIIIF#",
             )
             .aisle(
                 // Inner front wall: invar bottom, firebricks, full limestone, firebricks
@@ -49,6 +49,7 @@ export const addBessemerMultiblock = (builder) => {
                 Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get())
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
             )
+            .where("M", Predicates.abilities(PartAbility.MUFFLER))
             .where("F", Predicates.blocks("gtceu:firebricks"))
             .where("L", Predicates.blocks("create:cut_limestone"))
             .where("C", Predicates.controller(Predicates.blocks(definition.get())))
