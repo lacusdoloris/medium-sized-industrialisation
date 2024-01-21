@@ -43,6 +43,13 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shapeless",
     });
 
+    // same with pipes
+    event.remove({
+        input: "#forge:tools/wrenches",
+        output: /gtceu:(?:.*)_(?:tiny|small|normal|large|huge)_(?:fluid|item)_pipe/,
+        type: "minecraft:crafting_shaped"
+    });
+
     // remove manual gears and rings, these suck!
     event.remove({
         output: "#forge:small_gears",

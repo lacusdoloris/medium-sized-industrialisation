@@ -1,3 +1,4 @@
+const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
 
 import { GT_WIRE_TYPES } from "./definition";
 

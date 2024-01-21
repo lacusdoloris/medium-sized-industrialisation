@@ -15,6 +15,11 @@ export const adjustMaterialTierRecipes = (event) => {
         input: /gtceu:(?:small_)?(?:gear|rotor)_(?:extruder|casting)_mold/
     });
 
+    event.remove({
+        type: "gtceu:extruder",
+        input: /gtceu:(?:tiny|small|normal|large|huge)_pipe_extruder_mold/
+    });
+
     addCreateRecipes(event);
     rewriteComponentTieredRecipes(event);
     fixExtruderRecipeTier(event);

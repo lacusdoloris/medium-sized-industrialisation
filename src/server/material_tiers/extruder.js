@@ -3,8 +3,18 @@
 // gears: material mass * 5
 // small gears: material mass alone
 // rotors: material mass * 4
+// pipes: material mass * material countt
 
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
+
+const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
+const PIPE_TYPES = [
+    ["tiny", 1, 2], 
+    ["small", 1, 1],
+    ["normal", 3, 1],
+    ["large", 6, 1],
+    ["huge", 12, 1],
+]
 
 /**
  * Moves down all relevant extruder recipes to LV.
@@ -12,7 +22,28 @@
  * @param {Internal.RecipesEventJS} event
  */
 export const fixExtruderRecipeTier = (event) => {
+    /**
+     * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+     */
+    const generatePipes = (material, type) => {
+        for (let [size_name, in_count, out_count] of PIPE_TYPES) {
+            // item pipes don't have a tiny size.
+            if (type == "item" && size_name == "tiny") {
+                continue;
+            }
+
+            event.recipes.gtceu.extruder(`nijika:auto/pipes/${material.name}/${type}/${size_name}`)
+                .itemInputs(Item.of(`#forge:ingots/${material.name}`).withCount(in_count))
+                .notConsumable(`gtceu:${size_name}_pipe_extruder_mold`)
+                .itemOutputs(Item.of(`gtceu:${material.name}_${size_name}_${type}_pipe`))
+                .EUt(32)
+                .duration(material.mass * in_count);
+        }
+    }
+
     GTRegistries.MATERIALS.forEach((material) => {
+        if (material.hasProperty(PropertyKey.WOOD)) return;
+
         if (material.hasFlag(GTMaterialFlags.GENERATE_GEAR)) {
             event.recipes.gtceu.extruder(`nijika:auto/gears/regular/${material.name}`)
                 .itemInputs(`4x #forge:ingots/${material.name}`)
@@ -47,6 +78,13 @@ export const fixExtruderRecipeTier = (event) => {
                 .itemOutputs(`gtceu:${material.name}_rotor`)
                 .EUt(32)
                 .duration(material.mass);
+        }
+
+        if (material.hasProperty(PropertyKey.FLUID_PIPE)) {
+            // don't really care about the specifics
+            generatePipes(material, "fluid");
+        } else if (material.hasProperty(PropertyKey.ITEM_PIPE)) {
+            generatePipes(material, "item");
         }
     });
 }
