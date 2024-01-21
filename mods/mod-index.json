@@ -45,13 +45,13 @@
         "version_id": "aB6vOqFQ"
     },
     "38tpSycf": {
-        "checksum": "e51f61f20c5671f892c2b217aa8d8d44637a7c98e36eae5f64a5cceeedd9838ed376560e0ad181d484125391312ccd9fa0ac6cfa52e08225d210c60cbdc1f03c",
+        "checksum": "05e1213a2eba09918bef1258a207f396fc32af3490c0f7d308b38a1dfb6dc7ba93804f96d3c0f3f052afda401d2d663601b6e2f93e3656713e5a942e2c037d49",
         "name": "The Bumblezone - NeoForge/Forge",
         "pinned": false,
         "project_id": "38tpSycf",
         "selected": true,
-        "version": "7.2.2+1.20.1-forge",
-        "version_id": "O2GUFLlP"
+        "version": "7.2.3+1.20.1-forge",
+        "version_id": "RiA0aNX3"
     },
     "3mW8PdUo": {
         "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
@@ -72,13 +72,13 @@
         "version_id": "8w9SsgMR"
     },
     "4VJrCEMZ": {
-        "checksum": "501dba5ea5f03af1756116bad9333a17fc0847effe9cda11f24a4bec0281a166d1acb0d94a1f537968954dc106f2f40830eb04f0787424db7772eb0ade474c59",
+        "checksum": "1a6cdb8f0b52b7f1cc0500d1438b786b8fdb37571310c1dc4aa3d81bdb83e05630e58438127a93b388c3f0ebbfc6a88b4fa52f7fed78e54080e4fd346c1cc0ea",
         "name": "Gregicality Rocketry",
         "pinned": false,
         "project_id": "4VJrCEMZ",
         "selected": true,
-        "version": "mc1.20.1-0.1.3-aa-forge",
-        "version_id": "vRzzW1T8"
+        "version": "mc",
+        "version_id": "gPW5t9vv"
     },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
@@ -90,13 +90,13 @@
         "version_id": "tr2ZGtz4"
     },
     "692GClaE": {
-        "checksum": "82325d909f4e0471f373a035c3ea307835c97becdbf4355e31fed5947c6eab6fdd869986105b2ef9a0a64e0e9fd362ff8f4941505b83a0fd152453e0e0f0f39a",
+        "checksum": "cfb9c15e873535644c3adffc4b8f7fdab611c58c61974ecbd2162423cf946e518f6ba3cc969d8a45ba22cfce1c2a1f37500a7d1c8d286f652bd873e06a1d08f7",
         "name": "Modonomicon",
         "pinned": false,
         "project_id": "692GClaE",
         "selected": false,
-        "version": "1.20.1-1.55.0",
-        "version_id": "RuVM4SXg"
+        "version": "1.20.1-1.55.1",
+        "version_id": "lYhwRI1i"
     },
     "73mSSnCf": {
         "checksum": "67e3e6ea5a7960f541d7fd1f92553f0d63f7c203dc708af5b7a0e6a9840fba5097eff85cddf0c2ef4be109455cc7a21945b3af64bafa2ef267bf9a89e98a6c5d",
@@ -115,15 +115,6 @@
         "selected": true,
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
-    },
-    "7tG215v7": {
-        "checksum": "cbfaa6c5bb4175945f54ad435ffb8d403e89ec5f01d49f0f80cbb1e317f1dc1a9bd1e9e11deea3be5dc7d2d2d28048bf1b6fee66adcac26e42b3d6578bb230d9",
-        "name": "GregTechCEu Modern",
-        "pinned": true,
-        "project_id": "7tG215v7",
-        "selected": true,
-        "version": "mc1.20.1-1.0.20.b-forge",
-        "version_id": "bF7u6LSb"
     },
     "8BmcQJ2H": {
         "checksum": "fc4d7a335e52565562395b988b8f494a2b66954329e6ba48a74692b0f50b119500191a01ac860651d7196871edc14257e520f37c97ef0756480fc6ea0a8d262b",
@@ -378,13 +369,13 @@
         "version_id": "stb5nE30"
     },
     "e0IclJLr": {
-        "checksum": "17608c32c351865c55337134e20be8d3aff5eec151cb81c08b5a0159e352ab0cd8374eec51df7a14e5899d1f6f0430acd525951d4bbcadd1f7748286dec3c7e9",
+        "checksum": "12271c45336baccd63fba500a33932cd193c7307d3b962ee7c9880b81c56b37b3d4d2b3ca35d3488751e0083587a4f08d70ef9dea0e7bc14c5747a05e5056ddc",
         "name": "RFTools Builder",
         "pinned": false,
         "project_id": "e0IclJLr",
         "selected": true,
-        "version": "1.20-6.0.3",
-        "version_id": "3B4cHGfE"
+        "version": "1.20-6.0.4",
+        "version_id": "8mIUaono"
     },
     "eMWmEr1R": {
         "checksum": "9c0b8598cdb7e79066bfc46e37b26ab835a1669fbe212a43d26f0d0fb8895b09f5f2144dcccdc94da83bc4f18fa205941ca207a2663d7926a2a105b5318a21c9",
@@ -513,13 +504,13 @@
         "version_id": "kC6SY4Zp"
     },
     "sbJh4AZw": {
-        "checksum": "43bddae95224beb4779f5fb89ec4afdc6974879d22e13b8cc8c959ed9b6233ff9bfbf7c4cfd59625beef6d1308e0296a312a927697708710d85fd2ab9ec201c1",
+        "checksum": "190e1aad786b660476769af716fdba7ef94eac69be3299ba844a8778a0421338cbd7411c34f3313d2e7913bfd8c4b83cdb725da0ea300366a2a2b298aba05e81",
         "name": "Occultism",
         "pinned": false,
         "project_id": "sbJh4AZw",
         "selected": true,
-        "version": "1.20.1-1.105.0",
-        "version_id": "netb6aYq"
+        "version": "1.20.1-1.109.0",
+        "version_id": "xLOIPsGJ"
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
