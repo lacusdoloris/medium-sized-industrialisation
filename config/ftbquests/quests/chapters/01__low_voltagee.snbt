@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "01__low_voltagee"
 	group: "485BC5018A891421"
@@ -7,6 +8,20 @@
 	id: "10C4569F14DA9A97"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["4E722FB95D8BE0E0"]
+		description: ["Pistons are another &atiered component&r that is used for every machine under the sun."]
+		id: "231C2D836C1F6AF0"
+		tasks: [{
+			count: 8L
+			id: "23BAF385C0FAC091"
+			item: "gtceu:lv_electric_piston"
+			type: "item"
+		}]
+		title: "The Piston"
+		x: -1.0d
+		y: 0.0d
+	}]
+	subtitle: ["You don't know how much effort it took to make this use Wrought Iron"]
 	title: "LV - The End of the World With You"
 }

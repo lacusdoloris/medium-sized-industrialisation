@@ -1,4 +1,7 @@
 {
+    "block.gtceu.bessemer_furnace": "Bessemer Converter",
+    "gtceu.bessemer_smelting": "Bessemer Converter",
+
     "block.create_new_age.magnetite_block": "Basic Magnet",
     "block.create_new_age.fluxuated_magnetite": "Fluxated Magnet",
 

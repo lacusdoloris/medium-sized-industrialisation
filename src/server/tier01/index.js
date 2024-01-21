@@ -2,6 +2,22 @@
 // LV, that is.
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
+    event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
+        .itemInputs("64x #forge:ingots/iron")
+        .inputFluids(Fluid.of("gtceu:air").withAmount(10 * FluidAmounts.BUCKET))
+        .itemOutputs("64x gtceu:steel_ingot")
+        .EUt(128)
+        .circuit(1)
+        .duration(20 * 60 * 20);  // 20 minutes at MV
+
+    event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_block_bessemer_process")
+        .itemInputs("64x #forge:storage_blocks/iron")
+        .inputFluids(Fluid.of("gtceu:air").withAmount(90 * FluidAmounts.BUCKET))
+        .itemOutputs("64x gtceu:steel_block")
+        .EUt(128)
+        .circuit(1)
+        .duration(20 * 60 * 40);  // 40 minutes at MV
+
     // im so sorry.
     event.recipes.create.sequenced_assembly(
         "1x gtceu:wrought_iron_small_gear",
