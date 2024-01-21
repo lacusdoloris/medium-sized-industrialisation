@@ -29,7 +29,7 @@ const cleanupManualToolRecipes = (event) => {
         });
     }
 
-    event.remove({id: "silentgear:bronze_ingot"})
+    event.remove({id: "silentgear:bronze_ingot"});
 
     // wires aren't tagged. sigh. use the nuclear option of (gasp) regexps
     event.remove({
@@ -107,6 +107,9 @@ export const doCleanups = (event) => {
     // nuke all recycling recipes, they're mismatched to the wrong tier.
     event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/})
     event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
+
+    // remove the primitive blast furnace recipes
+    event.remove({type: "gtceu:primitive_blast_furnace"});
     
     cleanupManualToolRecipes(event);
     cleanupRollingMachineRecipes(event);
