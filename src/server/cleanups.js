@@ -42,6 +42,25 @@ const cleanupManualToolRecipes = (event) => {
         input: "#forge:tools/wire_cutters",
         type: "minecraft:crafting_shapeless",
     });
+
+    // remove manual gears and rings, these suck!
+    event.remove({
+        output: "#forge:small_gears",
+        type: "minecraft:crafting_shaped"
+    });
+    event.remove({
+        output: "#forge:gears",
+        type: "minecraft:crafting_shaped"
+    });
+    event.remove({
+        output: "#forge:rings",
+        type: "minecraft:crafting_shaped",
+        mod: "gtceu"  // protect against curio-based rings
+    });
+    event.remove({
+        output: "#forge:rotors",
+        type: "minecraft:crafting_shaped",
+    });
 }
 
 /**
