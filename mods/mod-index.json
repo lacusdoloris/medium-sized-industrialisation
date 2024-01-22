@@ -116,6 +116,15 @@
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
     },
+    "7tG215v7": {
+        "checksum": "46e1e915970c8c49e9409bc79bfc58087ec7d59e5eaf711b225c36bc3c857612bd082706f36c39f3e85d3a31a7de49937f69382a8e4c570f7e56e9c6281b1b98",
+        "name": "GregTechCEu Modern",
+        "pinned": false,
+        "project_id": "7tG215v7",
+        "selected": true,
+        "version": "mc",
+        "version_id": "iKxhWcQn"
+    },
     "8BmcQJ2H": {
         "checksum": "fc4d7a335e52565562395b988b8f494a2b66954329e6ba48a74692b0f50b119500191a01ac860651d7196871edc14257e520f37c97ef0756480fc6ea0a8d262b",
         "name": "Geckolib",
@@ -549,13 +558,13 @@
         "version_id": "ilCfbKZq"
     },
     "u58R1TMW": {
-        "checksum": "5a2d02d6088834f78e251a73aea8db981160d74de9cee7070578bb4203b30dd8bca9f7d789f9dc2a8eea3bdfafce9c5862eabbe805976c6bbb47feb10dd78009",
+        "checksum": "1ad1b08900ba9d61d56ce2639903a48d72d22d6862f14380d02f6cf4c88ae882c9da22ad317db79fdeba5430f59c7edc8d1a8126f584ffab0c4eaf0a62a2c09e",
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.32+1.20.1",
-        "version_id": "x3KdstVI"
+        "version": "1.0.0-beta.33+1.20.1",
+        "version_id": "bkH1saJX"
     },
     "u6dRKJwZ": {
         "checksum": "c6eb4078b21e465a331bd64ef0460b6d0217dab4036c82a83dea9a6b7c145e7c5fee2015ac662490eada7c160cc8388ec70cb97fe31658866b36a2697a7a0ec2",
