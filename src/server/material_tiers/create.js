@@ -29,7 +29,7 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
         
         if (material.hasFlag(GTMaterialFlags.GENERATE_FINE_WIRE)) {
             event.recipes.createaddition.rolling(
-                `2x gtceu:${material.name}_fine_wire`,
+                `2x gtceu:fine_${material.name}_wire`,
                 `1x gtceu:${material.name}_single_wire`
             ).id(`nijika:auto/wires/${material.name}_fine_wire`)
         }
