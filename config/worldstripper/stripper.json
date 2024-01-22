@@ -75,6 +75,9 @@
     "minecraft:polished_andesite",
     "minecraft:polished_diorite",
     "minecraft:polished_granite",
-    "minecraft:smooth_sandstone"
+    "minecraft:smooth_sandstone",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:blackstone"
   ]
 }

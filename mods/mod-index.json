@@ -350,6 +350,15 @@
         "version": "15.0.20",
         "version_id": "YO5wVxT7"
     },
+    "YqFnwJHf": {
+        "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
+        "name": "Scannable",
+        "pinned": false,
+        "project_id": "YqFnwJHf",
+        "selected": true,
+        "version": "MC1.20.1-forge-1.7.12",
+        "version_id": "2FlwUOgm"
+    },
     "ZtdULK5c": {
         "checksum": "a47b1e52a8be1688c2a3018e3bf222de4d9789e4595f31c7a8058fbf4fa919c3b7e2573c4d464dd47473f62949e160976ce7de01aeeeee492bdea56dd261cba9",
         "name": "Eccentric Tome",
