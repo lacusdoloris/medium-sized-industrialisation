@@ -94,7 +94,7 @@ export const addPistonRecipe = (event, tier) => {
                 C: tier.single_cable,
                 R: tier.effective_rod_for_lv,
                 M: `gtceu:${tier.name}_electric_motor`,
-                G: `#forge:small_gears/${tier.primary_material}`
+                G: `#forge:small_gears/${tier.primary_material.materialName}`
             }
         ).id(`nijika:auto/${tier.name}/shaped/piston`);
 
@@ -105,7 +105,7 @@ export const addPistonRecipe = (event, tier) => {
                 `2x ${tier.single_cable}`,
                 `2x ${tier.effective_rod_for_lv}`,
                 `gtceu:${tier.name}_electric_motor`,
-                `#forge:small_gears/${tier.primary_material}`
+                `#forge:small_gears/${tier.primary_material.materialName}`
             )
             .itemOutputs(
                 `1x gtceu:${tier.name}_electric_piston`

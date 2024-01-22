@@ -50,6 +50,11 @@ export const doTier00Content = (event) => {
     ).heated().id("nijika:tier00/rubber_mixing");
 
     event.recipes.create.mixing(
+        "gtceu:rubber_dust",
+        ["1x #forge:dusts/sulfur", "3x #forge:dusts/raw_rubber"]
+    ).id("nijika:tier00/rubber_mixing_unheated");
+
+    event.recipes.create.mixing(
         "1x gtceu:red_alloy_dust",
         ["1x #forge:dusts/copper", "4x #forge:dusts/redstone"]
     ).id("nijika:tier00/red_alloy_mixing");
@@ -108,7 +113,7 @@ export const doTier00Content = (event) => {
         {
             G: "#nijika:glues", 
             P: "#forge:paper", 
-            F: "gtceu:copper_fine_wire", 
+            F: "gtceu:fine_copper_wire", 
             D: "#nijika:carbon_rich_dusts"
         }
     ).id("nijika:tier00/fine_wire_resistors");
