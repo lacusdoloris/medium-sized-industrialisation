@@ -1,0 +1,26 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+		"blocks": {
+			"minecraft:stone":             "minecraft:iron_ore",
+			"minecraft:andesite":          "gtceu:andesite_iron_ore",
+			"minecraft:diorite":           "gtceu:diorite_iron_ore",
+			"minecraft:granite":           "gtceu:granite_iron_ore",
+			"minecraft:deepslate":         "minecraft:deepslate_iron_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "512.0L",
+				"peak":  "0.75L",
+				"limit": "0.25L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.5,
+			"max": 8.0,
+			"average": 3.5
+		}
+	}
+}

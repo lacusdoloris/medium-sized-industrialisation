@@ -1,14 +1,23 @@
 {
 	"type": "bigglobe:overworld_ore",
 	"config": {
-		"stone_state": "gtceu:stibnite_ore",
-		"deepslate_state": "gtceu:stibnite_ore",
+        "blocks": {
+            "minecraft:stone": "gtceu:stibnite_ore",
+            "minecraft:cobblestone": "gtceu:stibnite_ore",
+            "minecraft:andesite": "gtceu:andesite_stibnite_ore",
+            "minecraft:diorite": "gtceu:diorite_stibnite_ore",
+            "minecraft:granite": "gtceu:granite_stibnite_ore",
+            "minecraft:deepslate": "gtceu:deepslate_stibnite_ore",
+            "minecraft:tuff": "gtceu:tuff_stibnite_ore",
+            "minecraft:basalt": "gtceu:basalt_stibnite_ore"
+        },
+
 		"chance": {
 			"template": "bigglobe:ores/ramp_up_taper_out_2",
 			"inputs": {
 				"delay": "768.0L",
-				"peak":  "0.55L",
-				"limit": "0.105L"
+				"peak":  "0.25L",
+				"limit": "0.10L"
 			}
 		},
 		"radius": {

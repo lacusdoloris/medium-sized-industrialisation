@@ -1,8 +1,17 @@
 {
 	"type": "bigglobe:overworld_ore",
 	"config": {
-		"stone_state": "gtceu:galena_ore",
-		"deepslate_state": "gtceu:deepslate_galena_ore",
+        "blocks": {
+            "minecraft:stone": "gtceu:galena_ore",
+            "minecraft:cobblestone": "gtceu:galena_ore",
+            "minecraft:andesite": "gtceu:andesite_galena_ore",
+            "minecraft:diorite": "gtceu:diorite_galena_ore",
+            "minecraft:granite": "gtceu:granite_galena_ore",
+            "minecraft:deepslate": "gtceu:deepslate_galena_ore",
+            "minecraft:tuff": "gtceu:tuff_galena_ore",
+            "minecraft:basalt": "gtceu:basalt_galena_ore"
+        },
+
 		"chance": {
 			"template": "bigglobe:ores/exponential",
 			"inputs": {
