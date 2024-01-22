@@ -449,6 +449,15 @@
         "version": "1.20.1-1.1.1",
         "version_id": "DVqXwgYF"
     },
+    "l6YH9Als": {
+        "checksum": "5ff352600d5ffac7511e171db2e51b9a0b6b669db0349141b8eaa626b5950043bf8806b695b29126766d0a9c7697083f61609d906d2609a3039b5cbe5b77db41",
+        "name": "spark",
+        "pinned": false,
+        "project_id": "l6YH9Als",
+        "selected": true,
+        "version": "1.10.53-forge",
+        "version_id": "4FXHDE9F"
+    },
     "lhGA9TYQ": {
         "checksum": "7d8b83c39740440332e140de430799353734364718e16bbe3091063ad267aad5ac28467f1897e6d384a8b79f371ad4a5ce4ee4a44ff5e4f847140de53abf1cee",
         "name": "Architectury API",
