@@ -57,7 +57,7 @@ export const fixExtruderRecipeTier = (event) => {
             event.recipes.gtceu.extruder(`nijika:auto/gears/small/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_GEAR_SMALL.get())
-                .itemOutputs(`gtceu:${material.name}_small_gear`)
+                .itemOutputs(`gtceu:small_${material.name}_gear`)
                 .EUt(32)
                 .duration(material.mass);
         }
