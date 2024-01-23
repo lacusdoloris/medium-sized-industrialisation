@@ -359,15 +359,6 @@
         "version": "1.15.0",
         "version_id": "LqsTdtjN"
     },
-    "XxWD5pD3": {
-        "checksum": "70ef866fd13ba93e6cecd8d27e2310ee13078df485f70936bb5f97ff8bb451ddcf4541ca93ef03a02e320ab3b5f5112a3d1fe2b12482fa46436530059c551a7e",
-        "name": "Applied Energistics 2",
-        "pinned": false,
-        "project_id": "XxWD5pD3",
-        "selected": true,
-        "version": "15.0.20",
-        "version_id": "YO5wVxT7"
-    },
     "YqFnwJHf": {
         "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
         "name": "Scannable",
