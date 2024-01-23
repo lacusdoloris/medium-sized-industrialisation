@@ -1,7 +1,7 @@
-
 // Please don't add anything here. Instead, add it to the ``index.js`` files in the various 
 // subfolders. Thank you!
 
+import { MODPACK_SETTINGS } from "../settings";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
 

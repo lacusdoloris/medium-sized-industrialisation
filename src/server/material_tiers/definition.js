@@ -1,6 +1,3 @@
-// TODO: With custom materials now belonging to their own mod in 1.1.0, this needs to be
-//       overhauled.
-
 /**
  * A single material used in a tier. 
  */
@@ -14,6 +11,20 @@ export class Material {
         this.materialName = material_name;
     }
 
+    /**
+     * Gets this material as a tag of the specified type.
+     */
+    tagged(type) {
+        return `#forge:${type}/${this.materialName}`
+    }
+
+    /**
+     * Gets this material as a component with the specified suffix.
+     */
+    component(suffix) {
+        return `${this.modId}:${this.materialName}_${suffix}`
+    }
+
     static gtceu(name) {
         return new Material("gtceu", name);
     }
@@ -23,45 +34,43 @@ export class Material {
     }
 }
 
+// ugh, there's so many edge cases here.
+// https://sourcegraph.com/github.com/GregTechCEu/GregTech-Modern/-/blob/src/main/java/com/gregtechceu/gtceu/data/recipe/CraftingComponent.java
+
 /**
  * A single GregTech voltage tier.
  */
 export class Tier {
     /**
       * @param {string} name The name of the tier, used for certain tags.
-      * @param {Material} plate_primary The *primary* plate, i.e. the one used for casing.
-      * @param {Material} plate_secondary The *secondary* plate, i.e. the one used for hulls.
-      * @param {Material} cable The primary cable material.
-      * @param {boolean} uses_assembly_line If true, then this uses the assembly line rather than 
-      *                                     assemblers. Defaults to False.
+      * @param {object} tierMaterials A sub-object containing details of tier materials.
+      * @param {Material} tierMaterials.plate The *primary* plate, i.e. the one used for casing.
+      * @param {Material} tierMaterials.hullPlate The *secondary* plate, i.e. the one used for hulls.
+      * @param {Material} tierMaterials.cable The primary cable material.
+      * @param {Material} tierMaterials.electricWire The "electric wire" (?), used for the electrolyzer.
+      * @param {Material} tierMaterials.motorWire The wire type used for the motor.
+      * @param {Material} tierMaterials.magnetic The magnetic material used for this tier.
+      * @param {string} tierMaterials.glass The raw tag or Identifier for the glass used for this tier.
+      * @param {Material} tierMaterials.pipe The pipe material for this tier.
+      * @param {Material} tierMaterials.heating The "heating coil" material for this tier.
+      * @param {Material} tierMaterials.rotor The rotor used for certain machines.
+      * @param {string} tierMaterials.grinder The item used for grinding components.
       * 
-      * 
-      * @param {Material} motor_wire The wire used within motors.
-      * @param {Material} magnetic The magnetic material used for motors and coils.
-      * @param {string} glass The glass used for various machine recipes. 
+      * @param {boolean} usesAssemblyLine If true, then this uses the assembly line rather than 
+      *                                   assemblers. Defaults to False.
      */
     constructor(
         name,
-        plate_primary,
-        plate_secondary,
-        cable,
-        motor_wire,
-        magnetic,
-        glass,
-        uses_assembly_line,
+        tierMaterials,
+        usesAssemblyLine,
     ) {
         this.name = name;
-        this.primary_material = plate_primary;
-        this.secondary_material = plate_secondary;
-        this.cable_material = cable;
+        this.materials = tierMaterials
 
-        this.motor_wire_material = motor_wire;
-        this.magnetic_material = magnetic;
-
-        if (typeof uses_assembly_line === "undefined") {
-            this.uses_assembly_line = false;
+        if (typeof usesAssemblyLine === "undefined") {
+            this.usesAssemblyLine = false;
         } else {
-            this.uses_assembly_line = true;
+            this.usesAssemblyLine = true;
         }
     }
 
@@ -71,61 +80,78 @@ export class Tier {
     /**
      * If true, then this tier allows using regular rubber for components. 
      */
-    get accepts_rubber() {
+    get acceptsRubber() {
         return this.name == "lv" || this.name == "mv";
     }
 
     /**
      * If true, then this tier allows using silicone rubber for components.
      */
-    get accepts_silicone_rubber() {
-        return this.accepts_rubber || this.name == "hv" || this.name == "ev" || this.name == "iv";
+    get acceptsSiliconeRubber() {
+        return this.acceptsRubber || this.name == "hv" || this.name == "ev" || this.name == "iv";
+    }
+
+    // == Tier Name Helpers == //
+    get machineHull() {
+        return `gtceu:${this.name}_machine_hull`;
+    }
+
+    get machineCasing() {
+        return `gtceu:${this.name}_machine_casing`;
+    }
+
+    get circuitTag() {
+        return `#gtceu:circuits/${this.name}`;
     }
 
     // == Plates == //
-    get primary_plate() {
-        return `#forge:plates/${this.primary_material.materialName}`
+    get primaryPlate() {
+        return this.materials.plate.tagged("plates");
     }
 
-    get secondary_plate() {
-        return `#forge:plates/${this.secondary_material.materialName}`;
+    get hullExtraPlate() {
+        return this.materials.hullPlate.tagged("plates");
     }
 
     // == Rods == //
 
-    get primary_rod() {
-        return `#forge:rods/${this.primary_material.materialName}`
+    get primaryRod() {
+        return this.materials.plate.tagged("rods");
     }
 
-    get secondary_rod() {
-        return `#forge:rods/${this.secondary_material.materialName}`
-    }
-
-    get effective_rod_for_lv() {
+    get effectiveRodWithLVHardcode() {
         if (this.name == "lv") {
-            return this.secondary_rod;
+            return "#forge:rods/iron";
         } else {
-            return this.primary_rod;
+            return this.primaryRod;
         }
     }
 
-    get magnetic_rod() {
-        return `#forge:rods/${this.magnetic_material.materialName}`;
+    get magneticRod() {
+        return this.materials.magnetic.tagged("rods");
     }
 
     // === Cables & Wires == //
 
-    get single_cable() {
-        return `${this.cable_material.modId}:${this.cable_material.materialName}_single_cable`;
+    get singleCable() {
+        return this.materials.cable.component("single_cable");
     }
 
-    get quadruple_cable() {
-        return `${this.cable_material.modId}:${this.cable_material.materialName}_quadruple_cable`
+    get quadrupleCable() {
+        return this.materials.cable.component("quadruple_cable");
     }
 
-    get motor_wire() {
+    get doubleMotorWire() {
         // motors use double wires... 
-        return `${this.motor_wire_material.modId}:${this.motor_wire_material.materialName}_double_wire`;
+        return this.materials.motorWire.component("double_wire");
+    }
+
+    get heatingWire() {
+        return this.materials.heating.component("double_wire");
+    }
+
+    get quadHeatingWire() {
+        return this.materials.heating.component("quadruple_wire");
     }
 }
 
@@ -138,24 +164,89 @@ export class Tier {
  */
 export const GT_MACHINE_TIERS = [
     new Tier(
-        "lv", Material.gtceu("wrought_iron"), Material.gtceu("iron"), Material.gtceu("tin"), 
-        Material.gtceu("copper"), Material.gtceu("magnetic_iron"), "#forge:glass"
+        "lv",
+        {
+            plate: Material.gtceu("wrought_iron"),
+            hullPlate: Material.gtceu("iron"),
+            cable: Material.gtceu("tin"),
+            electricWire: Material.gtceu("gold"),
+            motorWire: Material.gtceu("copper"),
+            magnetic: Material.gtceu("magnetic_iron"),
+            glass: "#forge:glass",
+            pipe: Material.gtceu("bronze"),
+            heating: Material.gtceu("copper"),
+            rotor: Material.gtceu("tin"),
+            grinder: "#forge:gems/diamond",
+        }
     ),
+
     new Tier(
-        "mv", Material.gtceu("steel"), Material.gtceu("wrought_iron"), Material.gtceu("copper"),
-        Material.gtceu("cupronickel"), Material.gtceu("magnetic_steel"), "#forge:glass"
+        "mv",
+        {
+           plate: Material.gtceu("steel"),
+           hullPlate: Material.gtceu("wrought_iron"),
+           cable: Material.gtceu("copper"),
+           electricWire: Material.gtceu("silver"),
+           motorWire: Material.gtceu("cupronickel"),
+           magnetic: Material.gtceu("magnetic_steel"),
+           glass: "#forge:glass",
+           pipe: Material.gtceu("steel"),
+           heating: Material.gtceu("cupronickel"),
+           rotor: Material.gtceu("steel"),  // Changed from Bronze. Why does this one need a bronze rotor?
+           grinder: "#forge:gems/diamond",
+        }
     ),
+
     new Tier(
-        "hv", Material.gtceu("aluminium"), Material.gtceu("polyethylene"), Material.gtceu("gold"),
-        Material.gtceu("electrum"), Material.gtceu("magnetic_steel"), "gtceu:tempered_glass"
+        "hv",
+        {
+            plate: Material.gtceu("aluminium"),
+            hullPlate: Material.gtceu("polyethylene"),
+            cable: Material.gtceu("gold"),  // Note: The motor recipe has this (incorrectly) as Silver.
+            electricWire: Material.gtceu("electrum"),
+            motorWire: Material.gtceu("electrum"),
+            magnetic: Material.gtceu("magnetic_steel"),
+            glass: "gtceu:tempered_glass",
+            pipe: Material.gtceu("steel"),
+            heating: Material.gtceu("kanthal"),
+            // Changed from steel, gives a use to the otherwise unused Chromium rotor.
+            rotor: Material.gtceu("chromium"),
+            grinder: "gtceu:diamond_grinding_head",
+        }
     ),
+
     new Tier(
-        "ev", Material.gtceu("stainless_steel"), Material.gtceu("polyethylene"), Material.gtceu("aluminium"),
-        Material.gtceu("kanthal"), Material.gtceu("magnetic_neodymium")
+        "ev",
+        {
+            plate: Material.gtceu("stainless_steel"),
+            hullPlate: Material.gtceu("polyethylene"),
+            cable: Material.gtceu("aluminium"),
+            electricWire: Material.gtceu("platinum"),
+            motorWire: Material.gtceu("kanthal"),
+            magnetic: Material.gtceu("magnetic_neodymium"),
+            glass: "gtceu:tempered_glass",
+            pipe: Material.gtceu("stainless_steel"),
+            heating: Material.gtceu("nichrome"),
+            rotor: Material.gtceu("stainless_steel"),
+            grinder: "gtceu:diamond_grinding_head",
+        }
     ),
+
     new Tier(
-        "iv", Material.gtceu("titanium"), Material.gtceu("polytetrafluoroethylene"), Material.gtceu("platinum"),
-        Material.gtceu("graphene"), Material.gtceu("magnetic_neodymium"),
+        "iv",
+        {
+            plate: Material.gtceu("titanium"),
+            hullPlate: Material.gtceu("polytetrafluoroethylene"),
+            cable: Material.gtceu("platinum"),
+            electricWire: Material.gtceu("osmium"),  // lol, what?
+            motorWire: Material.gtceu("graphene"),
+            magnetic: Material.gtceu("magnetic_neodymium"),
+            glass: "gtceu:laminated_glass",
+            pipe: Material.gtceu("titanium"),
+            heating: Material.gtceu("nichrome"),  // changed from tungstensteel 
+            rotor: Material.gtceu("titanium"),  // changed from tungstensteel
+            grinder: "gtceu:diamond_grinding_head",
+        }
     ),
     
     /*

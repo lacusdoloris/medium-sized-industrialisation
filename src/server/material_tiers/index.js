@@ -1,6 +1,9 @@
 import { rewriteComponentTieredRecipes } from "./components";
 import { addCreateRecipes } from "./create"
 import { fixExtruderRecipeTier } from "./extruder";
+import { MODPACK_SETTINGS } from "../../settings";
+import { adjustMachineRecipesForTier } from "./machines";
+import { GT_MACHINE_TIERS } from "./definition";
 
 /**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.
@@ -8,6 +11,8 @@ import { fixExtruderRecipeTier } from "./extruder";
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustMaterialTierRecipes = (event) => {
+    if (!MODPACK_SETTINGS.applyTierAdjustments) return;
+
     // in preparation for fixing the extruder, remove the existing gtceu recipes for both it
     // and the allow smelter
     event.remove({
@@ -29,4 +34,8 @@ export const adjustMaterialTierRecipes = (event) => {
     addCreateRecipes(event);
     rewriteComponentTieredRecipes(event);
     fixExtruderRecipeTier(event);
+
+    for (let tier of GT_MACHINE_TIERS) {
+        adjustMachineRecipesForTier(event, tier);
+    }
 }

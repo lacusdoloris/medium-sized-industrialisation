@@ -1,3 +1,5 @@
+import { MODPACK_SETTINGS } from "../settings";
+
 const SWAP_BRASS_PLATES = [
     "create:crafting/logistics/brass_tunnel",
     "create:crafting/logistics/brass_funnel",
@@ -124,21 +126,30 @@ const removeGTGenerators = (event) => {
 /** @param {Internal.RecipesEventJS} event */
 export const doCleanups = (event) => {
     // misc generic cleanups
-    event.remove({id: "gtceu:shapeless/dust_brass"});
     event.remove({id: "minecraft:charcoal"});
 
     // too easy!
     event.remove({output: "createaddition:alternator"});
 
-    // nuke all recycling recipes, they're mismatched to the wrong tier.
-    event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/})
-    event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
 
-    // remove the primitive blast furnace recipes
-    event.remove({type: "gtceu:primitive_blast_furnace"});
+    if (MODPACK_SETTINGS.applyTierAdjustments) {
+        // nuke all recycling recipes, they're mismatched to the wrong tier.
+        event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
+        event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
+
+        removeGTGenerators(event);
+
+        // primitive blast furnace is replaced with the bessemer process.
+        event.remove({type: "gtceu:primitive_blast_furnace"});
+
+        event.remove({id: "gtceu:shapeless/dust_brass"});
+    }
     
     cleanupManualToolRecipes(event);
-    cleanupRollingMachineRecipes(event);
+
+    if (MODPACK_SETTINGS.deleteToolRecipes) {
+        cleanupRollingMachineRecipes(event);
+    }
+
     fixupCreate(event);
-    removeGTGenerators(event);
 }
