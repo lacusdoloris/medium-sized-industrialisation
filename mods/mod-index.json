@@ -35,6 +35,15 @@
         "version": "forge-1.6-1.20.1",
         "version_id": "9sjD5f0U"
     },
+    "2gvRmQXx": {
+        "checksum": "75b2a1ee57f494a9d2c22ca4bd7cce5c640ddc8f45ae319b3f98c9384133e8b488487ec6d40a52cd10dfbd77a495d324d5cfc9002f534a520a5f4e259985ec5f",
+        "name": "Radium",
+        "pinned": false,
+        "project_id": "2gvRmQXx",
+        "selected": true,
+        "version": "0.12.2+git.5f80f74",
+        "version_id": "RxCu0tXs"
+    },
     "2u6LRnMa": {
         "checksum": "d2e041ce2f0bde06775e09173a5c318cc4fac08e2350fa94aac559c1a557e0ce99f39372c79943f4fd6f921faed09c3e5e260b0b2ff978ebbc03c8ab03c9c43f",
         "name": "Botarium",
