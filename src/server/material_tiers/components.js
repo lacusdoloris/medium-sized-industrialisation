@@ -115,7 +115,7 @@ export const addPistonRecipe = (event, tier) => {
     }
 };
 
-// i'm not entirely sure why i wrote these.
+// i'm not entirely sure why i wrote this one.
 // nevertheless!
 /**
  * Rewrites the conveyor recipe for the provided tier.
@@ -124,18 +124,7 @@ export const addPistonRecipe = (event, tier) => {
  * @param {Tier} tier
  */
 export const addConveyorRecipe = (event, tier) => {
-    let acceptable_rubbers = [
-        "styrene_butadiene_rubber"  // always acceptable
-    ];
-
-    if (tier.acceptsSiliconeRubber) {
-        acceptable_rubbers.push("silicone_rubber");
-    }
-    if (tier.acceptsRubber) {
-        acceptable_rubbers.push("rubber");
-    }
-
-    for (let rubber of acceptable_rubbers) {
+    for (let rubber of tier.acceptableRubbers) {
         event.remove({id: `gtceu:shaped/conveyor_module_${tier.name}_${rubber}`});
         if (!tier.usesAssemblyLine) {
             event.shaped(
@@ -165,6 +154,37 @@ export const addConveyorRecipe = (event, tier) => {
 }
 
 /**
+ * Rewrites the electric pump recipe for the provided tier.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ * @param {Tier} tier
+ */
+const addPumpRecipe = (event, tier) => {
+    // these only have rub
+    for (let rubber of tier.acceptableRubbers) {
+        if (!tier.usesAssemblyLine) {
+            event.remove({id: `gtceu:shaped/electric_pump_${tier.name}_${rubber}`});
+            event.remove({id: `gtceu:assembler/electric_pump_${tier.name}_${rubber}`});
+            
+            // note: this seems to use the rotor material progression, so it's been changed to use
+            // that for screws too.
+            event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/pump/${rubber}`)
+                .itemInputs(
+                    tier.singleCable,
+                    tier.materials.pipe.component("normal_fluid_pipe"),
+                    tier.materials.rotor.component("screw"),
+                    tier.materials.rotor.component("rotor"),
+                    `2x gtceu:${rubber}_ring`,
+                    `gtceu:${tier.name}_electric_motor`
+                )
+                .itemOutputs(`gtceu:${tier.name}_electric_pump`)
+                .EUt(30)
+                .duration(100);
+        }
+    }
+}
+
+/**
  * Rewrites the material tiers for all tier-based components.
  */
 export const rewriteComponentTieredRecipes = (event) => {
@@ -180,5 +200,6 @@ export const rewriteComponentTieredRecipes = (event) => {
         addMotorRecipe(event, tier);
         addPistonRecipe(event, tier);
         addConveyorRecipe(event, tier);
+        addPumpRecipe(event, tier);
     }
 }

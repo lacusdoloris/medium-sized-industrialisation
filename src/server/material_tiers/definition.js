@@ -91,6 +91,21 @@ export class Tier {
         return this.acceptsRubber || this.name == "hv" || this.name == "ev" || this.name == "iv";
     }
 
+    get acceptableRubbers() {
+        let acceptableRubbers = [
+            "styrene_butadiene_rubber"  // always acceptable
+        ];
+    
+        if (this.acceptsSiliconeRubber) {
+            acceptableRubbers.push("silicone_rubber");
+        }
+        if (this.acceptsRubber) {
+            acceptableRubbers.push("rubber");
+        }
+        
+        return acceptableRubbers;
+    }
+
     // == Tier Name Helpers == //
     get machineHull() {
         return `gtceu:${this.name}_machine_hull`;
