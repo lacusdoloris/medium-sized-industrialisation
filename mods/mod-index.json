@@ -332,6 +332,15 @@
         "version": "2001.2.5-build.2+forge",
         "version_id": "hei9cDRa"
     },
+    "TkC4Gtkt": {
+        "checksum": "d26e4cbb271e345fa737de83164332069ae09662264ef2a8b5eb0e544329112de24aa1ab45b6ca16ccb336b6d12ef8b99687536829b89f2e0a110e221583592e",
+        "name": "Lazurite",
+        "pinned": false,
+        "project_id": "TkC4Gtkt",
+        "selected": true,
+        "version": "1.0.1+mc1.20.1",
+        "version_id": "ybcLjzgh"
+    },
     "XExdLWCQ": {
         "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
         "name": "Pretty Pipes",
