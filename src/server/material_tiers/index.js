@@ -17,7 +17,7 @@ export const adjustMaterialTierRecipes = (event) => {
     // and the allow smelter
     event.remove({
         type: "gtceu:extruder",
-        input: /gtceu:(?:small_)?(?:gear|rotor)_(?:extruder|casting)_mold/
+        input: /gtceu:(?:small_)?(?:gear|rotor|bolt)_(?:extruder|casting)_mold/
     });
 
     event.remove({

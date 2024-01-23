@@ -2,6 +2,7 @@
 // subfolders. Thank you!
 
 import { MODPACK_SETTINGS } from "../settings";
+import { getMaterial } from "../shared/utils";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
 
@@ -9,12 +10,10 @@ import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 export const customiseMaterials = (event) => {
 
     // add foil flag here, for fluxed magnets
-    GTRegistries.MATERIALS.get("magnetic_neodymium")
-        .addFlags(GTMaterialFlags.GENERATE_FOIL);
+    getMaterial("magnetic_neodymium").addFlags(GTMaterialFlags.GENERATE_FOIL);
 
     // used for LV pistons
-    GTRegistries.MATERIALS.get("wrought_iron")
-        .addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
+    getMaterial("wrought_iron").addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
 };
 
 GTCEuStartupEvents.registry("gtceu:material", (event) => {

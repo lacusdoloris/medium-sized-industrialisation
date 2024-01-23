@@ -4,10 +4,14 @@
 // small gears: material mass alone
 // rotors: material mass * 4
 // pipes: material mass * material countt
+// bolts: fixed 15 ticks
+
+import { iterateOverAllMaterials } from "../../shared/utils";
 
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
 
 const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
+const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 const PIPE_TYPES = [
     ["tiny", 1, 2], 
     ["small", 1, 1],
@@ -35,20 +39,22 @@ export const fixExtruderRecipeTier = (event) => {
             event.recipes.gtceu.extruder(`nijika:auto/pipes/${material.name}/${type}/${size_name}`)
                 .itemInputs(Item.of(`#forge:ingots/${material.name}`).withCount(in_count))
                 .notConsumable(`gtceu:${size_name}_pipe_extruder_mold`)
-                .itemOutputs(Item.of(`gtceu:${material.name}_${size_name}_${type}_pipe`))
+                .itemOutputs(Item.of(`${material.modid}:${material.name}_${size_name}_${type}_pipe`).withCount(out_count))
                 .EUt(32)
                 .duration(material.mass * in_count);
         }
     }
 
-    GTRegistries.MATERIALS.forEach((material) => {
+    /** @type {Internal.} */
+    let manager = GTCEuAPI.materialManager;
+    iterateOverAllMaterials((material) => {
         if (material.hasProperty(PropertyKey.WOOD)) return;
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_GEAR)) {
             event.recipes.gtceu.extruder(`nijika:auto/gears/regular/${material.name}`)
                 .itemInputs(`4x #forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_GEAR.get())
-                .itemOutputs(`gtceu:${material.name}_gear`)
+                .itemOutputs(`${material.modid}:${material.name}_gear`)
                 .EUt(32)
                 .duration(material.mass * 5);
         }
@@ -57,7 +63,7 @@ export const fixExtruderRecipeTier = (event) => {
             event.recipes.gtceu.extruder(`nijika:auto/gears/small/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_GEAR_SMALL.get())
-                .itemOutputs(`gtceu:small_${material.name}_gear`)
+                .itemOutputs(`${material.modid}:small_${material.name}_gear`)
                 .EUt(32)
                 .duration(material.mass);
         }
@@ -66,7 +72,7 @@ export const fixExtruderRecipeTier = (event) => {
             event.recipes.gtceu.extruder(`nijika:auto/rings/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_RING.get())
-                .itemOutputs(`gtceu:${material.name}_ring`)
+                .itemOutputs(`${material.modid}:${material.name}_ring`)
                 .EUt(32)
                 .duration(material.mass);
         }
@@ -75,9 +81,18 @@ export const fixExtruderRecipeTier = (event) => {
             event.recipes.gtceu.extruder(`nijika:auto/rotors/${material.name}`)
                 .itemInputs(`4x #forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_ROTOR.get())
-                .itemOutputs(`gtceu:${material.name}_rotor`)
+                .itemOutputs(`${material.modid}:${material.name}_rotor`)
                 .EUt(32)
                 .duration(material.mass);
+        }
+
+        if (material.hasFlag(GTMaterialFlags.GENERATE_BOLT_SCREW)) {
+            event.recipes.gtceu.extruder(`nijika:auto/bolts/${material.name}`)
+                .itemInputs(`1x #forge:ingots/${material.name}`)
+                .notConsumable(GTItems.SHAPE_EXTRUDER_BOLT.get())
+                .itemOutputs(`8x ${material.modid}:${material.name}_bolt`)
+                .EUt(32)
+                .duration(15)
         }
 
         if (material.hasProperty(PropertyKey.FLUID_PIPE)) {

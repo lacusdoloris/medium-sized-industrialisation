@@ -1,5 +1,6 @@
 const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
 
+import { iterateOverAllMaterials } from "../../shared/utils";
 import { GT_WIRE_TYPES } from "./definition";
 
 // don't want to make it obviously superior to the bending machine, so this only supports a 
@@ -63,7 +64,7 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
         }
     }
 
-    GTRegistries.MATERIALS.forEach((material) => {
+    iterateOverAllMaterials((material) => {
         let id = material.name;
         let hasWire = material.hasProperty(PropertyKey.WIRE);
         let hasRod = material.hasFlag(GTMaterialFlags.GENERATE_ROD);
@@ -71,7 +72,7 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
             event.recipes.create.pressing(
-                `2x gtceu:${id}_foil`,
+                `2x ${material.modid}:${id}_foil`,
                 `#forge:plates/${id}`
             );
         }
@@ -81,12 +82,12 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
             let recipeId = `nijika:auto/dust/${id}`;
             if (material.hasProperty(PropertyKey.INGOT)) {
                 event.recipes.create.milling(
-                    `1x gtceu:${id}_dust`,
+                    `1x ${material.modid}:${id}_dust`,
                     `#forge:ingots/${id}`
                 ).id(recipeId);
             } else if (material.hasProperty(PropertyKey.GEM)) {
                 event.recipes.create.milling(
-                    `1x gtceu:${id}_dust`,
+                    `1x ${material.modid}:${id}_dust`,
                     `#forge:gems/${id}`
                 ).id(recipeId);
             }
@@ -94,9 +95,9 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
 
         if (hasRod) {
             // yeeah, idk either. thanks gtceu.
-            if (Item.exists(`gtceu:${id}_rod`)) {
+            if (Item.exists(`${material.modid}:${id}_rod`)) {
                 event.recipes.createaddition.rolling(
-                    `1x gtceu:${id}_rod`,
+                    `1x ${material.modid}:${id}_rod`,
                     `1x #forge:ingots/${id}`
                 ).id(`nijika:auto/rods/${id}`);
             } else if (id !== "wood") {
