@@ -26,15 +26,6 @@
         "version": "1.20.1.1",
         "version_id": "TgyyhU8M"
     },
-    "24BlI6Ao": {
-        "checksum": "463991664f0518554b2144d392fa28e95111be3551232ebcbf808227329c2c2aaad94f0b64dd8497521e9c895bac0d0f569ffdd1c4764ffc0ca3dfaaa7bfe18d",
-        "name": "Fullblock Energistics",
-        "pinned": false,
-        "project_id": "24BlI6Ao",
-        "selected": true,
-        "version": "forge-1.6-1.20.1",
-        "version_id": "9sjD5f0U"
-    },
     "2gvRmQXx": {
         "checksum": "75b2a1ee57f494a9d2c22ca4bd7cce5c640ddc8f45ae319b3f98c9384133e8b488487ec6d40a52cd10dfbd77a495d324d5cfc9002f534a520a5f4e259985ec5f",
         "name": "Radium",
@@ -439,15 +430,6 @@
         "selected": true,
         "version": "1.20.1-12.2.15",
         "version_id": "diotPVTH"
-    },
-    "jjuIRIVr": {
-        "checksum": "5fc7dd6adcb99b3492f71340b9b773df6ee035b9955f02a7a2ea38d6de8e692a52a62a957a13b87a70a863cb8d01e4f9b29b0cc5c5167301dd031ea6fb9ebc4a",
-        "name": "MEGA Cells",
-        "pinned": false,
-        "project_id": "jjuIRIVr",
-        "selected": true,
-        "version": "forge-2.2.9",
-        "version_id": "DNnDa1IV"
     },
     "kU1G12Nn": {
         "checksum": "2bee945b4149214f1c23097bff5341af1e995724ed2b527af7cf419c24349c96b1339e2e10e0f39dd78bc32929aad51d951bd09398aad850a66a147ef0c3ce2b",
