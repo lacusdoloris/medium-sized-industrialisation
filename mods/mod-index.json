@@ -395,15 +395,6 @@
         "version": "1.20-6.0.4",
         "version_id": "8mIUaono"
     },
-    "eMWmEr1R": {
-        "checksum": "9c0b8598cdb7e79066bfc46e37b26ab835a1669fbe212a43d26f0d0fb8895b09f5f2144dcccdc94da83bc4f18fa205941ca207a2663d7926a2a105b5318a21c9",
-        "name": "Embers Rekindled",
-        "pinned": false,
-        "project_id": "eMWmEr1R",
-        "selected": true,
-        "version": "1.20.1-1.1.1",
-        "version_id": "Se0nBtlw"
-    },
     "fRiHVvU7": {
         "checksum": "410e1856f27bd3b642a2faaa847c3d95ae6311da169bff9e09295a13f5cab3324fd422a249d9585650d499123ffe233272bceee43f1ea87ee6042a1afa128220",
         "name": "EMI",
