@@ -13,7 +13,7 @@ kubejs/probe/
 
 # this doesn't need to be in the repo.
 config/fabric/indigo-renderer.properties
-config/indigo-renderer.properties
+config/indium-renderer.properties
 
 logs/*
 !logs/.gitkeep
