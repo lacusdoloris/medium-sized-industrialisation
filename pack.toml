@@ -16,3 +16,4 @@ include_directories = [
 type = "legacyforge"
 version = "47.1.3"
 sinytra_compat = true
+prefer_fabric_geckolib = false

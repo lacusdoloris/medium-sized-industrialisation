@@ -126,13 +126,13 @@
         "version_id": "kFon4npq"
     },
     "8BmcQJ2H": {
-        "checksum": "fc4d7a335e52565562395b988b8f494a2b66954329e6ba48a74692b0f50b119500191a01ac860651d7196871edc14257e520f37c97ef0756480fc6ea0a8d262b",
+        "checksum": "55a229d6ba8ff6ed82803c436f55c25fb9751cbb33605b06cd3580f2c83ed3f39eee4bb4b70c616a484c92339426e06ede5af89c7cabb1b3706f111e2d0dc104",
         "name": "Geckolib",
         "pinned": false,
         "project_id": "8BmcQJ2H",
         "selected": true,
         "version": "4.4",
-        "version_id": "6AmfrKIK"
+        "version_id": "RsTqpaFp"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -574,6 +574,15 @@
         "selected": true,
         "version": "15.2.0.27",
         "version_id": "HU1FUi8s"
+    },
+    "uOVMgoil": {
+        "checksum": "b2630a6b38e292f7d39fc6106e5eec2dc3001df4a6091bb726222bdacaf19ae2ec52c0072b249aa752e362e414eb876f38cc23f96416d7c2a7950df2dc7ff8ae",
+        "name": "Theurgy",
+        "pinned": false,
+        "project_id": "uOVMgoil",
+        "selected": true,
+        "version": "1.20.1-1.12.2",
+        "version_id": "lF7nptyU"
     },
     "umyGl7zF": {
         "checksum": "73afceaf53e82b98b07c9ca357735789da658a29f8b531157e883383b7f5973999f85273101d7f23993b7476a03553adb146439b50993d827adf03b33869fbf8",
