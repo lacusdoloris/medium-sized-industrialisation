@@ -13,22 +13,13 @@ const SWAP_BRASS_PLATES = [
  * @param {Internal.RecipesEventJS} event 
  */
 const cleanupManualToolRecipes = (event) => {
-    event.remove({
-        output: "#forge:plates",
-        input: "#forge:tools/hammers",
-    });
-    event.remove({
-        output: "#forge:dusts",
-        input: "#forge:tools/mortars"
-    });
+    event.remove({output: "#forge:plates", input: "#forge:tools/hammers",});
+    event.remove({output: "#forge:foils", input: "#forge:tools/hammers"})
+    event.remove({output: "#forge:dusts", input: "#forge:tools/mortars"});
 
     // silent gear sadly adds two ingot recipes so we have to be a bit broader here
     for (let type of ["crafting_shaped", "crafting_shapeless"]) {
-        event.remove({
-            output: "#forge:rods",
-            input: "#forge:ingots",
-            type: "minecraft:" + type,
-        });
+        event.remove({output: "#forge:rods", input: "#forge:ingots", type: "minecraft:" + type});
     }
 
     event.remove({id: "silentgear:bronze_ingot"});
@@ -59,11 +50,7 @@ const cleanupManualToolRecipes = (event) => {
 
     // manual ring removal, to prevent removing other tthings that are tagged rings like
     // curio rings.
-    event.remove({
-        output: "#forge:rings",
-        type: "minecraft:crafting_shaped",
-        mod: "gtceu" 
-    });
+    event.remove({output: "#forge:rings", type: "minecraft:crafting_shaped", mod: "gtceu"});
 
 }
 
@@ -141,10 +128,9 @@ export const doCleanups = (event) => {
 
         event.remove({id: "gtceu:shapeless/dust_brass"});
     }
-    
-    cleanupManualToolRecipes(event);
 
     if (MODPACK_SETTINGS.deleteToolRecipes) {
+        cleanupManualToolRecipes(event);
         cleanupRollingMachineRecipes(event);
     }
 
