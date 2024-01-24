@@ -20,7 +20,7 @@ export const doTier01Content = (event) => {
 
     // im so sorry.
     event.recipes.create.sequenced_assembly(
-        "1x gtceu:wrought_iron_small_gear",
+        "1x gtceu:small_wrought_iron_gear",
         "1x gtceu:wrought_iron_plate",
         [
             event.recipes.create.deploying(
