@@ -131,6 +131,8 @@ export const doCleanups = (event) => {
         // nuke all recycling recipes, they're mismatched to the wrong tier.
         event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
         event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
+        event.remove({type: "gtceu:arc_furnace", input: /.*(?:extruder|casting|empty)_mold/});
+        event.remove({type: "gtceu:macerator", input: /.*(?:extruder|casting|empty)_mold/});
 
         removeGTGenerators(event);
 
