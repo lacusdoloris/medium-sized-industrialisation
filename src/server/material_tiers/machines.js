@@ -1,4 +1,4 @@
-import { Tier } from "./definition";
+import { TIER_TO_HIGHER_TIER_MAP, Tier } from "./definition";
 
 // As a side note, a lot of these simply re-create the recipes; this is to allow us to more
 // easily replace materials in the future.
@@ -303,8 +303,22 @@ export const adjustMachineRecipesForTier = (event, tier) => {
         {}
     ).id(`nijika:auto/machines/${tier.name}/wiremill`);
 
-    // Circuit Assembler: WIP. Fine for noww unless we adjust cable tiers.
-    //
+    // Circuit Assembler: Replace cables.
+    event.remove({id: `gtceu:shaped/${tier.name}_circuit_assembler`});
+    let nextTier = TIER_TO_HIGHER_TIER_MAP[tier.name];
+    if (typeof nextTier !== "undefined") {
+        lazyShaped( 
+            `gtceu:${tier.name}_circuit_assembler`,
+            ["RCE", "VHV", "WCW"],
+            {
+                R: `gtceu:${tier.name}_robot_arm`, 
+                C: `#gtceu:circuits/${nextTier}`,
+                E: `gtceu:${tier.name}_emitter`
+            }
+        ).id(`nijika:auto/machines/${tier.name}/circuit_assembler`);
+    }
+
+
     // Macerator: Replace wires and grinding head.
     event.remove({id: `gtceu:shaped/${tier.name}_macerator`});
     lazyShaped(

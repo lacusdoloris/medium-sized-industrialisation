@@ -279,3 +279,18 @@ export const GT_WIRE_TYPES = [
     [8, "octal"], 
     [16, "hex"],
 ];
+
+// used for circuit assembleers
+/**
+ * A mapping of a tier to the next highest tier.
+ */
+export const TIER_TO_HIGHER_TIER_MAP = {
+    lv: "mv",
+    mv: "hv",
+    hv: "ev",
+    ev: "iv",
+    iv: "luv",
+    luv: "zpm",
+    zpm: "uv",
+    uv: "uhv",
+}
