@@ -20,7 +20,7 @@ export const applyHullcasingTiers = (event, tier) => {
 
     event.recipes.gtceu.assembler(`gtceu:assembler/casing_${tier.name}`)
         .itemInputs(`8x ${tier.primaryPlate}`)
-        .itemOutputs(tier.machineHull)
+        .itemOutputs(tier.machineCasing)
         .circuit(8)
         .EUt(16)
         .duration(50);
