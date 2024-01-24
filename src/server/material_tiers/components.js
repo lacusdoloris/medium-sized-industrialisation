@@ -44,7 +44,7 @@ export const applyHullcasingTiers = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-export const addMotorRecipe = (event, tier) => {
+export const rewriteMotorRecipes = (event, tier) => {
     event.remove({id: `gtceu:shaped/electric_motor_${tier.name}`});
     
     if (!tier.usesAssemblyLine) {
@@ -82,7 +82,7 @@ export const addMotorRecipe = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-export const addPistonRecipe = (event, tier) => {
+export const rewritePistonRecipes = (event, tier) => {
     event.remove({id: `gtceu:shaped/electric_piston_${tier.name}`});
 
     if (!tier.usesAssemblyLine) {
@@ -123,7 +123,7 @@ export const addPistonRecipe = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-export const addConveyorRecipe = (event, tier) => {
+export const rewriteConveyorRecipes = (event, tier) => {
     for (let rubber of tier.acceptableRubbers) {
         event.remove({id: `gtceu:shaped/conveyor_module_${tier.name}_${rubber}`});
         if (!tier.usesAssemblyLine) {
@@ -159,7 +159,7 @@ export const addConveyorRecipe = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-const addPumpRecipe = (event, tier) => {
+const rewritePumpRecipes = (event, tier) => {
     // these only have rub
     for (let rubber of tier.acceptableRubbers) {
         if (!tier.usesAssemblyLine) {
@@ -197,9 +197,9 @@ export const rewriteComponentTieredRecipes = (event) => {
     for (let tier of GT_MACHINE_TIERS) {
         applyHullcasingTiers(event, tier);
 
-        addMotorRecipe(event, tier);
-        addPistonRecipe(event, tier);
-        addConveyorRecipe(event, tier);
-        addPumpRecipe(event, tier);
+        rewriteMotorRecipes(event, tier);
+        rewritePistonRecipes(event, tier);
+        rewriteConveyorRecipes(event, tier);
+        rewritePumpRecipes(event, tier);
     }
 }
