@@ -160,7 +160,7 @@ export const rewriteConveyorRecipes = (event, tier) => {
  * @param {Tier} tier
  */
 const rewritePumpRecipes = (event, tier) => {
-    // these only have rub
+    // these only have assembler recipes, because fuck manual tool recipes
     for (let rubber of tier.acceptableRubbers) {
         if (!tier.usesAssemblyLine) {
             event.remove({id: `gtceu:shaped/electric_pump_${tier.name}_${rubber}`});
@@ -185,6 +185,43 @@ const rewritePumpRecipes = (event, tier) => {
 }
 
 /**
+ * Rewrites the robot arm recipe for the provided tier.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ * @param {Tier} tier
+ */
+const rewriteRobotArmRecipes = (event, tier) => {
+    event.remove({id: `gtceu:shaped/robot_arm_${tier.name}`});
+    if (!tier.usesAssemblyLine) {
+        event.remove({id: `gtceu:assembler/robot_arm_${tier.name}`});
+
+        event.shaped(
+            `gtceu:${tier.name}_robot_arm`,
+            ["WWW", "MRM", "PCR"],
+            {
+                W: tier.singleCable,
+                M: `gtceu:${tier.name}_electric_motor`,
+                R: tier.primaryRod,
+                P: `gtceu:${tier.name}_electric_piston`,
+                C: tier.circuitTag
+            }
+        ).id(`nijika:auto/components/${tier.name}/shaped/robot_arm`);
+
+        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/assemble/robot_arm`)
+            .itemInputs(
+                `3x ${tier.singleCable}`,
+                `2x gtceu:${tier.name}_electric_motor`,
+                `2x ${tier.primaryRod}`,
+                `gtceu:${tier.name}_electric_piston`,
+                tier.circuitTag,
+            )
+            .itemOutputs(`gtceu:${tier.name}_robot_arm`)
+            .EUt(30)
+            .duration(100);
+    }
+}
+
+/**
  * Rewrites the material tiers for all tier-based components.
  */
 export const rewriteComponentTieredRecipes = (event) => {
@@ -201,5 +238,6 @@ export const rewriteComponentTieredRecipes = (event) => {
         rewritePistonRecipes(event, tier);
         rewriteConveyorRecipes(event, tier);
         rewritePumpRecipes(event, tier);
+        rewriteRobotArmRecipes(event, tier);
     }
 }
