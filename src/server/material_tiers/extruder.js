@@ -21,6 +21,28 @@ const PIPE_TYPES = [
 ]
 
 /**
+ * Makes extruder plates to be made out of wrought iron, not steel.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ */
+export const adjustExtruderBasePlateRecipe = (event) => {
+    event.remove({id: "gtceu:shaped/shape_empty"});
+    event.shaped(
+        "gtceu:empty_mold",
+        ["PPP", "PPP", "PPP"],
+        {P: "#forge:plates/wrought_iron"}
+    ).id("nijika:misc/shitty_mold_recipe");
+
+    event.remove({id: "gtceu:bender/empty_shape"});
+    event.recipes.gtceu.bender("nijika:misc/better_mold_recipe")
+        .itemInputs(`4x #forge:plates/wrought_iron`)
+        .itemOutputs("gtceu:empty_mold")
+        .circuit(4)
+        .EUt(12)
+        .duration(9 * 20);
+}
+
+/**
  * Moves down all relevant extruder recipes to LV.
  * 
  * @param {Internal.RecipesEventJS} event
