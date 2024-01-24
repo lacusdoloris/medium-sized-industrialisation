@@ -52,24 +52,19 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shaped"
     });
 
-    // remove manual gears and rings, these suck!
-    event.remove({
-        output: "#forge:small_gears",
-        type: "minecraft:crafting_shaped"
-    });
-    event.remove({
-        output: "#forge:gears",
-        type: "minecraft:crafting_shaped"
-    });
+    let types = ["small_gears", "gears", "rotors", "bolts", "screws"];
+    for (let itemType of types) {
+        event.remove({output: `#forge:${itemType}`, type: "minecraft:crafting_shaped"});
+    }
+
+    // manual ring removal, to prevent removing other tthings that are tagged rings like
+    // curio rings.
     event.remove({
         output: "#forge:rings",
         type: "minecraft:crafting_shaped",
-        mod: "gtceu"  // protect against curio-based rings
+        mod: "gtceu" 
     });
-    event.remove({
-        output: "#forge:rotors",
-        type: "minecraft:crafting_shaped",
-    });
+
 }
 
 /**

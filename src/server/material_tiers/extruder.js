@@ -6,7 +6,7 @@
 // pipes: material mass * material countt
 // bolts: fixed 15 ticks
 
-import { iterateOverAllMaterials } from "../../shared/utils";
+import { getStackForTagPrefix, iterateOverAllMaterials } from "../../shared/utils";
 
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
 
@@ -45,9 +45,27 @@ export const fixExtruderRecipeTier = (event) => {
         }
     }
 
+    for (let rubber of ["rubber", "styrene_butadiene_rubber", "silicone_rubber"]) {
+        event.remove({id: `gtceu:extruder/extrude_${rubber}_to_plate`});
+        event.remove({id: `gtceu:extruder/extrude_${rubber}_dust_to_plate`});
+
+        event.recipes.gtceu.extruder(`nijika:auto/plates/${rubber}/from_ingot`)
+            .itemInputs(`1x #forge:ingots/${rubber}`)
+            .notConsumable(GTItems.SHAPE_EXTRUDER_PLATE.get())
+            .itemOutputs(`gtceu:${rubber}_plate`)
+            .EUt(16)
+            .duration(0.25);
+    }
+
     /** @type {Internal.} */
     let manager = GTCEuAPI.materialManager;
     iterateOverAllMaterials((material) => {
+        
+        /** @type {Internal.ItemStack} */
+        let inputType = getStackForTagPrefix(TagPrefix.ingot, material);
+        // don't try and auto-generate recipes for non-ingot materials
+        if (inputType.isEmpty()) return;
+
         if (material.hasProperty(PropertyKey.WOOD)) return;
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_GEAR)) {
