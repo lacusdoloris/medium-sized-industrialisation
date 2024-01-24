@@ -45,13 +45,13 @@
         "version_id": "aB6vOqFQ"
     },
     "38tpSycf": {
-        "checksum": "05e1213a2eba09918bef1258a207f396fc32af3490c0f7d308b38a1dfb6dc7ba93804f96d3c0f3f052afda401d2d663601b6e2f93e3656713e5a942e2c037d49",
+        "checksum": "f2605f86b0be079fbfe4122a2cff6c51c0c5cbc900d85e11162e00f26d20f6828cee7a06622ae4e1ee80d910402e06ca16542f35da197091047476c122dbd98f",
         "name": "The Bumblezone - NeoForge/Forge",
         "pinned": false,
         "project_id": "38tpSycf",
         "selected": true,
-        "version": "7.2.3+1.20.1-forge",
-        "version_id": "RiA0aNX3"
+        "version": "7.2.4+1.20.1-forge",
+        "version_id": "RGm5h73f"
     },
     "3mW8PdUo": {
         "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
@@ -513,13 +513,13 @@
         "version_id": "kC6SY4Zp"
     },
     "sbJh4AZw": {
-        "checksum": "201e72db08d7bd8fd3e2681f0c0fcee809a661e964f3ca32c336cc60c17bdbad7782e44b764fa8e626cd64402f25e9603dfbd553fbeacf8f4dd41725ccbda007",
+        "checksum": "e2eda86b7449c6e4ad41a5679997a0f96d86b043c64b687fc11cfb4325fe906e80d51d0f34aa7d7925ef46a926389be0759e8f9f057ff282dbe014d66f867c27",
         "name": "Occultism",
         "pinned": false,
         "project_id": "sbJh4AZw",
         "selected": true,
-        "version": "1.20.1-1.111.0",
-        "version_id": "gPdNRkRQ"
+        "version": "1.20.1-1.112.0",
+        "version_id": "m3wNBzwW"
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
