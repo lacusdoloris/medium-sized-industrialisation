@@ -25,6 +25,6 @@ export const addAllRecipeTypes = (event) => {
  * @param {Internal.GTRegistryEventJS<string, Internal.MachineDefinition>} event
  */
 export const addAllMachineTypes = (event) => {
-    let bessemer = event.create("bessemer_furnace", "multiblock");
+    let bessemer = event.create("nijika:bessemer_furnace", "multiblock");
     addBessemerMultiblock(bessemer);
 }
