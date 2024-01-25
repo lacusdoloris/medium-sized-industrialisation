@@ -52,6 +52,21 @@ const cleanupManualToolRecipes = (event) => {
     // curio rings.
     event.remove({output: "#forge:rings", type: "minecraft:crafting_shaped", mod: "gtceu"});
 
+    // remove all hatch/bus/etc recipes that use the screwdriver instead of glass.
+    event.remove({
+        output: /(?:.*)_(?:input|output)_(?:hatch|bus)/,
+        input: "#forge:tools/screwdrivers"
+    });
+
+    // no more fucking hand-crafted casing recipes either!
+    event.remove({
+        output: /(.*)_casing/,
+        input: "#forge:tools/hammers",
+    });
+    event.remove({
+        output: /(.*)_frame/,
+        input: "#forge:tools/wrenches"
+    });
 }
 
 /**
