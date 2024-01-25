@@ -29,7 +29,6 @@ export const adjustVariousMiscRecipes = (event) => {
         .EUt(4)
         .duration(20);
 
-
     // make item filters a bit easier to get.
     event.remove({id: "gtceu:shaped/item_filter"});
 
