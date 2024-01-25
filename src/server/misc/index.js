@@ -25,6 +25,7 @@ export const adjustVariousMiscRecipes = (event) => {
     event.recipes.gtceu.assembler("nijika:misc/name_tag")
         .itemInputs("1x #forge:paper", "1x #forge:string")
         .inputFluids(Fluid.of("gtceu:glue").withAmount(100 * FluidAmounts.MILLIBUCKET))
+        .itemOutputs("minecraft:name_tag")
         .EUt(4)
         .duration(20);
 
