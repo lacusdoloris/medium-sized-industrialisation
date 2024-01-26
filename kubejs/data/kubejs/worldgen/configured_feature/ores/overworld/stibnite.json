@@ -16,15 +16,15 @@
 			"template": "bigglobe:ores/ramp_up_taper_out_2",
 			"inputs": {
 				"delay": "768.0L",
-				"peak":  "0.25L",
-				"limit": "0.10L"
+				"peak":  "0.10L",
+				"limit": "0.05L"
 			}
 		},
 		"radius": {
-			"type": "linear_high",
-			"min": 2.5,
-			"max": 5.0,
-			"average": 3.0
+			"type": "linear_low",
+			"min": 1,
+			"max": 2.5,
+			"average": 1.5
 		}
 	}
 }
