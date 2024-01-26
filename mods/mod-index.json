@@ -368,6 +368,15 @@
         "version": "1.15.0",
         "version_id": "LqsTdtjN"
     },
+    "YOs4tZea": {
+        "checksum": "6f847db449177235171c1363e77878cda6059aad3d8278257aff0bbf5a6eae2b6c6fa065528bdbb29e772ed7efe902a96c4987d1bcbf3fb0b7faf8fc8714a498",
+        "name": "Joy of Painting",
+        "pinned": false,
+        "project_id": "YOs4tZea",
+        "selected": true,
+        "version": "1.20.1-1.0.0",
+        "version_id": "rDOGTJ12"
+    },
     "YqFnwJHf": {
         "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
         "name": "Scannable",
@@ -439,6 +448,15 @@
         "selected": true,
         "version": "3.0.1",
         "version_id": "nUnYQlF8"
+    },
+    "hB899VmG": {
+        "checksum": "496d9c6798c073ed35c6650283b98c4d6af7b6e008cc0e15620c18ea2132f5044944dc4a78bf3731fc0747f554795d97895b1204401e0e7e80ced709c999733c",
+        "name": "Exposure",
+        "pinned": false,
+        "project_id": "hB899VmG",
+        "selected": true,
+        "version": "1.2.2",
+        "version_id": "jtAKoQnJ"
     },
     "hIO8IsD8": {
         "checksum": "dfa1d03d69676199cbef6d5b4d85432c4910c57b153deb3287a34850b4325cf99415d433675dfde00c07e6e19645d9bd289e152bffee9dc3bd55b35cc335e085",
