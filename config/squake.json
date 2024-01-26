@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "speedometerPosition": "OFF",
+  "speedometerPosition": "TOP_RIGHT",
   "trimpMultiplier": 1.4,
   "hardCapThreshold": 2.0,
   "softCapThreshold": 1.4,
