@@ -1,0 +1,20 @@
+{
+    "type": "bigglobe:nether_ore",
+    "config": {
+        "blocks": {
+            "minecraft:netherrack": "gtceu:netherrack_tantalite_ore",
+            "minecraft:soul_soil": "gtceu:netherrack_pyrolusite_ore",
+            "minecraft:soul_sand": "gtceu:netherrack_pyrolusite_ore"
+        },
+
+        "chance": "0.35",
+		"radius": {
+			"type": "uniform",
+			"min": 2.0,
+			"max": 3.0,
+			"average": 4.0
+		},
+
+        "biomes": "kubejs:valley_of_souls"
+    }
+}
