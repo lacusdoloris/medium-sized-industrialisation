@@ -1,0 +1,27 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+        "blocks": {
+            "minecraft:stone": "gtceu:cobaltite_ore",
+            "minecraft:cobblestone": "gtceu:cobaltite_ore",
+            "minecraft:andesite": "gtceu:andesite_cobaltite_ore",
+            "minecraft:diorite": "gtceu:diorite_cobaltite_ore",
+            "minecraft:granite": "gtceu:granite_cobaltite_ore",
+            "minecraft:deepslate": "gtceu:deepslate_cobaltite_ore",
+            "minecraft:tuff": "gtceu:tuff_cobaltite_ore",
+            "minecraft:basalt": "gtceu:basalt_cobaltite_ore"
+        },
+
+        "chance": [
+            "double line = unmixLinear(512.0L, 1024.0L, distance_below_max_y)",
+			"double curve = (1.0L - exp(-line)) * 0.5L",
+			"return(curve * max(`overworld/temperature`, 0.0L) ^ 2)"
+        ],
+		"radius": {
+			"type": "linear_low",
+			"min": 2.5,
+			"max": 6.0,
+			"average": 3.0
+		}
+	}
+}
