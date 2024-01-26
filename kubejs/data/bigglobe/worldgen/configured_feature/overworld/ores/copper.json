@@ -12,14 +12,14 @@
 			"template": "bigglobe:ores/exponential",
 			"inputs": {
 				"delay": "512.0L",
-				"peak":  "1.0L",
+				"peak":  "0.8L",
 				"limit": "0.0L"
 			}
 		},
 		"radius": {
 			"type": "average",
 			"min": 2.5,
-			"max": 8.0,
+			"max": 6.0,
 			"average": 3.5
 		}
 	}
