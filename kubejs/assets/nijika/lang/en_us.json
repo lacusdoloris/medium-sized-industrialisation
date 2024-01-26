@@ -5,6 +5,7 @@
     "gtceu.bessemer_smelting": "Bessemer Converter",
 
     "block.create_new_age.magnetite_block": "Basic Magnet",
+    "block.create_new_age.redstone_magnet": "Red Alloy Magnet",
     "block.create_new_age.fluxuated_magnetite": "Fluxated Magnet",
 
     "block.create.brass_casing": "Copper Alloy Casing",

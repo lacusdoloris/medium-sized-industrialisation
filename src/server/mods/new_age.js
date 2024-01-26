@@ -22,6 +22,12 @@ export const adjustCreateNewAgeRecipes = (event) => {
         {F: "#forge:foils/magnetic_iron", I: "#forge:storage_blocks/iron"}
     ).id("nijika:mods/new_age/basic_magnet");
 
+    event.recipes.gtceu.assembler("nijika:mods/new_age/redstone_magnet")
+        .itemInputs("1x create_new_age:magnetite_block", "4x gtceu:red_alloy_single_wire")
+        .itemOutputs("create_new_age:redstone_magnet")
+        .EUt(32)
+        .duration(40);
+
     event.shaped(
         "1x create_new_age:fluxuated_magnetite",
         ["FFF", "FMF", "FFF"],
