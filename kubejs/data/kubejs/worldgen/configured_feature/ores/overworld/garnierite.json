@@ -1,0 +1,30 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+        "blocks": {
+            "minecraft:stone": "gtceu:garnierite_ore",
+            "minecraft:cobblestone": "gtceu:garnierite_ore",
+            "minecraft:andesite": "gtceu:andesite_garnierite_ore",
+            "minecraft:diorite": "gtceu:diorite_garnierite_ore",
+            "minecraft:granite": "gtceu:granite_garnierite_ore",
+            "minecraft:deepslate": "gtceu:deepslate_garnierite_ore",
+            "minecraft:tuff": "gtceu:tuff_garnierite_ore",
+            "minecraft:basalt": "gtceu:basalt_garnierite_ore"
+        },
+
+		"chance": {
+			"template": "bigglobe:ores/ramp_up_taper_out_2",
+			"inputs": {
+				"delay": "700.0L",
+				"peak": "0.166L",
+				"limit": "0.400L"
+			}
+		},
+		"radius": {
+			"type": "linear_low",
+			"min": 2.5,
+			"max": 6.0,
+			"average": 3.0
+		}
+	}
+}
