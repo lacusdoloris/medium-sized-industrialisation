@@ -60,6 +60,10 @@ export const addBessemerMultiblock = (builder) => {
     builder
         .pattern(patternCallback)
         .rotationState(RotationState.NON_Y_AXIS)
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_heatproof",
+            "gtceu:block/multiblock/primitive_blast_furnace"
+        )
         .recipeType("bessemer_smelting")
         .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
         // what could this mean?
