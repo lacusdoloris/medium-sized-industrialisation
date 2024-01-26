@@ -90,13 +90,13 @@
         "version_id": "tr2ZGtz4"
     },
     "692GClaE": {
-        "checksum": "cfb9c15e873535644c3adffc4b8f7fdab611c58c61974ecbd2162423cf946e518f6ba3cc969d8a45ba22cfce1c2a1f37500a7d1c8d286f652bd873e06a1d08f7",
+        "checksum": "05b0a8d27e7551454b1f53957ca22c315f7a48187d4a5cb2bf48475d757cf6b57e2a0aca332a607af0a7b8bc65009aa96e0b3806dd70bba338ed264aef7426f4",
         "name": "Modonomicon",
         "pinned": false,
         "project_id": "692GClaE",
         "selected": false,
-        "version": "1.20.1-1.55.1",
-        "version_id": "lYhwRI1i"
+        "version": "1.20.1-1.57.0",
+        "version_id": "azSJZxvc"
     },
     "73mSSnCf": {
         "checksum": "67e3e6ea5a7960f541d7fd1f92553f0d63f7c203dc708af5b7a0e6a9840fba5097eff85cddf0c2ef4be109455cc7a21945b3af64bafa2ef267bf9a89e98a6c5d",
@@ -216,13 +216,13 @@
         "version_id": "dyO0fezT"
     },
     "EuTS81Z3": {
-        "checksum": "a77ebc3fd25f28cf31c84f7773b19d8c4406e7e3cfae10e0ee25d44cc701f761bc61dc76544310f99c50a9fa98579701f5ff1ea6cc6b759275fa6057d85d751e",
+        "checksum": "5281f7910a9b2d8ea49499894656a43d4180a591383c9cf0ecce755537d21b2da6d49c9f1b624d9325f94a7d6c5789d5e74eae0bbece2ccb7da9030f059d17da",
         "name": "Modular Routers",
         "pinned": false,
         "project_id": "EuTS81Z3",
         "selected": true,
-        "version": "12.1.0",
-        "version_id": "KCWBJtIT"
+        "version": "12.1.1",
+        "version_id": "3QDNtJUd"
     },
     "FTeXqI9v": {
         "checksum": "b9c785d6d2385f12864db2ed8a232ca5284c7d19249ba90c8f6d142988d8249a65d4fb9308858af26a36eff16b820a40f3346c566d89b61fe26ef0cbc83bc71f",
@@ -549,13 +549,13 @@
         "version_id": "kC6SY4Zp"
     },
     "sbJh4AZw": {
-        "checksum": "e2eda86b7449c6e4ad41a5679997a0f96d86b043c64b687fc11cfb4325fe906e80d51d0f34aa7d7925ef46a926389be0759e8f9f057ff282dbe014d66f867c27",
+        "checksum": "93242789d69c6ad2e866f280f93ac5ac6bd49d0642c909184df74f7374e18ceffae49156b3b981a225bc0d40df24d4882b90be64835ba003ec4ae2ae25791f4b",
         "name": "Occultism",
         "pinned": false,
         "project_id": "sbJh4AZw",
         "selected": true,
-        "version": "1.20.1-1.112.0",
-        "version_id": "m3wNBzwW"
+        "version": "1.20.1-1.113.0",
+        "version_id": "iHMRIJnh"
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
@@ -594,13 +594,13 @@
         "version_id": "ilCfbKZq"
     },
     "u58R1TMW": {
-        "checksum": "1ad1b08900ba9d61d56ce2639903a48d72d22d6862f14380d02f6cf4c88ae882c9da22ad317db79fdeba5430f59c7edc8d1a8126f584ffab0c4eaf0a62a2c09e",
+        "checksum": "76830d626176396bfa8338a0d716b6af3047d50bbd55e1ba95dae9dbe18b4cde23696010bfad0bc0e5d330ed6e6370ecf286f687fbff0ce79f0f9bc7303fec78",
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.33+1.20.1",
-        "version_id": "bkH1saJX"
+        "version": "1.0.0-beta.34+1.20.1",
+        "version_id": "Z8MT1gHr"
     },
     "u6dRKJwZ": {
         "checksum": "c6eb4078b21e465a331bd64ef0460b6d0217dab4036c82a83dea9a6b7c145e7c5fee2015ac662490eada7c160cc8388ec70cb97fe31658866b36a2697a7a0ec2",
@@ -612,13 +612,13 @@
         "version_id": "HU1FUi8s"
     },
     "uOVMgoil": {
-        "checksum": "b2630a6b38e292f7d39fc6106e5eec2dc3001df4a6091bb726222bdacaf19ae2ec52c0072b249aa752e362e414eb876f38cc23f96416d7c2a7950df2dc7ff8ae",
+        "checksum": "ad51da4a4269d7a2f1a93036897eb12ba8751d86454f979ce1f21e41a79218a860b4c78d0cfaa1a63c9598f21b6fe40a2148a98beb06de05056cf9a334decacf",
         "name": "Theurgy",
         "pinned": false,
         "project_id": "uOVMgoil",
         "selected": true,
-        "version": "1.20.1-1.12.2",
-        "version_id": "lF7nptyU"
+        "version": "1.20.1-1.14.1",
+        "version_id": "j4Yc2J93"
     },
     "umyGl7zF": {
         "checksum": "73afceaf53e82b98b07c9ca357735789da658a29f8b531157e883383b7f5973999f85273101d7f23993b7476a03553adb146439b50993d827adf03b33869fbf8",
