@@ -1,5 +1,9 @@
 {
     "material.gtceu.cooperite": "Cooperite",
+    "material.gtceu.iron_iii_chloride": "Iron(III) Chloride",
+
+    "material.nijika.orpiment": "Orpiment",
+    "material.nijika.arsenic_trichloride": "Arsenic Trichloride",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
