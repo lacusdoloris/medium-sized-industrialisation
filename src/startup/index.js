@@ -3,6 +3,7 @@
 
 import { MODPACK_SETTINGS } from "../settings";
 import { getMaterial } from "../shared/utils";
+import { addMaterials, fixupCustomMaterialProperties } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
 
@@ -16,10 +17,21 @@ export const customiseMaterials = (event) => {
     getMaterial("wrought_iron").addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
 };
 
+/**
+ * @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event
+ */
 GTCEuStartupEvents.registry("gtceu:material", (event) => {
+    addMaterials(event);
+
     customiseMaterials(event);
 });
 
+
+// Insane kubejs bug: This just inexplicably doesn't fucking work. It complains about 
+// "missing extra".
+/*GTCEuStartupEvents.materialModification("gtceu:material", (event) => {
+
+})*/
 
 GTCEuStartupEvents.registry("gtceu:machine", (event) => {
     addAllMachineTypes(event);
