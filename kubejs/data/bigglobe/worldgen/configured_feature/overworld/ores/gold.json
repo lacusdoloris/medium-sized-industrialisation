@@ -2,11 +2,14 @@
 	"type": "bigglobe:overworld_ore",
 	"config": {
 		"blocks": {
-			"minecraft:stone":             "minecraft:gold_ore",
-			"minecraft:andesite":          "gtceu:andesite_gold_ore",
-			"minecraft:diorite":           "gtceu:diorite_gold_ore",
-			"minecraft:granite":           "gtceu:granite_gold_ore",
-			"minecraft:deepslate":         "minecraft:deepslate_gold_ore"
+            "minecraft:stone": "gtceu:gold_ore",
+            "minecraft:cobblestone": "gtceu:gold_ore",
+            "minecraft:andesite": "gtceu:andesite_gold_ore",
+            "minecraft:diorite": "gtceu:diorite_gold_ore",
+            "minecraft:granite": "gtceu:granite_gold_ore",
+            "minecraft:deepslate": "gtceu:deepslate_gold_ore",
+            "minecraft:tuff": "gtceu:tuff_gold_ore",
+            "minecraft:basalt": "gtceu:basalt_gold_ore"
 		},
 		"chance": [
 			"double line = unmixLinear(128.0L, 384.0L, distance_below_max_y)",

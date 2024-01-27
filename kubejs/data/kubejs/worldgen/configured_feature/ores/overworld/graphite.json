@@ -1,0 +1,26 @@
+{
+	"type": "bigglobe:overworld_ore",
+	"config": {
+		"blocks": {
+            "minecraft:stone": "gtceu:graphite_ore",
+            "minecraft:cobblestone": "gtceu:graphite_ore",
+            "minecraft:andesite": "gtceu:andesite_graphite_ore",
+            "minecraft:diorite": "gtceu:diorite_graphite_ore",
+            "minecraft:granite": "gtceu:granite_graphite_ore",
+            "minecraft:deepslate": "gtceu:deepslate_graphite_ore",
+            "minecraft:tuff": "gtceu:tuff_graphite_ore",
+            "minecraft:basalt": "gtceu:basalt_graphite_ore"
+		},
+		"chance": [
+			"double line = unmixLinear(256.0L, 512.0L, distance_below_max_y)",
+			"double curve = 1.0L - exp(-line)",
+			"return(curve * 0.25L)"
+		],
+		"radius": {
+			"type": "linear_high",
+			"min": 1.5,
+			"max": 4.0,
+			"average": 2.5
+		}
+	}
+}

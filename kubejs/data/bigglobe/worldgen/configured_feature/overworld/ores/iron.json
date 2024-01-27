@@ -2,11 +2,14 @@
 	"type": "bigglobe:overworld_ore",
 	"config": {
 		"blocks": {
-			"minecraft:stone":             "minecraft:iron_ore",
-			"minecraft:andesite":          "gtceu:andesite_iron_ore",
-			"minecraft:diorite":           "gtceu:diorite_iron_ore",
-			"minecraft:granite":           "gtceu:granite_iron_ore",
-			"minecraft:deepslate":         "minecraft:deepslate_iron_ore"
+            "minecraft:stone": "gtceu:iron_ore",
+            "minecraft:cobblestone": "gtceu:iron_ore",
+            "minecraft:andesite": "gtceu:andesite_iron_ore",
+            "minecraft:diorite": "gtceu:diorite_iron_ore",
+            "minecraft:granite": "gtceu:granite_iron_ore",
+            "minecraft:deepslate": "gtceu:deepslate_iron_ore",
+            "minecraft:tuff": "gtceu:tuff_iron_ore",
+            "minecraft:basalt": "gtceu:basalt_iron_ore"
 		},
 		"chance": {
 			"template": "bigglobe:ores/exponential",

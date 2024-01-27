@@ -3,7 +3,8 @@
     "minecraft",
     "kubejs",
     "gtceu",
-    "create"
+    "create",
+    "occultism"
   ],
   "stoneStrata": [
     "stone",
@@ -11,7 +12,9 @@
     "deepslate",
     "granite",
     "diorite",
-    "andesite"
+    "andesite",
+    "basalt",
+    "tuff"
   ],
   "tags": [
     "forge:nuggets/{material}",
@@ -76,7 +79,11 @@
     "uranium",
     "zinc"
   ],
-  "priorityOverrides": {},
+  "priorityOverrides": {
+    "forge:ores/iron": "gtceu",
+    "forge:ores/copper": "gtceu",
+    "forge:ores/gold": "gtceu"
+  },
   "customTags": {},
   "tagOwnerships": {},
   "itemTagInheritanceMode": "ALLOW",
