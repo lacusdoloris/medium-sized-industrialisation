@@ -27,7 +27,7 @@ const cleanupManualToolRecipes = (event) => {
     // wires aren't tagged. sigh. use the nuclear option of (gasp) regexps
     event.remove({
         input: "#forge:tools/wire_cutters",
-        output: /gtceu:(.*)_single_wire/,
+        output: /gtceu:.*_single_wire/,
         type: "minecraft:crafting_shaped"
     });
     event.remove({
@@ -39,7 +39,7 @@ const cleanupManualToolRecipes = (event) => {
     // same with pipes
     event.remove({
         input: "#forge:tools/wrenches",
-        output: /gtceu:(?:.*)_(?:tiny|small|normal|large|huge)_(?:fluid|item)_pipe/,
+        output: /gtceu:.*_(?:tiny|small|normal|large|huge)_(?:fluid|item)_pipe/,
         type: "minecraft:crafting_shaped"
     });
 
@@ -54,17 +54,17 @@ const cleanupManualToolRecipes = (event) => {
 
     // remove all hatch/bus/etc recipes that use the screwdriver instead of glass.
     event.remove({
-        output: /(?:.*)_(?:input|output)_(?:hatch|bus)/,
+        output: /.*_(?:input|output)_(?:hatch|bus)/,
         input: "#forge:tools/screwdrivers"
     });
 
     // no more fucking hand-crafted casing recipes either!
     event.remove({
-        output: /(.*)_casing/,
+        output: /.*_casing/,
         input: "#forge:tools/hammers",
     });
     event.remove({
-        output: /(.*)_frame/,
+        output: /.*_frame/,
         input: "#forge:tools/wrenches"
     });
 }
@@ -120,6 +120,18 @@ const removeGTGenerators = (event) => {
     event.remove({output: "gtceu:lv_gas_turbine"});
 }
 
+/**
+ * Cleans up some ore processing recipes that are manually added by GTCEu.
+ * 
+ * The ones controlled by decomposition flags are already disabled.
+ */
+const cleanupGTCEuOreProcessingRecipes = (event) => {
+    event.remove({id: "gtceu:electrolyzer/sphalerite_electrolysis"});
+
+    // manual smelting of the dust to ore, which is not what we want.
+    event.remove({output: "#forge:ingots/zinc", input: /.*sphalerite.*/});
+}
+
 /** @param {Internal.RecipesEventJS} event */
 export const doCleanups = (event) => {
     // misc generic cleanups
@@ -128,11 +140,13 @@ export const doCleanups = (event) => {
     // too easy!
     event.remove({output: "createaddition:alternator"});
 
+    cleanupGTCEuOreProcessingRecipes(event);
+
 
     if (MODPACK_SETTINGS.applyTierAdjustments) {
         // nuke all recycling recipes, they're mismatched to the wrong tier.
-        event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
-        event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_(?:.*)/});
+        event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_.*/});
+        event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_.*/});
         event.remove({type: "gtceu:arc_furnace", input: /.*(?:extruder|casting|empty)_mold/});
         event.remove({type: "gtceu:macerator", input: /.*(?:extruder|casting|empty)_mold/});
 
