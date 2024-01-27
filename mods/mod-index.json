@@ -126,13 +126,13 @@
         "version_id": "kFon4npq"
     },
     "8BmcQJ2H": {
-        "checksum": "55a229d6ba8ff6ed82803c436f55c25fb9751cbb33605b06cd3580f2c83ed3f39eee4bb4b70c616a484c92339426e06ede5af89c7cabb1b3706f111e2d0dc104",
+        "checksum": "d73426a6ab84833e41194434b360a9f702ae8a53ff9c7b20cbd7a78ccad2ad787bf811551db2a7d24581d4da92019bb98916dba0d97c793cb4c19cb26cb76c03",
         "name": "Geckolib",
         "pinned": false,
         "project_id": "8BmcQJ2H",
         "selected": true,
-        "version": "4.4",
-        "version_id": "RsTqpaFp"
+        "version": "4.4.2",
+        "version_id": "pyB0jIsx"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
