@@ -78,6 +78,7 @@
     "minecraft:smooth_sandstone",
     "minecraft:soul_sand",
     "minecraft:soul_soil",
-    "minecraft:blackstone"
+    "minecraft:blackstone",
+    "minecraft:magma_block"
   ]
 }
