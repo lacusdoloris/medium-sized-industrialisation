@@ -2,8 +2,8 @@
 // subfolders. Thank you!
 
 import { MODPACK_SETTINGS } from "../settings";
-import { getMaterial } from "../shared/utils";
-import { addMaterials, fixupCustomMaterialProperties } from "./custom_materials";
+import { getMaterial, iterateOverAllMaterials } from "../shared/utils";
+import { addMaterials } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
 
@@ -15,6 +15,18 @@ export const customiseMaterials = (event) => {
 
     // used for LV pistons
     getMaterial("wrought_iron").addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
+
+    // add the disable_decomposition flag... not that it seems to help.
+    const sulfurContainingMaterials = [
+        "stibnite", "sphalerite", "pyrite", "pentlandite",
+        "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
+        "realgar",
+    ]
+
+    for (let sulfurMaterial of sulfurContainingMaterials) {
+        getMaterial(sulfurMaterial).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
 };
 
 /**

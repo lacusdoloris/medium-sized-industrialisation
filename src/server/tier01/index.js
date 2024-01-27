@@ -1,5 +1,8 @@
 
 // LV, that is.
+
+import { addGalliumArsenicRecipes } from "./gallium_arsenic";
+
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
@@ -32,4 +35,5 @@ export const doTier01Content = (event) => {
         ]
     ).transitionalItem("gtceu:wrought_iron_plate").loops(4).id("nijika:tier01/evil_gear_recipe");
 
+    addGalliumArsenicRecipes(event);
 }
