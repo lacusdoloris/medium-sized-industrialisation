@@ -16,15 +16,19 @@ export const customiseMaterials = (event) => {
     // used for LV pistons
     getMaterial("wrought_iron").addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
 
-    // add the disable_decomposition flag... not that it seems to help.
-    const sulfurContainingMaterials = [
+    // add the disable_decomposition flag to remove auto-generated decomposition recipes
+    const disableDecompositionMaterials = [
+        // Sulfur containing materials. These are roasted instead.
         "stibnite", "sphalerite", "pyrite", "pentlandite",
         "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
         "realgar",
+        // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
+        // trichloride.
+        "arsenic_trioxide",
     ]
 
-    for (let sulfurMaterial of sulfurContainingMaterials) {
-        getMaterial(sulfurMaterial).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    for (let matName of disableDecompositionMaterials) {
+        getMaterial(matName).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
 
 };
