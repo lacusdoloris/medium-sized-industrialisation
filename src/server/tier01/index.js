@@ -6,7 +6,10 @@ import { addGalliumArsenicRecipes } from "./gallium_arsenic";
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
-        .itemInputs("64x #forge:ingots/iron")
+        .itemInputs(
+            "64x #forge:ingots/iron",
+            "8x create:limestone",
+        )
         .inputFluids(Fluid.of("gtceu:air").withAmount(10 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_ingot")
         .EUt(128)
@@ -14,7 +17,10 @@ export const doTier01Content = (event) => {
         .duration(20 * 60 * 20);  // 20 minutes at MV
 
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_block_bessemer_process")
-        .itemInputs("64x #forge:storage_blocks/iron")
+        .itemInputs(
+            "64x #forge:storage_blocks/iron",
+            "64x create:limestone",
+        )
         .inputFluids(Fluid.of("gtceu:air").withAmount(90 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_block")
         .EUt(128)

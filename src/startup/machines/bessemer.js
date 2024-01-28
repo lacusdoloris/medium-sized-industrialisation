@@ -5,7 +5,7 @@
 export const addBessemerRecipeType = (type) => {
     type
         .setEUIO("in")
-        .setMaxIOSize(2, 1, 1, 0)
+        .setMaxIOSize(5, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BOILER);
 }
@@ -18,30 +18,29 @@ export const addBessemerMultiblock = (builder) => {
     const patternCallback = (definition) => {
         return FactoryBlockPattern.start()
             .aisle(
-                // Outer back wall: two jutting out firebricks
-                "#######", "#######", "FFFFFFF", "FFFFFFF", "#######", "#######",
+                // Outer back wall: two jutting out invar
+                "#######", "#######", "IIIIIII", "IIIIIII", "#######", "#######",
             )
             .aisle(
-                // Inner back wall: invar bottom, firebricks, full limestone, firebricks
-                "#IIIII#", "#FFFFF#", "FLLLLLF", "FLLLLLF", "#FFFFF#", "#FFFFF#",
+                // Inner back wall: invar bottom, firebrick wall
+                "#IIIII#", "#FFFFF#", "FFFFFFF", "FFFFFFF", "#FFFFF#", "#FFFFF#",
             )
             .aisle(
                 // Middle gap: invar floor, firebricks wall, two layeers of limestone, firebricks
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIIIF#",
+                "#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#",
             )
             .aisle(
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIMIF#",
+                "#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#",
             )
             .aisle(
-                "#IIIII#", "#FXXXF#", "FLXXXLF", "FLXXXLF", "#FXXXF#", "#FIIIF#",
+                "#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#",
             )
             .aisle(
-                // Inner front wall: invar bottom, firebricks, full limestone, firebricks
-                "#IIIII#", "#FFFFF#", "FLLLLLF", "FLLLLLF", "#FFFFF#", "#FFFFF#",
+                "#IIIII#", "#FFFFF#", "FFFFFFF", "FFFFFFF", "#FFFFF#", "#FFFFF#",
             )
             .aisle(
                 // Outer front wall: two jutting out firebricks and controller.
-                "#######", "#######", "FFFCFFF", "FFFFFFF", "#######", "#######",
+                "#######", "#######", "IIICIII", "IIIIIII", "#######", "#######",
             )
             .where("#", Predicates.any())
             .where("X", Predicates.air())
@@ -51,7 +50,6 @@ export const addBessemerMultiblock = (builder) => {
             )
             .where("M", Predicates.abilities(PartAbility.MUFFLER))
             .where("F", Predicates.blocks("gtceu:firebricks"))
-            .where("L", Predicates.blocks("create:cut_limestone"))
             .where("C", Predicates.controller(Predicates.blocks(definition.get())))
             .build()
 
