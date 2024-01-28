@@ -183,7 +183,7 @@ machines:
 
   # Whether to enable the Maintenance Hatch, required for Multiblocks.
   # Default: true
-  enableMaintenance: true
+  enableMaintenance: false
 
   # Whether the machine's circuit slot need to be inserted a real circuit.
   ghostCircuit: true
