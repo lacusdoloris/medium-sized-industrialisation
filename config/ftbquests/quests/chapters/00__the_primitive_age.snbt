@@ -219,6 +219,7 @@
 		}
 		{
 			dependencies: ["714A323489D928B7"]
+			dependency_requirement: "one_started"
 			description: [
 				"The old reliable &aCoke Oven&r... everyone's used one of these. From the ancient &dRailcraft&r coke ovens (ironically, a mod mostly known for its multiblock machines and not its minecart functionality) to the more modern &dImmersive Engineering&r ones, they're a staple of functionally every single progression modpack ever made."
 				""
@@ -228,6 +229,37 @@
 			]
 			id: "5C1D408B89B4A2FF"
 			optional: true
+			rewards: [{
+				id: "66974E1BF97896D5"
+				item: {
+					Count: 1b
+					id: "exposure:photograph"
+					tag: {
+						Biome: "bigglobe:temperate_plains"
+						Dimension: "minecraft:overworld"
+						Flash: 1b
+						Id: "Fuyukaii_27821"
+						LightLevel: 4
+						Photographer: "Fuyukaii"
+						PhotographerId: [I;
+							836220340
+							-961525933
+							-1422374641
+							1605736399
+						]
+						Pos: [
+							-5769
+							48
+							-7853
+						]
+						SunAngle: 2.618705f
+						Timestamp: "2024-01-26_13.22.14"
+						Type: "black_and_white"
+						Weather: "Clear"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "5C43E3C837DDCD18"

@@ -8,20 +8,938 @@
 	id: "10C4569F14DA9A97"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["4E722FB95D8BE0E0"]
-		description: ["Pistons are another &atiered component&r that is used for every machine under the sun."]
-		id: "231C2D836C1F6AF0"
-		tasks: [{
-			count: 8L
-			id: "23BAF385C0FAC091"
-			item: "gtceu:lv_electric_piston"
-			type: "item"
-		}]
-		title: "The Piston"
-		x: -1.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: [
+				"Pistons are another &atiered component&r that is used for every machine under the sun."
+				""
+				"They're made from &awrought iron plates&r, &awrought iron rods&r... and &ca wrought iron gear&r."
+				""
+				"You should only make one of these initially so you don't have to use the evil gear recipe for very long."
+			]
+			id: "231C2D836C1F6AF0"
+			rewards: [{
+				id: "3CA5D3D6E718BF15"
+				item: "minecraft:piston"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23BAF385C0FAC091"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			title: "The Piston"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["231C2D836C1F6AF0"]
+			description: [
+				"The &aExtruder&r is used to make smaller components such as &dgears&r, &dbolts&r, and &dpipes&r. It can also be used to easily make &arubber plates&r, allowing you to scuttle your Create presser."
+				""
+				"This should be the &dvery first&r machine you craft, because being able to make gears easily makes getting pistons easier, which makes getting everything else easier."
+				""
+				"If you're used to other GT packs, most useful extruder recipes &acan now be used in LV!&r (Who knows why it's blocked until MV 90% of the time. Fuck you.)&l"
+			]
+			id: "08D7A9DB2CDE323F"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "217BC0A9259FC677"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			title: "The Extruder"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4E722FB95D8BE0E0"]
+			description: [
+				"You've been spared from dealing with manual tool crafting recipes, but you'll still need some tools."
+				""
+				"The &aSoft Mallet&r turns machines on and off temporarily without losing progress."
+				"The &aWire Cutters&r are used to connect wires in the world to machines. &aRight click&r on a wire with the cutters to connect it on that side."
+				"The &aCrowbar&r is used to pry covers off of machines. More on that later."
+				"The &aScrewdriver&r is used to configure covers. More on that later."
+				""
+				"You might want to consider making a &dtool belt&r to store all of your tools. Additionally, this quest is &9repeatable&r, so if you lose your tools you can access it to get another set."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:rubber_mallet"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 127
+					}
+					HideFlags: 2
+				}
+			}
+			id: "4B215E2BA5E3CB58"
+			rewards: [
+				{
+					id: "185AC29AEEA4608B"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0272F94FD166F388"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37E4E9F6A5783BE4"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_crowbar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68513D5D70DABE7B"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5FD6EF2A16CF7BBA"
+				item: {
+					Count: 1b
+					id: "gtceu:rubber_mallet"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "Hand Tools"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: [
+				"The &aWiremill&r produces wires from ingots. Simple! It's available as soon as you move into the LV tier."
+				""
+				"This is significantly easier and more efficient than using the rolling machine."
+			]
+			id: "54C9A7C89748F541"
+			shape: "square"
+			tasks: [{
+				id: "1E9CE86287935A2C"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "The Wiremill"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["231C2D836C1F6AF0"]
+			description: [
+				"The &aBender&r, (or &dMetal Bender&r, or &dBending Machine&r, depending on which variety of GT5 you speak)... bends metals."
+				""
+				"It can turn &done ingot&r into &dtwo plates&r, &done plate&r into &dfour foils&r, &dtwo plates&r into a single &double plate&r, and &done rod&r into &done spring%."
+				""
+				"This saves a lot of resources. "
+			]
+			id: "70FD057628EF4DAF"
+			rewards: [{
+				id: "749B0874AFC32963"
+				item: "minecraft:pufferfish"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "18F676F774934113"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "The Gender Bender"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: ["The &aLathe&r produces &arods&r and screws more efficiently than the rolling machine. Even more simple!"]
+			id: "14AB3D330B63391B"
+			shape: "square"
+			subtitle: "The moon."
+			tasks: [{
+				id: "6492E33F64E10AE2"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			title: "The Lathe"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08D7A9DB2CDE323F"]
+			description: [
+				"The &aConveyor&r is both an electronic component needed in various machines and a &acover&r."
+				""
+				"In cover form, it &aautomatically moves items&r from the machine it is attached to into the adjacent inventory, making it easy to automate long chains of machines."
+				""
+				"A side &ddoesn't need to be visible&r to attach covers; you can attach it by holding it and selecting a side on a machine's overlay."
+			]
+			disable_toast: true
+			id: "0CC75241080CDBA9"
+			rewards: [{
+				id: "2CD22F62FBA1F168"
+				item: {
+					Count: 1b
+					id: "minecraft:purple_dye"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"4500 items/minute\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "045A7564381D984F"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			title: "The Yellow Belt"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0CC75241080CDBA9"]
+			description: [
+				"The &aRobot Arm&r is similar to the conveyor; it acts as both a component as a cover. Cover-wise, you can consider it an upgraded version of the conveyor."
+				""
+				"Robot Arms have several cover modes:"
+				""
+				"- &9Transfer Any&r, where it acts identical to a conveyor"
+				"- &9Supply Exact&r, where it will &oonly pull&r from the adjacent inventory if there is at least the number specified available (and not less)"
+				"- &9Keep Exact&r, where it will... keep exactly the amount specified in the machine's inventory and no more."
+			]
+			id: "088540C9AD1B65EA"
+			subtitle: "This one doesn't require copper alloy."
+			tasks: [{
+				id: "182B568241608F83"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			title: "The Inserter"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["088540C9AD1B65EA"]
+			description: ["The &aAssembler&r is one of the core GregTech machines. It's an automated replacement for the standard 3x3 crafting table, but it hass six slots that can take a full stack each."]
+			id: "4818B11226B75EEB"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "We're in the big leagues now, &bchica!&r"
+			tasks: [{
+				id: "6F6DD8091ECF5E55"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "The Assembler"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: ["The &aPolarizer&r is able to convert regular metal into magnetised metal. This saves a lot of redstone."]
+			id: "1C4436903754616D"
+			rewards: [{
+				id: "2D71EEA58C7E2875"
+				item: "create:rose_quartz_lamp"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "4872408A547F81C1"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			title: "The Polack"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4818B11226B75EEB"
+				"14AB3D330B63391B"
+			]
+			description: [
+				"The &aPump&r is used as a component for various fluid-based machines, and also as a cover where it acts similarly to the conveyor module but for fluids."
+				""
+				"You can also turn the pump into a &aFluid Regulator&r which lets it act as if it was a fluid-based robot arm."
+			]
+			id: "39D11D03A4456BD8"
+			tasks: [{
+				id: "16D953E7FBB7FF72"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			title: "Pumping Like Fire"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70FD057628EF4DAF"]
+			description: [
+				"GregTech Machines will sometimes have &crecipe conflicts&r; where the same inputs can have different outputs. (For example, bending into plates vs bending into foils). "
+				""
+				"The solution to thisis the &aprogrammed circuit&r, which controls which recipe to select for a set of given inputs. The circuit is set to a number between 0 and 32. You can see what number a circuit requires by checking the number in EMI. &oIf a recipe doesn't require a circuit, the circuit should be set to 0.&r"
+				""
+				"Thanks to innovations in GTCEu, all machines and multiblock inputs have a &avirtual circuit&r, which lets you customise the circuit number directly. That said, you can still make the physical circuit objects using a single LV circuit."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:programmed_circuit"
+				tag: {
+					Configuration: 0
+				}
+			}
+			id: "1E922F8E630A5E38"
+			optional: true
+			tasks: [{
+				id: "1ED8E0B5BE6E138F"
+				title: "The Circuit"
+				type: "checkmark"
+			}]
+			title: "The Programmed Circuit"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E722FB95D8BE0E0"]
+			description: [
+				"A lot of GregTech is based around doing &aore processing&r. Unlike most modpacks, this isn't just a straightforward \"put one ore in, get two dusts out, smelt them for ingots\" and variations within; instead, ore processing is mainly focused on &abyproducts&r."
+				""
+				"For example, from a single piece of &aRaw Iron&r you can also get &dgold&r, &dnickel&r, and &dtin&r dusts. If you press your recipe keybind on a crushed ore, purified ore, dust, or anything inbetween, then there is a special &aEMI tab&r that shows you all the possible byproducts from a specific line of ore."
+				""
+				"This is also a good way to figure out what base ore you need for paticular materials."
+			]
+			id: "5A673563025AEFF6"
+			rewards: [{
+				id: "7E975BC85519E508"
+				item: "gtceu:bronze_plate"
+				type: "item"
+			}]
+			subtitle: "This ain't Mekanism."
+			tasks: [
+				{
+					id: "2E4764D65EF8CDDD"
+					item: "gtceu:lv_forge_hammer"
+					type: "item"
+				}
+				{
+					id: "352D526D5088870E"
+					item: "gtceu:lv_centrifuge"
+					type: "item"
+				}
+				{
+					id: "71BA6083EF1B582B"
+					item: "gtceu:lv_thermal_centrifuge"
+					type: "item"
+				}
+				{
+					id: "0F31DCB00A79DDA5"
+					item: "gtceu:lv_ore_washer"
+					type: "item"
+				}
+			]
+			title: "&9Ore Processing&r"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5A673563025AEFF6"]
+			description: [
+				"&aGallium&r is the second consistuent component of Gallium Arsenide. Unlike Arsenic, it is &cnot directly available as an ore&r."
+				""
+				"Instead, you can only get it as a &9byproduct&r, specifically:"
+				""
+				"- Washing &dcrushed Bauxite&r ore with &dsodium persulfate&r (which can be obtained from sodium &obisulfate&r)"
+				"- (Thermally) centrifuging various forms of &aSphalerite&r."
+				""
+				"The easiest mechanism currently is via &dSphalerite&r, as sodium persulfate is difficult to obtain currently."
+			]
+			id: "562F1FD212BAE2EC"
+			tasks: [{
+				count: 16L
+				id: "65CD884F2C71EDD3"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			title: "Melts In Your Mouth"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4818B11226B75EEB"]
+			description: [
+				"With the Assembler, you can now create more advanced magnets, with &atwice the power!&r "
+				""
+				"This will get you some extra juice from your turbines, to the tune of 180RF/t per rotor, but at the cost of extra stress used."
+			]
+			id: "3034F479211F3314"
+			optional: true
+			tasks: [{
+				id: "4ADBCBEB2AA63F4C"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			title: "Better Magnets"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: [
+				"The &aArc Furnace&r's primary useages are to turn sand into glass without needing to go through glass dust and to make &dannealed copper&r."
+				""
+				"Both of these requiree &doxygen&r. You can get it through various means:"
+				""
+				"- Centrifuging &aair&r collected from the atmosphere. This is extremely slow and energy-intensive, but you'll need air for steel later."
+				"- Electrolysing &adirt water&r collected from... well, everywhere. This is also slow and very energy-intensive."
+				"- Electrolysing &asilicon dioxide&r, obtained from crushing various rocks. This produces a lot of oxygen, but also produces a lot of silicon as a byprduct."
+				""
+				"There's lots of other mechanisms for getting oxygen; it's up to you. It's one of the most common resources for a reason."
+			]
+			id: "6F15C78B0DCAE5EF"
+			shape: "square"
+			tasks: [{
+				id: "16DE841258FAA9B9"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			title: "The Arc Furnace"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A673563025AEFF6"]
+			description: [
+				"&aArsenic&r is one of the constituent components of Gallium Arsenide, which is required for the next level of circuits."
+				""
+				"There are two kinds of arsenic ore available; &aRealgar&r ore or(e) &aOrpiment&r ore. Whilst either one will work, this quest calls for Orpiment due unavoidable bias towards custom materials."
+			]
+			id: "6A52BBC86042392D"
+			tasks: [{
+				count: 16L
+				id: "36BF48D39D5B5840"
+				item: { Count: 16b, id: "gtceu:raw_orpiment" }
+				type: "item"
+			}]
+			title: "Horrible Science"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A52BBC86042392D"
+				"562F1FD212BAE2EC"
+				"0DBEB940868D3DB7"
+			]
+			description: [
+				"&aGallium Arsenide&r is used to create diodes (in MV) and silicon wafers (later on). "
+				""
+				"It's acquired via a reaction between gallium and &dArsenic Trichloride&r. You'll follow this basic process:"
+				""
+				"1. &eRoast&r your chosen Arsenic ore in the EBF to get &9Arsenic Trioxide&r, as well as &9Sulfur Dioxide&r runoff (capture it; it'll be useful later)."
+				"2. React your &9Arsenic trioxide&r with &9hydrochloricc acid&r to get &9Arsenic Trichloride&r."
+				"3. Finally, react the &9Arsenic trichloride&r with &9Gallium Dust&r to get &aGallium Arsenide&r and &dleftover chlorine gas&r."
+				""
+				"This is a &aclosed loop&r reaction with respect to the chlorine and hydrogen; whilst you need a small feedstock of chlorine gas to get the reaction started, the total amount of chlorine is preserved throughout it and can be reused infinitely."
+				""
+				"The initial amount of chlorine can be gotten from &9electrolysing&r &dsalt&r, which is found in veins under the ocean."
+			]
+			id: "5769F2603588F0AC"
+			min_width: 400
+			tasks: [{
+				id: "242BB23E85F5D67D"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			title: "&aGallium Arsenide&r"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A673563025AEFF6"]
+			description: [
+				"&aNickel&r is one of the most important metals of both the LV and MV tier for its usage in &aalloying&r."
+				""
+				"It can be obtained from a few sources:"
+				""
+				"- As a &9byproduct&r of &dgold&r and &diron&r ore processing"
+				"- From directly smelting &aGarnierite&r"
+				"- From converting &aPentlanditee&r into &aGarnierite&r, but this requires a blast furnace"
+			]
+			id: "46D70A2B8A0278E2"
+			tasks: [{
+				id: "4638974304A87829"
+				item: "gtceu:nickel_dust"
+				type: "item"
+			}]
+			title: "Taste The Love!"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["46D70A2B8A0278E2"]
+			description: [
+				"Invar is one of the two essential &anickel alloys&r used throughout the early game, alongside Cupronickel."
+				""
+				"It's made by smelting Nickel and &dIron&r together in a alloy furnace. (Or mixing the dust, if you're well and truly into the ore processing.)"
+			]
+			id: "75C5A58A05A22DC6"
+			tasks: [{
+				id: "0C245C7F6A0904FC"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			title: "Invar"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B16F5D78B3EDC4D"
+				"75C5A58A05A22DC6"
+			]
+			description: [
+				"The humble &aElectric Blast Furnace&r... upon making one of these you will be truly inducted into the Cult of GregTech."
+				""
+				"The EBF is likely to be the first &dmodular multiblock&r you build; modular multiblocks are multiblocks with a fixed shape but free layout of &ainput and output buses/hatches&r. For example, you can have your inputs on the top layers of the multiblock and your outputs on the bottom, and vice-versa."
+				""
+				"In this case, the buses and hatches replace the &dheat-proof invar casings&r at the top and bottom of the multiblock. "
+				""
+				"This quest calls for a single &9input bus&r (buses are for item inputs), a single &9input hatch&r (hatches are for fluid inputs), output forms of said buses and hatches, two &9LV Energy Hatches&r, and a &dmuffler hatch&r (&odo not block the output of the muffler hatch!&r). These can be placed anywhere you wish on the structture."
+				""
+				"Why two energy hatches? All EBF recipes take &dmedium voltage&r by default. Energy hatches take in two amps of energy each; this means two hatches (at four amps total) will get you up to Medium Voltage inside the multiblock. "
+				""
+				"Finally, all multiblocks can &ashare walls&r, meaning that you require significantly less resources to build your second blast furnace if you combine them together. A 2x2 block of EBFs has just enough room to fit all of the required hatches and buses on which will save you a lot of invar and cupronickel. They can even share buses for easier logistics (e.g. one output bus for all four machines)."
+			]
+			id: "0DBEB940868D3DB7"
+			min_width: 500
+			rewards: [
+				{
+					count: 10
+					id: "2816A5C8E514E65C"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+				{
+					id: "3652CA847AD2DC14"
+					item: {
+						Count: 1b
+						id: "exposure:photograph"
+						tag: {
+							Biome: "bigglobe:temperate_plains"
+							Dimension: "minecraft:overworld"
+							Id: "Fuyukaii_639806"
+							LightLevel: 11
+							Photographer: "Fuyukaii"
+							PhotographerId: [I;
+								836220340
+								-961525933
+								-1422374641
+								1605736399
+							]
+							Pos: [
+								9648
+								88
+								9267
+							]
+							SunAngle: 4.1768837f
+							Timestamp: "2024-01-28_07.29.27"
+							Type: "black_and_white"
+							Weather: "Clear"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "What is this and how do I get rid of it?"
+			tasks: [
+				{
+					id: "0D37D94A3274AE80"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6A28C065148A9304"
+					item: { Count: 10b, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "06F237CA648A342D"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "594332F0AC9070B6"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "52C5E2A1ED834251"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "2B441A2B3D9B38E6"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "50F19EC02019A89C"
+					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "46877A03FFB335D5"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			title: "&a&oElectric Blast Furnace&r"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39B7626451CD6E3E"]
+			description: [
+				"The &aBessemer Converter&r turns iron into steel. It uses a modified form of the &dbessemer process&r invented by Henry Bessemer known as the Gilchrist-Thomas process (using limestone, rather than clay)."
+				""
+				"The Bessemer Converter takes a long time to run - twenty minutes for ingots, forty minutes for blocks. (That's 18.75 seconds an ingot for the former, and 4.1 seconds per ingot for the latter), but in exchange it runs in entire stacks."
+				""
+				"This will require a significant investment into your &aenergy producition&r; you might want to consider having a full &d16x LV Battery Buffer&r which stores almost enough energy to run the entire block-based process in one go."
+			]
+			icon: "gtceu:bessemer_furnace"
+			id: "3275A5A5348F1327"
+			min_width: 400
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5D4E1B49450AAF21"
+					item: "gtceu:bessemer_furnace"
+					type: "item"
+				}
+				{
+					count: 57L
+					id: "57970D7B56F26B8F"
+					item: "gtceu:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 100L
+					id: "690F39EA4D9B8431"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+				{
+					id: "1DBC23C6336849FA"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "362245643528AC82"
+					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "03DE92D433FCB735"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "338EC2F4B52B0F8A"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			title: "&aBessemer Converter&r"
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4818B11226B75EEB"]
+			description: [
+				"The &dPhenolic Printed Circuit Board&r has &cnothing to do&r with &9Phenol&r. Sorry, Nomifactory fans."
+				""
+				"1. You can get &dWood Pulp&r from centrifuging rubber logs. If you hadn't already set up a rubber farm long before this, this should be your cue."
+				"2. You get &dGlue&r from centrifuging sticky resin."
+				"3. Assembling wood pulp and glue will get you a &dPhenolic Circuit Board&r."
+				"4. You can then use either &dSilver Wire&r or &dSilver Foil&r (plus some scary chemicals) to get your PCB."
+			]
+			id: "376F71A3A12A9EC1"
+			min_width: 400
+			tasks: [{
+				id: "56CD6B92135E31EB"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Better Circuit Boards"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5769F2603588F0AC"]
+			description: [
+				"The &aDiode&r is the next level of electronic component, replacing the vacuum tube from the LV Circuit."
+				""
+				"You should prefer using &dannealed copper&r for this over regular copper, as you get more diodes for your input."
+				""
+				"You can get liquid glass from using a &aFluid Extractor&r on... glass?"
+			]
+			id: "357D61A6F4801A4D"
+			tasks: [{
+				count: 2L
+				id: "73D15A0751CCD401"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			title: "Not Light Emitting"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3275A5A5348F1327"]
+			description: [
+				"Congratulations! You've made your first steel!"
+				""
+				"You should switch over to the block-based steelmaking process as soon as possible as it is drastically more efficient than the ingot-based process."
+			]
+			id: "35769AB6DF5D584B"
+			tasks: [{
+				count: 64L
+				id: "6541296960D3EFED"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "Sheffield"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"376F71A3A12A9EC1"
+				"357D61A6F4801A4D"
+				"35769AB6DF5D584B"
+			]
+			description: ["With your first &aMedium Voltage&r circuits and a steady supply of steel, you can now move into the MV Tier."]
+			id: "535977705E793982"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "444B92D12F7467FF"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "&9Medium Voltage!&r"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["46D70A2B8A0278E2"]
+			description: [
+				"A lot of multiblocks in GregTech take &acoil blocks&r, which can be thought of as forming a separate tier hierachy to the regular voltage tiers. Higher tier coils generally &dmake machines faster&r; in the case of the EBF, coils also have a &9temperature&r component which determines the recipes it can process."
+				""
+				"The coil for the LV/MV tier is &aCupronickel&r, which is made of... cupronickel, an alloy of nickel and copper. (And &6Bronze&r. And &6Tin Alloy&r.)"
+				""
+				"A lesser known fact about GregTech is that your vocabulary quickly becomes some variant of \"for fucks sake, more cupronickel coils\"."
+			]
+			id: "1B16F5D78B3EDC4D"
+			tasks: [{
+				id: "710BFB3CAF3C9416"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			title: "Multiblock Coils"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0DBEB940868D3DB7"
+				"0FCE544C59CD00AA"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &aGas Collector&r can be used to gather gases from the atmosphere of a specific dimension."
+				""
+				"This'll be more useful in the MV and HV tiers with &dNether Air&r and &dEnder Air&r, but regular Overworld Air is used for the Bessemer process (and also as an easy source of air)."
+				""
+				"You need Zinc for the item filters, which requires a blast furnace to process the Sphalerite."
+			]
+			id: "39B7626451CD6E3E"
+			tasks: [{
+				id: "3410FEFBDF9BDFE9"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			title: "Gas Collection"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0DBEB940868D3DB7"]
+			description: [
+				"By default &amultiblock maintenence is disabled.&r "
+				""
+				"Whilst the multiblock view may call for a maintenence hatch in some cases, you don't need to provide one. This can be toggled in the GTCEu config; the recipes all still exist."
+			]
+			icon: "gtceu:duct_tape"
+			id: "438331959025E8B3"
+			tasks: [{
+				id: "21B424893C761EB6"
+				title: "A Note On Maintenance"
+				type: "checkmark"
+			}]
+			title: "A Note On Maintenence"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A673563025AEFF6"]
+			description: [
+				"Nickel-Cadmium batteries are banned in the European Union due to the fact Cadmium is extremely toxic to life."
+				""
+				"Luckily, you're not subject to 2006/66/EC so you can make as many NiCa batteries as you want. "
+				""
+				"Combining &acadmium dust&r (which is exclusively a byproduct of sphalerite, at this point) with &anickel foils&r and &dpaper&r (for the insulating material in the battery swiss roll) inside a battery casing will get you some nice LV batteries. These store ~160 seconds of LV energy and can be placed inside a &aBattery Buffer&r to provide power to your machines."
+				""
+				"What are battery cases made of? Battery Alloy! This is an alloy of &aantimony&r and &alead&r; the former can be found in tiny Stibnite deposits all over the world, or as a byproduct of processing various other ores. Lead is made simply from Galena ore."
+			]
+			id: "3134403B5536B7A1"
+			min_width: 400
+			tasks: [
+				{
+					id: "52BE5C75F41C1259"
+					item: "gtceu:lv_cadmium_battery"
+					type: "item"
+				}
+				{
+					id: "4046B3B3E4CE9534"
+					item: "gtceu:lv_battery_buffer_4x"
+					type: "item"
+				}
+			]
+			title: "Assault And Battery"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"You might unlock this quest before getting a blast furnace, as you can get zinc dust as a byproduct of ore processing."
+				""
+				"Shhhh! Don't tell anyone."
+			]
+			id: "0FCE544C59CD00AA"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "2D954342D62CDC9E"
+				item: "exposure:camera"
+				type: "item"
+			}]
+			subtitle: "... you wanted to live in a world without zinc!"
+			tasks: [{
+				count: 64L
+				id: "4769E875026949AB"
+				item: "gtceu:zinc_dust"
+				type: "item"
+			}]
+			title: "Well, Jimmy..."
+			x: 4.0d
+			y: 3.0d
+		}
+	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron"]
 	title: "LV - The End of the World With You"
 }

@@ -24,5 +24,15 @@
     "tag.item.nijika.valid_boat_bottoms": "Boat Materials",
     "tag.item.nijika.glues": "Glues",
     "tag.item.nijika.carbon_rich_dusts": "Carbon-rich Dusts",
-    "tag.item.nijika.copper_alloy_plates": "Copper Alloy Plates"
+    "tag.item.nijika.copper_alloy_plates": "Copper Alloy Plates",
+
+    "tag.item.gtceu.circuits.lv": "Low Voltage Circuits",
+    "tag.item.gtceu.circuits.mv": "Medium Voltage Circuits",
+    "tag.item.gtceu.circuits.hv": "High Voltage Circuits",
+    "tag.item.gtceu.circuits.ev": "Extreme Voltage Circuits",
+    "tag.item.gtceu.circuits.iv": "Insane Voltage Circuits",
+    "tag.item.gtceu.circuits.luv": "Ludicrous Voltage Circuits",
+    "tag.item.gtceu.circuits.zpm": "ZPM Circuits",
+    "tag.item.gtceu.circuits.uv": "UV Circuits",
+    "tag.item.gtceu.circuits.uhv": "UHV Circuits"
 }
