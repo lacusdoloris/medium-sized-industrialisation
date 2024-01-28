@@ -23,7 +23,7 @@
 		"radius": {
 			"type": "linear_low",
 			"min": 2.5,
-			"max": 6.0,
+			"max": 5.0,
 			"average": 3.0
 		}
 	}
