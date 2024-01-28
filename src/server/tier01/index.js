@@ -5,6 +5,8 @@ import { addGalliumArsenicRecipes } from "./gallium_arsenic";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
+    event.remove({output: "#forge:ingots/steel", type: "gtceu:electric_blast_furnace"});
+
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
         .itemInputs(
             "64x #forge:ingots/iron",
