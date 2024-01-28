@@ -8,6 +8,10 @@
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
 
+    "item.gtceu.lv_cadmium_battery": "Nickel-Cadmium Battery",
+    "item.gtceu.mv_cadmium_battery": "Nickel-Metal Hydride Battery",
+    "item.gtceu.hv_lithium_battery": "Lithium-Ion Battery",
+
     "block.create_new_age.magnetite_block": "Basic Magnet",
     "block.create_new_age.redstone_magnet": "Red Alloy Magnet",
     "block.create_new_age.fluxuated_magnetite": "Fluxated Magnet",

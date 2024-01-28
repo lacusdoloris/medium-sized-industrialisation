@@ -16,6 +16,9 @@ export const customiseMaterials = (event) => {
     // used for LV pistons
     getMaterial("wrought_iron").addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR);
 
+    // used for nickel-cadmium batteries
+    getMaterial("nickel").addFlags(GTMaterialFlags.GENERATE_FOIL);
+
     // add the disable_decomposition flag to remove auto-generated decomposition recipes
     const disableDecompositionMaterials = [
         // Sulfur containing materials. These are roasted instead.

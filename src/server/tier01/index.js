@@ -12,7 +12,7 @@ export const doTier01Content = (event) => {
         )
         .inputFluids(Fluid.of("gtceu:air").withAmount(10 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_ingot")
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(1)
         .duration(20 * 60 * 20);  // 20 minutes at MV
 
@@ -23,7 +23,7 @@ export const doTier01Content = (event) => {
         )
         .inputFluids(Fluid.of("gtceu:air").withAmount(90 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_block")
-        .EUt(128)
+        .EUt(GTValues.VA[GTValues.MV])
         .circuit(1)
         .duration(20 * 60 * 40);  // 40 minutes at MV
 
@@ -42,4 +42,15 @@ export const doTier01Content = (event) => {
     ).transitionalItem("gtceu:wrought_iron_plate").loops(4).id("nijika:tier01/evil_gear_recipe");
 
     addGalliumArsenicRecipes(event);
+
+    event.recipes.gtceu.assembler("nijika:tier01/nickel_cadmium_battery")
+        .itemInputs(
+            "gtceu:lv_battery_hull",
+            "2x gtceu:cadmium_dust",
+            "1x gtceu:nickel_foil",
+            "1x #forge:paper"
+        )
+        .itemOutputs("gtceu:lv_cadmium_battery")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20 * 5);
 }

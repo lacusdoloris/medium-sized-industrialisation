@@ -140,6 +140,9 @@ export const doCleanups = (event) => {
     // too easy!
     event.remove({output: "createaddition:alternator"});
 
+    // we have our own
+    event.remove({output: /.*battery.*/, type: "gtceu:canner"});
+
     cleanupGTCEuOreProcessingRecipes(event);
 
 
