@@ -612,13 +612,13 @@
         "version_id": "ilCfbKZq"
     },
     "u58R1TMW": {
-        "checksum": "1ad1b08900ba9d61d56ce2639903a48d72d22d6862f14380d02f6cf4c88ae882c9da22ad317db79fdeba5430f59c7edc8d1a8126f584ffab0c4eaf0a62a2c09e",
+        "checksum": "b7eb11e38ebcd6d57120460e257937dd3fdb6655582c0d23779f7248214d4c358a4d4774350c1b1dd7e987d8365028af08449756db715b0cefbee9e4a1e9b5c7",
         "name": "Sinytra Connector",
-        "pinned": true,
+        "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.33+1.20.1",
-        "version_id": "bkH1saJX"
+        "version": "1.0.0-beta.35+1.20.1",
+        "version_id": "D0wNzrR0"
     },
     "u6dRKJwZ": {
         "checksum": "c6eb4078b21e465a331bd64ef0460b6d0217dab4036c82a83dea9a6b7c145e7c5fee2015ac662490eada7c160cc8388ec70cb97fe31658866b36a2697a7a0ec2",
@@ -630,13 +630,13 @@
         "version_id": "HU1FUi8s"
     },
     "uOVMgoil": {
-        "checksum": "ad51da4a4269d7a2f1a93036897eb12ba8751d86454f979ce1f21e41a79218a860b4c78d0cfaa1a63c9598f21b6fe40a2148a98beb06de05056cf9a334decacf",
+        "checksum": "0a3289a13849546eff1630b2ed3f31b78789335377dd96fa14e16839e6d2a0ef750dcce6a0d39b8623a38c161997a51fa27d11a353aac50bb7b997aaf70a4afa",
         "name": "Theurgy",
         "pinned": false,
         "project_id": "uOVMgoil",
         "selected": true,
-        "version": "1.20.1-1.14.1",
-        "version_id": "j4Yc2J93"
+        "version": "1.20.1-1.15.0",
+        "version_id": "zV25uzRp"
     },
     "umyGl7zF": {
         "checksum": "73afceaf53e82b98b07c9ca357735789da658a29f8b531157e883383b7f5973999f85273101d7f23993b7476a03553adb146439b50993d827adf03b33869fbf8",
