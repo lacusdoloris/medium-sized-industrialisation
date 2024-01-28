@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "01__low_voltagee"
 	group: "485BC5018A891421"
-	icon: "gtceu:basic_electronic_circuit"
+	icon: "gtceu:bessemer_furnace"
 	id: "10C4569F14DA9A97"
 	order_index: 2
 	quest_links: [ ]
@@ -43,8 +43,9 @@
 				"If you're used to other GT packs, most useful extruder recipes &acan now be used in LV!&r (Who knows why it's blocked until MV 90% of the time. Fuck you.)&l"
 			]
 			id: "08D7A9DB2CDE323F"
-			shape: "square"
+			shape: "octagon"
 			size: 1.0d
+			subtitle: "Eight fantastic sides..."
 			tasks: [{
 				id: "217BC0A9259FC677"
 				item: "gtceu:lv_extruder"
@@ -941,5 +942,5 @@
 		}
 	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron"]
-	title: "LV - The End of the World With You"
+	title: "LV - Somewhere Between"
 }

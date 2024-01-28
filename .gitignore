@@ -23,7 +23,7 @@ logs/*
 config/heracles
 
 # used for building quests
-./odysseus
+odysseus
 
 # generated spam
 config/spark

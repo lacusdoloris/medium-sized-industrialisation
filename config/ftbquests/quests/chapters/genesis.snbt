@@ -47,7 +47,7 @@
 				id: "230956D7D86F6F74"
 				type: "checkmark"
 			}]
-			title: "Beachside Talks"
+			title: "Team Fortress 2"
 			x: -1.0d
 			y: 1.5d
 		}
@@ -70,7 +70,7 @@
 				id: "64B90D299BCA31CF"
 				type: "checkmark"
 			}]
-			title: "My Lucky Day"
+			title: "Bigger Luke"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -83,13 +83,13 @@
 			]
 			icon: "minecraft:zombie_head"
 			id: "563721449DFF6964"
-			subtitle: "Peaceful Mode"
+			subtitle: "There's nobody around to help."
 			tasks: [{
 				id: "365F202694EF6621"
 				title: "Peaceful Mode"
 				type: "checkmark"
 			}]
-			title: "Dots"
+			title: "Peace \\& Tranquility"
 			x: -1.5d
 			y: 0.0d
 		}
@@ -110,7 +110,7 @@
 				title: "A Note on Complexity"
 				type: "checkmark"
 			}]
-			title: "RAY"
+			title: "Expert Mode?"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -126,25 +126,16 @@
 			}
 			id: "479B9A742EB15E47"
 			rewards: [{
-				id: "20EA654D7F4C39A5"
+				id: "7F0B2D94A10EA7A6"
 				item: {
 					Count: 1b
 					id: "eccentrictome:tome"
 					tag: {
 						"eccentrictome:mods": {
-							embers: {
+							integrateddynamics: {
 								0: {
 									Count: 1b
-									id: "embers:ancient_codex"
-								}
-							}
-							forgero: {
-								0: {
-									Count: 1b
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "forgero:forgero_guide"
-									}
+									id: "integrateddynamics:on_the_dynamics_of_integration"
 								}
 							}
 							littlelogistics: {
@@ -153,6 +144,15 @@
 									id: "patchouli:guide_book"
 									tag: {
 										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							modonomicon: {
+								0: {
+									Count: 1b
+									id: "modonomicon:modonomicon"
+									tag: {
+										"modonomicon:book_id": "theurgy:the_hermetica"
 									}
 								}
 							}
@@ -209,7 +209,7 @@
 				title: "Eccentric Tome"
 				type: "checkmark"
 			}]
-			title: "Forsaken Autumn"
+			title: "The Guide Book"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -223,27 +223,6 @@
 				"This quest is &l&amandatory&r to begin the main quest. If you think you're too smart to skip to resource requirementss, &cno you are not.&r"
 			]
 			id: "714A323489D928B7"
-			rewards: [{
-				id: "526BF6A3107D6B6C"
-				item: {
-					Count: 1b
-					id: "minecraft:written_book"
-					tag: {
-						author: "Fuyukaii"
-						pages: [
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://forsakenautumn.bandcamp.com/album/whenere-2\"},\"text\":\"Whenere - Forsaken Autumn\"}"
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://17berlinwall.bandcamp.com/album/reflect\"},\"text\":\"Reflect - Seventeen Years Old And Berlin Wall\"}"
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/3jEYq79usjL1nY0OjlXuIp\"},\"text\":\"Pink - RAY\"}"
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://testcardrecords2017.bandcamp.com/album/all-shimmer-in-a-day\"},\"text\":\"All Shimmer In A Day - My Lucky Day\"}"
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/4mF2gRfHof8jXkW3ay0Ggu\"},\"text\":\"Marble Town - Beachside Talks\"}"
-							"{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://open.spotify.com/album/2K5lKrTrHnXD4J5cO1IGAm\"},\"text\":\"Blank - Dots \"}"
-						]
-						resolved: 1b
-						title: "Shoegaze"
-					}
-				}
-				type: "item"
-			}]
 			tasks: [
 				{
 					count: 128L
@@ -301,7 +280,7 @@
 				title: "Ore Veins"
 				type: "checkmark"
 			}]
-			title: "Seventeen Years Old and Berlin Wall"
+			title: "Ore Chunks?"
 			x: 1.0d
 			y: -1.5d
 		}
