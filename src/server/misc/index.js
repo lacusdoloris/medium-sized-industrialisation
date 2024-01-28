@@ -31,7 +31,9 @@ export const adjustVariousMiscRecipes = (event) => {
 
     // make item filters a bit easier to get.
     event.remove({id: "gtceu:shaped/item_filter"});
-
+    event.remove({id: "gtceu:arc_furnace/arc_item_filter"});
+    event.remove({id: "gtceu:macerator/macerate_item_filter"});
+    
     event.shaped(
         "1x gtceu:item_filter",
         [" F ", "FPF", " F "],
