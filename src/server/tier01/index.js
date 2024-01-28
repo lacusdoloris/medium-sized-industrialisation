@@ -1,11 +1,24 @@
 
 // LV, that is.
 
+import { GT_MACHINE_TIERS, TIER_TO_HIGHER_TIER_MAP } from "../material_tiers/definition";
 import { addGalliumArsenicRecipes } from "./gallium_arsenic";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
     event.remove({output: "#forge:ingots/steel", type: "gtceu:electric_blast_furnace"});
+    event.remove({id: "gtceu:shaped/bronze_primitive_blast_furnace"});  // not bronze?
+
+    event.shaped(
+        "gtceu:bessemer_furnace",
+        ["FFF", "CHC", "WWW"],
+        {
+            F: "gtceu:firebricks",
+            C: "#gtceu:circuits/lv",
+            H: "gtceu:heatproof_machine_casing",
+            W: GT_MACHINE_TIERS[0].quadHeatingWire
+        }
+    ).id("nijika:tier01/bessemer_furnace");
 
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
         .itemInputs(
