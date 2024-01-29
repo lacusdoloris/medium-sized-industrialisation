@@ -116,15 +116,6 @@
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
     },
-    "7tG215v7": {
-        "checksum": "3fe6dbc4b96760f72464fd01a031586033f08696eab688fdb8a3ddac5c5b57fa5f343b16fee6bb475c9a5ce54839e92693169b253efe1d0e3b793b193a85201b",
-        "name": "GregTechCEu Modern",
-        "pinned": false,
-        "project_id": "7tG215v7",
-        "selected": true,
-        "version": "mc",
-        "version_id": "kFon4npq"
-    },
     "8BmcQJ2H": {
         "checksum": "d73426a6ab84833e41194434b360a9f702ae8a53ff9c7b20cbd7a78ccad2ad787bf811551db2a7d24581d4da92019bb98916dba0d97c793cb4c19cb26cb76c03",
         "name": "Geckolib",

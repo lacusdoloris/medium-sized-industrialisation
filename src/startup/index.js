@@ -9,7 +9,7 @@ import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
 
 /** @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event */
-export const customiseMaterials = (event) => {
+export const customiseMaterials = () => {
 
     // add foil flag here, for fluxed magnets
     getMaterial("magnetic_neodymium").addFlags(GTMaterialFlags.GENERATE_FOIL);
@@ -41,29 +41,27 @@ export const customiseMaterials = (event) => {
         getMaterial(matName).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
 
+    // remove chromium dust as a byproduct of chromite
+    let chromite = getMaterial("chromite");
+    {
+        /** @type {Internal.OreProperty} */
+        let oreProp = chromite.getProperty(PropertyKey.ORE);
+        // setOreByProducts acttually *appends*, not sets!
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"));
+    }
+
 };
 
 /**
  * @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event
  */
-GTCEuStartupEvents.registry("gtceu:material", (event) => {
-    addMaterials(event);
+GTCEuStartupEvents.registry("gtceu:material", addMaterials);
 
-    customiseMaterials(event);
+GTCEuStartupEvents.materialModification((event) => {
+    // event has... no properties. ok
+    customiseMaterials();
 });
 
-
-// This is actually a gtceu bug. oops!
-// TODO: When 1.1.2 comes out, move to this.
-/*GTCEuStartupEvents.materialModification("gtceu:material", (event) => {
-
-})*/
-
-GTCEuStartupEvents.registry("gtceu:machine", (event) => {
-    addAllMachineTypes(event);
-});
-
-
-GTCEuStartupEvents.registry("gtceu:recipe_type", (event) => {
-    addAllRecipeTypes(event);
-});
+GTCEuStartupEvents.registry("gtceu:machine", addAllMachineTypes);
+GTCEuStartupEvents.registry("gtceu:recipe_type", addAllRecipeTypes);
