@@ -25,7 +25,11 @@ export const iterateOverAllMaterials = (fn) => {
  * @returns {com.gregtechceu.gtceu.api.data.chemical.material.Material}
  */
 export const getMaterial = (name) => {
-    return GTCEuAPI.materialManager.getMaterial(name);
+    let mat = GTCEuAPI.materialManager.getMaterial(name);
+    if (mat === null) {
+        throw new Error("No such material: " + name);
+    }
+    return mat;
 }
 
 /**
