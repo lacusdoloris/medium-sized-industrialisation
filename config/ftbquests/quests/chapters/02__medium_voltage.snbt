@@ -8,5 +8,6 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
+	subtitle: ["You must acquire a taste for freeform jazz"]
 	title: "MV - Out Loud"
 }
