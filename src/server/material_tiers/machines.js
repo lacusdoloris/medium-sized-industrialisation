@@ -1,4 +1,4 @@
-import { TIER_TO_HIGHER_TIER_MAP, Tier } from "./definition";
+import { TIER_TO_HIGHER_TIER_MAP, Tier } from "../../shared/definition";
 
 // As a side note, a lot of these simply re-create the recipes; this is to allow us to more
 // easily replace materials in the future.

@@ -43,7 +43,7 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shaped"
     });
 
-    let types = ["small_gears", "gears", "rotors", "bolts", "screws"];
+    let types = ["small_gears", "gears", "rotors", "bolts", "screws", "springs"];
     for (let itemType of types) {
         event.remove({output: `#forge:${itemType}`, type: "minecraft:crafting_shaped"});
     }

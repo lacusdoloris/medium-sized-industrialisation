@@ -3,7 +3,7 @@ import { addCreateRecipes } from "./create"
 import { adjustExtruderBasePlateRecipe, fixExtruderRecipeTier } from "./extruder";
 import { MODPACK_SETTINGS } from "../../settings";
 import { adjustMachineRecipesForTier } from "./machines";
-import { GT_MACHINE_TIERS } from "./definition";
+import { GT_MACHINE_TIERS } from "../../shared/definition";
 
 /**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.

@@ -639,22 +639,22 @@
         "version_id": "zV25uzRp"
     },
     "umyGl7zF": {
-        "checksum": "73afceaf53e82b98b07c9ca357735789da658a29f8b531157e883383b7f5973999f85273101d7f23993b7476a03553adb146439b50993d827adf03b33869fbf8",
+        "checksum": "e99654b034a1cc5b2561f888bda31fbe5819918166adadc8fb27113da43183b37f8f065698592d2070d354091916aa8bde2772d126e3d713cd902d96a9f55c9b",
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
         "selected": true,
-        "version": "2001.6.4-build.127+forge",
-        "version_id": "lmLSVeVQ"
+        "version": "2001.6.4-build.130+forge",
+        "version_id": "2b2BZMEa"
     },
     "vvuO3ImH": {
-        "checksum": "9d8e0a3209dc495ccd9177835cabe07d141cb960736366a8a9f050a8c0bf525547a81be72393dcee115ea81f859ad75caf0983a08b05adde158bd3f68d7fca81",
+        "checksum": "e636d02b36c14b27e4d2803544ce0976b4f3bd3bbaf40ce50ac6fcdec0ee62e51a95c8449857f27e8eb6a85e999062a16e4dd0a1839546383ce783adaf68a55d",
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.5.0+1.20.1",
-        "version_id": "rAPky5mo"
+        "version": "5.6.0+1.20.1",
+        "version_id": "anCi5HAr"
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",

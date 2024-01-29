@@ -1,4 +1,4 @@
-import { GT_MACHINE_TIERS, Tier } from "./definition"
+import { GT_MACHINE_TIERS, Tier } from "../../shared/definition"
 
 /**
  * Rewrites machine hulls and casing to move their materials up an additional tier.
@@ -222,6 +222,27 @@ const rewriteRobotArmRecipes = (event, tier) => {
 }
 
 /**
+ * Rewrites the voltage coil recipes for the provided tier.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ * @param {Tier} tier
+ */
+export const rewriteVoltageCoilRecipes = (event, tier) => {
+    // event.remove({id: `gtceu:assembler/voltage_coil_${tier.name}`});
+    
+    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/assemble/voltage_coil`)
+        .itemInputs(
+            tier.magneticRod,
+            `16x ${tier.materials.motorWire.tagged("fine_wires")}`
+        )
+        .itemOutputs(`gtceu:${tier.name}_voltage_coil`)
+        .circuit(1)
+        .duration(10 * 20)
+        // notably, the coil durations *are* based on tier.
+        .EUt(GTValues.VA[GTValues[tier.name.toUpperCase()]]);
+}
+
+/**
  * Rewrites the material tiers for all tier-based components.
  */
 export const rewriteComponentTieredRecipes = (event) => {
@@ -239,5 +260,6 @@ export const rewriteComponentTieredRecipes = (event) => {
         rewriteConveyorRecipes(event, tier);
         rewritePumpRecipes(event, tier);
         rewriteRobotArmRecipes(event, tier);
+        rewriteVoltageCoilRecipes(event, tier);
     }
 }

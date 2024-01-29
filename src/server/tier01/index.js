@@ -1,7 +1,7 @@
 
 // LV, that is.
 
-import { GT_MACHINE_TIERS, TIER_TO_HIGHER_TIER_MAP } from "../material_tiers/definition";
+import { GT_MACHINE_TIERS, TIER_TO_HIGHER_TIER_MAP } from "../../shared/definition";
 import { doTier01ChemicalEng } from "./chemicals";
 
 /** @param {Internal.RecipesEventJS} event */

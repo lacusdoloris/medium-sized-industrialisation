@@ -1,7 +1,7 @@
 const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
 
 import { iterateOverAllMaterials } from "../../shared/utils";
-import { GT_WIRE_TYPES } from "./definition";
+import { GT_WIRE_TYPES } from "../../shared/definition";
 
 // don't want to make it obviously superior to the bending machine, so this only supports a 
 // short list.
