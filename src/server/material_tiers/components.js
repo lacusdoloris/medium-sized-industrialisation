@@ -228,7 +228,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
  * @param {Tier} tier
  */
 export const rewriteVoltageCoilRecipes = (event, tier) => {
-    // event.remove({id: `gtceu:assembler/voltage_coil_${tier.name}`});
+    event.remove({id: `gtceu:assembler/voltage_coil_${tier.name}`});
     
     event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/assemble/voltage_coil`)
         .itemInputs(
