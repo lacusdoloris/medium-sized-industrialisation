@@ -7,6 +7,8 @@
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
+    "block.gtceu.brine_tower": "Evaporation Tower",
+    "gtceu.brine_tower": "Evaporating",
 
     "item.gtceu.lv_cadmium_battery": "Nickel-Cadmium Battery",
     "item.gtceu.mv_cadmium_battery": "Nickel-Metal Hydride Battery",

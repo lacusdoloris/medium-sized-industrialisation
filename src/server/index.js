@@ -10,6 +10,7 @@ import { doModRecipes } from "./mods";
 import { setupItemTags } from "./tags";
 import { doTier00Content } from "./tier00";
 import { doTier01Content } from "./tier01";
+import { doTier02Content } from "./tier02";
 
 
 ServerEvents.tags("items", setupItemTags);
@@ -26,4 +27,7 @@ ServerEvents.recipes((event) => {
 
     doTier00Content(event);
     doTier01Content(event);
+
+    // == Early-Mid Game == //
+    doTier02Content(event);
 });
