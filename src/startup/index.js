@@ -2,6 +2,7 @@
 // subfolders. Thank you!
 
 import { MODPACK_SETTINGS } from "../settings";
+import { GT_MACHINE_TIERS } from "../shared/definition";
 import { getMaterial, iterateOverAllMaterials } from "../shared/utils";
 import { addMaterials } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
@@ -18,6 +19,12 @@ export const customiseMaterials = (event) => {
 
     // used for nickel-cadmium batteries
     getMaterial("nickel").addFlags(GTMaterialFlags.GENERATE_FOIL);
+
+    // make sure that all the materials we need for various tier based recipes have the appropriate
+    // flags.
+    for (let tier of GT_MACHINE_TIERS) {
+        getMaterial(tier.materials.motorWire.id).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
+    }
 
     // add the disable_decomposition flag to remove auto-generated decomposition recipes
     const disableDecompositionMaterials = [
@@ -46,8 +53,8 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
 });
 
 
-// Insane kubejs bug: This just inexplicably doesn't fucking work. It complains about 
-// "missing extra".
+// This is actually a gtceu bug. oops!
+// TODO: When 1.1.2 comes out, move to this.
 /*GTCEuStartupEvents.materialModification("gtceu:material", (event) => {
 
 })*/

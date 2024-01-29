@@ -25,6 +25,10 @@ export class Material {
         return `${this.modId}:${this.materialName}_${suffix}`
     }
 
+    get id() {
+        return `${this.modId}:${this.materialName}`;
+    }
+
     static gtceu(name) {
         return new Material("gtceu", name);
     }
