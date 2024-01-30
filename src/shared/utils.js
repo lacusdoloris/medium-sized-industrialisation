@@ -42,3 +42,19 @@ export const getStackForTagPrefix = (prefix, material) => {
     // fails with a method resolution error unless we use the ``[]`` form.
     return chemicalHelper$get(prefix, material);
 }
+
+/**
+ * Gets the ore property for the provided material.
+ * 
+ * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} The material to lookup.
+ * @return {Internal.OreProperty}
+ */
+export const getOreProperty = (material) => {
+
+    let realMat = material;  // don't trust rhino!
+    if (typeof realMat === "string") {
+        realMat = getMaterial(realMat);
+    }
+
+    return material.getProperty(PropertyKey.ORE);
+}

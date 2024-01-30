@@ -3,7 +3,7 @@
 
 import { MODPACK_SETTINGS } from "../settings";
 import { GT_MACHINE_TIERS } from "../shared/definition";
-import { getMaterial, iterateOverAllMaterials } from "../shared/utils";
+import { getMaterial, getOreProperty, iterateOverAllMaterials } from "../shared/utils";
 import { addMaterials } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
@@ -45,10 +45,18 @@ export const customiseMaterials = () => {
     let chromite = getMaterial("chromite");
     {
         /** @type {Internal.OreProperty} */
-        let oreProp = chromite.getProperty(PropertyKey.ORE);
+        let oreProp = getOreProperty(chromite);
         // setOreByProducts acttually *appends*, not sets!
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"));
+        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"), chromite);
+    }
+
+    // remove direct smelting of pentlandite
+    let pentlandite = getMaterial("pentlandite");
+    {
+        let oreProp = getOreProperty(pentlandite);
+        // this is a nullable property, so we can just directly set it.
+        oreProp.setDirectSmeltResult(null);
     }
 
 };
