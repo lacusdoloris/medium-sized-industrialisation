@@ -44,15 +44,6 @@
         "version": "2.3.1",
         "version_id": "aB6vOqFQ"
     },
-    "38tpSycf": {
-        "checksum": "f2605f86b0be079fbfe4122a2cff6c51c0c5cbc900d85e11162e00f26d20f6828cee7a06622ae4e1ee80d910402e06ca16542f35da197091047476c122dbd98f",
-        "name": "The Bumblezone - NeoForge/Forge",
-        "pinned": false,
-        "project_id": "38tpSycf",
-        "selected": true,
-        "version": "7.2.4+1.20.1-forge",
-        "version_id": "RGm5h73f"
-    },
     "3mW8PdUo": {
         "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
         "name": "Coordinates Display",
@@ -187,6 +178,15 @@
         "selected": true,
         "version": "2.4.0",
         "version_id": "qlDt4clF"
+    },
+    "C95ReXie": {
+        "checksum": "08b342eef5202524a408f87f45472f2d0cda58f43b225ce503b6650d4c6fa9a9715081080f8caf546e63c6065c0794c685aa567e862ce1e6cbff3440a0844627",
+        "name": "Mystical Agriculture",
+        "pinned": false,
+        "project_id": "C95ReXie",
+        "selected": true,
+        "version": "7.0.8",
+        "version_id": "pUJkRVfx"
     },
     "DYtfQEYj": {
         "checksum": "47599aff77955cfee4f458088a7bc2cd91f7c9c9e70a0afb42c0a23f3c316237a69002f33b38cad756c58a0ffd2762edfbad41f779bc495953b6d0d05585e003",
@@ -323,6 +323,15 @@
         "version": "1.13",
         "version_id": "oLNiEUfG"
     },
+    "Rw1NrDzF": {
+        "checksum": "150d7e072130e42ea496b097528328bf817c8720e4ca2df933f7d88a312634dd2ba33d15d6414dfc545e52f230b0d95c9c9f41521e6e009cb70e10ba4b8230e2",
+        "name": "Cucumber Library",
+        "pinned": false,
+        "project_id": "Rw1NrDzF",
+        "selected": false,
+        "version": "7.0.7",
+        "version_id": "p1IgvIXf"
+    },
     "S1tndFDa": {
         "checksum": "4cd7d83691617b36f7cdb3072df379ae199c1b0a4ffd4bcc9a5273bae2c1e053ada98b84c711c931a96543b8b50c095aaebed4d555a087e3d47caf606f37c1f1",
         "name": "TexTrue's Embeddium Options",
@@ -458,15 +467,6 @@
         "version": "1.20-5.0.2",
         "version_id": "SybYUK3U"
     },
-    "jH6iiqkd": {
-        "checksum": "f14e5d04ae16816c2bcef2ba3c52b8419137b9812c82b882f1b06db9b3f85f364daf6defb8e20abbdf1a90e87809e17dcd1eda5eb17df5b825b690300225ba49",
-        "name": "Productive Bees",
-        "pinned": false,
-        "project_id": "jH6iiqkd",
-        "selected": true,
-        "version": "1.20.1-12.2.15",
-        "version_id": "diotPVTH"
-    },
     "kU1G12Nn": {
         "checksum": "2bee945b4149214f1c23097bff5341af1e995724ed2b527af7cf419c24349c96b1339e2e10e0f39dd78bc32929aad51d951bd09398aad850a66a147ef0c3ce2b",
         "name": "Create Crafts & Additions",
@@ -484,6 +484,15 @@
         "selected": true,
         "version": "1.10.53-forge",
         "version_id": "4FXHDE9F"
+    },
+    "lNK9A4rh": {
+        "checksum": "177e653daa0b42a7195a2d0f2d27a6bf6d659357906d9cca394b59ab391f29d074894e9bccd5fddae093dfb80e49f0ee0427a08a0158495045c96516b2c25d44",
+        "name": "Mystical Customization",
+        "pinned": false,
+        "project_id": "lNK9A4rh",
+        "selected": true,
+        "version": "5.0.0",
+        "version_id": "6J8bbFt9"
     },
     "lhGA9TYQ": {
         "checksum": "7d8b83c39740440332e140de430799353734364718e16bbe3091063ad267aad5ac28467f1897e6d384a8b79f371ad4a5ce4ee4a44ff5e4f847140de53abf1cee",
