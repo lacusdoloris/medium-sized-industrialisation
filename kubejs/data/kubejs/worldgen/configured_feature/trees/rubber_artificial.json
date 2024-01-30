@@ -7,19 +7,20 @@
 			"require_natural_ground": false,
 			"can_generate_in_liquid": false
 		},
-		"branches": {
-			"start_frac_y": { "type": "constant", "value": 0 },
-			"count_per_layer": { "type": "constant", "value": 0 },
-			"length_function": "0",
-			"height_function": "0"
+        "branches": {
+			"start_frac_y": { "type": "uniform", "min": 0.5, "max": 0.75 },
+			"count_per_layer": { "type": "uniform", "min": 4.0, "max": 8.0 },
+			"length_function": "fraction ^ 2 * random.nextDouble(1.0, 1.5)",
+			"height_function": "-0.25 * fraction ^ 2"
 		},
 		"decorations": {
 			"trunk": [
 				{ "type": "bigglobe:random_walk_leaves", "is_trunk": true },
 				{ "type": "bigglobe:adjacent_leaf", "chance": 0.25 }
 			],
-			"branches": [],
-			"leaves": []
+			"branches": [
+				{ "type": "bigglobe:random_walk_leaves", "is_trunk": false }
+			]
 		},
 		"ground_replacements": {
 			"minecraft:grass_block":     "minecraft:dirt",
