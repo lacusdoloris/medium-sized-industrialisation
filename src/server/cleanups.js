@@ -136,6 +136,11 @@ const cleanupGTCEuOreProcessingRecipes = (event) => {
 export const doCleanups = (event) => {
     // misc generic cleanups
     event.remove({id: "minecraft:charcoal"});
+    
+    if (Platform.isLoaded("integrateddynamics")) {
+        event.remove({id: "integrateddynamics:smelting/menril_log_coal"});
+        event.remove({id: "integrateddynamics:smelting/menril_log_filled_coal"});
+    }
 
     // too easy!
     event.remove({output: "createaddition:alternator"});
@@ -145,13 +150,14 @@ export const doCleanups = (event) => {
 
     cleanupGTCEuOreProcessingRecipes(event);
 
-
     if (MODPACK_SETTINGS.applyTierAdjustments) {
         // nuke all recycling recipes, they're mismatched to the wrong tier.
         event.remove({type: "gtceu:arc_furnace", id: /arc_(?:(?:u?[lmheiu]|lu)v|zpm)_.*/});
         event.remove({type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_.*/});
         event.remove({type: "gtceu:arc_furnace", input: /.*(?:extruder|casting|empty)_mold/});
         event.remove({type: "gtceu:macerator", input: /.*(?:extruder|casting|empty)_mold/});
+
+        event.remove({input: "gtceu:pyrolyse_oven"});
 
         removeGTGenerators(event);
 
