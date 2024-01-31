@@ -3,6 +3,7 @@
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { addAluminiumProcessingRecipes } from "./aluminium";
+import { addChromiteProcessingRecipes } from "./chromium";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier02Content = (event) => {
@@ -32,4 +33,5 @@ export const doTier02Content = (event) => {
         .duration(20 * 60);
 
     addAluminiumProcessingRecipes(event);
+    addChromiteProcessingRecipes(event);
 }

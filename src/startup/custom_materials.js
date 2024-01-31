@@ -50,4 +50,24 @@ export const addMaterials = (event) => {
         .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
         .color(0xAF3300)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    // == Chromium == //
+    event.create(new ResourceLocation("nijika:sodium_dichromate"))
+        .dust()
+        .color(0xe37b2b)
+        .components("2x gtceu:sodium", "2x gtceu:chromium", "7x gtceu:oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create(new ResourceLocation("nijika:sodium_chromate"))
+        .dust()
+        .color(0xf4d015)
+        .components("2x gtceu:sodium", "gtceu:chromium", "4x gtceu:oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create(new ResourceLocation("nijika:chromium_iii_oxide"))
+        .dust()
+        .color(0x9cbc7b)
+        .components("2x gtceu:chromium", "3x gtceu:oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        
 }

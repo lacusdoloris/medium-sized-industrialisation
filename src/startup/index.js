@@ -32,6 +32,7 @@ export const customiseMaterials = () => {
         "stibnite", "sphalerite", "pyrite", "pentlandite",
         "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
         "realgar",
+        // We have our own processing chain for Chromite.
         // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
         // trichloride.
         "arsenic_trioxide",
@@ -49,6 +50,9 @@ export const customiseMaterials = () => {
         // setOreByProducts acttually *appends*, not sets!
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"), chromite);
+
+        // we have our own processing chain
+        chromite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
 
     // remove direct smelting of pentlandite
@@ -70,7 +74,7 @@ export const customiseMaterials = () => {
     // it.
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
 
-    // Don't require a vacuum freezer (or the stupid washer) recipes for Kanthal.
+    // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
 };
 
@@ -79,7 +83,7 @@ export const customiseMaterials = () => {
  */
 GTCEuStartupEvents.registry("gtceu:material", addMaterials);
 
-GTCEuStartupEvents.materialModification((event) => {
+GTCEuStartupEvents.materialModification((_) => {
     // event has... no properties. ok
     customiseMaterials();
 });
