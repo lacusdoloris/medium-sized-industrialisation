@@ -2,7 +2,7 @@
 /** 
  * @param {Internal.GTRecipeType} type
  */
-export const addBrineTowerRecipeType = (type) => {
+export const addEvaporationRecipeType = (type) => {
     type
         .setEUIO("in")
         .setMaxIOSize(0, 2, 1, 1)
@@ -13,7 +13,7 @@ export const addBrineTowerRecipeType = (type) => {
 /**
  * @param {Internal.MultiblockMachineBuilder} builder
  */
-export const addBrineTowerMultiblock = (builder) => {
+export const addEvaporationPoolMultiblock = (builder) => {
     /** @param {Internal.MultiblockMachineDefinition} definition */
     const patternCallback = (definition) => {
         return FactoryBlockPattern.start()
@@ -33,6 +33,6 @@ export const addBrineTowerMultiblock = (builder) => {
             "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
             "gtceu:block/machines/ore_washer"  // TODO: Custom texture?
         )
-        .recipeType("brine_tower")
+        .recipeType("evaporation_pool")
         .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
 }

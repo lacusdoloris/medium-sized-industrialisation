@@ -1,5 +1,5 @@
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
-import { addBrineTowerMultiblock, addBrineTowerRecipeType } from "./brine_tower";
+import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
 
 // some notes
 //
@@ -19,8 +19,8 @@ export const addAllRecipeTypes = (event) => {
     let bessemer = event.create("bessemer_smelting");
     addBessemerRecipeType(bessemer);
 
-    let brine = event.create("brine_tower");
-    addBrineTowerRecipeType(brine);
+    let brine = event.create("evaporation_pool");
+    addEvaporationRecipeType(brine);
 }
 
 /**
@@ -32,6 +32,6 @@ export const addAllMachineTypes = (event) => {
     let bessemer = event.create("nijika:bessemer_furnace", "multiblock");
     addBessemerMultiblock(bessemer);
 
-    let brine = event.create("nijika:brine_tower", "multiblock");
-    addBrineTowerMultiblock(brine);
+    let brine = event.create("nijika:evaporation_pool", "multiblock");
+    addEvaporationPoolMultiblock(brine);
 }
