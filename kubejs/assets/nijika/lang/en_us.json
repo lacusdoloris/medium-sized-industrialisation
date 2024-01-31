@@ -1,14 +1,20 @@
 {
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.iron_iii_chloride": "Iron(III) Chloride",
+    "material.gcyr.iron_oxide": "Iron(III) Oxide",
 
     "material.nijika.orpiment": "Orpiment",
     "material.nijika.arsenic_trichloride": "Arsenic Trichloride",
+    "material.nijika.aluminium_hydroxide": "Aluminium Hydroxide",
+    "material.nijika.sodium_aluminate": "Sodium Aluminate",
+    "material.nijika.alumina": "Alumina",
+    "material.nijika.red_mud": "Red Mud",
+    "material.nijika.red_mud_slurry": "Red Mud Slurry",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
-    "block.gtceu.brine_tower": "Evaporation Tower",
-    "gtceu.brine_tower": "Evaporating",
+    "block.gtceu.evaporation_pool": "Evaporation Pool",
+    "gtceu.evaporation_pool": "Evaporating",
 
     "item.gtceu.lv_cadmium_battery": "Nickel-Cadmium Battery",
     "item.gtceu.mv_cadmium_battery": "Nickel-Metal Hydride Battery",

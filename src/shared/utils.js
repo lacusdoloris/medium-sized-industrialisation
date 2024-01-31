@@ -43,6 +43,15 @@ export const getStackForTagPrefix = (prefix, material) => {
     return chemicalHelper$get(prefix, material);
 }
 
+/** @return {com.gregtechceu.gtceu.api.data.chemical.material.Material} */
+const definitelyMaterial = (mat) => {
+    let realMat = mat;  // don't trust rhino!
+    if (typeof realMat === "string") {
+        realMat = getMaterial(realMat);
+    }
+    return realMat;
+}
+
 /**
  * Gets the ore property for the provided material.
  * 
@@ -50,11 +59,15 @@ export const getStackForTagPrefix = (prefix, material) => {
  * @return {Internal.OreProperty}
  */
 export const getOreProperty = (material) => {
+    return definitelyMaterial(material).getProperty(PropertyKey.ORE);
+}
 
-    let realMat = material;  // don't trust rhino!
-    if (typeof realMat === "string") {
-        realMat = getMaterial(realMat);
-    }
-
-    return material.getProperty(PropertyKey.ORE);
+/**
+ * Gets the blast property for the provided material.
+ * 
+ * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} The material to lookup.
+ * @return {Internal.BlastProperty}
+ */
+export const getBlastProperty = (material) => {
+    return definitelyMaterial(material).getProperty(PropertyKey.BLAST);
 }

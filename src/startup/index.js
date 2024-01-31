@@ -3,7 +3,7 @@
 
 import { MODPACK_SETTINGS } from "../settings";
 import { GT_MACHINE_TIERS } from "../shared/definition";
-import { getMaterial, getOreProperty, iterateOverAllMaterials } from "../shared/utils";
+import { getBlastProperty, getMaterial, getOreProperty, iterateOverAllMaterials } from "../shared/utils";
 import { addMaterials } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
@@ -59,6 +59,19 @@ export const customiseMaterials = () => {
         oreProp.setDirectSmeltResult(null);
     }
 
+    // remove all byproducts of bauxite, as we have our own custom bayer process for it.
+    let bauxite = getMaterial("bauxite");
+    {
+        bauxite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        getOreProperty(bauxite).getOreByProducts().clear();
+    }
+
+    // have to do this here, because the material builder doesn't seem to have a way to override
+    // it.
+    getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
+
+    // Don't require a vacuum freezer (or the stupid washer) recipes for Kanthal.
+    getBlastProperty("kanthal").setBlastTemperature(1700);
 };
 
 /**
