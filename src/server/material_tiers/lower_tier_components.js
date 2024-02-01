@@ -242,10 +242,11 @@ export const rewriteVoltageCoilRecipes = (event, tier) => {
         .EUt(GTValues.VA[GTValues[tier.name.toUpperCase()]]);
 }
 
+
 /**
  * Rewrites the material tiers for all tier-based components.
  */
-export const rewriteComponentTieredRecipes = (event) => {
+export const rewriteLowerTierComponentRecipes = (event) => {
     // LV has extra duplicated recipes we need to delete.
     event.remove({id: "gtceu:shaped/electric_motor_lv_iron"});
     event.remove({id: "gtceu:shaped/electric_motor_lv_steel"});
