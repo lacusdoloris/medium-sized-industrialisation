@@ -1,4 +1,5 @@
 {
+    "material.gtceu.kanthal": "Ferrochroluminum",
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.iron_iii_chloride": "Iron(III) Chloride",
     "material.gcyr.iron_oxide": "Iron(III) Oxide",
@@ -18,6 +19,10 @@
     "gtceu.bessemer_smelting": "Bessemer Converter",
     "block.gtceu.evaporation_pool": "Evaporation Pool",
     "gtceu.evaporation_pool": "Evaporating",
+
+    "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
+    "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
+    "gtceu.machine.pyrolyse_oven.tooltip.1": "§6Cupronickel §7coils are §f25%%§7 slower. Every coil after §bFerrochrolumium§7 increases speed by §f50%%§7.",
 
     "item.gtceu.lv_cadmium_battery": "Nickel-Cadmium Battery",
     "item.gtceu.mv_cadmium_battery": "Nickel-Metal Hydride Battery",
