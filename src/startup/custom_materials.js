@@ -6,6 +6,24 @@ const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mate
 // so no fancy autocomplete here. sorry.
 
 export const addMaterials = (event) => {
+    // == Slag == //
+    event.create(new ResourceLocation("nijika:slag"))
+        .dust()
+        .color(0x474236)
+        .iconSet(GTMaterialIconSet.FLINT)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create(new ResourceLocation("nijika:slag_slurry"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0x373226)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    // actually has decomposition
+    event.create(new ResourceLocation("nijika:manganese_oxide"))
+        .dust()
+        .color(0x34eb52)
+        .components("gtceu:manganese", "gtceu:oxygen");
+
     // == Arsenic Processing == //
     event.create(new ResourceLocation("nijika:orpiment"))
         .gem().ore()
@@ -69,5 +87,18 @@ export const addMaterials = (event) => {
         .color(0x9cbc7b)
         .components("2x gtceu:chromium", "3x gtceu:oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
-        
+
+    event.create(new ResourceLocation("nijika:ferrochrome"))
+        .ingot().dust()
+        .color(0x446476)
+        .components("gtceu:iron", "gtceu:chromium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.SHINY);
+    
+    // == Vanadium == //
+    event.create(new ResourceLocation("nijika:vanadium_pentoxide"))
+        .dust()
+        .color(0xd5bf6b)
+        .components("2x gtceu:vanadium", "5x gtceu:oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 }

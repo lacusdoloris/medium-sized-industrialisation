@@ -32,7 +32,8 @@ export const customiseMaterials = () => {
         "stibnite", "sphalerite", "pyrite", "pentlandite",
         "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
         "realgar",
-        // We have our own processing chain for Chromite.
+        // Required for slag byproduccts.
+        "magnetite",
         // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
         // trichloride.
         "arsenic_trioxide",

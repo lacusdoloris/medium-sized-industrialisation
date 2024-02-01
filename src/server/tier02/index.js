@@ -4,6 +4,7 @@
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
+import { addVanadiumChemicalChain } from "./vanadium";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier02Content = (event) => {
@@ -34,4 +35,5 @@ export const doTier02Content = (event) => {
 
     addAluminiumProcessingRecipes(event);
     addChromiteProcessingRecipes(event);
+    addVanadiumChemicalChain(event);
 }

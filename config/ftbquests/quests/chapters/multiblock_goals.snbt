@@ -9,7 +9,6 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [{
-		dependencies: ["17E4CCF67CBFD80A"]
 		description: [
 			"The &aPyrolyse Oven&r is a multipurpose multiblock that primarily deals with burning biological material into various fluids. It's like an EBF leaned on its side, including the usage of tiered coils. Sadly, &dcupronickel coils&r confer a &dspeed penalty&r; you should consider going through the bauxite processing questtline to get aluminium for &dKanthal&r coils."
 			""

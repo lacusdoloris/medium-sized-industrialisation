@@ -43,6 +43,7 @@ export const addChromiteProcessingRecipes = (event) => {
 
     // Step 3: Reduce the Sodium Dichromate with Carbon or Sulfur to get Chromium(III) Oxide.
     // Na2Cr2O7 + 2 C = Cr2O3 + Na2CO3 + CO
+    // Na2Cr2O7 + S = Cr2O3 + Na2SO4
 
     // Chromium(III) oxide destined for aluminothermic production of pure chromium metal 
     // must be heated additionally at 1000 �C to increase its grain size.
@@ -51,7 +52,7 @@ export const addChromiteProcessingRecipes = (event) => {
     event.recipes.gtceu.electric_blast_furnace("nijika:tier02/chromium/c3o_using_carbon")
         .itemInputs(
             "1x gtceu:sodium_dichromate_dust",
-            "2x #forge:dusts/carbon",
+            "2x #nijika:carbon_rich_dusts",
         )
         .itemOutputs(
             "1x gtceu:chromium_iii_oxide_dust",
@@ -77,4 +78,16 @@ export const addChromiteProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .blastFurnaceTemp(1300)
         .duration(5 * 20);
+
+    // Side recipe: FeCr2O4 + 2C -> FeCr + 2 CO2, for stainless steel later on.
+    
+    event.recipes.gtceu.electric_blast_furnace("nijika:tier02/chromium/ferrochrome")
+        .itemInputs(
+            "1x gtceu:chromite_dust", "#nijika:carbon_rich_dusts"
+        )
+        .itemOutputs("1x gtceu:ferrochrome_ingot")
+        .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.HV])
+        .blastFurnaceTemp(2800)
+        .duration(10 * 20);
 }

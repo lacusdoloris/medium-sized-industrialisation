@@ -436,10 +436,10 @@
 				""
 				"Instead, you can only get it as a &9byproduct&r, specifically:"
 				""
-				"- Washing &dcrushed Bauxite&r ore with &dsodium persulfate&r (which can be obtained from sodium &obisulfate&r)"
-				"- (Thermally) centrifuging various forms of &aSphalerite&r."
+				"- As a side result of the Bayer process from &dBauxite&r"
+				"- (Thermally) centrifuging various forms of &dSphalerite&r."
 				""
-				"The easiest mechanism currently is via &dSphalerite&r, as sodium persulfate is difficult to obtain currently."
+				"The Bayer process is only available in MV, so you need to start processing large amounts of Sphalerite instead."
 			]
 			id: "562F1FD212BAE2EC"
 			tasks: [{

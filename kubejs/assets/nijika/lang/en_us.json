@@ -14,6 +14,11 @@
     "material.nijika.sodium_dichromate": "Sodium Dichromate",
     "material.nijika.sodium_chromate": "Sodium Chromate",
     "material.nijika.chromium_iii_oxide": "Chromium(III) Oxide",
+    "material.nijika.slag": "Slag",
+    "item.gtceu.slag_dust": "Slag",
+    "material.nijika.slag_slurry": "Slag Slurry",
+    "material.nijika.vanadium_pentoxide": "Vanadium Pentoxide",
+    "material.nijika.ferrochrome": "Ferrochrome",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

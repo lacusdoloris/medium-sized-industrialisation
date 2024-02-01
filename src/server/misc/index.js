@@ -1,6 +1,7 @@
 import { addCreateRockProcessingRecipes } from "./create_materials";
 import { redoGlassProcessing } from "./glass";
 import { rewriteRailwayRecipes } from "./railways"
+import { addSlagProcessingRecipes } from "./slag_processing";
 
 /** 
  * Dumping ground for recipes that don't fit cleanly into other categories.
@@ -61,4 +62,5 @@ export const adjustVariousMiscRecipes = (event) => {
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);
     addCreateRockProcessingRecipes(event);
+    addSlagProcessingRecipes(event);
 }
