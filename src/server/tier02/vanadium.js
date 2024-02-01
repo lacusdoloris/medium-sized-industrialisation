@@ -40,7 +40,8 @@ export const addVanadiumChemicalChain = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((20 * 60) * 20);
+        .duration((20 * 60) * 20)
+        .circuit(2);
     
 
     event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_dusts")
@@ -53,7 +54,8 @@ export const addVanadiumChemicalChain = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((20 * 60) * 20);
+        .duration((20 * 60) * 20)
+        .circuit(2);
 
     event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_blocks")
         .itemInputs(
@@ -65,5 +67,6 @@ export const addVanadiumChemicalChain = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(90 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_block")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((40 * 60) * 20);
+        .duration((40 * 60) * 20)
+        .circuit(2);
 }
