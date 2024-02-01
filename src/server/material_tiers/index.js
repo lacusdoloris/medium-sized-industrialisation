@@ -1,4 +1,4 @@
-import { rewriteComponentTieredRecipes } from "./components";
+import { rewriteLowerTierComponentRecipes } from "./lower_tier_components";
 import { addCreateRecipes } from "./create"
 import { adjustExtruderBasePlateRecipe, fixExtruderRecipeTier } from "./extruder";
 import { MODPACK_SETTINGS } from "../../settings";
@@ -37,7 +37,7 @@ export const adjustMaterialTierRecipes = (event) => {
     ).id("nijika:misc/rubber_dust_to_ingot_earlygame");
 
     addCreateRecipes(event);
-    rewriteComponentTieredRecipes(event);
+    rewriteLowerTierComponentRecipes(event);
     fixExtruderRecipeTier(event);
     adjustExtruderBasePlateRecipe(event);
 

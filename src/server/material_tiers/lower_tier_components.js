@@ -242,6 +242,66 @@ export const rewriteVoltageCoilRecipes = (event, tier) => {
         .EUt(GTValues.VA[GTValues[tier.name.toUpperCase()]]);
 }
 
+/**
+ * Rewrites the sensor and emitter recipes for the provided tier.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ * @param {Tier} tier
+ */
+export const rewriteSensorEmitterRecipes = (event, tier) => {
+    if (!tier.usesAssemblyLine) {
+        event.remove({id: `gtceu:shaped/sensor_${tier.name}`});
+        event.remove({id: `gtceu:assembler/sensor_${tier.name}`});
+
+        event.shaped(
+            `gtceu:${tier.name}_sensor`,
+            ["P G", "PR ", "CPP"],
+            {
+                P: tier.primaryPlate,
+                G: tier.materials.emitterGem,
+                R: tier.materials.emitterRod.tagged("rods"),
+                C: tier.circuitTag,
+            }
+        ).id(`nijika:auto/components/${tier.name}/sensor/shaped`);
+
+        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/sensor/assembler`)
+            .itemInputs(
+                tier.materials.emitterRod.tagged("rods"),
+                `4x ${tier.primaryPlate}`,
+                tier.circuitTag,
+                tier.materials.emitterGem,
+            )
+            .itemOutputs(`gtceu:${tier.name}_sensor`)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(5 * 20);
+        
+        event.remove({id: `gtceu:shaped/emitter_${tier.name}`});
+        event.remove({id: `gtceu:assember/emitter_${tier.name}`});
+
+        event.shaped(
+            `gtceu:${tier.name}_emitter`,
+            ["WRC", "RGR", "CRW"],
+            {
+                W: tier.singleCable,
+                R: tier.materials.emitterRod.tagged("rods"),
+                C: tier.circuitTag,
+                G: tier.materials.emitterGem
+            }
+        ).id(`nijika:auto/components/${tier.name}/emitter/shaped`);
+
+        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/emitter/assembler`)
+            .itemInputs(
+                `4x ${tier.materials.emitterRod.tagged("rods")}`,
+                `2x ${tier.singleCable}`,
+                `2x ${tier.circuitTag}`,
+                tier.materials.emitterGem,
+            )
+            .itemOutputs(`gtceu:${tier.name}_emitter`)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(5 * 20)
+            .circuit(1);
+    }
+}
 
 /**
  * Rewrites the material tiers for all tier-based components.
@@ -262,5 +322,6 @@ export const rewriteLowerTierComponentRecipes = (event) => {
         rewritePumpRecipes(event, tier);
         rewriteRobotArmRecipes(event, tier);
         rewriteVoltageCoilRecipes(event, tier);
+        rewriteSensorEmitterRecipes(event, tier);
     }
 }

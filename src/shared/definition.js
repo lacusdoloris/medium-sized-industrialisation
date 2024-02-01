@@ -59,6 +59,8 @@ export class Tier {
       * @param {Material} tierMaterials.heating The "heating coil" material for this tier.
       * @param {Material} tierMaterials.rotor The rotor used for certain machines.
       * @param {string} tierMaterials.grinder The item used for grinding components.
+      * @param {Material} tierMaterials.emitterRod The rod type used for emitters and sensors.
+      * @param {string} tierMaterials.emitterGem The gem item used used for emitters and sensors.
       * 
       * @param {boolean} usesAssemblyLine If true, then this uses the assembly line rather than 
       *                                   assemblers. Defaults to False.
@@ -175,7 +177,6 @@ export class Tier {
 }
 
 
-// TODO (less urgent): replace asseembler recipes too
 /**
  * The array of voltage tier materials.
  * 
@@ -196,6 +197,8 @@ export const GT_MACHINE_TIERS = [
             heating: Material.gtceu("copper"),
             rotor: Material.gtceu("tin"),
             grinder: "#forge:gems/diamond",
+            emitterRod: Material.gtceu("bronze"),  // Changed from Brass
+            emitterGem: "minecraft:quartz"  // Changed from Quartzite
         }
     ),
 
@@ -213,6 +216,8 @@ export const GT_MACHINE_TIERS = [
            heating: Material.gtceu("cupronickel"),
            rotor: Material.gtceu("steel"),  // Changed from Bronze. Why does this one need a bronze rotor?
            grinder: "#forge:gems/diamond",
+           emitterRod: Material.gtceu("electrum"),
+           emitterGem: "gtceu:flawless_emerald_gem",
         }
     ),
 
@@ -231,6 +236,8 @@ export const GT_MACHINE_TIERS = [
             // Changed from steel, gives a use to the otherwise unused Chromium rotor.
             rotor: Material.gtceu("chromium"),
             grinder: "gtceu:diamond_grinding_head",
+            emitterRod: Material.gtceu("chromium"),
+            emitterGem: "minecraft:ender_eye"
         }
     ),
 
@@ -248,6 +255,8 @@ export const GT_MACHINE_TIERS = [
             heating: Material.gtceu("nichrome"),
             rotor: Material.gtceu("stainless_steel"),
             grinder: "gtceu:diamond_grinding_head",
+            emitterRod: Material.gtceu("platinum"),
+            emitterGem: "gtceu:quantum_eye"
         }
     ),
 
@@ -265,6 +274,8 @@ export const GT_MACHINE_TIERS = [
             heating: Material.gtceu("nichrome"),  // changed from tungstensteel 
             rotor: Material.gtceu("titanium"),  // changed from tungstensteel
             grinder: "gtceu:diamond_grinding_head",
+            emitterRod: Material.gtceu("iridium"),
+            emitterGem: "gtceu:quantum_star",
         }
     ),
     
