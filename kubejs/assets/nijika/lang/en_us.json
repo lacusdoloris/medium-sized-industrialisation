@@ -10,6 +10,9 @@
     "material.nijika.alumina": "Alumina",
     "material.nijika.red_mud": "Red Mud",
     "material.nijika.red_mud_slurry": "Red Mud Slurry",
+    "material.nijika.sodium_dichromate": "Sodium Dichromate",
+    "material.nijika.sodium_chromate": "Sodium Chromate",
+    "material.nijika.chromium_iii_oxide": "Chromium(III) Oxide",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
