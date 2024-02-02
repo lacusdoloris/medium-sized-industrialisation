@@ -57,11 +57,11 @@ export const rewriteMotorRecipes = (event, tier) => {
                 M: tier.magneticRod,
                 R: tier.effectiveRodWithLVHardcode
             }
-        ).id(`nijika:auto/${tier.name}/shaped/motor`);
+        ).id(`nijika:auto/${tier.name}/motor/shaped`);
 
         event.remove({id: `gtceu:assembler/electric_motor_${tier.name}`});
 
-        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/assembler/motor`)
+        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/motor/assembler`)
             .itemInputs(
                 `2x ${tier.singleCable}`,
                 `4x ${tier.doubleMotorWire}`,
@@ -96,10 +96,10 @@ export const rewritePistonRecipes = (event, tier) => {
                 M: `gtceu:${tier.name}_electric_motor`,
                 G: tier.materials.plate.tagged("small_gears"),
             }
-        ).id(`nijika:auto/${tier.name}/shaped/piston`);
+        ).id(`nijika:auto/${tier.name}/piston/shaped`);
 
         event.remove({id: `gtceu:assembler/electric_piston_${tier.name}`})
-        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/assembler/piston`)
+        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/piston/assembler`)
             .itemInputs(
                 `3x ${tier.primaryPlate}`,
                 `2x ${tier.singleCable}`,
@@ -135,10 +135,10 @@ export const rewriteConveyorRecipes = (event, tier) => {
                     M: `gtceu:${tier.name}_electric_motor`,
                     C: tier.singleCable,
                 }
-            ).id(`nijika:auto/${tier.name}/shaped/conveyor/${rubber}`);
+            ).id(`nijika:auto/${tier.name}/conveyor/${rubber}/shaped`);
 
             event.remove({id: `gtceu:assembler/conveyor_module_${tier.name}_${rubber}`});
-            event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/assembler/conveyor/${rubber}`)
+            event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/conveyor/${rubber}/assembler`)
                 .itemInputs(
                     tier.singleCable,
                     `2x gtceu:${tier.name}_electric_motor`,
@@ -205,9 +205,9 @@ const rewriteRobotArmRecipes = (event, tier) => {
                 P: `gtceu:${tier.name}_electric_piston`,
                 C: tier.circuitTag
             }
-        ).id(`nijika:auto/components/${tier.name}/shaped/robot_arm`);
+        ).id(`nijika:auto/components/${tier.name}/robot_arm/shaped`);
 
-        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/assemble/robot_arm`)
+        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/robot_arm/assembler`)
             .itemInputs(
                 `3x ${tier.singleCable}`,
                 `2x gtceu:${tier.name}_electric_motor`,
@@ -230,7 +230,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
 export const rewriteVoltageCoilRecipes = (event, tier) => {
     event.remove({id: `gtceu:assembler/voltage_coil_${tier.name}`});
     
-    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/assemble/voltage_coil`)
+    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/voltage_coil`)
         .itemInputs(
             tier.magneticRod,
             `16x ${tier.materials.motorWire.tagged("fine_wires")}`
