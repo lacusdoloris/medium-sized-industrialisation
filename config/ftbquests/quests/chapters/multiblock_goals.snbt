@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [{
 		description: [
-			"The &aPyrolyse Oven&r is a multipurpose multiblock that primarily deals with burning biological material into various fluids. It's like an EBF leaned on its side, including the usage of tiered coils. Sadly, &dcupronickel coils&r confer a &dspeed penalty&r; you should consider going through the bauxite processing questtline to get aluminium for &dKanthal&r coils."
+			"The &aPyrolyse Oven&r is a multipurpose multiblock that primarily deals with burning biological material into various fluids. It's like an EBF leaned on its side, including the usage of tiered coils. Sadly, &dcupronickel coils&r confer a &dspeed penalty&r; you should consider going through the bauxite processing questtline to get aluminium for &dFerrochrolumium&r coils."
 			""
 			"If you're running off of boilers, you should consider replacing your coke ovens (you're using coke ovens... right?) with one of these."
 			""
