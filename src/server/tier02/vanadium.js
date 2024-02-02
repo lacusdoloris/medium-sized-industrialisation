@@ -29,6 +29,8 @@ export const addVanadiumChemicalChain = (event) => {
     // vanadium.
     event.remove({id: "gtceu:mixer/vanadiumsteel"});
     event.remove({id: "gtceu:electric_blast_furnace/blast_vanadium_steel_gas"});
+    event.remove({id: "gtceu:alloy_blast_smelter/vanadium_steel_gas"});
+    event.remove({id: "gtceu:alloy_blast_smelter/vanadium_steel"});
 
     event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel")
         .itemInputs(
