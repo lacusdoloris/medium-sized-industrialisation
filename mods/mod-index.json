@@ -557,6 +557,15 @@
         "version": "1.20.1-2.9.1",
         "version_id": "BTl7Q7EH"
     },
+    "oY2B1pjg": {
+        "checksum": "4cfa9129bed5ac5203c49be4567322e83e0a5ed331c6d3b5a67f01224bc4e1b7c00d780aef3c52c981fff007b04c0a410879fba34a9e117537d837272a42edd0",
+        "name": "Embeddium (Rubidium) Extra",
+        "pinned": false,
+        "project_id": "oY2B1pjg",
+        "selected": true,
+        "version": "0.5.4+mc1.20.1-build.116",
+        "version_id": "zzQGTgOB"
+    },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
         "name": "EMI Loot",
