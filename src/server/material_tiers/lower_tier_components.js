@@ -46,34 +46,31 @@ export const applyHullcasingTiers = (event, tier) => {
  */
 export const rewriteMotorRecipes = (event, tier) => {
     event.remove({id: `gtceu:shaped/electric_motor_${tier.name}`});
-    
-    if (!tier.usesAssemblyLine) {
-        event.shaped(
-            `1x gtceu:${tier.name}_electric_motor`,
-            ["CWR", "WMW", "RWC"],
-            {
-                C: tier.singleCable,
-                W: tier.doubleMotorWire,
-                M: tier.magneticRod,
-                R: tier.effectiveRodWithLVHardcode
-            }
-        ).id(`nijika:auto/${tier.name}/motor/shaped`);
+    event.shaped(
+        `1x gtceu:${tier.name}_electric_motor`,
+        ["CWR", "WMW", "RWC"],
+        {
+            C: tier.singleCable,
+            W: tier.doubleMotorWire,
+            M: tier.magneticRod,
+            R: tier.effectiveRodWithLVHardcode
+        }
+    ).id(`nijika:auto/${tier.name}/motor/shaped`);
 
-        event.remove({id: `gtceu:assembler/electric_motor_${tier.name}`});
+    event.remove({id: `gtceu:assembler/electric_motor_${tier.name}`});
 
-        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/motor/assembler`)
-            .itemInputs(
-                `2x ${tier.singleCable}`,
-                `4x ${tier.doubleMotorWire}`,
-                `2x ${tier.effectiveRodWithLVHardcode}`,
-                `${tier.magneticRod}`
-            )
-            .itemOutputs(
-                `1x gtceu:${tier.name}_electric_motor`
-            )
-            .EUt(30)
-            .duration(100);
-    }
+    event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/motor/assembler`)
+        .itemInputs(
+            `2x ${tier.singleCable}`,
+            `4x ${tier.doubleMotorWire}`,
+            `2x ${tier.effectiveRodWithLVHardcode}`,
+            `${tier.magneticRod}`
+        )
+        .itemOutputs(
+            `1x gtceu:${tier.name}_electric_motor`
+        )
+        .EUt(30)
+        .duration(100);
 };
 
 /**
@@ -84,35 +81,32 @@ export const rewriteMotorRecipes = (event, tier) => {
  */
 export const rewritePistonRecipes = (event, tier) => {
     event.remove({id: `gtceu:shaped/electric_piston_${tier.name}`});
+    event.shaped(
+        `1x gtceu:${tier.name}_electric_piston`,
+        ["PPP", "CRR", "CMG"],
+        {
+            P: tier.primaryPlate,
+            C: tier.singleCable,
+            R: tier.effectiveRodWithLVHardcode,
+            M: `gtceu:${tier.name}_electric_motor`,
+            G: tier.materials.plate.tagged("small_gears"),
+        }
+    ).id(`nijika:auto/${tier.name}/piston/shaped`);
 
-    if (!tier.usesAssemblyLine) {
-        event.shaped(
-            `1x gtceu:${tier.name}_electric_piston`,
-            ["PPP", "CRR", "CMG"],
-            {
-                P: tier.primaryPlate,
-                C: tier.singleCable,
-                R: tier.effectiveRodWithLVHardcode,
-                M: `gtceu:${tier.name}_electric_motor`,
-                G: tier.materials.plate.tagged("small_gears"),
-            }
-        ).id(`nijika:auto/${tier.name}/piston/shaped`);
-
-        event.remove({id: `gtceu:assembler/electric_piston_${tier.name}`})
-        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/piston/assembler`)
-            .itemInputs(
-                `3x ${tier.primaryPlate}`,
-                `2x ${tier.singleCable}`,
-                `2x ${tier.effectiveRodWithLVHardcode}`,
-                `gtceu:${tier.name}_electric_motor`,
-                tier.materials.plate.tagged("small_gears"),
-            )
-            .itemOutputs(
-                `1x gtceu:${tier.name}_electric_piston`
-            )
-            .EUt(30)
-            .duration(100);
-    }
+    event.remove({id: `gtceu:assembler/electric_piston_${tier.name}`})
+    event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/piston/assembler`)
+        .itemInputs(
+            `3x ${tier.primaryPlate}`,
+            `2x ${tier.singleCable}`,
+            `2x ${tier.effectiveRodWithLVHardcode}`,
+            `gtceu:${tier.name}_electric_motor`,
+            tier.materials.plate.tagged("small_gears"),
+        )
+        .itemOutputs(
+            `1x gtceu:${tier.name}_electric_piston`
+        )
+        .EUt(30)
+        .duration(100);
 };
 
 // i'm not entirely sure why i wrote this one.
@@ -126,30 +120,28 @@ export const rewritePistonRecipes = (event, tier) => {
 export const rewriteConveyorRecipes = (event, tier) => {
     for (let rubber of tier.acceptableRubbers) {
         event.remove({id: `gtceu:shaped/conveyor_module_${tier.name}_${rubber}`});
-        if (!tier.usesAssemblyLine) {
-            event.shaped(
-                `gtceu:${tier.name}_conveyor_module`,
-                ["RRR", "MCM", "RRR"],
-                {
-                    R: `#forge:plates/${rubber}`,
-                    M: `gtceu:${tier.name}_electric_motor`,
-                    C: tier.singleCable,
-                }
-            ).id(`nijika:auto/${tier.name}/conveyor/${rubber}/shaped`);
+        event.shaped(
+            `gtceu:${tier.name}_conveyor_module`,
+            ["RRR", "MCM", "RRR"],
+            {
+                R: `#forge:plates/${rubber}`,
+                M: `gtceu:${tier.name}_electric_motor`,
+                C: tier.singleCable,
+            }
+        ).id(`nijika:auto/${tier.name}/conveyor/${rubber}/shaped`);
 
-            event.remove({id: `gtceu:assembler/conveyor_module_${tier.name}_${rubber}`});
-            event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/conveyor/${rubber}/assembler`)
-                .itemInputs(
-                    tier.singleCable,
-                    `2x gtceu:${tier.name}_electric_motor`,
-                )
-                .inputFluids(Fluid.of(`gtceu:${rubber}`).withAmount(844))
-                .itemOutputs(
-                    `1x gtceu:${tier.name}_conveyor_module`
-                )
-                .EUt(30)
-                .duration(100);
-        }
+        event.remove({id: `gtceu:assembler/conveyor_module_${tier.name}_${rubber}`});
+        event.recipes.gtceu.assembler(`nijika:auto/${tier.name}/conveyor/${rubber}/assembler`)
+            .itemInputs(
+                tier.singleCable,
+                `2x gtceu:${tier.name}_electric_motor`,
+            )
+            .inputFluids(Fluid.of(`gtceu:${rubber}`).withAmount(844))
+            .itemOutputs(
+                `1x gtceu:${tier.name}_conveyor_module`
+            )
+            .EUt(30)
+            .duration(100);
     }
 }
 
@@ -162,25 +154,23 @@ export const rewriteConveyorRecipes = (event, tier) => {
 const rewritePumpRecipes = (event, tier) => {
     // these only have assembler recipes, because fuck manual tool recipes
     for (let rubber of tier.acceptableRubbers) {
-        if (!tier.usesAssemblyLine) {
-            event.remove({id: `gtceu:shaped/electric_pump_${tier.name}_${rubber}`});
-            event.remove({id: `gtceu:assembler/electric_pump_${tier.name}_${rubber}`});
-            
-            // note: this seems to use the rotor material progression, so it's been changed to use
-            // that for screws too.
-            event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/pump/${rubber}`)
-                .itemInputs(
-                    tier.singleCable,
-                    tier.materials.pipe.component("normal_fluid_pipe"),
-                    tier.materials.rotor.component("screw"),
-                    tier.materials.rotor.component("rotor"),
-                    `2x gtceu:${rubber}_ring`,
-                    `gtceu:${tier.name}_electric_motor`
-                )
-                .itemOutputs(`gtceu:${tier.name}_electric_pump`)
-                .EUt(30)
-                .duration(100);
-        }
+        event.remove({id: `gtceu:shaped/electric_pump_${tier.name}_${rubber}`});
+        event.remove({id: `gtceu:assembler/electric_pump_${tier.name}_${rubber}`});
+        
+        // note: this seems to use the rotor material progression, so it's been changed to use
+        // that for screws too.
+        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/pump/${rubber}`)
+            .itemInputs(
+                tier.singleCable,
+                tier.materials.pipe.component("normal_fluid_pipe"),
+                tier.materials.rotor.component("screw"),
+                tier.materials.rotor.component("rotor"),
+                `2x gtceu:${rubber}_ring`,
+                `gtceu:${tier.name}_electric_motor`
+            )
+            .itemOutputs(`gtceu:${tier.name}_electric_pump`)
+            .EUt(30)
+            .duration(100);
     }
 }
 
@@ -192,33 +182,31 @@ const rewritePumpRecipes = (event, tier) => {
  */
 const rewriteRobotArmRecipes = (event, tier) => {
     event.remove({id: `gtceu:shaped/robot_arm_${tier.name}`});
-    if (!tier.usesAssemblyLine) {
-        event.remove({id: `gtceu:assembler/robot_arm_${tier.name}`});
+    event.remove({id: `gtceu:assembler/robot_arm_${tier.name}`});
 
-        event.shaped(
-            `gtceu:${tier.name}_robot_arm`,
-            ["WWW", "MRM", "PCR"],
-            {
-                W: tier.singleCable,
-                M: `gtceu:${tier.name}_electric_motor`,
-                R: tier.primaryRod,
-                P: `gtceu:${tier.name}_electric_piston`,
-                C: tier.circuitTag
-            }
-        ).id(`nijika:auto/components/${tier.name}/robot_arm/shaped`);
+    event.shaped(
+        `gtceu:${tier.name}_robot_arm`,
+        ["WWW", "MRM", "PCR"],
+        {
+            W: tier.singleCable,
+            M: `gtceu:${tier.name}_electric_motor`,
+            R: tier.primaryRod,
+            P: `gtceu:${tier.name}_electric_piston`,
+            C: tier.circuitTag
+        }
+    ).id(`nijika:auto/components/${tier.name}/robot_arm/shaped`);
 
-        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/robot_arm/assembler`)
-            .itemInputs(
-                `3x ${tier.singleCable}`,
-                `2x gtceu:${tier.name}_electric_motor`,
-                `2x ${tier.primaryRod}`,
-                `gtceu:${tier.name}_electric_piston`,
-                tier.circuitTag,
-            )
-            .itemOutputs(`gtceu:${tier.name}_robot_arm`)
-            .EUt(30)
-            .duration(100);
-    }
+    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/robot_arm/assembler`)
+        .itemInputs(
+            `3x ${tier.singleCable}`,
+            `2x gtceu:${tier.name}_electric_motor`,
+            `2x ${tier.primaryRod}`,
+            `gtceu:${tier.name}_electric_piston`,
+            tier.circuitTag,
+        )
+        .itemOutputs(`gtceu:${tier.name}_robot_arm`)
+        .EUt(30)
+        .duration(100);
 }
 
 /**
@@ -227,7 +215,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-export const rewriteVoltageCoilRecipes = (event, tier) => {
+const rewriteVoltageCoilRecipes = (event, tier) => {
     event.remove({id: `gtceu:assembler/voltage_coil_${tier.name}`});
     
     event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/voltage_coil`)
@@ -248,59 +236,57 @@ export const rewriteVoltageCoilRecipes = (event, tier) => {
  * @param {Internal.RecipesEventJS} event
  * @param {Tier} tier
  */
-export const rewriteSensorEmitterRecipes = (event, tier) => {
-    if (!tier.usesAssemblyLine) {
-        event.remove({id: `gtceu:shaped/sensor_${tier.name}`});
-        event.remove({id: `gtceu:assembler/sensor_${tier.name}`});
+const rewriteSensorEmitterRecipes = (event, tier) => {
+    event.remove({id: `gtceu:shaped/sensor_${tier.name}`});
+    event.remove({id: `gtceu:assembler/sensor_${tier.name}`});
 
-        event.shaped(
-            `gtceu:${tier.name}_sensor`,
-            ["P G", "PR ", "CPP"],
-            {
-                P: tier.primaryPlate,
-                G: tier.materials.emitterGem,
-                R: tier.materials.emitterRod.tagged("rods"),
-                C: tier.circuitTag,
-            }
-        ).id(`nijika:auto/components/${tier.name}/sensor/shaped`);
+    event.shaped(
+        `gtceu:${tier.name}_sensor`,
+        ["P G", "PR ", "CPP"],
+        {
+            P: tier.primaryPlate,
+            G: tier.materials.emitterGem,
+            R: tier.materials.emitterRod.tagged("rods"),
+            C: tier.circuitTag,
+        }
+    ).id(`nijika:auto/components/${tier.name}/sensor/shaped`);
 
-        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/sensor/assembler`)
-            .itemInputs(
-                tier.materials.emitterRod.tagged("rods"),
-                `4x ${tier.primaryPlate}`,
-                tier.circuitTag,
-                tier.materials.emitterGem,
-            )
-            .itemOutputs(`gtceu:${tier.name}_sensor`)
-            .EUt(GTValues.VA[GTValues.LV])
-            .duration(5 * 20);
-        
-        event.remove({id: `gtceu:shaped/emitter_${tier.name}`});
-        event.remove({id: `gtceu:assember/emitter_${tier.name}`});
+    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/sensor/assembler`)
+        .itemInputs(
+            tier.materials.emitterRod.tagged("rods"),
+            `4x ${tier.primaryPlate}`,
+            tier.circuitTag,
+            tier.materials.emitterGem,
+        )
+        .itemOutputs(`gtceu:${tier.name}_sensor`)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20);
+    
+    event.remove({id: `gtceu:shaped/emitter_${tier.name}`});
+    event.remove({id: `gtceu:assember/emitter_${tier.name}`});
 
-        event.shaped(
-            `gtceu:${tier.name}_emitter`,
-            ["WRC", "RGR", "CRW"],
-            {
-                W: tier.singleCable,
-                R: tier.materials.emitterRod.tagged("rods"),
-                C: tier.circuitTag,
-                G: tier.materials.emitterGem
-            }
-        ).id(`nijika:auto/components/${tier.name}/emitter/shaped`);
+    event.shaped(
+        `gtceu:${tier.name}_emitter`,
+        ["WRC", "RGR", "CRW"],
+        {
+            W: tier.singleCable,
+            R: tier.materials.emitterRod.tagged("rods"),
+            C: tier.circuitTag,
+            G: tier.materials.emitterGem
+        }
+    ).id(`nijika:auto/components/${tier.name}/emitter/shaped`);
 
-        event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/emitter/assembler`)
-            .itemInputs(
-                `4x ${tier.materials.emitterRod.tagged("rods")}`,
-                `2x ${tier.singleCable}`,
-                `2x ${tier.circuitTag}`,
-                tier.materials.emitterGem,
-            )
-            .itemOutputs(`gtceu:${tier.name}_emitter`)
-            .EUt(GTValues.VA[GTValues.LV])
-            .duration(5 * 20)
-            .circuit(1);
-    }
+    event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/emitter/assembler`)
+        .itemInputs(
+            `4x ${tier.materials.emitterRod.tagged("rods")}`,
+            `2x ${tier.singleCable}`,
+            `2x ${tier.circuitTag}`,
+            tier.materials.emitterGem,
+        )
+        .itemOutputs(`gtceu:${tier.name}_emitter`)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+        .circuit(1);
 }
 
 /**
@@ -315,6 +301,9 @@ export const rewriteLowerTierComponentRecipes = (event) => {
 
     for (let tier of GT_MACHINE_TIERS) {
         applyHullcasingTiers(event, tier);
+        rewriteVoltageCoilRecipes(event, tier);
+
+        if (tier.usesAssemblyLine) continue;
 
         rewriteMotorRecipes(event, tier);
         rewritePistonRecipes(event, tier);
