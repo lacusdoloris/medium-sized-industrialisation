@@ -24,8 +24,8 @@
 				type: "item"
 			}]
 			title: "Carl Josef Bayer"
-			x: -4.0d
-			y: 2.0d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["37186A0EA1942511"]
@@ -44,8 +44,8 @@
 				type: "item"
 			}]
 			title: "Bayer Process"
-			x: -4.0d
-			y: 3.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["06665F1BAC395C89"]
@@ -64,14 +64,16 @@
 			]
 			id: "4DDC23EE2215011C"
 			min_width: 400
+			optional: true
+			shape: "diamond"
 			tasks: [{
 				id: "26FA764ECACAFAE9"
 				item: "gtceu:red_mud_dust"
 				type: "item"
 			}]
 			title: "Poison Mud"
-			x: -5.5d
-			y: 3.5d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			description: [
@@ -88,8 +90,8 @@
 				type: "item"
 			}]
 			title: "I Hate The Austrians"
-			x: -5.5d
-			y: 5.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -105,8 +107,8 @@
 				type: "item"
 			}]
 			title: "Hall-Hérout?"
-			x: -4.0d
-			y: 5.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08330D01C36B3545"]
@@ -120,7 +122,7 @@
 				"3. The sodium dichromate needs to be reduced with either &dcarbon&r or &dsulfur&r to produce &aChromium(III) Oxide&r."
 				"4. Finally, you can use an aluminothermic reaction to reduce the Cr2O3 into &ametallic chromium dust&r, as well as some left over alumina."
 				""
-				"You can get Soda Ash by reacting &dCalcite&r with &dSalt&r, and you can get calcite from macerating &dlimestone&r."
+				"You can get Soda Ash by reacting &dCalcite&r with &dSalt&r, and you can get calcite dust from macerating &dlimestone&r... or just regular calcite."
 			]
 			id: "7BEE21DF23576B53"
 			min_width: 500
@@ -130,8 +132,8 @@
 				type: "item"
 			}]
 			title: "Install Firefox"
-			x: -2.5d
-			y: 5.0d
+			x: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7BEE21DF23576B53"]
@@ -141,27 +143,30 @@
 				"Don't say the K word or the trademark ninjas will get you."
 			]
 			id: "224D936C415AA016"
+			optional: true
+			shape: "diamond"
 			tasks: [{
 				id: "66379C7902087ACD"
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
 			title: "Ferrochrolumium"
-			x: -2.5d
-			y: 6.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08330D01C36B3545"]
 			description: ["Aluminium ingots can be obtained from your blast furnace, and then bent into aluminium plate for HV machinery. Wow!"]
 			id: "14FCD4CDDDB798BC"
+			shape: "diamond"
 			tasks: [{
 				id: "542A581DC7A49548"
 				item: "gtceu:aluminium_plate"
 				type: "item"
 			}]
 			title: "HV Plating"
-			x: -4.0d
-			y: 6.5d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["535977705E793982"]
@@ -179,8 +184,8 @@
 				type: "item"
 			}]
 			title: "Monosilicon"
-			x: 1.0d
-			y: 3.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -188,7 +193,11 @@
 				"694101C8ED732C65"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Each basic silicon boule will get you &asixteen wafers&r. It's worth getting - at the very least - some &ddistilled water&r to speed this process up; or even better, some &dlubricant&r (which can easily be made from creosote)."]
+			description: [
+				"Each basic silicon boule will get you &asixteen wafers&r. It's worth getting - at the very least - some &ddistilled water&r to speed this process up; or even better, some &dlubricant&r (which can easily be made from creosote)."
+				""
+				"Whilst the wafers aren't directly useful yet, they vastly reduce the amount of gallium arsenide required for &ddiodes&r, so if you've automated circuits you can switch over to using this."
+			]
 			icon: "gtceu:silicon_wafer"
 			id: "78729F0568BF5AEE"
 			tasks: [{
@@ -198,8 +207,153 @@
 				type: "item"
 			}]
 			title: "Basic Wafers"
-			x: 1.0d
-			y: 5.0d
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"535977705E793982"
+				"641046C8A91952E9"
+			]
+			description: ["In order to produce silicon wafers, you need a &dcutter&r (the mechanical kind) which will slice up your monosilicon into wafers ready to be etched."]
+			id: "694101C8ED732C65"
+			subtitle: "of, Made"
+			tasks: [{
+				id: "7BC624CDDEB65F45"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			title: "Styrofoam"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"&aCircuit Assemblers&r are unique machines in that they take the &onext&r tier of circuit, rather than their own tier. This means an LV Circuit Assembler requires &dMV Circuits&r."
+				""
+				"This isn't so useful for your first circuit theme (&oross scott voice&r more on that later!), but it does reduce material requirements a bit. Instead, it'll come in handy for the &dsecond circuit theme&r onwards."
+			]
+			id: "07977A6D680C4DCB"
+			subtitle: "A circuit assembling LV machine!"
+			tasks: [{
+				id: "0AAAA628B529D2BB"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			title: "An LV Machine?"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07977A6D680C4DCB"]
+			description: [
+				"You may be thinking \"But, I already made LV circuits! I have nightmares about andesite alloy!\""
+				""
+				"See, GregTech circuits come in &dthemes&r. Themes are &across-tier&r, and there are usually &amultiple themes&r per voltage tier. Each theme except the last in a paticular tier requires the &dprevious voltage tier's circuit&r as part of the recipe, so you should try and progress to the last possible theme quickly."
+				""
+				"You already started on the \"Electronic Circuit\" theme; the second theme is the &aintegrated circuit&r. This is more resource efficient than the electronic circuit theme, so consider using these for your machine production instead."
+				""
+				"These circuits require either &dsoldering alloy&r or &dliquid tin&r; there's no reason to ever use soldering alloy, so just use an extractor on some fresh tin."
+			]
+			id: "03045253789CA043"
+			min_width: 400
+			tasks: [{
+				id: "0658F6DE2D73C220"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			title: "LV Circuits Again!"
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03045253789CA043"]
+			description: ["This is like the LV integrated circuit, only for MV machines. "]
+			id: "000CE46D72931AFD"
+			tasks: [{
+				id: "1FCFC0702015B58A"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			title: "Mv Circuit #2"
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"&aPolyethylene&r is an &oincredibly important&r plastic throughout GregTech. It's used for &dmachine hulls&r (and it's mandatory starting from HV onwards) and &dcircuit boards&r, amongst other things."
+				""
+				"There's several routes you can take to get polyethylene. You can distill various &doil refinery products&r (steam cracking becomes more viable in HV, with the cracker multiblock) and eventually arrive at ethylene via butane/ethane; alternatively, you can process biological matter into &dbiomass&r and get ethylene via &dethanol&r."
+				""
+				"Once you have liquid ethylene, you should turn it into polyethylene using oxygen rather than air as it gets you a 1:1 ratio rather than a 2:1 ratio. (Seriously, if you haven't got a reliable oxygen setup, you should start processing silicon dioxide!)"
+			]
+			id: "6946A93109A56A1B"
+			min_width: 400
+			subtitle: "Uh oh!"
+			tasks: [{
+				id: "3FA7718AA6BD4AAF"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			title: "Polyethylene"
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6946A93109A56A1B"]
+			description: [
+				"The &dtransistor&r is one of the most fundamental components in modern microprocessors. It's not an exaggeration to say that the invention of the field-effect transistor is the one of the most important inventions ever, behind only things such as proto-World. (Well, unlike proto-World, transistors actually exist.)"
+				""
+				"GT transistors are made from a &dsilicon plate&r, &dtin wire&r, and &dpolyethylene&r for the casing. "
+			]
+			id: "3F52C49E18F7B1BE"
+			tasks: [{
+				id: "09BDC9AAD08024B2"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			title: "Mossfet"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6946A93109A56A1B"]
+			description: [
+				"Exciting! You can finally move on from using stripboards for your circuits and make some real PCBs!"
+				""
+				"These are &dplastic sheets&r (polyethylene or PVC, at this stage) wrapped in &dcopper foil&r and etched with either Iron(III) Chloride or &dSodium Persulfate&r."
+			]
+			id: "082FB972D2FFFF5D"
+			tasks: [{
+				id: "533CDDEE815D7BDA"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Real PCBs"
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3F52C49E18F7B1BE"
+				"082FB972D2FFFF5D"
+				"000CE46D72931AFD"
+				"1C7211968F773774"
+			]
+			description: ["Your first HV circuit!"]
+			id: "020FAE71BEDA6B1E"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0DF6B7DA492E932C"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			title: "hiding places"
+			x: 3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -207,19 +361,106 @@
 				"7BEE21DF23576B53"
 			]
 			description: [
-				"In order to produce silicon wafers, you need a cutter; and an MV cutter requiores &dvanadium steel&r. It's made from... vanadium, iron, and chromium."
+				"&aVanadium Steel&r is a steel made from... vanadium. It has a 7:1:1 ratio of iron:chromium:vanadium."
 				""
-				"You can get vanadium via the reduction of &dvanadium pentoxide&r with calcium; and you can get vanadium pentoxide from &dslag processing&r. Better check EMI."
+				"Vanadium is only found as a byproduct of &dslag&r processing, which is made from smelting &dmagnetite dust&r in a blast furnace. Better check EMI."
 			]
-			id: "694101C8ED732C65"
+			id: "641046C8A91952E9"
 			tasks: [{
-				id: "7BC624CDDEB65F45"
-				item: "gtceu:mv_cutter"
+				id: "55D67CFC1BBB6BC7"
+				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			title: "Styrofoam"
-			x: -0.5d
-			y: 5.0d
+			title: "Vanadium?"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["78729F0568BF5AEE"]
+			description: [
+				"Silicon wafers by themselves aren't very useful; they need to be &dengraved&r (using a laser engraver, of course) to get actual useful silicon chips."
+				""
+				"The MV Laser Engraver needs an MV Emitter, which requires a &dflawless emerald&r. You can get one by sifting through &demerald ore&r, or in HV you can directly engrave emeralds. "
+			]
+			id: "1C7211968F773774"
+			tasks: [
+				{
+					id: "7AB07EB683BDDC49"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+				{
+					id: "3F4E43AA3F5A26D7"
+					item: "gtceu:ilc_chip"
+					type: "item"
+				}
+			]
+			title: "Photolithography"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6946A93109A56A1B"]
+			description: ["Replacing polyethylene with &dpolyvinyl chloride&r in your circuit boards will get you twice the board per unit of plastic."]
+			id: "7EF458879D3031AF"
+			optional: true
+			tasks: [{
+				id: "52F3239C7C553BD0"
+				item: "gtceu:polyvinyl_chloride_plate"
+				type: "item"
+			}]
+			title: "It's Not Quite Latex..."
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"&dSilicone Rubber&r is the next \"tier\" of rubber; it functions as an alternative to regular rubber for wire coverings and is mandatory for HV components."
+				""
+				"It's made in a few ways, but each one needs &dsilicon dust&r, &dchlorine&r, and &dmethane&r."
+			]
+			id: "4D03AD6DD06D9401"
+			shape: "hexagon"
+			tasks: [{
+				id: "0384999D1E24ECEB"
+				item: "gtceu:silicone_rubber_plate"
+				type: "item"
+			}]
+			title: "Dimethyldichlorosilane"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"Need a lot of sulfuric acid, but your ore roasting just isn't cutting it? Try gathering &dNether Air&r."
+				""
+				"In MV, it can be centrifuged to get &dSulfur Dioxide&r, which can be transformed into sulfuric acid via sulfur trioxide."
+			]
+			id: "4E54895C4BAA755D"
+			rewards: [{
+				id: "622B1E0F47394BC3"
+				item: {
+					Count: 1b
+					id: "minecraft:chest"
+					tag: {
+						display: {
+							Lore: ["[{\"text\":\"This mod adds one block: the nether chest. It serves a counterpart to the ender chest, having a special ability based on the nether dimension. When items are stored in nether chest, their normal stack size limit is multiplied by 8 due to the way the nether compresses space by a factor of 8. This stack size increase also applies to tools and any other items that aren't normally stackable. Despite their name, trying to open one in the nether is a very bad idea.\",\"italic\":false}]"]
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "4659A47C5BD9DCD6"
+				item: "gtceu:mv_gas_collector"
+				type: "item"
+			}]
+			title: "Nether Chest"
+			x: 0.5d
+			y: 5.5d
 		}
 	]
 	subtitle: ["You must acquire a taste for freeform jazz."]
