@@ -310,7 +310,6 @@ export const rewriteLowerTierComponentRecipes = (event) => {
         rewriteConveyorRecipes(event, tier);
         rewritePumpRecipes(event, tier);
         rewriteRobotArmRecipes(event, tier);
-        rewriteVoltageCoilRecipes(event, tier);
         rewriteSensorEmitterRecipes(event, tier);
     }
 }
