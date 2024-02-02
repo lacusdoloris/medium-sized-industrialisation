@@ -585,13 +585,13 @@
         "version_id": "kC6SY4Zp"
     },
     "sbJh4AZw": {
-        "checksum": "93242789d69c6ad2e866f280f93ac5ac6bd49d0642c909184df74f7374e18ceffae49156b3b981a225bc0d40df24d4882b90be64835ba003ec4ae2ae25791f4b",
+        "checksum": "c4b808b0c74a7433dc85b1dd644e4960bbb2921fcb65dcc95e0a91b7c3bafcd13c054af473317c347f840bad8024fcae857f31d8f35f62114b77a3147e8008b7",
         "name": "Occultism",
         "pinned": false,
         "project_id": "sbJh4AZw",
         "selected": true,
-        "version": "1.20.1-1.113.0",
-        "version_id": "iHMRIJnh"
+        "version": "1.20.1-1.113.1",
+        "version_id": "QZeeIWkM"
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
@@ -639,13 +639,13 @@
         "version_id": "D0wNzrR0"
     },
     "u6dRKJwZ": {
-        "checksum": "c6eb4078b21e465a331bd64ef0460b6d0217dab4036c82a83dea9a6b7c145e7c5fee2015ac662490eada7c160cc8388ec70cb97fe31658866b36a2697a7a0ec2",
+        "checksum": "ab210e3edfb7bb20e143e1eb658f8e4f75434dad62505470c58a719b7db2a0f27469bc65b7b5b107ff5e6d4dec37ba4ae8487884711009d6dc3126cc29314643",
         "name": "Just Enough Items",
         "pinned": false,
         "project_id": "u6dRKJwZ",
         "selected": true,
-        "version": "15.2.0.27",
-        "version_id": "HU1FUi8s"
+        "version": "15.3.0.1",
+        "version_id": "MzrEaunt"
     },
     "uOVMgoil": {
         "checksum": "647b04ea340c4b63742d3fa410a6f94aeb12f0220c118879deef62415cfdc3d26f2f6cd7ab3cf4523cf3168b9c350fd3d36a4cb43eeeaa57e2cd6a77de21613c",
