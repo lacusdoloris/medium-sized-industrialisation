@@ -46,7 +46,7 @@ export const addSlagProcessingRecipes = (event) => {
     event.recipes.gtceu.centrifuge("nijika:misc/slag_processing/centrifuging_slurry")
         .inputFluids(Fluid.of("gtceu:slag_slurry").withAmount(1 * FluidAmounts.BUCKET))
         .chancedOutput("1x gtceu:rutile_dust", 2000.0, 500.0)
-        .chancedOutput("1x gtceu:vanadium_dust", 500.0, 500.0)
+        .chancedOutput("1x gtceu:vanadium_pentoxide_dust", 500.0, 500.0)
         .chancedOutput("1x gtceu:alumina_dust", 1500.0, 500.0)
         .chancedOutput("1x gtceu:silicon_dioxide_dust", 2600.0, 0.0)
         .chancedOutput("1x gtceu:magnesia_dust", 800.0, 500.0)
