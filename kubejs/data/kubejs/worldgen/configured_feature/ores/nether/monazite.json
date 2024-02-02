@@ -2,7 +2,8 @@
 	"type": "bigglobe:nether_ore",
 	"config": {
         "blocks": {
-            "minecraft:netherrack": "gtceu:netherrack_monazite_ore"
+            "minecraft:netherrack": "gtceu:netherrack_monazite_ore",
+            "minecraft:basalt": "gtceu:basalt_monazite_ore"
         },
 
 		"chance": "0.10",

@@ -4,7 +4,8 @@
         "blocks": {
             "minecraft:netherrack": "gtceu:netherrack_tantalite_ore",
             "minecraft:soul_soil": "gtceu:netherrack_pyrolusite_ore",
-            "minecraft:soul_sand": "gtceu:netherrack_pyrolusite_ore"
+            "minecraft:soul_sand": "gtceu:netherrack_pyrolusite_ore",
+            "minecraft:basalt": "gtceu:basalt_pyrolusite_ore"
         },
 
         "chance": "0.35",

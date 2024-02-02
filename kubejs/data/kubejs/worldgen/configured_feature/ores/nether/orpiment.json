@@ -2,7 +2,8 @@
 	"type": "bigglobe:nether_ore",
 	"config": {
         "blocks": {
-            "minecraft:netherrack": "gtceu:netherrack_orpiment_ore"
+            "minecraft:netherrack": "gtceu:netherrack_orpiment_ore",
+            "minecraft:basalt": "gtceu:basalt_orpiment_ore"
         },
 
 		"chance": "0.15",

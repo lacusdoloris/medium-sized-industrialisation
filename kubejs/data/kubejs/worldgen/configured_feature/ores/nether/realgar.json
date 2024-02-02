@@ -2,7 +2,8 @@
 	"type": "bigglobe:nether_ore",
 	"config": {
         "blocks": {
-            "minecraft:netherrack": "gtceu:netherrack_realgar_ore"
+            "minecraft:netherrack": "gtceu:netherrack_realgar_ore",
+            "minecraft:basalt": "gtceu:basalt_realgar_ore"
         },
 
 		"chance": "0.15",
