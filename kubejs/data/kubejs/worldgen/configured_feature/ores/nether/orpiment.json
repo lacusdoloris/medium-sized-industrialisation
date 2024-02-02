@@ -1,5 +1,5 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:nether_ore",
 	"config": {
         "blocks": {
             "minecraft:netherrack": "gtceu:netherrack_orpiment_ore"
