@@ -71,6 +71,14 @@ export const customiseMaterials = () => {
         getOreProperty(bauxite).getOreByProducts().clear();
     }
 
+    // replace aluminium with chromite as a byproduct of emerald refining.
+    let emerald = getMaterial("emerald");
+    {
+        let oreProp = getOreProperty(emerald);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(getMaterial("beryllium"), getMaterial("chromite"));
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");

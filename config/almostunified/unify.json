@@ -82,7 +82,8 @@
   "priorityOverrides": {
     "forge:ores/iron": "gtceu",
     "forge:ores/copper": "gtceu",
-    "forge:ores/gold": "gtceu"
+    "forge:ores/gold": "gtceu",
+    "forge:ores/emerald": "gtceu"
   },
   "customTags": {},
   "tagOwnerships": {},
