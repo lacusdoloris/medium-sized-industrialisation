@@ -10,6 +10,12 @@ export const addCreateRockProcessingRecipes = (event) => {
         .EUt(2)
         .duration((7 * 20) + 10);
 
+    event.recipes.gtceu.macerator("nijika:misc/calcite_from_calcite")
+        .itemInputs("1x minecraft:calcite")
+        .itemOutputs("1x gtceu:calcite_dust")
+        .EUt(2)
+        .duration((7 * 20) + 10);
+
     event.recipes.gtceu.rock_breaker("nijika:misc/limestone_rock_breaker")
         .notConsumable("1x create:limestone")
         .itemOutputs("1x create:limestone")
