@@ -71,6 +71,15 @@
         "version": "mc",
         "version_id": "gPW5t9vv"
     },
+    "5ZwdcRci": {
+        "checksum": "a52e698dadf564ee7596bc6472a2bee9c5fc71734da6cf594e4164f907eea01cbdd82a6b474b02894d5550865ecd94d26fc70fa38481a6ed74a2dc5197663f75",
+        "name": "ImmediatelyFast",
+        "pinned": false,
+        "project_id": "5ZwdcRci",
+        "selected": true,
+        "version": "1.2.10+1.20.4-forge",
+        "version_id": "v2sxhCOI"
+    },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
         "name": "Inventory Sorting",
