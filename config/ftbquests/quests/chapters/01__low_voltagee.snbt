@@ -815,7 +815,7 @@
 			]
 			description: ["With your first &aMedium Voltage&r circuits and a steady supply of steel, you can now move into the MV Tier."]
 			id: "535977705E793982"
-			shape: "diamond"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "444B92D12F7467FF"
