@@ -413,15 +413,6 @@
         "version": "1.20.1-1.10.2",
         "version_id": "kcO6KikB"
     },
-    "ZzjhlDgM": {
-        "checksum": "dcb415ab12a674095441255d8a38586dbfdfd01190a784cd03e701bf4a7a3177a9c0eda9d2ae25e4ee581ba99180d20a50ad9f76a18f1644957c0af344377bf1",
-        "name": "Create: Steam 'n' Rails",
-        "pinned": false,
-        "project_id": "ZzjhlDgM",
-        "selected": true,
-        "version": "1.5.3-forge-mc1.20.1",
-        "version_id": "LLyO2sHq"
-    },
     "aC3cM3Vq": {
         "checksum": "73308cace1ab8e646dfe07112044a735575a7286af3e8db33c4a94a69ac26102b9a7f821d1b2fcb612f39f13f7dd80fa49b47b61b5ce8163cc08dd3549b55146",
         "name": "Mouse Tweaks",
@@ -646,15 +637,6 @@
         "selected": true,
         "version": "15.3.0.1",
         "version_id": "MzrEaunt"
-    },
-    "uOVMgoil": {
-        "checksum": "647b04ea340c4b63742d3fa410a6f94aeb12f0220c118879deef62415cfdc3d26f2f6cd7ab3cf4523cf3168b9c350fd3d36a4cb43eeeaa57e2cd6a77de21613c",
-        "name": "Theurgy",
-        "pinned": false,
-        "project_id": "uOVMgoil",
-        "selected": true,
-        "version": "1.20.1-1.16.1",
-        "version_id": "laYXXzQk"
     },
     "umyGl7zF": {
         "checksum": "e99654b034a1cc5b2561f888bda31fbe5819918166adadc8fb27113da43183b37f8f065698592d2070d354091916aa8bde2772d126e3d713cd902d96a9f55c9b",
