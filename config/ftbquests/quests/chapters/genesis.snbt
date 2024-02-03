@@ -115,6 +115,7 @@
 			y: 0.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["473EF5FF75ACB3EC"]
 			description: ["This will be one of your only gifts. Use wisely, and don't lose it."]
 			icon: {
@@ -126,33 +127,18 @@
 			}
 			id: "479B9A742EB15E47"
 			rewards: [{
-				id: "7F0B2D94A10EA7A6"
+				id: "0908A0262E2FF9DE"
 				item: {
 					Count: 1b
 					id: "eccentrictome:tome"
 					tag: {
 						"eccentrictome:mods": {
-							integrateddynamics: {
-								0: {
-									Count: 1b
-									id: "integrateddynamics:on_the_dynamics_of_integration"
-								}
-							}
 							littlelogistics: {
 								0: {
 									Count: 1b
 									id: "patchouli:guide_book"
 									tag: {
 										"patchouli:book": "littlelogistics:guide"
-									}
-								}
-							}
-							modonomicon: {
-								0: {
-									Count: 1b
-									id: "modonomicon:modonomicon"
-									tag: {
-										"modonomicon:book_id": "theurgy:the_hermetica"
 									}
 								}
 							}
@@ -165,21 +151,12 @@
 									}
 								}
 							}
-							occultism: {
-								0: {
-									Count: 1b
-									id: "occultism:dictionary_of_spirits"
-									tag: {
-										"modonomicon:book_id": "occultism:dictionary_of_spirits"
-									}
-								}
-							}
-							productivebees: {
+							mysticalagriculture: {
 								0: {
 									Count: 1b
 									id: "patchouli:guide_book"
 									tag: {
-										"patchouli:book": "productivebees:guide"
+										"patchouli:book": "mysticalagriculture:guide"
 									}
 								}
 							}
