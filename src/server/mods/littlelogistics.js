@@ -40,8 +40,8 @@ export const adjustLittleLogisticsRecipes = (event) => {
         "1x littlelogistics:steam_locomotive",
         [" P ", "GFG", "ICI"],
         {
-            P: "create:fluid_pipe", 
-            G: "create:cogwheel",
+            P: "gtceu:bronze_small_fluid_pipe", 
+            G: "gtceu:iron_gear",
             F: "minecraft:furnace",
             I: "#forge:plates/iron",
             C: "littlelogistics:seater_car"
@@ -95,8 +95,8 @@ export const adjustLittleLogisticsRecipes = (event) => {
         "littlelogistics:tug",
         [" P ", "GFG", "BBB"],
         {
-            P: "create:fluid_pipe", 
-            G: "create:cogwheel",
+            P: "gtceu:bronze_small_fluid_pipe", 
+            G: "gtceu:iron_gear",
             F: "minecraft:furnace",
             B: "#nijika:valid_boat_bottoms"
         }
