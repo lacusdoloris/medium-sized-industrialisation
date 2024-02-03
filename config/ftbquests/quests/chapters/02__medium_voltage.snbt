@@ -246,7 +246,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["07977A6D680C4DCB"]
+			dependencies: [
+				"07977A6D680C4DCB"
+				"1C7211968F773774"
+			]
 			description: [
 				"You may be thinking \"But, I already made LV circuits! I have nightmares about andesite alloy!\""
 				""
