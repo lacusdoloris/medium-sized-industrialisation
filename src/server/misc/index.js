@@ -23,6 +23,20 @@ export const adjustVariousMiscRecipes = (event) => {
         {S: "#nijika:glues", P: "minecraft:piston"}
     ).id("nijika:misc/sticky_piston");
 
+    event.remove({id: "create:crafting/kinetics/sticky_mechanical_piston"});
+    event.shaped(
+        "create:mechanical_piston", 
+        ["G", "P"], 
+        {G: "#nijika:glues", P: "creatte:mechanical_piston"}
+    ).id("nijika:misc/sticky_also_piston");
+
+    event.remove({id: "create:crafting/kinetics/super_glue"});
+    event.shaped(
+        "create:super_glue",
+        ["GP", "NG"],
+        {G: "#nijika:glues", P: "#forge:plates/iron", N: "#forge:nuggets/iron"}
+    ).id("nijika:misc/super_glue");
+
     event.remove({id: "gtceu:assembler/name_tag"});
     event.recipes.gtceu.assembler("nijika:misc/name_tag")
         .itemInputs("1x #forge:paper", "1x #forge:string")
