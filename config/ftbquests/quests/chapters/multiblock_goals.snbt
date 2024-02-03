@@ -60,6 +60,32 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"The &dImplosion Compressor&r turns dusts into gems. "
+				""
+				"This machine only really has a single purpose: turning &dender pearl dust&r into &aender pearls&r. Mandatory peaceful mode means no endermen, so you're going to need to start mixing that beryillium."
+			]
+			icon: "gtceu:implosion_compressor"
+			id: "487FEDDA6D681D9F"
+			tasks: [
+				{
+					id: "2C1E1CEFC23302D9"
+					item: "gtceu:implosion_compressor"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "55185F10B49D3211"
+					item: "gtceu:solid_machine_casing"
+					type: "item"
+				}
+			]
+			title: "Implosion? But I thought you said -"
+			x: 0.0d
+			y: 2.0d
+		}
 	]
 	title: "Multiblock Goals"
 }
