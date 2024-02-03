@@ -30,13 +30,22 @@
 				""
 				"If you're having trouble deciding, &dwood vinegar&r for methanol will assist you in getting silicone rubber which is required for HV and further. Setting up biomass production from bio chaff is also a low effort mechanism for ethylene production."
 			]
+			icon: "gtceu:pyrolyse_oven"
 			id: "5AE8C2AAC80C00E9"
 			min_width: 500
-			tasks: [{
-				id: "7E8FE780C13FC608"
-				item: "gtceu:pyrolyse_oven"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7E8FE780C13FC608"
+					item: "gtceu:pyrolyse_oven"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "15BB2C9F562D8A51"
+					item: "gtceu:ulv_machine_casing"
+					type: "item"
+				}
+			]
 			title: "Coke Oven Mk2"
 			x: 0.0d
 			y: 0.0d
@@ -50,12 +59,21 @@
 				""
 				"These things are large and energy intensive, so make sure you have the infrastructure to support them. Infinite water covers will help a lot."
 			]
+			icon: "gtceu:evaporation_pool"
 			id: "2B347248F320B8F2"
-			tasks: [{
-				id: "1BB1924B066B1FE9"
-				item: "gtceu:evaporation_pool"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1BB1924B066B1FE9"
+					item: "gtceu:evaporation_pool"
+					type: "item"
+				}
+				{
+					count: 156L
+					id: "1E9D2AF4E16C2357"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+			]
 			title: "Not Safe For Swimming"
 			x: 2.0d
 			y: 0.0d
@@ -85,6 +103,75 @@
 			title: "Implosion? But I thought you said -"
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"641046C8A91952E9"
+				"535977705E793982"
+			]
+			description: [
+				"Oil. It's a wonderful substance - nicknamed black gold for a reason."
+				""
+				"How do you get it? With oil drills. Obviously. The &dAdvanced Fluid Drilling Rig&r will drill up oil from below bedrock (it's magic!)."
+				""
+				"There's four types of oil:"
+				""
+				"- &aHeavy Oil&r, which gets you lots of &dheavy fuel&r"
+				"- &aLight Oil&r, which gets you lots of &dsulfuric gas&r"
+				"- &aRaw Oil&r, which gets you lots of &dnaphtha&r"
+				"- Plain old &aOil&r, which gets you a mixture of each."
+				""
+				"You can also drill for &dNatural Gas&r, which can be processed further for various petrochemical resources. (Let us not talk about salt water.)"
+				""
+				"The first tier of drill is slow and depletes resources fully, but it's still worthwhile building a few."
+			]
+			icon: "gtceu:mv_fluid_drilling_rig"
+			id: "2A88522EE04505E5"
+			subtitle: "What? Of course not! Why would it be about oil? I don't even like oil!"
+			tasks: [
+				{
+					id: "283954CD80521E02"
+					item: "gtceu:mv_fluid_drilling_rig"
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "5D4F6019E56C63CA"
+					item: "gtceu:solid_machine_casing"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "1757011A6611E5ED"
+					item: "gtceu:steel_frame"
+					type: "item"
+				}
+			]
+			title: "President Bush, is it true that the war in Iraq is really about Oil?"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A88522EE04505E5"]
+			id: "3E6B6DB99FA81CE3"
+			tasks: [{
+				id: "3903D97DC1E6302C"
+				item: "gtceu:hv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E6B6DB99FA81CE3"]
+			id: "7FC90B7BD3A3C106"
+			tasks: [{
+				id: "07CC699EF2D4B63A"
+				item: "gtceu:ev_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
 		}
 	]
 	title: "Multiblock Goals"
