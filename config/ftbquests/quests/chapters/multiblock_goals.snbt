@@ -8,36 +8,58 @@
 	id: "3C278A17A70F0701"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"The &aPyrolyse Oven&r is a multipurpose multiblock that primarily deals with burning biological material into various fluids. It's like an EBF leaned on its side, including the usage of tiered coils. Sadly, &dcupronickel coils&r confer a &dspeed penalty&r; you should consider going through the bauxite processing questtline to get aluminium for &dFerrochrolumium&r coils."
-			""
-			"If you're running off of boilers, you should consider replacing your coke ovens (you're using coke ovens... right?) with one of these."
-			""
-			"It's up to you what byproducts you refine from your charcoal, but here's a quick guide to each:"
-			""
-			"- &bWood Tar&r distills primarily into burnable products. This is good for getting more energy out of your wood."
-			"- &bWood Vinegar&r's best byproducts are methanol and acetic acid, both useful for petrochemical production."
-			"- &bWood Gas&r distills into carbon gasses and methane; alternatively, it can be burnt directly for energy."
-			"- &bCoal Tar&r's is useful for hydrogen sulfide production."
-			"- &bCoal Gas&r is an easy source for ammonia and ethylbenzene."
-			"- &bCharcoal Byproducts&r distills into various other wood chemicals less efficiently than just burning the wood."
-			"- &bHeavy Oil&r can be produced for a renewable alternative to fluid drilling rigs."
-			"- &bCreosote&r is used to make minecart rails or as an extremely easy source of lubricant."
-			"- &bBiomass&r can be turned straight into ethanol, which is then useful for ethylene production."
-			""
-			"If you're having trouble deciding, &dwood vinegar&r for methanol will assist you in getting silicone rubber which is required for HV and further. Setting up biomass production from bio chaff is also a low effort mechanism for ethylene production."
-		]
-		id: "5AE8C2AAC80C00E9"
-		min_width: 500
-		tasks: [{
-			id: "7E8FE780C13FC608"
-			item: "gtceu:pyrolyse_oven"
-			type: "item"
-		}]
-		title: "Coke Oven Mk2"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"The &aPyrolyse Oven&r is a multipurpose multiblock that primarily deals with burning biological material into various fluids. It's like an EBF leaned on its side, including the usage of tiered coils. Sadly, &dcupronickel coils&r confer a &dspeed penalty&r; you should consider going through the bauxite processing questtline to get aluminium for &dFerrochrolumium&r coils."
+				""
+				"If you're running off of boilers, you should consider replacing your coke ovens (you're using coke ovens... right?) with one of these."
+				""
+				"It's up to you what byproducts you refine from your charcoal, but here's a quick guide to each:"
+				""
+				"- &bWood Tar&r distills primarily into burnable products. This is good for getting more energy out of your wood."
+				"- &bWood Vinegar&r's best byproducts are methanol and acetic acid, both useful for petrochemical production."
+				"- &bWood Gas&r distills into carbon gasses and methane; alternatively, it can be burnt directly for energy."
+				"- &bCoal Tar&r's is useful for hydrogen sulfide production."
+				"- &bCoal Gas&r is an easy source for ammonia and ethylbenzene."
+				"- &bCharcoal Byproducts&r distills into various other wood chemicals less efficiently than just burning the wood."
+				"- &bHeavy Oil&r can be produced for a renewable alternative to fluid drilling rigs."
+				"- &bCreosote&r is used to make minecart rails or as an extremely easy source of lubricant."
+				"- &bBiomass&r can be turned straight into ethanol, which is then useful for ethylene production."
+				""
+				"If you're having trouble deciding, &dwood vinegar&r for methanol will assist you in getting silicone rubber which is required for HV and further. Setting up biomass production from bio chaff is also a low effort mechanism for ethylene production."
+			]
+			id: "5AE8C2AAC80C00E9"
+			min_width: 500
+			tasks: [{
+				id: "7E8FE780C13FC608"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			title: "Coke Oven Mk2"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["535977705E793982"]
+			description: [
+				"The &dEvaporation Pool&r is one of the custom multiblocks introduced by this pack!"
+				""
+				"Its primary purposes are to produce &dbrine&r from regular old dirt water for electrolysis, and to dry out &dred mud&r for material recovery."
+				""
+				"These things are large and energy intensive, so make sure you have the infrastructure to support them. Infinite water covers will help a lot."
+			]
+			id: "2B347248F320B8F2"
+			tasks: [{
+				id: "1BB1924B066B1FE9"
+				item: "gtceu:evaporation_pool"
+				type: "item"
+			}]
+			title: "Not Safe For Swimming"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	title: "Multiblock Goals"
 }
