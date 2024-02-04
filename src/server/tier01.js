@@ -1,8 +1,7 @@
 
 // LV, that is.
 
-import { GT_MACHINE_TIERS, TIER_TO_HIGHER_TIER_MAP } from "../../shared/definition";
-import { doTier01ChemicalEng } from "./chemicals";
+import { GT_MACHINE_TIERS, TIER_TO_HIGHER_TIER_MAP } from "../shared/definition";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {
@@ -55,8 +54,6 @@ export const doTier01Content = (event) => {
             )
         ]
     ).transitionalItem("gtceu:wrought_iron_plate").loops(4).id("nijika:tier01/evil_gear_recipe");
-
-    doTier01ChemicalEng(event);
 
     event.recipes.gtceu.assembler("nijika:tier01/nickel_cadmium_battery")
         .itemInputs(

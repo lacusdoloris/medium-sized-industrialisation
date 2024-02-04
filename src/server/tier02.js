@@ -1,10 +1,10 @@
 
 // MV!
 
-import { GT_MACHINE_TIERS } from "../../shared/definition";
-import { addAluminiumProcessingRecipes } from "./aluminium";
-import { addChromiteProcessingRecipes } from "./chromium";
-import { addVanadiumChemicalChain } from "./vanadium";
+import { GT_MACHINE_TIERS } from "../shared/definition";
+import { addAluminiumProcessingRecipes } from "./chemicals/aluminium";
+import { addChromiteProcessingRecipes } from "./chemicals/chromium";
+import { addVanadiumChemicalChain } from "./chemicals/vanadium";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier02Content = (event) => {
@@ -32,8 +32,4 @@ export const doTier02Content = (event) => {
         .chancedOutput("8x gtceu:sodium_hydroxide_dust", 5000.0, 0.0)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20 * 60);
-
-    addAluminiumProcessingRecipes(event);
-    addChromiteProcessingRecipes(event);
-    addVanadiumChemicalChain(event);
 }

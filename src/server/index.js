@@ -3,6 +3,7 @@
  * things here directly, and instead call the appropriate function from the two mega-events.
  */
 
+import { addChemicalProcessingRecipes } from "./chemicals";
 import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
@@ -22,6 +23,8 @@ ServerEvents.recipes((event) => {
 
     adjustVariousMiscRecipes(event);
     doModRecipes(event);
+
+    addChemicalProcessingRecipes(event);
 
     // == EARLYGAME == //
 

@@ -1,10 +1,9 @@
-
 /**
  * Reworks Gallium, Arsenic, and Gallium Arsenide processing for tier 1.
  * 
  * @param {Internal.RecipesEventJS} event
  */
-const addGalliumArsenicRecipes = (event) => {
+export const addGalliumArsenicRecipes = (event) => {
     event.remove({id: "gtceu:mixer/gallium_arsenide"});
 
     // Realgar roasting, As4S4 + 7 O2 = 2 As2O3 + 4 SO2
@@ -50,13 +49,4 @@ const addGalliumArsenicRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:chlorine").withAmount(6 * FluidAmounts.BUCKET))
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV]);
-}
-
-// TODO: zincite sludge
-const addZincRecipes = (event) => {
-
-}
-
-export const doTier01ChemicalEng = (event) => {
-    addGalliumArsenicRecipes(event);
 }
