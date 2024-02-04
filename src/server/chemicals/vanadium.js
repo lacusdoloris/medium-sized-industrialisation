@@ -71,4 +71,13 @@ export const addVanadiumChemicalChain = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration((40 * 60) * 20)
         .circuit(2);
+
+    // replace clean stainless steel casing with vanadium steel casing
+    event.remove({id: "gtceu:assembler/casing_stainless_clean"});
+    event.recipes.gtceu.assembler("nijika:misc/casings/clean")
+        .itemInputs("6x #forge:plates/vanadium_steel", "1x gtceu:vanadium_steel_frame")
+        .itemOutputs("2x gtceu:clean_machine_casing")
+        .EUt(16)
+        .duration(2 * 20 + 10)
+        .circuit(6);
 }

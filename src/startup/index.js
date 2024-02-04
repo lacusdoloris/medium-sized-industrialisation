@@ -85,6 +85,9 @@ export const customiseMaterials = () => {
 
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
+
+    // Used for clean machine casing.
+    getMaterial("vanadium_steel").addFlags(GTMaterialFlags.GENERATE_FRAME);
 };
 
 /**
