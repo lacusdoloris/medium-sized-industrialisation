@@ -12,6 +12,7 @@ import { setupItemTags } from "./tags";
 import { doTier00Content } from "./tier00";
 import { doTier01Content } from "./tier01";
 import { doTier02Content } from "./tier02";
+import { doTier03Content } from "./tier03";
 
 
 ServerEvents.tags("items", setupItemTags);
@@ -33,4 +34,5 @@ ServerEvents.recipes((event) => {
 
     // == Early-Mid Game == //
     doTier02Content(event);
+    doTier03Content(event);
 });
