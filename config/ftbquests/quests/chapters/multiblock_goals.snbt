@@ -154,6 +154,7 @@
 		{
 			dependencies: ["2A88522EE04505E5"]
 			id: "3E6B6DB99FA81CE3"
+			invisible: true
 			tasks: [{
 				id: "3903D97DC1E6302C"
 				item: "gtceu:hv_fluid_drilling_rig"
@@ -210,12 +211,33 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"641046C8A91952E9"
+				"020FAE71BEDA6B1E"
+			]
+			description: [
+				"The &aDistillation Tower&r is undoubtedly one of the most important multiblocks in the entire pack, behind perhaps only the EBF. It acts as a multiblock &ddistiller&r, separating out elements from various chemical compounds."
+				""
+				"The tower is a unique multiblock, however: it can be arbitrarily tall to fit its recipes. Each layer of the tower adds another output from a recipe in its &doutput hatch&r."
+				""
+				"For example, when distilling Coal Gas, the first layer has &dCoal Tar&r, the second layer has &dAmmonia&r, the third layer has &dEthylbenzene&r, and the fourth layer has &dcarbon dioxide&r. Any layer other than the first layer is &acompletely optional&r; if you don't have a usage for that chemical, you can ignore building the layer!"
+				""
+				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues); and a top layer with a muffler hatch."
+			]
 			id: "64CDC217C4073379"
-			tasks: [{
-				id: "6058C38EBE40EC5A"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6058C38EBE40EC5A"
+					item: "gtceu:distillation_tower"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "44ACD456ED94DCEB"
+					item: { Count: 21b, id: "gtceu:clean_machine_casing" }
+					type: "item"
+				}
+			]
 			title: "Multiblock Distillation"
 			x: 6.5d
 			y: 1.5d
