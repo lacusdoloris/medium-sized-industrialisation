@@ -37,9 +37,9 @@ export const addVanadiumChemicalChain = (event) => {
             "47x #forge:ingots/iron",
             "9x #forge:ingots/chromium",
             "9x #forge:ingots/vanadium",
-            "8x create:limestone"
+            "8x #nijika:bessemer_limestone"
         )
-        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
         .duration((20 * 60) * 20)
@@ -51,9 +51,9 @@ export const addVanadiumChemicalChain = (event) => {
             "47x #forge:dusts/iron",
             "9x #forge:dusts/chromium",
             "9x #forge:dusts/vanadium",
-            "8x create:limestone"
+            "8x #nijika:bessemer_limestone"
         )
-        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
         .duration((20 * 60) * 20)
@@ -64,9 +64,9 @@ export const addVanadiumChemicalChain = (event) => {
             "47x #forge:storage_blocks/iron",
             "9x #forge:storage_blocks/chromium",
             "9x #forge:storage_blocks/vanadium",
-            "64x create:limestone",
+            "64x #nijika:bessemer_limestone",
         )
-        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(90 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18900 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_block")
         .EUt(GTValues.VA[GTValues.HV])
         .duration((40 * 60) * 20)

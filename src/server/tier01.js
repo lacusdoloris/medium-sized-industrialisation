@@ -22,7 +22,7 @@ export const doTier01Content = (event) => {
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_ingot_bessemer_process")
         .itemInputs(
             "64x #forge:ingots/iron",
-            "8x create:limestone",
+            "8x #nijika:bessemer_limestone",
         )
         .inputFluids(Fluid.of("gtceu:air").withAmount(10 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_ingot")
@@ -33,13 +33,25 @@ export const doTier01Content = (event) => {
     event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_block_bessemer_process")
         .itemInputs(
             "64x #forge:storage_blocks/iron",
-            "64x create:limestone",
+            "64x #nijika:bessemer_limestone",
         )
         .inputFluids(Fluid.of("gtceu:air").withAmount(90 * FluidAmounts.BUCKET))
         .itemOutputs("64x gtceu:steel_block")
         .EUt(GTValues.VA[GTValues.MV])
         .circuit(1)
         .duration(20 * 60 * 40);  // 40 minutes at MV
+
+    // alt recipe using oxygen directly
+    event.recipes.gtceu.bessemer_smelting("nijika:tier01/steel_block_bessemer_with_o2")
+        .itemInputs(
+            "64x #forge:storage_blocks/iron",
+            "64x #nijika:bessemer_limestone"
+        )
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18900 * FluidAmounts.MILLIBUCKET))
+        .itemOutputs("64x gtceu:steel_block")
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(1)
+        .duration(20 * 60 * 40);
 
     // im so sorry.
     event.recipes.create.sequenced_assembly(

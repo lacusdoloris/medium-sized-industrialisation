@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "gtceu:calcite_dust",
+        "create:limestone",
+        "minecraft:calcite"
+    ]
+}
