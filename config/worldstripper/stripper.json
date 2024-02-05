@@ -79,6 +79,8 @@
     "minecraft:soul_sand",
     "minecraft:soul_soil",
     "minecraft:blackstone",
-    "minecraft:magma_block"
+    "minecraft:magma_block",
+    "bigglobe:ashen_netherrack",
+    "bigglobe:hidden_lava"
   ]
 }
