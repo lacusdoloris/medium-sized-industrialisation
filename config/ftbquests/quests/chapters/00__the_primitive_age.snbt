@@ -542,6 +542,7 @@
 				"In any case, you can convert between RF and GTEU at a 4:1 ratio using a power converter. I doubt you'll be able to supply more than 4 amps yet (hence why this quest calls for a 4A converter), but in practice there's no reason to ever not use the 16A converters."
 			]
 			id: "6146BF353E480854"
+			min_width: 400
 			rewards: [
 				{
 					id: "4475703DCA7C775F"
