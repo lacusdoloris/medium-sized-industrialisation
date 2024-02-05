@@ -10,8 +10,8 @@
 		"radius": {
 			"type": "linear_low",
 			"min": 1,
-			"max": 2.5,
-			"average": 1.5
+			"max": 3.5,
+			"average": 2
 		},
         "biomes": "kubejs:sulfur_ore_biomes"
 	}
