@@ -257,7 +257,7 @@
 				""
 				"You already started on the \"Electronic Circuit\" theme; the second theme is the &aintegrated circuit&r. This is more resource efficient than the electronic circuit theme, so consider using these for your machine production instead."
 				""
-				"These circuits require either &dsoldering alloy&r or &dliquid tin&r; there's no reason to ever use soldering alloy, so just use an extractor on some fresh tin."
+				"These circuits require either &dsoldering alloy&r, which is a mixture of lead, antimony, and tin."
 			]
 			id: "03045253789CA043"
 			min_width: 400

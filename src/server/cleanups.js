@@ -18,9 +18,6 @@ const cleanupManualToolRecipes = (event) => {
     event.remove({output: "#forge:dusts", input: "#forge:tools/mortars"});
     event.remove({id: "gtceu:shaped/casing_ulv"});
 
-    // why does this exist?
-    event.remove({type: "gtceu:create_mixer"});
-
     // silent gear sadly adds two ingot recipes so we have to be a bit broader here
     for (let type of ["crafting_shaped", "crafting_shapeless"]) {
         event.remove({output: "#forge:rods", input: "#forge:ingots", type: "minecraft:" + type});
@@ -146,6 +143,9 @@ export const doCleanups = (event) => {
         event.remove({id: "integrateddynamics:smelting/menril_log_filled_coal"});
     }
 
+    // why does this exist?
+    event.remove({type: "gtceu:create_mixer"});
+
     // too easy!
     event.remove({output: "createaddition:alternator"});
 
@@ -153,6 +153,13 @@ export const doCleanups = (event) => {
     event.remove({output: /.*battery.*/, type: "gtceu:canner"});
 
     cleanupGTCEuOreProcessingRecipes(event);
+
+    // remove all circuit assembler recipes that use liquid tin. this keeps lead relevant 
+    // throughout the entire game.
+    // requires a bit of a hack as KJS seemingly can't match on the fluid input?
+    // event.remove({input: "gtceu:tin", type: "gtceu:circuit_assembler"});
+    event.remove({type: "gtceu:circuit_assembler", not: {id: /.*_soldering_alloy$/}})
+    
 
     if (MODPACK_SETTINGS.applyTierAdjustments) {
         // nuke all recycling recipes, they're mismatched to the wrong tier.
