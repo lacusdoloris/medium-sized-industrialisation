@@ -23,7 +23,9 @@ const cleanupManualToolRecipes = (event) => {
         event.remove({output: "#forge:rods", input: "#forge:ingots", type: "minecraft:" + type});
     }
 
-    event.remove({id: "silentgear:bronze_ingot"});
+    if (Platform.isLoaded("silentgear")) {
+        event.remove({id: "silentgear:bronze_ingot"});
+    }
 
     // wires aren't tagged. sigh. use the nuclear option of (gasp) regexps
     event.remove({

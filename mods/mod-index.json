@@ -89,15 +89,6 @@
         "version": "1.9.0-1.20",
         "version_id": "tr2ZGtz4"
     },
-    "73mSSnCf": {
-        "checksum": "67e3e6ea5a7960f541d7fd1f92553f0d63f7c203dc708af5b7a0e6a9840fba5097eff85cddf0c2ef4be109455cc7a21945b3af64bafa2ef267bf9a89e98a6c5d",
-        "name": "Silent Gear",
-        "pinned": false,
-        "project_id": "73mSSnCf",
-        "selected": true,
-        "version": "3.5.3",
-        "version_id": "Z6h0bZ2L"
-    },
     "7n3HbHSE": {
         "checksum": "5a6c563f44caa11d994f0a333c3f34267a12f2ba0d1cbc370971af2144f13ab72fb2f6cdd890577cdaac9ef6ffdcb3e2f29f8bc8866202725e471510daeb67c6",
         "name": "RFTools Utility",
@@ -160,15 +151,6 @@
         "selected": true,
         "version": "0.9.0-beta.1+1.20.1-forge",
         "version_id": "uQyJAqKe"
-    },
-    "BQhuHQo4": {
-        "checksum": "2fda462ede52f7376defb1ab61bdeb589f85c6b4279d029d78128adbb7e1f39b21a7dc9cf79e8d3d535a5bd12286443db505cc0c527c37f8b1981a80a8994f26",
-        "name": "Silent Lib",
-        "pinned": false,
-        "project_id": "BQhuHQo4",
-        "selected": false,
-        "version": "8.0.0",
-        "version_id": "WGt4877n"
     },
     "BrgaSWzF": {
         "checksum": "98f9c8e3f91b6f9a7438d82e888ecf94b54f71fb58c940c98317f7d8691105922d7c1debcfe26f5959beb3e4d2b8b0a8be1f411dba4e1957ca5e7df916cf6beb",
