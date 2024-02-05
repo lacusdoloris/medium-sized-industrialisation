@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "ore_information"
 	group: "14EE7AEE0EF05AEE"
@@ -13,6 +14,482 @@
 	id: "60485E061990F889"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"GregTech has &oa lot&r of different ores available, from the humble &airon&r and &acopper&r of the good 'ol 1.2.5 days to the various members of the &9tungsten family&r found in endgame ore deposits."
+				""
+				"Thanks to the wonders of Big Globe, these deposits are found in &dvarious custom locations&r. You can find out what ore surrounds you using the &dOre Prospector&r. This quest is infinitely repeatable, so you can get a new prospector if your batteries ever run out."
+				""
+				"Shift-right click with the prospector to switch between fluid prospecting and ore prospecting. And, yes, there is 1000+ blocks of ore per chunk."
+			]
+			icon: "gtceu:prospector.luv"
+			id: "7C111E62C0655371"
+			rewards: [{
+				id: "42BBE55B02F843FB"
+				item: "gtceu:prospector.luv"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "3FFE1BFBE1E3CFFD"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "2A0BD39948749875"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Dirt to Diamonds"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"There's no passive resource generation until EV, when you can finally start using &dMystical Agriculture&r (not as easy as it sounds)."
+				""
+				"So... how do you get large amounts of ores with little effort? You build &aa quarry&r, of course! Just like in the Beta days."
+				""
+				"I'm not fucking joking. Put some drills on an elevator pulley and get to work."
+			]
+			id: "4CD9D7A96956380B"
+			subtitle: "The other 1.7."
+			tasks: [{
+				id: "19E4DD615998A3B5"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			title: "Quarries, 1.7 Style"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"Iron Ore comes in the form of &dmagnetite&r, which is found... well, everywhere."
+				""
+				"It peaks at 512 blocks below the local surface, but it can be found at practically any layer. "
+			]
+			id: "4E9EC41540743E14"
+			tasks: [{
+				count: 64L
+				id: "6EAFB1396204BD57"
+				item: { Count: 64b, id: "gtceu:raw_magnetite" }
+				type: "item"
+			}]
+			title: "Iron Ore"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dChalcopyrite&r replaces Copper Ore."
+				""
+				"It has a similar distribution to iron, and is found most commonly at 512 blocks below the local surface."
+			]
+			id: "4A99988A2655BF2D"
+			tasks: [{
+				id: "51EA63F0AC91BDF0"
+				item: "gtceu:raw_chalcopyrite"
+				type: "item"
+			}]
+			title: "Copper Ore"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dChromite&r is the primary ore for Chromium."
+				""
+				"It has an identical distribution to magnetite; it peaks at 512 blocks below the local surface, but can be found anywhere."
+			]
+			id: "6C5BBC98C22C4DD3"
+			tasks: [{
+				count: 64L
+				id: "46D18CBAB197DC1A"
+				item: "gtceu:raw_chromite"
+				type: "item"
+			}]
+			title: "Chromium Ore"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dGold&r ore is one of the ores with a biome requirement."
+				""
+				"It's exclusively found in &9warm biomes&r, peaking at 384 blocks below the local surface."
+			]
+			id: "43F5F20F2E06A1A7"
+			tasks: [{
+				count: 64L
+				id: "22F89A8EECA865A9"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			title: "Gold Ore"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dCassiterite&r is the ore for Tin."
+				""
+				"It's found more towards the local surface, peaking at 256 blocks below the local surface and falling off sharply below that."
+			]
+			id: "29E7EA110C9D5A40"
+			tasks: [{
+				id: "29FC80CCD071E058"
+				item: "gtceu:raw_cassiterite"
+				type: "item"
+			}]
+			title: "Tin Ore"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dBauxite&r is the primary ore of aluminium."
+				""
+				"It's found all over, but only near the surface."
+			]
+			id: "14D30A43CAC8011F"
+			tasks: [{
+				count: 64L
+				id: "4A5EA863354EABF5"
+				item: "gtceu:raw_bauxite"
+				type: "item"
+			}]
+			title: "Aluminium Ore"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dSilver&r ore has an identical distribution to lead."
+				""
+				"It spawns rarely around 300 blocks below the local surface and tapers off above and below that."
+			]
+			id: "19186FD4E2D1AFE1"
+			tasks: [{
+				count: 64L
+				id: "18C1123F3C83C68B"
+				item: "gtceu:raw_silver"
+				type: "item"
+			}]
+			title: "Silver Ore"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dGalena&r is the ore for Lead. It has an identical distribution to silver."
+				""
+				"It spawns rarely around 300 blocks below the local surface and tapers off above and below that."
+			]
+			id: "4E972D1A47E0A5C7"
+			tasks: [{
+				count: 64L
+				id: "6AA413F0C22CF51F"
+				item: "gtceu:raw_galena"
+				type: "item"
+			}]
+			title: "Lead Ore"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dGarnierite&r and &dPentlandite&r are the two ores of Nickel."
+				""
+				"They have identical distribution; a peak at 700 blocks below the local surface, and then falling off sharply with no ore below Y=-800."
+			]
+			id: "739080C155322A7D"
+			tasks: [
+				{
+					count: 64L
+					id: "66DEBF9C98386439"
+					item: "gtceu:raw_garnierite"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "17184FCD62E18FD7"
+					item: { Count: 64b, id: "gtceu:raw_pentlandite" }
+					type: "item"
+				}
+			]
+			title: "Nickel Ore #2"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dStibnite&r is the primary ore of antimony, but not the only way to obtain it."
+				""
+				"It's found in extremely rare deposits 768 blocks below the local surface."
+			]
+			id: "01294E25CB568AA8"
+			tasks: [{
+				id: "72B5B3530D3D0D3B"
+				item: "gtceu:raw_stibnite"
+				type: "item"
+			}]
+			title: "Antimony Ore"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dRedstone&r is still in the vanilla ore form."
+				""
+				"It's found exclusively in cold biomes, peaking at 384 blocks below the local surface."
+			]
+			id: "5C58C32A278D55F3"
+			tasks: [{
+				count: 64L
+				id: "5DC9E7CB22080E1E"
+				item: { Count: 64b, id: "minecraft:redstone" }
+				type: "item"
+			}]
+			title: "Redstone"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: ["&dDiamond&r is found everywhere in the overworld, at low Y levels."]
+			id: "2659D5D145E08FBA"
+			tasks: [{
+				count: 64L
+				id: "19A2A320F58183A2"
+				item: { Count: 64b, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			title: "Diamonds"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dLapis&r is found under the sea."
+				""
+				"Good luck mining that."
+			]
+			id: "01DD243AA49453DB"
+			tasks: [{
+				count: 64L
+				id: "4E08FD99A18349F3"
+				item: { Count: 64b, id: "minecraft:lapis_lazuli" }
+				type: "item"
+			}]
+			title: "Lapith"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dCoal&r is still the vanilla gem. "
+				""
+				"It has a flat 25% chance to be selected to spawn in a given chunk section."
+			]
+			id: "6A2F727F1E88DD93"
+			tasks: [{
+				count: 64L
+				id: "7E13CF023112FA44"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			title: "Coal"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dEmeralds&r are only found in high hilliness areas, such as mountains."
+				""
+				"Time to find some Extreme Hills."
+			]
+			id: "09D7C99D8BDFD6BE"
+			tasks: [{
+				count: 64L
+				id: "03028B8CE73C9396"
+				item: { Count: 64b, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			title: "Emeralds"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C111E62C0655371"]
+			description: [
+				"&dCobaltite&r is the ore for cobalt. It has an identical distribution to gold."
+				""
+				"It's exclusively found in &9warm biomes&r, peaking at 384 blocks below the local surface."
+			]
+			id: "2A9ED9A753BBA837"
+			tasks: [{
+				count: 64L
+				id: "5022C4626FAA1A0E"
+				item: { Count: 64b, id: "gtceu:raw_cobaltite" }
+				type: "item"
+			}]
+			title: "Cobalt Ore"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["49C36B48DDBFFCC6"]
+			description: [
+				"The Overworld is a bit full of ores, so you can find some more in the Nether."
+				""
+				"Nether ores only have a biome condition, and can be found with equal chance at all levels."
+			]
+			id: "6278EA9D9DFCE1FB"
+			tasks: [{
+				biome: "#kubejs:all_nether_biomes"
+				id: "0D204E2EAF7C7A4F"
+				title: "Visit Any Nether Biomee"
+				type: "biome"
+			}]
+			title: "Nether Ores"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"Both &dRealgar&r and &dOrpiment&r will be your primary arsenic-containing ores."
+				""
+				"They're both found in sulfuric Nether biomes, i.e. Ashen Wastes and Nether Wastes."
+			]
+			id: "48F929CDE9847D17"
+			tasks: [
+				{
+					count: 64L
+					id: "2B39D4FA24FD251F"
+					item: "gtceu:raw_realgar"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "70B6DDC97C6AD8E4"
+					item: { Count: 64b, id: "gtceu:raw_orpiment" }
+					type: "item"
+				}
+			]
+			title: "Arsenic Ores"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"&dTetrahedrite&r is a good source of cadmium and antimony."
+				""
+				"It's found in all nether biomes."
+			]
+			id: "147BD2C894F0B0D8"
+			tasks: [{
+				count: 64L
+				id: "03D2D1BA26F039F6"
+				item: "gtceu:raw_tetrahedrite"
+				type: "item"
+			}]
+			title: "Tetrahedrite Ore"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"&dSphalerite&r is the primary source for zinc and early-game Gallium."
+				""
+				"It's found in all nether biomes."
+			]
+			id: "5F098DC471CBF2CF"
+			tasks: [{
+				count: 64L
+				id: "3D20D4419C6A8CF9"
+				item: "gtceu:raw_sphalerite"
+				type: "item"
+			}]
+			title: "Zinc Ore"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"&dPyrolusite&r and &dTantalite&r are found together, as the only mixed vein currently implemented."
+				""
+				"There's a catch, though: tantalite ore only replaces &dsoul sand&r, whereas pyrolusite ore replaces other blocks."
+				""
+				"Obviously, they're botth found in the Valley of Souls biome."
+			]
+			id: "434AE231D11E4C2B"
+			rewards: [{
+				id: "6F606ACE780F10E1"
+				item: "gtceu:tantalum_capacitor"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "0CF1028F89F1D9D5"
+					item: "gtceu:raw_tantalite"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1D44AA9D60461057"
+					item: { Count: 64b, id: "gtceu:raw_pyrolusite" }
+					type: "item"
+				}
+			]
+			title: "Manganese Veins"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"&dSulfur&r ore is the easiest way of getting sulfur."
+				""
+				"It's found in sulfuric Nether biomes, i.e. Ashen Wastes and Nether Wastes."
+			]
+			id: "3981DD588526C43E"
+			tasks: [{
+				count: 64L
+				id: "11B206130EFF28F2"
+				item: "gtceu:raw_sulfur"
+				type: "item"
+			}]
+			title: "Sulfur Ore"
+			x: 8.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["A quick guide to Big Globe ore veins."]
 	title: "Ore Information"
 }
