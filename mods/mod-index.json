@@ -101,7 +101,7 @@
     "7tG215v7": {
         "checksum": "016ad3396447b7d0c7371a8af9421ed98b87db2034c99e6fb0c304204a82b48c64092d07a0e978b1d3a20fdc6d9b9f450af1cb650281e1681ccb656baf29d551",
         "name": "GregTechCEu Modern",
-        "pinned": false,
+        "pinned": true,
         "project_id": "7tG215v7",
         "selected": false,
         "version": "mc1.20.1-1.1.2.a",
@@ -198,13 +198,13 @@
         "version_id": "3QDNtJUd"
     },
     "FTeXqI9v": {
-        "checksum": "b9c785d6d2385f12864db2ed8a232ca5284c7d19249ba90c8f6d142988d8249a65d4fb9308858af26a36eff16b820a40f3346c566d89b61fe26ef0cbc83bc71f",
+        "checksum": "0f17666aab7ba800dc268168aa3b0bfc9a4bc457c4deec666aa8ea3f3a39075c17d684f1652a5b93300b8bbae0678defb18f4632397ac455ddf2f25987f54246",
         "name": "Create: New Age",
         "pinned": false,
         "project_id": "FTeXqI9v",
         "selected": true,
-        "version": "1.1.1",
-        "version_id": "rvYVvldk"
+        "version": "1.1.2",
+        "version_id": "2BEeSV7E"
     },
     "FWtAXlpg": {
         "checksum": "468dadae5df820ce4b67eb503767ae042ae101fa78d58986d9b986aeca4517fd355d74ca35c522afa38ba6a3c6d5d07c6dd187139ac7d43c8f1ae505fe895e6b",
@@ -225,13 +225,13 @@
         "version_id": "3jLavA1z"
     },
     "G1hIVOrD": {
-        "checksum": "8208475dc10de2f296aac638ef3606e6240deb5e24e03caff785e4de1887983bfda3f90f8850274ce84db553461b4aadb50f1fc160adddee45dd983a21677796",
+        "checksum": "7bfe2ecf3f0d399f1cb77c9fdc77aae10758c561d55dfa7b02cec3d1a3b837b8dd8a80446f8e155607f8ce0777e32968d6e23a1cdab0c3376def5178395ed6ad",
         "name": "Resourceful Lib",
         "pinned": false,
         "project_id": "G1hIVOrD",
         "selected": false,
-        "version": "2.1.21",
-        "version_id": "ww1p2cUg"
+        "version": "2.1.22",
+        "version_id": "nJc7XSSx"
     },
     "Ha28R6CL": {
         "checksum": "15e1b1a96f940d0dc41d0954009fda4376e5419b2c364145fafb401d82462d0d5d2e0899c8899a72618dac4fcb08963c8a45aa6b4652c74282a77ee98f395c95",
@@ -306,13 +306,13 @@
         "version_id": "p1IgvIXf"
     },
     "S1tndFDa": {
-        "checksum": "a7110d8a3e297d5fe207ffb959753f73e5ccb45884ad1f543ddf5b0809119e54746ce72ece22e0759504f6f396260a39fded7096b0950b3455250fb020af2e1f",
+        "checksum": "c985ee61ad6a42629b0bb48fe504b3826afb12e507a72faf1cdc56eeac7b6e3de8e92fbab1c1c153ac47c6c98359296c63cc7921888b387e6be7371893e07e2b",
         "name": "TexTrue's Embeddium Options",
         "pinned": false,
         "project_id": "S1tndFDa",
         "selected": true,
-        "version": "0.1.4+mc1.20.1",
-        "version_id": "F6Lpl7XX"
+        "version": "0.1.5+mc1.20.1",
+        "version_id": "r66v9j9a"
     },
     "T38eAZQC": {
         "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
@@ -369,13 +369,13 @@
         "version_id": "2FlwUOgm"
     },
     "Z9DM0LJ4": {
-        "checksum": "8fd68c0fe47d22cadc26d534a5a533ee1102f36b0500201734cffc2cea70be6e5cdc04f16863b2dc158cfea60099b8c3dea4759ebda9f1daf399f74996e4a494",
+        "checksum": "3df5abb3d7a6a96bee3b72cffd46d93cace075f9f575d597bd27da7573e2a7cf172fe7942812006dc489a4de54d21982e6d7a1cb0e8991c477f50909ed1f947b",
         "name": "Cyclops Core",
         "pinned": false,
         "project_id": "Z9DM0LJ4",
         "selected": false,
-        "version": "1.20.1-1.18.14",
-        "version_id": "DHsdB3bX"
+        "version": "1.20.1-1.19.0",
+        "version_id": "6YkveDJ3"
     },
     "ZtdULK5c": {
         "checksum": "a47b1e52a8be1688c2a3018e3bf222de4d9789e4595f31c7a8058fbf4fa919c3b7e2573c4d464dd47473f62949e160976ce7de01aeeeee492bdea56dd261cba9",
@@ -477,13 +477,13 @@
         "version_id": "6J8bbFt9"
     },
     "lhGA9TYQ": {
-        "checksum": "7d8b83c39740440332e140de430799353734364718e16bbe3091063ad267aad5ac28467f1897e6d384a8b79f371ad4a5ce4ee4a44ff5e4f847140de53abf1cee",
+        "checksum": "094d36a41538859fc740ef7699c56ae24fb4ce89e211c28083090dcd366a360da68d51864657410242f0f625a1df4bd5c495b2ebbd9cbce74deb5e0e4bf56dc9",
         "name": "Architectury API",
         "pinned": false,
         "project_id": "lhGA9TYQ",
         "selected": false,
-        "version": "9.1.12+forge",
-        "version_id": "gyJ7kDpb"
+        "version": "9.1.13+forge",
+        "version_id": "tBWqtdBO"
     },
     "lo90fZoB": {
         "checksum": "1a7252d1e4c33ddba57743523a9fb6523b2705dffa4b3325d05ea5050578359d3cbd5bc00b08e62f4cce89ab505df1708dc6c38d12fa0aafc5d70333318e1b61",
@@ -603,13 +603,13 @@
         "version_id": "XMT7Fj1v"
     },
     "u58R1TMW": {
-        "checksum": "b7eb11e38ebcd6d57120460e257937dd3fdb6655582c0d23779f7248214d4c358a4d4774350c1b1dd7e987d8365028af08449756db715b0cefbee9e4a1e9b5c7",
+        "checksum": "6d0b5bd21d946861c36e4eefdf715f2857b7400db5910c06cb63396d7229072cf10c0635ce18671dc60344b4ee5b3011f1229aa97c7c19d7f9b9c8fb419e9fd6",
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.35+1.20.1",
-        "version_id": "D0wNzrR0"
+        "version": "1.0.0-beta.36+1.20.1",
+        "version_id": "NN8d83mu"
     },
     "u6dRKJwZ": {
         "checksum": "ab210e3edfb7bb20e143e1eb658f8e4f75434dad62505470c58a719b7db2a0f27469bc65b7b5b107ff5e6d4dec37ba4ae8487884711009d6dc3126cc29314643",
@@ -648,13 +648,13 @@
         "version_id": "KNm7yQUG"
     },
     "yYzdQHJI": {
-        "checksum": "0c1ff9b040c8a03c4a051f0d05d26bf561130300864ccce3950817722484c4a964f33789994d33b2a895685b27acf5929eacb4526c8c18a41809108328e523cd",
+        "checksum": "909f46d05b34e089491542f6bbc0ead240cf5aa41c3bae53d2fa645af111f7a394284a751549c827d263e5d6e9b70f3ae1e17bc281334f7358fdf2202a4561e4",
         "name": "Integrated Dynamics",
         "pinned": false,
         "project_id": "yYzdQHJI",
         "selected": true,
-        "version": "1.20.1-1.20.4",
-        "version_id": "VAeVeNXm"
+        "version": "1.20.1-1.21.0",
+        "version_id": "MsIg8und"
     },
     "zqcxr7u0": {
         "checksum": "95ec00dd3e9189154c9fad6dfc63ebeb45734a281b23723f6173d9c900bb29cf9eb001c3ea85916ec1023e9381c5bf67ba1901aa1a2302ed82911958c1e261c2",
