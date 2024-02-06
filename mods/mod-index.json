@@ -548,6 +548,15 @@
         "version": "0.6.5+1.20.1+forge",
         "version_id": "91c49w5V"
     },
+    "qwpACdla": {
+        "checksum": "7d6eee05cc62b008a59961c0475feaee9ab3fb0df35f6abd13dbb81205332b270acc5c7a436539c8fb24258433dcf15cd7f9e4f07e8b23c678403d75a4511cda",
+        "name": " Integrated Crafting",
+        "pinned": false,
+        "project_id": "qwpACdla",
+        "selected": true,
+        "version": "1.20.1-1.1.7",
+        "version_id": "lVNokfA4"
+    },
     "r0v8vy1s": {
         "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
         "name": "Alternate Current",
