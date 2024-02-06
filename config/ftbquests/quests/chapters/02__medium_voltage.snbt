@@ -413,8 +413,8 @@
 				type: "item"
 			}]
 			title: "It's Not Quite Latex..."
-			x: 0.5d
-			y: 8.5d
+			x: -1.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["535977705E793982"]
@@ -464,6 +464,73 @@
 			title: "Nether Chest"
 			x: 0.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"Before starting work on your HV upgrades, you should set up production for the third circuit theme (&dmicroprocessors)&r."
+				""
+				"These require an &dMV Circuit Assembler&r or better, and you need them to make the next theme of HV Circuits."
+			]
+			id: "51EBB85EFEE47C29"
+			tasks: [{
+				id: "06B0303BF349DE81"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Microprocessor Manufacture"
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6946A93109A56A1B"]
+			description: ["These are required for the microprocessor circuit theme."]
+			id: "2D8AF4A8CFFBBF3A"
+			tasks: [{
+				id: "375DCA75FEBDF3C8"
+				item: "gtceu:capacitor"
+				type: "item"
+			}]
+			title: "Capacitors"
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"2D8AF4A8CFFBBF3A"
+				"51EBB85EFEE47C29"
+			]
+			description: [
+				"These are the best circuits in MV, and are required for the tier 2 HV circuits."
+				""
+				"There's a good chance that you're going to still be using MV machines for a while, so stockpiling these is a good idea."
+			]
+			id: "643156B9D9DF99FE"
+			tasks: [{
+				id: "5B8EA4418D0A51B4"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			title: "Tier 3 MV Circuits"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"2D8AF4A8CFFBBF3A"
+				"51EBB85EFEE47C29"
+			]
+			description: ["The microprocessor LV circuits aren't required for anything higher anymore, but you should consider switching your leftover LV circuit production over to these for multiblock purposes."]
+			id: "3A966CD1C5594520"
+			optional: true
+			tasks: [{
+				id: "479407E599D45BAD"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			title: "Tier 3 LV Circuits"
+			x: 2.0d
+			y: 8.5d
 		}
 	]
 	subtitle: ["You must acquire a taste for freeform jazz."]
