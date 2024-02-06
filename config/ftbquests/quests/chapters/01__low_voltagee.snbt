@@ -214,7 +214,7 @@
 			description: [
 				"The &aBender&r, (or &dMetal Bender&r, or &dBending Machine&r, depending on which variety of GT5 you speak)... bends metals."
 				""
-				"It can turn &done ingot&r into &dtwo plates&r, &done plate&r into &dfour foils&r, &dtwo plates&r into a single &double plate&r, and &done rod&r into &done spring%."
+				"It can turn &done ingot&r into &done plates&r, &done plate&r into &dfour foils&r, &dtwo plates&r into a single &double plate&r, and &done rod&r into &done spring%."
 				""
 				"This saves a lot of resources. "
 			]
