@@ -73,6 +73,16 @@ export const adjustVariousMiscRecipes = (event) => {
         ["gtceu:fluid_filter", "minecraft:name_tag"]
     ).id("nijika:misc/easier_gt_fluid_tag_filter");
 
+    event.shaped(
+        "minecraft:red_wool",
+        ["VV", "VV"], {V: "minecraft:weeping_vines"}
+    ).id("nijika:misc/red_wool_from_vines");
+
+    event.shapeless(
+        "woolytrees:wooly_sapling",
+        ["#minecraft:saplings", "#minecraft:wool"]
+    ).id("nijika:misc/wooly_sapling");
+
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);
     addCreateRockProcessingRecipes(event);
