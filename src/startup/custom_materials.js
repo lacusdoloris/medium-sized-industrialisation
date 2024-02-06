@@ -5,7 +5,16 @@ const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mate
 // Material.Builder isn't exposed to kjs. lol!
 // so no fancy autocomplete here. sorry.
 
+
+
+
 export const addMaterials = (event) => {
+    const chemicalIntermediate = (id, colour) => {
+        return event.create(new ResourceLocation("nijika", id))
+            .dust().fluid().color(colour)
+            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
     // == Slag == //
     event.create(new ResourceLocation("nijika:slag"))
         .dust()
@@ -33,18 +42,12 @@ export const addMaterials = (event) => {
         .addOreByproducts("gtceu:sulfur", "gtceu:antimony", "gtceu:barite")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-    event.create(new ResourceLocation("nijika:arsenic_trichloride"))
-        .fluid()
-        .color(0xfffec8)
-        .components("1x gtceu:arsenic", "3x gtceu:chlorine")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    chemicalIntermediate("arsenic_trichloride", 0xfffec8)
+        .components("1x gtceu:arsenic", "3x gtceu:chlorine");
 
     // == Bauxite Processing == //
-    event.create(new ResourceLocation("nijika:aluminium_hydroxide"))
-        .fluid().dust()
-        .color(0xbcd8e8)
-        .components("1x gtceu:aluminium", "3x gtceu:oxygen", "3x gtceu:hydrogen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    chemicalIntermediate("aluminium_hydroxide", 0xbcd8e8)
+        .components("1x gtceu:aluminium", "3x gtceu:oxygen", "3x gtceu:hydrogen");
 
     event.create(new ResourceLocation("nijika:sodium_aluminate"))
         .liquid(new GTFluidBuilder().temperature(2100))
@@ -52,11 +55,7 @@ export const addMaterials = (event) => {
         .components("1x gtceu:sodium", "1x gtceu:aluminium", "2x gtceu:oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-    event.create(new ResourceLocation("nijika:alumina"))
-        .dust()
-        .color(0xa1c2c1)
-        .components("2x gtceu:aluminium", "3x gtceu:oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    chemicalIntermediate("alumina", 0xa1c2c1).components("2x gtceu:aluminium", "3x gtceu:oxygen")
 
     event.create(new ResourceLocation("nijika:red_mud"))
         .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
@@ -70,23 +69,14 @@ export const addMaterials = (event) => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     // == Chromium == //
-    event.create(new ResourceLocation("nijika:sodium_dichromate"))
-        .dust()
-        .color(0xe37b2b)
-        .components("2x gtceu:sodium", "2x gtceu:chromium", "7x gtceu:oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    chemicalIntermediate("sodium_dichromate", 0xe37b2b)
+        .components("2x gtceu:sodium", "2x gtceu:chromium", "7x gtceu:oxygen");
 
-    event.create(new ResourceLocation("nijika:sodium_chromate"))
-        .dust()
-        .color(0xf4d015)
-        .components("2x gtceu:sodium", "gtceu:chromium", "4x gtceu:oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    chemicalIntermediate("sodium_chromate", 0xf4d015)
+        .components("2x gtceu:sodium", "gtceu:chromium", "4x gtceu:oxygen");
 
-    event.create(new ResourceLocation("nijika:chromium_iii_oxide"))
-        .dust()
-        .color(0x9cbc7b)
+    chemicalIntermediate("chromium_iii_oxide", 0x9cbc7b)
         .components("2x gtceu:chromium", "3x gtceu:oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     event.create(new ResourceLocation("nijika:ferrochrome"))
         .ingot().dust()
@@ -96,9 +86,6 @@ export const addMaterials = (event) => {
         .iconSet(GTMaterialIconSet.SHINY);
     
     // == Vanadium == //
-    event.create(new ResourceLocation("nijika:vanadium_pentoxide"))
-        .dust()
-        .color(0xd5bf6b)
-        .components("2x gtceu:vanadium", "5x gtceu:oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    chemicalIntermediate("vanadium_pentoxide", 0xd5bf6b)
+        .components("2x gtceu:vanadium", "5x gtceu:oxygen");
 }
