@@ -170,6 +170,15 @@
         "version": "7.0.8",
         "version_id": "pUJkRVfx"
     },
+    "DQjhR62z": {
+        "checksum": "ffcbd4949631734ad645f8673841e4db07ee2adcee49d768ecd62e6e4da5cf5d635a2dc1673336938308d291502f06e5769d2c7bad2dad56a72321a1955e15ab",
+        "name": "RFTools Control",
+        "pinned": false,
+        "project_id": "DQjhR62z",
+        "selected": true,
+        "version": "1.20-7.0.1",
+        "version_id": "VitrlUgN"
+    },
     "DYtfQEYj": {
         "checksum": "47599aff77955cfee4f458088a7bc2cd91f7c9c9e70a0afb42c0a23f3c316237a69002f33b38cad756c58a0ffd2762edfbad41f779bc495953b6d0d05585e003",
         "name": "Effortless Building",
