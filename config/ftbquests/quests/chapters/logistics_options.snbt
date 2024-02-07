@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "logistics_options"
 	group: "14EE7AEE0EF05AEE"
@@ -7,6 +8,150 @@
 	id: "574ADA2C219C9703"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"&dModular Routers&r are unmatched in versatility for local, subfactory logistics. They unlock in the HV tier."
+				""
+				"The typical usage for these is to move items around in a subfactory from a requester chest, allowing you to make your subfactories incredibly compact."
+				""
+				"Check out the &dguide&r in your Eccentric Tome for more information about how to use these. They won't replace all of your logistics, but will make things a lot easier."
+			]
+			id: "212530A0178B682F"
+			rewards: [{
+				count: 16
+				id: "1374E023D0334A17"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29E57B11CC5233B9"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			title: "Local Logistics"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4E722FB95D8BE0E0"]
+			description: [
+				"&dPretty Pipes&r is an extremely useful minature logistics mod that can help you automate things in the early game."
+				""
+				"To get started, you can make pipes from glass and rubber. These pipes connect to any block that has storage."
+				""
+				"Most of the Pretty Pipes modules are &dvery self-explanatory&r; hold Shift when looking at the tooltip to get a brief description."
+			]
+			id: "2F57E725400880DD"
+			tasks: [{
+				id: "313EC3DA24CFEF24"
+				item: "prettypipes:pipe"
+				type: "item"
+			}]
+			title: "Fluix Cable"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2F57E725400880DD"
+				"4E722FB95D8BE0E0"
+			]
+			description: [
+				"The &dItem Terminal&r lets you put items into your pipe network and retrieve them from storage in your network."
+				""
+				"If you attach one of these to a pipe, and then attach the other end of the pipe to some chests, you have a powerful earlygame storage network."
+			]
+			id: "5FC5594F84FC2C80"
+			tasks: [{
+				id: "0645ABCB056FF2E3"
+				item: "prettypipes:item_terminal"
+				type: "item"
+			}]
+			title: "ME Terminal"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5FC5594F84FC2C80"
+				"3D49535FA0F346CA"
+			]
+			description: ["The &dCrafting Terminal&r lets you schedule crafting jobs from your network of crafting machines."]
+			id: "5AFEA3B5776C6E6B"
+			tasks: [{
+				id: "07977DB83D8BDE99"
+				item: "prettypipes:crafting_terminal"
+				type: "item"
+			}]
+			title: "ME Crafting Terminal"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F57E725400880DD"]
+			description: [
+				"The &dCrafting Modules&r can be placed in a pipe on the side of a machine to enable &dautocrafting&r."
+				""
+				"You also need an &dExtraction Module&r to extract things out of the machine when its done."
+			]
+			id: "3D49535FA0F346CA"
+			tasks: [{
+				id: "5D6B4E19AD106E41"
+				item: "prettypipes:low_crafting_module"
+				type: "item"
+			}]
+			title: "ME Pattern Provider"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F57E725400880DD"]
+			description: [
+				"The &dRetrieval Module&r essentially steals items from a network. Anything you put into the module's filter will be taken from storage onto the network and put into the attached block."
+				""
+				"This, alongside a comparator, makes it perfect for passive crafting."
+			]
+			id: "1F4A188EA6F2CEDF"
+			tasks: [{
+				id: "7D5232FFD945DEF7"
+				item: "prettypipes:low_retrieval_module"
+				type: "item"
+			}]
+			title: "ME Output Bus"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4818B11226B75EEB"]
+			description: [
+				"Something you need to learn early on is the concept of &dpassive crafting&r. Rather than going into your terminal and requesting a machine, and having it then go through and craft a bunch of aluminium from bauxite (as an example), you should be &dalways making&r fresh aluminium."
+				""
+				"If you've ever played a game like Factorio, Satisfactory, or Dyson Sphere Program, this concept should be familiar to you."
+				""
+				"&aBackpressure&r means that you don't back your entire storage system up with ten million steel ingots by turning off your machines when a storage threshold is hit. The Machine Controller will disable or enable a machine based on a redstone signal; there's lots of options for redstone in this pack (try searching for network cables in EMI.) "
+				""
+				"Time to learn how to use comparators, buddy."
+			]
+			id: "6E7B547F1A8E64F4"
+			min_width: 400
+			tasks: [
+				{
+					id: "5BB9844D10D7CD69"
+					item: "gtceu:machine_controller_cover"
+					type: "item"
+				}
+				{
+					id: "050BE883DF908914"
+					item: "minecraft:comparator"
+					type: "item"
+				}
+			]
+			title: "Passive Processing"
+			x: -2.0d
+			y: 0.5d
+		}
+	]
 	title: "Logistics Options"
 }
