@@ -88,6 +88,6 @@ export const addChromiteProcessingRecipes = (event) => {
         .itemOutputs("1x gtceu:ferrochrome_ingot")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
-        .blastFurnaceTemp(2800)
+        .blastFurnaceTemp(2700)
         .duration(10 * 20);
 }
