@@ -521,18 +521,12 @@
 			description: [
 				"&aGallium Arsenide&r is used to create diodes (in MV) and silicon wafers (later on). "
 				""
-				"It's acquired via a reaction between gallium and &dArsenic Trichloride&r. You'll follow this basic process:"
+				"It's acquired via a reaction between gallium and &dArsenic Trichloride&r, which is a &aclosed loop&r reaction with respect to the chlorine and hydrogen; whilst you need a small feedstock of chlorine gas to get the reaction started, the total amount of chlorine is preserved throughout it and can be reused infinitely."
 				""
-				"1. &eRoast&r your chosen Arsenic ore in the EBF to get &9Arsenic Trioxide&r, as well as &9Sulfur Dioxide&r runoff (capture it; it'll be useful later)."
-				"2. React your &9Arsenic trioxide&r with &9hydrochloricc acid&r to get &9Arsenic Trichloride&r."
-				"3. Finally, react the &9Arsenic trichloride&r with &9Gallium Dust&r to get &aGallium Arsenide&r and &dleftover chlorine gas&r."
-				""
-				"This is a &aclosed loop&r reaction with respect to the chlorine and hydrogen; whilst you need a small feedstock of chlorine gas to get the reaction started, the total amount of chlorine is preserved throughout it and can be reused infinitely."
-				""
-				"The initial amount of chlorine can be gotten from &9electrolysing&r &dsalt&r, which is found in veins under the ocean."
+				"The initial amount of chlorine can be gotten from &9electrolysing&r &dsalt&r, which is found in veins under the ocean. You can also make a brine pool and get seawalter for electrolysing too."
 			]
 			id: "5769F2603588F0AC"
-			min_width: 400
+			min_width: 300
 			tasks: [{
 				id: "242BB23E85F5D67D"
 				item: "gtceu:gallium_arsenide_dust"
@@ -565,11 +559,7 @@
 		}
 		{
 			dependencies: ["46D70A2B8A0278E2"]
-			description: [
-				"Invar is one of the two essential &anickel alloys&r used throughout the early game, alongside Cupronickel."
-				""
-				"It's made by smelting Nickel and &dIron&r together in a alloy furnace. (Or mixing the dust, if you're well and truly into the ore processing.)"
-			]
+			description: ["Invar is one of the two essential &anickel alloys&r used throughout the early game, alongside Cupronickel."]
 			id: "75C5A58A05A22DC6"
 			tasks: [{
 				id: "0C245C7F6A0904FC"

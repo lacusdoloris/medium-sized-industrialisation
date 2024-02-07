@@ -29,15 +29,8 @@
 		}
 		{
 			dependencies: ["37186A0EA1942511"]
-			description: [
-				"The &aBayer process&r is the primary industrial process used to produce &dalumina&r from raw bauxite."
-				""
-				"1. React &9Bauxite dust&r with &9sodium hydroxide&r (with water as the solvent) to get &dsodium aluminate&r, and &cred mud&r as a byproduct."
-				"2. Autoclave &9sodium aluminate&r to get &daluminium hydroxide&r (and some leftover &dsodium hydroxide&r)."
-				"3. Use your EBF to drive the excess water away from the &9aluminium hydroxide&r to get &dalumina&r as a result."
-			]
+			description: ["The &aBayer process&r is the primary industrial process used to produce &dalumina&r from raw bauxite. Check EMI for more details."]
 			id: "06665F1BAC395C89"
-			min_width: 500
 			tasks: [{
 				id: "0C6F11C332A519FF"
 				item: "gtceu:alumina_dust"
@@ -54,13 +47,7 @@
 				""
 				"You can choose to just void it and not care about it but then you miss out on the primary source of &drutile dust&r, as well as additional &dgallium dust&r and some extra alumina. "
 				""
-				"This processing chain is entirely fictional and has no basis in reality. Nevertheless!"
-				""
-				"1. Evaporate the &9red mud&r run-off in an evaporation pool to get &dRed Mud dust&r."
-				"2. Dissolve the dust with &9hydrochloric acid&r to get &dRed Mud slurry&r."
-				"3. Centrifuge the slurry to get various byproducts, as well as some diluted acid back."
-				""
-				"This can help buff up your aluminium production chains. You should also stockpile the Rutile dust, as it'll come in handy later."
+				"The processing chain is entirely fictional and has no basis in reality. Nevertheless! It can help buff up your aluminium production chains. You should also stockpile the Rutile dust, as it'll come in handy later."
 			]
 			id: "4DDC23EE2215011C"
 			min_width: 400
@@ -115,17 +102,9 @@
 			description: [
 				"&aChromium&r (the material, not the fascist browser engine) is used for alloying throughout the early game tiers. This is another material with a complex refining chain from its raw ore (&dchromite&r) to its raw metal form."
 				""
-				"For our MV purposes, we need the &draw chromium metal&r for alloying (as opposed to ferrochrome, which is vastly simpler to make, but mostly useful for stainless steel) which has a four-step process."
-				""
-				"1. Roast the raw &dChromite Ore&r with &dSoda Ash&r and oxygen to produce &aSodium Chromate&r."
-				"2. The sodium chromate can then be reacted with either hydrochloric acid or sulfuric acid to produce &aSodium Dichromate&r."
-				"3. The sodium dichromate needs to be reduced with either &dcarbon&r or &dsulfur&r to produce &aChromium(III) Oxide&r."
-				"4. Finally, you can use an aluminothermic reaction to reduce the Cr2O3 into &ametallic chromium dust&r, as well as some left over alumina."
-				""
-				"You can get Soda Ash by reacting &dCalcite&r with &dSalt&r, and you can get calcite dust from macerating &dlimestone&r... or just regular calcite."
+				"For our MV purposes, we need the &draw chromium metal&r for alloying (as opposed to ferrochrome, which is vastly simpler to make, but mostly useful for stainless steel). "
 			]
 			id: "7BEE21DF23576B53"
-			min_width: 500
 			tasks: [{
 				id: "45EC0C9C99D641C7"
 				item: "gtceu:chromium_dust"
@@ -366,7 +345,7 @@
 			description: [
 				"&aVanadium Steel&r is a steel made from... vanadium. It has a 7:1:1 ratio of iron:chromium:vanadium."
 				""
-				"Vanadium is only found as a byproduct of &dslag&r processing, which is made from smelting &dmagnetite dust&r in a blast furnace. Better check EMI."
+				"Vanadium is only found as a byproduct of &dslag&r processing, which is made from smelting &dmagnetite dust&r in a blast furnace, in the form of &dvanadium pentoxide&r. Better check EMI. "
 			]
 			id: "641046C8A91952E9"
 			tasks: [{
@@ -433,37 +412,6 @@
 			title: "Dimethyldichlorosilane"
 			x: 5.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["535977705E793982"]
-			description: [
-				"Need a lot of sulfuric acid, but your ore roasting just isn't cutting it? Try gathering &dNether Air&r."
-				""
-				"In MV, it can be centrifuged to get &dSulfur Dioxide&r, which can be transformed into sulfuric acid via sulfur trioxide."
-			]
-			id: "4E54895C4BAA755D"
-			rewards: [{
-				id: "622B1E0F47394BC3"
-				item: {
-					Count: 1b
-					id: "minecraft:chest"
-					tag: {
-						display: {
-							Lore: ["[{\"text\":\"This mod adds one block: the nether chest. It serves a counterpart to the ender chest, having a special ability based on the nether dimension. When items are stored in nether chest, their normal stack size limit is multiplied by 8 due to the way the nether compresses space by a factor of 8. This stack size increase also applies to tools and any other items that aren't normally stackable. Despite their name, trying to open one in the nether is a very bad idea.\",\"italic\":false}]"]
-						}
-					}
-				}
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "4659A47C5BD9DCD6"
-				item: "gtceu:mv_gas_collector"
-				type: "item"
-			}]
-			title: "Nether Chest"
-			x: 0.5d
-			y: 5.5d
 		}
 		{
 			dependencies: ["020FAE71BEDA6B1E"]
