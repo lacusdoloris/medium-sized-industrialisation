@@ -77,7 +77,8 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc"
+    "zinc",
+    "red_alloy"
   ],
   "priorityOverrides": {
     "forge:ores/iron": "gtceu",
