@@ -278,6 +278,15 @@
         "version": "1.20.1-0.5.1.f",
         "version_id": "HNYrbfZZ"
     },
+    "M09T0qPI": {
+        "checksum": "95898aa246d880db91c41f49265812e62995dfab597e7a72ebcf5c295b3eabcb45d2d6dccbd59c9cd0b0d1377ca6ba284a81f5b1cf0bfe02cc7060fcf4fe640d",
+        "name": "Essentials",
+        "pinned": false,
+        "project_id": "M09T0qPI",
+        "selected": true,
+        "version": "1.20.1-2.16.0",
+        "version_id": "LRiWeXes"
+    },
     "MOqt4Z5n": {
         "checksum": "6455b800e5e7ad7c51f16ee72287a18ef146cd8a3a0602839f26036367d7923d13239342e0e1c7a30d32303d9dc1ad2b25190d146d08164eafdf2c951b41c8e3",
         "name": "Chat Patches",
@@ -349,6 +358,15 @@
         "selected": true,
         "version": "1.0.2+mc1.20.1",
         "version_id": "LZ2ZcLrG"
+    },
+    "UxYNfnfx": {
+        "checksum": "61fb2a73131fdfa5de73b5ed85ef381555f9b6ab6267097494af240666f40cb6fa65d54358e03b013d0a9875f94940401d23f2049cdb537253862862eef9f4bc",
+        "name": "More Red",
+        "pinned": false,
+        "project_id": "UxYNfnfx",
+        "selected": true,
+        "version": "4.0.0.4",
+        "version_id": "nmvr3DB5"
     },
     "VYRu7qmG": {
         "checksum": "0a97c9fbdcbee7af776ed1a55a89bce42d207534e8213a85767c7b93eff76c26e47a66f4fbb35030b2f18c929a4466b67105ab6409c8204e98da270da073b694",
