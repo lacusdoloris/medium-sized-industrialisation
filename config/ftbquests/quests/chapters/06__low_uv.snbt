@@ -2,11 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "06__low_uv"
-	group: "7C284955C6501D53"
+	group: "657B54F6F8F4476A"
 	icon: "gtceu:luv_conveyor_module"
 	id: "2AA15CBD5BA42A2A"
 	order_index: 2
 	quest_links: [ ]
 	quests: [ ]
-	title: "LuV - When"
+	title: "LuV - Night Flight"
 }

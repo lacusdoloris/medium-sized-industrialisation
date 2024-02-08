@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "01__low_voltagee"
-	group: "485BC5018A891421"
+	group: "7C284955C6501D53"
 	icon: "gtceu:bessemer_furnace"
 	id: "10C4569F14DA9A97"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -932,5 +932,5 @@
 		}
 	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron"]
-	title: "LV - Somewhere Between"
+	title: "LV - OSKR"
 }

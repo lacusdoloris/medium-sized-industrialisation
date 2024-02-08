@@ -2,6 +2,7 @@
 	chapter_groups: [
 		{ id: "485BC5018A891421", title: "24 Hours" }
 		{ id: "7C284955C6501D53", title: "John Carter, MD" }
+		{ id: "657B54F6F8F4476A", title: "One More For The Road" }
 		{ id: "19706AF5FF13B9E4", title: "A Hole in the Heart" }
 		{ id: "14EE7AEE0EF05AEE", title: "Getting to Know You" }
 	]

@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "02__medium_voltage"
-	group: "485BC5018A891421"
+	group: "7C284955C6501D53"
 	icon: "gtceu:mv_electric_motor"
 	id: "282F9DDDF16E6415"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -482,5 +482,5 @@
 		}
 	]
 	subtitle: ["You must acquire a taste for freeform jazz."]
-	title: "MV \\& HV - Out Loud"
+	title: "MV \\& HV - AMA-TE-RAS"
 }
