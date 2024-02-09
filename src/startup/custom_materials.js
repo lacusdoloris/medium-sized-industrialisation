@@ -83,7 +83,50 @@ export const addMaterials = (event) => {
         .components("1x gtceu:manganese", "2x gtceu:iron")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
         .iconSet(GTMaterialIconSet.SHINY);
+
+    // no disable decomposition flag here.
+    event.create(new ResourceLocation("nijika:manganese_oxide"))
+        .dust()
+        .color(0x535353)
+        .components("1x gtceu:manganese", "1x gtceu:oxygen")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING);
     
+    // == Tantalite == //
+
+    event.create(new ResourceLocation("nijika:tantalite_slurry"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0x9ff1f5)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    chemicalIntermediate("tantalum_pentoxide", 0x0a0c26)
+        .components("2x gtceu:tantalum", "5x gtceu:oxygen");
+
+    // fine to create decompositions for this, actually.
+    event.create(new ResourceLocation("nijika:sodium_fluoride"))
+        .dust()
+        .color(0xfffdd6)
+        .components("1x gtceu:sodium", "1x gtceu:fluorine");
+
+    event.create(new ResourceLocation("nijika:tantalum_slag"))
+        .dust()  // would prefer this to be a gem, but that generates sifter recipes.
+        .color(0x171b45)
+        .iconSet(GTMaterialIconSet.FLINT)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create(new ResourceLocation("nijika:tantalum_slag_slurry"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0x9c949c)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create(new ResourceLocation("nijika:tantalite_residue"))
+        .dust()
+        .color(0x9c949c)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    // == Niobium == //
+    chemicalIntermediate("niobium_pentoxide", 0x260a0c)
+        .components("2x gtceu:niobium", "5x gtceu:oxygen");
+
     // == Vanadium == //
     chemicalIntermediate("vanadium_pentoxide", 0xd5bf6b)
         .components("2x gtceu:vanadium", "5x gtceu:oxygen");

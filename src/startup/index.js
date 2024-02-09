@@ -89,6 +89,20 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts(getMaterial("hematite"), getMaterial("tantalite"));
     }
 
+    let tantalite = getMaterial("tantalite");
+    {
+        tantalite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        tantalite.setFormula("(Fe,Mn)Ta2O6");
+
+        let oreProp = getOreProperty(tantalite);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(
+            getMaterial("manganese_oxide"), 
+            getMaterial("niobium_pentoxide"),
+            getMaterial("tantalum_pentoxide")
+        );
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
