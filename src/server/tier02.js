@@ -11,7 +11,7 @@ export const doTier02Content = (event) => {
     event.remove({id: "gtceu:chemical_bath/kanthal_cool_down"});
     event.remove({id: "gtceu:chemical_bath/kanthal_cool_down_distilled_water"});
 
-    let mvTier = GT_MACHINE_TIERS[1];
+    let mvTier = GT_MACHINE_TIERS.MV;
 
     event.shaped(
         "gtceu:evaporation_pool",

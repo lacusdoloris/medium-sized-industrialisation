@@ -43,7 +43,7 @@ export const adjustMaterialTierRecipes = (event) => {
     adjustExtruderBasePlateRecipe(event);
     fixLensRecipes(event);
 
-    for (let tier of GT_MACHINE_TIERS) {
+    for (let tier of Object.values(GT_MACHINE_TIERS)) {
         adjustMachineRecipesForTier(event, tier);
     }
 }

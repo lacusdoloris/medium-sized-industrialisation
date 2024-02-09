@@ -22,7 +22,7 @@ export const customiseMaterials = () => {
 
     // make sure that all the materials we need for various tier based recipes have the appropriate
     // flags.
-    for (let tier of GT_MACHINE_TIERS) {
+    for (let tier of Object.values(GT_MACHINE_TIERS)) {
         getMaterial(tier.materials.motorWire.id).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
     }
 

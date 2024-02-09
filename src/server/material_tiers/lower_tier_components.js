@@ -301,7 +301,7 @@ export const rewriteLowerTierComponentRecipes = (event) => {
     // electric pumps use *any* rubber ring, so don't allow that.
     event.remove({output: /gtceu:.*_electric_pump/, type: "gtceu:assembler"});
 
-    for (let tier of GT_MACHINE_TIERS) {
+    for (let tier of Object.values(GT_MACHINE_TIERS)) {
         applyHullcasingTiers(event, tier);
         rewriteVoltageCoilRecipes(event, tier);
 

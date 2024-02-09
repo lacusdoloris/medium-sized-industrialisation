@@ -15,7 +15,7 @@ export const doTier01Content = (event) => {
             F: "gtceu:firebricks",
             C: "#gtceu:circuits/lv",
             H: "gtceu:heatproof_machine_casing",
-            W: GT_MACHINE_TIERS[0].quadHeatingWire
+            W: GT_MACHINE_TIERS.LV.quadHeatingWire
         }
     ).id("nijika:tier01/bessemer_furnace");
 

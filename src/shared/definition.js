@@ -179,11 +179,9 @@ export class Tier {
 
 /**
  * The array of voltage tier materials.
- * 
- * @type {Tier[]}
  */
-export const GT_MACHINE_TIERS = [
-    new Tier(
+export const GT_MACHINE_TIERS = {
+    LV: new Tier(
         "lv",
         {
             plate: Material.gtceu("wrought_iron"),
@@ -202,7 +200,7 @@ export const GT_MACHINE_TIERS = [
         }
     ),
 
-    new Tier(
+    MV: new Tier(
         "mv",
         {
            plate: Material.gtceu("steel"),
@@ -221,7 +219,7 @@ export const GT_MACHINE_TIERS = [
         }
     ),
 
-    new Tier(
+    HV: new Tier(
         "hv",
         {
             plate: Material.gtceu("aluminium"),
@@ -241,7 +239,7 @@ export const GT_MACHINE_TIERS = [
         }
     ),
 
-    new Tier(
+    EV: new Tier(
         "ev",
         {
             plate: Material.gtceu("stainless_steel"),
@@ -260,7 +258,7 @@ export const GT_MACHINE_TIERS = [
         }
     ),
 
-    new Tier(
+    IV: new Tier(
         "iv",
         {
             plate: Material.gtceu("titanium"),
@@ -285,7 +283,7 @@ export const GT_MACHINE_TIERS = [
     _tierFn("uv", "naquadah_alloy", "polybenzimidazole", "yttrium_barium_cuprate"),
     _tierFn("uhv", "darmstadium", "polybenzimidazole", "europium"),
     */
-];
+};
 
 export const GT_WIRE_TYPES = [
     [1, "single"], 
