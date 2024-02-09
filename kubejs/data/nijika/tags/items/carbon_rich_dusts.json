@@ -3,6 +3,7 @@
     "values": [
         "#forge:dusts/coal",
         "#forge:dusts/charcoal",
-        "#forge:dusts/carbon"
+        "#forge:dusts/carbon",
+        "#forge:dusts/coke"
     ]
 }
