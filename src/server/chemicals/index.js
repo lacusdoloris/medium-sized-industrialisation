@@ -2,6 +2,7 @@
 import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
 import { addGalliumArsenicRecipes } from "./gallum_arsenic";
+import { addManganeseProcessingRecipes } from "./manganese";
 import { addVanadiumChemicalChain } from "./vanadium";
 
 /**
@@ -12,4 +13,5 @@ export const addChemicalProcessingRecipes = (event) => {
     addAluminiumProcessingRecipes(event);
     addChromiteProcessingRecipes(event);
     addVanadiumChemicalChain(event);
+    addManganeseProcessingRecipes(event);
 }

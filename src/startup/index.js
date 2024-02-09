@@ -79,6 +79,16 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts(getMaterial("beryllium"), getMaterial("chromite"));
     }
 
+    // pyrolusite now produces tantalite and hematite as byproducts.
+    let pyrolusite = getMaterial("pyrolusite");
+    {
+        pyrolusite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+        let oreProp = getOreProperty(pyrolusite);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(getMaterial("hematite"), getMaterial("tantalite"));
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");

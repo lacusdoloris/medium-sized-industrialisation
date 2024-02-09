@@ -5,9 +5,6 @@ const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mate
 // Material.Builder isn't exposed to kjs. lol!
 // so no fancy autocomplete here. sorry.
 
-
-
-
 export const addMaterials = (event) => {
     const chemicalIntermediate = (id, colour) => {
         return event.create(new ResourceLocation("nijika", id))
@@ -26,12 +23,6 @@ export const addMaterials = (event) => {
         .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
         .color(0x373226)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
-
-    // actually has decomposition
-    event.create(new ResourceLocation("nijika:manganese_oxide"))
-        .dust()
-        .color(0x34eb52)
-        .components("gtceu:manganese", "gtceu:oxygen");
 
     // == Arsenic Processing == //
     event.create(new ResourceLocation("nijika:orpiment"))
@@ -82,6 +73,14 @@ export const addMaterials = (event) => {
         .ingot().dust()
         .color(0x446476)
         .components("gtceu:iron", "gtceu:chromium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.SHINY);
+
+    // == Manganese == //
+    event.create(new ResourceLocation("nijika:ferromanganese"))
+        .ingot().dust()
+        .color(0xe01923)
+        .components("1x gtceu:manganese", "2x gtceu:iron")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
         .iconSet(GTMaterialIconSet.SHINY);
     
