@@ -58,7 +58,7 @@ export const addManganeseProcessingRecipes = (event) => {
             "2x gycr:iron_oxide_dust",
             "6x gtceu:aluminium_duist"
         )
-        .itemOutputs("2x gtceu:ferromanganese_ingot", "3x gtceu:alumina")
+        .itemOutputs("2x gtceu:ferromanganese_ingot", "3x gtceu:alumina_dust")
         .circuit(1)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(15 * 20)
