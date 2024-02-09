@@ -33,7 +33,7 @@ export const customiseMaterials = () => {
         "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
         "realgar",
         // Required for slag byproduccts.
-        "magnetite",
+        "magnetite", "hematite",
         // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
         // trichloride.
         "arsenic_trioxide",
