@@ -85,6 +85,7 @@ export const customiseMaterials = () => {
         pyrolusite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
         let oreProp = getOreProperty(pyrolusite);
+        oreProp.setDirectSmeltResult(null);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(getMaterial("hematite"), getMaterial("tantalite"));
     }
