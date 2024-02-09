@@ -13,7 +13,7 @@ export const addSlagProcessingRecipes = (event) => {
 
     event.recipes.gtceu.electric_blast_furnace("nijika:misc/slag_processing/magnetite_smelting")
         .itemInputs(
-            "32x gtceu:magnetite_dust",
+            "32x #forge:raw_materials/magnetite",
             "8x #nijika:carbon_rich_dusts"
         )
         .itemOutputs(
