@@ -590,44 +590,36 @@
 			]
 			id: "0DBEB940868D3DB7"
 			min_width: 500
-			rewards: [
-				{
-					count: 10
-					id: "2816A5C8E514E65C"
-					item: "gtceu:cupronickel_coil_block"
-					type: "item"
-				}
-				{
-					id: "3652CA847AD2DC14"
-					item: {
-						Count: 1b
-						id: "exposure:photograph"
-						tag: {
-							Biome: "bigglobe:temperate_plains"
-							Dimension: "minecraft:overworld"
-							Id: "Fuyukaii_639806"
-							LightLevel: 11
-							Photographer: "Fuyukaii"
-							PhotographerId: [I;
-								836220340
-								-961525933
-								-1422374641
-								1605736399
-							]
-							Pos: [
-								9648
-								88
-								9267
-							]
-							SunAngle: 4.1768837f
-							Timestamp: "2024-01-28_07.29.27"
-							Type: "black_and_white"
-							Weather: "Clear"
-						}
+			rewards: [{
+				id: "3652CA847AD2DC14"
+				item: {
+					Count: 1b
+					id: "exposure:photograph"
+					tag: {
+						Biome: "bigglobe:temperate_plains"
+						Dimension: "minecraft:overworld"
+						Id: "Fuyukaii_639806"
+						LightLevel: 11
+						Photographer: "Fuyukaii"
+						PhotographerId: [I;
+							836220340
+							-961525933
+							-1422374641
+							1605736399
+						]
+						Pos: [
+							9648
+							88
+							9267
+						]
+						SunAngle: 4.1768837f
+						Timestamp: "2024-01-28_07.29.27"
+						Type: "black_and_white"
+						Weather: "Clear"
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			shape: "square"
 			size: 1.0d
 			subtitle: "What is this and how do I get rid of it?"
@@ -931,6 +923,6 @@
 			y: 3.0d
 		}
 	]
-	subtitle: ["You don't know how much effort it took to make this use Wrought Iron"]
+	subtitle: ["You don't know how much effort it took to make this use Wrought Iron."]
 	title: "LV - OSKR"
 }

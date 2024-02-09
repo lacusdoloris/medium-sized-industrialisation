@@ -1,6 +1,8 @@
 
 // HV!
 
+import { GT_MACHINE_TIERS } from "../shared/definition";
+
 /** @param {Internal.RecipesEventJS} event */
 export const doTier03Content = (event) => {
     // for whattever reason, CEu has this at EV.
@@ -52,4 +54,17 @@ export const doTier03Content = (event) => {
         .circuit(3)
         .blastFurnaceTemp(2700);
 
+    // fix up the cleanroom to use the right tier materials
+    event.remove({id: "gtceu:shaped/cleanroom"});
+    event.shaped(
+        "gtceu:cleanroom",
+        ["FFF", "RHR", "MCM"],
+        {
+            F: "gtceu:item_filter",
+            R: GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors"),
+            H: GT_MACHINE_TIERS.HV.machineHull,
+            M: "gtceu:hv_electric_motor",
+            C: GT_MACHINE_TIERS.HV.circuitTag,
+        }
+    ).id("nijika:tier03/cleanroom");
 }

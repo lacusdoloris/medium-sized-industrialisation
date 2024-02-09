@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "04__extreme_voltage"
 	group: "657B54F6F8F4476A"
@@ -7,6 +8,42 @@
 	id: "7F2FB255ED44F681"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7BEE21DF23576B53"]
+			description: [
+				"You could've made this at any point in the MV/HV tiers, butt &dStainless Steel&r is a steel alloy that contains small amounts of &dnickel&r, &dchromium&r, and &dmanganese&r."
+				""
+				"You can't use the raw metals; you need to use &dInvar&r, &dFerrochrome&r, and &dFerromanganese&r; the latter two are produced from their ores more directly."
+			]
+			id: "48F5AD17150A2E05"
+			min_width: 300
+			tasks: [{
+				id: "6600402119218F19"
+				item: "gtceu:stainless_steel_plate"
+				type: "item"
+			}]
+			title: "Stainless Steel"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F5AD17150A2E05"]
+			description: [
+				"There's a good chance you breezed straight through HV to get here, as HV is deliberately designed to be (relatively) semi-&askippable&r."
+				""
+				"Bask in your EV machines for now, but you've still got to do HV content such as more complex oil refining and rare earth processing. Take a breather!"
+			]
+			id: "78CF6FF36D0B730D"
+			tasks: [{
+				id: "0DD4F1FC4254AC20"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			title: "Take A Breather"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
 	title: "EV - ODDYSEY"
 }

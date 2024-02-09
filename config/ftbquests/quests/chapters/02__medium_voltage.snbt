@@ -112,7 +112,7 @@
 			}]
 			title: "Install Firefox"
 			x: 0.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7BEE21DF23576B53"]
@@ -131,7 +131,7 @@
 			}]
 			title: "Ferrochrolumium"
 			x: 0.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["08330D01C36B3545"]
@@ -204,7 +204,7 @@
 			}]
 			title: "Styrofoam"
 			x: 2.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["535977705E793982"]
@@ -222,7 +222,7 @@
 			}]
 			title: "An LV Machine?"
 			x: 6.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -324,7 +324,11 @@
 				"000CE46D72931AFD"
 				"1C7211968F773774"
 			]
-			description: ["Your first HV circuit!"]
+			description: [
+				"Your first HV circuit!"
+				""
+				"The HV tier is closer to a stop-gap tier than a real progression tier; most of your MV-based machinery and factory lines will still work fine. You can upgrade to EV relatively quickly, so this quest chapter merges both MV and HV."
+			]
 			id: "020FAE71BEDA6B1E"
 			shape: "hexagon"
 			size: 2.0d
@@ -355,7 +359,7 @@
 			}]
 			title: "Vanadium?"
 			x: 2.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["78729F0568BF5AEE"]
@@ -480,7 +484,101 @@
 			x: 2.0d
 			y: 8.5d
 		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: ["With the HV Assembler now available, it's a good chance to invest in making &dSMD components&r. These can be used to replace the regular components when assembling circuits and are significantly more efficient resource-wise."]
+			id: "240AADD043354E00"
+			optional: true
+			tasks: [
+				{
+					id: "49851FDF0C02DB6D"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+				{
+					id: "2BF6EAD01250D7B6"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "6DE73C8D392CF4E1"
+					item: "gtceu:smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "033F1176F18ACF48"
+					item: "gtceu:smd_diode"
+					type: "item"
+				}
+				{
+					id: "69DB4FFEBE9569D8"
+					item: "gtceu:smd_inductor"
+					type: "item"
+				}
+			]
+			title: "Surface-Mount Devices"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["78729F0568BF5AEE"]
+			description: [
+				"You should consider upgrading your blast furnace and bessemer converter to use &dMV Energy Hatches&r (if not MV hatches for &oall&r I/O) so that you can run HV recipes."
+				""
+				"This goes for every tier, really."
+			]
+			id: "2585EF3B6EC40112"
+			optional: true
+			tasks: [{
+				count: 2L
+				id: "0D585651002653BA"
+				item: { Count: 2b, id: "gtceu:mv_energy_input_hatch" }
+				type: "item"
+			}]
+			title: "HV Multiblocks"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"The worst multiblock in the game! EV circuits and higher can only be assembled inside a &acleanroom&r, which is a freeform multiblock structure made of &dplascrete&r and/or cleanroom glass."
+				""
+				"You can get power into the cleanroom multiblock with &ddiodes&r (the block form) or regular &dmachine hulls&r placed in the walls (yeah, didn't you know they're more than just a crafting component?) For item I/O, you can reuse machine hulls or use the venerable &9modular routers&r to teleport items inside. You can get inside with... a door. (Leaving the door open won't make it dirty inside)."
+				""
+				"(Alternatively, you can go into the configuration and disable cleanrooms. I won't judge you. The recipes say \"Requires cleanroom\", but that's not true.)"
+			]
+			id: "19DA4C36B750D270"
+			tasks: [{
+				id: "6EA4557A6E4A1A09"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			title: "The Cleanroom"
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"19DA4C36B750D270"
+				"51EBB85EFEE47C29"
+			]
+			description: [
+				"Almost as quickly as you unlocked HV circuits, you can craft your first &dEV Circuit&r."
+				""
+				"This is the second to last circuit in the microprocessor theme, but you probably won't be making anything from the next theme any time soon."
+			]
+			id: "4838078FA4C199E3"
+			tasks: [{
+				id: "01FE04F1A3DD1778"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			title: "EV Circuit #1"
+			x: 4.0d
+			y: 10.5d
+		}
 	]
-	subtitle: ["You must acquire a taste for freeform jazz."]
+	subtitle: ["The real fun begins here."]
 	title: "MV \\& HV - AMA-TE-RAS"
 }
