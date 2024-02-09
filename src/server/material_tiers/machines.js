@@ -336,6 +336,19 @@ export const adjustMachineRecipesForTier = (event, tier) => {
         ["PMZ", "WHW", "GGG"],
         {Z: tier.materials.grinder}
     ).id(`nijika:auto/machines/${tier.name}/rock_crusher`);
+
+    // Diodes: Replace cables and tier plates.
+    event.remove({id: `gtceu:shaped/${tier.name}_diode`});
+    event.shaped(
+        `1x gtceu:${tier.name}_diode`,
+        ["CDC", "DHD", "PDP"],
+        {
+            C: tier.quadrupleCable,
+            D: "#gtceu:diodes",  // TODO: fix this...
+            P: tier.primaryPlate,
+            H: tier.machineHull
+        }
+    ).id(`nijika:auto/machines/${tier.name}/diode`);
 }
 
 // Not implemented yet: Miners, fishers, converters, hatches.
