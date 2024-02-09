@@ -5,7 +5,7 @@
 export const addBessemerRecipeType = (type) => {
     type
         .setEUIO("in")
-        .setMaxIOSize(5, 1, 1, 0)
+        .setMaxIOSize(6, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BOILER);
 }
