@@ -25,6 +25,33 @@ export const addSlagProcessingRecipes = (event) => {
         .duration(30 * 20)
         .circuit(8);
 
+    event.recipes.gtceu.electric_blast_furnace("nijika:misc/slag_processing/hematite_smelting")
+        .itemInputs(
+            "32x #forge:raw_materials/hematite",
+        )
+        .itemOutputs(
+            "24x gcyr:iron_oxide_dust",
+            "8x gtceu:slag_dust"
+        )
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1700)
+        .duration(30 * 20)
+        .circuit(8);
+
+    event.recipes.gtceu.electric_blast_furnace("nijika:misc/slag_processing/hematite_smelting_reduction")
+        .itemInputs(
+            "32x #forge:raw_materials/hematite",
+            "8x #nijika:carbon_rich_dusts"
+        )
+        .itemOutputs(
+            "24x gtceu:iron_dust",
+            "8x gtceu:slag_dust"
+        )
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1700)
+        .duration(30 * 20)
+        .circuit(8);
+
     // This is a primarily fictional process because I (and nobody) wants to deal with the actual
     // slag refining process...
 
