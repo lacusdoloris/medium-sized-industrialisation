@@ -153,10 +153,7 @@ export const rewriteConveyorRecipes = (event, tier) => {
  */
 const rewritePumpRecipes = (event, tier) => {
     // these only have assembler recipes, because fuck manual tool recipes
-    for (let rubber of tier.acceptableRubbers) {
-        event.remove({id: `gtceu:shaped/electric_pump_${tier.name}_${rubber}`});
-        event.remove({id: `gtceu:assembler/electric_pump_${tier.name}_${rubber}`});
-        
+    for (let rubber of tier.acceptableRubbers) {        
         // note: this seems to use the rotor material progression, so it's been changed to use
         // that for screws too.
         event.recipes.gtceu.assembler(`nijika:auto/components/${tier.name}/pump/${rubber}`)
@@ -291,6 +288,8 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
 
 /**
  * Rewrites the material tiers for all tier-based components.
+ * 
+ * @param {Internal.RecipesEventJS} event
  */
 export const rewriteLowerTierComponentRecipes = (event) => {
     // LV has extra duplicated recipes we need to delete.
@@ -298,6 +297,9 @@ export const rewriteLowerTierComponentRecipes = (event) => {
     event.remove({id: "gtceu:shaped/electric_motor_lv_steel"});
     event.remove({id: "gtceu:assembler/electric_motor_lv_steel"});
     event.remove({id: "gtceu:assembler/electric_motor_lv_iron"});
+
+    // electric pumps use *any* rubber ring, so don't allow that.
+    event.remove({output: /gtceu:.*_electric_pump/, type: "gtceu:assembler"});
 
     for (let tier of GT_MACHINE_TIERS) {
         applyHullcasingTiers(event, tier);

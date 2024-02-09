@@ -46,6 +46,9 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shaped"
     });
 
+    // pump recipes require the usage of wrecnhes... so vaporise them.
+    event.remove({output: /gtceu:.*_electric_pump/, type: "minecraft:crafting_shaped"});
+
     let types = ["small_gears", "gears", "rotors", "bolts", "screws", "springs"];
     for (let itemType of types) {
         event.remove({output: `#forge:${itemType}`, type: "minecraft:crafting_shaped"});
