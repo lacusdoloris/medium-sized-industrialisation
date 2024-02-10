@@ -12,6 +12,7 @@ const SPECIFIC_PLATES = [
     "magnetic_iron",
     "rubber",
     "wrought_iron",
+    "bronze",
 ];
 
 
