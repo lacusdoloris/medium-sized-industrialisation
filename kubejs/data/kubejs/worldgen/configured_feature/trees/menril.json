@@ -1,0 +1,52 @@
+{
+    "type": "bigglobe:script",
+    "config": {
+        "script": {
+            "debug_name": "EndMenrilTrees",
+            "source": [
+                "random.unless(1.0/32.0: return(false))",
+                "",
+                "class MenrilState(int x int y int z BlockState prev)",
+                "",
+                "; Pass 1: Check for clearance above.",
+                "for (int checkX in range[-1, 1]:",
+                "    for (int checkZ in range[-1, 1]:",
+                "        unless(getBlockState(originX + checkX, originY + 1, originZ + checkZ).isAir(): return(false))",
+                "    )",
+                ")",
+                "",
+                "ArrayList states = new()",
+                "",
+                "void pushState(int x, int y, int z:",
+                "    BlockState old = getBlockState(x, y, z)",
+                "    setBlockState(x, y, z, 'minecraft:dirt')",
+                "    MenrilState state = MenrilState.new(x, y, z, old)",
+                "    states.add(state)",
+                ")",
+                "",
+                "; Step 2: Satisfy the menril tree feature.",
+                "pushState(originX    , originY, originZ    )",
+                "pushState(originX - 1, originY, originZ    )",
+                "pushState(originX    , originY, originZ - 1)",
+                "pushState(originX    , originY, originZ + 1)",
+                "pushState(originX + 1, originY, originZ    )",
+                "",
+                "; Step 3: Generate the actual feature.",
+                "boolean built = placeFeature(originX, originY + 1, originZ, 'integrateddynamics:tree_menril')",
+                "",
+                "; Step 4: Replace the old states.",
+                "for (MenrilState old in states:",
+                "    setBlockState(old.x, old.y, old.z, old.prev)",
+                "    ; remove the little pattern of blocks around the trunk too",
+                "    if (old.x != originX || old.z != originZ: ",
+                "        setBlockState(old.x, old.y + 1, old.z, 'minecraft:air')",
+                "    ) else if (built:",
+                "        setBlockState(old.x, old.y, old.z, 'integrateddynamics:menril_log')",
+                "    )",
+                ")",
+                "",
+                "return(true)"
+            ]
+        }
+    }
+}
