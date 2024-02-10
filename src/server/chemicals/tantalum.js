@@ -72,4 +72,19 @@ export const addTantaliteProcessingChain = (event) => {
         .chancedOutput("1x gtceu:tiny_yttrium_dust", 200, 1.5)          // 2%, 1.5% boost
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20);
+
+    // Tantalum Pentoxide + Carbon -> Tantalum Carbide + Oxygen
+    // 2 Ta2O5 + 4 C = 4 TaC + 5 O2
+    event.remove({id: "gtceu:mixer/tantalum_carbide"});
+
+    event.recipes.gtceu.electric_blast_furnace("nijika:chemicals/tantalum/tantalum_carbide")
+        .itemInputs(
+            "2x gtceu:tantalum_pentoxide_dust",
+            "4x #nijika:carbon_rich_dusts"
+        )
+        .itemOutputs("4x gtceu:tantalum_carbide_dust")
+        .outputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(15 * 20)
+        .blastFurnaceTemp(1500);
 }

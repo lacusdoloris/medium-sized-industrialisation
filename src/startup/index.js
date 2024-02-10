@@ -111,6 +111,9 @@ export const customiseMaterials = () => {
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
 
+    // Allow TaC in EV.
+    getBlastProperty("tantalum_carbide").setBlastTemperature(3600);
+
     // Used for clean machine casing.
     getMaterial("vanadium_steel").addFlags(GTMaterialFlags.GENERATE_FRAME);
 };
