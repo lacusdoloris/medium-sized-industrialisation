@@ -12,7 +12,7 @@
 		{
 			dependencies: ["7BEE21DF23576B53"]
 			description: [
-				"You could've made this at any point in the MV/HV tiers, butt &dStainless Steel&r is a steel alloy that contains small amounts of &dnickel&r, &dchromium&r, and &dmanganese&r."
+				"You could've made this at any point in the MV/HV tiers, but &aStainless Steel&r is a steel alloy that contains small amounts of &dnickel&r, &dchromium&r, and &dmanganese&r."
 				""
 				"You can't use the raw metals; you need to use &dInvar&r, &dFerrochrome&r, and &dFerromanganese&r; the latter two are produced from their ores more directly."
 			]

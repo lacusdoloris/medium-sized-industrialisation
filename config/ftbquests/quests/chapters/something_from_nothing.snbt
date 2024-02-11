@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "something_from_nothing"
+	group: "14EE7AEE0EF05AEE"
+	icon: "mysticalagriculture:awakened_supremium_essence"
+	id: "1A03DC276A1D6F9F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Something From Nothing"
+}

@@ -6,7 +6,7 @@
 	group: "14EE7AEE0EF05AEE"
 	icon: "gtceu:uv_parallel_hatch"
 	id: "3C278A17A70F0701"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
