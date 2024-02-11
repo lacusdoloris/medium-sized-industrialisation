@@ -441,13 +441,13 @@
         "version_id": "8mIUaono"
     },
     "fRiHVvU7": {
-        "checksum": "410e1856f27bd3b642a2faaa847c3d95ae6311da169bff9e09295a13f5cab3324fd422a249d9585650d499123ffe233272bceee43f1ea87ee6042a1afa128220",
+        "checksum": "ff7fa56f2e53647b3a34e692ef05c2668891bd8a9b98b72919b251b7c153ff78cb0d408856be0b2fe6de51197d52130f86a9d794d931bd518c19040e64bf0c38",
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.0+1.20.1+forge",
-        "version_id": "yJKM4MT2"
+        "version": "1.1.1+1.20.1+forge",
+        "version_id": "4Wza0ktp"
     },
     "ftdbN0KK": {
         "checksum": "d8350cb58395c48077dd5611914dbc3f2d398cca2a7a1b13ec694b03d01d9d68cafd601a0a03a0eab3182acfc556524c630118fd16f53da75711069dbc4da6f1",
