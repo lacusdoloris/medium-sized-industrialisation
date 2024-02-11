@@ -242,6 +242,15 @@
         "version": "2.1.23",
         "version_id": "6ITzrUzY"
     },
+    "G41VOlFe": {
+        "checksum": "c31ac64ac4cbac2d0d4463355d734d441f2a6bf1723e954691857c0c6ef7e490a1656ac6f7c4f4a0ff439d5fc7e6204493cade47c30bacd78cb16e8e665d07d2",
+        "name": "Cheese",
+        "pinned": false,
+        "project_id": "G41VOlFe",
+        "selected": true,
+        "version": "1.2.0",
+        "version_id": "NR94PqgD"
+    },
     "Ha28R6CL": {
         "checksum": "15e1b1a96f940d0dc41d0954009fda4376e5419b2c364145fafb401d82462d0d5d2e0899c8899a72618dac4fcb08963c8a45aa6b4652c74282a77ee98f395c95",
         "name": "Fabric Language Kotlin",
