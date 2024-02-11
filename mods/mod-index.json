@@ -99,13 +99,13 @@
         "version_id": "v85dnRYJ"
     },
     "7tG215v7": {
-        "checksum": "016ad3396447b7d0c7371a8af9421ed98b87db2034c99e6fb0c304204a82b48c64092d07a0e978b1d3a20fdc6d9b9f450af1cb650281e1681ccb656baf29d551",
+        "checksum": "bfd07ddb15b94272fc1e6c42d84c163a2e431a5aae9b609e25343785e36708113313b508733c6625e44c7c2b2de3e8d91907ba6b2c298602d8de9eaf9e961231",
         "name": "GregTechCEu Modern",
-        "pinned": true,
+        "pinned": false,
         "project_id": "7tG215v7",
-        "selected": false,
-        "version": "mc1.20.1-1.1.2.a",
-        "version_id": "yiBpNPCi"
+        "selected": true,
+        "version": "mc1.20.1-1.1.3.a",
+        "version_id": "MLw5VxNQ"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -369,13 +369,13 @@
         "version_id": "hei9cDRa"
     },
     "TkC4Gtkt": {
-        "checksum": "ae46b466fc024808c9201253b3dd7ff8ae17d8afb8e0297d3c32755c5941c56e356470c1bebfb3a353503928e20973fb19c678bd977d07103458eb870b323c2a",
+        "checksum": "2d48b053edc232e1b9d2ccfa995fc1e4e2d7db858d83438ad3be577ebbc922b68e68782402aec52851b9561d688fa0dee97d763e7c2cd2ec9adff738bca90803",
         "name": "Lazurite",
         "pinned": false,
         "project_id": "TkC4Gtkt",
         "selected": true,
-        "version": "1.0.2+mc1.20.1",
-        "version_id": "LZ2ZcLrG"
+        "version": "1.0.3+mc1.20.1",
+        "version_id": "7XSkM0oe"
     },
     "UxYNfnfx": {
         "checksum": "61fb2a73131fdfa5de73b5ed85ef381555f9b6ab6267097494af240666f40cb6fa65d54358e03b013d0a9875f94940401d23f2049cdb537253862862eef9f4bc",
