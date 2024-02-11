@@ -10,7 +10,7 @@ satellites:
 server:
   # Wether the oxygen mechanics are enabled.
   # Default: true
-  enableOxygen: true
+  enableOxygen: false
 
   # Damage to entities per tick without oxygen.
   # Default: 1.0
@@ -30,7 +30,7 @@ server:
 
   # The temperature in space.
   # Default: -270.0
-  spaceTemperature: -270.0
+  spaceTemperature: 30.0
 
 machine:
   # Damage caused by standing in an active dyson system controller's beam. (per tick)
