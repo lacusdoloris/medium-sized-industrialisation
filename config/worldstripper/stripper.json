@@ -81,6 +81,8 @@
     "minecraft:blackstone",
     "minecraft:magma_block",
     "bigglobe:ashen_netherrack",
-    "bigglobe:hidden_lava"
+    "bigglobe:hidden_lava",
+    "gcyr:mars_regolith",
+    "gcyr:martian_rock"
   ]
 }
