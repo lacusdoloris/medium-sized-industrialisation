@@ -15,4 +15,11 @@ export const MODPACK_SETTINGS = {
      * Disable to enable the "back path".
      */
     deleteToolRecipes: true,
+
+    /**
+     * If True, then ore veins for the vanilla dimensions will be removed.
+     * 
+     * Disable to allow playing in the vanilla world type.
+     */
+    deleteVanillaOreVeins: true,
 }

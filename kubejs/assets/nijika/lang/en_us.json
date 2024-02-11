@@ -34,6 +34,9 @@
     "block.gtceu.evaporation_pool": "Evaporation Pool",
     "gtceu.evaporation_pool": "Evaporating",
 
+    "gtceu.jei.ore_vein.bauxite_vein_moon": "Lunar Bauxite/Ilmenite",
+    "gtceu.jei.ore_vein.lunar_molybdenum_vein": "Lunar Molybdenite",
+
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
     "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
     "gtceu.machine.pyrolyse_oven.tooltip.1": "§6Cupronickel §7coils are §f25%%§7 slower. Every coil after §bFerrochrolumium§7 increases speed by §f50%%§7.",
@@ -41,6 +44,8 @@
     "item.gtceu.lv_cadmium_battery": "Nickel-Cadmium Battery",
     "item.gtceu.mv_cadmium_battery": "Nickel-Metal Hydride Battery",
     "item.gtceu.hv_lithium_battery": "Lithium-Ion Battery",
+
+    "item.cheese.cheese_and_crackers": "§eMoon Cheese§r",
 
     "block.create_new_age.magnetite_block": "Basic Magnet",
     "block.create_new_age.redstone_magnet": "Red Alloy Magnet",
