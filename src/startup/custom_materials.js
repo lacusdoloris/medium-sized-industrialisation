@@ -12,6 +12,9 @@ export const addMaterials = (event) => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
 
+    event.create(new ResourceLocation("nijika:blood"))
+        .liquid().color(0xFF0000);
+
     // == Slag == //
     event.create(new ResourceLocation("nijika:slag"))
         .dust()

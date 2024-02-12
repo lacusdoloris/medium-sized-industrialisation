@@ -1,4 +1,5 @@
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
+import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
 
 // some notes
@@ -21,6 +22,9 @@ export const addAllRecipeTypes = (event) => {
 
     let brine = event.create("evaporation_pool");
     addEvaporationRecipeType(brine);
+
+    let butcher = event.create("butchering");
+    addButcheringRecipeType(butcher);
 }
 
 /**
@@ -34,4 +38,7 @@ export const addAllMachineTypes = (event) => {
 
     let brine = event.create("nijika:evaporation_pool", "multiblock");
     addEvaporationPoolMultiblock(brine);
+
+    let butcher = event.create("nijika:butcher", "multiblock");
+    addButcheringMultiblock(butcher);
 }
