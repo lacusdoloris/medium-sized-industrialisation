@@ -6,7 +6,7 @@ import { getMaterial } from "../../shared/utils";
 export const addButcheringRecipeType = (type) => {
     type
         .setEUIO("in")
-        .setMaxIOSize(1, 1, 0, 2)
+        .setMaxIOSize(1, 2, 0, 2)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BOILER);
 }

@@ -7,6 +7,7 @@ const MOB_TYPES = {
     "cow": null,
     "panda": "minecraft:bamboo",
     "sheep": "minecraft:white_wool",
+    "chicken": "minecraft:egg",
     "skeleton": "minecraft:bone",
     "squid": "minecraft:ink_sac",
     "glow_squid": "minecraft:glow_ink_sac",
@@ -38,6 +39,7 @@ export const addMobRecipes = (event) => {
             event.recipes.gtceu.butchering(`nijika:misc/mobs/${mob}_butchering`)
                 .itemInputs(egg)
                 .chancedOutput(drop, 5000, 0.0)
+                .chancedOutput("mysticalagriculture:inferium_essence", 1000, 0.0)
                 .outputFluids(blood)
                 .EUt(GTValues.VA[GTValues.MV])
                 .duration(20 * 20);
@@ -47,6 +49,7 @@ export const addMobRecipes = (event) => {
     event.recipes.gtceu.butchering("nijika:misc/mobs/cow_butchering")
         .itemInputs("minecraft:cow_spawn_egg")
         .chancedOutput("minecraft:leather", 5000, 0.0)
+        .chancedOutput("mysticalagriculture:inferium_essence", 1000, 0.0)
         .chancedFluidOutput(Fluid.of("minecraft:milk").withAmount(1 * FluidAmounts.BUCKET), 5000, 0.0)
         .outputFluids(blood)
         .EUt(GTValues.VA[GTValues.MV])
