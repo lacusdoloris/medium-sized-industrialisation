@@ -13,6 +13,15 @@ built automatically from the modpack sources.
 Just import it into Prism Launcher directly. Please note that Prism doesn't seem to use the 
 ``name`` field in the index correctly.
 
+Quest Development
+-----------------
+
+Quests are primarily edited in FTB Quests and automatically transformed into Heracles quests via 
+Odysseus with the ``build_quests.sh`` script. This is ran automatically in CI.
+
+This means if you install FTB Quests + FTB XMod Compat manually, it'll automatically pick up the
+quests there. You should remove Heracles too, in that case.
+
 Building & Setting Up
 ---------------------
 
@@ -28,11 +37,16 @@ Actual mod management is done via `Kamuidrome <https://github.com/Fuyukai/Kamuid
 2. Run ``kamuidrome install`` to download all of the mods into your local cache.
 3. For development purposes, you can deploy it to a local Prism Instance with ``kamuidrome deploy``.
 
-Quest Development
------------------
+Installing, Server-Side
+-----------------------
 
-Quests are primarily edited in FTB Quests and automatically transformed into Heracles quests via 
-Odysseus with the ``build_quests.sh`` script. This is ran automatically in CI.
+There doesn't seem to be any ``mrpack`` installers for the server-side that aren't really fucking
+stupid, so your best bet is to set up a local install with the above comments, and then deploy
+into an installed NeoForge server with ``kamuidrome deploy -d /path/to/my/server``.
+
+If you're using Heracles, you need to run ``./build_quests.sh`` too. Eventually I'll write my own
+deployer that will let you use the mrpack instead.
+
 
 Included Mods
 -------------
