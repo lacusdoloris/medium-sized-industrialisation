@@ -1,0 +1,12 @@
+{
+    "edible": {"item": "cheese:cheese_and_crackers"},
+    "rules": [{
+        "from": ["minecraft:overworld"],
+        "destinations": {
+            "da_moon": {
+                "location": "world_spawn",
+                "world": "gcyr:luna"
+            }
+        }
+    }]
+}

@@ -489,6 +489,67 @@
 			x: 8.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"The Moon is where you'll find some of the later game ores. "
+				""
+				"How do you get there? By eating &dMoon Cheese&r, of course. Which is made from cheese and rocket fuel."
+				""
+				"Don't worry about the health effects..."
+			]
+			id: "64FC6D55D3D16CDA"
+			rewards: [{
+				id: "072AB56B651BE0AB"
+				item: {
+					Count: 1b
+					id: "exposure:photograph"
+					tag: {
+						Biome: "gcyr:moon"
+						Dimension: "gcyr:luna"
+						Id: "Fuyukaii_353639"
+						LightLevel: 15
+						Photographer: "Fuyukaii"
+						PhotographerId: [I;
+							836220340
+							-961525933
+							-1422374641
+							1605736399
+						]
+						Pos: [
+							2335
+							110
+							2569
+						]
+						RepairCost: 0
+						SunAngle: 5.252313f
+						Timestamp: "2024-02-13_01.23.14"
+						Type: "black_and_white"
+						Weather: "Clear"
+						display: {
+							Name: "{\"text\":\"How To Get Back From The Moon\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4510B8FE7777D78E"
+					item: "cheese:cheese_and_crackers"
+					type: "item"
+				}
+				{
+					dimension: "gcyr:luna"
+					id: "28F75DB9F1EC0689"
+					title: "The Moon"
+					type: "dimension"
+				}
+			]
+			title: "Mr Blue Eyes"
+			x: 6.5d
+			y: 1.5d
+		}
 	]
 	subtitle: ["A quick guide to Big Globe ore veins."]
 	title: "Ore Information"
