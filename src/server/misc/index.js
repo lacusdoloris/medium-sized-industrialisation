@@ -1,5 +1,6 @@
 import { addCreateRockProcessingRecipes } from "./create_materials";
 import { redoGlassProcessing } from "./glass";
+import { addMobFarmRelatedRecipes } from "./mob_farming";
 import { rewriteRailwayRecipes } from "./railways"
 import { addSlagProcessingRecipes } from "./slag_processing";
 
@@ -87,4 +88,5 @@ export const adjustVariousMiscRecipes = (event) => {
     redoGlassProcessing(event);
     addCreateRockProcessingRecipes(event);
     addSlagProcessingRecipes(event);
+    addMobFarmRelatedRecipes(event);
 }

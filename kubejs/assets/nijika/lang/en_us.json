@@ -28,11 +28,14 @@
     "material.nijika.sodium_fluoride": "Sodium Fluoride",
     "material.nijika.tantalum_slag": "Tantalite Slag",
     "material.nijika.tantalite_residue": "Tantalite Residue",
+    "material.nijika.blood": "Blood",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
     "block.gtceu.evaporation_pool": "Evaporation Pool",
     "gtceu.evaporation_pool": "Evaporating",
+    "block.gtceu.butcher": "Butcher",
+    "gtceu.butchering": "Butchering",
 
     "gtceu.jei.ore_vein.bauxite_vein_moon": "Lunar Bauxite/Ilmenite",
     "gtceu.jei.ore_vein.lunar_molybdenum_vein": "Lunar Molybdenite",
