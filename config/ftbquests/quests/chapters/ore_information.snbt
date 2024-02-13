@@ -498,6 +498,7 @@
 				""
 				"Don't worry about the health effects..."
 			]
+			icon: "cheese:cheese_and_crackers"
 			id: "64FC6D55D3D16CDA"
 			rewards: [{
 				id: "072AB56B651BE0AB"

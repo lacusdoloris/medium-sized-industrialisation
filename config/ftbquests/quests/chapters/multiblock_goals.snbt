@@ -259,6 +259,24 @@
 			x: 2.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["641046C8A91952E9"]
+			description: [
+				"The &dButcher&r is a multiblock that farms mob drops. Mob spawning is disabled for performance reason, so this is used to get the drops you otherwise wouldn't be able to get."
+				""
+				"It needs a steady supply of mob spawn eggs, which are created from autoclaving &dblood&r and somee &dcalcite dust&r. You can get your initial supply of blood from &dBlackstone&r."
+			]
+			id: "2EB994642FAB0075"
+			subtitle: "Unusually popular with vampires."
+			tasks: [{
+				id: "6ADA1F6AC394F603"
+				item: "gtceu:butcher"
+				type: "item"
+			}]
+			title: "The Butcherer"
+			x: 1.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["A guide to the various multiblocks you can build."]
 	title: "Multiblock Goals"
