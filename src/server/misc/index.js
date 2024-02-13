@@ -84,6 +84,22 @@ export const adjustVariousMiscRecipes = (event) => {
         ["#minecraft:saplings", "#minecraft:wool"]
     ).id("nijika:misc/wooly_sapling");
 
+    event.remove({id: "cheese:cheese"});
+    event.remove({id: "cheese:cheese_and_crackers"});
+
+    event.recipes.gtceu.fermenter("nijika:misc/grommit")
+        .inputFluids(Fluid.of("minecraft:milk").withAmount(250 * FluidAmounts.MB))
+        .itemOutputs("cheese:cheese")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(20);
+    
+    event.recipes.gtceu.chemical_bath("nijika:misc/moon_cheese")
+        .inputFluids(Fluid.of("gtceu:rocket_fuel").withAmount(1 * FluidAmounts.B))
+        .itemInputs("cheese:cheese")
+        .itemOutputs("cheese:cheese_and_crackers")
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5);
+
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);
     addCreateRockProcessingRecipes(event);
