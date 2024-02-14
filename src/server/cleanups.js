@@ -146,6 +146,12 @@ export const doCleanups = (event) => {
     if (Platform.isLoaded("integrateddynamics")) {
         event.remove({id: "integrateddynamics:smelting/menril_log_coal"});
         event.remove({id: "integrateddynamics:smelting/menril_log_filled_coal"});
+        event.remove({id: "integrateddynamics:blasting/menril_log_coal"});
+
+        event.remove({type: "integrateddynamics:drying_basin"});
+        event.remove({type: "integrateddynamics:mechanical_drying_basin"});
+        event.remove({type: "integrateddynamics:squeezer"});
+        event.remove({type: "integrateddynamics:mechanical_squeezer"});
     }
 
     // why does this exist?
