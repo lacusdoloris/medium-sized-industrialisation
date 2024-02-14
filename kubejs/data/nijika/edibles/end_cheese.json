@@ -1,0 +1,17 @@
+{
+    "edible": {"item": "cheese:grilled_cheese"},
+    "rules": [
+        {
+            "from": ["!minecraft:the_end"],
+            "destinations": {
+                "da_end": {"location": "world_spawn", "world": "minecraft:the_end"}
+            }
+        },
+        {
+            "from": ["minecraft:the_end"],
+            "destinations": {
+                "da_real_world": {"location": "player_spawn", "world": "minecraft:overworld"}
+            }
+        }
+    ]
+}

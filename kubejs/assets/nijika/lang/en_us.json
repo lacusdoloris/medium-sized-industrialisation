@@ -49,6 +49,8 @@
     "item.gtceu.hv_lithium_battery": "Lithium-Ion Battery",
 
     "item.cheese.cheese_and_crackers": "§eMoon Cheese§r",
+    "item.cheese.grilled_cheese": "§eGrilled (End) Cheese§r",
+    "item.cheese.grilled_cheese.tooltip_0": "Don't mind the beryllium.",
 
     "block.create_new_age.magnetite_block": "Basic Magnet",
     "block.create_new_age.redstone_magnet": "Red Alloy Magnet",

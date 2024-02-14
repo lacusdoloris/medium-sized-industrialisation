@@ -86,6 +86,7 @@ export const adjustVariousMiscRecipes = (event) => {
 
     event.remove({id: "cheese:cheese"});
     event.remove({id: "cheese:cheese_and_crackers"});
+    event.remove({id: "cheese:grilled_cheese"});
 
     event.recipes.gtceu.fermenter("nijika:misc/grommit")
         .inputFluids(Fluid.of("minecraft:milk").withAmount(250 * FluidAmounts.MB))
@@ -99,6 +100,17 @@ export const adjustVariousMiscRecipes = (event) => {
         .itemOutputs("cheese:cheese_and_crackers")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5);
+
+    event.recipes.gtceu.electric_blast_furnace("nijika:misc/end_cheese")
+        .itemInputs(
+            "2x cheese:cheese",
+            "1x minecraft:bread",
+            "1x #forge:dusts/ender_pearl"
+        )
+        .itemOutputs("cheese:grilled_cheese")
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(20)
+        .blastFurnaceTemp(453.15);
 
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);
