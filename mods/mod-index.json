@@ -639,13 +639,13 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "b37f33611d5000bad3bc11e436c0f35d4094f7625a50b905de03ff22d1d0cfeee82b5485fcc743694e4db4ed5ff63d5a36ad222918191cb2a265b045fcc5ae53",
+        "checksum": "14be60bec12a8b2f5d734521ad9ccbdf44bb3e239591f7e37a6403b672ac757ddefdc5af3f437f9a9052ae6925babfd832eed1cec0ac9c49b6344550deead4ec",
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.2+mc1.20.1",
-        "version_id": "HL1mTxlM"
+        "version": "0.3.3+mc1.20.1",
+        "version_id": "OznGIbGx"
     },
     "soWqucCB": {
         "checksum": "3f3784c07d9d554c0ff716cc51d01cd6fce45b982717e7abd6001636b7574f83e4dec248e05064ad2287cd3165b4b10a7683f36a3498a5873ad5d29aad0785d8",
