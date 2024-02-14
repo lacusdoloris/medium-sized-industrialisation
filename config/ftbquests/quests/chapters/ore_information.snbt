@@ -455,7 +455,7 @@
 			}]
 			tasks: [
 				{
-					count: 64L
+					count: 16L
 					id: "0CF1028F89F1D9D5"
 					item: "gtceu:raw_tantalite"
 					type: "item"

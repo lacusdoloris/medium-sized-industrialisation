@@ -15,6 +15,17 @@ export const addMaterials = (event) => {
     event.create(new ResourceLocation("nijika:blood"))
         .liquid().color(0xFF0000);
 
+    // == ID Integration == //
+    event.create(new ResourceLocation("nijika:beryllium_hydride"))
+        .dust().color(0x2b4f61)
+        .components("1x gtceu:beryllium", "2x gtceu:hydrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    // no disable decomposition flag here, as 
+    event.create(new ResourceLocation("nijika:beryllium_chloride"))
+        .dust().color(0x3b3f51)
+        .components("1x gtceu:beryllium", "2x gtceu:chlorine");
+
     // == Slag == //
     event.create(new ResourceLocation("nijika:slag"))
         .dust()

@@ -1,3 +1,4 @@
+import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustMysticalAgricultureRecipes } from "./mysticalagriculture";
 import { adjustCreateNewAgeRecipes } from "./new_age"
@@ -9,6 +10,6 @@ export const doModRecipes = (event) => {
     adjustLittleLogisticsRecipes(event);
     adjustModularRouterRecipes(event);
     adjustPrettyPipesRecipes(event);
-
     adjustMysticalAgricultureRecipes(event);
+    adjustIntegratedDynamicsRecipes(event);
 }
