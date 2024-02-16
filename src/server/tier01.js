@@ -72,7 +72,7 @@ export const doTier01Content = (event) => {
             "gtceu:lv_battery_hull",
             "2x gtceu:cadmium_dust",
             "1x gtceu:nickel_foil",
-            "1x #forge:paper"
+            "1x minecraft:paper"
         )
         .itemOutputs("gtceu:lv_cadmium_battery")
         .EUt(GTValues.VA[GTValues.ULV])

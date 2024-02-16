@@ -112,7 +112,7 @@ export const doTier00Content = (event) => {
         ["GPG", "FDF", " P "],
         {
             G: "#nijika:glues", 
-            P: "#forge:paper", 
+            P: "minecraft:paper", 
             F: "gtceu:fine_copper_wire", 
             D: "#nijika:carbon_rich_dusts"
         }
@@ -123,7 +123,7 @@ export const doTier00Content = (event) => {
         ["GPG", "FDF", " P "],
         {
             G: "#nijika:glues", 
-            P: "#forge:paper", 
+            P: "minecraft:paper", 
             F: "gtceu:copper_single_wire", 
             D: "#nijika:carbon_rich_dusts"
         }

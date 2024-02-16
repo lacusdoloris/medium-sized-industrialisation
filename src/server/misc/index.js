@@ -40,7 +40,7 @@ export const adjustVariousMiscRecipes = (event) => {
 
     event.remove({id: "gtceu:assembler/name_tag"});
     event.recipes.gtceu.assembler("nijika:misc/name_tag")
-        .itemInputs("1x #forge:paper", "1x #forge:string")
+        .itemInputs("1x minecraft:paper", "1x #forge:string")
         .inputFluids(Fluid.of("gtceu:glue").withAmount(100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("minecraft:name_tag")
         .EUt(4)
