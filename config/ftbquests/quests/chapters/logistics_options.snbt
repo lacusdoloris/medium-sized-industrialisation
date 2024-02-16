@@ -152,6 +152,67 @@
 			x: -2.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["0DBEB940868D3DB7"]
+			description: [
+				"Without ender pearls and blaze powder for eyes of ender, how do you get to the end?"
+				""
+				"Eat some &dGrilled Cheese&r, laced with a bit of ender pearl dust (made from mixing together emerald remains). Eat it again to get back. This is available as soon as LV if you add four LV energy hatches to your EBF."
+				""
+				"How you actually get to the outer clouds without an ender pearl is your own problem to solve."
+			]
+			id: "4904C058593D4D1B"
+			subtitle: "Dr. Greene, you comin'?"
+			tasks: [{
+				id: "3DD05257EAF8B961"
+				item: "cheese:grilled_cheese"
+				type: "item"
+			}]
+			title: "And In The End..."
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4904C058593D4D1B"]
+			description: [
+				"The Menril Tree - aside from being the coolest looking tree - is also the way you get &dMenril Shards&r, which are made from centrifuging the logs."
+				""
+				"The big powerful world of Integrated Dynamics won't be explored here. Check out the excellent online guide (google it!) or the in-game guide in your Eccentric Tome for more information on just how powerful of a logistics system it is."
+			]
+			id: "32008B585582EF41"
+			tasks: [{
+				id: "4063B142B4893D29"
+				item: "integrateddynamics:menril_log"
+				type: "item"
+			}]
+			title: "Menril"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4904C058593D4D1B"]
+			description: [
+				"RFTools is a collection of utility mods that provide mass storage, programmable logistics, and more."
+				""
+				"You need to get some &dDimensional Shards&r to start using it, which are available by mixing together &demerald dust&r, &dnetherrack dust&r, and &dendstone dust&r."
+			]
+			id: "10FDFD6E4A72BEDE"
+			tasks: [
+				{
+					id: "16B184F4B751F62A"
+					item: "rftoolsbase:dimensionalshard"
+					type: "item"
+				}
+				{
+					id: "235FFE05AAEDBC6F"
+					item: "rftoolsbase:machine_frame"
+					type: "item"
+				}
+			]
+			title: "RFTools"
+			x: -1.5d
+			y: 3.5d
+		}
 	]
 	title: "Logistics Options"
 }
