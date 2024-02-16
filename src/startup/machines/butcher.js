@@ -26,12 +26,12 @@ export const addButcheringMultiblock = (builder) => {
             .where(
                 "S",
                 Predicates.blocks("gtceu:solid_machine_casing").or(
-                    Predicates.autoAbilities(definition.getRecipeTypes()),
-                ),
+                    Predicates.autoAbilities(definition.getRecipeTypes())
+                )
             )
             .where(
                 "G",
-                Predicates.blocks("minecraft:glass").or(Predicates.blocks("create:framed_glass")),
+                Predicates.blocks("minecraft:glass").or(Predicates.blocks("create:framed_glass"))
             )
             .where("B", Predicates.blocks("minecraft:blackstone"))
             .where("#", Predicates.air())
@@ -44,7 +44,7 @@ export const addButcheringMultiblock = (builder) => {
         .rotationState(RotationState.NON_Y_AXIS)
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/machines/cutter", // TODO: Custom texture?
+            "gtceu:block/machines/cutter" // TODO: Custom texture?
         )
         .recipeType("butchering")
         .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
@@ -52,7 +52,7 @@ export const addButcheringMultiblock = (builder) => {
         .recipeModifier(
             GTRecipeModifiers.PARALLEL_HATCH.apply(
                 OverclockingLogic.PERFECT_OVERCLOCK,
-                GTRecipeModifiers.ELECTRIC_OVERCLOCK,
-            ),
+                GTRecipeModifiers.ELECTRIC_OVERCLOCK
+            )
         );
 };

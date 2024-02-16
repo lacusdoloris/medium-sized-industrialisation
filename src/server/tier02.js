@@ -36,7 +36,7 @@ export const doTier02Content = (event) => {
         .itemInputs(
             "4x gtceu:lanthanum_nickel_alloy_foil",
             "4x gtceu:polyethylene_foil",
-            "1x gtceu:mv_battery_hull",
+            "1x gtceu:mv_battery_hull"
         )
         .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:mv_cadmium_battery")

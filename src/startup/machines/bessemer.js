@@ -22,7 +22,7 @@ export const addBessemerMultiblock = (builder) => {
                 "IIIIIII",
                 "IIIIIII",
                 "#######",
-                "#######",
+                "#######"
             )
             .aisle(
                 // Inner back wall: invar bottom, firebrick wall
@@ -31,7 +31,7 @@ export const addBessemerMultiblock = (builder) => {
                 "FFFFFFF",
                 "FFFFFFF",
                 "#FFFFF#",
-                "#FFFFF#",
+                "#FFFFF#"
             )
             .aisle(
                 // Middle gap: invar floor, firebricks wall, two layeers of limestone, firebricks
@@ -40,7 +40,7 @@ export const addBessemerMultiblock = (builder) => {
                 "FFXXXFF",
                 "FFXXXFF",
                 "#FXXXF#",
-                "#FIIIF#",
+                "#FIIIF#"
             )
             .aisle("#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#")
             .aisle("#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#")
@@ -52,15 +52,15 @@ export const addBessemerMultiblock = (builder) => {
                 "IIICIII",
                 "IIIIIII",
                 "#######",
-                "#######",
+                "#######"
             )
             .where("#", Predicates.any())
             .where("X", Predicates.air())
             .where(
                 "I",
                 Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()).or(
-                    Predicates.autoAbilities(definition.getRecipeTypes()),
-                ),
+                    Predicates.autoAbilities(definition.getRecipeTypes())
+                )
             )
             .where("M", Predicates.abilities(PartAbility.MUFFLER))
             .where("F", Predicates.blocks("gtceu:firebricks"))
@@ -73,12 +73,12 @@ export const addBessemerMultiblock = (builder) => {
         .rotationState(RotationState.NON_Y_AXIS)
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_heatproof",
-            "gtceu:block/multiblock/primitive_blast_furnace",
+            "gtceu:block/multiblock/primitive_blast_furnace"
         )
         .recipeType("bessemer_smelting")
         .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
         // what could this mean?
         .recipeModifier(
-            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)
         );
 };

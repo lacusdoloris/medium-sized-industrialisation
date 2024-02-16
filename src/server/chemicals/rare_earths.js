@@ -36,7 +36,7 @@ export const addRareEarthProcessingChain = (event) => {
         .chemical_reactor("nijika:chemicals/rare_earths/rare_earth_hydroxide_chlorides")
         .inputFluids(
             Fluid.of("gtceu:rare_earth_hydroxides").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(3 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(3 * FluidAmounts.BUCKET)
         )
         .itemOutputs("3x gtceu:rare_earth_chlorides_dust")
         .EUt(GTValues.VA[GTValues.MV])
@@ -75,7 +75,7 @@ export const addRareEarthProcessingChain = (event) => {
         .itemInputs(
             "1x gtceu:lanthanum_iii_oxide_dust",
             "3x gtceu:calcium_hydride_dust",
-            "10x gtceu:nickel_dust",
+            "10x gtceu:nickel_dust"
         )
         .itemOutputs("2x gtceu:lanthanum_nickel_alloy_ingot", "3x gtceu:quicklime_dust")
         .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(3 * FluidAmounts.BUCKET))

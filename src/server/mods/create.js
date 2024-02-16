@@ -1,12 +1,11 @@
-
 /**
  * Adjusts recipes for the Create mod.
  *
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustCreateRecipes = (event) => {
-    event.remove({output: "#create:crushed_raw_materials"});
-    event.remove({input: "#create:crushed_raw_materials"});
+    event.remove({ output: "#create:crushed_raw_materials" });
+    event.remove({ input: "#create:crushed_raw_materials" });
 
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
@@ -30,4 +29,4 @@ export const adjustCreateRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
         ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
-}
+};

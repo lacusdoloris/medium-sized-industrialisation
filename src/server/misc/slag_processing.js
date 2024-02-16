@@ -47,7 +47,7 @@ export const addSlagProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:slag_slurry").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.LV])
         .duration(2 * 20 + 10);

@@ -56,7 +56,7 @@ export const addMobRecipes = (event) => {
         .chancedFluidOutput(
             Fluid.of("minecraft:milk").withAmount(1 * FluidAmounts.BUCKET),
             5000,
-            0.0,
+            0.0
         )
         .outputFluids(blood)
         .EUt(GTValues.VA[GTValues.MV])

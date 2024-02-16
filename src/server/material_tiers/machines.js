@@ -107,7 +107,7 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Centrifuge: Replace cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_centrifuge` });
     lazyShaped(`gtceu:${tier.name}_centrifuge`, ["CMC", "WHW", "CMC"], {}).id(
-        `nijika:auto/machines/${tier.name}/centrifuge`,
+        `nijika:auto/machines/${tier.name}/centrifuge`
     );
 
     // Chemical bath: Replace Glass, cable.
@@ -119,13 +119,13 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Chemical reactor: Replace rotors, glass, cablees.
     event.remove({ id: `gtceu:shaped/${tier.name}_chemical_reactor` });
     lazyShaped(`gtceu:${tier.name}_chemical_reactor`, ["GRG", "WMW", "CHC"], {}).id(
-        `nijika:auto/machines/${tier.name}/chemical_reactor`,
+        `nijika:auto/machines/${tier.name}/chemical_reactor`
     );
 
     // Compressor: Replace wires.
     event.remove({ id: `gtceu:shaped/${tier.name}_compressor` });
     lazyShaped(`gtceu:${tier.name}_compressor`, [" C ", "PHP", "WCW"], {}).id(
-        `nijika:auto/machines/${tier.name}/compressor`,
+        `nijika:auto/machines/${tier.name}/compressor`
     );
 
     // Cutter: WIP.
@@ -174,7 +174,7 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     lazyShaped(
         `gtceu:${tier.name}_fluid_solidifier`,
         ["ZGZ", "WHW", "CXC"],
-        { Z: `gtceu:${tier.name}_electric_pump`, X: "#forge:chests/wooden" }, // ?
+        { Z: `gtceu:${tier.name}_electric_pump`, X: "#forge:chests/wooden" } // ?
     ).id(`nijika:auto/machines/${tier.name}/fluid_solidifier`);
 
     // Forge Hammer: Replace cables.
@@ -186,25 +186,25 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Forming Press: Replace cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_forming_press` });
     lazyShaped(`gtceu:${tier.name}_forming_press`, ["WPW", "CHC", "WPW"], {}).id(
-        `nijika:auto/machines/${tier.name}/forming_press`,
+        `nijika:auto/machines/${tier.name}/forming_press`
     );
 
     // Lathe: Replace cables, grinder.
     event.remove({ id: `gtceu:shaped/${tier.name}_lathe` });
     lazyShaped(`gtceu:${tier.name}_lathe`, ["WCW", "MHZ", "CWP"], { Z: tier.materials.grinder }).id(
-        `nijika:auto/machines/${tier.name}/lathe`,
+        `nijika:auto/machines/${tier.name}/lathe`
     );
 
     // Mixer: Replace glass, rotor.
     event.remove({ id: `gtceu:shaped/${tier.name}_mixer` });
     lazyShaped(`gtceu:${tier.name}_mixer`, ["GRG", "GMG", "CHC"], {}).id(
-        `nijika:auto/machines/${tier.name}/mixer`,
+        `nijika:auto/machines/${tier.name}/mixer`
     );
 
     // Ore Washer: Replace glass, rotor, cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_ore_washer` });
     lazyShaped(`gtceu:${tier.name}_ore_washer`, ["RGR", "CMC", "WHW"], {}).id(
-        `nijika:auto/machines/${tier.name}/ore_washer`,
+        `nijika:auto/machines/${tier.name}/ore_washer`
     );
 
     // Packer: Replace wires
@@ -224,13 +224,13 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Laser Engraver: Replace cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_laser_engraver` });
     lazyShaped(`gtceu:${tier.name}_laser_engraver`, ["PEP", "CHC", "WCW"], {}).id(
-        `nijika:auto/machines/${tier.name}/laser_engraver`,
+        `nijika:auto/machines/${tier.name}/laser_engraver`
     );
 
     // Sifter: Replace cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_sifter` });
     lazyShaped(`gtceu:${tier.name}_sifter`, ["WZW", "PHP", "CZC"], { Z: "gtceu:item_filter" }).id(
-        `nijika:auto/machines/${tier.name}/sifter`,
+        `nijika:auto/machines/${tier.name}/sifter`
     );
 
     // Thermal centrifuge: Replace wires.
@@ -242,7 +242,7 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Wiremill: Replace wires.
     event.remove({ id: `gtceu:shaped/${tier.name}_wiremill` });
     lazyShaped(`gtceu:${tier.name}_wiremill`, ["MWM", "CHC", "MWM"], {}).id(
-        `nijika:auto/machines/${tier.name}/wiremill`,
+        `nijika:auto/machines/${tier.name}/wiremill`
     );
 
     // Circuit Assembler: Replace cables.

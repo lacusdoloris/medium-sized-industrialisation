@@ -1,5 +1,5 @@
 const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey",
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
 
 import { iterateOverAllMaterials } from "../../shared/utils";
@@ -28,7 +28,7 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
             event.recipes.createaddition
                 .rolling(
                     `2x gtceu:fine_${material.name}_wire`,
-                    `1x gtceu:${material.name}_single_wire`,
+                    `1x gtceu:${material.name}_single_wire`
                 )
                 .id(`nijika:auto/wires/${material.name}_fine_wire`);
         }

@@ -54,7 +54,7 @@ export const adjustPrettyPipesRecipes = (event) => {
     event.replaceInput(
         { id: /prettypipes:(?:low|medium|high)_.*_module/ },
         "#forge:dusts/redstone",
-        "gtceu:red_alloy_single_cable",
+        "gtceu:red_alloy_single_cable"
     );
     event.replaceInput({ mod: "prettypipes" }, "#forge:ingots/iron", "#forge:plates/iron");
     event.replaceInput({ mod: "prettypipes" }, "#forge:ingots/gold", "#forge:plates/silver");
@@ -140,6 +140,6 @@ export const adjustPrettyPipesRecipes = (event) => {
     event.replaceInput(
         { id: "prettypipes:round_robin_sorting_modifier" },
         "minecraft:arrow",
-        "minecraft:clock",
+        "minecraft:clock"
     );
 };

@@ -36,7 +36,7 @@ export const addGalliumArsenicRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:arsenic_trichloride").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
         )
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV]);

@@ -37,7 +37,7 @@ export const addChemicalProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(1 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
@@ -48,7 +48,7 @@ export const addChemicalProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(1 * FluidAmounts.BUCKET))
         .inputFluids(
             Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);

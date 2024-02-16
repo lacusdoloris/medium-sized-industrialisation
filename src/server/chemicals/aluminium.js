@@ -18,7 +18,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:sodium_aluminate").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:red_mud").withAmount(2.5 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:red_mud").withAmount(2.5 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.MV])
         .duration(10 * 20);
@@ -80,7 +80,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .chancedOutput("1x gtceu:silicon_dioxide_dust", 5000, 0.0) // 50%, never boosted
         .chancedOutput("1x gtceu:gallium_dust", 1100.0, 800.0) // 11%, 8% boost per tier
         .outputFluids(
-            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.MV])
         .duration(20);

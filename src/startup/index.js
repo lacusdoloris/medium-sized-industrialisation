@@ -110,7 +110,7 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts(
             getMaterial("manganese_oxide"),
             getMaterial("niobium_pentoxide"),
-            getMaterial("tantalum_pentoxide"),
+            getMaterial("tantalum_pentoxide")
         );
     }
 

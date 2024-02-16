@@ -61,7 +61,7 @@ export const rewriteMotorRecipes = (event, tier) => {
             `2x ${tier.singleCable}`,
             `4x ${tier.doubleMotorWire}`,
             `2x ${tier.effectiveRodWithLVHardcode}`,
-            `${tier.magneticRod}`,
+            `${tier.magneticRod}`
         )
         .itemOutputs(`1x gtceu:${tier.name}_electric_motor`)
         .EUt(30)
@@ -94,7 +94,7 @@ export const rewritePistonRecipes = (event, tier) => {
             `2x ${tier.singleCable}`,
             `2x ${tier.effectiveRodWithLVHardcode}`,
             `gtceu:${tier.name}_electric_motor`,
-            tier.materials.plate.tagged("small_gears"),
+            tier.materials.plate.tagged("small_gears")
         )
         .itemOutputs(`1x gtceu:${tier.name}_electric_piston`)
         .EUt(30)
@@ -150,7 +150,7 @@ const rewritePumpRecipes = (event, tier) => {
                 tier.materials.rotor.component("screw"),
                 tier.materials.rotor.component("rotor"),
                 `2x gtceu:${rubber}_ring`,
-                `gtceu:${tier.name}_electric_motor`,
+                `gtceu:${tier.name}_electric_motor`
             )
             .itemOutputs(`gtceu:${tier.name}_electric_pump`)
             .EUt(30)
@@ -185,7 +185,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
             `2x gtceu:${tier.name}_electric_motor`,
             `2x ${tier.primaryRod}`,
             `gtceu:${tier.name}_electric_piston`,
-            tier.circuitTag,
+            tier.circuitTag
         )
         .itemOutputs(`gtceu:${tier.name}_robot_arm`)
         .EUt(30)
@@ -236,7 +236,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
             tier.materials.emitterRod.tagged("rods"),
             `4x ${tier.primaryPlate}`,
             tier.circuitTag,
-            tier.materials.emitterGem,
+            tier.materials.emitterGem
         )
         .itemOutputs(`gtceu:${tier.name}_sensor`)
         .EUt(GTValues.VA[GTValues.LV])
@@ -260,7 +260,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
             `4x ${tier.materials.emitterRod.tagged("rods")}`,
             `2x ${tier.singleCable}`,
             `2x ${tier.circuitTag}`,
-            tier.materials.emitterGem,
+            tier.materials.emitterGem
         )
         .itemOutputs(`gtceu:${tier.name}_emitter`)
         .EUt(GTValues.VA[GTValues.LV])

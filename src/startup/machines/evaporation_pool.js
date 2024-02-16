@@ -22,8 +22,8 @@ export const addEvaporationPoolMultiblock = (builder) => {
             .where(
                 "B",
                 Predicates.blocks("gtceu:steam_machine_casing").or(
-                    Predicates.autoAbilities(definition.getRecipeTypes()),
-                ),
+                    Predicates.autoAbilities(definition.getRecipeTypes())
+                )
             )
             .where("C", Predicates.controller(Predicates.blocks(definition.get())))
             .build();
@@ -34,10 +34,10 @@ export const addEvaporationPoolMultiblock = (builder) => {
         .rotationState(RotationState.NON_Y_AXIS)
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-            "gtceu:block/machines/ore_washer", // TODO: Custom texture?
+            "gtceu:block/machines/ore_washer" // TODO: Custom texture?
         )
         .recipeType("evaporation_pool")
         .recipeModifier(
-            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)
         );
 };

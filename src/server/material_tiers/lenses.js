@@ -17,7 +17,7 @@ export const fixLensRecipes = (event) => {
             .chemical_bath(`nijika:auto/glass_lens/${colourName}`)
             .itemInputs("1x #forge:lenses")
             .inputFluids(
-                Fluid.of(`gtceu:${colourName}_dye`).withAmount(144 * FluidAmounts.MILLIBUCKET),
+                Fluid.of(`gtceu:${colourName}_dye`).withAmount(144 * FluidAmounts.MILLIBUCKET)
             )
             .itemOutputs(`gtceu:${colourName}_glass_lens`)
             .EUt(GTValues.VA[GTValues.MV])

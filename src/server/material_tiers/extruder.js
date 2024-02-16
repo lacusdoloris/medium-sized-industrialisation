@@ -10,7 +10,7 @@ import { getStackForTagPrefix, iterateOverAllMaterials } from "../../shared/util
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
 
 const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey",
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
 const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 const PIPE_TYPES = [
@@ -64,8 +64,8 @@ export const fixExtruderRecipeTier = (event) => {
                 .notConsumable(`gtceu:${size_name}_pipe_extruder_mold`)
                 .itemOutputs(
                     Item.of(
-                        `${material.modid}:${material.name}_${size_name}_${type}_pipe`,
-                    ).withCount(out_count),
+                        `${material.modid}:${material.name}_${size_name}_${type}_pipe`
+                    ).withCount(out_count)
                 )
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass * in_count);

@@ -38,11 +38,11 @@ export const addFreshOreVeinsEvent = (event) => {
     // Also, can't load GCyROres safely... so instead we just do this. Lol!
 
     const GCyRWorldGenLayers = Java.loadClass(
-        "argent_matter.gcyr.common.worldgen.GCyRWorldGenLayers",
+        "argent_matter.gcyr.common.worldgen.GCyRWorldGenLayers"
     );
     /** @type {typeof Internal.TagMatchTest} */
     const TagMatchTest = Java.loadClass(
-        "net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest",
+        "net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest"
     );
 
     let moonOreReplaceables = TagMatchTest(GCyRTags.MOON_ORE_REPLACEABLES);

@@ -28,7 +28,7 @@ export const doTier03Content = (event) => {
             "16x #forge:ingots/invar",
             "16x #forge:ingots/ferromanganese",
             "16x #forge:ingots/ferrochrome",
-            "8x #nijika:bessemer_limestone",
+            "8x #nijika:bessemer_limestone"
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:stainless_steel_ingot")
@@ -44,7 +44,7 @@ export const doTier03Content = (event) => {
             "16x #forge:storage_blocks/invar",
             "16x #forge:storage_blocks/ferromanganese",
             "16x #forge:storage_blocks/ferrochrome",
-            "64x #nijika:bessemer_limestone",
+            "64x #nijika:bessemer_limestone"
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18900 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:stainless_steel_block")
@@ -70,7 +70,7 @@ export const doTier03Content = (event) => {
         .itemInputs(
             "4x gtceu:lanthanum_nickel_alloy_foil",
             "4x gtceu:polyvinyl_chloride_foil",
-            "1x gtceu:hv_battery_hull",
+            "1x gtceu:hv_battery_hull"
         )
         .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:hv_cadmium_battery")

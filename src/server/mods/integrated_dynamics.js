@@ -17,7 +17,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
         .chancedOutput("integrateddynamics:crystalized_menril_chunk", 5000.0, 1200.0)
         .chancedOutput("gtceu:plant_ball", 3750, 900.0)
         .outputFluids(
-            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(5 * 20);
@@ -25,7 +25,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
     event.recipes.gtceu
         .autoclave("nijika:mods/id/menril_chunk_from_autoclave")
         .inputFluids(
-            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET)
         )
         .itemOutputs("9x integrateddynamics:crystalized_menril_chunk")
         .EUt(GTValues.VHA[GTValues.LV])
@@ -35,7 +35,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
     event.recipes.gtceu
         .autoclave("nijika:mods/id/menril_glass")
         .inputFluids(
-            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET)
         )
         .itemInputs("#forge:dusts/glass")
         .itemOutputs("integratedterminals:menril_glass")
@@ -50,7 +50,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
         .itemOutputs("2x integrateddynamics:crystalized_chorus_chunk")
         .chancedOutput("integrateddynamics:crystalized_chorus_chunk", 5000, 900.0)
         .outputFluids(
-            Fluid.of("integrateddynamics:liquid_chorus").withAmount(125 * FluidAmounts.MB),
+            Fluid.of("integrateddynamics:liquid_chorus").withAmount(125 * FluidAmounts.MB)
         )
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(5 * 20);
@@ -58,7 +58,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
     event.recipes.gtceu
         .autoclave("nijika:mods/id/chorus_chunk_from_autoclave")
         .inputFluids(
-            Fluid.of("integrateddynamics:liquid_chorus").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("integrateddynamics:liquid_chorus").withAmount(1 * FluidAmounts.BUCKET)
         )
         .itemOutputs("9x integrateddynamics:crystalized_chorus_chunk")
         .EUt(GTValues.VHA[GTValues.LV])
@@ -71,7 +71,7 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
         .itemOutputs("integrateddynamics:crystalized_chorus_chunk")
         .chancedOutput("gtceu:beryllium_hydride_dust", 7000.0, 350.0)
         .outputFluids(
-            Fluid.of("integrateddynamics:liquid_chorus").withAmount(125 * FluidAmounts.MB),
+            Fluid.of("integrateddynamics:liquid_chorus").withAmount(125 * FluidAmounts.MB)
         )
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(5 * 20);

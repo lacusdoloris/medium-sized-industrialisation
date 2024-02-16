@@ -64,24 +64,24 @@ export const adjustLittleLogisticsRecipes = (event) => {
     event.replaceInput(
         { id: "littlelogistics:tug_dock" },
         "#forge:ingots/iron",
-        "#forge:plates/iron",
+        "#forge:plates/iron"
     );
     event.replaceInput(
         { id: "littlelogistics:barge_dock" },
         "#forge:ingots/iron",
-        "#forge:plates/iron",
+        "#forge:plates/iron"
     );
 
     // actually the chest barge
     event.replaceInput(
         { id: "littlelogistics:barge" },
         "#forge:ingots/iron",
-        "#nijika:valid_boat_bottoms",
+        "#nijika:valid_boat_bottoms"
     );
     event.replaceInput(
         { id: "littlelogistics:fishing_barge" },
         "#forge:ingots/iron",
-        "#nijika:valid_boat_bottoms",
+        "#nijika:valid_boat_bottoms"
     );
     event.remove({ id: "littlelogistics:fluid_barge" });
     event

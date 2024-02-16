@@ -29,7 +29,7 @@ export const addTantaliteProcessingChain = (event) => {
         .itemOutputs(
             "3x gtceu:tantalum_pentoxide_dust",
             "6x gtceu:sodium_fluoride_dust",
-            "6x gtceu:tantalum_slag_dust",
+            "6x gtceu:tantalum_slag_dust"
         )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
@@ -51,7 +51,7 @@ export const addTantaliteProcessingChain = (event) => {
         .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:tantalum_slag_slurry").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20 + 10);

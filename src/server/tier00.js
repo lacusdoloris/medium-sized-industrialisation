@@ -1,5 +1,5 @@
 const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey",
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
 
 /** @param {Internal.RecipesEventJS} event */
@@ -143,6 +143,6 @@ export const doTier00Content = (event) => {
     event.replaceInput(
         { id: "gtceu:shaped/electronic_circuit_lv" },
         "#forge:plates/steel",
-        "#forge:plates/wrought_iron",
+        "#forge:plates/wrought_iron"
     );
 };
