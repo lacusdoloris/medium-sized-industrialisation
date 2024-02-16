@@ -1,0 +1,5 @@
+{
+    "filters": [
+        "/gtceu:.*_(?:sodium|lithium)_battery/"
+    ]
+}
