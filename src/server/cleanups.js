@@ -39,15 +39,7 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shapeless",
     });
 
-    // same with pipes
-    event.remove({
-        input: "#forge:tools/wrenches",
-        output: /gtceu:.*_(?:tiny|small|normal|large|huge)_(?:fluid|item)_pipe/,
-        type: "minecraft:crafting_shaped",
-    });
-
-    // pump recipes require the usage of wrecnhes... so vaporise them.
-    event.remove({ output: /gtceu:.*_electric_pump/, type: "minecraft:crafting_shaped" });
+    event.remove({input: "#forge:tools/wrenches", type: "minecraft:crafting_shaped"});
 
     // no more manual buzzsaw blades
     event.remove({ output: /gtceu:.*_buzz_saw_blade/, type: "minecraft:crafting_shaped" });
