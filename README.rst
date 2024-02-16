@@ -1,51 +1,70 @@
 Bigger Industrialisation
 ========================
 
-This is a GregTech + Big Globe modpack for Minecraft 1.20.
+This is a Minecraft modpack based around `Big Globe`_ and `GregTech CEu Modern`_. The current
+skeleton of content is implemented up to the end of High Voltage.
 
-Installing
-----------
+`Join the server <https://discord.gg/WMtGKUsBPa>`__ for questions/support/etc. Please report
+bugs in the issue tab, not in the linked server!
 
-I'm planning to publish this to Modrinth. Until then, you can get the 
-`latest artifact <https://nightly.link/Fuyukai/bigger-industrialisation/workflows/ci/mizuki>`_
-built automatically from the modpack sources.
+Notable features:
 
-Just import it into Prism Launcher directly. Please note that Prism doesn't seem to use the 
-``name`` field in the index correctly.
+- No awful earlygame
+- Mandatory peaceful mode
+- No AE2!
+- 2048 block high world!
+- `Custom multiblocks <https://i.imgur.com/siIkrHJ.png>`__!
+- 100% open source mods!
+- `Deep, custom chemical chains! <https://i.imgur.com/1fQBZyq.png>`__!
 
-Quest Development
------------------
-
-Quests are primarily edited in FTB Quests and automatically transformed into Heracles quests via 
-Odysseus with the ``build_quests.sh`` script. This is ran automatically in CI.
-
-This means if you install FTB Quests + FTB XMod Compat manually, it'll automatically pick up the
-quests there. You should remove Heracles too, in that case.
-
-Building & Setting Up
----------------------
-
-BI uses a bundling setup for the KubeJS scripts.
-
-1. ``yarn install`` to actually install all of the dev dependencies
-2. ``yarn run build-dev`` builds the development (unminified) ``index.js`` files
-
-Actual mod management is done via `Kamuidrome <https://github.com/Fuyukai/Kamuidrome>`_, so...
-
-1. ``pipx install git+https://github.com/Fuyukai/Kamuidrome.git`` (I always use the bleeding edge
-   version because it's my own project!)
-2. Run ``kamuidrome install`` to download all of the mods into your local cache.
-3. For development purposes, you can deploy it to a local Prism Instance with ``kamuidrome deploy``.
-
-Installing, Server-Side
+User Installation Guide
 -----------------------
 
-There doesn't seem to be any ``mrpack`` installers for the server-side that aren't really fucking
-stupid, so your best bet is to set up a local install with the above comments, and then deploy
-into an installed NeoForge server with ``kamuidrome deploy -d /path/to/my/server``.
+Bigger Industrialisation is not yet published on Modrinth. When it is, you will be able to download
+it from directly within your launcher automatically.
 
-If you're using Heracles, you need to run ``./build_quests.sh`` too. Eventually I'll write my own
-deployer that will let you use the mrpack instead.
+You can get the latest tagged release from `the releases page <https://github.com/Fuyukai/bigger-industrialisation/releases>`__
+and the latest development builds `from here <https://nightly.link/Fuyukai/bigger-industrialisation/workflows/ci/mizuki>`__.
+Import the zip into your launcher and all of the required mods will be downloaded.
+
+Server Installation Guide
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There's no good ``mrpack`` installer, so your best bet is to install it on a client and then copy
+the ``kubejs``, ``config``, ``mods``, and ``defaultconfigs`` directory to an installed Forge server
+directory.
+
+You should do this *before* you generate the world, obviously. This will be updated soon when I 
+write a proper ``mrpack`` CLI installer.
+
+Important Info
+~~~~~~~~~~~~~~
+
+Please read *all* of these points!
+
+1. Big Globe is a *very* heavy mod. You should do all of the following:
+
+ - Switch to Java 21.
+ - Use ZGC with ``-XX:+UseZGC -XX:+ZGenerational`` for vastly improved worldgen performance.
+ - Allocate at least 8GiB (``-Xmx8192m``). I recommend allocating 10000MiB for good performance,
+   but you should allocate as much as your system can handle (ignore misinformation online about
+   the 8GiB limit and the 32GiB limit). Big Globe worldgen in the overworld is realtime, but the
+   Nether and End are more complicated and take more time/memory.
+
+2. The world generation is stable in the overworld; i.e., it's very unlikely for new worldgen
+   features to be added that would need recreating the world.
+
+   This is *not* true for the Nether or the End. Don't build anything there you wish to keep as they
+   may require being deleted and recreated in the future.
+
+3. The modpack comes with `Heracles <https://modrinth.com/mod/heracles>`__ for quests by default,
+   but ships with both Heracles and `FTB Quests <https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge>`__
+   quest files. You can pick which one of the two quest viewers you want to use.
+
+Advanced Users \& Developers
+----------------------------
+
+Please see the ``DEVDOCS.rst`` file in the repository root for more information.
 
 
 Included Mods
@@ -55,7 +74,8 @@ This pack includes a small number of mods directly in the pack, rather than bein
 Kamuidrome, for various reasons. These are:
 
 - `Lilligant <https://github.com/fuyukai/lilligant>`_, made by me as a quick dumping ground for 
-  various modpack mixins.
+  various modpack mixins. (As of the time of writing, Modrinth has yet to let it out of the
+  moderation queue).
 - `We No Speak Umbrellarino <https://modrinth.com/mod/wenospeakumbrellarino>`_, because the
   1.20 ported version (made by yours truly) isn't uploaded to Modrinth. MIT licensed.
 - `ProbeJS <https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20>`_,
