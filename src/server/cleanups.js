@@ -107,12 +107,7 @@ const fixupCreate = (event) => {
  * Removes early tier GT generators.
  */
 const removeGTGenerators = (event) => {
-    event.remove({ output: "gtceu:lv_steam_turbine" });
-    event.remove({ output: "gtceu:mv_steam_turbine" });
-    event.remove({ output: "gtceu:hv_steam_generator" });
-
-    event.remove({ output: "gtceu:lv_combustion" });
-    event.remove({ output: "gtceu:lv_gas_turbine" });
+    // TODO: should we actually do this?
 };
 
 /**
