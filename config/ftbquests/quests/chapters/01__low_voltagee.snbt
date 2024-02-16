@@ -622,7 +622,6 @@
 			}]
 			shape: "square"
 			size: 1.0d
-			subtitle: "What is this and how do I get rid of it?"
 			tasks: [
 				{
 					id: "0D37D94A3274AE80"
@@ -667,7 +666,7 @@
 					type: "item"
 				}
 			]
-			title: "&a&oElectric Blast Furnace&r"
+			title: "&aWhat is this and how do I get rid of it?&r"
 			x: 5.5d
 			y: 1.5d
 		}

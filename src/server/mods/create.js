@@ -1,9 +1,13 @@
+
 /**
- * Adds rock processing recipes for various Create rocks.
+ * Adjusts recipes for the Create mod.
  *
  * @param {Internal.RecipesEventJS} event
  */
-export const addCreateRockProcessingRecipes = (event) => {
+export const adjustCreateRecipes = (event) => {
+    event.remove({output: "#create:crushed_raw_materials"});
+    event.remove({input: "#create:crushed_raw_materials"});
+
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
         .itemInputs("1x create:limestone")
@@ -26,4 +30,4 @@ export const addCreateRockProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
         ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
-};
+}
