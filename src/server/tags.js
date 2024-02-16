@@ -1,9 +1,6 @@
-
 // oh yeah this just straight up doesn't fucking work lol! the tags are actually defined in
 // the json.
-const ITEM_TAG_MAPPING = {
-
-}
+const ITEM_TAG_MAPPING = {};
 
 /** @param {Internal.TagEventJS} event */
 export const setupItemTags = (event) => {
@@ -16,4 +13,4 @@ export const setupItemTags = (event) => {
             }
         }
     }
-}
+};

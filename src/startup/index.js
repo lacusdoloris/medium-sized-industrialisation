@@ -1,16 +1,19 @@
-// Please don't add anything here. Instead, add it to the ``index.js`` files in the various 
+// Please don't add anything here. Instead, add it to the ``index.js`` files in the various
 // subfolders. Thank you!
 
 import { MODPACK_SETTINGS } from "../settings";
 import { GT_MACHINE_TIERS } from "../shared/definition";
-import { getBlastProperty, getMaterial, getOreProperty, iterateOverAllMaterials } from "../shared/utils";
+import {
+    getBlastProperty,
+    getMaterial,
+    getOreProperty,
+    iterateOverAllMaterials,
+} from "../shared/utils";
 import { addMaterials } from "./custom_materials";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 
-
 /** @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event */
 export const customiseMaterials = () => {
-
     // add foil flag here, for fluxed magnets
     getMaterial("magnetic_neodymium").addFlags(GTMaterialFlags.GENERATE_FOIL);
 
@@ -29,15 +32,22 @@ export const customiseMaterials = () => {
     // add the disable_decomposition flag to remove auto-generated decomposition recipes
     const disableDecompositionMaterials = [
         // Sulfur containing materials. These are roasted instead.
-        "stibnite", "sphalerite", "pyrite", "pentlandite",
-        "tetrahedrite", "cobaltite", "galena", "chalcopyrite",
+        "stibnite",
+        "sphalerite",
+        "pyrite",
+        "pentlandite",
+        "tetrahedrite",
+        "cobaltite",
+        "galena",
+        "chalcopyrite",
         "realgar",
         // Required for slag byproduccts.
-        "magnetite", "hematite",
+        "magnetite",
+        "hematite",
         // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
         // trichloride.
         "arsenic_trioxide",
-    ]
+    ];
 
     for (let matName of disableDecompositionMaterials) {
         getMaterial(matName).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
@@ -98,9 +108,9 @@ export const customiseMaterials = () => {
         let oreProp = getOreProperty(tantalite);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(
-            getMaterial("manganese_oxide"), 
+            getMaterial("manganese_oxide"),
             getMaterial("niobium_pentoxide"),
-            getMaterial("tantalum_pentoxide")
+            getMaterial("tantalum_pentoxide"),
         );
     }
 
@@ -119,11 +129,11 @@ export const customiseMaterials = () => {
     // it.
     getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
-    getMaterial("rare_earth_hydroxides").setFormula("(Ce...)(OH)3")
+    getMaterial("rare_earth_hydroxides").setFormula("(Ce...)(OH)3");
     getMaterial("rare_earth_mixture").setFormula("(Ce...)");
-    getMaterial("rare_earth_chlorides").setFormula("(Ce...)Cl3")
-    getMaterial("thorium_hydroxide", "Th(OH)4")
-    
+    getMaterial("rare_earth_chlorides").setFormula("(Ce...)Cl3");
+    getMaterial("thorium_hydroxide", "Th(OH)4");
+
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
 

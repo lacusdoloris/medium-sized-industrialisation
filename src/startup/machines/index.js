@@ -10,10 +10,9 @@ import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evapor
 //    but ``MachineBuilder<out MachineDefinition>`` for non-multiblock-specific methods.
 //    this is fine, just do thee multiblock specific ones first.
 
-
 /**
  * Adds all custom recipe types.
- * 
+ *
  * @param {Internal.GTRegistryEventJS<string, Internal.GTRecipeType>} event
  */
 export const addAllRecipeTypes = (event) => {
@@ -25,11 +24,11 @@ export const addAllRecipeTypes = (event) => {
 
     let butcher = event.create("butchering");
     addButcheringRecipeType(butcher);
-}
+};
 
 /**
  * Adds all machine types.
- * 
+ *
  * @param {Internal.GTRegistryEventJS<string, Internal.MachineDefinition>} event
  */
 export const addAllMachineTypes = (event) => {
@@ -41,4 +40,4 @@ export const addAllMachineTypes = (event) => {
 
     let butcher = event.create("nijika:butcher", "multiblock");
     addButcheringMultiblock(butcher);
-}
+};

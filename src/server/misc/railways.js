@@ -1,55 +1,53 @@
-
 // TODO: Consider using GT springs for chains?
 
-/** 
+/**
  * Rewrites railway (little logistics, create trains, etc) recipes and minecart recipes.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const rewriteRailwayRecipes = (event) => {
     // == Rails == //
     // Uses treated wood and rods.
-    event.remove({id: "gtceu:shaped/treated_wood_planks"});
-    event.recipes.create.filling(
-        "1x gtceu:treated_wood",
-        [
+    event.remove({ id: "gtceu:shaped/treated_wood_planks" });
+    event.recipes.create
+        .filling("1x gtceu:treated_wood", [
             "1x #minecraft:planks",
-            Fluid.of("gtceu:creosote").withAmount(100 * FluidAmounts.MB)
-        ]
-    ).id("nijika:railways/treated_wood");
+            Fluid.of("gtceu:creosote").withAmount(100 * FluidAmounts.MB),
+        ])
+        .id("nijika:railways/treated_wood");
 
-    event.remove({id: "minecraft:rail"});
-    event.shaped(
-        "16x minecraft:rail",
-        ["STS", "STS", "STS"],
-        {S: "#forge:rods/iron", T: "#forge:rods/treated_wood"}
-    ).id("nijika:railways/minecart_rail");
+    event.remove({ id: "minecraft:rail" });
+    event
+        .shaped("16x minecraft:rail", ["STS", "STS", "STS"], {
+            S: "#forge:rods/iron",
+            T: "#forge:rods/treated_wood",
+        })
+        .id("nijika:railways/minecart_rail");
 
-    event.remove({id: "minecraft:powered_rail"});
-    event.shaped(
-        "6x minecraft:powered_rail",
-        ["STS", "GRG", "STS"],
-        {
-            S: "#forge:rods/iron", 
-            T: "#forge:rods/treated_wood", 
-            G: "#forge:rods/gold", 
-            R: "#forge:dusts/redstone"
-        }
-    ).id("nijika:railways/powered_rail");
+    event.remove({ id: "minecraft:powered_rail" });
+    event
+        .shaped("6x minecraft:powered_rail", ["STS", "GRG", "STS"], {
+            S: "#forge:rods/iron",
+            T: "#forge:rods/treated_wood",
+            G: "#forge:rods/gold",
+            R: "#forge:dusts/redstone",
+        })
+        .id("nijika:railways/powered_rail");
 
     // Both of these use regular powered rails and are shapeless recipes instead.
-    event.remove({id: "minecraft:detector_rail"});
-    event.shapeless(
-        "1x minecraft:detector_rail",
-        ["1x minecraft:powered_rail", "#forge:dusts/redstone"]
-    ).id("nijika:railways/detector_rail");
-    
-    event.remove({id: "minecraft:activator_rail"})
-    event.shapeless(
-        "1x minecraft:activator_rail",
-        ["1x minecraft:powered_rail", "minecraft:redstone_torch"]
-    ).id("nijika:railways/activator_rail");
+    event.remove({ id: "minecraft:detector_rail" });
+    event
+        .shapeless("1x minecraft:detector_rail", [
+            "1x minecraft:powered_rail",
+            "#forge:dusts/redstone",
+        ])
+        .id("nijika:railways/detector_rail");
 
-    
-    
-}
+    event.remove({ id: "minecraft:activator_rail" });
+    event
+        .shapeless("1x minecraft:activator_rail", [
+            "1x minecraft:powered_rail",
+            "minecraft:redstone_torch",
+        ])
+        .id("nijika:railways/activator_rail");
+};

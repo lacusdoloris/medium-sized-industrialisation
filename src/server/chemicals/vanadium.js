@@ -1,10 +1,9 @@
-// Ref: Vanadium and Vanadium Compounds 
+// Ref: Vanadium and Vanadium Compounds
 // https://doi.org/10.1002/14356007.a27_367
-
 
 /**
  * Adds the vanadium chemical processing chain.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const addVanadiumChemicalChain = (event) => {
@@ -12,54 +11,51 @@ export const addVanadiumChemicalChain = (event) => {
     // It can be converted to raw Vanadium dust by reduction with calcium.
     // V2O5 + 5 Ca = 5 CaO + 2 V
 
-    event.recipes.gtceu.electric_blast_furnace("nijika:tier02/vanadium/vanadium_reduction")
-        .itemInputs(
-            "1x gtceu:vanadium_pentoxide_dust",
-            "5x gtceu:calcium_dust",
-        )
-        .itemOutputs(
-            "5x gtceu:quicklime_dust",
-            "2x gtceu:vanadium_dust"
-        )
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier02/vanadium/vanadium_reduction")
+        .itemInputs("1x gtceu:vanadium_pentoxide_dust", "5x gtceu:calcium_dust")
+        .itemOutputs("5x gtceu:quicklime_dust", "2x gtceu:vanadium_dust")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(30 * 20)
         .blastFurnaceTemp(1700);
 
-    // Vanadiumsteel can be made in the Bessemer Converter as an alloy of chrome, iron, and 
+    // Vanadiumsteel can be made in the Bessemer Converter as an alloy of chrome, iron, and
     // vanadium.
-    event.remove({id: "gtceu:mixer/vanadiumsteel"});
-    event.remove({id: "gtceu:electric_blast_furnace/blast_vanadium_steel_gas"});
-    event.remove({id: "gtceu:alloy_blast_smelter/vanadium_steel_gas"});
-    event.remove({id: "gtceu:alloy_blast_smelter/vanadium_steel"});
+    event.remove({ id: "gtceu:mixer/vanadiumsteel" });
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_vanadium_steel_gas" });
+    event.remove({ id: "gtceu:alloy_blast_smelter/vanadium_steel_gas" });
+    event.remove({ id: "gtceu:alloy_blast_smelter/vanadium_steel" });
 
-    event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel")
+    event.recipes.gtceu
+        .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel")
         .itemInputs(
             "47x #forge:ingots/iron",
             "9x #forge:ingots/chromium",
             "9x #forge:ingots/vanadium",
-            "8x #nijika:bessemer_limestone"
+            "8x #nijika:bessemer_limestone",
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((20 * 60) * 20)
+        .duration(20 * 60 * 20)
         .circuit(2);
-    
 
-    event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_dusts")
+    event.recipes.gtceu
+        .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_dusts")
         .itemInputs(
             "47x #forge:dusts/iron",
             "9x #forge:dusts/chromium",
             "9x #forge:dusts/vanadium",
-            "8x #nijika:bessemer_limestone"
+            "8x #nijika:bessemer_limestone",
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_ingot")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((20 * 60) * 20)
+        .duration(20 * 60 * 20)
         .circuit(2);
 
-    event.recipes.gtceu.bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_blocks")
+    event.recipes.gtceu
+        .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_blocks")
         .itemInputs(
             "47x #forge:storage_blocks/iron",
             "9x #forge:storage_blocks/chromium",
@@ -69,15 +65,16 @@ export const addVanadiumChemicalChain = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18900 * FluidAmounts.MILLIBUCKET))
         .itemOutputs("64x gtceu:vanadium_steel_block")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration((40 * 60) * 20)
+        .duration(40 * 60 * 20)
         .circuit(2);
 
     // replace clean stainless steel casing with vanadium steel casing
-    event.remove({id: "gtceu:assembler/casing_stainless_clean"});
-    event.recipes.gtceu.assembler("nijika:misc/casings/clean")
+    event.remove({ id: "gtceu:assembler/casing_stainless_clean" });
+    event.recipes.gtceu
+        .assembler("nijika:misc/casings/clean")
         .itemInputs("6x #forge:plates/vanadium_steel", "1x gtceu:vanadium_steel_frame")
         .itemOutputs("2x gtceu:clean_machine_casing")
         .EUt(16)
         .duration(2 * 20 + 10)
         .circuit(6);
-}
+};

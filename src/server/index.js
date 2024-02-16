@@ -16,7 +16,6 @@ import { doTier01Content } from "./tier01";
 import { doTier02Content } from "./tier02";
 import { doTier03Content } from "./tier03";
 
-
 ServerEvents.tags("items", setupItemTags);
 
 ServerEvents.recipes((event) => {
