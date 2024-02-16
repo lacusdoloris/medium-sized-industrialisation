@@ -30,6 +30,7 @@ export const adjustRfToolsRecipes = (event) => {
             W: GT_MACHINE_TIERS.LV.singleCable,
             D: "rftoolsbase:dimensionalshard",
             H: GT_MACHINE_TIERS.LV.machineHull,
+            C: GT_MACHINE_TIERS.LV.circuitTag
         })
         .id("nijika:mods/rftools/machine_frame");
 
