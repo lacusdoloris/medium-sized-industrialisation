@@ -39,7 +39,7 @@ const cleanupManualToolRecipes = (event) => {
         type: "minecraft:crafting_shapeless",
     });
 
-    event.remove({input: "#forge:tools/wrenches", type: "minecraft:crafting_shaped"});
+    event.remove({ input: "#forge:tools/wrenches", type: "minecraft:crafting_shaped" });
 
     // no more manual buzzsaw blades
     event.remove({ output: /gtceu:.*_buzz_saw_blade/, type: "minecraft:crafting_shaped" });

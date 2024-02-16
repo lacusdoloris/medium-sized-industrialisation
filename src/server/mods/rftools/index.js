@@ -30,7 +30,7 @@ export const adjustRfToolsRecipes = (event) => {
             W: GT_MACHINE_TIERS.LV.singleCable,
             D: "rftoolsbase:dimensionalshard",
             H: GT_MACHINE_TIERS.LV.machineHull,
-            C: GT_MACHINE_TIERS.LV.circuitTag
+            C: GT_MACHINE_TIERS.LV.circuitTag,
         })
         .id("nijika:mods/rftools/machine_frame");
 
@@ -50,14 +50,12 @@ export const adjustRfToolsRecipes = (event) => {
         .duration(10 * 20);
 
     event.remove({ id: "rftoolscontrol:cpu_core_500" });
-    event.shaped(
-        "rftoolscontrol:cpu_core_500",
-        ["RGR", "PCP", "RGR"],
-        {
+    event
+        .shaped("rftoolscontrol:cpu_core_500", ["RGR", "PCP", "RGR"], {
             R: "#forge:dusts/redstone",
             G: "#forge:nuggets/gold",
             P: "gtceu:polyethylene_plate",
-            C: "rftoolscontrol:card_base"
-        }
-    ).id("nijika:mods/rftools/arm4tdmi");
+            C: "rftoolscontrol:card_base",
+        })
+        .id("nijika:mods/rftools/arm4tdmi");
 };

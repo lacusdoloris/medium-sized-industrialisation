@@ -34,19 +34,21 @@ export const doModRecipes = (event) => {
         adjustPrettyPipesRecipes(event);
     }
 
-    event.remove({id: "essentials:auto_crafter"});
-    event.shaped(
-        "essentials:auto_crafter",
-        ["PLP", "THT", "PCP"],
-        {
+    event.remove({ id: "essentials:auto_crafter" });
+    event
+        .shaped("essentials:auto_crafter", ["PLP", "THT", "PCP"], {
             P: "#forge:plates/iron",
             T: "#forge:workbench",
             L: "#forge:gems/lapis",
             H: GT_MACHINE_TIERS.LV.machineHull,
-            C: GT_MACHINE_TIERS.LV.circuitTag
-        }
-    ).id("nijika:mods/essentials/auto_crafter");
+            C: GT_MACHINE_TIERS.LV.circuitTag,
+        })
+        .id("nijika:mods/essentials/auto_crafter");
 
     // why doesn't this work!
-    event.replaceInput({type: "morered:soldering"}, "morered:red_alloy_ingot", "gtceu:red_alloy_ingot");
+    event.replaceInput(
+        { type: "morered:soldering" },
+        "morered:red_alloy_ingot",
+        "gtceu:red_alloy_ingot"
+    );
 };
