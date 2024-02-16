@@ -32,3 +32,6 @@ devs.)
    ``embedddium`` to Fabric mods in the ``connector_global_mod_aliases``. The Rubidium stub has
    a version number of 0.7, which usually satisfies mods. (e.g. Big Globe requires this.)
 
+4. Don't reload too quickly in succession. 
+
+   Causes a concurrent modification exception from EMI's search baking. Oops!
