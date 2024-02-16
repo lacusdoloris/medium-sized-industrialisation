@@ -67,4 +67,15 @@ export const doTier03Content = (event) => {
             C: GT_MACHINE_TIERS.HV.circuitTag,
         }
     ).id("nijika:tier03/cleanroom");
+
+    event.recipes.gtceu.assembler("nijika:tier03/nmh_battery")
+        .itemInputs(
+            "4x gtceu:lanthanum_nickel_alloy_foil",
+            "4x gtceu:polyvinyl_chloride_foil",
+            "1x gtceu:hv_battery_hull"
+        )
+        .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:hv_cadmium_battery")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20);
 }

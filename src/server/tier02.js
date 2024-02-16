@@ -32,4 +32,16 @@ export const doTier02Content = (event) => {
         .chancedOutput("8x gtceu:sodium_hydroxide_dust", 5000.0, 0.0)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20 * 60);
+
+    
+    event.recipes.gtceu.assembler("nijika:tier02/nmh_battery")
+        .itemInputs(
+            "4x gtceu:lanthanum_nickel_alloy_foil",
+            "4x gtceu:polyethylene_foil",
+            "1x gtceu:mv_battery_hull"
+        )
+        .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:mv_cadmium_battery")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20);
 }
