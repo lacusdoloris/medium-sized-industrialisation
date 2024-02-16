@@ -90,12 +90,13 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Get the payload on the elevator, arm it, let gravity do its thing."
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "63E62B1B497E6ADE"
 				type: "dimension"
 			}]
-			title: "Worse Than Frisia"
+			title: "The Nether"
 			x: 2.0d
 			y: 0.0d
 		}

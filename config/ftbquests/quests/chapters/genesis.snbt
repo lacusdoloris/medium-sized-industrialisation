@@ -16,7 +16,6 @@
 				"Please note that this quest book gives minimal rewards. It is intended as a guide, not a checklist. "
 			]
 			id: "473EF5FF75ACB3EC"
-			subtitle: "&oGet the payload on the elevator, arm it, let gravity do its thing.&r"
 			tasks: [{
 				id: "5C53A347BBB40D7B"
 				title: "The Rebel Path"
@@ -239,7 +238,7 @@
 				}
 			]
 			title: "I Won't Hold Your Hand"
-			x: 0.0d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -279,6 +278,31 @@
 			title: "Heracles?"
 			x: 0.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"The doMobSpawning gamerule is off by default as mobs add an annoyingly large overhead to server tick times by default (from ~4ms with no entities, to ~20ms with the default entity count)."
+				""
+				"The only thing this really affects is that you can't get wool at all. Have some &dWooly Saplings&r. They grow wool. Later you can use the butcher to get wool."
+			]
+			icon: "woolytrees:wooly_sapling"
+			id: "4DBDBAEA136BF804"
+			rewards: [{
+				count: 16
+				id: "130A9C1625E77CD1"
+				item: "woolytrees:wooly_sapling"
+				type: "item"
+			}]
+			subtitle: "Bit wooly?"
+			tasks: [{
+				id: "7C94C2A8DE7EFA0F"
+				title: "It's wool!"
+				type: "checkmark"
+			}]
+			title: "You know sheep?"
+			x: -0.5d
+			y: 3.0d
 		}
 	]
 	title: "ENIGMA"
