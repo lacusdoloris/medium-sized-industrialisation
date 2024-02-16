@@ -30,12 +30,10 @@ Import the zip into your launcher and all of the required mods will be downloade
 Server Installation Guide
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There's no good ``mrpack`` installer, so your best bet is to install it on a client and then copy
-the ``kubejs``, ``config``, ``mods``, and ``defaultconfigs`` directory to an installed Forge server
-directory.
+You'll need to install (Neo)Forge (47.1.3 for legacy forge) yourself, but you can use `this <https://github.com/nothub/mrpack-install>`__
+tool to install the server-only ``mrpack`` file. (Remove EMI loot from the mods directory.)
 
-You should do this *before* you generate the world, obviously. This will be updated soon when I 
-write a proper ``mrpack`` CLI installer.
+Make sure to set the world type to ``bigglobe\:bigglobe`` in your ``server.properties``.
 
 Important Info
 ~~~~~~~~~~~~~~
@@ -43,7 +41,6 @@ Important Info
 Please read *all* of these points!
 
 1. Big Globe is a *very* heavy mod. You should do all of the following:
-
  - Switch to Java 21.
  - Use ZGC with ``-XX:+UseZGC -XX:+ZGenerational`` for vastly improved worldgen performance.
  - Allocate at least 8GiB (``-Xmx8192m``). I recommend allocating 10000MiB for good performance,
@@ -60,6 +57,7 @@ Please read *all* of these points!
 3. The modpack comes with `Heracles <https://modrinth.com/mod/heracles>`__ for quests by default,
    but ships with both Heracles and `FTB Quests <https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge>`__
    quest files. You can pick which one of the two quest viewers you want to use.
+
 
 Advanced Users \& Developers
 ----------------------------

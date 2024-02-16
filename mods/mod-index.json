@@ -1,6 +1,7 @@
 {
     "1Zu0uTEE": {
         "checksum": "2c885b902f9999aa0be0ce7eb6d26ed85bed08504048ab85a739f74067a8132095f59c9535e1574dd67fb6a2f2305e7ef2197dca5a41f4367ebc7f9d1bdc4f9e",
+        "client_side_only": false,
         "name": "McJtyLib",
         "pinned": false,
         "project_id": "1Zu0uTEE",
@@ -10,6 +11,7 @@
     },
     "1eAoo2KR": {
         "checksum": "fe2ac7569c539b5810cd5fd58e45ebe83a9ea14e235f1f3361d15d62c2f62edf18915794754ee54e108773c11ac8c557a45b36aedc3d352c92dce21e3dc96352",
+        "client_side_only": true,
         "name": "YetAnotherConfigLib",
         "pinned": false,
         "project_id": "1eAoo2KR",
@@ -19,6 +21,7 @@
     },
     "1zZJrh9c": {
         "checksum": "b50ff3cd9954ae35566ff4d93afd57c394b85cb325f4d78ca8d8f8c9ed4376f4071cac5d1afd06d083eb00c604e457463144bc8788083c4c8baf11577a308330",
+        "client_side_only": false,
         "name": "Little Logistics",
         "pinned": false,
         "project_id": "1zZJrh9c",
@@ -28,6 +31,7 @@
     },
     "2gvRmQXx": {
         "checksum": "75b2a1ee57f494a9d2c22ca4bd7cce5c640ddc8f45ae319b3f98c9384133e8b488487ec6d40a52cd10dfbd77a495d324d5cfc9002f534a520a5f4e259985ec5f",
+        "client_side_only": false,
         "name": "Radium",
         "pinned": false,
         "project_id": "2gvRmQXx",
@@ -37,6 +41,7 @@
     },
     "2u6LRnMa": {
         "checksum": "1169e02521a481bfa0f68ea4b88ea9fd79b816deb100a07b46af15f8a0c451885e4da8accfe1d24a43434e864489be4f714ef46b8a9af89d1bb9464fe4d9c75b",
+        "client_side_only": false,
         "name": "Botarium",
         "pinned": false,
         "project_id": "2u6LRnMa",
@@ -46,6 +51,7 @@
     },
     "3mW8PdUo": {
         "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
+        "client_side_only": true,
         "name": "Coordinates Display",
         "pinned": false,
         "project_id": "3mW8PdUo",
@@ -55,6 +61,7 @@
     },
     "3rGhEp20": {
         "checksum": "f208546f363a8d769ee4cbb473d463d39c380129624e87c8f3a35f617dcba11d1e8f46130d213ca185996d2287fbaf86a2955ba5f3bf303949bff18e23b00422",
+        "client_side_only": false,
         "name": "FoxGlow",
         "pinned": false,
         "project_id": "3rGhEp20",
@@ -64,6 +71,7 @@
     },
     "4VJrCEMZ": {
         "checksum": "4bcfa290dfe2e93981219b97fc5742245f78d63f4a132ccf992dd14ce0b74b7061f196ba0e1a4512e7e9889e697f0150f71e6e61d60cd5104ddc4988f5c126eb",
+        "client_side_only": false,
         "name": "Gregicality Rocketry",
         "pinned": false,
         "project_id": "4VJrCEMZ",
@@ -73,6 +81,7 @@
     },
     "5ZwdcRci": {
         "checksum": "a52e698dadf564ee7596bc6472a2bee9c5fc71734da6cf594e4164f907eea01cbdd82a6b474b02894d5550865ecd94d26fc70fa38481a6ed74a2dc5197663f75",
+        "client_side_only": true,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
@@ -82,6 +91,7 @@
     },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
+        "client_side_only": false,
         "name": "Inventory Sorting",
         "pinned": false,
         "project_id": "5ibSyLAz",
@@ -91,6 +101,7 @@
     },
     "7n3HbHSE": {
         "checksum": "5a6c563f44caa11d994f0a333c3f34267a12f2ba0d1cbc370971af2144f13ab72fb2f6cdd890577cdaac9ef6ffdcb3e2f29f8bc8866202725e471510daeb67c6",
+        "client_side_only": false,
         "name": "RFTools Utility",
         "pinned": false,
         "project_id": "7n3HbHSE",
@@ -98,8 +109,10 @@
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
     },
+
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
+        "client_sy": true,
         "name": "BetterF3",
         "pinned": false,
         "project_id": "8shC1gFX",
@@ -109,6 +122,7 @@
     },
     "9s6osm5g": {
         "checksum": "2f6c78de05f0c60fcd61a05ee272618a6522f8039805ab8c97b28c9cd123ff55ff7153224203f824261e509a478cee2ae100a5d428ae488239d089916a70e6ed",
+        "client_side_only": false,
         "name": "Cloth Config API",
         "pinned": false,
         "project_id": "9s6osm5g",
@@ -118,6 +132,7 @@
     },
     "Aqlf1Shp": {
         "checksum": "c9aa4c1740025af36e1f6f4a397d1e6ecd714fde4a2d55f28b2688972b3d72b060afc04f9b561f1fe30f177e467e8d9db8b0264d6b11306ab3c2a950e72c1e1d",
+        "client_side_only": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
@@ -127,6 +142,7 @@
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
+        "client_side_only": false,
         "name": "Fabrication & Forgery",
         "pinned": false,
         "project_id": "B3Eg0WhA",
@@ -136,6 +152,7 @@
     },
     "B5uMasrz": {
         "checksum": "1f70f91f6d588b07dc51724ceb8840961172025f3815a65f87c85cd5e2f0deba50bf27fd168b302c28cc72010546b015b5b05799c242c95e3749beb3fcf1c748",
+        "client_side_only": true,
         "name": "Dust's Keymap",
         "pinned": false,
         "project_id": "B5uMasrz",
@@ -145,6 +162,7 @@
     },
     "BrgaSWzF": {
         "checksum": "98f9c8e3f91b6f9a7438d82e888ecf94b54f71fb58c940c98317f7d8691105922d7c1debcfe26f5959beb3e4d2b8b0a8be1f411dba4e1957ca5e7df916cf6beb",
+        "client_side_only": false,
         "name": "Starry Skies",
         "pinned": false,
         "project_id": "BrgaSWzF",
@@ -154,6 +172,7 @@
     },
     "C95ReXie": {
         "checksum": "c6c1e9a4b78dd4e246e261ca9edfab6be18a30e01a25af63b5abb7a8c5ace8be321b21a5418628939f99a3b5f269c7eeca7ce26350564679e3d573551858ddcc",
+        "client_side_only": false,
         "name": "Mystical Agriculture",
         "pinned": false,
         "project_id": "C95ReXie",
@@ -163,6 +182,7 @@
     },
     "DQjhR62z": {
         "checksum": "ffcbd4949631734ad645f8673841e4db07ee2adcee49d768ecd62e6e4da5cf5d635a2dc1673336938308d291502f06e5769d2c7bad2dad56a72321a1955e15ab",
+        "client_side_only": false,
         "name": "RFTools Control",
         "pinned": false,
         "project_id": "DQjhR62z",
@@ -172,6 +192,7 @@
     },
     "DYtfQEYj": {
         "checksum": "47599aff77955cfee4f458088a7bc2cd91f7c9c9e70a0afb42c0a23f3c316237a69002f33b38cad756c58a0ffd2762edfbad41f779bc495953b6d0d05585e003",
+        "client_side_only": false,
         "name": "Effortless Building",
         "pinned": false,
         "project_id": "DYtfQEYj",
@@ -181,6 +202,7 @@
     },
     "Etqy1Omb": {
         "checksum": "543ce1d4971ab68a70cc444f2490a59afcff9cb2dff3aefe1b1a22e82a04dcba7f9d381e97e711637dca9caaee7ca77dc974eabed0500570a84de235b7d3e067",
+        "client_side_only": false,
         "name": "Integrated Tunnels",
         "pinned": false,
         "project_id": "Etqy1Omb",
@@ -190,6 +212,7 @@
     },
     "EuTS81Z3": {
         "checksum": "5281f7910a9b2d8ea49499894656a43d4180a591383c9cf0ecce755537d21b2da6d49c9f1b624d9325f94a7d6c5789d5e74eae0bbece2ccb7da9030f059d17da",
+        "client_side_only": false,
         "name": "Modular Routers",
         "pinned": false,
         "project_id": "EuTS81Z3",
@@ -199,6 +222,7 @@
     },
     "FTeXqI9v": {
         "checksum": "0f17666aab7ba800dc268168aa3b0bfc9a4bc457c4deec666aa8ea3f3a39075c17d684f1652a5b93300b8bbae0678defb18f4632397ac455ddf2f25987f54246",
+        "client_side_only": false,
         "name": "Create: New Age",
         "pinned": false,
         "project_id": "FTeXqI9v",
@@ -208,6 +232,7 @@
     },
     "FWtAXlpg": {
         "checksum": "468dadae5df820ce4b67eb503767ae042ae101fa78d58986d9b986aeca4517fd355d74ca35c522afa38ba6a3c6d5d07c6dd187139ac7d43c8f1ae505fe895e6b",
+        "client_side_only": false,
         "name": "Reinforced Chests",
         "pinned": false,
         "project_id": "FWtAXlpg",
@@ -217,6 +242,7 @@
     },
     "FYpiwiBR": {
         "checksum": "350aa27c2665d5293a726f5ccf8607b163a3626ff1de24cb85f28f7bf9917238ed8664d0d387f404d00b37f2f938482391584b265ff054cd42a27440cd60e151",
+        "client_side_only": false,
         "name": "Connector Extras",
         "pinned": false,
         "project_id": "FYpiwiBR",
@@ -226,6 +252,7 @@
     },
     "G1hIVOrD": {
         "checksum": "211f6aa2e3ee7c5b04ead646fc0460a26ab937ce0091e76b6de5b47410fae78449a2f7138d16a66051287e30dbf9f3a5edea952bba654481dd35dc46616d301b",
+        "client_side_only": false,
         "name": "Resourceful Lib",
         "pinned": false,
         "project_id": "G1hIVOrD",
@@ -235,6 +262,7 @@
     },
     "G41VOlFe": {
         "checksum": "c31ac64ac4cbac2d0d4463355d734d441f2a6bf1723e954691857c0c6ef7e490a1656ac6f7c4f4a0ff439d5fc7e6204493cade47c30bacd78cb16e8e665d07d2",
+        "client_side_only": false,
         "name": "Cheese",
         "pinned": false,
         "project_id": "G41VOlFe",
@@ -243,16 +271,18 @@
         "version_id": "NR94PqgD"
     },
     "Ha28R6CL": {
-        "checksum": "15e1b1a96f940d0dc41d0954009fda4376e5419b2c364145fafb401d82462d0d5d2e0899c8899a72618dac4fcb08963c8a45aa6b4652c74282a77ee98f395c95",
+        "checksum": "c78c57d491f08817c45af7b44e9cfc3ddc13a190d940f1109b679bd1d29f3968ede7f495185b0be29098060e8cb78208aae2dabe315e2121ed83b52843d90ea8",
+        "client_side_only": false,
         "name": "Fabric Language Kotlin",
         "pinned": false,
         "project_id": "Ha28R6CL",
         "selected": true,
-        "version": "1.10.17+kotlin.1.9.22",
-        "version_id": "JjrWZ7m8"
+        "version": "1.10.18+kotlin.1.9.22",
+        "version_id": "vlhvI5Li"
     },
     "HmLJoQ1K": {
         "checksum": "676f7ff0d872c51e85892b2f84e2f6db2c5d8fb4911c919ed8742d652d0929f2f3ea59200e2919f557ca74f9d65905c57f5857781f5969516e9b24528fbaaa99",
+        "client_side_only": false,
         "name": "Integrated Terminals",
         "pinned": false,
         "project_id": "HmLJoQ1K",
@@ -262,6 +292,7 @@
     },
     "IhBYAM6m": {
         "checksum": "b23581b4c6ad4cbec6e95c176077959a62ce63e34db952688d93f9d54a14577ab32af165c09fe1f283825768ecbd7371a94a4f6e9d3a6375184b47b6abe6a1d5",
+        "client_side_only": false,
         "name": "Enhanced Workbenches",
         "pinned": false,
         "project_id": "IhBYAM6m",
@@ -271,6 +302,7 @@
     },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
+        "client_side_only": false,
         "name": "Create",
         "pinned": false,
         "project_id": "LNytGWDc",
@@ -280,6 +312,7 @@
     },
     "M09T0qPI": {
         "checksum": "95898aa246d880db91c41f49265812e62995dfab597e7a72ebcf5c295b3eabcb45d2d6dccbd59c9cd0b0d1377ca6ba284a81f5b1cf0bfe02cc7060fcf4fe640d",
+        "client_side_only": false,
         "name": "Essentials",
         "pinned": false,
         "project_id": "M09T0qPI",
@@ -289,6 +322,7 @@
     },
     "MOqt4Z5n": {
         "checksum": "6455b800e5e7ad7c51f16ee72287a18ef146cd8a3a0602839f26036367d7923d13239342e0e1c7a30d32303d9dc1ad2b25190d146d08164eafdf2c951b41c8e3",
+        "client_side_only": true,
         "name": "Chat Patches",
         "pinned": false,
         "project_id": "MOqt4Z5n",
@@ -298,6 +332,7 @@
     },
     "MbejSZ2E": {
         "checksum": "5b3ef73fcf5d15b11e97e8923dfadd0fbc4d9612e0a03baf86946058bee78aa8ec41b31373f43ab1ed04b3556f28d5677c480876a892c14e8d69dc57d817f7b7",
+        "client_side_only": false,
         "name": "Energy Meter",
         "pinned": false,
         "project_id": "MbejSZ2E",
@@ -307,6 +342,7 @@
     },
     "NtlsPMR3": {
         "checksum": "d48be372aa7a9f5a306577957d7013ee70b999f5e0ddad0bb40c1e768de0c42cbdcf2d67c08ab38b40c016340b0205dfe1a13838651e90beb9eb0f2efc672c33",
+        "client_side_only": false,
         "name": "Endrous Edibles",
         "pinned": false,
         "project_id": "NtlsPMR3",
@@ -316,6 +352,7 @@
     },
     "QXU3UqPY": {
         "checksum": "b05d7f61974a08ceea814ff593aa73add8a386b87bc8cbf26541ddbf64a226ec78e86b9e42bb6440ca50df8ddb79c9496f38634634e27d5e1e79b333abdf30c9",
+        "client_side_only": false,
         "name": "Wooly Trees",
         "pinned": false,
         "project_id": "QXU3UqPY",
@@ -325,6 +362,7 @@
     },
     "Rw1NrDzF": {
         "checksum": "150d7e072130e42ea496b097528328bf817c8720e4ca2df933f7d88a312634dd2ba33d15d6414dfc545e52f230b0d95c9c9f41521e6e009cb70e10ba4b8230e2",
+        "client_side_only": false,
         "name": "Cucumber Library",
         "pinned": false,
         "project_id": "Rw1NrDzF",
@@ -334,6 +372,7 @@
     },
     "S1tndFDa": {
         "checksum": "c985ee61ad6a42629b0bb48fe504b3826afb12e507a72faf1cdc56eeac7b6e3de8e92fbab1c1c153ac47c6c98359296c63cc7921888b387e6be7371893e07e2b",
+        "client_side_only": true,
         "name": "TexTrue's Embeddium Options",
         "pinned": false,
         "project_id": "S1tndFDa",
@@ -343,6 +382,7 @@
     },
     "T38eAZQC": {
         "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
+        "client_side_only": false,
         "name": "KubeJS Create",
         "pinned": false,
         "project_id": "T38eAZQC",
@@ -352,6 +392,7 @@
     },
     "TkC4Gtkt": {
         "checksum": "2d48b053edc232e1b9d2ccfa995fc1e4e2d7db858d83438ad3be577ebbc922b68e68782402aec52851b9561d688fa0dee97d763e7c2cd2ec9adff738bca90803",
+        "client_side_only": true,
         "name": "Lazurite",
         "pinned": false,
         "project_id": "TkC4Gtkt",
@@ -361,6 +402,7 @@
     },
     "UxYNfnfx": {
         "checksum": "61fb2a73131fdfa5de73b5ed85ef381555f9b6ab6267097494af240666f40cb6fa65d54358e03b013d0a9875f94940401d23f2049cdb537253862862eef9f4bc",
+        "client_side_only": false,
         "name": "More Red",
         "pinned": false,
         "project_id": "UxYNfnfx",
@@ -370,6 +412,7 @@
     },
     "VYRu7qmG": {
         "checksum": "0a97c9fbdcbee7af776ed1a55a89bce42d207534e8213a85767c7b93eff76c26e47a66f4fbb35030b2f18c929a4466b67105ab6409c8204e98da270da073b694",
+        "client_side_only": false,
         "name": "Observable",
         "pinned": false,
         "project_id": "VYRu7qmG",
@@ -379,6 +422,7 @@
     },
     "XExdLWCQ": {
         "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
+        "client_side_only": false,
         "name": "Pretty Pipes",
         "pinned": false,
         "project_id": "XExdLWCQ",
@@ -388,6 +432,7 @@
     },
     "YOs4tZea": {
         "checksum": "6f847db449177235171c1363e77878cda6059aad3d8278257aff0bbf5a6eae2b6c6fa065528bdbb29e772ed7efe902a96c4987d1bcbf3fb0b7faf8fc8714a498",
+        "client_side_only": false,
         "name": "Joy of Painting",
         "pinned": false,
         "project_id": "YOs4tZea",
@@ -397,6 +442,7 @@
     },
     "YqFnwJHf": {
         "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
+        "client_side_only": false,
         "name": "Scannable",
         "pinned": false,
         "project_id": "YqFnwJHf",
@@ -406,6 +452,7 @@
     },
     "Z9DM0LJ4": {
         "checksum": "3df5abb3d7a6a96bee3b72cffd46d93cace075f9f575d597bd27da7573e2a7cf172fe7942812006dc489a4de54d21982e6d7a1cb0e8991c477f50909ed1f947b",
+        "client_side_only": false,
         "name": "Cyclops Core",
         "pinned": false,
         "project_id": "Z9DM0LJ4",
@@ -415,6 +462,7 @@
     },
     "ZtdULK5c": {
         "checksum": "a47b1e52a8be1688c2a3018e3bf222de4d9789e4595f31c7a8058fbf4fa919c3b7e2573c4d464dd47473f62949e160976ce7de01aeeeee492bdea56dd261cba9",
+        "client_side_only": false,
         "name": "Eccentric Tome",
         "pinned": false,
         "project_id": "ZtdULK5c",
@@ -424,6 +472,7 @@
     },
     "aC3cM3Vq": {
         "checksum": "73308cace1ab8e646dfe07112044a735575a7286af3e8db33c4a94a69ac26102b9a7f821d1b2fcb612f39f13f7dd80fa49b47b61b5ce8163cc08dd3549b55146",
+        "client_side_only": true,
         "name": "Mouse Tweaks",
         "pinned": false,
         "project_id": "aC3cM3Vq",
@@ -433,6 +482,7 @@
     },
     "e0IclJLr": {
         "checksum": "12271c45336baccd63fba500a33932cd193c7307d3b962ee7c9880b81c56b37b3d4d2b3ca35d3488751e0083587a4f08d70ef9dea0e7bc14c5747a05e5056ddc",
+        "client_side_only": false,
         "name": "RFTools Builder",
         "pinned": false,
         "project_id": "e0IclJLr",
@@ -442,6 +492,7 @@
     },
     "fRiHVvU7": {
         "checksum": "ff7fa56f2e53647b3a34e692ef05c2668891bd8a9b98b72919b251b7c153ff78cb0d408856be0b2fe6de51197d52130f86a9d794d931bd518c19040e64bf0c38",
+        "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
@@ -451,6 +502,7 @@
     },
     "ftdbN0KK": {
         "checksum": "d8350cb58395c48077dd5611914dbc3f2d398cca2a7a1b13ec694b03d01d9d68cafd601a0a03a0eab3182acfc556524c630118fd16f53da75711069dbc4da6f1",
+        "client_side_only": false,
         "name": "bad packets",
         "pinned": false,
         "project_id": "ftdbN0KK",
@@ -460,6 +512,7 @@
     },
     "gBCHLwcG": {
         "checksum": "392d31eca6a1fdbd863bc19fa389d2588f874298f34093d5446f0e551cd546597846a7486de28655a7b720efb8a6cf3615f0151a8fec2c3a04d5ad83a51dc941",
+        "client_side_only": true,
         "name": "Squake: Ari's fork",
         "pinned": false,
         "project_id": "gBCHLwcG",
@@ -469,6 +522,7 @@
     },
     "hB899VmG": {
         "checksum": "f9b18907466c6b2ae3b734186fc2d019f68781a8ff2cd2338d06084273a0ca5131ce861627996718a4ddaf4d4418780963e9fe9f6ae4e119e116b5f31a578667",
+        "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
@@ -478,6 +532,7 @@
     },
     "hIO8IsD8": {
         "checksum": "dfa1d03d69676199cbef6d5b4d85432c4910c57b153deb3287a34850b4325cf99415d433675dfde00c07e6e19645d9bd289e152bffee9dc3bd55b35cc335e085",
+        "client_side_only": false,
         "name": "RFTools Base",
         "pinned": false,
         "project_id": "hIO8IsD8",
@@ -487,6 +542,7 @@
     },
     "kU1G12Nn": {
         "checksum": "cb1cf754f21faa06eee81bb4da7098377712e6112520d9a78e50d5beff63fbf44d9e57b47e4d0edd82cc0ede6d70ecc3d0983fe88bd72be5bafed1a19986c5df",
+        "client_side_only": false,
         "name": "Create Crafts & Additions",
         "pinned": false,
         "project_id": "kU1G12Nn",
@@ -496,6 +552,7 @@
     },
     "l6YH9Als": {
         "checksum": "5ff352600d5ffac7511e171db2e51b9a0b6b669db0349141b8eaa626b5950043bf8806b695b29126766d0a9c7697083f61609d906d2609a3039b5cbe5b77db41",
+        "client_side_only": false,
         "name": "spark",
         "pinned": false,
         "project_id": "l6YH9Als",
@@ -505,6 +562,7 @@
     },
     "lNK9A4rh": {
         "checksum": "177e653daa0b42a7195a2d0f2d27a6bf6d659357906d9cca394b59ab391f29d074894e9bccd5fddae093dfb80e49f0ee0427a08a0158495045c96516b2c25d44",
+        "client_side_only": false,
         "name": "Mystical Customization",
         "pinned": false,
         "project_id": "lNK9A4rh",
@@ -514,6 +572,7 @@
     },
     "lhGA9TYQ": {
         "checksum": "094d36a41538859fc740ef7699c56ae24fb4ce89e211c28083090dcd366a360da68d51864657410242f0f625a1df4bd5c495b2ebbd9cbce74deb5e0e4bf56dc9",
+        "client_side_only": false,
         "name": "Architectury API",
         "pinned": false,
         "project_id": "lhGA9TYQ",
@@ -523,6 +582,7 @@
     },
     "lo90fZoB": {
         "checksum": "1a7252d1e4c33ddba57743523a9fb6523b2705dffa4b3325d05ea5050578359d3cbd5bc00b08e62f4cce89ab505df1708dc6c38d12fa0aafc5d70333318e1b61",
+        "client_side_only": false,
         "name": "Heracles",
         "pinned": false,
         "project_id": "lo90fZoB",
@@ -532,6 +592,7 @@
     },
     "nU0bVIaL": {
         "checksum": "d6ecdc347f0c418bd82c9096ca8e3db428e67b245d915d8a484268af99f8ea7e0cb6040cb26be42aa935baf4cb4fbab598449adc6a17f2197ee79504493a5a3b",
+        "client_side_only": false,
         "name": "Patchouli",
         "pinned": false,
         "project_id": "nU0bVIaL",
@@ -541,6 +602,7 @@
     },
     "nvQzSEkH": {
         "checksum": "634cdd2329662484e8fd48bbf2307a1547c9f16ad9f89f3ead7d0e4ea589f357491757b5e01c98e1136952d998fce2735eff658a9ae2793aa44edd4d385aa201",
+        "client_side_only": false,
         "name": "Jade \ud83d\udd0d",
         "pinned": false,
         "project_id": "nvQzSEkH",
@@ -550,6 +612,7 @@
     },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
+        "client_side_only": false,
         "name": "Common Capabilities",
         "pinned": false,
         "project_id": "oFXrCkDI",
@@ -559,6 +622,7 @@
     },
     "oY2B1pjg": {
         "checksum": "4cfa9129bed5ac5203c49be4567322e83e0a5ed331c6d3b5a67f01224bc4e1b7c00d780aef3c52c981fff007b04c0a410879fba34a9e117537d837272a42edd0",
+        "client_side_only": true,
         "name": "Embeddium (Rubidium) Extra",
         "pinned": false,
         "project_id": "oY2B1pjg",
@@ -568,6 +632,7 @@
     },
     "ordsPcFz": {
         "checksum": "47ff7c4315775cc434d6368600e10bfca1f5235345b9afefc7b63e431f8ad153ebbeb96d774fc49d81eace480526f45059d5bc73d6d221616a7f5b4708c92f9c",
+        "client_side_only": false,
         "name": "Kotlin for Forge",
         "pinned": false,
         "project_id": "ordsPcFz",
@@ -577,6 +642,7 @@
     },
     "pJWTXnch": {
         "checksum": "0588795dd2ece05d16cff3c652be90657764ffe83817ba0c80a7572df58fc072cbedd3517650deaa08df7d9b41267e264c6055c34379ea96da8674e886a1ffc6",
+        "client_side_only": false,
         "name": "Viner",
         "pinned": false,
         "project_id": "pJWTXnch",
@@ -586,6 +652,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
+        "client_side_only": true,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -595,6 +662,7 @@
     },
     "qwpACdla": {
         "checksum": "7d6eee05cc62b008a59961c0475feaee9ab3fb0df35f6abd13dbb81205332b270acc5c7a436539c8fb24258433dcf15cd7f9e4f07e8b23c678403d75a4511cda",
+        "client_side_only": false,
         "name": " Integrated Crafting",
         "pinned": false,
         "project_id": "qwpACdla",
@@ -604,6 +672,7 @@
     },
     "r0v8vy1s": {
         "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
+        "client_side_only": false,
         "name": "Alternate Current",
         "pinned": false,
         "project_id": "r0v8vy1s",
@@ -613,6 +682,7 @@
     },
     "sdaSaQEz": {
         "checksum": "63b49aa58f866bd49b40449c2430e0c8415f11832bd0af5044b5ff5f0441b54f3e674b7c3e5e1027ade34abe7f47de51f90e0431e905be7b98cd039ce8100301",
+        "client_side_only": false,
         "name": "Almost Unified",
         "pinned": false,
         "project_id": "sdaSaQEz",
@@ -622,6 +692,7 @@
     },
     "sk9knFPE": {
         "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
+        "client_side_only": false,
         "name": "Rhino",
         "pinned": false,
         "project_id": "sk9knFPE",
@@ -631,6 +702,7 @@
     },
     "sk9rgfiA": {
         "checksum": "06bf92aec9a3c6900e71ca6ab8b04115bead9e6be7cddb04e56824396e318b82192888126d5d1a9f7eb7c590e9adbc0f9e77238f88dc374272adcfdcc6eefd4f",
+        "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
@@ -640,6 +712,7 @@
     },
     "soWqucCB": {
         "checksum": "3f3784c07d9d554c0ff716cc51d01cd6fce45b982717e7abd6001636b7574f83e4dec248e05064ad2287cd3165b4b10a7683f36a3498a5873ad5d29aad0785d8",
+        "client_side_only": false,
         "name": "Reactive Alchemy",
         "pinned": false,
         "project_id": "soWqucCB",
@@ -649,6 +722,7 @@
     },
     "tx4M6qRg": {
         "checksum": "dcf1df3c28565f36409a72aa0619260350622db7c875481d437857a52fd1e773145a073fdca508599b36519737b757a59c4a38f590d7a4c59b3b1fbc547a1b4d",
+        "client_side_only": false,
         "name": "RFTools Storage",
         "pinned": false,
         "project_id": "tx4M6qRg",
@@ -658,6 +732,7 @@
     },
     "u58R1TMW": {
         "checksum": "6d0b5bd21d946861c36e4eefdf715f2857b7400db5910c06cb63396d7229072cf10c0635ce18671dc60344b4ee5b3011f1229aa97c7c19d7f9b9c8fb419e9fd6",
+        "client_side_only": false,
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
@@ -667,6 +742,7 @@
     },
     "u6dRKJwZ": {
         "checksum": "50b55e7c3ad0bd92829ce466e7265fff09026d8676693a94c174da5c16e843d933ecfa60de4c84efdbabe9d9e144819d8a6dae15ba4ec615134f59c71bb26e20",
+        "client_side_only": true,
         "name": "Just Enough Items",
         "pinned": false,
         "project_id": "u6dRKJwZ",
@@ -676,6 +752,7 @@
     },
     "umyGl7zF": {
         "checksum": "f8e39e17abee1ab4c4644ef91e8b4419aff645576ff84eeb9cd97d5e2675297b4429002560273f314e8bb29d16a6afbd7e21f337414675e6c6c1da51ac36e97a",
+        "client_side_only": false,
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
@@ -685,6 +762,7 @@
     },
     "vvuO3ImH": {
         "checksum": "a1349fd52be55421571b39fa905efdc8d88200d1107f3421be2bbea946b4dcd2c2aa01ced71d39aa41a470bf1a8066c004ca0a99a0a0b35af075841c43391660",
+        "client_side_only": false,
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
@@ -694,6 +772,7 @@
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",
+        "client_side_only": false,
         "name": "Big Globe",
         "pinned": false,
         "project_id": "xsng1aJf",
@@ -703,6 +782,7 @@
     },
     "yYzdQHJI": {
         "checksum": "f29f2a618de8373338e0cc0bf179db28bc0776f9866a743397619787dd1c04cf4df4ff08e761acbfc1cfa31158c874d921ab636fd975ebf7afc43e691fadd9a0",
+        "client_side_only": false,
         "name": "Integrated Dynamics",
         "pinned": false,
         "project_id": "yYzdQHJI",

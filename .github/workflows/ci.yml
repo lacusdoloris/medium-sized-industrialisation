@@ -6,7 +6,7 @@ on:
         branches: [mizuki]
 
 jobs:
-    build-mrpack:
+    build-mrpack-client:
         name: "Build .mrpack file"
         runs-on: "ubuntu-latest"
 
@@ -41,15 +41,58 @@ jobs:
               run: kamuidrome download
             
             # TODO: add CI mode to Kamuidrome
-            - name: Export Modpack
+            - name: Export Client-Side Modpack
               run: kamuidrome export BI.mrpack
-
-            - name: Unzip pack again because GHA is silly
-              run: "unzip -d ./_zzz-output/ BI.mrpack"
     
-            - name: Upload mrpack zip
+            - name: Upload client zip
               uses: "actions/upload-artifact@v4"
               with:
                 name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}.mrpack"
-                path: "./_zzz-output/"
+                path: "BI.mrpack"
+                compression-level: 9 
+            
+  
+    build-mrpack-server:
+        name: "Build .mrpack file (Server-side)"
+        runs-on: "ubuntu-latest"
+
+        steps:
+            - name: "Checkout repository"
+              uses: "actions/checkout@v4"
+
+            - name: "Install Python"
+              uses: actions/setup-python@v5
+              with:
+                # required for Kamuidrome
+                python-version: "3.12" 
+
+            - name: Install NodeJS
+              uses: actions/setup-node@v3
+              with:
+                node-version: "latest"
+            
+            - name: Install Yarn
+              run: yarn install
+            
+            - name: Install Kamuidrome
+              run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
+            
+            - name: Build KubeJS scripts
+              run: yarn run build-dev 
+            
+            - name: Build Quests
+              run: ./build_quests.sh
+
+            - name: Download Mods
+              run: kamuidrome download
+            
+            # TODO: add CI mode to Kamuidrome
+            - name: Export Server-Side Modpack
+              run: kamuidrome export BI.mrpack --server-only
+    
+            - name: Upload server zip
+              uses: "actions/upload-artifact@v4"
+              with:
+                name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}-server.mrpack"
+                path: "BI.mrpack"
                 compression-level: 9 
