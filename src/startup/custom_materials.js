@@ -1,7 +1,7 @@
 import { getMaterial } from "../shared/utils";
 
 const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey",
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
 
 // Material.Builder isn't exposed to kjs. lol!
@@ -35,12 +35,20 @@ export const addMaterials = (event) => {
         .components("1x gtceu:beryllium", "2x gtceu:hydrogen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-    // no disable decomposition flag here, as
+    // no disable decomposition flag here, as this is how it's actually processed in the real
+    // worldd.
     event
         .create(new ResourceLocation("nijika:beryllium_chloride"))
         .dust()
         .color(0x3b3f51)
         .components("1x gtceu:beryllium", "2x gtceu:chlorine");
+
+    // == RFTools Integration == //
+    event
+        .create(new ResourceLocation("nijika:dimensional_shard"))
+        .dust()
+        .color(0x61b2b0)
+        .secondaryColor(0xbfeded);
 
     // == Slag == //
     event
@@ -69,14 +77,14 @@ export const addMaterials = (event) => {
 
     chemicalIntermediate("arsenic_trichloride", 0xfffec8).components(
         "1x gtceu:arsenic",
-        "3x gtceu:chlorine",
+        "3x gtceu:chlorine"
     );
 
     // == Bauxite Processing == //
     chemicalIntermediate("aluminium_hydroxide", 0xbcd8e8).components(
         "1x gtceu:aluminium",
         "3x gtceu:oxygen",
-        "3x gtceu:hydrogen",
+        "3x gtceu:hydrogen"
     );
 
     event
@@ -105,18 +113,18 @@ export const addMaterials = (event) => {
     chemicalIntermediate("sodium_dichromate", 0xe37b2b).components(
         "2x gtceu:sodium",
         "2x gtceu:chromium",
-        "7x gtceu:oxygen",
+        "7x gtceu:oxygen"
     );
 
     chemicalIntermediate("sodium_chromate", 0xf4d015).components(
         "2x gtceu:sodium",
         "gtceu:chromium",
-        "4x gtceu:oxygen",
+        "4x gtceu:oxygen"
     );
 
     chemicalIntermediate("chromium_iii_oxide", 0x9cbc7b).components(
         "2x gtceu:chromium",
-        "3x gtceu:oxygen",
+        "3x gtceu:oxygen"
     );
 
     event
@@ -156,7 +164,7 @@ export const addMaterials = (event) => {
 
     chemicalIntermediate("tantalum_pentoxide", 0x0a0c26).components(
         "2x gtceu:tantalum",
-        "5x gtceu:oxygen",
+        "5x gtceu:oxygen"
     );
 
     // fine to create decompositions for this, actually.
@@ -188,13 +196,13 @@ export const addMaterials = (event) => {
     // == Niobium == //
     chemicalIntermediate("niobium_pentoxide", 0x260a0c).components(
         "2x gtceu:niobium",
-        "5x gtceu:oxygen",
+        "5x gtceu:oxygen"
     );
 
     // == Vanadium == //
     chemicalIntermediate("vanadium_pentoxide", 0xd5bf6b).components(
         "2x gtceu:vanadium",
-        "5x gtceu:oxygen",
+        "5x gtceu:oxygen"
     );
 
     // == Rare Earths == //
@@ -218,33 +226,33 @@ export const addMaterials = (event) => {
 
     chemicalIntermediate("lanthanum_iii_oxide", 0x53a1c7).components(
         "2x gtceu:lanthanum",
-        "3x gtceu:oxygen",
+        "3x gtceu:oxygen"
     );
 
     chemicalIntermediate("neodymium_iii_oxide", 0x18fc4e).components(
         "2x gtceu:neodymium",
-        "3x gtceu:oxygen",
+        "3x gtceu:oxygen"
     );
 
     chemicalIntermediate("samarium_iii_oxide", 0xf37a7a).components(
         "2x gtceu:samarium",
-        "3x gtceu:oxygen",
+        "3x gtceu:oxygen"
     );
 
     chemicalIntermediate("yttrium_iii_oxide", 0x4561a8).components(
         "2x gtceu:yttrium",
-        "3x gtceu:oxygen",
+        "3x gtceu:oxygen"
     );
 
     chemicalIntermediate("cerium_iv_oxide", 0x62b9d7).components(
         "1x gtceu:cerium",
-        "2x gtceu:oxygen",
+        "2x gtceu:oxygen"
     );
 
     chemicalIntermediate("thorium_hydroxide", 0x232323).components(
         "1x gtceu:thorium",
         "4x gtceu:oxygen",
-        "4x gtceu:hydrogen",
+        "4x gtceu:hydrogen"
     );
 
     event

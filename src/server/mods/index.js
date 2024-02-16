@@ -4,16 +4,20 @@ import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustMysticalAgricultureRecipes } from "./mysticalagriculture";
 import { adjustCreateNewAgeRecipes } from "./new_age";
 import { adjustPrettyPipesRecipes } from "./prettypipes";
+import { adjustRfToolsRecipes } from "./rftools";
 import { adjustModularRouterRecipes } from "./routers";
 
 /**
  * Processes recipes for included mods.
+ *
+ * @param {Internal.RecipesEventJS} event
  */
 export const doModRecipes = (event) => {
     adjustCreateRecipes(event);
     adjustCreateNewAgeRecipes(event);
     adjustMysticalAgricultureRecipes(event);
-    
+    adjustRfToolsRecipes(event);
+
     // not optional due to worldgen.
     adjustIntegratedDynamicsRecipes(event);
 
