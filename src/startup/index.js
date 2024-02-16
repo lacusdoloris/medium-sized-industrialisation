@@ -104,10 +104,26 @@ export const customiseMaterials = () => {
         );
     }
 
+    let monazite = getMaterial("monazite");
+    {
+        monazite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        monazite.setFormula("(Ce...)(PO4)");
+
+        let oreProp = getOreProperty("monazite");
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts("phosphate", "thorium_hydroxide");
+        oreProp.getSeparatedInto().clear();
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
+    getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
-
+    getMaterial("rare_earth_hydroxides").setFormula("(Ce...)(OH)3")
+    getMaterial("rare_earth_mixture").setFormula("(Ce...)");
+    getMaterial("rare_earth_chlorides").setFormula("(Ce...)Cl3")
+    getMaterial("thorium_hydroxide", "Th(OH)4")
+    
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
 

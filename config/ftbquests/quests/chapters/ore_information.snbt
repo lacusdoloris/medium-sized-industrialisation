@@ -417,7 +417,7 @@
 				type: "item"
 			}]
 			title: "Tetrahedrite Ore"
-			x: 6.5d
+			x: 5.5d
 			y: -2.0d
 		}
 		{
@@ -436,7 +436,7 @@
 			}]
 			title: "Zinc Ore"
 			x: 5.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6278EA9D9DFCE1FB"]
@@ -469,7 +469,7 @@
 			]
 			title: "Manganese Veins"
 			x: 8.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6278EA9D9DFCE1FB"]
@@ -550,6 +550,40 @@
 			title: "Mr Blue Eyes"
 			x: 6.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: ["&dFlourite&r is the primary carrier material for fluorine. It's found in the same places as sulfur."]
+			id: "281EDA14FB191A8F"
+			tasks: [{
+				count: 64L
+				id: "69E708612484E4F6"
+				item: { Count: 64b, id: "gcyr:raw_fluorite" }
+				type: "item"
+			}]
+			title: "Fluorite"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6278EA9D9DFCE1FB"]
+			description: [
+				"&dMonzaite&r is the primary carrier for rare earth metals."
+				""
+				"They're so rare, they're only found in the nether! (They're not actually rare.)"
+				""
+				"As a fun fact, Cerium is a rare earth metal but is more common than tin. The more you know."
+			]
+			id: "1B4A9A3A550E8FE4"
+			tasks: [{
+				count: 64L
+				id: "64D0AE8EAD6440E5"
+				item: { Count: 64b, id: "gtceu:raw_monazite" }
+				type: "item"
+			}]
+			title: "Monzaite"
+			x: 6.5d
+			y: -2.5d
 		}
 	]
 	subtitle: ["A quick guide to Big Globe ore veins."]

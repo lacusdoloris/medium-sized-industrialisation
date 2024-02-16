@@ -4,6 +4,7 @@ const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mate
 
 // Material.Builder isn't exposed to kjs. lol!
 // so no fancy autocomplete here. sorry.
+// a lot of these colours are entirely random.
 
 export const addMaterials = (event) => {
     const chemicalIntermediate = (id, colour) => {
@@ -14,6 +15,12 @@ export const addMaterials = (event) => {
 
     event.create(new ResourceLocation("nijika:blood"))
         .liquid().color(0xFF0000);
+
+    event.create(new ResourceLocation("nijika:ammonium_hydroxide"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0xcdd6f7)
+        .components("1x gtceu:ammonia", "1x gtceu:oxygen", "1x gtceu:hydrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     // == ID Integration == //
     event.create(new ResourceLocation("nijika:beryllium_hydride"))
@@ -144,4 +151,46 @@ export const addMaterials = (event) => {
     // == Vanadium == //
     chemicalIntermediate("vanadium_pentoxide", 0xd5bf6b)
         .components("2x gtceu:vanadium", "5x gtceu:oxygen");
+
+    // == Rare Earths == //
+    // formula is set elsewhere
+    event.create(new ResourceLocation("nijika:calcium_hydride"))
+        .dust().color(0xf7e3e1)
+        .components("1x gtceu:calcium", "2x gtceu:hydrogen");
+    
+    chemicalIntermediate("rare_earth_hydroxides", 0x1845ff);
+    chemicalIntermediate("rare_earth_mixture", 0x18453f);
+    chemicalIntermediate("rare_earth_chlorides", 0x447a12);    
+
+    // TODO: custom decomposition?
+    event.create(new ResourceLocation("nijika:trisodium_phosphate"))
+        .dust().color(0xff47a1)
+        .components("3x gtceu:sodium", "1x gtceu:phosphorus", "3x gtceu:oxygen");
+
+    chemicalIntermediate("lanthanum_iii_oxide", 0x53a1c7)
+        .components("2x gtceu:lanthanum", "3x gtceu:oxygen");
+
+    chemicalIntermediate("neodymium_iii_oxide", 0x18fc4e)
+        .components("2x gtceu:neodymium", "3x gtceu:oxygen");
+
+    chemicalIntermediate("samarium_iii_oxide", 0xf37a7a)
+        .components("2x gtceu:samarium", "3x gtceu:oxygen");
+
+    chemicalIntermediate("yttrium_iii_oxide", 0x4561a8)
+        .components("2x gtceu:yttrium", "3x gtceu:oxygen");
+
+    chemicalIntermediate("cerium_iv_oxide", 0x62b9d7)
+        .components("1x gtceu:cerium", "2x gtceu:oxygen");
+
+    chemicalIntermediate("thorium_hydroxide", 0x232323)
+        .components("1x gtceu:thorium", "4x gtceu:oxygen", "4x gtceu:hydrogen");
+
+    event.create(new ResourceLocation("nijika:lanthanum_nickel_alloy"))
+        .ingot().dust().color(0x53a18f)
+        .flags(
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
+        .blastTemp(1400)
+        .components("1x gtceu:lanthanum", "5x gtceu:nickel");
 }
