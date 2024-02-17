@@ -109,10 +109,9 @@
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
     },
-
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
-        "client_sy": true,
+        "client_side_only": false,
         "name": "BetterF3",
         "pinned": false,
         "project_id": "8shC1gFX",
@@ -779,6 +778,16 @@
         "selected": true,
         "version": "3.12.0",
         "version_id": "KNm7yQUG"
+    },
+    "yBW8D80W": {
+        "checksum": "d0789d237ac15e6df0fe58e6272055defd72a49de1d3e133e4568aa42984beb65ccc07b88d44fb41ea70971f09ea9c02a71fa83c13e8ec7f7e9db377728c0526",
+        "client_side_only": true,
+        "name": "LambDynamicLights",
+        "pinned": false,
+        "project_id": "yBW8D80W",
+        "selected": true,
+        "version": "2.3.2+1.20.1",
+        "version_id": "mYl4RvKg"
     },
     "yYzdQHJI": {
         "checksum": "f29f2a618de8373338e0cc0bf179db28bc0776f9866a743397619787dd1c04cf4df4ff08e761acbfc1cfa31158c874d921ab636fd975ebf7afc43e691fadd9a0",
