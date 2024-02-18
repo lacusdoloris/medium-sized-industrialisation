@@ -7,6 +7,27 @@ export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 
+    // for some fucking reason the precision mechanism doesn't show up in game!
+    // so, let's just recreate it!
+    event.recipes.create
+        .sequenced_assembly("1x create:precision_mechanism", "#forge:plates/gold", [
+            event.recipes.create.deploying("1x create:incomplete_precision_mechanism", [
+                "create:incomplete_precision_mechanism",
+                "create:cogwheel",
+            ]),
+            event.recipes.create.deploying("1x create:incomplete_precision_mechanism", [
+                "create:incomplete_precision_mechanism",
+                "create:large_cogwheel",
+            ]),
+            event.recipes.create.deploying("1x create:incomplete_precision_mechanism", [
+                "create:incomplete_precision_mechanism",
+                "#forge:nuggets/iron",
+            ]),
+        ])
+        .transitionalItem("create:incomplete_precision_mechanism")
+        .loops(5)
+        .id("create:sequenced_assembly/precision_mechanism");
+
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
         .itemInputs("1x create:limestone")
