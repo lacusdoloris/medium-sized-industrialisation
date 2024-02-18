@@ -99,7 +99,7 @@ const fixupCreate = (event) => {
     }
 
     for (let mod of ["create", "create_new_age", "railways", "createaddition"]) {
-        event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
+        // event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
     }
 };
 
@@ -124,9 +124,6 @@ const cleanupGTCEuOreProcessingRecipes = (event) => {
 
 /** @param {Internal.RecipesEventJS} event */
 export const doCleanups = (event) => {
-    // misc generic cleanups
-    event.remove({ id: "minecraft:charcoal" });
-
     if (Platform.isLoaded("integrateddynamics")) {
         event.remove({ id: "integrateddynamics:smelting/menril_log_coal" });
         event.remove({ id: "integrateddynamics:smelting/menril_log_filled_coal" });
@@ -173,7 +170,7 @@ export const doCleanups = (event) => {
     }
 
     if (MODPACK_SETTINGS.deleteToolRecipes) {
-        cleanupManualToolRecipes(event);
+        // cleanupManualToolRecipes(event);
         cleanupRollingMachineRecipes(event);
     }
 

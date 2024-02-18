@@ -224,8 +224,6 @@
 			description: [
 				"The old reliable &aCoke Oven&r... everyone's used one of these. From the ancient &dRailcraft&r coke ovens (ironically, a mod mostly known for its multiblock machines and not its minecart functionality) to the more modern &dImmersive Engineering&r ones, they're a staple of functionally every single progression modpack ever made."
 				""
-				"This is no exception. The original charcoal recipe is &cdisabled&r, so if you want any you're going to need to build some of these."
-				""
 				"The Coke Brick recipe has been less punitively difficult so you can make like twenty of these and have them running 24/7 easily."
 			]
 			id: "5C1D408B89B4A2FF"
@@ -274,31 +272,6 @@
 		{
 			dependencies: ["5C1D408B89B4A2FF"]
 			description: [
-				"Give me forty eight minutes of your time, I'll give you 32 charcoal blocks in return. "
-				""
-				"Don't use them all at once."
-			]
-			id: "08DB1BC1149983BC"
-			optional: true
-			rewards: [{
-				count: 32
-				id: "2D4691A1ACD0E14B"
-				item: "gtceu:charcoal_block"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "473861A86CDF0583"
-				item: "minecraft:charcoal"
-				type: "item"
-			}]
-			title: "Charcoal"
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5C1D408B89B4A2FF"]
-			description: [
 				"Through the magic of &aCreate Crafts \\& Additions&r, the &astraw&r can be used to feed liquid fuel to &aBlaze Burners&r. "
 				""
 				"Consider this a good outlet for your creosote. (Just don't cry about minecart tracks if you use it all up.)"
@@ -325,7 +298,7 @@
 				type: "item"
 			}]
 			title: "Straww"
-			x: 7.0d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
