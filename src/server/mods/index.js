@@ -39,6 +39,20 @@ export const doModRecipes = (event) => {
         adjustPackItUpRecipes(event);
     }
 
+    if (Platform.isLoaded("toolbelt")) {
+        event.shaped(
+            "toolbelt:belt",
+            ["SKS", "K K", "KFK"],
+            {S: "minecraft:string", K: "minecraft:dried_kelp", F: "#forge:foils/tin"}
+        ).id("toolbelt:belt");
+
+        event.shaped(
+            "toolbelt:pouch",
+            ["SGS", "K K", "SKS"],
+            {S: "minecraft:string", K: "minecraft:dried_kelp", G: "minecraft:gold_nugget"}
+        ).id("toolbelt:pouch");
+    }
+
     event.remove({ id: "essentials:auto_crafter" });
     event
         .shaped("essentials:auto_crafter", ["PLP", "THT", "PCP"], {
