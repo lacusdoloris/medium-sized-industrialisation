@@ -40,14 +40,14 @@
         "version_id": "RxCu0tXs"
     },
     "2u6LRnMa": {
-        "checksum": "1169e02521a481bfa0f68ea4b88ea9fd79b816deb100a07b46af15f8a0c451885e4da8accfe1d24a43434e864489be4f714ef46b8a9af89d1bb9464fe4d9c75b",
+        "checksum": "13dcddc9b46fdfa93b5752307eb1afc409f37b101becbc8674d8c41e9be871d346fb18ae04cbc1d2bd6725992dc97d676cf411eb4fb8e17dd20e98150cf80c62",
         "client_side_only": false,
         "name": "Botarium",
         "pinned": false,
         "project_id": "2u6LRnMa",
         "selected": false,
-        "version": "2.3.2",
-        "version_id": "qIdyusHN"
+        "version": "2.3.3",
+        "version_id": "rkELoRmb"
     },
     "3mW8PdUo": {
         "checksum": "2e276a14df5a33fcc07377436d2714addd4cc09c260b671de093b22783000e4b6cf0d5d48b52041159ef0a788ab0a776157eb24ad6b2b12d249e57510a81ef64",
@@ -111,7 +111,7 @@
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
-        "client_side_only": false,
+        "client_side_only": true,
         "name": "BetterF3",
         "pinned": false,
         "project_id": "8shC1gFX",
@@ -130,14 +130,14 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "c9aa4c1740025af36e1f6f4a397d1e6ecd714fde4a2d55f28b2688972b3d72b060afc04f9b561f1fe30f177e467e8d9db8b0264d6b11306ab3c2a950e72c1e1d",
+        "checksum": "1b000a3da3ddd7f24446b2d54849a2282c3a7d022ed7f77ba963beb6f10c44d419d27d88b66113de8d0160b5279b44e2d8738d1b80a43d354ef88b45575470a3",
         "client_side_only": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.91.0+1.10.8+1.20.1",
-        "version_id": "q5kbwIvk"
+        "version": "0.92.0+1.11.1+1.20.1",
+        "version_id": "1SWYhNrt"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -240,14 +240,14 @@
         "version_id": "7YudDLPR"
     },
     "FYpiwiBR": {
-        "checksum": "350aa27c2665d5293a726f5ccf8607b163a3626ff1de24cb85f28f7bf9917238ed8664d0d387f404d00b37f2f938482391584b265ff054cd42a27440cd60e151",
+        "checksum": "a70d34903e58ba83f6c2f91d72636075c29764c9f052b18c4f92e103bb35c3f16d29f8a3f8a8b3eb00a76137795400de2b882b45fa3019cbac91c36e4789c46b",
         "client_side_only": false,
         "name": "Connector Extras",
         "pinned": false,
         "project_id": "FYpiwiBR",
         "selected": true,
-        "version": "1.9.2+1.20.1",
-        "version_id": "3jLavA1z"
+        "version": "1.9.3+1.20.1",
+        "version_id": "ozzQ9zl7"
     },
     "G1hIVOrD": {
         "checksum": "211f6aa2e3ee7c5b04ead646fc0460a26ab937ce0091e76b6de5b47410fae78449a2f7138d16a66051287e30dbf9f3a5edea952bba654481dd35dc46616d301b",
@@ -490,14 +490,14 @@
         "version_id": "8mIUaono"
     },
     "fRiHVvU7": {
-        "checksum": "ff7fa56f2e53647b3a34e692ef05c2668891bd8a9b98b72919b251b7c153ff78cb0d408856be0b2fe6de51197d52130f86a9d794d931bd518c19040e64bf0c38",
+        "checksum": "47511a0f81108ff1edd91f6ecd5f05bcb87dfebaa7a3441f76ee71a749c8e48068c59f994551a1b2c3d2e83430c15ae8ac4983391b9f4c891a24ee5a2d413d00",
         "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.1+1.20.1+forge",
-        "version_id": "4Wza0ktp"
+        "version": "1.1.2+1.20.1+forge",
+        "version_id": "UcPFZeeY"
     },
     "ftdbN0KK": {
         "checksum": "d8350cb58395c48077dd5611914dbc3f2d398cca2a7a1b13ec694b03d01d9d68cafd601a0a03a0eab3182acfc556524c630118fd16f53da75711069dbc4da6f1",
@@ -651,7 +651,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": true,
+        "client_side_only": false,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -750,14 +750,14 @@
         "version_id": "PeYsGsQy"
     },
     "umyGl7zF": {
-        "checksum": "f8e39e17abee1ab4c4644ef91e8b4419aff645576ff84eeb9cd97d5e2675297b4429002560273f314e8bb29d16a6afbd7e21f337414675e6c6c1da51ac36e97a",
+        "checksum": "fb966b4d036996ed85731c7c872e6ac234968e82726fabcbeac2ee0665280871011f6777e7a46b0017562971d50a403673410f337d110a72446677c952805f91",
         "client_side_only": false,
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
         "selected": true,
-        "version": "2001.6.4-build.133+forge",
-        "version_id": "sG7Ike2a"
+        "version": "2001.6.4-build.136+forge",
+        "version_id": "ZRZ3cwM8"
     },
     "vvuO3ImH": {
         "checksum": "a1349fd52be55421571b39fa905efdc8d88200d1107f3421be2bbea946b4dcd2c2aa01ced71d39aa41a470bf1a8066c004ca0a99a0a0b35af075841c43391660",
