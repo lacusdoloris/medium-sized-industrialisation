@@ -199,6 +199,15 @@
 				"This quest is &l&amandatory&r to begin the main quest. If you think you're too smart to skip to resource requirementss, &cno you are not.&r"
 			]
 			id: "714A323489D928B7"
+			rewards: [{
+				id: "17A74F9A72269112"
+				item: {
+					Count: 1b
+					id: "wenospeakumbrellarino:umbrella"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 128L

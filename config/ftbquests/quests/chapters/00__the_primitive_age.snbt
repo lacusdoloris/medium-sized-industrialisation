@@ -81,15 +81,6 @@
 				"You might want to consider getting a Create &aElevator&r set up at this point."
 			]
 			id: "49C36B48DDBFFCC6"
-			rewards: [{
-				id: "027AFFD4199B802E"
-				item: {
-					Count: 1b
-					id: "wenospeakumbrellarino:umbrella"
-					tag: { }
-				}
-				type: "item"
-			}]
 			subtitle: "Get the payload on the elevator, arm it, let gravity do its thing."
 			tasks: [{
 				dimension: "minecraft:the_nether"
