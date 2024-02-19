@@ -28,8 +28,14 @@
 			icon: "gtceu:prospector.luv"
 			id: "7C111E62C0655371"
 			rewards: [{
-				id: "42BBE55B02F843FB"
-				item: "gtceu:prospector.luv"
+				id: "0A9F772F11725256"
+				item: {
+					Count: 1b
+					id: "gtceu:prospector.luv"
+					tag: {
+						Charge: 1000000000L
+					}
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -96,6 +102,7 @@
 			]
 			id: "4A99988A2655BF2D"
 			tasks: [{
+				count: 64L
 				id: "51EA63F0AC91BDF0"
 				item: "gtceu:raw_chalcopyrite"
 				type: "item"
