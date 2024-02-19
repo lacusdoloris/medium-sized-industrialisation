@@ -4,6 +4,7 @@ import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustMysticalAgricultureRecipes } from "./mysticalagriculture";
 import { adjustCreateNewAgeRecipes } from "./new_age";
+import { adjustPackItUpRecipes } from "./packitup";
 import { adjustPrettyPipesRecipes } from "./prettypipes";
 import { adjustRfToolsRecipes } from "./rftools";
 import { adjustModularRouterRecipes } from "./routers";
@@ -32,6 +33,10 @@ export const doModRecipes = (event) => {
 
     if (Platform.isLoaded("prettypipes")) {
         adjustPrettyPipesRecipes(event);
+    }
+
+    if (Platform.isLoaded("pack_it_up")) {
+        adjustPackItUpRecipes(event);
     }
 
     event.remove({ id: "essentials:auto_crafter" });
