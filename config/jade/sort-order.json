@@ -69,6 +69,10 @@
   "mysticalagriculture:crop": null,
   "mysticalagriculture:inferium_crop": null,
   "mysticalagriculture:infused_farmland": null,
+  "gtceu:electric_container_provider": null,
+  "gtceu:workable_provider": null,
+  "gtceu:controllable_provider": null,
+  "gtceu:recipe_logic_provider": null,
   "mysticalagriculture:crop": null,
   "mysticalagriculture:inferium_crop": null,
   "mysticalagriculture:infused_farmland": null,
@@ -117,9 +121,5 @@
   "jade:mod_name": null,
   "jade:distance": null,
   "jade:block_face": null,
-  "gtceu:electric_container_provider": null,
-  "gtceu:workable_provider": null,
-  "gtceu:controllable_provider": null,
-  "gtceu:recipe_logic_provider": null,
   "modularrouters:router": null
 }

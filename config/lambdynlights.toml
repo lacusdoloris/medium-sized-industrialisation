@@ -23,4 +23,5 @@ mode = "fancy"
 
 			[light_sources.settings.entities.minecraft]
 				glow_item_frame = false
+				player = true
 

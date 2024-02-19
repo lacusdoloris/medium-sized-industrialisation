@@ -169,6 +169,16 @@
         "version": "2.4.0",
         "version_id": "qlDt4clF"
     },
+    "C255PPUX": {
+        "checksum": "f51df4895a532ca332ec213a0d9cfd385012e7030291529ca5c9ba915910330b1c75162aef55c593750180ee0e9b229d6f1482fb09f2795f3300464a665053f6",
+        "client_side_only": false,
+        "name": "Map Atlases",
+        "pinned": false,
+        "project_id": "C255PPUX",
+        "selected": true,
+        "version": "2.6.0",
+        "version_id": "e9Az4uaX"
+    },
     "C95ReXie": {
         "checksum": "c6c1e9a4b78dd4e246e261ca9edfab6be18a30e01a25af63b5abb7a8c5ace8be321b21a5418628939f99a3b5f269c7eeca7ce26350564679e3d573551858ddcc",
         "client_side_only": false,
@@ -478,6 +488,16 @@
         "selected": true,
         "version": "1.20-2.25-forge",
         "version_id": "stb5nE30"
+    },
+    "bb2EpKpx": {
+        "checksum": "4433fa3f3ed126eee6fbc317fdde594732b38dfe83893bc9c6c70dd43aa181a7264682d4d30230c6632f166e2d5856f10995e79e0e05949c29825007d5a52c08",
+        "client_side_only": false,
+        "name": "Argonauts",
+        "pinned": false,
+        "project_id": "bb2EpKpx",
+        "selected": true,
+        "version": "1.0.8",
+        "version_id": "WJ2oWLzK"
     },
     "e0IclJLr": {
         "checksum": "12271c45336baccd63fba500a33932cd193c7307d3b962ee7c9880b81c56b37b3d4d2b3ca35d3488751e0083587a4f08d70ef9dea0e7bc14c5747a05e5056ddc",
