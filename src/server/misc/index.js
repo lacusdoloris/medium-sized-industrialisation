@@ -111,6 +111,19 @@ export const adjustVariousMiscRecipes = (event) => {
         .duration(20)
         .blastFurnaceTemp(453.15);
 
+    // easier books and maps
+    event.shaped(
+        "4x minecraft:map",
+        ["PPP", "PCP", "PPP"],
+        {P: "#forge:plates/paper", C: "minecraft:compass"}
+    ).id("minecraft:map");
+
+    event.remove({id: "minecraft:book"});
+    event.recipes.create.compacting(
+        "1x minecraft:book",
+        "4x #forge:plates/paper",
+    ).id("nijika:misc/easier_plates");
+
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);
     addSlagProcessingRecipes(event);
