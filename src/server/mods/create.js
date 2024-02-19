@@ -7,6 +7,33 @@ export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 
+    event.remove({id: "create:crafting/kinetics/empty_blaze_burner"});
+    event.shaped(
+        "create:empty_blaze_burner",
+        ["PPP", "P P", "WWW"],
+        {P: "#forge:plates/iron", W: "#minecraft:logs_that_burn"}
+    ).id("nijika:mods/create/easier_blaze_burner");
+
+    event.recipes.create.mixing(
+        "1x minecraft:blaze_powder",
+        ["#nijika:carbon_rich_dusts", "#forge:dusts/sulfur"]
+    ).id("nijika:mods/create/blaze_powder");
+
+    event.remove({id: "gtceu:chemical_reactor/blaze_powder"});
+    event.recipes.gtceu.mixer("nijika:mods/create/blaze_powder_electric")
+        .itemInputs(
+            "1x #nijika:carbon_rich_dusts",
+            "1x #forge:dusts/sulfur"
+        )
+        .itemOutputs("2x minecraft:blaze_powder")
+        .EUt(GTValues.VH[GTValues.LV])
+        .duration(10);
+
+    event.shapeless(
+        "create:blaze_burner",
+        ["create:empty_blaze_burner", "#forge:dusts/blaze"]
+    ).id("nijika:mods/create/blaze_burner");
+
     // for some fucking reason the precision mechanism doesn't show up in game!
     // so, let's just recreate it!
     event.recipes.create
@@ -29,7 +56,7 @@ export const adjustCreateRecipes = (event) => {
         .id("create:sequenced_assembly/precision_mechanism");
 
     event.shaped(
-        "2x create:mechanical_belt",
+        "2x create:belt_connector",
         ["RRR", "RRR"],
         {R: "#nijika:rubber_plates"}
     ).id("nijika:misc/red_belts");
