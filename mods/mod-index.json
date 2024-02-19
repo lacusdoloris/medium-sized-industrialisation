@@ -499,6 +499,16 @@
         "version": "1.0.8",
         "version_id": "WJ2oWLzK"
     },
+    "czWH0F4i": {
+        "checksum": "565864443714a524237e55aec0f0b0894f2d287faeda73fcb85d44f37103d50dba66d91d12daa67d74c32ad1082f8e40dcf81414cd31d7152073b093e5ff09e5",
+        "client_side_only": false,
+        "name": "Pack It Up!",
+        "pinned": false,
+        "project_id": "czWH0F4i",
+        "selected": true,
+        "version": "0.3.1+1.20.1",
+        "version_id": "ETlZbcSR"
+    },
     "e0IclJLr": {
         "checksum": "12271c45336baccd63fba500a33932cd193c7307d3b962ee7c9880b81c56b37b3d4d2b3ca35d3488751e0083587a4f08d70ef9dea0e7bc14c5747a05e5056ddc",
         "client_side_only": false,
