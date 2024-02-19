@@ -8,7 +8,11 @@ export const adjustPackItUpRecipes = (event) => {
     event.remove({id: "pack_it_up:lunchpack_bag"});
     event.remove({id: "pack_it_up:lunchpack_packing"});
 
-    event.replaceInput({ mod: "packitup" }, "minecraft:leather", "minecraft:dried_kelp");
+    event.shaped(
+        "pack_it_up:backpack_bag",
+        ["KCK", "CHC", "KCK"],
+        {K: "minecraft:dried_kelp", C: "pack_it_up:cloth", H: "minecraft:chest"}
+    ).id("pack_it_up:backpack_bag");
 
     event.shaped(
         "pack_it_up:large_backpack_bag",
