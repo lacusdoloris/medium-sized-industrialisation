@@ -28,6 +28,12 @@ export const adjustCreateRecipes = (event) => {
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
 
+    event.shaped(
+        "2x create:mechanical_belt",
+        ["RRR", "RRR"],
+        {R: "#nijika:rubber_plates"}
+    ).id("nijika:misc/red_belts");
+
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
         .itemInputs("1x create:limestone")
