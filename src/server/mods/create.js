@@ -7,6 +7,33 @@ export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 
+    // replace all of the crushed raw material processing with producing crushed gtceu materials.
+    // this is only useful in LV as then you can actually *do* ore processing.
+    event.recipes.create.crushing(
+        [Item.of("gtceu:crushed_magnetite_ore").withChance(0.4), Item.of("minecraft:iron_nugget").withChance(0.4)],
+        "create:crimsite"
+    ).id("nijika:mods/create/crimsite_crushing");
+
+    event.recipes.create.crushing(
+        [Item.of("gtceu:crushed_gold_ore").withChance(0.4), Item.of("minecraft:gold_nugget").withChance(0.4)],
+        "create:ochrum"
+    ).id("nijika:mods/create/ochrum_crushing");
+
+    event.recipes.create.crushing(
+        [Item.of("gtceu:crushed_chromite_ore").withChance(0.4), Item.of("minecraft:iron_nugget").withChance(0.4)],
+        "create:veridium"
+    ).id("nijika:mods/create/veridium_crushing");
+
+    event.recipes.create.crushing(
+        [Item.of("gtceu:crushed_cassiterite_ore").withChance(0.4), Item.of("gtceu:tin_nugget").withChance(0.4)],
+        "create:asurine"
+    ).id("nijika:mods/create/asurine_crushing");
+
+    event.smelting("1x create:crimsite", "1x create:cut_crimsite");
+    event.smelting("1x create:ochrum", "1x create:cut_ochrum");
+    event.smelting("1x create:veridium", "1x create:cut_veridium");
+    event.smelting("1x create:asurine", "1x create:cut_asurine");
+
     event.remove({id: "create:crafting/kinetics/empty_blaze_burner"});
     event.shaped(
         "create:empty_blaze_burner",
