@@ -170,7 +170,7 @@ export const doCleanups = (event) => {
     }
 
     if (MODPACK_SETTINGS.deleteToolRecipes) {
-        // cleanupManualToolRecipes(event);
+        cleanupManualToolRecipes(event);
         cleanupRollingMachineRecipes(event);
     }
 
