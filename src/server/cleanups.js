@@ -15,7 +15,7 @@ const SWAP_BRASS_PLATES = [
 const cleanupManualToolRecipes = (event) => {
     event.remove({ output: "#forge:plates", input: "#forge:tools/hammers" });
     event.remove({ output: "#forge:foils", input: "#forge:tools/hammers" });
-    event.remove({ output: "#forge:dusts", input: "#forge:tools/mortars" });
+    event.remove({ input: "#forge:tools/mortars" });
     event.remove({ id: "gtceu:shaped/casing_ulv" });
 
     // silent gear sadly adds two ingot recipes so we have to be a bit broader here
