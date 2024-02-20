@@ -228,15 +228,15 @@
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "42CBD77A1B190893"
-					item: { Count: 32b, id: "gtceu:brass_ingot" }
-					type: "item"
-				}
-				{
 					count: 256L
 					id: "040DD2E0A2BE9FA3"
 					item: { Count: 64b, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2C365CEF7DDC4E5E"
+					item: { Count: 32b, id: "gtceu:bronze_ingot" }
 					type: "item"
 				}
 			]

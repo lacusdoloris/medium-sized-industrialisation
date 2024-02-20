@@ -188,6 +188,7 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
+			title: "Worse Lathe"
 			x: 3.5d
 			y: 0.0d
 		}
