@@ -42,13 +42,13 @@ jobs:
             
             # TODO: add CI mode to Kamuidrome
             - name: Export Client-Side Modpack
-              run: kamuidrome export BI.mrpack
+              run: kamuidrome export --ci-mode BI-client
     
             - name: Upload client zip
               uses: "actions/upload-artifact@v4"
               with:
                 name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}.mrpack"
-                path: "BI.mrpack"
+                path: "BI-client"
                 compression-level: 9 
             
   
@@ -88,11 +88,11 @@ jobs:
             
             # TODO: add CI mode to Kamuidrome
             - name: Export Server-Side Modpack
-              run: kamuidrome export BI.mrpack --server-only
+              run: kamuidrome export BI-server --server-only --ci-mode
     
             - name: Upload server zip
               uses: "actions/upload-artifact@v4"
               with:
                 name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}-server.mrpack"
-                path: "BI.mrpack"
+                path: "BI-server"
                 compression-level: 9 
