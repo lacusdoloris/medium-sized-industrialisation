@@ -5,6 +5,8 @@ const SWAP_BRASS_PLATES = [
     "create:crafting/logistics/brass_funnel",
     "create:item_application/brass_casing_from_log",
     "create:item_application/brass_casing_from_wood",
+    "create:crafting/kinetics/brass_hand",
+    "create:crafting/kinetics/mechanical_arm",
 ];
 
 /**

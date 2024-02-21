@@ -86,7 +86,12 @@ export const adjustCreateRecipes = (event) => {
         "2x create:belt_connector",
         ["RRR", "RRR"],
         {R: "#nijika:rubber_plates"}
-    ).id("nijika:misc/red_belts");
+    ).id("nijika:mods/create/red_belts");
+
+    event.recipes.create.mixing(
+        "4x gtceu:bronze_ingot",
+        ["3x #forge:ingots/copper", "1x #forge:ingots/tin"]
+    ).heated().id("nijika:mods/create/bronze_heated_recipe");
 
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
