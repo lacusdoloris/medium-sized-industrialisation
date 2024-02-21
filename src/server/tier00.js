@@ -4,6 +4,49 @@ const PropertyKey = Java.loadClass(
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
+    event
+        .shaped("4x gtceu:bronze_brick_casing", ["BBB", "BRB", "BBB"], {
+            B: "#nijika:copper_alloy_plates",
+            R: "#forge:storage_blocks/brick",
+        })
+        .id("nijika:tier00/brick_casing");
+
+    event
+        .shaped("gtceu:lp_steam_solid_boiler", ["PPP", "P P", "BNB"], {
+            P: "#nijika:copper_alloy_plates",
+            B: "gtceu:bronze_brick_casing",
+            N: "#forge:netherrack",
+        })
+        .id("nijika:tier00/low_pressure_solid_boiler");
+
+    event
+        .shaped("gtceu:hp_steam_solid_boiler", ["PPP", "P P", "BNB"], {
+            P: "#forge:plates/wrought_iron",
+            B: "gtceu:bronze_brick_casing",
+            N: "gtceu:lp_steam_solid_boiler",
+        })
+        .id("nijika:tier00/high_pressure_solid_boiler");
+
+    event.remove({ id: "gtceu:shaped/steam_boiler_lava_bronze" });
+    event
+        .shaped("gtceu:lp_steam_liquid_boiler", ["PPP", "PGP", "BNB"], {
+            P: "#nijika:copper_alloy_plates",
+            B: "gtceu:bronze_brick_casing",
+            N: "#forge:netherrack",
+            G: "#forge:glass",
+        })
+        .id("nijika:tier00/low_pressure_liquid_boiler");
+
+    event.remove({ id: "gtceu:shaped/steam_boiler_lava_steel" });
+    event
+        .shaped("gtceu:hp_steam_liquid_boiler", ["PPP", "PGP", "BNB"], {
+            P: "#forge:plates/wrought_iron",
+            B: "gtceu:bronze_brick_casing",
+            N: "gtceu:lp_steam_liquid_boiler",
+            G: "#forge:glass",
+        })
+        .id("nijika:tier00/high_pressure_liquid_boiler");
+
     // coke oven tweaks.
     // this makes it dramatically easier, no more fucking brick mould
     event.remove({ id: "gtceu:shaped/compressed_coke_clay" });
