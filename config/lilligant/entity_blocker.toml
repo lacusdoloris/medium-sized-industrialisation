@@ -2,4 +2,22 @@
 
 # The list of entities to block, e.g. ``["minecraft:villager"]``.
 blockedEntities = [
+    "minecraft:cow",
+    "minecraft:sheep",
+    "minecraft:chicken",
+    "minecraft:bat",
+    "minecraft:squid",
+    "minecraft:glow_squid",
+    "minecraft:cod",
+    "minecraft:dolphin",
+    "minecraft:salmon",
+    "minecraft:goat",
+    "minecraft:pufferfish",
+    "minecraft:panda",
+    "minecraft:polar_bear",
+    "minecraft:iron_golem",
+    "minecraft:rabbit",
+    "minecraft:llama",
+    "minecraft:turtle",
+    "minecraft:wolf",
 ]
