@@ -309,6 +309,16 @@
         "version": "1.1+1.20.1",
         "version_id": "reJvM5cv"
     },
+    "JJNYRb4B": {
+        "checksum": "3350d59cefeeec9141904d7048e637a3d4be04943599ece6a7be78507c69b52e7457db728ba2a648c03ce7b56ceabee2d2c1f6212999535cc8e3d8bd98c946fe",
+        "client_side_only": true,
+        "name": "ProbeJS",
+        "pinned": false,
+        "project_id": "JJNYRb4B",
+        "selected": true,
+        "version": "6.0.0",
+        "version_id": "XIxTqWLF"
+    },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
         "client_side_only": false,
@@ -701,7 +711,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": false,
+        "client_side_only": true,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -800,14 +810,14 @@
         "version_id": "PeYsGsQy"
     },
     "umyGl7zF": {
-        "checksum": "fb966b4d036996ed85731c7c872e6ac234968e82726fabcbeac2ee0665280871011f6777e7a46b0017562971d50a403673410f337d110a72446677c952805f91",
+        "checksum": "629092cdb255125497ee4f5d356bb4940fcb3b34ec5fc89f0e0f3e4d20ef870a94f23341c927849c3427aa57cc98d8c02b8436b085407b63d6f3798fb54c6b2a",
         "client_side_only": false,
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
         "selected": true,
-        "version": "2001.6.4-build.136+forge",
-        "version_id": "ZRZ3cwM8"
+        "version": "2001.6.4-build.138+forge",
+        "version_id": "DNX6SE7o"
     },
     "vvuO3ImH": {
         "checksum": "a1349fd52be55421571b39fa905efdc8d88200d1107f3421be2bbea946b4dcd2c2aa01ced71d39aa41a470bf1a8066c004ca0a99a0a0b35af075841c43391660",
@@ -828,6 +838,16 @@
         "selected": true,
         "version": "3.12.0",
         "version_id": "KNm7yQUG"
+    },
+    "y7ACoOzz": {
+        "checksum": "db1ea4b048c7ed6e41583a07de1810e0d9f6d8d25d228e7e7a5df23338147fc0a924d5fb628eec30167ffa1f88f9cf6d181383d6fcc41118e361b9d9be28d8c3",
+        "client_side_only": false,
+        "name": "Lilligant",
+        "pinned": true,
+        "project_id": "y7ACoOzz",
+        "selected": true,
+        "version": "0.7.4",
+        "version_id": "HWvxlLXs"
     },
     "yBW8D80W": {
         "checksum": "d0789d237ac15e6df0fe58e6272055defd72a49de1d3e133e4568aa42984beb65ccc07b88d44fb41ea70971f09ea9c02a71fa83c13e8ec7f7e9db377728c0526",

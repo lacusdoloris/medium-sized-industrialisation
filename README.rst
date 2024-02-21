@@ -71,15 +71,12 @@ Included Mods
 This pack includes a small number of mods directly in the pack, rather than being fetched by 
 Kamuidrome, for various reasons. These are:
 
-- `Lilligant <https://github.com/fuyukai/lilligant>`_, made by me as a quick dumping ground for 
-  various modpack mixins. (As of the time of writing, Modrinth has yet to let it out of the
-  moderation queue).
 - `We No Speak Umbrellarino <https://modrinth.com/mod/wenospeakumbrellarino>`_, because the
   1.20 ported version (made by yours truly) isn't uploaded to Modrinth. MIT licensed.
-- `ProbeJS <https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20>`_,
-  which isn't available on Modrinth. Used for dev stuff and schemas. LGPL 3.0 (on the CF page).
 - `Tool Belt <https://www.curseforge.com/minecraft/mc-mods/tool-belt>`_, which isn't available on
   Modrinth. BSD 3-Clause.
+- A newer version of `GregTech CEu Modern` is bundled as it contains important fixes that aren't
+  yet included on the Modrinth version.
 
-(For the latter three mods, if you upload to Modrinth please let me know and I will instantly swap
-it out to a Modrinth download. I don't want to take your ad money!)
+.. _Big Globe: https://modrinth.com/mod/big-globe
+.. _GregTech CEu Modern: https://modrinth.com/mod/gregtechceu-modern
