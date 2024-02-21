@@ -61,6 +61,20 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			description: ["The only minimap mod available by default is &dMap Atlases&r, a more manual minimap based around vanilla maps. Craft it with any vanilla map to add the map to the atlas."]
+			id: "0C2A2CD5817F48D5"
+			tasks: [{
+				disable_toast: true
+				id: "25EBA46C034E96F1"
+				item: "map_atlases:atlas"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Minimap"
+			x: 1.0d
+			y: -1.5d
+		}
 	]
 	title: "Tips n Bits"
 }
