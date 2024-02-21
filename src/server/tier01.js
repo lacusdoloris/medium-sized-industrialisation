@@ -7,12 +7,13 @@ export const doTier01Content = (event) => {
     event.remove({ output: "#forge:ingots/steel", type: "gtceu:electric_blast_furnace" });
     event.remove({ id: "gtceu:shaped/bronze_primitive_blast_furnace" }); // not bronze?
 
-    event.recipes.gtceu.assembler("nijika:tier01/precision_mechanism")
+    event.recipes.gtceu
+        .assembler("nijika:tier01/precision_mechanism")
         .itemInputs(
             "2x #forge:plates/gold",
             "2x create:cogwheel",
             "2x create:large_cogwheel",
-            GT_MACHINE_TIERS.LV.singleCable,
+            GT_MACHINE_TIERS.LV.singleCable
         )
         .itemOutputs("2x create:precision_mechanism")
         .EUt(GTValues.VA[GTValues.ULV])

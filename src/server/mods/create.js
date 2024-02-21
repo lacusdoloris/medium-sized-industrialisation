@@ -9,57 +9,74 @@ export const adjustCreateRecipes = (event) => {
 
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
     // this is only useful in LV as then you can actually *do* ore processing.
-    event.recipes.create.crushing(
-        [Item.of("gtceu:crushed_magnetite_ore").withChance(0.4), Item.of("minecraft:iron_nugget").withChance(0.4)],
-        "create:crimsite"
-    ).id("nijika:mods/create/crimsite_crushing");
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("gtceu:crushed_magnetite_ore").withChance(0.4),
+                Item.of("minecraft:iron_nugget").withChance(0.4),
+            ],
+            "create:crimsite"
+        )
+        .id("nijika:mods/create/crimsite_crushing");
 
-    event.recipes.create.crushing(
-        [Item.of("gtceu:crushed_gold_ore").withChance(0.4), Item.of("minecraft:gold_nugget").withChance(0.4)],
-        "create:ochrum"
-    ).id("nijika:mods/create/ochrum_crushing");
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("gtceu:crushed_gold_ore").withChance(0.4),
+                Item.of("minecraft:gold_nugget").withChance(0.4),
+            ],
+            "create:ochrum"
+        )
+        .id("nijika:mods/create/ochrum_crushing");
 
-    event.recipes.create.crushing(
-        [Item.of("gtceu:crushed_chromite_ore").withChance(0.4), Item.of("minecraft:iron_nugget").withChance(0.4)],
-        "create:veridium"
-    ).id("nijika:mods/create/veridium_crushing");
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("gtceu:crushed_chromite_ore").withChance(0.4),
+                Item.of("minecraft:iron_nugget").withChance(0.4),
+            ],
+            "create:veridium"
+        )
+        .id("nijika:mods/create/veridium_crushing");
 
-    event.recipes.create.crushing(
-        [Item.of("gtceu:crushed_cassiterite_ore").withChance(0.4), Item.of("gtceu:tin_nugget").withChance(0.4)],
-        "create:asurine"
-    ).id("nijika:mods/create/asurine_crushing");
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("gtceu:crushed_cassiterite_ore").withChance(0.4),
+                Item.of("gtceu:tin_nugget").withChance(0.4),
+            ],
+            "create:asurine"
+        )
+        .id("nijika:mods/create/asurine_crushing");
 
     event.smelting("1x create:crimsite", "1x create:cut_crimsite");
     event.smelting("1x create:ochrum", "1x create:cut_ochrum");
     event.smelting("1x create:veridium", "1x create:cut_veridium");
     event.smelting("1x create:asurine", "1x create:cut_asurine");
 
-    event.remove({id: "create:crafting/kinetics/empty_blaze_burner"});
-    event.shaped(
-        "create:empty_blaze_burner",
-        ["PPP", "P P", "WWW"],
-        {P: "#forge:plates/iron", W: "#minecraft:logs_that_burn"}
-    ).id("nijika:mods/create/easier_blaze_burner");
+    event.remove({ id: "create:crafting/kinetics/empty_blaze_burner" });
+    event
+        .shaped("create:empty_blaze_burner", ["PPP", "P P", "WWW"], {
+            P: "#forge:plates/iron",
+            W: "#minecraft:logs_that_burn",
+        })
+        .id("nijika:mods/create/easier_blaze_burner");
 
-    event.recipes.create.mixing(
-        "1x minecraft:blaze_powder",
-        ["#nijika:carbon_rich_dusts", "#forge:dusts/sulfur"]
-    ).id("nijika:mods/create/blaze_powder");
+    event.recipes.create
+        .mixing("1x minecraft:blaze_powder", ["#nijika:carbon_rich_dusts", "#forge:dusts/sulfur"])
+        .id("nijika:mods/create/blaze_powder");
 
-    event.remove({id: "gtceu:chemical_reactor/blaze_powder"});
-    event.recipes.gtceu.mixer("nijika:mods/create/blaze_powder_electric")
-        .itemInputs(
-            "1x #nijika:carbon_rich_dusts",
-            "1x #forge:dusts/sulfur"
-        )
+    event.remove({ id: "gtceu:chemical_reactor/blaze_powder" });
+    event.recipes.gtceu
+        .mixer("nijika:mods/create/blaze_powder_electric")
+        .itemInputs("1x #nijika:carbon_rich_dusts", "1x #forge:dusts/sulfur")
         .itemOutputs("2x minecraft:blaze_powder")
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
 
-    event.shapeless(
-        "create:blaze_burner",
-        ["create:empty_blaze_burner", "#forge:dusts/blaze"]
-    ).id("nijika:mods/create/blaze_burner");
+    event
+        .shapeless("create:blaze_burner", ["create:empty_blaze_burner", "#forge:dusts/blaze"])
+        .id("nijika:mods/create/blaze_burner");
 
     // for some fucking reason the precision mechanism doesn't show up in game!
     // so, let's just recreate it!
@@ -82,16 +99,14 @@ export const adjustCreateRecipes = (event) => {
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
 
-    event.shaped(
-        "2x create:belt_connector",
-        ["RRR", "RRR"],
-        {R: "#nijika:rubber_plates"}
-    ).id("nijika:mods/create/red_belts");
+    event
+        .shaped("2x create:belt_connector", ["RRR", "RRR"], { R: "#nijika:rubber_plates" })
+        .id("nijika:mods/create/red_belts");
 
-    event.recipes.create.mixing(
-        "4x gtceu:bronze_ingot",
-        ["3x #forge:ingots/copper", "1x #forge:ingots/tin"]
-    ).heated().id("nijika:mods/create/bronze_heated_recipe");
+    event.recipes.create
+        .mixing("4x gtceu:bronze_ingot", ["3x #forge:ingots/copper", "1x #forge:ingots/tin"])
+        .heated()
+        .id("nijika:mods/create/bronze_heated_recipe");
 
     event.recipes.gtceu
         .macerator("nijika:misc/calcite_from_limestone")
