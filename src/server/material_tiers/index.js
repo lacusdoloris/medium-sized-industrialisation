@@ -5,6 +5,7 @@ import { MODPACK_SETTINGS } from "../../settings";
 import { adjustMachineRecipesForTier } from "./machines";
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { fixLensRecipes } from "./lenses";
+import { adjustGtGeneratorTiers } from "./generators";
 
 /**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.
@@ -41,6 +42,7 @@ export const adjustMaterialTierRecipes = (event) => {
     fixExtruderRecipeTier(event);
     adjustExtruderBasePlateRecipe(event);
     fixLensRecipes(event);
+    adjustGtGeneratorTiers(event);
 
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
         adjustMachineRecipesForTier(event, tier);

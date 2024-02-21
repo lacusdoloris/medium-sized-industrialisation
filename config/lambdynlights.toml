@@ -22,6 +22,16 @@ mode = "fancy"
 		[light_sources.settings.entities]
 
 			[light_sources.settings.entities.minecraft]
+				item = true
+				minecart = true
+				chicken = true
+				wolf = true
+				rabbit = true
 				glow_item_frame = false
+				furnace_minecart = true
+				chest_minecart = true
+				sheep = true
+				fox = true
 				player = true
+				pig = true
 
