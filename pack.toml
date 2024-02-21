@@ -3,7 +3,7 @@
 # Human-friendly name of the pack, used during export.
 name = "Bigger Industrialisation"
 # Human-friendly version of the pack, used during export.
-version = "0.7.0"
+version = "0.7.2"
 # The minecraft version for this pack.
 game_version = "1.20.1"
 # A list of additional directories to include when building a pack or generating symlinks.
