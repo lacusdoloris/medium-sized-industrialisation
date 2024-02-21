@@ -5,8 +5,6 @@ const SWAP_BRASS_PLATES = [
     "create:crafting/logistics/brass_funnel",
     "create:item_application/brass_casing_from_log",
     "create:item_application/brass_casing_from_wood",
-    "create:crafting/kinetics/brass_hand",
-    "create:crafting/kinetics/mechanical_arm",
 ];
 
 /**
@@ -101,7 +99,7 @@ const fixupCreate = (event) => {
     }
 
     for (let mod of ["create", "create_new_age", "railways", "createaddition"]) {
-        // event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
+        event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
     }
 };
 
