@@ -699,16 +699,6 @@
         "version": "4.10.0",
         "version_id": "9j6YaPp2"
     },
-    "pJWTXnch": {
-        "checksum": "0588795dd2ece05d16cff3c652be90657764ffe83817ba0c80a7572df58fc072cbedd3517650deaa08df7d9b41267e264c6055c34379ea96da8674e886a1ffc6",
-        "client_side_only": false,
-        "name": "Viner",
-        "pinned": false,
-        "project_id": "pJWTXnch",
-        "selected": true,
-        "version": "2.1.1",
-        "version_id": "gQKwrrAS"
-    },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
         "client_side_only": true,
