@@ -10,7 +10,7 @@ import { GT_WIRE_TYPES } from "../../shared/definition";
 /**
  * A list of specific plates that should get a pressing recipe.
  */
-const SPECIFIC_PLATES = ["magnetic_iron", "rubber", "wrought_iron", "bronze"];
+const SPECIFIC_PLATES = ["magnetic_iron", "rubber", "wrought_iron", "bronze", "silver"];
 
 /**
  * Adds automatic Create-based recipes for LV/MV tier materials.

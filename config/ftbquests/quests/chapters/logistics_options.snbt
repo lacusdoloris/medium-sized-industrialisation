@@ -90,7 +90,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["2F57E725400880DD"]
+			dependencies: [
+				"2F57E725400880DD"
+				"4E722FB95D8BE0E0"
+			]
 			description: [
 				"The &dCrafting Modules&r can be placed in a pipe on the side of a machine to enable &dautocrafting&r."
 				""
