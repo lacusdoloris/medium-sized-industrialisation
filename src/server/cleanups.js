@@ -18,6 +18,9 @@ const cleanupManualToolRecipes = (event) => {
     event.remove({ input: "#forge:tools/mortars" });
     event.remove({ id: "gtceu:shaped/casing_ulv" });
 
+    event.remove({ type: "minecraft:blasting" });
+    event.remove({ id: "minecraft:blast_furnace" });
+
     // silent gear sadly adds two ingot recipes so we have to be a bit broader here
     for (let type of ["crafting_shaped", "crafting_shapeless"]) {
         event.remove({ output: "#forge:rods", input: "#forge:ingots", type: "minecraft:" + type });

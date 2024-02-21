@@ -16,13 +16,15 @@ export const adjustPrettyPipesRecipes = (event) => {
     // terminal recipes now directly requires circuits and sensors/emitters, rather than high
     // modules.
     event.remove({ id: "prettypipes:item_terminal" });
-    event.shaped("prettypipes:item_terminal", ["FEF", "1P2", "FEF"], {
-        F: "#forge:foils/silver",
-        1: "minecraft:piston",
-        2: "minecraft:sticky_piston",
-        P: "#forge:chests",
-        E: "#forge:gems/emerald"
-    }).id("nijika:mods/prettypipes/item_terminal");
+    event
+        .shaped("prettypipes:item_terminal", ["FEF", "1P2", "FEF"], {
+            F: "#forge:foils/silver",
+            1: "minecraft:piston",
+            2: "minecraft:sticky_piston",
+            P: "#forge:chests",
+            E: "#forge:gems/emerald",
+        })
+        .id("nijika:mods/prettypipes/item_terminal");
 
     event.remove({ id: "prettypipes:crafting_terminal" });
     event
@@ -32,7 +34,7 @@ export const adjustPrettyPipesRecipes = (event) => {
             I: "prettypipes:item_terminal",
             R: "gtceu:red_alloy_single_cable",
             S: "gtceu:lv_sensor",
-            E: "gtceu:lv_emitter"
+            E: "gtceu:lv_emitter",
         })
         .id("nijika:mods/prettypipes/crafting_terminal");
 
