@@ -79,8 +79,8 @@ export const doTier00Content = (event) => {
     event.recipes.create
         .pressing("1x gtceu:raw_rubber_dust", ["1x gtceu:sticky_resin"])
         .id("nijika:tier00/sticky_resin_pressing");
-    event.recipes.create
-        .pressing(Item.of("gtceu:sticky_resin").withChance(0.5), "gtceu:rubber_log")
+    event.recipes.createaddition
+        .rolling(Item.of("gtceu:sticky_resin").withChance(0.5), "gtceu:rubber_log")
         .id("nijika:tier00/merciful_sticky_resin_production");
 
     // no alloy smelter needed!
