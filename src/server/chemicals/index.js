@@ -2,6 +2,7 @@ import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
 import { addGalliumArsenicRecipes } from "./gallum_arsenic";
 import { addMiscIronRecipes } from "./iron";
+import { addMagnesiumProcessingRecipes } from "./magnesium";
 import { addManganeseProcessingRecipes } from "./manganese";
 import { addRareEarthProcessingChain } from "./rare_earths";
 import { addTantaliteProcessingChain } from "./tantalum";
@@ -21,6 +22,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addTantaliteProcessingChain(event);
     addRareEarthProcessingChain(event);
     addMiscIronRecipes(event);
+    addMagnesiumProcessingRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu
@@ -64,4 +66,14 @@ export const addChemicalProcessingRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.LV])
         .duration(5 * 20);
 
+    // Direct preparation of Calcium sillicate.
+    // 2 CaO + SiO2 = Ca2SiO4
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/calcium_sillicate")
+        .itemInputs(
+            "2x gtceu:quicklime_dust",
+            "1x gtceu:silicon_dioxide_dust",
+        )
+        .itemOutputs("1x gtceu:calcium_silicate_dust")
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(2 * 20);
 };
