@@ -1,6 +1,7 @@
 import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
 import { addGalliumArsenicRecipes } from "./gallum_arsenic";
+import { addMiscIronRecipes } from "./iron";
 import { addManganeseProcessingRecipes } from "./manganese";
 import { addRareEarthProcessingChain } from "./rare_earths";
 import { addTantaliteProcessingChain } from "./tantalum";
@@ -19,6 +20,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addManganeseProcessingRecipes(event);
     addTantaliteProcessingChain(event);
     addRareEarthProcessingChain(event);
+    addMiscIronRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu
@@ -61,4 +63,5 @@ export const addChemicalProcessingRecipes = (event) => {
         .itemOutputs("1x gtceu:calcium_hydride_dust")
         .EUt(GTValues.VH[GTValues.LV])
         .duration(5 * 20);
+
 };
