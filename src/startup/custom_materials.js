@@ -271,8 +271,10 @@ export const addMaterials = (event) => {
         "2x gtceu:hydrogen"
     );
 
-    event.create(new ResourceLocation("nijika:calcium_silicate"))
-        .color(0xafcfaf).dust()
+    event
+        .create(new ResourceLocation("nijika:calcium_silicate"))
+        .color(0xafcfaf)
+        .dust()
         .components("2x gtceu:calcium", "1x gtceu:silicon", "4x gtceu:oxygen");
 
     event

@@ -68,11 +68,9 @@ export const addChemicalProcessingRecipes = (event) => {
 
     // Direct preparation of Calcium sillicate.
     // 2 CaO + SiO2 = Ca2SiO4
-    event.recipes.gtceu.chemical_reactor("nijika:chemicals/calcium_sillicate")
-        .itemInputs(
-            "2x gtceu:quicklime_dust",
-            "1x gtceu:silicon_dioxide_dust",
-        )
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/calcium_sillicate")
+        .itemInputs("2x gtceu:quicklime_dust", "1x gtceu:silicon_dioxide_dust")
         .itemOutputs("1x gtceu:calcium_silicate_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);

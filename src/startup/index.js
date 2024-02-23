@@ -72,14 +72,18 @@ export const customiseMaterials = () => {
     {
         let oreProp = getOreProperty(magnetite);
         // likewise... actually appends. this is a much easier method for vanadium...
-        oreProp.setOreByProducts(getMaterial("vanadium_pentoxide"))
+        oreProp.setOreByProducts(getMaterial("vanadium_pentoxide"));
     }
 
     let hematite = getMaterial("hematite");
     {
         let oreProp = getOreProperty(hematite);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesia"), getMaterial("calcium"));
+        oreProp.setOreByProducts(
+            getMaterial("iron"),
+            getMaterial("magnesia"),
+            getMaterial("calcium")
+        );
     }
 
     // remove direct smelting of pentlandite

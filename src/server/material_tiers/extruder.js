@@ -65,9 +65,9 @@ export const fixExtruderRecipeTier = (event) => {
                 .itemInputs(Item.of(`#forge:ingots/${material.name}`).withCount(in_count))
                 .notConsumable(`gtceu:${size_name}_pipe_extruder_mold`)
                 .itemOutputs(
-                    Item.of(
-                        `${modid}:${material.name}_${size_name}_${type}_pipe`
-                    ).withCount(out_count)
+                    Item.of(`${modid}:${material.name}_${size_name}_${type}_pipe`).withCount(
+                        out_count
+                    )
                 )
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass * in_count);
