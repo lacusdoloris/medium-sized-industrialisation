@@ -290,4 +290,24 @@ export const addMaterials = (event) => {
             GTMaterialFlags.GENERATE_FRAME
         )
         .color(0x1278ee);
+
+    // == Molybdenum Processing == //
+    chemicalIntermediate("molybdenum_trioxide", 0xc6a9fc).components(
+        "1x gtceu:molybdenum",
+        "3x gtceu:oxygen"
+    );
+
+    chemicalIntermediate("molybdenum_dioxide", 0x645580).components(
+        "1x gtceu:molybdenum",
+        "2x gtceu:oxygen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:ferromolybdenum"))
+        .ingot()
+        .dust()
+        .color(0x7caccc)
+        .components("3x gtceu:molybdenum", "2x gtceu:iron")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.SHINY);
 };

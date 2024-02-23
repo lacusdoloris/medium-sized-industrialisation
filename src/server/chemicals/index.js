@@ -4,6 +4,7 @@ import { addGalliumArsenicRecipes } from "./gallum_arsenic";
 import { addMiscIronRecipes } from "./iron";
 import { addMagnesiumProcessingRecipes } from "./magnesium";
 import { addManganeseProcessingRecipes } from "./manganese";
+import { addMolybdenumProcessingRecipes } from "./molybdenum";
 import { addRareEarthProcessingChain } from "./rare_earths";
 import { addTantaliteProcessingChain } from "./tantalum";
 import { addVanadiumChemicalChain } from "./vanadium";
@@ -23,6 +24,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addRareEarthProcessingChain(event);
     addMiscIronRecipes(event);
     addMagnesiumProcessingRecipes(event);
+    addMolybdenumProcessingRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu

@@ -70,5 +70,5 @@ export const addChromiteProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .blastFurnaceTemp(2700)
-        .duration(10 * 20);
+        .duration(30 * 20);
 };

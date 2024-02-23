@@ -23,15 +23,21 @@ mode = "fancy"
 
 			[light_sources.settings.entities.minecraft]
 				item = true
-				minecart = true
 				chicken = true
+				bee = true
 				wolf = true
-				rabbit = true
-				glow_item_frame = false
 				furnace_minecart = true
 				chest_minecart = true
-				sheep = true
 				fox = true
-				player = true
 				pig = true
+				minecart = true
+				rabbit = true
+				glow_item_frame = false
+				sheep = true
+				experience_orb = true
+				player = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true
+				super_glue = true
 

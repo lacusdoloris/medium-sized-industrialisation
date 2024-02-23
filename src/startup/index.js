@@ -139,10 +139,20 @@ export const customiseMaterials = () => {
         monazite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
         monazite.setFormula("(Ce...)(PO4)");
 
-        let oreProp = getOreProperty("monazite");
+        let oreProp = getOreProperty(monazite);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts("phosphate", "thorium_hydroxide");
         oreProp.getSeparatedInto().clear();
+    }
+
+    let molybdenite = getMaterial("molybdenite");
+    {
+        molybdenite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        let oreProp = getOreProperty(molybdenite);
+
+        oreProp.setDirectSmeltResult(null);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(getMaterial("chalcopyrite"), getMaterial("gcyr:fluorite"));
     }
 
     // have to do this here, because the material builder doesn't seem to have a way to override
