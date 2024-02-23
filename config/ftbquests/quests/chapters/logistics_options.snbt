@@ -35,7 +35,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4E722FB95D8BE0E0"]
+			dependencies: ["0D4436DD0D650674"]
 			description: [
 				"&dPretty Pipes&r is an extremely useful minature logistics mod that can help you automate things in the early game."
 				""
