@@ -3,7 +3,7 @@ name: Automatic Build
 # no pull request building, don't need it quite frankly
 on:
     push:
-        branches: [mizuki]
+        branches: [mizuki, ena]
 
 jobs:
     build-mrpack-client:
