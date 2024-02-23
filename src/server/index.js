@@ -15,6 +15,7 @@ import { doTier00Content } from "./tier00";
 import { doTier01Content } from "./tier01";
 import { doTier02Content } from "./tier02";
 import { doTier03Content } from "./tier03";
+import { doTier04Content } from "./tier04";
 
 ServerEvents.tags("items", setupItemTags);
 
@@ -22,20 +23,17 @@ ServerEvents.recipes((event) => {
     // == COMMON == //
     doCleanups(event);
     adjustMaterialTierRecipes(event);
-
     adjustVariousMiscRecipes(event);
     doModRecipes(event);
-
     addChemicalProcessingRecipes(event);
 
-    // == EARLYGAME == //
+    // == TIERED CONTENT == //
 
     doTier00Content(event);
     doTier01Content(event);
-
-    // == Early-Mid Game == //
     doTier02Content(event);
     doTier03Content(event);
+    doTier04Content(event);
 });
 
 GTCEuServerEvents.oreVeins((event) => {
