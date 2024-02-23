@@ -64,6 +64,17 @@ Advanced Users \& Developers
 
 Please see the ``DEVDOCS.rst`` file in the repository root for more information.
 
+Branches
+~~~~~~~~
+
+BI is developed in two primary branches:
+
+- The `Mizuki <https://www.sekaipedia.org/wiki/Akiyama_Mizuki>`_ branch is the latest development
+  version.
+
+- The `Ena <https://www.sekaipedia.org/wiki/Shinonome_Ena>`_ branch is cherrypicked commits from
+  the development branch that don't affect progression, and only contains fixes. This is
+  forcibly rebased to the latest tag.
 
 Included Mods
 -------------
