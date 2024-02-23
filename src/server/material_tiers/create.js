@@ -62,12 +62,20 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
 
     iterateOverAllMaterials((material) => {
         let id = material.name;
+        let modId = material.modid == "nijika" ? "gtceu" : material.modid;
         let hasWire = material.hasProperty(PropertyKey.WIRE);
         let hasRod = material.hasFlag(GTMaterialFlags.GENERATE_ROD);
         let hasPlate = material.hasFlag(GTMaterialFlags.GENERATE_PLATE);
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
-            event.recipes.createaddition.rolling(`2x ${material.modid}:${id}_foil`, `#forge:plates/${id}`);
+            if (!Item.exists(`${modId}:${id}_foil`)) {
+                console.warn("missing foil for " + modId + ":" + id + "???")
+            } else {
+                event.recipes.createaddition.rolling(
+                    `2x ${modId}:${id}_foil`,
+                    `#forge:plates/${id}`
+                );
+            }3
         }
 
         // auto-generate millstone + crushing wheel recipes for mortar recipes.
@@ -75,20 +83,20 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
             let recipeId = `nijika:auto/dust/${id}`;
             if (material.hasProperty(PropertyKey.INGOT)) {
                 event.recipes.create
-                    .milling(`1x ${material.modid}:${id}_dust`, `#forge:ingots/${id}`)
+                    .milling(`1x ${modId}:${id}_dust`, `#forge:ingots/${id}`)
                     .id(recipeId);
             } else if (material.hasProperty(PropertyKey.GEM)) {
                 event.recipes.create
-                    .milling(`1x ${material.modid}:${id}_dust`, `#forge:gems/${id}`)
+                    .milling(`1x ${modId}:${id}_dust`, `#forge:gems/${id}`)
                     .id(recipeId);
             }
         }
 
         if (hasRod) {
             // yeeah, idk either. thanks gtceu.
-            if (Item.exists(`${material.modid}:${id}_rod`)) {
+            if (Item.exists(`${modId}:${id}_rod`)) {
                 event.recipes.createaddition
-                    .rolling(`1x ${material.modid}:${id}_rod`, `1x #forge:ingots/${id}`)
+                    .rolling(`1x ${modId}:${id}_rod`, `1x #forge:ingots/${id}`)
                     .id(`nijika:auto/rods/${id}`);
             } else if (id !== "wood") {
                 console.log("what the fuck, gtceu? missing a rod for " + id);
