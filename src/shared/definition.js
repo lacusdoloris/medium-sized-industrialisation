@@ -22,10 +22,16 @@ export class Material {
      * Gets this material as a component with the specified suffix.
      */
     component(suffix) {
+        if (this.modId == "nijika") {
+            return `gtceu:${this.materialName}_${suffix}`;
+        }
         return `${this.modId}:${this.materialName}_${suffix}`;
     }
 
     get id() {
+        if (this.modId == "nijika") {
+            return `gtceu:${this.materialName}`;
+        }
         return `${this.modId}:${this.materialName}`;
     }
 
@@ -61,6 +67,7 @@ export class Tier {
      * @param {string} tierMaterials.grinder The item used for grinding components.
      * @param {Material} tierMaterials.emitterRod The rod type used for emitters and sensors.
      * @param {string} tierMaterials.emitterGem The gem item used used for emitters and sensors.
+     * @param {Material} tierMaterials.gear The gear material used for certain components.
      *
      * @param {boolean} usesAssemblyLine If true, then this uses the assembly line rather than
      *                                   assemblers. Defaults to False.
@@ -190,6 +197,7 @@ export const GT_MACHINE_TIERS = {
         grinder: "#forge:gems/diamond",
         emitterRod: Material.gtceu("bronze"), // Changed from Brass
         emitterGem: "minecraft:quartz", // Changed from Quartzite
+        gear: Material.gtceu("iron"),
     }),
 
     MV: new Tier("mv", {
@@ -206,6 +214,7 @@ export const GT_MACHINE_TIERS = {
         grinder: "#forge:gems/diamond",
         emitterRod: Material.gtceu("electrum"),
         emitterGem: "gtceu:flawless_emerald_gem",
+        gear: Material.gtceu("steel"),
     }),
 
     HV: new Tier("hv", {
@@ -223,6 +232,7 @@ export const GT_MACHINE_TIERS = {
         grinder: "gtceu:diamond_grinding_head",
         emitterRod: Material.gtceu("chromium"),
         emitterGem: "minecraft:ender_eye",
+        gear: Material.gtceu("vanadium_steel"),
     }),
 
     EV: new Tier("ev", {
