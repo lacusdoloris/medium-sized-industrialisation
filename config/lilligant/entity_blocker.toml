@@ -20,4 +20,7 @@ blockedEntities = [
     "minecraft:llama",
     "minecraft:turtle",
     "minecraft:wolf",
+    "minecraft:pig",
+    "minecraft:fox",
+    "minecraft:frog",
 ]
