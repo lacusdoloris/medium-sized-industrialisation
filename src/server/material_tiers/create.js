@@ -69,13 +69,14 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
             if (!Item.exists(`${modId}:${id}_foil`)) {
-                console.warn("missing foil for " + modId + ":" + id + "???")
+                console.warn("missing foil for " + modId + ":" + id + "???");
             } else {
                 event.recipes.createaddition.rolling(
                     `2x ${modId}:${id}_foil`,
                     `#forge:plates/${id}`
                 );
-            }3
+            }
+            3;
         }
 
         // auto-generate millstone + crushing wheel recipes for mortar recipes.

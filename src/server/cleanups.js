@@ -44,8 +44,9 @@ const cleanupManualToolRecipes = (event) => {
 
     event.remove({ input: "#forge:tools/wrenches", type: "minecraft:crafting_shaped" });
 
-    // no more manual buzzsaw blades
+    // no more manual buzzsaw blades or turbine blades
     event.remove({ output: /gtceu:.*_buzz_saw_blade/, type: "minecraft:crafting_shaped" });
+    event.remove({ output: /gtceu:.*_turbine_blade/, type: "minecraft:crafting_shaped" });
 
     let types = ["small_gears", "gears", "rotors", "bolts", "screws", "springs"];
     for (let itemType of types) {
