@@ -130,4 +130,13 @@ export const adjustCreateRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
         ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
+
+    event
+        .shaped("create:brown_toolbox", [" W ", "SCS", " K "], {
+            W: "create:cogwheel",
+            S: "#forge:foils/silver",
+            C: "#forge:chests/wooden",
+            K: "minecraft:dried_kelp",
+        })
+        .id("create:crafting/curiosities/brown_toolbox");
 };
