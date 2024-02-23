@@ -263,4 +263,25 @@ export const addMaterials = (event) => {
         .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .blastTemp(1400)
         .components("1x gtceu:lanthanum", "5x gtceu:nickel");
+
+    // == Magnesium Alloy == //
+    chemicalIntermediate("magnesium_hydroxide", 0xff12ff).components(
+        "1x gtceu:magnesium",
+        "2x gtceu:oxygen",
+        "2x gtceu:hydrogen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:az_91"))
+        .ingot()
+        .dust()
+        .blastTemp(3100)
+        .flags(
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+        .color(0x1278ee);
 };

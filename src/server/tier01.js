@@ -58,14 +58,14 @@ export const doTier01Content = (event) => {
 
     // im so sorry.
     event.recipes.create
-        .sequenced_assembly("1x gtceu:small_wrought_iron_gear", "1x gtceu:wrought_iron_plate", [
+        .sequenced_assembly("1x gtceu:small_iron_gear", "1x gtceu:iron_plate", [
             event.recipes.create.deploying("gtceu:wrought_iron_plate", [
-                "gtceu:wrought_iron_plate",
-                "#forge:rods/wrought_iron",
+                "gtceu:iron_plate",
+                "#forge:rods/iron",
             ]),
-            event.recipes.create.pressing("gtceu:wrought_iron_plate", ["gtceu:wrought_iron_plate"]),
+            event.recipes.create.pressing("gtceu:_iron_plate", ["gtceu:iron_plate"]),
         ])
-        .transitionalItem("gtceu:wrought_iron_plate")
+        .transitionalItem("gtceu:iron_plate")
         .loops(4)
         .id("nijika:tier01/evil_gear_recipe");
 
