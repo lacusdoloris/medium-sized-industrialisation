@@ -41,6 +41,8 @@ export const customiseMaterials = () => {
         "galena",
         "chalcopyrite",
         "realgar",
+        // Why does this have a centrifuge decomposition, of all things?
+        "gcyr:iron_oxide",
         // Required for slag byproduccts.
         "magnetite",
         "hematite",
@@ -60,10 +62,24 @@ export const customiseMaterials = () => {
         let oreProp = getOreProperty(chromite);
         // setOreByProducts acttually *appends*, not sets!
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"), chromite);
+        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesia"), chromite);
 
         // we have our own processing chain
         chromite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
+    let magnetite = getMaterial("magnetite");
+    {
+        let oreProp = getOreProperty(magnetite);
+        // likewise... actually appends. this is a much easier method for vanadium...
+        oreProp.setOreByProducts(getMaterial("vanadium_pentoxide"))
+    }
+
+    let hematite = getMaterial("hematite");
+    {
+        let oreProp = getOreProperty(hematite);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesia"), getMaterial("calcium"));
     }
 
     // remove direct smelting of pentlandite

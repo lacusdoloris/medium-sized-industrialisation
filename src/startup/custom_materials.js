@@ -264,7 +264,7 @@ export const addMaterials = (event) => {
         .blastTemp(1400)
         .components("1x gtceu:lanthanum", "5x gtceu:nickel");
 
-    // == Magnesium Alloy == //
+    // == Magnesium Processing == //
     chemicalIntermediate("magnesium_hydroxide", 0xff12ff).components(
         "1x gtceu:magnesium",
         "2x gtceu:oxygen",
