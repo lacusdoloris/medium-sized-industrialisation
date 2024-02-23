@@ -15,6 +15,7 @@ export const addGalliumArsenicRecipes = (event) => {
         .itemOutputs("2x gtceu:arsenic_trioxide_dust")
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(4 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1100)
         .duration(120);
 
     // Orpiment roasting, 2 As2S3 + 9 O2 = 2 As2O3 + 6 SO2
@@ -26,6 +27,7 @@ export const addGalliumArsenicRecipes = (event) => {
         .itemOutputs("2x gtceu:arsenic_trioxide_dust")
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1100)
         .duration(120);
 
     // Arsenic trioxide -> Arsenic trichloride, As2O3 + 6 HCl = 2 AsCl3 + 3 H2O
