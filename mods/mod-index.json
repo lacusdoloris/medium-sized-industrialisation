@@ -130,14 +130,14 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "1b000a3da3ddd7f24446b2d54849a2282c3a7d022ed7f77ba963beb6f10c44d419d27d88b66113de8d0160b5279b44e2d8738d1b80a43d354ef88b45575470a3",
+        "checksum": "c61612cd3c03696405647b539c1b12df856d5877747526f35f6d9c22c7243d21c1729dc596e5e13ec29fda40c80aed44cef53d353e83e1d8fc514279083852ac",
         "client_side_only": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.92.0+1.11.1+1.20.1",
-        "version_id": "1SWYhNrt"
+        "version": "0.92.0+1.11.3+1.20.1",
+        "version_id": "pWa2YXuc"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
