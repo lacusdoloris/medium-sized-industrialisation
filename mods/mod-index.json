@@ -479,6 +479,16 @@
         "version": "1.20.1-1.0.0",
         "version_id": "rDOGTJ12"
     },
+    "YWGP4Y1d": {
+        "checksum": "9a993cb1c6146a64ff09bd2e0309f5c7fa44a314536056b8e724cfff6c0566fc31bcc834bb7c1362e22c05a5b5e045bbed25393f85444e44cdbd55e3015ce818",
+        "client_side_only": false,
+        "name": "Chalk",
+        "pinned": false,
+        "project_id": "YWGP4Y1d",
+        "selected": true,
+        "version": "1.6.3",
+        "version_id": "7CMo7kxT"
+    },
     "YqFnwJHf": {
         "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
         "client_side_only": false,
