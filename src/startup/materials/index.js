@@ -1,5 +1,5 @@
 import { nijikaId } from "../../shared/utils";
-import { createAcidicIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
+import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChromiumMaterials } from "../../shared/chemicals/chromium";
 import { addGalliumArsenicMaterials } from "../../shared/chemicals/gallum_arsenic";
@@ -10,6 +10,8 @@ import { addVanadiumMaterials } from "../../shared/chemicals/vanadium";
 import { addRareEarthMaterials } from "../../shared/chemicals/rare_earths";
 import { addMagnesiumMaterials } from "../../shared/chemicals/magnesium";
 import { addMolybdenumMaterials } from "../../shared/chemicals/molybdenum";
+import { addGoldMaterials } from "../../shared/chemicals/gold";
+import { addCyanideMaterials } from "../../shared/chemicals/cyanide";
 
 /**
  * Adds new custom materials.
@@ -19,7 +21,9 @@ export const addCustomMaterials = (event) => {
     
     addAluminiumMaterials(event);
     addChromiumMaterials(event);
+    addCyanideMaterials(event);
     addGalliumArsenicMaterials(event);
+    addGoldMaterials(event);
 
 
     addMagnesiumMaterials(event);

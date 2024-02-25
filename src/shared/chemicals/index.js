@@ -1,5 +1,6 @@
 import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
+import { addCyanideMaterials, addCyanideRecipes } from "./cyanide";
 import { addGalliumArsenicRecipes } from "./gallum_arsenic";
 import { addMiscIronRecipes } from "./iron";
 import { addMagnesiumProcessingRecipes } from "./magnesium";
@@ -25,6 +26,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addMiscIronRecipes(event);
     addMagnesiumProcessingRecipes(event);
     addMolybdenumProcessingRecipes(event);
+    addCyanideRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu

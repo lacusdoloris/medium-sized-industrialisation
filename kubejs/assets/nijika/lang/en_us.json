@@ -55,6 +55,13 @@
     "material.nijika.molybdenum_trioxide": "Molybdenum Trioxide",
     "material.nijika.molybdenum_dioxide": "Molybdenum Dioxide",
     "material.nijika.ferromolybdenum": "Ferromolybdenum",
+    "material.nijika.hydrogen_cyanide": "Hydrogen Cyanide",
+    "material.nijika.sodium_cyanide": "Sodium Cyanide",
+    "material.nijika.copper_cyanide": "Copper Cyanide",
+    "material.nijika.impure_molybdenum_trioxide": "Impure Molybdenum Trioxide",
+    "material.nijika.cyanotic_molybdenum_trioxide": "Cyanotic Molybdenum Trioxide",
+    "material.nijika.chlorinated_molybdenum_trioxide": "Chlorinated Molybdenum Trioxide",
+    "material.nijika.sodium_dicyanoaurate": "Sodium Dicyanoaurate",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

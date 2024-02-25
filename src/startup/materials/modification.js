@@ -178,6 +178,7 @@ export const customiseMaterials = () => {
     getMaterial("rare_earth_chlorides").setFormula("(Ce...)Cl3");
     getMaterial("thorium_hydroxide").setFormula("Th(OH)4");
     getMaterial("magnesium_hydroxide").setFormula("Mg(OH)2");
+    getMaterial("sodium_dicyanoaurate").setFormula("Na[Au(CN)2]");
 
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
