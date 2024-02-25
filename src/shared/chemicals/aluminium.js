@@ -15,11 +15,14 @@ export const addAluminiumMaterials = (event) => {
         .components("1x gtceu:sodium", "1x gtceu:aluminium", "2x gtceu:oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-    createDustIntermediate(event, "alumina", 0xa1c2c1).components("2x gtceu:aluminium", "3x gtceu:oxygen");
+    createDustIntermediate(event, "alumina", 0xa1c2c1).components(
+        "2x gtceu:aluminium",
+        "3x gtceu:oxygen"
+    );
 
     createAcidicIntermediate(event, "red_mud", 0xff0000).dust();
     createAcidicIntermediate(event, "red_mud_slurrry", 0xaf3300);
-}
+};
 
 /**
  * Adds the aluminium processing chain.

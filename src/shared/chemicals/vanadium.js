@@ -9,7 +9,7 @@ export const addVanadiumMaterials = (event) => {
         "2x gtceu:vanadium",
         "5x gtceu:oxygen"
     );
-}
+};
 
 /**
  * Adds the vanadium chemical processing chain.

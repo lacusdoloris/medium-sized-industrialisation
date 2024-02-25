@@ -15,7 +15,7 @@ export const addGalliumArsenicMaterials = (event) => {
         "1x gtceu:arsenic",
         "3x gtceu:chlorine"
     );
-}
+};
 
 /**
  * Reworks Gallium, Arsenic, and Gallium Arsenide processing for tier 1.

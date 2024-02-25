@@ -31,6 +31,7 @@ mode = "fancy"
 				chest_minecart = true
 				fox = true
 				pig = true
+				horse = true
 				minecart = true
 				rabbit = true
 				glow_item_frame = false

@@ -27,7 +27,7 @@ export const addChromiumMaterials = (event) => {
         .components("gtceu:iron", "gtceu:chromium")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
         .iconSet(GTMaterialIconSet.SHINY);
-}
+};
 
 /**
  * Adds recipes for Chromite processing.

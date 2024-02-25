@@ -1,5 +1,9 @@
 import { nijikaId } from "../../shared/utils";
-import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
+import {
+    createAcidicIntermediate,
+    createAqueousIntermediate,
+    createDustIntermediate,
+} from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChromiumMaterials } from "../../shared/chemicals/chromium";
 import { addGalliumArsenicMaterials } from "../../shared/chemicals/gallum_arsenic";
@@ -18,13 +22,12 @@ import { addCyanideMaterials } from "../../shared/chemicals/cyanide";
  */
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
-    
+
     addAluminiumMaterials(event);
     addChromiumMaterials(event);
     addCyanideMaterials(event);
     addGalliumArsenicMaterials(event);
     addGoldMaterials(event);
-
 
     addMagnesiumMaterials(event);
     addManganeseMaterials(event);
@@ -35,8 +38,11 @@ export const addCustomMaterials = (event) => {
 
     // misc stuff.
     event.create(nijikaId("blood")).liquid().color(0xff0000);
-    createAcidicIntermediate(event, "ammonium_hydroxide", 0xcdd6f7)
-        .components("1x gtceu:ammonia", "1x gtceu:oxygen", "1x gtceu:hydrogen");
+    createAcidicIntermediate(event, "ammonium_hydroxide", 0xcdd6f7).components(
+        "1x gtceu:ammonia",
+        "1x gtceu:oxygen",
+        "1x gtceu:hydrogen"
+    );
 
     createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
     createAcidicIntermediate(event, "slag_slurry", 0x373226);

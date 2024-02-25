@@ -3,11 +3,7 @@ const PropertyKey = Java.loadClass(
 );
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
-import {
-    getBlastProperty,
-    getMaterial,
-    getOreProperty,
-} from "../../shared/utils";
+import { getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
 
 const DISABLE_DECOMPOSITION = [
     // Sulfur containing materials. These are roasted instead.
@@ -31,10 +27,7 @@ const DISABLE_DECOMPOSITION = [
 ];
 
 /** A list of materials to actually add dusts & ingots to. */
-const ADD_METALS = [
-    "rhenium",
-]
-
+const ADD_METALS = ["rhenium"];
 
 export const customiseMaterials = () => {
     // add foil flag here, for fluxed magnets
@@ -56,7 +49,7 @@ export const customiseMaterials = () => {
         }
     }
 
-    // remove auto-generated decomposition recipes for all of these 
+    // remove auto-generated decomposition recipes for all of these
     for (let matName of DISABLE_DECOMPOSITION) {
         getMaterial(matName).addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }

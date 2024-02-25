@@ -17,7 +17,7 @@ export const addManganeseMaterials = (event) => {
         .color(0x535353)
         .components("1x gtceu:manganese", "1x gtceu:oxygen")
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING);
-}
+};
 
 /**
  * Adds manganese-related processing recipes.

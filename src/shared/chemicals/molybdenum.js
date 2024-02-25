@@ -25,7 +25,7 @@ export const addMolybdenumMaterials = (event) => {
         .components("3x gtceu:molybdenum", "2x gtceu:iron")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
         .iconSet(GTMaterialIconSet.SHINY);
-}
+};
 
 /**
  * Adds recipes for the processing of molybdenum.
@@ -69,48 +69,55 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .blastFurnaceTemp(923);
 
     // Leach with Sodium Cyanide (aq) to get Cyanotic Molybdenum.
-    event.recipes.gtceu.chemical_reactor("nijika:chemicals/molybdenum/leaching_1")
-        .itemInputs(
-            "2x gtceu:impure_molybdenum_trioxide_dust",
-            "4x gtceu:sodium_cyanide_dust"
-        )
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/molybdenum/leaching_1")
+        .itemInputs("2x gtceu:impure_molybdenum_trioxide_dust", "4x gtceu:sodium_cyanide_dust")
         .inputFluids(Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET))
-        .outputFluids(Fluid.of("gtceu:cyanotic_molybdenum_trioxide").withAmount(6 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:cyanotic_molybdenum_trioxide").withAmount(6 * FluidAmounts.BUCKET)
+        )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);
-    
-    event.recipes.gtceu.centrifuge("nijika:chemicals/molybdenum/cyanotic_centrifuging")
-        .inputFluids(Fluid.of("gtceu:cyanotic_molybdenum_trioxide").withAmount(9 * FluidAmounts.BUCKET))
-        .itemOutputs(
-            "2x gtceu:cyanotic_molybdenum_trioxide_dust",
+
+    event.recipes.gtceu
+        .centrifuge("nijika:chemicals/molybdenum/cyanotic_centrifuging")
+        .inputFluids(
+            Fluid.of("gtceu:cyanotic_molybdenum_trioxide").withAmount(9 * FluidAmounts.BUCKET)
         )
+        .itemOutputs("2x gtceu:cyanotic_molybdenum_trioxide_dust")
         .chancedFluidOutput(
             Fluid.of("gtceu:sodium_dicyanoaurate").withAmount(2 * FluidAmounts.BUCKET),
-            1500.0, 5.0
+            1500.0,
+            5.0
         )
         .chancedOutput("3x gtceu:small_copper_cyanide_dust", 7800, 134.0)
-        .outputFluids(
-            Fluid.of("gtceu:water").withAmount(6 * FluidAmounts.BUCKET)
-        )
+        .outputFluids(Fluid.of("gtceu:water").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(10);
-    
+
     // Leach with Iron (III) Chloride to get Chlorinated Molybdenum.
-    event.recipes.gtceu.chemical_bath("nijika:chemicals/molybdenum/leaching_2")
+    event.recipes.gtceu
+        .chemical_bath("nijika:chemicals/molybdenum/leaching_2")
         .inputFluids(Fluid.of("gtceu:iron_iii_chloride").withAmount(3 * FluidAmounts.BUCKET))
         .itemInputs("2x gtceu:cyanotic_molybdenum_trioxide_dust")
-        .outputFluids(Fluid.of("gtceu:chlorinated_molybdenum_trioxide").withAmount(3 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:chlorinated_molybdenum_trioxide").withAmount(3 * FluidAmounts.BUCKET)
+        )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
-    
-    event.recipes.gtceu.centrifuge("nijika:chemicals/molybdenum/chlorinated_centrifuging")
-        .inputFluids(Fluid.of("gtceu:chlorinated_molybdenum_trioxide").withAmount(6 * FluidAmounts.BUCKET))
+
+    event.recipes.gtceu
+        .centrifuge("nijika:chemicals/molybdenum/chlorinated_centrifuging")
+        .inputFluids(
+            Fluid.of("gtceu:chlorinated_molybdenum_trioxide").withAmount(6 * FluidAmounts.BUCKET)
+        )
         .itemOutputs("3x gtceu:molybdenum_trioxide_dust")
-        .outputFluids(Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(500 * FluidAmounts.MILLIBUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(500 * FluidAmounts.MILLIBUCKET)
+        )
         .chancedOutput("2x gtceu:small_calcium_chloride_dust", 1630.0, 150.0)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10);
-        
 
     // Reduce using hydrogen to get raw Molybdenum metal...
     // MoO3 + 3 H2 = Mo + 3 H2O

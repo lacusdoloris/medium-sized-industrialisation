@@ -26,8 +26,7 @@ export const addMagnesiumMaterials = (event) => {
             GTMaterialFlags.GENERATE_FRAME
         )
         .color(0x1278ee);
-
-}
+};
 
 /**
  * Adds recipes for proceessing magnesium.

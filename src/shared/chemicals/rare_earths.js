@@ -62,7 +62,7 @@ export const addRareEarthMaterials = (event) => {
         .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .blastTemp(1400)
         .components("1x gtceu:lanthanum", "5x gtceu:nickel");
-    }
+};
 
 /**
  * Adds the basic rare earth processing chains.

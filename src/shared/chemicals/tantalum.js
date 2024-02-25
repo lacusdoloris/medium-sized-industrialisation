@@ -33,7 +33,7 @@ export const addTantalumMaterials = (event) => {
         .dust()
         .color(0x9c949c)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
-}
+};
 
 /**
  * Adds a mostly fictional tantalite processing chain.
