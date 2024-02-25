@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_min_width: 400
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "multiblock_goals"
 	group: "14EE7AEE0EF05AEE"
@@ -262,7 +262,7 @@
 		{
 			dependencies: ["641046C8A91952E9"]
 			description: [
-				"The &dButcher&r is a multiblock that farms mob drops. Mob spawning is disabled for performance reason, so this is used to get the drops you otherwise wouldn't be able to get."
+				"The &dButcher&r is a multiblock that farms mob drops. Mob spawning is disabled for performance reasons, so this is used to get the drops you otherwise wouldn't be able to get."
 				""
 				"It needs a steady supply of mob spawn eggs, which are created from autoclaving &dblood&r and somee &dcalcite dust&r. You can get your initial supply of blood from &dBlackstone&r."
 			]
@@ -276,6 +276,86 @@
 			title: "The Butcherer"
 			x: 1.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["224D936C415AA016"]
+			description: ["&dFerrochrolumium&r coils will give your EBFs a nice speed boost, as well as finally get rid of the penalty for your Pyrolyse Ovens."]
+			id: "57950935D5B5C5DE"
+			tasks: [{
+				id: "4ADF17FEB1B55656"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "Coil #2"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57950935D5B5C5DE"]
+			id: "232472832AA5E201"
+			invisible: true
+			tasks: [{
+				id: "3F228C03CE0321CB"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["232472832AA5E201"]
+			id: "2E751DC3293936A1"
+			tasks: [{
+				id: "4E2FDE6B9F8D50C4"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E751DC3293936A1"]
+			id: "71AD47D8083E6F91"
+			tasks: [{
+				id: "28892588C0723D87"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["71AD47D8083E6F91"]
+			id: "355C74BFB5BE8A54"
+			tasks: [{
+				id: "39856455B6285C00"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["355C74BFB5BE8A54"]
+			id: "433CB59A4F03F009"
+			tasks: [{
+				id: "0C191AD922930F33"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["433CB59A4F03F009"]
+			id: "616D0E97EA9FDB93"
+			tasks: [{
+				id: "3A144CBA3BE42F8F"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
 		}
 	]
 	subtitle: ["A guide to the various multiblocks you can build."]
