@@ -1,6 +1,9 @@
 const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
+const WireProperties = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
+)
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
@@ -43,6 +46,7 @@ export const customiseMaterials = () => {
     // flags.
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
         getMaterial(tier.materials.motorWire.id).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
+
         let gearMaterial = tier.materials.gear;
         if (typeof gearMaterial !== "undefined") {
             getMaterial(gearMaterial.id).addFlags(GTMaterialFlags.GENERATE_GEAR);
@@ -160,6 +164,11 @@ export const customiseMaterials = () => {
         oreProp.setDirectSmeltResult(null);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(getMaterial("chalcopyrite"), getMaterial("gcyr:fluorite"));
+    }
+
+    let zinc = getMaterial("zinc");
+    {
+        zinc.properties.setProperty(PropertyKey.WIRE, new WireProperties(GTValues.V[GTValues.MV], 3, 1));
     }
 
     // have to do this here, because the material builder doesn't seem to have a way to override

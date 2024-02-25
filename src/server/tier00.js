@@ -188,4 +188,13 @@ export const doTier00Content = (event) => {
         "#forge:plates/steel",
         "#forge:plates/wrought_iron"
     );
+
+    event.shapeless(
+        "5x gtceu:corinthian_bronze_dust",
+        ["4x #forge:dusts/copper", "1x #forge:dusts/silver"]
+    ).id("nijika:tier00/corinthian_bronze");
+    event.recipes.create.mixing(
+        "5x gtceu:corinthian_bronze_ingot",
+        ["4x #forge:ingots/copper", "1x #forge:ingots/silver"],
+    ).heated().id("nijika:tier00/corinthian_bronze_heated_mixing");
 };

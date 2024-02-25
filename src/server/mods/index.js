@@ -1,5 +1,6 @@
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { adjustCreateRecipes } from "./create";
+import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustMysticalAgricultureRecipes } from "./mysticalagriculture";
@@ -52,21 +53,20 @@ export const doModRecipes = (event) => {
             .shaped("toolbelt:pouch", ["SGS", "K K", "SKS"], {
                 S: "minecraft:string",
                 K: "minecraft:dried_kelp",
-                G: "minecraft:gold_nugget",
+                G: "#forge:nuggets/corinthian_bronze",
             })
             .id("toolbelt:pouch");
     }
 
-    event.remove({ id: "essentials:auto_crafter" });
-    event
-        .shaped("essentials:auto_crafter", ["PLP", "THT", "PCP"], {
-            P: "#forge:plates/iron",
-            T: "#forge:workbench",
-            L: "#forge:gems/lapis",
-            H: GT_MACHINE_TIERS.LV.machineHull,
-            C: GT_MACHINE_TIERS.LV.circuitTag,
-        })
-        .id("nijika:mods/essentials/auto_crafter");
+    if (Platform.isLoaded("essentials")) {
+        adjustEssentialsRecipes(event);
+    }
+
+    event.shaped(
+        "reinfchest:gold_chest",
+        ["III", "ICI", "III"],
+        {I: "#forge:ingots/corinthian_bronze", C: "reinfchest:iron_chest"}
+    ).id("reinfchest:gold_chest");
 
     // why doesn't this work!
     event.replaceInput(

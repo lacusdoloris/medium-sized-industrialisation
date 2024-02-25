@@ -6,6 +6,8 @@
 export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
+    
+    event.replaceInput({ mod: "create" }, "#forge:plates/gold", "#forge:plates/corinthian_bronze");
 
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
     // this is only useful in LV as then you can actually *do* ore processing.
@@ -19,7 +21,7 @@ export const adjustCreateRecipes = (event) => {
         )
         .id("nijika:mods/create/crimsite_crushing");
 
-    event.recipes.create
+    /*event.recipes.create
         .crushing(
             [
                 Item.of("gtceu:crushed_gold_ore").withChance(0.4),
@@ -27,7 +29,7 @@ export const adjustCreateRecipes = (event) => {
             ],
             "create:ochrum"
         )
-        .id("nijika:mods/create/ochrum_crushing");
+        .id("nijika:mods/create/ochrum_crushing");*/
 
     event.recipes.create
         .crushing(
@@ -81,7 +83,7 @@ export const adjustCreateRecipes = (event) => {
     // for some fucking reason the precision mechanism doesn't show up in game!
     // so, let's just recreate it!
     event.recipes.create
-        .sequenced_assembly("1x create:precision_mechanism", "#forge:plates/gold", [
+        .sequenced_assembly("1x create:precision_mechanism", "#forge:plates/corinthian_bronze", [
             event.recipes.create.deploying("1x create:incomplete_precision_mechanism", [
                 "create:incomplete_precision_mechanism",
                 "create:cogwheel",
@@ -139,4 +141,14 @@ export const adjustCreateRecipes = (event) => {
             K: "minecraft:dried_kelp",
         })
         .id("create:crafting/curiosities/brown_toolbox");
+
+    event.shaped(
+        "8x create:controller_rail",
+        ["I I", "ISI", "IEI"],
+        {
+            I: "#forge:ingots/corinthian_bronze",
+            S: "#forge:rods/treated_wood",
+            E: "create:electron_tube",
+        }
+    )
 };

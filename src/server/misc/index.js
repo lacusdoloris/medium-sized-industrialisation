@@ -119,10 +119,21 @@ export const adjustVariousMiscRecipes = (event) => {
         })
         .id("minecraft:map");
 
-    event.remove({ id: "minecraft:book" });
     event.recipes.create
         .compacting("1x minecraft:book", "4x #forge:plates/paper")
-        .id("nijika:misc/easier_plates");
+        .id("minecraft:book");
+
+    event.shaped(
+        "minecraft:clock",
+        [" I ", "IRI", " I "],
+        {I: "#forge:ingots/corinthian_bronze", R: "#forge:dusts/redstone"}
+    ).id("minecraft:clock");
+
+    event.shaped(
+        "minecraft:light_weighted_pressure_plate",
+        ["II"],
+        {I: "#forge:ingots/corinthian_bronze"}
+    ).id("minecraft:light_weighted_pressure_plate")
 
     rewriteRailwayRecipes(event);
     redoGlassProcessing(event);

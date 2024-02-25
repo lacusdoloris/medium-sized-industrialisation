@@ -414,7 +414,7 @@
 				type: "item"
 			}]
 			title: "Dimethyldichlorosilane"
-			x: 5.0d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
@@ -537,7 +537,7 @@
 			}]
 			title: "HV Multiblocks"
 			x: 5.0d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["020FAE71BEDA6B1E"]
@@ -577,6 +577,16 @@
 			title: "EV Circuit #1"
 			x: 4.0d
 			y: 10.5d
+		}
+		{
+			id: "481BF454D5E692BD"
+			tasks: [{
+				id: "120D8F3976C1B707"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["The real fun begins here."]

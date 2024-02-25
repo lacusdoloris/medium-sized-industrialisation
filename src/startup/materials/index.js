@@ -47,6 +47,14 @@ export const addCustomMaterials = (event) => {
     createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
     createAcidicIntermediate(event, "slag_slurry", 0x373226);
 
+    event.create(nijikaId("corinthian_bronze"))
+        .color(0xa99023)
+        .ingot().dust()
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .rotorStats(13.0, 2.0, 196)
+        .components("4x gtceu:copper", "1x gtceu:silver");
+
     // fine to create decompositions for this, actually.
     event
         .create(nijikaId("sodium_fluoride"))
