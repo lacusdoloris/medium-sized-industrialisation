@@ -26,6 +26,7 @@ mode = "fancy"
 				chicken = true
 				bee = true
 				wolf = true
+				donkey = true
 				furnace_minecart = true
 				chest_minecart = true
 				fox = true

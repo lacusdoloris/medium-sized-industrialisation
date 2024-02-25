@@ -1,6 +1,16 @@
 // Ref: Vanadium and Vanadium Compounds
 // https://doi.org/10.1002/14356007.a27_367
 
+import { createDustIntermediate } from "../materials/helpers";
+
+export const addVanadiumMaterials = (event) => {
+    // == Vanadium == //
+    createDustIntermediate(event, "vanadium_pentoxide", 0xd5bf6b).components(
+        "2x gtceu:vanadium",
+        "5x gtceu:oxygen"
+    );
+}
+
 /**
  * Adds the vanadium chemical processing chain.
  *

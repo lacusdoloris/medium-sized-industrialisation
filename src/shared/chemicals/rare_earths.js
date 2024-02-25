@@ -1,7 +1,68 @@
 // See doi:10.1088/1742-6596/1436/1/012070 (open access) for the Monazite processing.
 
+import { createChemicalIntermediate, createDustIntermediate } from "../materials/helpers";
+
 // TODO: Bastanite, other rare earth containing minerals?
 // TODO: Uranium extraction.
+
+export const addRareEarthMaterials = (event) => {
+    event
+        .create(new ResourceLocation("nijika:calcium_hydride"))
+        .dust()
+        .color(0xf7e3e1)
+        .components("1x gtceu:calcium", "2x gtceu:hydrogen");
+
+    createChemicalIntermediate(event, "rare_earth_hydroxides", 0x1845ff);
+    createDustIntermediate(event, "rare_earth_mixture", 0x18453f);
+    createChemicalIntermediate(event, "rare_earth_chlorides", 0x447a12);
+
+    // TODO: custom decomposition?
+    event
+        .create(new ResourceLocation("nijika:trisodium_phosphate"))
+        .dust()
+        .color(0xff47a1)
+        .components("3x gtceu:sodium", "1x gtceu:phosphorus", "3x gtceu:oxygen");
+
+    createDustIntermediate(event, "lanthanum_iii_oxide", 0x53a1c7).components(
+        "2x gtceu:lanthanum",
+        "3x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "neodymium_iii_oxide", 0x18fc4e).components(
+        "2x gtceu:neodymium",
+        "3x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "samarium_iii_oxide", 0xf37a7a).components(
+        "2x gtceu:samarium",
+        "3x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "yttrium_iii_oxide", 0x4561a8).components(
+        "2x gtceu:yttrium",
+        "3x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "cerium_iv_oxide", 0x62b9d7).components(
+        "1x gtceu:cerium",
+        "2x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "thorium_hydroxide", 0x232323).components(
+        "1x gtceu:thorium",
+        "4x gtceu:oxygen",
+        "4x gtceu:hydrogen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:lanthanum_nickel_alloy"))
+        .ingot()
+        .dust()
+        .color(0x53a18f)
+        .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .blastTemp(1400)
+        .components("1x gtceu:lanthanum", "5x gtceu:nickel");
+    }
 
 /**
  * Adds the basic rare earth processing chains.

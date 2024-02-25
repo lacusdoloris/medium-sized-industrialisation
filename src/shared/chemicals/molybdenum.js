@@ -1,5 +1,28 @@
 // TODO: Consider adding purification of the output MoO3.
 
+import { createDustIntermediate } from "../materials/helpers";
+
+export const addMolybdenumMaterials = (event) => {
+    createDustIntermediate(event, "molybdenum_trioxide", 0xc6a9fc).components(
+        "1x gtceu:molybdenum",
+        "3x gtceu:oxygen"
+    );
+
+    createDustIntermediate(event, "molybdenum_dioxide", 0x645580).components(
+        "1x gtceu:molybdenum",
+        "2x gtceu:oxygen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:ferromolybdenum"))
+        .ingot()
+        .dust()
+        .color(0x7caccc)
+        .components("3x gtceu:molybdenum", "2x gtceu:iron")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.SHINY);
+}
+
 /**
  * Adds recipes for the processing of molybdenum.
  *

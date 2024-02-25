@@ -1,3 +1,24 @@
+import { nijikaId } from "../utils";
+
+export const addManganeseMaterials = (event) => {
+    event
+        .create(nijikaId("ferromanganese"))
+        .ingot()
+        .dust()
+        .color(0xe01923)
+        .components("1x gtceu:manganese", "2x gtceu:iron")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.SHINY);
+
+    // no disable decomposition flag here.
+    event
+        .create(nijikaId("manganese_oxide"))
+        .dust()
+        .color(0x535353)
+        .components("1x gtceu:manganese", "1x gtceu:oxygen")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING);
+}
+
 /**
  * Adds manganese-related processing recipes.
  *

@@ -4,7 +4,7 @@
  */
 
 import { MODPACK_SETTINGS } from "../settings";
-import { addChemicalProcessingRecipes } from "./chemicals";
+import { addChemicalProcessingRecipes } from "../shared/chemicals";
 import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";

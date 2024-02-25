@@ -1,3 +1,34 @@
+import { createDustIntermediate } from "../materials/helpers";
+
+export const addMagnesiumMaterials = (event) => {
+    createDustIntermediate(event, "magnesium_hydroxide", 0xff12ff).components(
+        "1x gtceu:magnesium",
+        "2x gtceu:oxygen",
+        "2x gtceu:hydrogen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:calcium_silicate"))
+        .color(0xafcfaf)
+        .dust()
+        .components("2x gtceu:calcium", "1x gtceu:silicon", "4x gtceu:oxygen");
+
+    event
+        .create(new ResourceLocation("nijika:az_91"))
+        .ingot()
+        .dust()
+        .blastTemp(3100)
+        .flags(
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_FRAME
+        )
+        .color(0x1278ee);
+
+}
+
 /**
  * Adds recipes for proceessing magnesium.
  *
@@ -17,6 +48,7 @@ export const addMagnesiumProcessingRecipes = (event) => {
         .circuit(1);
 
     // Dow's process for magnesium production via sea water.
+    // TODO: Make this more complex.
     // Seawater/brine + CaO -> Mg(OH)2
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/magnesium/magnesium_hydroxide")

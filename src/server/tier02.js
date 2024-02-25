@@ -1,9 +1,9 @@
 // MV!
 
 import { GT_MACHINE_TIERS } from "../shared/definition";
-import { addAluminiumProcessingRecipes } from "./chemicals/aluminium";
-import { addChromiteProcessingRecipes } from "./chemicals/chromium";
-import { addVanadiumChemicalChain } from "./chemicals/vanadium";
+import { addAluminiumProcessingRecipes } from "../shared/chemicals/aluminium";
+import { addChromiteProcessingRecipes } from "../shared/chemicals/chromium";
+import { addVanadiumChemicalChain } from "../shared/chemicals/vanadium";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier02Content = (event) => {

@@ -1,3 +1,22 @@
+import { createAqueousIntermediate } from "../materials/helpers";
+
+export const addGalliumArsenicMaterials = (event) => {
+    event
+        .create(new ResourceLocation("nijika:orpiment"))
+        .gem()
+        .ore()
+        .color(0xa99300)
+        .iconSet(GTMaterialIconSet.EMERALD)
+        .components("2x gtceu:arsenic", "3x gtceu:sulfur")
+        .addOreByproducts("gtceu:sulfur", "gtceu:antimony", "gtceu:barite")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    createAqueousIntermediate(event, "arsenic_trichloride", 0xfffec8).components(
+        "1x gtceu:arsenic",
+        "3x gtceu:chlorine"
+    );
+}
+
 /**
  * Reworks Gallium, Arsenic, and Gallium Arsenide processing for tier 1.
  *

@@ -5,6 +5,9 @@ let chemicalHelper$get =
         "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material)"
     ];
 
+/** Creates a new ``nijika:${id}`` Identifier. */
+export const nijikaId = (id) => new ResourceLocation("nijika", id);
+
 // https://sourcegraph.com/github.com/GregTechCEu/GregTech-Modern/-/blob/src/main/java/com/gregtechceu/gtceu/api/data/chemical/material/IMaterialRegistryManager.java?L12:18-12:42
 /**
  * Iterates over all registered materials.

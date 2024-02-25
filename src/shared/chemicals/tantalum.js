@@ -1,6 +1,40 @@
 // TODO: Look into the methyl isobutl ketone processing chain.
 // That might replace this once I'm more confident wwith organic chemistry.
 
+import { createChemicalIntermediate } from "../materials/helpers";
+
+export const addTantalumMaterials = (event) => {
+    event
+        .create(new ResourceLocation("nijika:tantalite_slurry"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0x9ff1f5)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    createChemicalIntermediate(event, "tantalum_pentoxide", 0x0a0c26).components(
+        "2x gtceu:tantalum",
+        "5x gtceu:oxygen"
+    );
+
+    event
+        .create(new ResourceLocation("nijika:tantalum_slag"))
+        .dust() // would prefer this to be a gem, but that generates sifter recipes.
+        .color(0x171b45)
+        .iconSet(GTMaterialIconSet.FLINT)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event
+        .create(new ResourceLocation("nijika:tantalum_slag_slurry"))
+        .liquid(new GTFluidBuilder().attribute(GTFluidAttributes.ACID))
+        .color(0x9c949c)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event
+        .create(new ResourceLocation("nijika:tantalite_residue"))
+        .dust()
+        .color(0x9c949c)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+}
+
 /**
  * Adds a mostly fictional tantalite processing chain.
  *
