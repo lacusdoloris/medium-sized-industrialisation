@@ -58,4 +58,14 @@ export const adjustRfToolsRecipes = (event) => {
             C: "rftoolscontrol:card_base",
         })
         .id("nijika:mods/rftools/arm4tdmi");
+
+    event.remove({ id: "rftoolsbase:machine_base" });
+    event.shaped(
+        "rftoolsbase:machine_base",
+        ["III", "SSS"],
+        {
+            I: "#forge:nuggets/red_alloy",
+            S: "minecraft:stone_slab"  // todo: stone slabs tag?
+        }
+    ).id("nijika:mods/rftools/machine_base");
 };
