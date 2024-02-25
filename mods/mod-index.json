@@ -799,6 +799,16 @@
         "version": "15.3.0.4",
         "version_id": "PeYsGsQy"
     },
+    "uXXizFIs": {
+        "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
+        "client_side_only": false,
+        "name": "FerriteCore",
+        "pinned": false,
+        "project_id": "uXXizFIs",
+        "selected": true,
+        "version": "6.0.1",
+        "version_id": "DG5Fn9Sz"
+    },
     "umyGl7zF": {
         "checksum": "629092cdb255125497ee4f5d356bb4940fcb3b34ec5fc89f0e0f3e4d20ef870a94f23341c927849c3427aa57cc98d8c02b8436b085407b63d6f3798fb54c6b2a",
         "client_side_only": false,
