@@ -63,6 +63,9 @@
     "material.nijika.chlorinated_molybdenum_trioxide": "Chlorinated Molybdenum Trioxide",
     "material.nijika.sodium_dicyanoaurate": "Sodium Dicyanoaurate",
     "material.nijika.corinthian_bronze": "Corinthian Bronze",
+    "material.nijika.ammonium_molybdate": "Ammonium Molybdate",
+    "material.nijika.ammonium_dimolybdate": "Ammonium Dimolybdate",
+    "material.nijika.technical_molybdenum_trioxide": "Technical-Grade Molybdenum Trioxide",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

@@ -1,6 +1,6 @@
 // TODO: Consider adding purification of the output MoO3.
 
-import { createAcidicIntermediate, createDustIntermediate } from "../materials/helpers";
+import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../materials/helpers";
 
 export const addMolybdenumMaterials = (event) => {
     createDustIntermediate(event, "impure_molybdenum_trioxide", 0xc6a9fc).components(
@@ -15,7 +15,15 @@ export const addMolybdenumMaterials = (event) => {
 
     createAcidicIntermediate(event, "cyanotic_molybdenum_trioxide", 0x6ca9fc).dust();
     createAcidicIntermediate(event, "chlorinated_molybdenum_trioxide", 0xc69acf);
-    createDustIntermediate(event, "molybdenum_trioxide", 0xb5b8ed);
+    createDustIntermediate(event, "technical_molybdenum_trioxide", 0xb5b8ed);
+
+    createAqueousIntermediate(event, "ammonium_molybdate", 0x2123a9)
+        .components("2x gtceu:ammonia", "1x gtceu:molybdenum", "4x gtceu:oxygen");
+
+    createDustIntermediate(event, "ammonium_dimolybdate", 0x31329a)
+        .components("2x gtceu:ammonia", "2x gtceu:molybdenum", "7x gtceu:oxygen");
+
+    createDustIntermediate(event, "molybdenum_trioxide", 0xb6f8bd)
 
     event
         .create(new ResourceLocation("nijika:ferromolybdenum"))
@@ -106,18 +114,42 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
 
+    // Centrifuge it away to get technical molybdenum trioxide.
     event.recipes.gtceu
         .centrifuge("nijika:chemicals/molybdenum/chlorinated_centrifuging")
         .inputFluids(
             Fluid.of("gtceu:chlorinated_molybdenum_trioxide").withAmount(6 * FluidAmounts.BUCKET)
         )
-        .itemOutputs("3x gtceu:molybdenum_trioxide_dust")
+        .itemOutputs("3x gtceu:technical_molybdenum_trioxide_dust")
         .outputFluids(
             Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(500 * FluidAmounts.MILLIBUCKET)
         )
         .chancedOutput("2x gtceu:small_calcium_chloride_dust", 1630.0, 150.0)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10);
+
+    // React technical molybdenum trioxide with ammonium to get ammonium molybdate:
+    // MoO3 + 2 NH3 + H2O → (NH4)2MoO
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/molybdenum/ammonium_molybdate")
+        .itemInputs("gtceu:technical_molybdenum_trioxide_dust")
+        .inputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(2 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:ammonium_molybdate").withAmount(1 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20);
+
+    // Autoclave it to get ammonium dimolybdate (dust, but it's really crystals).
+    event.recipes.gtceu.autoclave("nijika:chemicals/molybdenum/ammonium_dimolybdate")
+        .inputFluids(Fluid.of("gtceu:ammonium_molybdate").withAmount(2 * FluidAmounts.BUCKET))
+        .itemOutputs("gtceu:ammonium_dimolybdate_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonia").withAmount(2 * FluidAmounts.BUCKET),
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(30 * 20);
+    
+    // Finally... smelt the dimolybdate to get pure molybdenum trioxide.
+    event.smelting("gtceu:molybdenum_trioxide_dust", "gtceu:ammonium_dimolybdate_dust")
+        .id("nijika:chemicals/molybdenum/pure_molybdenum_trioxide");
 
     // Reduce using hydrogen to get raw Molybdenum metal...
     // MoO3 + 3 H2 = Mo + 3 H2O

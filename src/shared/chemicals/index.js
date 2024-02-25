@@ -1,6 +1,6 @@
 import { addAluminiumProcessingRecipes } from "./aluminium";
 import { addChromiteProcessingRecipes } from "./chromium";
-import { addCyanideMaterials, addCyanideRecipes } from "./cyanide";
+import { addCyanideRecipes } from "./cyanide";
 import { addGalliumArsenicRecipes } from "./gallum_arsenic";
 import { addMiscIronRecipes } from "./iron";
 import { addMagnesiumProcessingRecipes } from "./magnesium";
