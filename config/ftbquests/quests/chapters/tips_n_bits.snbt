@@ -22,7 +22,7 @@
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: 0.0d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -58,7 +58,7 @@
 				type: "checkmark"
 			}]
 			title: "WHERE'S MY VEINMINER NOOOOO"
-			x: 2.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -74,6 +74,63 @@
 			title: "Minimap"
 			x: 1.0d
 			y: -1.5d
+		}
+		{
+			description: [
+				"Is lugging around a pickaxe, shovel, &oand&r a set of shears too much for you?"
+				""
+				"Make the tool belt. It storres your tools. If you make tool pouches, you can combine them with the tool belt at an anvil to upgrade its storage."
+			]
+			id: "67ACD52AD2EAB7DB"
+			tasks: [{
+				id: "36C0D9C11AE1E184"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			title: "Dazed and Confused"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Making a tree farm?"
+				""
+				"You should place your saplings in a &dcheckerboard&r fashion. Saplings placed too close will combine into mega-trees, which are great aesthetically but a bit difficult to cut down."
+				""
+				"Place an unplantable block (like slabs) inbetween the saplings so your deployers can't ruin your beautiful farm."
+			]
+			id: "6B92BC1A27C38DF9"
+			rewards: [{
+				id: "71265BF8866B604A"
+				item: "woolytrees:jeb_sapling"
+				type: "item"
+			}]
+			subtitle: "Kingambit became a King and exposed itself!"
+			tasks: [{
+				id: "37678C488988E6F3"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "Chess Board"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Can't find clay? Didn't spawn near a lake?"
+				""
+				"Try looking underground. It spawns like a regular rock."
+			]
+			id: "525FD0FA28ADB3E3"
+			tasks: [{
+				count: 64L
+				id: "1A688FC5DCE52185"
+				item: { Count: 64b, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			title: "Expert Pack"
+			x: 2.0d
+			y: 1.5d
 		}
 	]
 	title: "Tips n Bits"
