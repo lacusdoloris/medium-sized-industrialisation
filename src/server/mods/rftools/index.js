@@ -10,7 +10,7 @@ export const adjustRfToolsRecipes = (event) => {
 
     event.recipes.gtceu
         .mixer("nijika:mods/rftools/dimensional_shard_dust")
-        .itemInputs("gtceu:emerald_dust", "gtceu:netherrack_dust", "gtceu:endstone_dust")
+        .itemInputs("gtceu:emerald_dust", "gtceu:netherrack_dust")
         .itemOutputs("1x gtceu:dimensional_shard_dust")
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
