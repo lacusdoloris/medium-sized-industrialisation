@@ -75,7 +75,7 @@ export const addFreshOreVeinsEvent = (event) => {
                     return GTLayerPattern.builder(moonOreReplaceables)
                         .layer((l) => l.weight(4).mat(GTMaterials.Molybdenite).size(1, 3))
                         .layer((l) => l.weight(2).mat(GTMaterials.Wulfenite).size(1, 2))
-                        .layer((l) => l.weight(2).mat(GTMaterials.Powellite).size(1, 2))
+                        .layer((l) => l.weight(2).mat(GTMaterials.Scheelite).size(1, 2))
                         .build();
                 });
             });

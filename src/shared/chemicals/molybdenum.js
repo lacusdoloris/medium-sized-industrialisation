@@ -23,6 +23,9 @@ export const addMolybdenumMaterials = (event) => {
     createDustIntermediate(event, "ammonium_dimolybdate", 0x31329a)
         .components("2x gtceu:ammonia", "2x gtceu:molybdenum", "7x gtceu:oxygen");
 
+    createAqueousIntermediate(event, "sodium_molybdate", 0xdede87)
+        .components("2x gtceu:sodium", "1x gtceu:molybdenum", "4x gtceu:oxygen");
+
     createDustIntermediate(event, "molybdenum_trioxide", 0xb6f8bd)
 
     event
@@ -42,6 +45,36 @@ export const addMolybdenumMaterials = (event) => {
  */
 export const addMolybdenumProcessingRecipes = (event) => {
     // see ullman's Molybdenum and Molybdenum Compounds.
+
+    // Wulfenite processing.
+    // PbMoO4 + 2 NaOH = Pb(OH)2 + Na2MoO4
+    // TODO: Lead hydroxide!
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/molybdenum/wulfenite_leaching")
+        .itemInputs(
+            "1x gtceu:wulfenite_dust",
+            "2x gtceu:sodium_hydroxide_dust",
+        )
+        .chancedFluidOutput(
+            Fluid.of("gtceu:sodium_molybdate").withAmount(1 * FluidAmounts.BUCKET),
+            9940.0, 0.15,
+        )
+        .EUt(GTValues.VH[GTValues.EV])  // Not a mistake! EV!
+        .duration(15 * 20);
+    
+    // From there, Sodium molybdenate can be cconverted straight to impure MoO3.
+    // Na2MoO4 + 2 HCl = MoO3 + 2 NaCl + H2O
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/molybdenum/moo3_from_sodium_molybdate")
+        .inputFluids(
+            Fluid.of("gtceu:sodium_molybdate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs(
+            "gtceu:impure_molybdenum_trioxide_dust",
+            "2x gtceu:salt_dust"
+        )
+        .outputFluids(Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(10 * 20);
 
     // Molybdenum roasting.
     // 2 MoS2 + 7 O2 = 2 MoO3 + 4 SO2 (hehehe)
