@@ -16,12 +16,14 @@ import { addMagnesiumMaterials } from "../../shared/chemicals/magnesium";
 import { addMolybdenumMaterials } from "../../shared/chemicals/molybdenum";
 import { addGoldMaterials } from "../../shared/chemicals/gold";
 import { addCyanideMaterials } from "../../shared/chemicals/cyanide";
+import { addBaseOreMaterials } from "./base_ores";
 
 /**
  * Adds new custom materials.
  */
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
+    addBaseOreMaterials(event);
 
     addAluminiumMaterials(event);
     addChromiumMaterials(event);

@@ -34,6 +34,7 @@ mode = "fancy"
 				horse = true
 				minecart = true
 				rabbit = true
+				mooshroom = true
 				glow_item_frame = false
 				sheep = true
 				experience_orb = true
@@ -42,4 +43,7 @@ mode = "fancy"
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
 				super_glue = true
+
+			[light_sources.settings.entities.bigglobe]
+				rock = true
 

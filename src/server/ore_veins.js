@@ -26,7 +26,7 @@ export const removeVanillaDimensionOreVeins = (event) => {
 };
 
 /**
- * Deals with GTCEu ore veins.
+ * Adds Create: Ore Excavation ore veins.
  *
  * @param {Internal.GTOreVeinEventJS} event
  */
