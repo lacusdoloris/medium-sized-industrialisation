@@ -19,8 +19,6 @@ const DISABLE_DECOMPOSITION = [
     "galena",
     "chalcopyrite",
     "realgar",
-    // Why does this have a centrifuge decomposition, of all things?
-    "gcyr:iron_oxide",
     // Required for slag byproduccts.
     "magnetite",
     "hematite",
@@ -163,7 +161,7 @@ export const customiseMaterials = () => {
 
         oreProp.setDirectSmeltResult(null);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("chalcopyrite"), getMaterial("gcyr:fluorite"));
+        oreProp.setOreByProducts(getMaterial("chalcopyrite"), getMaterial("fluorite"));
     }
 
     let zinc = getMaterial("zinc");

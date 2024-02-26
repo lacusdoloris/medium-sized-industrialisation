@@ -2,8 +2,8 @@
 	"type": "bigglobe:nether_ore",
 	"config": {
         "blocks": {
-            "minecraft:netherrack": "gcyr:netherrack_fluorite_ore",
-            "minecraft:basalt": "gcyr:basalt_fluorite_ore"
+            "minecraft:netherrack": "gtceu:netherrack_fluorite_ore",
+            "minecraft:basalt": "gtceu:basalt_fluorite_ore"
         },
 
 		"chance": "0.15",

@@ -104,7 +104,7 @@ export const addTantaliteProcessingChain = (event) => {
         .itemInputs("2x gtceu:tantalite_residue_dust")
         .chancedOutput("1x gtceu:niobium_pentoxide_dust", 8000.0, 2.5) // 80%, 2.5% boost
         .chancedOutput("1x gtceu:manganese_oxide_dust", 7500, 0.0) // 75%, no boost
-        .chancedOutput("1x gcyr:iron_oxide_dust", 7500, 0.0) // 75%, no boost
+        .chancedOutput("1x gtceu:iron_oxide_dust", 7500, 0.0) // 75%, no boost
         .chancedOutput("1x gtceu:salt_dust", 9000, 0.0) // 90%, no boost
         .chancedOutput("1x gtceu:tiny_yttrium_dust", 200, 1.5) // 2%, 1.5% boost
         .EUt(GTValues.VA[GTValues.HV])

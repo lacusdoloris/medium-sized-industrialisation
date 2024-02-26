@@ -578,16 +578,6 @@
 			x: 4.0d
 			y: 10.5d
 		}
-		{
-			id: "481BF454D5E692BD"
-			tasks: [{
-				id: "120D8F3976C1B707"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 4.0d
-		}
 	]
 	subtitle: ["The real fun begins here."]
 	title: "MV \\& HV - AMA-TE-RAS"

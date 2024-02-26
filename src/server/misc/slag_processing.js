@@ -22,7 +22,7 @@ export const addSlagProcessingRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:misc/slag_processing/hematite_smelting")
         .itemInputs("32x #forge:raw_materials/hematite")
-        .itemOutputs("24x gcyr:iron_oxide_dust", "8x gtceu:slag_dust")
+        .itemOutputs("24x gtceu:iron_oxide_dust", "8x gtceu:slag_dust")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)

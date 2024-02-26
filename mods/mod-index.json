@@ -179,16 +179,6 @@
         "version": "2.6.0",
         "version_id": "e9Az4uaX"
     },
-    "C95ReXie": {
-        "checksum": "c6c1e9a4b78dd4e246e261ca9edfab6be18a30e01a25af63b5abb7a8c5ace8be321b21a5418628939f99a3b5f269c7eeca7ce26350564679e3d573551858ddcc",
-        "client_side_only": false,
-        "name": "Mystical Agriculture",
-        "pinned": false,
-        "project_id": "C95ReXie",
-        "selected": true,
-        "version": "7.0.9",
-        "version_id": "yTuKnzVy"
-    },
     "DQjhR62z": {
         "checksum": "ffcbd4949631734ad645f8673841e4db07ee2adcee49d768ecd62e6e4da5cf5d635a2dc1673336938308d291502f06e5769d2c7bad2dad56a72321a1955e15ab",
         "client_side_only": false,
@@ -399,15 +389,15 @@
         "version": "2.0.1",
         "version_id": "8tVulaR5"
     },
-    "Rw1NrDzF": {
-        "checksum": "150d7e072130e42ea496b097528328bf817c8720e4ca2df933f7d88a312634dd2ba33d15d6414dfc545e52f230b0d95c9c9f41521e6e009cb70e10ba4b8230e2",
+    "ResbpANg": {
+        "checksum": "26f0d700d207cae67df3c5d7941c546a2e56b4718fb055ade34b694aa89d903135850b888a1c685646294d6d3e68ba2be957811fc3e2516275a79a98dbfa0a79",
         "client_side_only": false,
-        "name": "Cucumber Library",
+        "name": "Create Ore Excavation",
         "pinned": false,
-        "project_id": "Rw1NrDzF",
-        "selected": false,
-        "version": "7.0.7",
-        "version_id": "p1IgvIXf"
+        "project_id": "ResbpANg",
+        "selected": true,
+        "version": "1.20.1-1.4.2",
+        "version_id": "GFgnNddX"
     },
     "S1tndFDa": {
         "checksum": "c985ee61ad6a42629b0bb48fe504b3826afb12e507a72faf1cdc56eeac7b6e3de8e92fbab1c1c153ac47c6c98359296c63cc7921888b387e6be7371893e07e2b",
@@ -629,16 +619,6 @@
         "version": "1.10.53-forge",
         "version_id": "4FXHDE9F"
     },
-    "lNK9A4rh": {
-        "checksum": "177e653daa0b42a7195a2d0f2d27a6bf6d659357906d9cca394b59ab391f29d074894e9bccd5fddae093dfb80e49f0ee0427a08a0158495045c96516b2c25d44",
-        "client_side_only": false,
-        "name": "Mystical Customization",
-        "pinned": false,
-        "project_id": "lNK9A4rh",
-        "selected": true,
-        "version": "5.0.0",
-        "version_id": "6J8bbFt9"
-    },
     "lhGA9TYQ": {
         "checksum": "094d36a41538859fc740ef7699c56ae24fb4ce89e211c28083090dcd366a360da68d51864657410242f0f625a1df4bd5c495b2ebbd9cbce74deb5e0e4bf56dc9",
         "client_side_only": false,
@@ -838,6 +818,16 @@
         "selected": false,
         "version": "5.7.0+1.20.1",
         "version_id": "PeTgKttm"
+    },
+    "wPQ6GgFE": {
+        "checksum": "d90e0517031af930ff4312f8ca2b3c32df7ecba578fdf8b011e0161da0a022fdfdd5c5d130c732527e596f4a013e3831ea8c24ab5523d847057724e802b21b58",
+        "client_side_only": false,
+        "name": "Create: Power Loader",
+        "pinned": false,
+        "project_id": "wPQ6GgFE",
+        "selected": true,
+        "version": "1.4.0-mc1.20.1",
+        "version_id": "gYdBvixa"
     },
     "xsng1aJf": {
         "checksum": "6daf3c43dae6b4631e3c9f14272c1d4886b22fc16fdbfc72d27a51c07041ffd059759d146f0badbeac3043d4b2c71ae0e586b9ea2a8d240f653974ce42388adc",

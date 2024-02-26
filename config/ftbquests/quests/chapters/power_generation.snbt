@@ -5,7 +5,7 @@
 	group: "14EE7AEE0EF05AEE"
 	icon: "createaddition:alternator"
 	id: "09EB0004BA284E94"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 	title: "Power Generation"

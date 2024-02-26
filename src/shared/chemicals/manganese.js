@@ -66,7 +66,7 @@ export const addManganeseProcessingRecipes = (event) => {
         .electric_blast_furnace("nijika:chemicals/manganese/ferromanganese_from_fe2o3")
         .itemInputs(
             "1x gtceu:pyrolusite_dust",
-            "2x gcyr:iron_oxide_dust",
+            "2x gtceu:iron_oxide_dust",
             "6x gtceu:aluminium_dust"
         )
         .itemOutputs("2x gtceu:ferromanganese_ingot", "3x gtceu:alumina_dust")

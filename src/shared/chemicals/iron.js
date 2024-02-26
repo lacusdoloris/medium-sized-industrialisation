@@ -39,7 +39,7 @@ export const addMiscIronRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/iron_oxide_reduction")
-        .itemInputs("2x gcyr:iron_oxide_dust", "3x #nijika:carbon_rich_dusts")
+        .itemInputs("2x gtceu:iron_oxide_dust", "3x #nijika:carbon_rich_dusts")
         .itemOutputs("4x gtceu:iron_dust")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(3 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])

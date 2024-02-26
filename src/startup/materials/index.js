@@ -44,6 +44,14 @@ export const addCustomMaterials = (event) => {
         "1x gtceu:hydrogen"
     );
 
+    event.create(nijikaId("fluorite"))
+        .gem().ore()
+        .color(0x0c9949).iconSet(GTMaterialIconSet.DIAMOND)
+        .components("1x gtceu:calcium", "2x gtceu:fluorine")
+
+    createDustIntermediate(event, "iron_oxide", 0x5f412f)
+        .components("2x gtceu:iron", "3x gtceu:oxygen");
+
     createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
     createAcidicIntermediate(event, "slag_slurry", 0x373226);
 

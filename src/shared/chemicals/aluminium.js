@@ -101,7 +101,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:red_mud_slurry").withAmount(1 * FluidAmounts.BUCKET))
         .chancedOutput("1x gtceu:sodium_hydroxide_dust", 8000.0, 0.0) // 80%, never boosted
         .chancedOutput("1x gtceu:rutile_dust", 1500.0, 800.0) // 15%, 8% boost per tier
-        .chancedOutput("1x gcyr:iron_oxide_dust", 8000.0, 0.0) // 80%, never boosted
+        .chancedOutput("1x gtceu:iron_oxide_dust", 8000.0, 0.0) // 80%, never boosted
         .chancedOutput("1x gtceu:alumina_dust", 3000.0, 500.0) // 30%, 5% boost
         .chancedOutput("1x gtceu:silicon_dioxide_dust", 5000, 0.0) // 50%, never boosted
         .chancedOutput("1x gtceu:gallium_dust", 1100.0, 800.0) // 11%, 8% boost per tier

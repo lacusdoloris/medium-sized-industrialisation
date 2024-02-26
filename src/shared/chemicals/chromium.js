@@ -42,7 +42,7 @@ export const addChromiteProcessingRecipes = (event) => {
         .electric_blast_furnace("nijika:tier02/chromium/chromite_to_sodium_chromate")
         .itemInputs("4x #forge:dusts/chromite", "8x #forge:dusts/soda_ash")
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(7 * FluidAmounts.BUCKET))
-        .itemOutputs("8x gtceu:sodium_chromate_dust", "2x gcyr:iron_oxide_dust")
+        .itemOutputs("8x gtceu:sodium_chromate_dust", "2x gtceu:iron_oxide_dust")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(8 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.MV])
         .blastFurnaceTemp(1300) // circa 1000C in the paper

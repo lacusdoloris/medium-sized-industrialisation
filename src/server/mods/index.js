@@ -3,7 +3,6 @@ import { adjustCreateRecipes } from "./create";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
-import { adjustMysticalAgricultureRecipes } from "./mysticalagriculture";
 import { adjustCreateNewAgeRecipes } from "./new_age";
 import { adjustPackItUpRecipes } from "./packitup";
 import { adjustPrettyPipesRecipes } from "./prettypipes";
@@ -18,7 +17,6 @@ import { adjustModularRouterRecipes } from "./routers";
 export const doModRecipes = (event) => {
     adjustCreateRecipes(event);
     adjustCreateNewAgeRecipes(event);
-    adjustMysticalAgricultureRecipes(event);
     adjustRfToolsRecipes(event);
 
     // not optional due to worldgen.
