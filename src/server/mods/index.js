@@ -60,6 +60,9 @@ export const doModRecipes = (event) => {
         adjustEssentialsRecipes(event);
     }
 
+    // TODO!
+    event.remove({id: "createoreexcavation:drilling_machine"});
+
     event.shaped(
         "reinfchest:gold_chest",
         ["III", "ICI", "III"],
