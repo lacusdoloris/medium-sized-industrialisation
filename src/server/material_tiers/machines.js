@@ -88,7 +88,7 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Bender: Replace the wrench.
     event.remove({ id: `gtceu:shaped/${tier.name}_bender` });
     lazyShaped(`gtceu:${tier.name}_bender`, ["PGP", "CHC", "MWM"], {
-        G: tier.materials.plate.tagged("gears"),
+        G: tier.materials.gear.tagged("gears"),
     }).id(`nijika:auto/machines/${tier.name}/bender`);
 
     // Brewer: Replace Glass, Brewing "rods", cables.

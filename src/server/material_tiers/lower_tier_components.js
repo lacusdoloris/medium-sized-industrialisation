@@ -75,6 +75,8 @@ export const rewriteMotorRecipes = (event, tier) => {
  * @param {Tier} tier
  */
 export const rewritePistonRecipes = (event, tier) => {
+    let gear = typeof tier.materials.gear === "undefined" ? tier.materials.plate : tier.materials.gear;
+
     event.remove({ id: `gtceu:shaped/electric_piston_${tier.name}` });
     event
         .shaped(`1x gtceu:${tier.name}_electric_piston`, ["PPP", "CRR", "CMG"], {
@@ -82,7 +84,7 @@ export const rewritePistonRecipes = (event, tier) => {
             C: tier.singleCable,
             R: tier.effectiveRodWithLVHardcode,
             M: `gtceu:${tier.name}_electric_motor`,
-            G: tier.materials.plate.tagged("small_gears"),
+            G: gear.tagged("small_gears"),
         })
         .id(`nijika:auto/${tier.name}/piston/shaped`);
 
@@ -94,7 +96,7 @@ export const rewritePistonRecipes = (event, tier) => {
             `2x ${tier.singleCable}`,
             `2x ${tier.effectiveRodWithLVHardcode}`,
             `gtceu:${tier.name}_electric_motor`,
-            tier.materials.plate.tagged("small_gears")
+            gear.tagged("small_gears")
         )
         .itemOutputs(`1x gtceu:${tier.name}_electric_piston`)
         .EUt(30)
