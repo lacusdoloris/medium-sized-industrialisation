@@ -10,6 +10,10 @@ import { customiseMaterials } from "./materials/modification";
 GTCEuStartupEvents.registry("gtceu:material", addCustomMaterials);
 
 GTCEuStartupEvents.materialModification((_) => {
+    // this is definitely ran before item generation.
+    // dirty hack: vaporise this hashmap so that cauldron behaviours are never registered.
+    GTItems.purifyMap.clear();
+
     // event has... no properties. ok
     customiseMaterials();
 });
