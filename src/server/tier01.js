@@ -83,28 +83,5 @@ export const doTier01Content = (event) => {
 
     // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });
-    event.recipes.gtceu
-        .assembler("nijika:tier01/fluid_void_cover")
-        .itemInputs(
-            "2x gtceu:wrought_iron_screw",
-            "gtceu:fluid_detector_cover",
-            "gtceu:bronze_normal_fluid_pipe",
-            "minecraft:flint_and_steel" // wow!
-        )
-        .itemOutputs("gtceu:fluid_voiding_cover")
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(5 * 20);
-
     event.remove({ id: "gtceu:assembler/cover_item_voiding" });
-    event.recipes.gtceu
-        .assembler("nijika:tier01/item_void_cover")
-        .itemInputs(
-            "2x gtceu:wrought_iron_screw",
-            "gtceu:item_detector_cover",
-            "gtceu:bronze_normal_fluid_pipe",
-            "gtceu:iron_buzz_saw_blade"
-        )
-        .itemOutputs("gtceu:item_voiding_cover")
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(5 * 20);
 };
