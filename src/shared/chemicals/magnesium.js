@@ -1,7 +1,7 @@
 import { createDustIntermediate } from "../materials/helpers";
 
 export const addMagnesiumMaterials = (event) => {
-    createDustIntermediate(event, "magnesium_hydroxide", 0xff12ff).components(
+    createDustIntermediate(event, "magnesium_hydroxide", 0xdea6de).components(
         "1x gtceu:magnesium",
         "2x gtceu:oxygen",
         "2x gtceu:hydrogen"
