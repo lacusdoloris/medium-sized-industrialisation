@@ -1,4 +1,4 @@
-import { createAqueousIntermediate } from "../materials/helpers";
+import { createAqueousIntermediate } from "../../materials/helpers";
 
 export const addGalliumArsenicMaterials = (event) => {
     event

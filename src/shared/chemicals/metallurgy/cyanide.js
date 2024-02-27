@@ -1,4 +1,4 @@
-import { createAqueousIntermediate, createDustIntermediate } from "../materials/helpers";
+import { createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers";
 
 export const addCyanideMaterials = (event) => {
     createAqueousIntermediate(event, "hydrogen_cyanide", 0xf2f5c6).components(

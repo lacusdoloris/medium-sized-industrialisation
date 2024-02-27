@@ -1,7 +1,7 @@
 // TODO: Look into the methyl isobutl ketone processing chain.
 // That might replace this once I'm more confident wwith organic chemistry.
 
-import { createChemicalIntermediate } from "../materials/helpers";
+import { createChemicalIntermediate } from "../../materials/helpers";
 
 export const addTantalumMaterials = (event) => {
     event

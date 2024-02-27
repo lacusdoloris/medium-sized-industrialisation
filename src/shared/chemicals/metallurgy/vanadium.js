@@ -1,7 +1,7 @@
 // Ref: Vanadium and Vanadium Compounds
 // https://doi.org/10.1002/14356007.a27_367
 
-import { createDustIntermediate } from "../materials/helpers";
+import { createDustIntermediate } from "../../materials/helpers";
 
 export const addVanadiumMaterials = (event) => {
     // == Vanadium == //

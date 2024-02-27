@@ -1,5 +1,5 @@
-import { createAcidicIntermediate, createDustIntermediate } from "../materials/helpers";
-import { nijikaId } from "../utils";
+import { createAcidicIntermediate, createDustIntermediate } from "../../materials/helpers";
+import { nijikaId } from "../../utils";
 
 export const addAluminiumMaterials = (event) => {
     createDustIntermediate(event, "aluminium_hydroxide", 0xbcd8e8).components(

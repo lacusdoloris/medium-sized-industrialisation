@@ -1,4 +1,4 @@
-import { nijikaId } from "../utils";
+import { nijikaId } from "../../utils";
 
 export const addManganeseMaterials = (event) => {
     event

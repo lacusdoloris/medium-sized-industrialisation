@@ -1,6 +1,6 @@
 // TODO: Consider adding purification of the output MoO3.
 
-import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../materials/helpers";
+import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers";
 
 export const addMolybdenumMaterials = (event) => {
     createDustIntermediate(event, "impure_molybdenum_trioxide", 0xc6a9fc).components(

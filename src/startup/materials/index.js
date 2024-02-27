@@ -5,17 +5,17 @@ import {
     createDustIntermediate,
 } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
-import { addChromiumMaterials } from "../../shared/chemicals/chromium";
-import { addGalliumArsenicMaterials } from "../../shared/chemicals/gallum_arsenic";
-import { addAluminiumMaterials } from "../../shared/chemicals/aluminium";
-import { addTantalumMaterials } from "../../shared/chemicals/tantalum";
-import { addManganeseMaterials } from "../../shared/chemicals/manganese";
-import { addVanadiumMaterials } from "../../shared/chemicals/vanadium";
+import { addChromiumMaterials } from "../../shared/chemicals/metallurgy/chromium";
+import { addGalliumArsenicMaterials } from "../../shared/chemicals/metallurgy/gallum_arsenic";
+import { addAluminiumMaterials } from "../../shared/chemicals/metallurgy/aluminium";
+import { addTantalumMaterials } from "../../shared/chemicals/metallurgy/tantalum";
+import { addManganeseMaterials } from "../../shared/chemicals/metallurgy/manganese";
+import { addVanadiumMaterials } from "../../shared/chemicals/metallurgy/vanadium";
 import { addRareEarthMaterials } from "../../shared/chemicals/rare_earths";
-import { addMagnesiumMaterials } from "../../shared/chemicals/magnesium";
-import { addMolybdenumMaterials } from "../../shared/chemicals/molybdenum";
-import { addGoldMaterials } from "../../shared/chemicals/gold";
-import { addCyanideMaterials } from "../../shared/chemicals/cyanide";
+import { addMagnesiumMaterials } from "../../shared/chemicals/metallurgy/magnesium";
+import { addMolybdenumMaterials } from "../../shared/chemicals/metallurgy/molybdenum";
+import { addGoldMaterials } from "../../shared/chemicals/metallurgy/gold";
+import { addCyanideMaterials } from "../../shared/chemicals/metallurgy/cyanide";
 import { addBaseOreMaterials } from "./base_ores";
 
 /**

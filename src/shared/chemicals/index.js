@@ -1,14 +1,14 @@
-import { addAluminiumProcessingRecipes } from "./aluminium";
-import { addChromiteProcessingRecipes } from "./chromium";
-import { addCyanideRecipes } from "./cyanide";
-import { addGalliumArsenicRecipes } from "./gallum_arsenic";
-import { addMiscIronRecipes } from "./iron";
-import { addMagnesiumProcessingRecipes } from "./magnesium";
-import { addManganeseProcessingRecipes } from "./manganese";
-import { addMolybdenumProcessingRecipes } from "./molybdenum";
+import { addAluminiumProcessingRecipes } from "./metallurgy/aluminium";
+import { addChromiteProcessingRecipes } from "./metallurgy/chromium";
+import { addCyanideRecipes } from "./metallurgy/cyanide";
+import { addGalliumArsenicRecipes } from "./metallurgy/gallum_arsenic";
+import { addMiscIronRecipes } from "./metallurgy/iron";
+import { addMagnesiumProcessingRecipes } from "./metallurgy/magnesium";
+import { addManganeseProcessingRecipes } from "./metallurgy/manganese";
+import { addMolybdenumProcessingRecipes } from "./metallurgy/molybdenum";
 import { addRareEarthProcessingChain } from "./rare_earths";
-import { addTantaliteProcessingChain } from "./tantalum";
-import { addVanadiumChemicalChain } from "./vanadium";
+import { addTantaliteProcessingChain } from "./metallurgy/tantalum";
+import { addVanadiumChemicalChain } from "./metallurgy/vanadium";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
