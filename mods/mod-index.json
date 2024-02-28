@@ -299,6 +299,16 @@
         "version": "6.0.0",
         "version_id": "XIxTqWLF"
     },
+    "KaKEuH9Q": {
+        "checksum": "88eb70e5869d19716b5b58fd2ecc9ddeb3177eaa6f6348c794ab8113a832eada0ee14ed272d59928bbb9a605ba0c31361f695ad4dce1738ddca2603880dbe6a2",
+        "client_side_only": true,
+        "name": "Vanilla Notebook ",
+        "pinned": false,
+        "project_id": "KaKEuH9Q",
+        "selected": true,
+        "version": "3.1.0",
+        "version_id": "iQqivQMQ"
+    },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
         "client_side_only": false,
