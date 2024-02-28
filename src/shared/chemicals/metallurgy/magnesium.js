@@ -46,17 +46,6 @@ export const addMagnesiumProcessingRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .circuit(1);
 
-    // Dow's process for magnesium production via sea water.
-    // TODO: Make this more complex.
-    // Seawater/brine + CaO -> Mg(OH)2
-    event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/magnesium/magnesium_hydroxide")
-        .inputFluids(Fluid.of("gtceu:salt_water").withAmount(12 * FluidAmounts.BUCKET))
-        .itemInputs("1x gtceu:quicklime_dust")
-        .itemOutputs("1x gtceu:magnesium_hydroxide_dust")
-        .duration(5 * 20)
-        .EUt(GTValues.VA[GTValues.HV]);
-
     // Mg(OH)2 + 2 HCl = MgCl2 + 2 H2O
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/magnesium/hydroxide_to_chloride")

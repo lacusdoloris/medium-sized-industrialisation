@@ -17,6 +17,7 @@ import { addMolybdenumMaterials } from "../../shared/chemicals/metallurgy/molybd
 import { addGoldMaterials } from "../../shared/chemicals/metallurgy/gold";
 import { addCyanideMaterials } from "../../shared/chemicals/metallurgy/cyanide";
 import { addBaseOreMaterials } from "./base_ores";
+import { addBrineMaterials } from "../../shared/chemicals/brine";
 
 /**
  * Adds new custom materials.
@@ -37,6 +38,8 @@ export const addCustomMaterials = (event) => {
     addRareEarthMaterials(event);
     addTantalumMaterials(event);
     addVanadiumMaterials(event);
+
+    addBrineMaterials(event);
 
     // misc stuff.
     event.create(nijikaId("blood")).liquid().color(0xff0000);

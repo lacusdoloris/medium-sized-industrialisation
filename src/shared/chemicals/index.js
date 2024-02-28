@@ -9,6 +9,7 @@ import { addMolybdenumProcessingRecipes } from "./metallurgy/molybdenum";
 import { addRareEarthProcessingChain } from "./rare_earths";
 import { addTantaliteProcessingChain } from "./metallurgy/tantalum";
 import { addVanadiumChemicalChain } from "./metallurgy/vanadium";
+import { addBrineRecipes } from "./brine";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -27,6 +28,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addMagnesiumProcessingRecipes(event);
     addMolybdenumProcessingRecipes(event);
     addCyanideRecipes(event);
+    addBrineRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu
