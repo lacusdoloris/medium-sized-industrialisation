@@ -49,20 +49,27 @@ export const addCustomMaterials = (event) => {
         "1x gtceu:hydrogen"
     );
 
-    event.create(nijikaId("fluorite"))
-        .gem().ore()
-        .color(0x0c9949).iconSet(GTMaterialIconSet.DIAMOND)
-        .components("1x gtceu:calcium", "2x gtceu:fluorine")
+    event
+        .create(nijikaId("fluorite"))
+        .gem()
+        .ore()
+        .color(0x0c9949)
+        .iconSet(GTMaterialIconSet.DIAMOND)
+        .components("1x gtceu:calcium", "2x gtceu:fluorine");
 
-    createDustIntermediate(event, "iron_oxide", 0x5f412f)
-        .components("2x gtceu:iron", "3x gtceu:oxygen");
+    createDustIntermediate(event, "iron_oxide", 0x5f412f).components(
+        "2x gtceu:iron",
+        "3x gtceu:oxygen"
+    );
 
     createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
     createAcidicIntermediate(event, "slag_slurry", 0x373226);
 
-    event.create(nijikaId("corinthian_bronze"))
+    event
+        .create(nijikaId("corinthian_bronze"))
         .color(0xa99023)
-        .ingot().dust()
+        .ingot()
+        .dust()
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
         .iconSet(GTMaterialIconSet.SHINY)
         .rotorStats(13.0, 2.0, 196)

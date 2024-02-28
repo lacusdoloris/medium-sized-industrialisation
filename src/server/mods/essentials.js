@@ -13,5 +13,9 @@ export const adjustEssentialsRecipes = (event) => {
         })
         .id("nijika:mods/essentials/auto_crafter");
 
-    event.replaceInput({ mod: "essentials" }, "#forge:ingots/gold", "#forge:plates/corinthian_bronze");
-}
+    event.replaceInput(
+        { mod: "essentials" },
+        "#forge:ingots/gold",
+        "#forge:plates/corinthian_bronze"
+    );
+};

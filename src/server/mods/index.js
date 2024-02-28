@@ -61,13 +61,14 @@ export const doModRecipes = (event) => {
     }
 
     // TODO!
-    event.remove({id: "createoreexcavation:drilling_machine"});
+    event.remove({ id: "createoreexcavation:drilling_machine" });
 
-    event.shaped(
-        "reinfchest:gold_chest",
-        ["III", "ICI", "III"],
-        {I: "#forge:ingots/corinthian_bronze", C: "reinfchest:iron_chest"}
-    ).id("reinfchest:gold_chest");
+    event
+        .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {
+            I: "#forge:ingots/corinthian_bronze",
+            C: "reinfchest:iron_chest",
+        })
+        .id("reinfchest:gold_chest");
 
     // why doesn't this work!
     event.replaceInput(

@@ -3,7 +3,7 @@ const PropertyKey = Java.loadClass(
 );
 const WireProperties = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
-)
+);
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
@@ -82,10 +82,7 @@ export const customiseMaterials = () => {
         let oreProp = getOreProperty(magnetite);
         // likewise... actually appends. this is a much easier method for vanadium...
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(
-            getMaterial("magnesia"),
-            getMaterial("vanadium_pentoxide"),
-        )
+        oreProp.setOreByProducts(getMaterial("magnesia"), getMaterial("vanadium_pentoxide"));
         oreProp.setOreByProducts(getMaterial("vanadium_pentoxide"));
     }
 
@@ -171,7 +168,10 @@ export const customiseMaterials = () => {
 
     let zinc = getMaterial("zinc");
     {
-        zinc.properties.setProperty(PropertyKey.WIRE, new WireProperties(GTValues.V[GTValues.MV], 3, 1));
+        zinc.properties.setProperty(
+            PropertyKey.WIRE,
+            new WireProperties(GTValues.V[GTValues.MV], 3, 1)
+        );
     }
 
     let gold = getMaterial("gold");

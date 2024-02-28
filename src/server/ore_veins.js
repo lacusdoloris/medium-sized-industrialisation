@@ -30,6 +30,4 @@ export const removeVanillaDimensionOreVeins = (event) => {
  *
  * @param {Internal.GTOreVeinEventJS} event
  */
-export const addFreshOreVeinsEvent = (event) => {
-
-};
+export const addFreshOreVeinsEvent = (event) => {};

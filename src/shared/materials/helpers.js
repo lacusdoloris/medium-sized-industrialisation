@@ -4,10 +4,7 @@ import { nijikaId } from "../utils";
  * Creates a new dust intermediate.
  */
 export const createDustIntermediate = (event, id, colour, allowDecomposition) => {
-    let builder = event
-        .create(nijikaId(id))
-        .dust()
-        .color(colour);
+    let builder = event.create(nijikaId(id)).dust().color(colour);
 
     if (typeof allowDecomposition === "boolean" && !allowDecomposition) {
         builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);

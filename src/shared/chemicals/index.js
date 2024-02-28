@@ -83,6 +83,6 @@ export const addChemicalProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);
 
-    event.remove({id: "gtceu:centrifuge/salt_water_separation"});
-    event.recipes.gtceu()
+    event.remove({ id: "gtceu:centrifuge/salt_water_separation" });
+    event.recipes.gtceu();
 };

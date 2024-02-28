@@ -249,7 +249,7 @@ export const GT_MACHINE_TIERS = {
         grinder: "gtceu:diamond_grinding_head",
         emitterRod: Material.gtceu("platinum"),
         emitterGem: "gtceu:quantum_eye",
-        gear: Material.gtceu("stainless_steel")
+        gear: Material.gtceu("stainless_steel"),
     }),
 
     IV: new Tier("iv", {

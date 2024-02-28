@@ -140,10 +140,10 @@ export const doCleanups = (event) => {
     }
 
     // why?
-    event.remove({ id: "gtceu:centrifuge/lava_separation"} );
+    event.remove({ id: "gtceu:centrifuge/lava_separation" });
 
-    event.remove({id: "gtceu:arc_furnace/arc_prospector.luv"});
-    event.remove({ id: "gtceu:macerator/macerate_prospector.luv" })
+    event.remove({ id: "gtceu:arc_furnace/arc_prospector.luv" });
+    event.remove({ id: "gtceu:macerator/macerate_prospector.luv" });
 
     // why does this exist?
     event.remove({ type: "gtceu:create_mixer" });

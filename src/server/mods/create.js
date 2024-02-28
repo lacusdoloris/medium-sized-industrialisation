@@ -6,7 +6,7 @@
 export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
-    
+
     event.replaceInput({ mod: "create" }, "#forge:plates/gold", "#forge:plates/corinthian_bronze");
 
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
@@ -142,13 +142,9 @@ export const adjustCreateRecipes = (event) => {
         })
         .id("create:crafting/curiosities/brown_toolbox");
 
-    event.shaped(
-        "8x create:controller_rail",
-        ["I I", "ISI", "IEI"],
-        {
-            I: "#forge:ingots/corinthian_bronze",
-            S: "#forge:rods/treated_wood",
-            E: "create:electron_tube",
-        }
-    )
+    event.shaped("8x create:controller_rail", ["I I", "ISI", "IEI"], {
+        I: "#forge:ingots/corinthian_bronze",
+        S: "#forge:rods/treated_wood",
+        E: "create:electron_tube",
+    });
 };

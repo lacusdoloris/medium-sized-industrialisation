@@ -75,7 +75,8 @@ export const rewriteMotorRecipes = (event, tier) => {
  * @param {Tier} tier
  */
 export const rewritePistonRecipes = (event, tier) => {
-    let gear = typeof tier.materials.gear === "undefined" ? tier.materials.plate : tier.materials.gear;
+    let gear =
+        typeof tier.materials.gear === "undefined" ? tier.materials.plate : tier.materials.gear;
 
     event.remove({ id: `gtceu:shaped/electric_piston_${tier.name}` });
     event
