@@ -397,6 +397,7 @@
 				"This is also a good way to figure out what base ore you need for paticular materials."
 			]
 			id: "5A673563025AEFF6"
+			min_width: 400
 			rewards: [{
 				id: "7E975BC85519E508"
 				item: "gtceu:bronze_plate"

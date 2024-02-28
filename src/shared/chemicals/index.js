@@ -10,6 +10,7 @@ import { addRareEarthProcessingChain } from "./rare_earths";
 import { addTantaliteProcessingChain } from "./metallurgy/tantalum";
 import { addVanadiumChemicalChain } from "./metallurgy/vanadium";
 import { addBrineRecipes } from "./brine";
+import { addGoldProcessingRecipes } from "./metallurgy/gold";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -28,6 +29,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addMagnesiumProcessingRecipes(event);
     addMolybdenumProcessingRecipes(event);
     addCyanideRecipes(event);
+    addGoldProcessingRecipes(event);
     addBrineRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
@@ -80,4 +82,7 @@ export const addChemicalProcessingRecipes = (event) => {
         .itemOutputs("1x gtceu:calcium_silicate_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);
+
+    event.remove({id: "gtceu:centrifuge/salt_water_separation"});
+    event.recipes.gtceu()
 };

@@ -250,7 +250,10 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["03045253789CA043"]
+			dependencies: [
+				"03045253789CA043"
+				"30E1F8DE8519B1B9"
+			]
 			description: ["This is like the LV integrated circuit, only for MV machines. "]
 			id: "000CE46D72931AFD"
 			tasks: [{
@@ -577,6 +580,26 @@
 			title: "EV Circuit #1"
 			x: 4.0d
 			y: 10.5d
+		}
+		{
+			description: [
+				"Good Integrated Circuits and certain MV/HV recipes require &dgold&r, either pure or as an alloy with &dsilver&r to form &aelectrum&r. "
+				""
+				"The vanilla/GT gold ore -> gold ingot processing has been replaced with a custom cyanide processing chain, but you can also get small amounts of gold as byproducts of &dMagnetite&r, &dChalcopyrite&r, and &dSilver&r. "
+				""
+				"Look up the recipe for Gold Nuggets in the chemical reactor and work your way backwards for more details."
+				""
+				"&lThe ore processing chart is &cnot&f accurate!&r Please ignore it."
+			]
+			id: "30E1F8DE8519B1B9"
+			tasks: [{
+				id: "35B47543DAD71904"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "Gold Processing"
+			x: 8.0d
+			y: 7.0d
 		}
 	]
 	subtitle: ["The real fun begins here."]

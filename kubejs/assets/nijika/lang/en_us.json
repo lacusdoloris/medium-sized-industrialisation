@@ -77,6 +77,8 @@
     "material.nijika.brine": "Brine",
     "material.nijika.calcium_hydroxide": "Calcium Hydroxide",
     "material.nijika.potassium_chloride": "Potassium Chloride",
+    "material.nijika.gold_slurry": "Gold Slurry",
+    "material.nijika.gold_pulp_residue": "Gold Pulp Residue",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
