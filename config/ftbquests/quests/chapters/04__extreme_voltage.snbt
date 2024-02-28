@@ -29,9 +29,9 @@
 		{
 			dependencies: ["020FAE71BEDA6B1E"]
 			description: [
-				"One of the main components of HSLA Steel, &dMolybdenum&r is found exclusively on the moon. It has a complex crafting chain, requiring various stages of leaching and reacting to get the purified metal."
+				"One of the main components of HSLA Steel, &dMolybdenum&r is found in the Nether and has a custom processing chain from the crushed ore."
 				""
-				"You can either use &dMolybdenite&r or &dWulfenite&r as your source ores."
+				"To get the most out of your ores, you'll need to feed the impure molybdenum trioxide back into the roaster rather than letting some of it be destroyed with a pure roasting process."
 			]
 			id: "3C5626959F03AC79"
 			tasks: [{

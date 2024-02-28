@@ -513,20 +513,17 @@
 		{
 			dependencies: ["6278EA9D9DFCE1FB"]
 			description: [
-				"&dMonzaite&r is the primary carrier for rare earth metals."
+				"&dMolybenite&r is the primary ore of molybdenum, and the highest tier ore you can find uncombined in a dimension."
 				""
-				"They're so rare, they're only found in the nether! (They're not actually rare.)"
-				""
-				"As a fun fact, Cerium is a rare earth metal but is more common than tin. The more you know."
+				"It's found rarely everywhere in the nether."
 			]
-			id: "1B4A9A3A550E8FE4"
+			id: "2002B953007BC17C"
 			tasks: [{
-				count: 64L
-				id: "64D0AE8EAD6440E5"
-				item: { Count: 64b, id: "gtceu:raw_monazite" }
+				id: "136FD8A006B94A7F"
+				item: "gtceu:raw_molybdenite"
 				type: "item"
 			}]
-			title: "Monzaite"
+			title: "Molybdenum"
 			x: 6.5d
 			y: -2.5d
 		}
