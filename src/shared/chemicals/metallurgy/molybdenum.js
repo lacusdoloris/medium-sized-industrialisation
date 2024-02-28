@@ -46,12 +46,14 @@ export const addMolybdenumMaterials = (event) => {
 export const addMolybdenumProcessingRecipes = (event) => {
     // see ullman's Molybdenum and Molybdenum Compounds.
 
+    event.remove({input: "gtceu:crushed_molybdenite_ore"});
+
     // Wulfenite processing.
     // PbMoO4 + 2 NaOH = Pb(OH)2 + Na2MoO4
     // TODO: Lead hydroxide!
     event.recipes.gtceu.chemical_reactor("nijika:chemicals/molybdenum/wulfenite_leaching")
         .itemInputs(
-            "1x gtceu:wulfenite_dust",
+            "1x gtceu:crushed_wulfenite_ore",
             "2x gtceu:sodium_hydroxide_dust",
         )
         .chancedFluidOutput(
@@ -80,7 +82,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     // 2 MoS2 + 7 O2 = 2 MoO3 + 4 SO2 (hehehe)
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/molybdenum/molybdenite_roasting")
-        .itemInputs("2x gtceu:molybdenite_dust")
+        .itemInputs("2x gtceu:crushed_molybdenite_ore")
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(14 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:impure_molybdenum_trioxide_dust")
         .chancedOutput("1x gtceu:impure_molybdenum_trioxide_dust", 6500.0, 0.0) // Flat 65% chance, no boost!
