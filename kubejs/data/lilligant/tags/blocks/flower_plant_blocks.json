@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:stones/end",
+        "lilligant:grassy_endstone"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "bigglobe:script",
+    "config": {
+        "script": {
+            "debug_name": "EndGrass",
+            "source": [
+                "BlockState bs = 'minecraft:end_stone'",
+                "BlockTag flowers = BlockTag('minecraft:flowers')",
+                "BlockTag logs = BlockTag('minecraft:logs')",
+                
+                "if (getBlockState(originX, originY - 1, originZ) == bs:",
+                    "BlockState above = getBlockState(originX, originY, originZ)",
+                    "if (above.isAir() || above.isIn(flowers) || above.isIn(logs):",
+                        "setBlockState(originX, originY - 1, originZ, 'lilligant:grassy_endstone')",
+                        "return(true)",
+                    ")",
+                ")",
+                
+                "return(false)"
+            ]
+        }
+    }
+}
