@@ -5,6 +5,7 @@
 
 import { MODPACK_SETTINGS } from "../settings";
 import { addChemicalProcessingRecipes } from "../shared/chemicals";
+import { adjustBaseOresRecipes } from "./base_ores";
 import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
@@ -26,6 +27,7 @@ ServerEvents.recipes((event) => {
     adjustVariousMiscRecipes(event);
     doModRecipes(event);
     addChemicalProcessingRecipes(event);
+    adjustBaseOresRecipes(event);
 
     // == TIERED CONTENT == //
 

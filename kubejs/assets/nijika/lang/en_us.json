@@ -12,9 +12,14 @@
     "material.nijika.bocchinium": "§dBocchinium§r",
     "material.nijika.nijikaite": "§eNijikaite§r",
     "material.nijika.ryoite": "§9Ryoite§r",
-    "material.nijika.kitakitaite": "§cKitakitaite",
+    "material.nijika.kitakitaite": "§cKitakitaite§r",
     "material.nijika.kikurite": "§5Kikurite§r",
-
+    "vein.nijika.bocchinium": "§dBocchinium§r Vein",
+    "vein.nijika.nijikaite": "§eNijikaite§r Vein",
+    "vein.nijika.ryoite": "§9Ryoite§r Vein",
+    "vein.nijika.kitakitaite": "§cKitakitaite§r Vein",
+    "vein.nijika.kikurite": "§5Kikurite§r Vein",
+    
     "material.nijika.ammonium_hydroxide": "Ammonium Hydroxide",
     "material.nijika.orpiment": "Orpiment",
     "material.nijika.arsenic_trichloride": "Arsenic Trichloride",
