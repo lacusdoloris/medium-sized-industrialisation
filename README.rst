@@ -20,8 +20,8 @@ Notable features:
 User Installation Guide
 -----------------------
 
-Bigger Industrialisation is not yet published on Modrinth. When it is, you will be able to download
-it from directly within your launcher automatically.
+Bigger Industrialisation is published on `Modrinth`_. You can download both the client and 
+server-only packs there, or install it through your launcher.
 
 You can get the latest tagged release from `the releases page <https://github.com/Fuyukai/bigger-industrialisation/releases>`__
 and the latest development builds `from here <https://nightly.link/Fuyukai/bigger-industrialisation/workflows/ci/mizuki>`__.
@@ -91,3 +91,4 @@ Kamuidrome, for various reasons. These are:
 
 .. _Big Globe: https://modrinth.com/mod/big-globe
 .. _GregTech CEu Modern: https://modrinth.com/mod/gregtechceu-modern
+.. _Modrinth: https://modrinth.com/modpack/bigger-industrialisation
