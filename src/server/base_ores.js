@@ -32,11 +32,13 @@ export const adjustBaseOresRecipes = (event) => {
     event.remove({type: "createoreexcavation:drilling"});
     event.remove({type: "createoreexcavation:extracting"});
 
+    
+
     for (let [name, veinData] of Object.entries(VEINS)) {
         event.recipes.createoreexcavation.vein(
             Component.translatable(`vein.nijika.${name}`),
             `gtceu:raw_${name}`
-        ).biomeWhitelist("#bigglobe:overworld").placement(2048, 512, veinData.seed)
+        ).biomeWhitelist("bigglobe:overworld").placement(2048, 512, veinData.seed)
             .id(`nijika:veins/overworld/${name}`);
 
         event.recipes.createoreexcavation.drilling(
