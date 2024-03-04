@@ -36,6 +36,10 @@ ServerEvents.recipes((event) => {
     doTier02Content(event);
     doTier03Content(event);
     doTier04Content(event);
+
+    // why does this exist?
+    // done last to remove any added mixer recipes.
+    event.remove({ type: "gtceu:create_mixer" });
 });
 
 GTCEuServerEvents.oreVeins((event) => {

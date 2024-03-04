@@ -145,9 +145,6 @@ export const doCleanups = (event) => {
     event.remove({ id: "gtceu:arc_furnace/arc_prospector.luv" });
     event.remove({ id: "gtceu:macerator/macerate_prospector.luv" });
 
-    // why does this exist?
-    event.remove({ type: "gtceu:create_mixer" });
-
     // too easy!
     event.remove({ output: "createaddition:alternator" });
 
