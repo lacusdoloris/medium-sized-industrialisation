@@ -18,4 +18,21 @@ export const doTier04Content = (event) => {
         .EUt(GTValues.VH[GTValues.LV])
         .duration(2 * 20 + 10)
         .circuit(6);
+
+    event.remove({ id: "gtceu:mixer/hsla_steel" });
+    event.recipes.gtceu.bessemer_smelting("nijika:tier04/hsla_steel")
+        .itemInputs(
+            "32x #forge:storage_blocks/invar",
+            "10x #forge:storage_blocks/titanium",
+            "10x #forge:storage_blocks/vanadium",
+            "12x #forge:storage_blocks/ferromolybdenum",
+            "64x #nijika:bessemer_limestone"
+        )
+        .itemOutputs("64x gtceu:hsla_steel_block")
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(81 * FluidAmounts.BUCKET))
+        .duration(40 * 60 * 20)
+        .EUt(GTValues.EV)
+        .circuit(4);
+
+    
 };

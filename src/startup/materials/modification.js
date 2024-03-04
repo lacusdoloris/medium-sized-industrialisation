@@ -25,6 +25,7 @@ const DISABLE_DECOMPOSITION = [
     // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
     // trichloride.
     "arsenic_trioxide",
+    "hsla_steel",
 ];
 
 /** A list of materials to actually add dusts & ingots to. */
@@ -193,6 +194,8 @@ export const customiseMaterials = () => {
     getMaterial("magnesium_hydroxide").setFormula("Mg(OH)2");
     getMaterial("sodium_dicyanoaurate").setFormula("Na[Au(CN)2]");
     getMaterial("calcium_hydroxide").setFormula("Ca(OH)2");
+    // steels shouldn't have formulas!
+    getMaterial("hsla_steel").setFormula(null);
 
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);
