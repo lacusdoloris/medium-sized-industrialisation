@@ -29,13 +29,13 @@ export const doTier02Content = (event) => {
         .duration(20 * 60);
 
     event.recipes.gtceu
-        .assembler("nijika:tier02/nmh_battery")
+        .assembler("nijika:tier02/nickel_cadmium_battery")
         .itemInputs(
-            "4x gtceu:lanthanum_nickel_alloy_foil",
+            "4x gtceu:cadmium_dust",
+            "2x gtceu:nickel_foil",
             "4x gtceu:polyethylene_foil",
             "1x gtceu:mv_battery_hull"
         )
-        .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:mv_cadmium_battery")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
@@ -47,4 +47,6 @@ export const doTier02Content = (event) => {
         .itemOutputs("gtceu:infinite_water_cover")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
+
+    
 };
