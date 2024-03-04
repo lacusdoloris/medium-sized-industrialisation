@@ -31,8 +31,17 @@ export const doTier04Content = (event) => {
         .itemOutputs("64x gtceu:hsla_steel_block")
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(81 * FluidAmounts.BUCKET))
         .duration(40 * 60 * 20)
-        .EUt(GTValues.EV)
+        .EUt(GTValues.VA[GTValues.EV])
         .circuit(4);
 
-    
+    event.remove({id: "gtceu:mixer/drilling_fluid"});
+    event.recipes.gtceu.mixer("nijika:tier04/drilling_fluid")
+        .itemInputs("1x #forge:dusts/deepslate")
+        .inputFluids(
+            Fluid.of("gtceu:lubricant").withAmount(20 * FluidAmounts.MILLIBUCKET),
+            Fluid.of("minecraft:water").withAmount(4980 * FluidAmounts.MILLIBUCKET),
+        )
+        .outputFluids(Fluid.of("gtceu:drilling_fluid").withAmount(5 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VH[GTValues.MV])
+        .duration(64);
 };

@@ -32,7 +32,6 @@ export const adjustBaseOresRecipes = (event) => {
     event.remove({type: "createoreexcavation:drilling"});
     event.remove({type: "createoreexcavation:extracting"});
 
-    
 
     for (let [name, veinData] of Object.entries(VEINS)) {
         event.recipes.createoreexcavation.vein(
@@ -45,6 +44,6 @@ export const adjustBaseOresRecipes = (event) => {
             `gtceu:raw_${name}`,
             `nijika:veins/overworld/${name}`,
             640
-        ).id(`nijika:drilling/overworld/${name}`);
+        ).fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET)).id(`nijika:drilling/overworld/${name}`);
     }
 }
