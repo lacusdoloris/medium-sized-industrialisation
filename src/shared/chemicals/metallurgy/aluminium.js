@@ -21,7 +21,7 @@ export const addAluminiumMaterials = (event) => {
     );
 
     createAcidicIntermediate(event, "red_mud", 0xff0000).dust();
-    createAcidicIntermediate(event, "red_mud_slurrry", 0xaf3300);
+    createAcidicIntermediate(event, "red_mud_slurry", 0xaf3300);
 };
 
 /**
