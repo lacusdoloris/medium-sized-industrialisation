@@ -6,7 +6,7 @@ import { nijikaId } from "../utils";
 export const createDustIntermediate = (event, id, colour, allowDecomposition) => {
     let builder = event.create(nijikaId(id)).dust().color(colour);
 
-    if (typeof allowDecomposition === "boolean" && !allowDecomposition) {
+    if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
         builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
     return builder;
@@ -15,12 +15,17 @@ export const createDustIntermediate = (event, id, colour, allowDecomposition) =>
 /**
  * Creates a new aqueous intermediate.
  */
-export const createAqueousIntermediate = (event, id, colour) => {
-    return event
+export const createAqueousIntermediate = (event, id, colour, allowDecomposition) => {
+    let builder = event
         .create(nijikaId(id))
-        .liquid()
-        .color(colour)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        .fluid()
+        .color(colour);
+
+    if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
+        builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
+    return builder;
 };
 
 /**
@@ -37,11 +42,16 @@ export const createAcidicIntermediate = (event, id, colour) => {
 /**
  * Creates a chemical (dust + aqueous) intermediate.
  */
-export const createChemicalIntermediate = (event, id, colour) => {
-    return event
+export const createChemicalIntermediate = (event, id, colour, allowDecomposition) => {
+    let builder = event
         .create(nijikaId(id))
         .dust()
         .fluid()
-        .color(colour)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        .color(colour);
+
+    if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
+        builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
+    return builder;
 };

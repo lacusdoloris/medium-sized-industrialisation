@@ -195,7 +195,9 @@ export const customiseMaterials = () => {
     getMaterial("sodium_dicyanoaurate").setFormula("Na[Au(CN)2]");
     getMaterial("calcium_hydroxide").setFormula("Ca(OH)2");
     // steels shouldn't have formulas!
-    getMaterial("hsla_steel").setFormula(null);
+    // false means it's sent straight to the property, without trying to decapitalise it
+    // (which would crash).
+    getMaterial("hsla_steel").setFormula(null, false);
 
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);

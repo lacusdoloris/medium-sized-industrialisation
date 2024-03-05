@@ -1,7 +1,7 @@
 // Ref: Vanadium and Vanadium Compounds
 // https://doi.org/10.1002/14356007.a27_367
 
-import { createDustIntermediate } from "../../materials/helpers";
+import { createChemicalIntermediate, createDustIntermediate } from "../../materials/helpers";
 
 export const addVanadiumMaterials = (event) => {
     // == Vanadium == //
@@ -9,6 +9,8 @@ export const addVanadiumMaterials = (event) => {
         "2x gtceu:vanadium",
         "5x gtceu:oxygen"
     );
+
+    createChemicalIntermediate(event, "vanadium_oxytrichloride", 0xf5f242);
 };
 
 /**
@@ -87,4 +89,28 @@ export const addVanadiumChemicalChain = (event) => {
         .EUt(16)
         .duration(2 * 20 + 10)
         .circuit(6);
+
+    // oxytrichloride hydrolysis
+    // 2 VOCl3 + 3 H2O = V2O5 + 6 HCl
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_hydrolysis")
+        .inputFluids(
+            Fluid.of("gtceu:vanadium_oxytrichloride").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("gtceu:vanadium_pentoxide_dust")
+        .EUt(GTValues.VH[GTValues.HV])
+        .duration(5 * 20)
+        .circuit(1);  
+    
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_dust_hydrolysis")
+        .inputFluids(
+            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
+        )
+        .itemInputs("2x gtceu:vanadium_oxytrichloride_dust")
+        .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("gtceu:vanadium_pentoxide_dust")
+        .EUt(GTValues.VH[GTValues.HV])
+        .duration(5 * 20)
+        .circuit(1);  
 };

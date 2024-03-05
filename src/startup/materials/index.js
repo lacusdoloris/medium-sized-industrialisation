@@ -18,6 +18,7 @@ import { addGoldMaterials } from "../../shared/chemicals/metallurgy/gold";
 import { addCyanideMaterials } from "../../shared/chemicals/metallurgy/cyanide";
 import { addBaseOreMaterials } from "./base_ores";
 import { addBrineMaterials } from "../../shared/chemicals/brine";
+import { addTitaniumMaterials } from "../../shared/chemicals/metallurgy/titanium";
 
 /**
  * Adds new custom materials.
@@ -37,6 +38,7 @@ export const addCustomMaterials = (event) => {
     addMolybdenumMaterials(event);
     addRareEarthMaterials(event);
     addTantalumMaterials(event);
+    addTitaniumMaterials(event);
     addVanadiumMaterials(event);
 
     addBrineMaterials(event);
