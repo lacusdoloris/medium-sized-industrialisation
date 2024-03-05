@@ -236,20 +236,20 @@ export const GT_MACHINE_TIERS = {
     }),
 
     EV: new Tier("ev", {
-        plate: Material.gtceu("stainless_steel"),
+        plate: Material.nijika("nitinol"),
         hullPlate: Material.gtceu("polyethylene"),
         cable: Material.gtceu("aluminium"),
         electricWire: Material.gtceu("platinum"),
         motorWire: Material.gtceu("kanthal"),
-        magnetic: Material.gtceu("magnetic_neodymium"),
+        magnetic: Material.gtceu("magnetic_steel"),
         glass: "gtceu:tempered_glass",
         pipe: Material.gtceu("stainless_steel"),
         heating: Material.gtceu("nichrome"),
-        rotor: Material.gtceu("stainless_steel"),
+        rotor: Material.nijika("az_91"),
         grinder: "gtceu:diamond_grinding_head",
         emitterRod: Material.gtceu("platinum"),
         emitterGem: "gtceu:quantum_eye",
-        gear: Material.gtceu("stainless_steel"),
+        gear: Material.nijika("az_91"),
     }),
 
     IV: new Tier("iv", {

@@ -23,9 +23,10 @@ export const addMagnesiumMaterials = (event) => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROTOR,
-            GTMaterialFlags.GENERATE_FRAME
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
         )
-        .color(0x1278ee);
+        .color(0x99bee8);
 };
 
 /**
