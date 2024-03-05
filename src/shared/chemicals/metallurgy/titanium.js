@@ -3,13 +3,13 @@ import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermed
 export const addTitaniumMaterials = (event) => {
     // Crude TiCl4
     createAcidicIntermediate(event, "impure_titanium_tetrachloride", 0x43041d)
-        .components("1x gtceu:titanium, 4x gtceu:chlorine");
+        .components("1x gtceu:titanium", "4x gtceu:chlorine");
     // Distilled TiCl4
     createAcidicIntermediate(event, "impure_titanium_tetrachloride_1", 0x5c0528)
-        .components("1x gtceu:titanium, 4x gtceu:chlorine");
+        .components("1x gtceu:titanium", "4x gtceu:chlorine");
     // Precipitated TiCl4
     createAcidicIntermediate(event, "impure_titanium_tetrachloride_2", 0x740632)
-        .components("1x gtceu:titanium, 4x gtceu:chlorine");
+        .components("1x gtceu:titanium", "4x gtceu:chlorine");
 
     // Not strictly part of the reaction, but there's no tin/silicon sections yet.
     createAqueousIntermediate(event, "trichlorosilane", 0xddf0e7, true)

@@ -10,7 +10,8 @@ export const addVanadiumMaterials = (event) => {
         "5x gtceu:oxygen"
     );
 
-    createChemicalIntermediate(event, "vanadium_oxytrichloride", 0xf5f242);
+    createChemicalIntermediate(event, "vanadium_oxytrichloride", 0xf5f242)
+        .components("1x gtceu:vanadium", "1x gtceu:oxygen", "3x gtceu:chlorine");
 };
 
 /**
