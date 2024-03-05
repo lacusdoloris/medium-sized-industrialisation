@@ -47,6 +47,4 @@ export const doTier02Content = (event) => {
         .itemOutputs("gtceu:infinite_water_cover")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
-
-    
 };

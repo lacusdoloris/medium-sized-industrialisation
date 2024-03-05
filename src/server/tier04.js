@@ -20,7 +20,8 @@ export const doTier04Content = (event) => {
         .circuit(6);
 
     event.remove({ id: "gtceu:mixer/hsla_steel" });
-    event.recipes.gtceu.bessemer_smelting("nijika:tier04/hsla_steel")
+    event.recipes.gtceu
+        .bessemer_smelting("nijika:tier04/hsla_steel")
         .itemInputs(
             "32x #forge:storage_blocks/invar",
             "10x #forge:storage_blocks/titanium",
@@ -34,12 +35,13 @@ export const doTier04Content = (event) => {
         .EUt(GTValues.VA[GTValues.EV])
         .circuit(4);
 
-    event.remove({id: "gtceu:mixer/drilling_fluid"});
-    event.recipes.gtceu.mixer("nijika:tier04/drilling_fluid")
+    event.remove({ id: "gtceu:mixer/drilling_fluid" });
+    event.recipes.gtceu
+        .mixer("nijika:tier04/drilling_fluid")
         .itemInputs("1x #forge:dusts/deepslate")
         .inputFluids(
             Fluid.of("gtceu:lubricant").withAmount(20 * FluidAmounts.MILLIBUCKET),
-            Fluid.of("minecraft:water").withAmount(4980 * FluidAmounts.MILLIBUCKET),
+            Fluid.of("minecraft:water").withAmount(4980 * FluidAmounts.MILLIBUCKET)
         )
         .outputFluids(Fluid.of("gtceu:drilling_fluid").withAmount(5 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])

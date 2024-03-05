@@ -145,7 +145,7 @@ export const doCleanups = (event) => {
     event.remove({ id: "gtceu:arc_furnace/arc_prospector.luv" });
     event.remove({ id: "gtceu:macerator/macerate_prospector.luv" });
 
-    event.remove({ id: /gtceu:shaped.*_kinetic_mixer/})
+    event.remove({ id: /gtceu:shaped.*_kinetic_mixer/ });
 
     // too easy!
     event.remove({ output: "createaddition:alternator" });

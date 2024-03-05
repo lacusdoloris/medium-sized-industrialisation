@@ -16,10 +16,7 @@ export const createDustIntermediate = (event, id, colour, allowDecomposition) =>
  * Creates a new aqueous intermediate.
  */
 export const createAqueousIntermediate = (event, id, colour, allowDecomposition) => {
-    let builder = event
-        .create(nijikaId(id))
-        .fluid()
-        .color(colour);
+    let builder = event.create(nijikaId(id)).fluid().color(colour);
 
     if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
         builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
@@ -43,11 +40,7 @@ export const createAcidicIntermediate = (event, id, colour) => {
  * Creates a chemical (dust + aqueous) intermediate.
  */
 export const createChemicalIntermediate = (event, id, colour, allowDecomposition) => {
-    let builder = event
-        .create(nijikaId(id))
-        .dust()
-        .fluid()
-        .color(colour);
+    let builder = event.create(nijikaId(id)).dust().fluid().color(colour);
 
     if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
         builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);

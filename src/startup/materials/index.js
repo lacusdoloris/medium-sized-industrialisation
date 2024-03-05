@@ -91,8 +91,12 @@ export const addCustomMaterials = (event) => {
     );
 
     // == Tier Materials == //
-    event.create(nijikaId("nitinol"))
-        .color(0xa874e8).ingot().dust().iconSet(GTMaterialIconSet.SHINY)
+    event
+        .create(nijikaId("nitinol"))
+        .color(0xa874e8)
+        .ingot()
+        .dust()
+        .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:titanium", "1x gtceu:nickel")
         .flags(
             GTMaterialFlags.GENERATE_FRAME,
@@ -101,5 +105,4 @@ export const addCustomMaterials = (event) => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.DISABLE_ALLOY_BLAST
         );
-
 };

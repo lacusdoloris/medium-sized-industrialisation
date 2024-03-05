@@ -10,8 +10,11 @@ export const addVanadiumMaterials = (event) => {
         "5x gtceu:oxygen"
     );
 
-    createChemicalIntermediate(event, "vanadium_oxytrichloride", 0xf5f242)
-        .components("1x gtceu:vanadium", "1x gtceu:oxygen", "3x gtceu:chlorine");
+    createChemicalIntermediate(event, "vanadium_oxytrichloride", 0xf5f242).components(
+        "1x gtceu:vanadium",
+        "1x gtceu:oxygen",
+        "3x gtceu:chlorine"
+    );
 };
 
 /**
@@ -93,7 +96,8 @@ export const addVanadiumChemicalChain = (event) => {
 
     // oxytrichloride hydrolysis
     // 2 VOCl3 + 3 H2O = V2O5 + 6 HCl
-    event.recipes.gtceu.chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_hydrolysis")
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_hydrolysis")
         .inputFluids(
             Fluid.of("gtceu:vanadium_oxytrichloride").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
@@ -102,16 +106,15 @@ export const addVanadiumChemicalChain = (event) => {
         .itemOutputs("gtceu:vanadium_pentoxide_dust")
         .EUt(GTValues.VH[GTValues.HV])
         .duration(5 * 20)
-        .circuit(1);  
-    
-    event.recipes.gtceu.chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_dust_hydrolysis")
-        .inputFluids(
-            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
-        )
+        .circuit(1);
+
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_dust_hydrolysis")
+        .inputFluids(Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET))
         .itemInputs("2x gtceu:vanadium_oxytrichloride_dust")
         .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("gtceu:vanadium_pentoxide_dust")
         .EUt(GTValues.VH[GTValues.HV])
         .duration(5 * 20)
-        .circuit(1);  
+        .circuit(1);
 };
