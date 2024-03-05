@@ -67,12 +67,12 @@ export const addTitaniumRecipes = (event) => {
     event.recipes.gtceu.chemical_reactor("nijika:chemicals/titanium/ticl4_vanadium")
         .inputFluids(
             Fluid.of("gtceu:impure_titanium_tetrachloride_1").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen_cyanide").withAmount(1 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:hydrogen_sulfide").withAmount(1 * FluidAmounts.BUCKET)
         )
         .notConsumable("4x #forge:dusts/copper")
         .outputFluids(
             Fluid.of("gtceu:titanium_tetrachloride").withAmount(980 * FluidAmounts.MB),
-            Fluid.of("gtceu:hydrogen_cyanide").withAmount(910 * FluidAmounts.MB)
+            Fluid.of("gtceu:hydrogen_sulfide").withAmount(910 * FluidAmounts.MB)
         )
         .chancedOutput("2x gtceu:tiny_vanadium_oxytrichloride_dust", 7800.0, 0.0)
         .duration(7 * 20 + 10)
