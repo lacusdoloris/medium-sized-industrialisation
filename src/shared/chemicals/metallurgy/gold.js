@@ -60,7 +60,7 @@ export const addGoldProcessingRecipes = (event) => {
 
     // 4) Gold pulp residue can be washed in hydrochloric acid to get some reactants back.
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/gold/pulp_processing")
+        .large_chemical_reactor("nijika:chemicals/gold/pulp_processing")
         .inputFluids(
             Fluid.of("gtceu:gold_pulp_residue").withAmount(4 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:hydrochloric_acid").withAmount(12 * FluidAmounts.BUCKET)
@@ -74,6 +74,6 @@ export const addGoldProcessingRecipes = (event) => {
         )
         .chancedOutput("3x gtceu:small_silver_dust", 2700.0, 7.0)
         .chancedOutput("11x gtceu:tiny_copper_cyanide_dust", 1510.0, 7.0)
-        .EUt(GTValues.VA[GTValues.LV])
+        .EUt(GTValues.VA[GTValues.MV])
         .duration(3 * 20 + 10);
 };
