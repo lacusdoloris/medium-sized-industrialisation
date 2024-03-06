@@ -230,14 +230,14 @@
         "version_id": "7YudDLPR"
     },
     "FYpiwiBR": {
-        "checksum": "a70d34903e58ba83f6c2f91d72636075c29764c9f052b18c4f92e103bb35c3f16d29f8a3f8a8b3eb00a76137795400de2b882b45fa3019cbac91c36e4789c46b",
+        "checksum": "5214459812e47f05aafb9d3ed55c53d0104a3cd9e5f39df16d05b060cf1c8882bff1197d9a2c6ec5bbeff9c7194a8c5854d0abf10837e81f7fab59ace4c2f213",
         "client_side_only": false,
         "name": "Connector Extras",
         "pinned": false,
         "project_id": "FYpiwiBR",
         "selected": true,
-        "version": "1.9.3+1.20.1",
-        "version_id": "ozzQ9zl7"
+        "version": "1.10.0+1.20.1",
+        "version_id": "bWPRSm4H"
     },
     "G1hIVOrD": {
         "checksum": "211f6aa2e3ee7c5b04ead646fc0460a26ab937ce0091e76b6de5b47410fae78449a2f7138d16a66051287e30dbf9f3a5edea952bba654481dd35dc46616d301b",
