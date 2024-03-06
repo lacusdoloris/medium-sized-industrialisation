@@ -79,7 +79,7 @@ export const addTitaniumRecipes = (event) => {
         )
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
-        .disableDistilleryRecipes();
+        .disableDistilleryRecipes(true);
 
     // fuck OFF gtceu
     event.remove({
