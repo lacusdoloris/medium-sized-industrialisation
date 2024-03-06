@@ -1,6 +1,7 @@
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
 import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
+import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
 
 // some notes
 //
@@ -24,6 +25,9 @@ export const addAllRecipeTypes = (event) => {
 
     let butcher = event.create("butchering");
     addButcheringRecipeType(butcher);
+
+    let sorter = event.create("ore_sorting");
+    addOreSortingRecipeType(sorter);
 };
 
 /**
@@ -40,4 +44,7 @@ export const addAllMachineTypes = (event) => {
 
     let butcher = event.create("nijika:butcher", "multiblock");
     addButcheringMultiblock(butcher);
+
+    let sorter = event.create("nijjika:ore_sorter", "multiblock");
+    addOreSortingMultiblock(sorter);
 };

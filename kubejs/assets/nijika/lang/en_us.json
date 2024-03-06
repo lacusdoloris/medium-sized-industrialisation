@@ -98,9 +98,8 @@
     "gtceu.evaporation_pool": "Evaporating",
     "block.gtceu.butcher": "Butcher",
     "gtceu.butchering": "Butchering",
-
-    "gtceu.jei.ore_vein.bauxite_vein_moon": "Lunar Bauxite/Ilmenite",
-    "gtceu.jei.ore_vein.lunar_molybdenum_vein": "Lunar Molybdenite",
+    "block.gtceu.ore_sorter": "Ore Sorter",
+    "gtceu.ore_sorting": "Ore Sorting",
 
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
     "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
