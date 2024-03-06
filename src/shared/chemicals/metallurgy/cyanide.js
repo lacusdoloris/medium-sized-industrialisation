@@ -12,12 +12,6 @@ export const addCyanideMaterials = (event) => {
         "1x gtceu:carbon",
         "1x gtceu:hydrogen"
     );
-
-    createDustIntermediate(event, "copper_cyanide", 0xbd945e).components(
-        "1x gtceu:copper",
-        "1x gtceu:carbon",
-        "1x gtceu:hydrogen"
-    );
 };
 
 /**
