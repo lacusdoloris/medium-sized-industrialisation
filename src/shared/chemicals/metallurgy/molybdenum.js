@@ -60,6 +60,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     // see ullman's Molybdenum and Molybdenum Compounds.
 
     event.remove({ input: "gtceu:crushed_molybdenite_ore" });
+    event.remove({ input: "gtceu:crushed_wulfenite_ore" });
 
     // Wulfenite processing.
     // PbMoO4 + 2 NaOH = Pb(OH)2 + Na2MoO4
@@ -67,10 +68,8 @@ export const addMolybdenumProcessingRecipes = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/molybdenum/wulfenite_leaching")
         .itemInputs("1x gtceu:crushed_wulfenite_ore", "2x gtceu:sodium_hydroxide_dust")
-        .chancedFluidOutput(
+        .outputFluids(
             Fluid.of("gtceu:sodium_molybdate").withAmount(1 * FluidAmounts.BUCKET),
-            9940.0,
-            0.15
         )
         .EUt(GTValues.VH[GTValues.EV]) // Not a mistake! EV!
         .duration(15 * 20);
