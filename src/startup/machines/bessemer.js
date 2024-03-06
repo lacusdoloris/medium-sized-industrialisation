@@ -42,7 +42,7 @@ export const addBessemerMultiblock = (builder) => {
                 "#FXXXF#",
                 "#FIIIF#"
             )
-            .aisle("#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#")
+            .aisle("#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIMIF#")
             .aisle("#IIIII#", "#FXXXF#", "FFXXXFF", "FFXXXFF", "#FXXXF#", "#FIIIF#")
             .aisle("#IIIII#", "#FFFFF#", "FFFFFFF", "FFFFFFF", "#FFFFF#", "#FFFFF#")
             .aisle(
