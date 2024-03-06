@@ -1,7 +1,6 @@
 import { nijikaId } from "../../shared/utils";
 import {
     createAcidicIntermediate,
-    createAqueousIntermediate,
     createDustIntermediate,
 } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
@@ -16,10 +15,10 @@ import { addMagnesiumMaterials } from "../../shared/chemicals/metallurgy/magnesi
 import { addMolybdenumMaterials } from "../../shared/chemicals/metallurgy/molybdenum";
 import { addGoldMaterials } from "../../shared/chemicals/metallurgy/gold";
 import { addCyanideMaterials } from "../../shared/chemicals/metallurgy/cyanide";
-import { addBaseOreMaterials } from "./base_ores";
 import { addBrineMaterials } from "../../shared/chemicals/brine";
 import { addTitaniumMaterials } from "../../shared/chemicals/metallurgy/titanium";
 import { addCopperMaterials } from "../../shared/chemicals/metallurgy/copper";
+import { addBaseOreMaterials } from "../../shared/base_ores";
 
 /**
  * Adds new custom materials.
