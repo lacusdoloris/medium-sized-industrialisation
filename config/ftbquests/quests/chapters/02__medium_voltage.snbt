@@ -340,7 +340,7 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			title: "hiding places"
+			title: "M68k"
 			x: 3.5d
 			y: 7.0d
 		}
@@ -582,16 +582,20 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["535977705E793982"]
 			description: [
 				"Good Integrated Circuits and certain MV/HV recipes require &dgold&r, either pure or as an alloy with &dsilver&r to form &aelectrum&r. "
 				""
 				"The vanilla/GT gold ore -> gold ingot processing has been replaced with a custom cyanide processing chain, but you can also get small amounts of gold as byproducts of &dMagnetite&r, &dChalcopyrite&r, and &dSilver&r. "
 				""
-				"Look up the recipe for Gold Nuggets in the chemical reactor and work your way backwards for more details."
+				"Look up the recipe for Gold Nuggets in the chemical reactor and work your way backwards for more details. "
 				""
 				"&lThe ore processing chart is &cnot&f accurate!&r Please ignore it."
+				""
+				"You should consider stockpiling your gold pulp residue until you have the &dLarge Chemical Reactor&r available, as it'll lett you recover some additional gold from your reactants."
 			]
 			id: "30E1F8DE8519B1B9"
+			min_width: 400
 			tasks: [{
 				id: "35B47543DAD71904"
 				item: "minecraft:gold_ingot"

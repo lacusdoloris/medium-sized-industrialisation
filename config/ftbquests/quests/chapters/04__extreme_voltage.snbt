@@ -40,8 +40,57 @@
 				type: "item"
 			}]
 			title: "Ferromolybdenum"
-			x: 0.5d
+			x: 1.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["7A5442AE0CF22288"]
+			description: [
+				"&aTitanium&r is one of the components of &dHSLA Steel&r, as well as one of the components of &aNitinol&r, the tier material for EV. "
+				""
+				"It's produced from &dRutile Dust&r, which is a byproduct of &dBauxite&r or &dMagnetite&r production, or from &dIlmenite&r made from the base ores. There's a few steps required to purify &aTitanium Tetrachloride&r, as well."
+			]
+			id: "5C95727EAA395038"
+			tasks: [{
+				id: "587AF16949FD2804"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			title: "Titanium"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3C5626959F03AC79"
+				"5C95727EAA395038"
+			]
+			description: [
+				"&dHSLA Steel&r is required for Ore Excavation drills, the &9Alloy Blast Furnace&r, and certain large multiblocks."
+				""
+				"It's made in a Bessemer Converter as a mixture of invar, titanium, vanadium, and ferromolybdenum."
+			]
+			id: "10A18BA06D165985"
+			tasks: [{
+				id: "6AEA5E8A8C3229E7"
+				item: "gtceu:hsla_steel_ingot"
+				type: "item"
+			}]
+			title: "High Speed, Low Drag"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["10A18BA06D165985"]
+			id: "162A90AC0A02ABDE"
+			tasks: [{
+				id: "735C67532B0D217F"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			title: "Electric Blast Furnace 2"
+			x: 0.5d
+			y: 5.0d
 		}
 	]
 	title: "EV - ODDYSEY"
