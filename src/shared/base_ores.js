@@ -5,60 +5,43 @@ const BASE_ORES = {
         colour: 0xf7a0b5,
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
-        intoOres: [
-            "magnetite",
-            "ilmenite",
-        ],
+        intoOres: ["magnetite", "ilmenite"],
     },
 
     nijikaite: {
         seed: 1929496478,
         colour: 0xf3e5a1,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: [
-            "wulfenite",
-            "scheelite",
-        ],
+        intoOres: ["wulfenite", "scheelite"],
     },
 
     ryoite: {
         seed: 155659298,
         colour: 0x49679f,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: [
-            "pyrolusite",
-            "gold",
-        ],
+        intoOres: ["pyrolusite", "gold"],
     },
 
     kitakitaite: {
         seed: 649130079,
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: [
-            "chalcopyrite",
-            "sphalerite",
-        ],
+        intoOres: ["chalcopyrite", "sphalerite"],
     },
 
     kikurite: {
         seed: 1321746503,
         colour: 0x995678,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: [
-            "cassiterite", "galena"
-        ],
+        intoOres: ["cassiterite", "galena"],
     },
 
     yoyokite: {
         seed: 1191360869,
         colour: 0x5a3c2d,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: [
-            "bauxite",
-            "chromite",
-        ]
-    }
+        intoOres: ["bauxite", "chromite"],
+    },
 };
 
 /**
@@ -68,15 +51,15 @@ export const addBaseOreMaterials = (event) => {
     for (let [name, data] of Object.entries(BASE_ORES)) {
         event.create(nijikaId(name)).color(data.colour).ore().dust().iconSet(data.iconSet);
     }
-}
+};
 
 const goldify = (what) => {
     if (what == "gold") {
-        return "minecraft:raw_gold"
+        return "minecraft:raw_gold";
     } else {
-        return `gtceu:raw_${what}`
+        return `gtceu:raw_${what}`;
     }
-}
+};
 
 /**
  * Creates and adjusts the recipes for the base ores.
@@ -107,8 +90,9 @@ export const addBaseOreRecipes = (event) => {
         // Impure ore (crystals): ore 1 + 2 + 3 + 4 + slag
         // Pure ore (... yeah): all 7 ores, no slag
 
-        event.remove({input: `gtceu:crushed_${name}_ore`});
-        event.recipes.gtceu.ore_sorting(`nijika:base_ores/${name}/sorting_tier_1`)
+        event.remove({ input: `gtceu:crushed_${name}_ore` });
+        event.recipes.gtceu
+            .ore_sorting(`nijika:base_ores/${name}/sorting_tier_1`)
             .itemInputs(`4x gtceu:crushed_${name}_ore`)
             .itemOutputs(
                 `2x ${goldify(oreData.intoOres[0])}`,

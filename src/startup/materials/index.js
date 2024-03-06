@@ -1,8 +1,5 @@
 import { nijikaId } from "../../shared/utils";
-import {
-    createAcidicIntermediate,
-    createDustIntermediate,
-} from "../../shared/materials/helpers";
+import { createAcidicIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChromiumMaterials } from "../../shared/chemicals/metallurgy/chromium";
 import { addGalliumArsenicMaterials } from "../../shared/chemicals/metallurgy/gallum_arsenic";

@@ -68,9 +68,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/molybdenum/wulfenite_leaching")
         .itemInputs("1x gtceu:crushed_wulfenite_ore", "2x gtceu:sodium_hydroxide_dust")
-        .outputFluids(
-            Fluid.of("gtceu:sodium_molybdate").withAmount(1 * FluidAmounts.BUCKET),
-        )
+        .outputFluids(Fluid.of("gtceu:sodium_molybdate").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.EV]) // Not a mistake! EV!
         .duration(15 * 20);
 

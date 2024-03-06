@@ -6,8 +6,7 @@ export const addOreSortingRecipeType = (type) => {
         .setMaxIOSize(4, 6, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE);
-}
-
+};
 
 /**
  * @param {Internal.MultiblockMachineBuilder} builder
@@ -22,7 +21,7 @@ export const addOreSortingMultiblock = (builder) => {
                 "CCCxxxCCC",
                 "CCCxxxCCC",
                 "CCCxxxCCC",
-                "CCCxxxCCC",
+                "CCCxxxCCC"
             )
             .aisle(
                 // Inner wall: Casing floor, frame middle
@@ -30,7 +29,7 @@ export const addOreSortingMultiblock = (builder) => {
                 "CAFFFFFAC",
                 "CAFFMFFAC",
                 "CAFFFFFAC",
-                "CFCxxxCFC",
+                "CFCxxxCFC"
             )
             .aisle(
                 // Front wall: Casings and air gaps.
@@ -38,15 +37,15 @@ export const addOreSortingMultiblock = (builder) => {
                 "CCCxxxCCC",
                 "CCCxxxCCC",
                 "CCCxxxCCC",
-                "CCCxxxCCC",
+                "CCCxxxCCC"
             )
             .where("A", Predicates.air())
             .where("x", Predicates.any())
             .where(
-                "C", 
-                Predicates
-                    .blocks(GTBlocks.CASING_TITANIUM_STABLE.get())
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                "C",
+                Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).or(
+                    Predicates.autoAbilities(definition.getRecipeTypes())
+                )
             )
             .where("F", Predicates.frames(GTMaterials.Titanium))
             .where("M", Predicates.controller(Predicates.blocks(definition.get())))
@@ -69,4 +68,4 @@ export const addOreSortingMultiblock = (builder) => {
                 GTRecipeModifiers.ELECTRIC_OVERCLOCK
             )
         );
-}
+};
