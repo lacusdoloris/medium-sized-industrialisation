@@ -37,12 +37,6 @@ export const adjustModularRouterRecipes = (event) => {
     event.remove({ id: "modularrouters:sender_module_1" });
 
     event.remove({ id: "modularrouters:sender_module_3" });
-    event
-        .shapeless("modularrouters:sender_module_3", [
-            "1x modularrouters:sender_module_2",
-            "1x gtceu:quantum_eye",
-        ])
-        .id("nijika:mods/routers/sender_module_3");
 
     event.remove({ id: "modularrouters:speed_upgrade" });
     event.recipes.gtceu
