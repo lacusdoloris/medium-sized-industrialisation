@@ -1,7 +1,9 @@
-// TODO: Look into the methyl isobutl ketone processing chain.
-// That might replace this once I'm more confident wwith organic chemistry.
-
-import { createChemicalIntermediate } from "../../materials/helpers";
+import {
+    createAcidicIntermediate,
+    createAqueousIntermediate,
+    createChemicalIntermediate,
+    createDustIntermediate,
+} from "../../materials/helpers";
 
 export const addTantalumMaterials = (event) => {
     event
@@ -15,12 +17,10 @@ export const addTantalumMaterials = (event) => {
         "5x gtceu:oxygen"
     );
 
-    event
-        .create(new ResourceLocation("nijika:tantalum_slag"))
-        .dust() // would prefer this to be a gem, but that generates sifter recipes.
-        .color(0x171b45)
-        .iconSet(GTMaterialIconSet.FLINT)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    createAqueousIntermediate(event, "hydrogen_heptafluorotantalite", 0xd4e0bf);
+    createDustIntermediate(event, "potassium_heptafluorotantalite", 0x4c1212);
+    createAqueousIntermediate(event, "tantalite_slag", 0x171b45);
+    createAcidicIntermediate(event, "ammonium_fluoride", 0xb58b8b);
 
     event
         .create(new ResourceLocation("nijika:tantalum_slag_slurry"))
@@ -41,34 +41,70 @@ export const addTantalumMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addTantaliteProcessingChain = (event) => {
-    // This is a mostly fictional chain.
+    // This skips the methyl isobutyl ketone separation, and moves recovery of Niboium to processing
+    // the Tantalum slag instead, because MIBK requires Palladium catalysts, and platinum processing
+    // isn't until IV.
 
-    // 1) Tantalite ore + Hydrofluoric acid -> Tantalite slurry.
-    // 3 Ta2O6 + 6 HF -> [3 Ta2O6 + 6 HF]
+    // 1) Tantalite ore + Hydrofluoric acid -> Hydrogen Heptafluorotantalite + water
+    // Ta2O5 + 14 HF = 2 H2[TaF7] + 5 H2O
+    // This loses some oxygen from the initial tantalum.
 
     event.recipes.gtceu
-        .chemical_bath("nijika:chemicals/tantalum/tantalum_slurry")
-        .itemInputs("3x gtceu:tantalite_dust")
-        .inputFluids(Fluid.of("gtceu:hydrofluoric_acid").withAmount(6 * FluidAmounts.BUCKET))
-        .outputFluids(Fluid.of("gtceu:tantalite_slurry").withAmount(6 * FluidAmounts.BUCKET))
-        .EUt(GTValues.VA[GTValues.HV])
-        .duration(2 * 20 + 10);
-
-    // 2) Tantalite slurry + Sodium Hydroxide -> Tantalum Pentoxide + Sodium Fluoride + Tantalum Slag
-    // [3 Ta206, 6 HF] + 6 NaOH -> 3 Ta2O5 + 6 NaF + [Slag]
-    event.recipes.gtceu
-        .chemical_bath("nijika:chemicals/tantalum/tantalum_pentoxide")
-        .itemInputs("6x gtceu:sodium_hydroxide_dust")
-        .inputFluids(Fluid.of("gtceu:tantalite_slurry").withAmount(6 * FluidAmounts.BUCKET))
-        .itemOutputs(
-            "3x gtceu:tantalum_pentoxide_dust",
-            "6x gtceu:sodium_fluoride_dust",
-            "6x gtceu:tantalum_slag_dust"
+        .chemical_reactor("nijika:chemicals/tantalum/heptafluorotantalite")
+        .itemInputs("1x gtceu:tantalite_dust")
+        .inputFluids(Fluid.of("gtceu:hydrofluoric_acid").withAmount(14 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:hydrogen_heptafluorotantalite").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(5 * FluidAmounts.BUCKET)
         )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(3 * 20 + 10);
+
+    // 2) Hydrogen Heptafluorotantalite + Potassium Fluoride -> Potassium Heptafluorotantalite + Tantalum Slag
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/tantalum/potassium_heptafluorotantalite")
+        .itemInputs("2x gtceu:potassium_fluoride_dust")
+        .inputFluids(
+            Fluid.of("gtceu:hydrogen_heptafluorotantalite").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("1x gtceu:potassium_heptafluorotantalite_dust")
+        .chancedOutput("2x gtceu:small_potassium_heptafluorotantalite_dust", 7500.0, 0.0)
+        .outputFluids(Fluid.of("gtceu:tantalite_slag").withAmount(500 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
 
-    // 3) 3 Ta2O5 + 10 Al = 6 Ta + 5 Al2O3
+    // 3a) Potassium heptafluorotantalite + Sodium fluoride => Pure tantalum metal.
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_reduction")
+        .itemInputs("1x gtceu:potassium_heptafluorotantalite_dust", "5x gtceu:sodium_dust")
+        .notConsumable("17x gtceu:salt_dust") // heat control catalyst
+        .itemOutputs(
+            "3x gtceu:small_potassium_fluoride_dust",
+            "5x gtceu:sodium_fluoride_dust",
+            "1x gtceu:tantalum_dust"
+        )
+        .EUt(GTValues.VHA[GTValues.EV])
+        .duration(20 * 20)
+        .blastFurnaceTemp(1900);
+
+    // 2) Alternative path: Neutralise with Ammonia to get Ta2O5 plus some slag.
+    // 2 H2TaF7 + 14 (NH4)OH = Ta2O5 + 14 NH4F + 9 H2O
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/tantalum/tantalum_ammonia_neutralisation")
+        .inputFluids(
+            Fluid.of("gtceu:hydrogen_heptafluorotantalite").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:ammonium_hydroxide").withAmount(14 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("2x gtceu:small_tantalum_pentoxide_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonium_fluoride").withAmount(14 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(9 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:tantalite_slag").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(15 * 20);
+
+    // 3b) 3 Ta2O5 + 10 Al = 6 Ta + 5 Al2O3
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_reduction_aluminium")
         .itemInputs("3x gtceu:tantalum_pentoxide_dust", "10x gtceu:aluminium_dust")
@@ -78,11 +114,13 @@ export const addTantaliteProcessingChain = (event) => {
         .circuit(1)
         .blastFurnaceTemp(1500);
 
-    // Bonus: Tantalum Slag + Hydrochloric Acid -> Tantalite Slag Slurry
+    // Bonus fictional chain: Tantalum Slag + Hydrochloric Acid -> Tantalite Slag Slurry
     event.recipes.gtceu
-        .chemical_bath("nijika:chemicals/tantalum/tantalum_slag_slurry")
-        .itemInputs("2x gtceu:tantalum_slag_dust")
-        .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET))
+        .chemical_reactor("nijika:chemicals/tantalum/tantalum_slag_slurry")
+        .inputFluids(
+            Fluid.of("gtceu:tantalite_slag"),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
+        )
         .outputFluids(
             Fluid.of("gtceu:tantalum_slag_slurry").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
@@ -121,5 +159,29 @@ export const addTantaliteProcessingChain = (event) => {
         .outputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.EV])
         .duration(15 * 20)
-        .blastFurnaceTemp(1500);
+        .blastFurnaceTemp(3600);
+
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_carbide_alt")
+        .itemInputs(
+            "1x gtceu:tantalum_dust",
+            "1x gtceu:graphite_dust"
+        )
+        .itemOutputs("1x gtceu:hot_tantalum_carbide_ingot")
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(60 * 20)
+        .blastFurnaceTemp(3600);
+
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_carbide_alt_helium")
+        .itemInputs(
+            "1x gtceu:tantalum_dust",
+            "1x gtceu:graphite_dust"
+        )
+        .inputFluids(Fluid.of("gtceu:helium").withAmount(100 * FluidAmounts.MB))
+        .itemOutputs("1x gtceu:hot_tantalum_carbide_ingot")
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(40 * 20 + 4)
+        .blastFurnaceTemp(3600);
+
 };

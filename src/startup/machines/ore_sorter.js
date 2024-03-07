@@ -59,7 +59,7 @@ export const addOreSortingMultiblock = (builder) => {
             "gtceu:block/casings/solid/machine_casing_stable_titanium",
             "gtceu:block/machines/centrifuge"
         )
-        .recipeTypes("ore_sorting", "gtceu:sifter")
+        .recipeTypes("ore_sorting")
         .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
         .recipeModifier(

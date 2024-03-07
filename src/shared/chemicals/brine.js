@@ -6,10 +6,21 @@ import {
 
 export const addBrineMaterials = (event) => {
     createAqueousIntermediate(event, "brine", 0x9da9b0);
-    createChemicalIntermediate(event, "calcium_hydroxide", 0xc4afc2).components(
+    createChemicalIntermediate(event, "calcium_hydroxide", 0xc4afc2, true).components(
         "1x gtceu:calcium",
         "2x gtceu:oxygen",
         "2x gtceu:hydrogen"
+    );
+
+    createChemicalIntermediate(event, "potassium_hydroxide", 0x9bc2bf, true).components(
+        "1x gtceu:potassium",
+        "2x gtceu:oxygen",
+        "2x gtceu:hydrogen"
+    );
+
+    createChemicalIntermediate(event, "potassium_fluoride", 0x889e9c, true).components(
+        "1x gtceu:potassium",
+        "1x gtceu:fluorine"
     );
 };
 
@@ -40,6 +51,31 @@ export const addBrineRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.LV])
         .duration(5 * 20)
         .circuit(3);
+
+    // potassium hydroxide production
+    // uh, is this brine? can't think of anywheree else to put it lol.
+    // KCl + H2O = KOH + H + Cl
+    event.recipes.gtceu
+        .electrolyzer("nijika:chemicals/brine/potassium_hydroxide_electrolysis")
+        .itemInputs("1x gtceu:rock_salt_dust")
+        .inputFluids(Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:potassium_hydroxide_dust")
+        .outputFluids(
+            Fluid.of("gtceu:hydrogen").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:chlorine").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(64);
+
+    // KOH + HF = KF + H2O
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/brine/potassium_fluoride")
+        .itemInputs("1x gtceu:potassium_hydroxide_dust")
+        .itemOutputs("1x gtceu:potassium_fluoride_dust")
+        .inputFluids(Fluid.of("gtceu:hydrofluoric_acid").withAmount(1 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(48);
 
     // calcium hydroxide preparation
     event.recipes.gtceu

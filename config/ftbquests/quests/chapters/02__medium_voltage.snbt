@@ -572,12 +572,14 @@
 				"This is the second to last circuit in the microprocessor theme, but you probably won't be making anything from the next theme any time soon."
 			]
 			id: "4838078FA4C199E3"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "01FE04F1A3DD1778"
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "EV Circuit #1"
+			title: "80286"
 			x: 4.0d
 			y: 10.5d
 		}
