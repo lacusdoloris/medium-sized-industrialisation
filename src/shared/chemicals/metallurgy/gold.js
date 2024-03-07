@@ -21,6 +21,8 @@ export const addGoldProcessingRecipes = (event) => {
     event.remove({ output: "#forge:ingots/gold", type: "minecraft:smelting" });
     event.remove({ id: "gtceu:macerator/macerate_netherrack" });
 
+    event.remove({ id: "gtceu:centrifuge/glowstone_separation" });
+
     // 1) Wash the crushed gold ore to get gold slurry.
     event.recipes.gtceu
         .chemical_bath("nijika:chemicals/gold/gold_slurry")
