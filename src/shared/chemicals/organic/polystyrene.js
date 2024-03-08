@@ -1,12 +1,20 @@
+import { createAcidicIntermediate } from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addPolystyreneMaterials = (event) => {
     event
-        .create(nijikaId("polystyrene"))
+        .create(nijikaId("polystyrene_sulfonate"))
         .polymer(1)
         .color(0xcfd4a7)
         .iconSet(GTMaterialIconSet.ROUGH)
         .flags(GTMaterialFlags.GENERATE_ROUND);
+
+    createAcidicIntermediate(event, "chlorosulfuric_acid", 0xbeebc3, true).components(
+        "1x gtceu:hydrogen",
+        "1x gtceu:sulfur",
+        "3x gtceu:oxygen",
+        "1x gtceu:chlorine"
+    );
 };
 
 /**
@@ -48,8 +56,12 @@ export const addPolysytreneRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20);
 
+    // There's no real usage for polystyrene itself. It's a brittle plastic mostly used for
+    // packaging... but there's no packaging in game.
+    // Maybe in the future.
+
     // Polymerization of styrene into polystyrene.
-    event.recipes.gtceu
+    /*event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/polystyrene/polymerisation_air")
         .inputFluids(
             Fluid.of("gtceu:air").withAmount(1 * FluidAmounts.BUCKET),
@@ -67,5 +79,31 @@ export const addPolysytreneRecipes = (event) => {
         )
         .outputFluids(Fluid.of("gtceu:polystyrene").withAmount(216 * FluidAmounts.MB))
         .EUt(GTValues.VA[GTValues.LV])
-        .duration(8 * 20);
+        .duration(8 * 20);*/
+
+    // Prroduction of chlorosulfuric acid.
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/polystyrene/chlorosulfuric_acid")
+        .inputFluids(
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:sulfur_trioxide").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(Fluid.of("gtceu:chlorosulfuric_acid").withAmount(1 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(2 * 20);
+
+    // Polystyrene sulfonation to get... polystyrene sulfonate.
+    // CH2CHC6H5 + HSO3Cl = CH2CHC6H4SO3H + HCl
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/polystyrene/styrene_sulfonation")
+        .inputFluids(
+            Fluid.of("gtceu:styrene").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:chlorosulfuric_acid").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:polystyrene_sulfonate").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(10 * 20);
 };
