@@ -111,7 +111,6 @@ export const addTantaliteProcessingChain = (event) => {
         .itemOutputs("6x gtceu:tantalum_dust", "5x gtceu:alumina_dust")
         .EUt(GTValues.VA[GTValues.EV])
         .duration(15 * 20)
-        .circuit(1)
         .blastFurnaceTemp(1500);
 
     // Bonus fictional chain: Tantalum Slag + Hydrochloric Acid -> Tantalite Slag Slurry
