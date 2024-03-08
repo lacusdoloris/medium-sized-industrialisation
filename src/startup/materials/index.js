@@ -17,6 +17,7 @@ import { addTitaniumMaterials } from "../../shared/chemicals/metallurgy/titanium
 import { addCopperMaterials } from "../../shared/chemicals/metallurgy/copper";
 import { addBaseOreMaterials } from "../../shared/base_ores";
 import { addPolystyreneMaterials } from "../../shared/chemicals/organic/polystyrene";
+import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten";
 
 /**
  * Adds new custom materials.
@@ -38,6 +39,7 @@ export const addCustomMaterials = (event) => {
     addRareEarthMaterials(event);
     addTantalumMaterials(event);
     addTitaniumMaterials(event);
+    addTungstenMaterials(event);
     addVanadiumMaterials(event);
 
     addPolystyreneMaterials(event);

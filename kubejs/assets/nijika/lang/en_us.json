@@ -100,6 +100,10 @@
     "material.nijika.ammonium_fluoride": "Ammonium Fluoride",
     "material.nijika.aluminium_chloride": "Aluminium Chloride",
     "material.nijika.polystyrene": "Polystyrene",
+    "material.nijika.trimethylamine": "Trimethylamine",
+    "material.nijika.pretreated_scheelite": "Pretreated Scheelite",
+    "material.nijika.desulfurised_scheelite": "Desulfurised Scheelite",
+    "material.nijika.impure_sodium_tungstate": "(Impure) Sodium Tungstate",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

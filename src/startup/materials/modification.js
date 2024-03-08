@@ -198,6 +198,7 @@ export const customiseMaterials = () => {
     getMaterial("hydrogen_heptafluorotantalite").setFormula("H2[TaF7]");
     getMaterial("potassium_heptafluorotantalite").setFormula("K[TaF7]");
     getMaterial("ammonium_fluoride").setFormula("NH4F");
+    getMaterial("trimethylamine").setFormula("N(CH3)3");
 
     // steels shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it
