@@ -1,4 +1,9 @@
-import { createAcidicIntermediate, createDustIntermediate } from "../../materials/helpers";
+import {
+    createAcidicIntermediate,
+    createAqueousIntermediate,
+    createChemicalIntermediate,
+    createDustIntermediate,
+} from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addAluminiumMaterials = (event) => {
@@ -22,6 +27,10 @@ export const addAluminiumMaterials = (event) => {
 
     createAcidicIntermediate(event, "red_mud", 0xff0000).dust();
     createAcidicIntermediate(event, "red_mud_slurry", 0xaf3300);
+
+    // easy lewis acid
+    createChemicalIntermediate(event, "aluminium_chloride", 0xbfbfaa, true)
+        .components("1x gtceu:aluminium", "3x gtceu:chlorine");
 };
 
 /**
@@ -110,4 +119,24 @@ export const addAluminiumProcessingRecipes = (event) => {
         )
         .EUt(GTValues.VA[GTValues.MV])
         .duration(20);
+
+    // Aluminium Chloride synthesis via chlorine gas
+    // 2 Al + 3 Cl2 = 2 AlCl3
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/aluminium/alcl3_gas")
+        .itemInputs("2x gtceu:aluminium_dust")
+        .inputFluids(Fluid.of("gtceu:chlorine").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("2x gtceu:aluminium_chloride_dust")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(2 * 20);
+
+    // 2 Al + 6 HCl = 2 AlCl3 + 3 H2
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/aluminium/alcl3_fluid")
+        .itemInputs("2x gtceu:aluminium_dust")
+        .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("2x gtceu:aluminium_chloride_dust")
+        .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(2 * 20);
 };

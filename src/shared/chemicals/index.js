@@ -13,6 +13,7 @@ import { addBrineRecipes } from "./brine";
 import { addGoldProcessingRecipes } from "./metallurgy/gold";
 import { addTitaniumRecipes } from "./metallurgy/titanium";
 import { addCopperRecipes } from "./metallurgy/copper";
+import { addPolysytreneRecipes } from "./organic/polystyrene";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -35,6 +36,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addBrineRecipes(event);
     addTitaniumRecipes(event);
     addCopperRecipes(event);
+    addPolysytreneRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu

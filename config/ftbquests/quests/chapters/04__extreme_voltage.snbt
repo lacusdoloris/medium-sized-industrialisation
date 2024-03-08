@@ -97,7 +97,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["020FAE71BEDA6B1E"]
+			dependencies: [
+				"020FAE71BEDA6B1E"
+				"232472832AA5E201"
+			]
 			description: [
 				"&dTantalum Carbide&r is one of the required materials in the ABF. Raw Tantalum is also required for SMD components, which will be needed for later circuits."
 				""
@@ -118,6 +121,7 @@
 		}
 		{
 			id: "310A71616F1157C0"
+			subtitle: "Call her tungsten the way I LIX and SIX her"
 			tasks: [{
 				id: "272C56B8305F2F0B"
 				item: "gtceu:tungsten_carbide_plate"

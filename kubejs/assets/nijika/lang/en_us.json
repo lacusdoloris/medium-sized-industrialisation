@@ -98,7 +98,9 @@
     "material.nijika.potassium_hydroxide": "Potassium Hydroxide",
     "material.nijika.potassium_fluoride": "Potassium Fluoride",
     "material.nijika.ammonium_fluoride": "Ammonium Fluoride",
-    
+    "material.nijika.aluminium_chloride": "Aluminium Chloride",
+    "material.nijika.polystyrene": "Polystyrene",
+
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
     "block.gtceu.evaporation_pool": "Evaporation Pool",

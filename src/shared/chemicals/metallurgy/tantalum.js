@@ -163,10 +163,7 @@ export const addTantaliteProcessingChain = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_carbide_alt")
-        .itemInputs(
-            "1x gtceu:tantalum_dust",
-            "1x gtceu:graphite_dust"
-        )
+        .itemInputs("1x gtceu:tantalum_dust", "1x gtceu:graphite_dust")
         .itemOutputs("1x gtceu:hot_tantalum_carbide_ingot")
         .EUt(GTValues.VA[GTValues.EV])
         .duration(60 * 20)
@@ -174,14 +171,10 @@ export const addTantaliteProcessingChain = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/tantalum/tantalum_carbide_alt_helium")
-        .itemInputs(
-            "1x gtceu:tantalum_dust",
-            "1x gtceu:graphite_dust"
-        )
+        .itemInputs("1x gtceu:tantalum_dust", "1x gtceu:graphite_dust")
         .inputFluids(Fluid.of("gtceu:helium").withAmount(100 * FluidAmounts.MB))
         .itemOutputs("1x gtceu:hot_tantalum_carbide_ingot")
         .EUt(GTValues.VA[GTValues.EV])
         .duration(40 * 20 + 4)
         .blastFurnaceTemp(3600);
-
 };
