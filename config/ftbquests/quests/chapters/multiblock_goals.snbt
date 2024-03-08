@@ -152,20 +152,29 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2A88522EE04505E5"]
+			dependencies: [
+				"2A88522EE04505E5"
+				"5C95727EAA395038"
+			]
+			description: [
+				"The second tier of fluid drilling rig is available as soon as you have &atitanium&r. "
+				""
+				"This drills a full sixteen times faster than the previous tier and doesn't fully deplete the veins like the first tier does."
+			]
 			id: "3E6B6DB99FA81CE3"
-			invisible: true
 			tasks: [{
 				id: "3903D97DC1E6302C"
 				item: "gtceu:hv_fluid_drilling_rig"
 				type: "item"
 			}]
+			title: "I ♥ Oil"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3E6B6DB99FA81CE3"]
 			id: "7FC90B7BD3A3C106"
+			invisible: true
 			tasks: [{
 				id: "07CC699EF2D4B63A"
 				item: "gtceu:ev_fluid_drilling_rig"
