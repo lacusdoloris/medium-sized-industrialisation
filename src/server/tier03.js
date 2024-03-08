@@ -77,4 +77,20 @@ export const doTier03Content = (event) => {
         .itemOutputs("1x gtceu:hv_cadmium_battery")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
+
+    event.remove({id: "gtceu:assembler/hv_fluid_drilling_rig"});
+    // same as the original recipe, but moved down to HV.
+    event.recipes.gtceu.assembler("nijika:tier03/hv_fluid_drilling_rig")
+        .itemInputs(
+            GT_MACHINE_TIERS.HV.machineHull,
+            "4x gtceu:titanium_frame",
+            "4x #gtceu:circuits/hv",
+            "4x gtceu:hv_electric_motor",
+            "4x gtceu:hv_electric_pump",
+            GT_MACHINE_TIERS.HV.materials.gear.tagged("gears")
+        )
+        .itemOutputs("gtceu:hv_fluid_drilling_rig")
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(20 * 20)
+        .circuit(2);
 };
