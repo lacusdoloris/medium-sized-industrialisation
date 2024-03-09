@@ -22,27 +22,31 @@ mode = "fancy"
 		[light_sources.settings.entities]
 
 			[light_sources.settings.entities.minecraft]
-				item = true
 				chicken = true
 				bee = true
-				wolf = true
 				donkey = true
-				furnace_minecart = true
 				chest_minecart = true
 				fox = true
 				pig = true
-				horse = true
-				minecart = true
+				allay = true
 				piglin = true
 				hoglin = true
 				blaze = true
 				rabbit = true
-				mooshroom = true
-				glow_item_frame = false
+				cat = true
+				drowned = true
 				ghast = true
 				sheep = true
 				experience_orb = true
 				player = true
+				item = true
+				wolf = true
+				elder_guardian = true
+				furnace_minecart = true
+				horse = true
+				minecart = true
+				mooshroom = true
+				glow_item_frame = false
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true

@@ -78,9 +78,10 @@ export const doTier03Content = (event) => {
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
 
-    event.remove({id: "gtceu:assembler/hv_fluid_drilling_rig"});
+    event.remove({ id: "gtceu:assembler/hv_fluid_drilling_rig" });
     // same as the original recipe, but moved down to HV.
-    event.recipes.gtceu.assembler("nijika:tier03/hv_fluid_drilling_rig")
+    event.recipes.gtceu
+        .assembler("nijika:tier03/hv_fluid_drilling_rig")
         .itemInputs(
             GT_MACHINE_TIERS.HV.machineHull,
             "4x gtceu:titanium_frame",

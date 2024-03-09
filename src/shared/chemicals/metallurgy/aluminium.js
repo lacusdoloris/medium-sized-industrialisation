@@ -29,8 +29,10 @@ export const addAluminiumMaterials = (event) => {
     createAcidicIntermediate(event, "red_mud_slurry", 0xaf3300);
 
     // easy lewis acid
-    createChemicalIntermediate(event, "aluminium_chloride", 0xbfbfaa, true)
-        .components("1x gtceu:aluminium", "3x gtceu:chlorine");
+    createChemicalIntermediate(event, "aluminium_chloride", 0xbfbfaa, true).components(
+        "1x gtceu:aluminium",
+        "3x gtceu:chlorine"
+    );
 };
 
 /**

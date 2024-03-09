@@ -75,11 +75,11 @@ export const addBaseOreRecipes = (event) => {
         event.recipes.createoreexcavation
             .vein(Component.translatable(`vein.nijika.${name}`), `gtceu:raw_${name}`)
             .biomeWhitelist("bigglobe:overworld")
-            .placement(2048, 512, oreData.seed)
+            .placement(128, 32, oreData.seed)
             .id(`nijika:veins/overworld/${name}`);
 
         event.recipes.createoreexcavation
-            .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld/${name}`, 640)
+            .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld/${name}`, 200)
             .fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET))
             .id(`nijika:drilling/overworld/${name}`);
 
