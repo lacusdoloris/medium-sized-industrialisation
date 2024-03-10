@@ -260,14 +260,14 @@
         "version_id": "NR94PqgD"
     },
     "Ha28R6CL": {
-        "checksum": "c78c57d491f08817c45af7b44e9cfc3ddc13a190d940f1109b679bd1d29f3968ede7f495185b0be29098060e8cb78208aae2dabe315e2121ed83b52843d90ea8",
+        "checksum": "8a3ce0f1537cd6af6e016667e3f7faad204e865397dc5f8b87c4e8235f29e2f3a130b1eab9de44634a3c2856a8ad4882c24b0088c70d0c2d10239e8ebe371068",
         "client_side_only": false,
         "name": "Fabric Language Kotlin",
         "pinned": false,
         "project_id": "Ha28R6CL",
         "selected": true,
-        "version": "1.10.18+kotlin.1.9.22",
-        "version_id": "vlhvI5Li"
+        "version": "1.10.19+kotlin.1.9.23",
+        "version_id": "ZMokinzs"
     },
     "HmLJoQ1K": {
         "checksum": "676f7ff0d872c51e85892b2f84e2f6db2c5d8fb4911c919ed8742d652d0929f2f3ea59200e2919f557ca74f9d65905c57f5857781f5969516e9b24528fbaaa99",
@@ -630,14 +630,14 @@
         "version_id": "1MKTLiiG"
     },
     "lo90fZoB": {
-        "checksum": "9d5a31d1ce6e1f38a5768e7168debf1721623ce305c2ac7b9af6df18c06146f85b60b42aff732c2ac5ac2d0791252b1be4578787e54642c3b99c037a9e1dd2ac",
+        "checksum": "a3c6cb463a16a63b4b3357f9acd00e987da3a517ea97650b7bfc13b5b6a6af131db49d5fc306d85c525f0bfc5a2d97561a1bddaf84e7b9d5c90abc09a0a0567e",
         "client_side_only": false,
         "name": "Heracles",
         "pinned": false,
         "project_id": "lo90fZoB",
         "selected": true,
-        "version": "1.1.10",
-        "version_id": "3aABskCg"
+        "version": "1.1.11",
+        "version_id": "8zxzPvyF"
     },
     "nU0bVIaL": {
         "checksum": "d6ecdc347f0c418bd82c9096ca8e3db428e67b245d915d8a484268af99f8ea7e0cb6040cb26be42aa935baf4cb4fbab598449adc6a17f2197ee79504493a5a3b",
@@ -750,14 +750,14 @@
         "version_id": "yhdMA7ca"
     },
     "soWqucCB": {
-        "checksum": "01546ac7b5f5ff09c7d4e2b03d4240c14be47b1bf91758697897dcc57f338777e174b3bed343b4387a94f286a91509d7804e5a0a9be5d2a5276347b7abab665e",
+        "checksum": "f333fe4399b29d4bc5f93fa423d0b1acd84c9e1e5dbe94f077937fe2ff583d287a2fcc088acc775efe5cec383b791054531086e7136239d1f248e004280e0179",
         "client_side_only": false,
         "name": "Reactive Alchemy",
         "pinned": false,
         "project_id": "soWqucCB",
         "selected": true,
-        "version": "1.20.1-8",
-        "version_id": "Vbdb1wLz"
+        "version": "1.20.1-8a",
+        "version_id": "T1NRffJb"
     },
     "tx4M6qRg": {
         "checksum": "dcf1df3c28565f36409a72aa0619260350622db7c875481d437857a52fd1e773145a073fdca508599b36519737b757a59c4a38f590d7a4c59b3b1fbc547a1b4d",
