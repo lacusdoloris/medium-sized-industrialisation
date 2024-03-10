@@ -138,6 +138,8 @@
     "block.create.brass_funnel": "Copper Alloy Funnel",
     "block.create.brass_tunnel": "Copper Alloy Tunnel",
     "item.create.brass_hand": "Copper Alloy Hand",
+
+    "item.createoreexcavation.drill": "Steel Drill",
     
     "tag.item.nijika.valid_boat_bottoms": "Boat Materials",
     "tag.item.nijika.glues": "Glues",

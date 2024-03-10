@@ -4,6 +4,7 @@ import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustCreateNewAgeRecipes } from "./new_age";
+import { adjustCreateOreExcavationRecipes } from "./oreexcavation";
 import { adjustPackItUpRecipes } from "./packitup";
 import { adjustPrettyPipesRecipes } from "./prettypipes";
 import { adjustRfToolsRecipes } from "./rftools";
@@ -21,6 +22,7 @@ export const doModRecipes = (event) => {
 
     // not optional due to worldgen.
     adjustIntegratedDynamicsRecipes(event);
+    adjustCreateOreExcavationRecipes(event);
 
     if (Platform.isLoaded("littlelogistics")) {
         adjustLittleLogisticsRecipes(event);
@@ -59,9 +61,6 @@ export const doModRecipes = (event) => {
     if (Platform.isLoaded("essentials")) {
         adjustEssentialsRecipes(event);
     }
-
-    // TODO!
-    event.remove({ id: "createoreexcavation:drilling_machine" });
 
     event
         .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {

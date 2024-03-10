@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "something_from_nothing"
+	group: "14EE7AEE0EF05AEE"
+	icon: "createoreexcavation:drilling_machine"
+	id: "324D625AAECB0B22"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Base Ores"
+}
