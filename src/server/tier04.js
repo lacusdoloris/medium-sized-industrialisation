@@ -1,3 +1,5 @@
+import { GT_MACHINE_TIERS } from "../shared/definition";
+
 /** @param {Internal.RecipesEventJS} event */
 export const doTier04Content = (event) => {
     event.remove({ id: "gtceu:assembler/casing_high_temperature_smelting" });
@@ -46,4 +48,18 @@ export const doTier04Content = (event) => {
         .outputFluids(Fluid.of("gtceu:drilling_fluid").withAmount(5 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(64);
+
+    event.recipes.gtceu.assembler("nijika:tier04/ore_sorter")
+        .itemInputs(
+            "1x gtceu:hv_machine_hull",
+            "4x gtceu:titanium_frame",
+            "8x #gtceu:circuits/hv",
+            `4x ${GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors")}`,
+            "2x gtceu:hv_conveyor_module",
+            "1x minecraft:diamond_shovel"
+        )
+        .itemOutputs("1x gtceu:ore_sorter")
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(20);
 };
