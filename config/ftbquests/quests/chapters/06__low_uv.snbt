@@ -5,8 +5,8 @@
 	group: "657B54F6F8F4476A"
 	icon: "gtceu:luv_conveyor_module"
 	id: "2AA15CBD5BA42A2A"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
-	title: "LuV - Night Flight"
+	title: "LuV - When"
 }

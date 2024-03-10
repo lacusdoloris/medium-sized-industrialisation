@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "tips_n_bits"
-	group: "14EE7AEE0EF05AEE"
+	group: ""
 	icon: "pack_it_up:cloth"
 	id: "462615BBA001B500"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

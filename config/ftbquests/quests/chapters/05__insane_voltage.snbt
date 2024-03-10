@@ -5,8 +5,8 @@
 	group: "657B54F6F8F4476A"
 	icon: "gtceu:micro_processor_mainframe"
 	id: "309580C111B666D2"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
-	title: "IV - ALIVE"
+	title: "IV - Radiogaze"
 }
