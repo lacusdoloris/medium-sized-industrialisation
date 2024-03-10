@@ -4,7 +4,9 @@ const PropertyKey = Java.loadClass(
 const WireProperties = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
 );
-const FluidProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty");
+const FluidProperty = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty"
+);
 const FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys");
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";

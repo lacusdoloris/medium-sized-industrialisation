@@ -113,9 +113,7 @@ export const addPolysytreneRecipes = (event) => {
     // CH2CHC6H4SO3H + NaOH = CH2CHC6H4SO3Na + H2O
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/polystyrene/sodium_polystyrene_sulfonate")
-        .inputFluids(
-            Fluid.of("gtceu:polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET),
-        )
+        .inputFluids(Fluid.of("gtceu:polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET))
         .itemInputs("1x gtceu:sodium_hydroxide_dust")
         .outputFluids(
             Fluid.of("gtceu:sodium_polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET),

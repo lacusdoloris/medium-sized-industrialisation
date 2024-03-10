@@ -59,43 +59,39 @@ export const adjustCreateNewAgeRecipes = (event) => {
         .id("nijika:mods/new_age/carbon_brushes");
 
     // == Electric Motors == //
-    event.remove({id: "create_new_age:shaped/basic_motor"});
-    event.recipes.gtceu.assembler("nijika:mods/new_age/basic_motor")
-        .itemInputs(
-            "2x gtceu:lv_electric_motor",
-            "1x create:andesite_casing",
-            "1x create:shaft"
-        )
+    event.remove({ id: "create_new_age:shaped/basic_motor" });
+    event.recipes.gtceu
+        .assembler("nijika:mods/new_age/basic_motor")
+        .itemInputs("2x gtceu:lv_electric_motor", "1x create:andesite_casing", "1x create:shaft")
         .itemOutputs("1x create_new_age:basic_motor")
         .EUt(GTValues.VH[GTValues.MV])
         .duration(2 * 20);
 
-    event.remove({id: "create_new_age:shaped/advanced_motor"});
-    event.recipes.gtceu.assembler("nijika:mods/new_age/advanced_motor")
-        .itemInputs(
-            "2x gtceu:mv_electric_motor",
-            "1x create:brass_casing",
-            "1x create:shaft"
-        )
+    event.remove({ id: "create_new_age:shaped/advanced_motor" });
+    event.recipes.gtceu
+        .assembler("nijika:mods/new_age/advanced_motor")
+        .itemInputs("2x gtceu:mv_electric_motor", "1x create:brass_casing", "1x create:shaft")
         .itemOutputs("1x create_new_age:advanced_motor")
         .EUt(GTValues.VH[GTValues.HV])
         .duration(4 * 20);
 
-    event.remove({id: "create_new_age:reinforced_motor"});
-    event.recipes.gtceu.assembler("nijika:mods/new_age/reinforced_motor")
+    event.remove({ id: "create_new_age:reinforced_motor" });
+    event.recipes.gtceu
+        .assembler("nijika:mods/new_age/reinforced_motor")
         .itemInputs(
             "2x gtceu:hv_electric_motor",
             "2x create:brass_casing",
             "2x create:shaft",
-            "4x gtceu:silicone_rubber_ring",
+            "4x gtceu:silicone_rubber_ring"
         )
         .itemOutputs("1x create_new_age:reinforced_motor")
         .EUt(GTValues.VH[GTValues.EV])
         .duration(8 * 20);
 
     // == Motor Extensions == //
-    event.remove({id: "create_new_age:shaped/basic_motor_extension"});
-    event.recipes.gtceu.assembler("nijika:mods/new_age/basic_motor_extension")
+    event.remove({ id: "create_new_age:shaped/basic_motor_extension" });
+    event.recipes.gtceu
+        .assembler("nijika:mods/new_age/basic_motor_extension")
         .itemInputs(
             "4x gtceu:mv_electric_motor",
             "2x create_new_age:basic_motor",
@@ -107,8 +103,9 @@ export const adjustCreateNewAgeRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20);
 
-    event.remove({id: "create_new_age:advanced_motor_extension"});
-    event.recipes.gtceu.assembler("nijika:mods/new_age/strong_motor_extension")
+    event.remove({ id: "create_new_age:advanced_motor_extension" });
+    event.recipes.gtceu
+        .assembler("nijika:mods/new_age/strong_motor_extension")
         .itemInputs(
             "4x gtceu:ev_electric_motor",
             "2x create_new_age:reinforced_motor",
