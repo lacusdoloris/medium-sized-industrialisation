@@ -509,6 +509,8 @@
 				"&aAmperage&r is only relevant to wires; the number of amps is the maximum number of packets of energy a wire can carry. Thus, a wire's maximum capacity is expressed as (VOLTAGE_TIER) * (AMPERAGE_CAPACITY); a 4A LV wire can carry four amps of LV energy, or 128EU/t. (But each machine on the wire can only accept up to 32EU/t)."
 				""
 				"In any case, you can convert between RF and GTEU at a 4:1 ratio using a power converter. I doubt you'll be able to supply more than 4 amps yet (hence why this quest calls for a 4A converter), but in practice there's no reason to ever not use the 16A converters."
+				""
+				"In addition, GT wires will convert &oback&r to RF natively at the other end, so GTEU->RF converters are mostly useless."
 			]
 			id: "6146BF353E480854"
 			min_width: 400
