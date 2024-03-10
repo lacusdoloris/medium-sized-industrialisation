@@ -4,6 +4,8 @@ const PropertyKey = Java.loadClass(
 const WireProperties = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
 );
+const FluidProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty");
+const FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys");
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
@@ -30,6 +32,9 @@ const DISABLE_DECOMPOSITION = [
 
 /** A list of materials to actually add dusts & ingots to. */
 const ADD_METALS = ["rhenium"];
+
+/** A list of materials to add aqueous properties to. */
+const ADD_AQUEOUS = ["sodium_hydroxide", "calcium_hydroxide"];
 
 export const customiseMaterials = () => {
     // add foil flag here, for fluxed magnets
@@ -63,6 +68,15 @@ export const customiseMaterials = () => {
         let mat = getMaterial(matName);
         mat.properties.ensureSet(PropertyKey.DUST, true);
         mat.properties.ensureSet(PropertyKey.INGOT, true);
+    }
+
+    for (let matName of ADD_AQUEOUS) {
+        let mat = getMaterial(matName);
+        if (!mat.hasProperty(PropertyKey.FLUID)) {
+            let prop = new FluidProperty();
+            prop.getStorage().enqueueRegistration(FluidStorageKeys.LIQUID, new GTFluidBuilder());
+            mat.properties.setProperty(PropertyKey.FLUID, prop);
+        }
     }
 
     // remove chromium dust as a byproduct of chromite
@@ -199,6 +213,11 @@ export const customiseMaterials = () => {
     getMaterial("potassium_heptafluorotantalite").setFormula("K[TaF7]");
     getMaterial("ammonium_fluoride").setFormula("NH4F");
     getMaterial("trimethylamine").setFormula("N(CH3)3");
+
+    // more useful formulas for organic chemicals.
+    getMaterial("styrene").setFormula("C6H5CH=CH2");
+    getMaterial("polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3H)");
+    getMaterial("sodium_polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3Na)");
 
     // steels shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

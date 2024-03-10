@@ -1,11 +1,13 @@
-import { createAcidicIntermediate } from "../../materials/helpers";
+import { createAcidicIntermediate, createAqueousIntermediate } from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addPolystyreneMaterials = (event) => {
+    createAcidicIntermediate(event, "polystyrene_sulfonate", 0xcfd4a7);
+
     event
-        .create(nijikaId("polystyrene_sulfonate"))
+        .create(nijikaId("sodium_polystyrene_sulfonate"))
         .polymer(1)
-        .color(0xcfd4a7)
+        .color(0x8f917a)
         .iconSet(GTMaterialIconSet.ROUGH)
         .flags(GTMaterialFlags.GENERATE_ROUND);
 
@@ -106,4 +108,19 @@ export const addPolysytreneRecipes = (event) => {
         )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10 * 20);
+
+    // Finally, react it with Sodium Hydroxide to get the sodium salt.
+    // CH2CHC6H4SO3H + NaOH = CH2CHC6H4SO3Na + H2O
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/polystyrene/sodium_polystyrene_sulfonate")
+        .inputFluids(
+            Fluid.of("gtceu:polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET),
+        )
+        .itemInputs("1x gtceu:sodium_hydroxide_dust")
+        .outputFluids(
+            Fluid.of("gtceu:sodium_polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .duration(5 * 20)
+        .EUt(GTValues.VHA[GTValues.HV]);
 };
