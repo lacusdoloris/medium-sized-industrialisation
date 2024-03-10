@@ -97,7 +97,7 @@ export const addBaseOreRecipes = (event) => {
             .itemOutputs(
                 `2x ${goldify(oreData.intoOres[0])}`,
                 `1x ${goldify(oreData.intoOres[1])}`,
-                "1x gtceu:slag_dust"
+                "1x nijika:slag"
             )
             .duration(5 * 20)
             .EUt(GTValues.VA[GTValues.HV])

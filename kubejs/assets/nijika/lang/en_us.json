@@ -115,6 +115,8 @@
     "block.gtceu.ore_sorter": "Ore Sorter",
     "gtceu.ore_sorting": "Ore Sorting",
 
+    "item.nijika.slag": "Ore Slag",
+
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
     "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
     "gtceu.machine.pyrolyse_oven.tooltip.1": "§6Cupronickel §7coils are §f25%%§7 slower. Every coil after §bFerrochrolumium§7 increases speed by §f50%%§7.",

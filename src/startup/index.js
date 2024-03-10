@@ -1,6 +1,7 @@
 // Please don't add anything here. Instead, add it to the ``index.js`` files in the various
 // subfolders. Thank you!
 
+import { nijikaId } from "../shared/utils";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 import { addCustomMaterials } from "./materials";
 import { customiseMaterials } from "./materials/modification";
@@ -20,3 +21,7 @@ GTCEuStartupEvents.materialModification((_) => {
 
 GTCEuStartupEvents.registry("gtceu:machine", addAllMachineTypes);
 GTCEuStartupEvents.registry("gtceu:recipe_type", addAllRecipeTypes);
+
+StartupEvents.registry("item", (ev) => {
+    ev.create(nijikaId("slag"));
+});
