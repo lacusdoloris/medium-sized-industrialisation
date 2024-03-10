@@ -62,6 +62,8 @@ export const doModRecipes = (event) => {
         adjustEssentialsRecipes(event);
     }
 
+    event.remove({output: "createaddition:electric_motor"});
+
     event
         .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {
             I: "#forge:ingots/corinthian_bronze",
