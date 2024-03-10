@@ -68,7 +68,7 @@
 			description: [
 				"&dHSLA Steel&r is required for Ore Excavation drills, the &9Alloy Blast Furnace&r, and certain large multiblocks."
 				""
-				"It's made in a Bessemer Converter as a mixture of invar, titanium, vanadium, and ferromolybdenum."
+				"It's made in a Bessemer Converter as a mixture of invar, titanium, vanadium, and ferromolybdenum. Look up the recipe for HSLA Steel blocks."
 			]
 			id: "10A18BA06D165985"
 			tasks: [{
@@ -102,11 +102,11 @@
 				"232472832AA5E201"
 			]
 			description: [
-				"&dTantalum Carbide&r is one of the required materials in the ABF. Raw Tantalum is also required for SMD components, which will be needed for later circuits."
+				"&aTantalum Carbide&r is one of the required materials in the ABF. Raw Tantalum is also required for SMD components, which will be needed for later circuits."
 				""
-				"There's two ways to get Tantalum: by going through &dPotassium Heptafluorotantalite&r, which produces more tantalum directly, or by neutralising &dHydrogen heptafluorotantalite&r with ammonia which produces more slag for &dNiboium&r production."
+				"There's two ways to get Tantalum: by going through &dPotassium Heptafluorotantalite&r, which produces more tantalum directly; or by neutralising &dHydrogen heptafluorotantalite&r with ammonia which produces more slag for &aNiboium&r production."
 				""
-				"The latter method requires the Large Chemical Reactor, and is the method you should switch to when you have the prerequisites running."
+				"The latter method requires the &9Large Chemical Reactor&r, and is the method you should switch to when you have the prerequisites running."
 			]
 			id: "6623F6B76CA81970"
 			min_width: 400
@@ -120,6 +120,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["6FA74A42A00CFD4F"]
 			id: "310A71616F1157C0"
 			subtitle: "Call her tungsten the way I LIX and SIX her"
 			tasks: [{

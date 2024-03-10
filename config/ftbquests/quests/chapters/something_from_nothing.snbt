@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "something_from_nothing"
 	group: "14EE7AEE0EF05AEE"
@@ -7,6 +8,185 @@
 	id: "324D625AAECB0B22"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["10A18BA06D165985"]
+			description: [
+				"By this point, you've likely exploited all of the local ore veins in both the overworld and the Nether. (If you haven't, then you're not really in the spirit of industrialisation)."
+				""
+				"Yet, there are some ores missing. Where are they? They can only be found as mixtures inside the &abase ores&r, which are found in infinite veins mined via drilling machines."
+				""
+				"These drills require &dHSLA Steel&r to manufacture, locking them behind molybdenum processing. "
+			]
+			icon: "createoreexcavation:drilling_machine"
+			id: "5E69A3F286C7E546"
+			rewards: [{
+				count: 64
+				id: "7112B6B488C314BA"
+				item: "gtceu:raw_molybdenite"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4E1E22D164CD15A1"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "749137AC614ABFD1"
+					item: "createoreexcavation:drill"
+					type: "item"
+				}
+			]
+			title: "Burner mining drill"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E69A3F286C7E546"]
+			description: ["Infinite ore veins are spaced around the world. It's unlikely that you'll have settled directly on top of the vein you need, so the &aOre Vein Finder&r will tell you what veins are where."]
+			id: "44F3737CC06E96EB"
+			tasks: [{
+				id: "33B6E70151FC7E27"
+				item: "createoreexcavation:vein_finder"
+				type: "item"
+			}]
+			title: "Kessoku Location Wand"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E69A3F286C7E546"]
+			description: [
+				"These drills are Create-powered; setting up boiler infrastructure at an outpost is a lot of work for a set of drills."
+				""
+				"You can use New Age &aelectric motors&r to convert GTEU directly to rotational power instead. Since you're likely going to need boats or minecarts to get the ore back to base, consider using the empty carts out there to ship batteries in."
+			]
+			id: "310811C821F6F90A"
+			subtitle: "All the physical labor is now done by a single Australian man."
+			tasks: [{
+				id: "11ACC5FB39632998"
+				item: "create_new_age:basic_motor"
+				title: "Electric Motors"
+				type: "item"
+			}]
+			title: "Electric Motors"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E69A3F286C7E546"]
+			description: ["The &aOre Sorter&r is a multiblock machine that sorts the six &dbase ores&r into their constituent ores, alongside some &dore slag&r."]
+			id: "705095DDB708BA9D"
+			tasks: [{
+				id: "165711E0C0358C13"
+				item: "gtceu:ore_sorter"
+				type: "item"
+			}]
+			title: "Ore Sorting Facility"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["310811C821F6F90A"]
+			description: [
+				"Got too much energy, but your motors aren't strong enough?"
+				""
+				"The &dMotor Extension&r will let you pump in additional energy to produce more stress."
+			]
+			id: "0A97BFD23864412D"
+			rewards: [{
+				id: "150F6D39F5CCB0B5"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "023B35C87EDFD82C"
+				item: "create_new_age:basic_motor_extension"
+				type: "item"
+			}]
+			title: "Motor Extender"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed Bocchinium can be sorted into &dMagnetite&r and &dIlmenite&r ore."]
+			icon: "gtceu:raw_bocchinium"
+			id: "6C7B57A6456C017C"
+			tasks: [{
+				id: "0BB31BE22C4B5F20"
+				item: "gtceu:raw_bocchinium"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed Ryoite can be sorted into &dPyrolusite&r and &dGold&r."]
+			icon: "gtceu:raw_ryoite"
+			id: "226F73A245BB3CD5"
+			tasks: [{
+				id: "024E92859D143EE3"
+				item: "gtceu:raw_ryoite"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed Kitakitaite can be sorted into &dChalcopyrite&r and &dSphalerite&r."]
+			icon: "gtceu:raw_kitakitaite"
+			id: "1E3C65D5ABBFEE25"
+			tasks: [{
+				id: "660F47931804CEBF"
+				item: "gtceu:raw_kitakitaite"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed &eNijikaite&r can be be sorted into &dWulfenite&r and &dScheelite&r."]
+			icon: "gtceu:raw_nijikaite"
+			id: "6FA74A42A00CFD4F"
+			tasks: [{
+				id: "42B9BE4A6479C093"
+				item: "gtceu:raw_nijikaite"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed Kikurite can be sorted into &dCassiterite&r and &dGalena&r."]
+			icon: "gtceu:raw_kikurite"
+			id: "6A7DE62BB369C244"
+			tasks: [{
+				id: "11A32E01CC5711C4"
+				item: "gtceu:raw_kikurite"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705095DDB708BA9D"]
+			description: ["Crushed Yoyokite can be sorted into &dBauxite&r and &dChromite&r."]
+			icon: "gtceu:raw_yoyokite"
+			id: "7454B2E506441021"
+			tasks: [{
+				id: "47C9FA1D5744E134"
+				item: "gtceu:raw_yoyokite"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+	]
 	title: "Slug Pharmacy"
 }

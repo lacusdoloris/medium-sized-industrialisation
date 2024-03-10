@@ -607,6 +607,19 @@
 			x: 8.0d
 			y: 7.0d
 		}
+		{
+			dependencies: ["4838078FA4C199E3"]
+			description: ["Your third circuit assembler. This just speeds things up a bit, as the IV Mainframe requires advanced alloys."]
+			id: "445CC316071432B5"
+			tasks: [{
+				id: "1735FCFD0201B210"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Even More Circuit Assemblers"
+			x: 2.0d
+			y: 10.5d
+		}
 	]
 	subtitle: ["The real fun begins here."]
 	title: "MV \\& HV - Falling Stars"
