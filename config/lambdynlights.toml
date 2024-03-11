@@ -29,9 +29,11 @@ mode = "fancy"
 				fox = true
 				pig = true
 				allay = true
+				mule = true
 				piglin = true
 				hoglin = true
 				blaze = true
+				camel = true
 				rabbit = true
 				cat = true
 				drowned = true
@@ -47,6 +49,7 @@ mode = "fancy"
 				minecart = true
 				mooshroom = true
 				glow_item_frame = false
+				parrot = true
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true

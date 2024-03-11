@@ -49,7 +49,8 @@ export const doTier04Content = (event) => {
         .EUt(GTValues.VH[GTValues.MV])
         .duration(64);
 
-    event.recipes.gtceu.assembler("nijika:tier04/ore_sorter")
+    event.recipes.gtceu
+        .assembler("nijika:tier04/ore_sorter")
         .itemInputs(
             "1x gtceu:hv_machine_hull",
             "4x gtceu:titanium_frame",

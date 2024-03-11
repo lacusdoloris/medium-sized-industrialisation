@@ -18,6 +18,7 @@ import { addCopperMaterials } from "../../shared/chemicals/metallurgy/copper";
 import { addBaseOreMaterials } from "../../shared/base_ores";
 import { addPolystyreneMaterials } from "../../shared/chemicals/organic/polystyrene";
 import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten";
+import { addPhosphorusMaterials } from "../../shared/chemicals/phosphorus";
 
 /**
  * Adds new custom materials.
@@ -45,6 +46,8 @@ export const addCustomMaterials = (event) => {
     addPolystyreneMaterials(event);
 
     addBrineMaterials(event);
+
+    addPhosphorusMaterials(event);
 
     // misc stuff.
     event.create(nijikaId("blood")).liquid().color(0xff0000);
