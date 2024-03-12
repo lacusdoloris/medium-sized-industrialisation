@@ -20,7 +20,11 @@ GTCEuStartupEvents.materialModification((_) => {
 });
 
 GTCEuStartupEvents.registry("gtceu:machine", addAllMachineTypes);
-GTCEuStartupEvents.registry("gtceu:recipe_type", addAllRecipeTypes);
+GTCEuStartupEvents.registry("gtceu:recipe_type", (evt) => {
+    addAllRecipeTypes(evt);
+
+    GTRecipeTypes.MIXER_RECIPES.setMaxIOSize(6, 1, 3, 1);
+});
 
 StartupEvents.registry("item", (ev) => {
     ev.create(nijikaId("slag"));
