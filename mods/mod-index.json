@@ -550,14 +550,14 @@
         "version_id": "8mIUaono"
     },
     "fRiHVvU7": {
-        "checksum": "47511a0f81108ff1edd91f6ecd5f05bcb87dfebaa7a3441f76ee71a749c8e48068c59f994551a1b2c3d2e83430c15ae8ac4983391b9f4c891a24ee5a2d413d00",
+        "checksum": "d7c7a388275751133b890ea08a396fe12cc9025d11be2a733f10a9f44df36fe71e5670616ffed7dbd640c3f65b2e59d69062575643a2b9f50a98ba4fa1c7d3d8",
         "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.2+1.20.1+forge",
-        "version_id": "UcPFZeeY"
+        "version": "1.1.3+1.20.1+forge",
+        "version_id": "3yd5CGg0"
     },
     "ftdbN0KK": {
         "checksum": "d8350cb58395c48077dd5611914dbc3f2d398cca2a7a1b13ec694b03d01d9d68cafd601a0a03a0eab3182acfc556524c630118fd16f53da75711069dbc4da6f1",
@@ -670,14 +670,14 @@
         "version_id": "BTl7Q7EH"
     },
     "oY2B1pjg": {
-        "checksum": "5cb370d640566c4925ab5046ec232888a950a5a9567a1b6238d1528fa7b8a880e9cd61b24fd815a7d7d30046317773760a22802b0d6feaadf67c8c8aed309d63",
+        "checksum": "2ec57660e2efe038a3f05556223e98dfff2564fb4116c2bc8ab96e5e4704ce7f4b48c18fea5ed5be83bbae82439c96121e8cb48d4e0c49eba8937e40228380e0",
         "client_side_only": true,
         "name": "Embeddium (Rubidium) Extra",
         "pinned": false,
         "project_id": "oY2B1pjg",
         "selected": true,
-        "version": "0.5.4.1+mc1.20.1-build.117",
-        "version_id": "YcPQu9Ll"
+        "version": "0.5.4.2+mc1.20.1-build.118",
+        "version_id": "5H0CaOam"
     },
     "ordsPcFz": {
         "checksum": "47ff7c4315775cc434d6368600e10bfca1f5235345b9afefc7b63e431f8ad153ebbeb96d774fc49d81eace480526f45059d5bc73d6d221616a7f5b4708c92f9c",
@@ -740,14 +740,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "2bef4fc77d8da3a7e78ecff8258eeebb0f2ef76dda5e5c5f80ce3c782c840e4f5040fd731c32fd88774278e82d4a3e95c9f3a2209d6d68a3b9e91175f42a1acb",
+        "checksum": "0f51dc6eb537f3e11b9dea671ec5ea642db7c2d52fc27f3be335b35625f2d2b42f51c36618ce67bc6902652df7dae2c6f277eb74c0e2e8d57f31defcf8aa79d5",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.7+mc1.20.1",
-        "version_id": "yhdMA7ca"
+        "version": "0.3.9+mc1.20.1",
+        "version_id": "H9CSyX47"
     },
     "soWqucCB": {
         "checksum": "f333fe4399b29d4bc5f93fa423d0b1acd84c9e1e5dbe94f077937fe2ff583d287a2fcc088acc775efe5cec383b791054531086e7136239d1f248e004280e0179",
@@ -810,14 +810,14 @@
         "version_id": "DNX6SE7o"
     },
     "vvuO3ImH": {
-        "checksum": "a1349fd52be55421571b39fa905efdc8d88200d1107f3421be2bbea946b4dcd2c2aa01ced71d39aa41a470bf1a8066c004ca0a99a0a0b35af075841c43391660",
+        "checksum": "bdfcef70705596d41ecd12033d81baa049f9b4aceba8ca4c3d02ba3b12e3912f1f014b608d1a51900be74851c2003c4fe4621bc1ae44c5754166b3efc4b1b368",
         "client_side_only": false,
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.7.0+1.20.1",
-        "version_id": "PeTgKttm"
+        "version": "5.7.1+1.20.1",
+        "version_id": "UfNitWgy"
     },
     "wPQ6GgFE": {
         "checksum": "d90e0517031af930ff4312f8ca2b3c32df7ecba578fdf8b011e0161da0a022fdfdd5c5d130c732527e596f4a013e3831ea8c24ab5523d847057724e802b21b58",
