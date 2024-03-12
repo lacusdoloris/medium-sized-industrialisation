@@ -102,13 +102,14 @@ export const addCustomMaterials = (event) => {
         .color(0xa874e8)
         .ingot()
         .dust()
+        .fluid()
         .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:titanium", "1x gtceu:nickel")
+        .blastTemp(3050)
         .flags(
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.DISABLE_ALLOY_BLAST
         );
 };
