@@ -94,4 +94,16 @@ export const doTier03Content = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20 * 20)
         .circuit(2);
+
+    // allow creating ender air from regular air
+    event.remove({id: "gtceu:gas_collector/ender_air"});
+
+    event.recipes.gtceu
+        .mixer("nijika:tier03/ender_air")
+        .itemInputs("4x gtceu:dimensional_shard_dust")
+        .inputFluids(Fluid.of("gtceu:air").withAmount(2 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:ender_air").withAmount(1500 * FluidAmounts.MB))
+        .EUt(GTValues.VH[GTValues.HV])
+        .duration(5 * 20)
+        .circuit(1);
 };
