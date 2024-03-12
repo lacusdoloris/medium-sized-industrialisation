@@ -35,3 +35,12 @@ devs.)
 4. Don't reload too quickly in succession. 
 
    Causes a concurrent modification exception from EMI's search baking. Oops!
+
+
+GT stuff
+========
+
+- ABF circuits are based on the number of items present, i.e. nitinol has 2, so circuit 2.
+  For gas recipes, add 10.
+
+- Output is 144 * amount of dusts, and input gas is 50 * amount of dusts.

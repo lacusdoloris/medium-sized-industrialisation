@@ -225,10 +225,11 @@ export const customiseMaterials = () => {
     getMaterial("trimethylamine").setFormula("N(CH3)3");
     getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
 
-    // steels shouldn't have formulas!
+    // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it
     // (which would crash).
     getMaterial("hsla_steel").setFormula(null, false);
+    getMaterial("az_91").setFormula(null, false);
 
     // Don't require the vacuum freezer (or the stupid washer) recipes for Kanthal.
     getBlastProperty("kanthal").setBlastTemperature(1700);

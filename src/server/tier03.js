@@ -96,7 +96,7 @@ export const doTier03Content = (event) => {
         .circuit(2);
 
     // allow creating ender air from regular air
-    event.remove({id: "gtceu:gas_collector/ender_air"});
+    event.remove({ id: "gtceu:gas_collector/ender_air" });
 
     event.recipes.gtceu
         .mixer("nijika:tier03/ender_air")

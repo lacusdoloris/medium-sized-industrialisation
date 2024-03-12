@@ -20,6 +20,10 @@ import { addPolystyreneMaterials } from "../../shared/chemicals/organic/polystyr
 import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten";
 import { addPhosphorusMaterials } from "../../shared/chemicals/phosphorus";
 
+const GasTier = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty$GasTier"
+);
+
 /**
  * Adds new custom materials.
  */
@@ -105,11 +109,31 @@ export const addCustomMaterials = (event) => {
         .fluid()
         .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:titanium", "1x gtceu:nickel")
-        .blastTemp(3050)
+        .blastTemp(3050, GasTier.MID, GTValues.VA[GTValues.EV])
         .flags(
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         );
+
+    event
+        .create(nijikaId("az_91"))
+        .ingot()
+        .dust()
+        .fluid()
+        .blastTemp(3100, GasTier.MID, GTValues.VA[GTValues.EV])
+        .iconSet(GTMaterialIconSet.SHINY)
+        .components("1x gtceu:magnesium", "1x gtceu:aluminium") // dummy components to force alloy generation
+        .flags(
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.DISABLE_ALLOY_BLAST
+        )
+        .color(0x99bee8);
 };

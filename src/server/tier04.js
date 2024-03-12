@@ -63,4 +63,40 @@ export const doTier04Content = (event) => {
         .circuit(2)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20);
+
+    // fix up AZ91 alloy recipes
+    // eh, it's closer to 10% aluminium.
+    event.recipes.gtceu
+        .alloy_blast_smelter("nijika:tier04/az91_slow")
+        .itemInputs(
+            "9x #forge:dusts/magnesium",
+            "1x #forge:dusts/aluminium",
+            "1x gtceu:tiny_zinc_dust"
+        )
+        .outputFluids(Fluid.of("gtceu:molten_az_91").withAmount(144 * 10 * FluidAmounts.MB))
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(77 * 20 + 10);
+
+    event.recipes.gtceu
+        .alloy_blast_smelter("nijika:tier04/az91_fast")
+        .itemInputs(
+            "9x #forge:dusts/magnesium",
+            "1x #forge:dusts/aluminium",
+            "1x gtceu:tiny_zinc_dust"
+        )
+        .inputFluids(Fluid.of("gtceu:argon").withAmount(50 * 10 * FluidAmounts.MB))
+        .outputFluids(Fluid.of("gtceu:molten_az_91").withAmount(144 * 10 * FluidAmounts.MB))
+        .circuit(13)
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(51 * 20 + 18);
+
+    // and of course there's no generated recipe in the vacuum freezer.
+    event.recipes.gtceu
+        .vacuum_freezer("nijika:tier04/az91_freeze_slow")
+        .notConsumable("gtceu:ingot_casting_mold")
+        .inputFluids(Fluid.of("gtceu:molten_az_91").withAmount(144 * FluidAmounts.MB))
+        .itemOutputs("1x gtceu:az_91_ingot")
+        .duration(3 * 20 + 15)
+        .EUt(GTValues.VA[GTValues.MV]);
 };

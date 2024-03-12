@@ -1,4 +1,5 @@
 import { createDustIntermediate } from "../../materials/helpers";
+import { nijikaId } from "../../utils";
 
 export const addMagnesiumMaterials = (event) => {
     createDustIntermediate(event, "magnesium_hydroxide", 0xdea6de).components(
@@ -12,21 +13,6 @@ export const addMagnesiumMaterials = (event) => {
         .color(0xafcfaf)
         .dust()
         .components("2x gtceu:calcium", "1x gtceu:silicon", "4x gtceu:oxygen");
-
-    event
-        .create(new ResourceLocation("nijika:az_91"))
-        .ingot()
-        .dust()
-        .blastTemp(3100)
-        .flags(
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROTOR,
-            GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_SMALL_GEAR
-        )
-        .color(0x99bee8);
 };
 
 /**
