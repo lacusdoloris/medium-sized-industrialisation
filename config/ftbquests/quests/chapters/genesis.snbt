@@ -3,7 +3,7 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "genesis"
-	group: "485BC5018A891421"
+	group: ""
 	icon: "bigglobe:rock"
 	id: "1D337685AF92C8E5"
 	order_index: 0

@@ -40,6 +40,10 @@ export const addMolybdenumMaterials = (event) => {
     );
 
     createDustIntermediate(event, "molybdenum_trioxide", 0xb6f8bd);
+    createDustIntermediate(event, "molybdenum_disulfide", 0x8d9641).components(
+        "1x gtceu:molybdenum",
+        "2x gtceu:sulfur"
+    );
 
     event
         .create(new ResourceLocation("nijika:ferromolybdenum"))
@@ -220,4 +224,15 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .EUt(GTValues.V[GTValues.EV])
         .duration(30 * 20)
         .blastFurnaceTemp(2700);
+
+    // Produce molybdenum trioxide from the disulfide.
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/molybdenum/desulfurisation")
+        .itemInputs("2x gtceu:molybdenum_disulfide_dust")
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(14 * FluidAmounts.BUCKET))
+        .itemOutputs("2x gtceu:technical_molybdenum_trioxide_dust")
+        .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(4 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(10 * 20)
+        .blastFurnaceTemp(1100);
 };

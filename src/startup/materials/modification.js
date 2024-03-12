@@ -220,6 +220,10 @@ export const customiseMaterials = () => {
     getMaterial("styrene").setFormula("C6H5CH=CH2");
     getMaterial("polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3H)");
     getMaterial("sodium_polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3Na)");
+    getMaterial("one_butanol").setFormula("C4H9OH");
+    getMaterial("tributyl_phosphate").setFormula("PO(OC4H9)3");
+    getMaterial("trimethylamine").setFormula("N(CH3)3");
+    getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
 
     // steels shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

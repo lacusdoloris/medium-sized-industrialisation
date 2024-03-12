@@ -121,13 +121,36 @@
 		}
 		{
 			dependencies: ["6FA74A42A00CFD4F"]
+			description: [
+				"In Factorio, there's a difficulty spike in the midgame where you need to start doing oil processing to create Blue Science packs; this was even more true in the olden days before they changed oil processing to be simpler at first, and it's even truer for those of us who love big overhaul packs."
+				""
+				"In Bigger Industrialisation, &6the EV tier&r acts as the blue science difficulty spike, with &aTungsten&r as the most formidable component of it. Tungsten requires purification of the drilled &dscheelite&r:"
+				""
+				"1. Treat it with &dHydrochloric acid&r to precipitate out arsenic impurities."
+				"2. Roast it to get desulfurised scheelite and precipitate out sulfur and calcium impurities."
+				"3. Digest it with either &dsodium hydroxide&r or &dsodium carbonate&r to get impure &dsodium tungstate&r."
+				"4. Finally, treat it with sodium sulfide and sulpfuric acid to precipitate out &dmolybdenum&r impurities."
+				""
+				"In order to recover tungsten from the provided sodium tungstate solution, an abstracted version of the &6LIX&r and &6SIX&r processes are used, which requires an organic solvent and ammonia to precipitate out ammonium paratungstate. This solvent has four constitutent parts:"
+				""
+				"- &aTrimethylamine&r, which is the organic chemical used to actually induce the reaction. "
+				"- &aTributyl phosphate&r, which is used to help dissolve the tungsten."
+				"- &aSodium polystyrene sulfonate&r, a polystyrene salt that acts as the actual ion exchanger."
+				"- &aToluene&r, which the above are all dissolved in."
+				""
+				"&dTrimethylamine&r is simply produced via catalytic reaction of ammonia and methanol. &dTributyl phosphate&r is made from a reaction between &on&r-butanol and phosphoryl chloride (which as the name suggests requires phosphorus). &dSodium polystyrene sulfonate&r is made in a standard acid-base reaction between polystystrene sulfonate and sodium hydroxide. Finally, &dtoluene&r is made from distillation, but in late EV it can be made using benzene and methanol using polystyrene sulfonate as a catalyst."
+				""
+				"The process here is much more fictionalised than the reality, but reacting the ion-exchange mixture and ammonia with the sodium tungstate will produce ammonium paratungstate, which can be autoclaved to get the raw APT crystals. From there, it can be reduced in the blast furnace with hydrogen to get your raw &atungsten metal&r; the process for converting it to the &atungsten carbide&r required for the ABF is trivial."
+			]
 			id: "310A71616F1157C0"
+			min_width: 500
 			subtitle: "Call her tungsten the way I LIX and SIX her"
 			tasks: [{
 				id: "272C56B8305F2F0B"
 				item: "gtceu:tungsten_carbide_plate"
 				type: "item"
 			}]
+			title: "Blue Science"
 			x: 2.0d
 			y: 3.5d
 		}
