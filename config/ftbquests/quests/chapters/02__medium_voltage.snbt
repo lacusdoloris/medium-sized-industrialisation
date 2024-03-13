@@ -620,6 +620,25 @@
 			x: 2.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["19DA4C36B750D270"]
+			description: [
+				"With access to both HV technology and the cleanroom, you can now make &dphosphorus-doped&r monosilicone. "
+				""
+				"Phosphorus-doped silicon wafers get more component-per-input for your gallium arsenide than regular silicon. "
+				""
+				"How do you get phosphorus? Either from &dashes&r (which are a nice byproduct of the EBF) or from glow berries. Later, you'll be able to use the power of alchemy to get apatite."
+			]
+			id: "374EC252DC390528"
+			tasks: [{
+				id: "567DDF2F8F539788"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			title: "Phosphor Circuits"
+			x: 5.5d
+			y: 10.0d
+		}
 	]
 	subtitle: ["The real fun begins here."]
 	title: "MV \\& HV - Falling Stars"

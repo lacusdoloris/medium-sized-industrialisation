@@ -217,5 +217,6 @@
 			y: 3.5d
 		}
 	]
+	subtitle: ["A guide to the various logistics options available."]
 	title: "My Mates"
 }

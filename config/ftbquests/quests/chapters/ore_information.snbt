@@ -58,7 +58,7 @@
 		{
 			dependencies: ["7C111E62C0655371"]
 			description: [
-				"There's no passive resource generation until EV, when you can finally start using &dMystical Agriculture&r (not as easy as it sounds)."
+				"There's no passive resource generation until EV, when you can finally start using &dCreate Ore Excavation&r (not as easy as it sounds)."
 				""
 				"So... how do you get large amounts of ores with little effort? You build &aa quarry&r, of course! Just like in the Beta days."
 				""

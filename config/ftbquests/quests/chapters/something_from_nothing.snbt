@@ -188,5 +188,6 @@
 			y: 3.0d
 		}
 	]
+	subtitle: ["A guide to the base ores."]
 	title: "Slug Pharmacy"
 }

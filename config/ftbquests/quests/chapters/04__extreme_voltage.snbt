@@ -23,16 +23,15 @@
 				type: "item"
 			}]
 			title: "Ice Box"
-			x: 0.5d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["020FAE71BEDA6B1E"]
-			description: [
-				"One of the main components of HSLA Steel, &dMolybdenum&r is found in the Nether and has a custom processing chain from the crushed ore."
-				""
-				"To get the most out of your ores, you'll need to feed the impure molybdenum trioxide back into the roaster rather than letting some of it be destroyed with a pure roasting process."
+			dependencies: [
+				"020FAE71BEDA6B1E"
+				"14B2C1E8215B74AC"
 			]
+			description: ["&aFerromolybdenum&r is one of the components of &dHSLA Steel&r, and is made by reduction of pure molybdenum trioxide in the presence of iron."]
 			id: "3C5626959F03AC79"
 			tasks: [{
 				id: "354A7A822B25F898"
@@ -40,7 +39,7 @@
 				type: "item"
 			}]
 			title: "Ferromolybdenum"
-			x: 1.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -57,7 +56,7 @@
 				type: "item"
 			}]
 			title: "Titanium"
-			x: 0.0d
+			x: -1.0d
 			y: 2.0d
 		}
 		{
@@ -77,7 +76,7 @@
 				type: "item"
 			}]
 			title: "High Speed, Low Drag"
-			x: 0.5d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -85,6 +84,15 @@
 				"10A18BA06D165985"
 				"6623F6B76CA81970"
 				"310A71616F1157C0"
+				"4385F85BBCEF5490"
+				"224D936C415AA016"
+			]
+			description: [
+				"The &aAlloy Blast Smelter&r is a machine much like the Electric Blast Furnace, but for the sole purpose of making alloys out of input dusts instead of single ingots."
+				""
+				"Unlike the EBF, the ABF produces &dmolten metals&r, which need to be piped to a Vacuum Freezer for processing. Most pipes can't handle alloys this hot, so you'll need to use pipes made of something like &dtungsten&r or &dtantalum carbide&r piping. "
+				""
+				"Much like the EBF, the ABF requires &dcoil blocks&r; at this point in time, Nichrome coils are your best option, and will make the smelting go a lot faster,"
 			]
 			id: "162A90AC0A02ABDE"
 			tasks: [{
@@ -116,7 +124,7 @@
 				type: "item"
 			}]
 			title: "Tantalum Carbide"
-			x: -1.0d
+			x: -1.5d
 			y: 3.5d
 		}
 		{
@@ -129,7 +137,7 @@
 				"1. Treat it with &dHydrochloric acid&r to precipitate out arsenic impurities."
 				"2. Roast it to get desulfurised scheelite and precipitate out sulfur and calcium impurities."
 				"3. Digest it with either &dsodium hydroxide&r or &dsodium carbonate&r to get impure &dsodium tungstate&r."
-				"4. Finally, treat it with sodium sulfide and sulpfuric acid to precipitate out &dmolybdenum&r impurities."
+				"4. Finally, treat it with sodium sulfide and sulfuric acid to precipitate out &dmolybdenum&r impurities."
 				""
 				"In order to recover tungsten from the provided sodium tungstate solution, an abstracted version of the &6LIX&r and &6SIX&r processes are used, which requires an organic solvent and ammonia to precipitate out ammonium paratungstate. This solvent has four constitutent parts:"
 				""
@@ -151,8 +159,77 @@
 				type: "item"
 			}]
 			title: "Blue Science"
-			x: 2.0d
+			x: 2.5d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"14B2C1E8215B74AC"
+				"487FEDDA6D681D9F"
+			]
+			description: [
+				"I read the words \"shock synthesis\" in a paper whilst researching molybdenum disilicate and knew instantly what I had to do."
+				""
+				"Molybdenum. Silicon. TNT. Implosion compressor. What else do I need to say?"
+			]
+			id: "4385F85BBCEF5490"
+			tasks: [{
+				id: "2E102DAAAB5C2C1D"
+				item: "gtceu:molybdenum_disilicide_ingot"
+				type: "item"
+			}]
+			title: "Speedfreaks FM"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"&aMolybdenum&r is one of the materials in a lot of high-performance alloys, including ones required in EV. It's one of the four key elements required to continue with progression."
+				""
+				"You can refine it from &dmolybdenite&r ore; check the recipe tree starting from crushed molybdite. You can also recover an additional amount of it from &dscheelite&r processing as well."
+				""
+				"The direct roasting process for molybdenite is &einefficient&r and requires pumping the produced molybdenum trioxide back into the blast furnace to get the most out of your ores."
+			]
+			id: "14B2C1E8215B74AC"
+			tasks: [{
+				id: "3607717314EC87C8"
+				item: "gtceu:molybdenum_trioxide_dust"
+				type: "item"
+			}]
+			title: "Molybdenum"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["162A90AC0A02ABDE"]
+			description: ["&dNitinol&r is the tier material for EV, and is an alloy of nickel and titanium. This takes a long time to make; strongly consider investing in multiple alloy blast furnaces."]
+			id: "5126D4FAAFC1581F"
+			tasks: [{
+				id: "77536EB8FB0564AA"
+				item: "gtceu:nitinol_ingot"
+				type: "item"
+			}]
+			title: "Shape Metal Alloy"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["162A90AC0A02ABDE"]
+			description: [
+				"&dAZ91&r is an alloy of magnesium (88%), aluminium (9%) and zinc (1%). It's one of the secondary tier materials for EV. "
+				""
+				"(Well, those are the rough numbers anyway.)"
+			]
+			id: "491804C9A1FE230D"
+			tasks: [{
+				id: "4DBB0A8A66472D8C"
+				item: "gtceu:az_91_ingot"
+				type: "item"
+			}]
+			title: "Magnesium Metal Alloy"
+			x: 1.0d
+			y: 6.5d
 		}
 	]
 	title: "EV - So Cold"
