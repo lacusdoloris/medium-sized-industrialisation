@@ -96,6 +96,7 @@
 				"Much like the EBF, the ABF requires &dcoil blocks&r; at this point in time, Nichrome coils are the only viable option as they're the only coils available with the right temperature for Nitinol."
 			]
 			id: "162A90AC0A02ABDE"
+			shape: "octagon"
 			tasks: [{
 				id: "735C67532B0D217F"
 				item: "gtceu:alloy_blast_smelter"
@@ -231,6 +232,48 @@
 			title: "Magnesium Metal Alloy"
 			x: 1.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["081028276578561D"]
+			description: [
+				"Wow, IV circuits already?"
+				""
+				"Don't get too excited. You can't make anything with them until you've set up platinum processing, except for the EV Circuit Assembler."
+			]
+			icon: "gtceu:micro_processor_mainframe"
+			id: "0591881ECECBAD46"
+			tasks: [
+				{
+					id: "0C0CB4BF7923B624"
+					item: "gtceu:micro_processor_mainframe"
+					type: "item"
+				}
+				{
+					id: "62340E343427117B"
+					item: "gtceu:ev_circuit_assembler"
+					type: "item"
+				}
+			]
+			title: "S/390"
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["491804C9A1FE230D"]
+			description: [
+				"The &dEV Emitter&r requires a quantum eye, which is an Ender Eye doused in radon."
+				""
+				"You've already gotten Ender Eyes offscreen (via emeralds), but where could you possibly get Radon from? Combine some regular &dAir&r with some &ddimensional shard dust&r to get &aEnder Air&r. Freeze it, and distill it for some radon."
+			]
+			id: "081028276578561D"
+			tasks: [{
+				id: "0F5DB0DF76F9FB1F"
+				item: "gtceu:ev_emitter"
+				type: "item"
+			}]
+			title: "EV Emitters"
+			x: 2.5d
+			y: 5.0d
 		}
 	]
 	title: "EV - So Cold"

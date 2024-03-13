@@ -1,4 +1,5 @@
 import { MODPACK_SETTINGS } from "../settings";
+import { unfuckCoalRecipes } from "./misc/coal";
 
 const SWAP_BRASS_PLATES = [
     "create:crafting/logistics/brass_tunnel",
@@ -105,6 +106,9 @@ const fixupCreate = (event) => {
     for (let mod of ["create", "create_new_age", "railways", "createaddition"]) {
         event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
     }
+
+    event.remove({id: "create:milling/coal"});
+    event.remove({id: "create:milling/charcoal"});
 };
 
 /**
@@ -185,4 +189,5 @@ export const doCleanups = (event) => {
     }
 
     fixupCreate(event);
+    unfuckCoalRecipes(event);
 };

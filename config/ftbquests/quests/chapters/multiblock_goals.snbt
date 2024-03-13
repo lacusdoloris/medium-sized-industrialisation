@@ -83,7 +83,7 @@
 			description: [
 				"The &dImplosion Compressor&r turns dusts into gems. "
 				""
-				"This machine only really has a single purpose: turning &dender pearl dust&r into &aender pearls&r. Mandatory peaceful mode means no endermen, so you're going to need to start mixing that beryillium."
+				"This machine has a very important purpose: turning &dender pearl dust&r into &aender pearls&r. Mandatory peaceful mode means no endermen, so you're going to need to start mixing that beryillium."
 			]
 			icon: "gtceu:implosion_compressor"
 			id: "487FEDDA6D681D9F"
@@ -234,6 +234,7 @@
 				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues); and a top layer with a muffler hatch."
 			]
 			id: "64CDC217C4073379"
+			min_width: 400
 			tasks: [
 				{
 					id: "6058C38EBE40EC5A"
