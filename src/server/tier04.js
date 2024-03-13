@@ -76,7 +76,8 @@ export const doTier04Content = (event) => {
         .outputFluids(Fluid.of("gtceu:molten_az_91").withAmount(144 * 10 * FluidAmounts.MB))
         .circuit(3)
         .EUt(GTValues.VA[GTValues.EV])
-        .duration(77 * 20 + 10);
+        .duration(77 * 20 + 10)
+        .blastFurnaceTemp(3100);
 
     event.recipes.gtceu
         .alloy_blast_smelter("nijika:tier04/az91_fast")
@@ -89,7 +90,8 @@ export const doTier04Content = (event) => {
         .outputFluids(Fluid.of("gtceu:molten_az_91").withAmount(144 * 10 * FluidAmounts.MB))
         .circuit(13)
         .EUt(GTValues.VA[GTValues.EV])
-        .duration(51 * 20 + 18);
+        .duration(51 * 20 + 18)
+        .blastFurnaceTemp(3100);;
 
     // and of course there's no generated recipe in the vacuum freezer.
     event.recipes.gtceu
