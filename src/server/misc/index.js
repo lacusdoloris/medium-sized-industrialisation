@@ -137,7 +137,8 @@ export const adjustVariousMiscRecipes = (event) => {
         .id("minecraft:light_weighted_pressure_plate");
 
     // ghast tears from salt water
-    event.recipes.gtceu.chemical_bath("nijika:misc/ghast_tears")
+    event.recipes.gtceu
+        .chemical_bath("nijika:misc/ghast_tears")
         .itemInputs("1x gtceu:blaze_powder")
         .inputFluids(Fluid.of("gtceu:salt_water").withAmount(2 * FluidAmounts.BUCKET))
         .itemOutputs("1x minecraft:ghast_tear")

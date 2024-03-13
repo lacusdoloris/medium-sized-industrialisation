@@ -63,16 +63,14 @@ export const doModRecipes = (event) => {
     }
 
     if (Platform.isLoaded("create_power_loader")) {
-        event.remove({mod: "create_power_loader"});
-        event.shaped(
-            "create_power_loader:brass_chunk_loader",
-            ["GGG", "GTG", "BBB"],
-            {
+        event.remove({ mod: "create_power_loader" });
+        event
+            .shaped("create_power_loader:brass_chunk_loader", ["GGG", "GTG", "BBB"], {
                 G: "#forge:glass",
                 T: "minecraft:ghast_tear",
-                B: "create:brass_casing"
-            }
-        ).id("nijika:misc/chunkloader");
+                B: "create:brass_casing",
+            })
+            .id("nijika:misc/chunkloader");
     }
 
     event

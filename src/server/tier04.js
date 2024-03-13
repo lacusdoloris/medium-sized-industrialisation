@@ -91,7 +91,7 @@ export const doTier04Content = (event) => {
         .circuit(13)
         .EUt(GTValues.VA[GTValues.EV])
         .duration(51 * 20 + 18)
-        .blastFurnaceTemp(3100);;
+        .blastFurnaceTemp(3100);
 
     // and of course there's no generated recipe in the vacuum freezer.
     event.recipes.gtceu
@@ -103,15 +103,13 @@ export const doTier04Content = (event) => {
         .EUt(GTValues.VA[GTValues.MV]);
 
     // finally, unfuck the ABF recipes
-    event.remove({id: "gtceu:shaped/blast_alloy_smelter"});
-    event.shaped(
-        "gtceu:alloy_blast_smelter",
-        ["PCP", "WHW", "PCP"],
-        {
+    event.remove({ id: "gtceu:shaped/blast_alloy_smelter" });
+    event
+        .shaped("gtceu:alloy_blast_smelter", ["PCP", "WHW", "PCP"], {
             P: "#forge:plates/tantalum_carbide",
             C: "#gtceu:circuits/ev",
             W: "gtceu:molybdenum_disilicide_quadruple_wire",
             H: "gtceu:hv_alloy_smelter",
-        }
-    ).id("nijika:tier04/abf");
+        })
+        .id("nijika:tier04/abf");
 };
