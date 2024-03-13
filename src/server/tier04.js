@@ -112,4 +112,10 @@ export const doTier04Content = (event) => {
             H: "gtceu:hv_alloy_smelter",
         })
         .id("nijika:tier04/abf");
+
+    event.replaceInput(
+        { type: "gtceu:circuit_assembler" },
+        "gtceu:aluminium_frame",
+        "gtceu:az_91_frame"
+    );
 };
