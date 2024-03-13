@@ -144,6 +144,16 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     }).id(`nijika:auto/machines/${tier.name}/electrolyzer`);
 
     // Electromagnetic separator: WIP
+    let nonMagneticRod = tier.materials.magnetic.materialName.slice("magnetic_".length);
+    event.remove({ id: `gtceu:shaped/${tier.name}_electromagnetic_separator` });
+    lazyShaped(
+        `gtceu:${tier.name}_electromagnetic_separator`,
+        ["VW1", "WHZ", "CW1"],
+        {
+            Z: `#forge:rods/${nonMagneticRod}`,
+            1: tier.materials.electricWire.component("double_wire")
+        }
+    ).id(`nijika:auto/machines/${tier.name}/electromagnetic_separator`);
 
     // Extractor: Replace glass.
     event.remove({ id: `gtceu:shaped/${tier.name}_extractor` });
