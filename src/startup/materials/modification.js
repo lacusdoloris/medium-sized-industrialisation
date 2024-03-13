@@ -199,6 +199,14 @@ export const customiseMaterials = () => {
         oreProp.setDirectSmeltResult(null);
     }
 
+    let mosi = getMaterial("molybdenum_disilicide");
+    {
+        mosi.properties.setProperty(
+            PropertyKey.WIRE,
+            new WireProperties(GTValues.V[GTValues.EV], 2, 8)
+        );
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");

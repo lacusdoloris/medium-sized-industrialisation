@@ -39,7 +39,10 @@ export const addMolybdenumMaterials = (event) => {
         "4x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "molybdenum_trioxide", 0xb6f8bd);
+    createDustIntermediate(event, "molybdenum_trioxide", 0xb6f8bd).components(
+        "1x gtceu:molybdenum",
+        "3x gtceu:oxygen"
+    );
     createDustIntermediate(event, "molybdenum_disulfide", 0x8d9641).components(
         "1x gtceu:molybdenum",
         "2x gtceu:sulfur"
@@ -235,4 +238,20 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(10 * 20)
         .blastFurnaceTemp(1100);
+
+    // I saw the word "shock synthesis" in a paper and immediately knew that this is what I needed
+    // to implement. Fuck everything else. I'm going to kill myself when I'm done with this project.
+    // My life has no meaning outside of my creations.
+    event.remove({ id: "gtceu:mixer/molybdenum_disilicide" });
+    event.recipes.gtceu
+        .implosion_compressor("nijika:chemicals/molybdenum/fuck_it_we_boom")
+        .itemInputs(
+            "1x gtceu:molybdenum_dust",
+            "2x gtceu:silicon_dust",
+            "1x minecraft:tnt" // TODO: Tags?
+        )
+        .itemOutputs("1x gtceu:molybdenum_disilicide_ingot")
+        .chancedOutput("1x gtceu:dark_ash_dust", 2500.0, 0.0)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(2 * 20);
 };
