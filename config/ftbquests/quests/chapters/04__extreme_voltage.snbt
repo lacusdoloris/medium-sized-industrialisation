@@ -86,13 +86,14 @@
 				"310A71616F1157C0"
 				"4385F85BBCEF5490"
 				"224D936C415AA016"
+				"232472832AA5E201"
 			]
 			description: [
 				"The &aAlloy Blast Smelter&r is a machine much like the Electric Blast Furnace, but for the sole purpose of making alloys out of input dusts instead of single ingots."
 				""
 				"Unlike the EBF, the ABF produces &dmolten metals&r, which need to be piped to a Vacuum Freezer for processing. Most pipes can't handle alloys this hot, so you'll need to use pipes made of something like &dtungsten&r or &dtantalum carbide&r piping. "
 				""
-				"Much like the EBF, the ABF requires &dcoil blocks&r; at this point in time, Nichrome coils are your best option, and will make the smelting go a lot faster,"
+				"Much like the EBF, the ABF requires &dcoil blocks&r; at this point in time, Nichrome coils are the only viable option as they're the only coils available with the right temperature for Nitinol."
 			]
 			id: "162A90AC0A02ABDE"
 			tasks: [{
