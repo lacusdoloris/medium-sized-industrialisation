@@ -148,6 +148,7 @@ export const doCleanups = (event) => {
     event.remove({ id: /gtceu:shaped.*_kinetic_mixer/ });
 
     // too easy!
+    event.remove({ output: "createaddition:electric_motor" });
     event.remove({ output: "createaddition:alternator" });
 
     // we have our own

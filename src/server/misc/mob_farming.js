@@ -13,6 +13,7 @@ const MOB_TYPES = {
     glow_squid: "minecraft:glow_ink_sac",
     phantom: "minecraft:phantom_membrane",
     magma_cube: "minecraft:magma_cream",
+    ghast: "minecraft:ghast_tear",
 };
 
 /**
