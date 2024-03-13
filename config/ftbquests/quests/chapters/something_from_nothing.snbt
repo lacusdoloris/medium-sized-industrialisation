@@ -187,6 +187,24 @@
 			x: 0.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["44F3737CC06E96EB"]
+			description: ["The &dBrass Chunk Loader&r allows you to force load those outpost chunks so that your drills and trains don't stop."]
+			id: "6F3CA9F89012DF62"
+			rewards: [{
+				id: "1C4A33A65DC0294D"
+				item: "bigglobe:rope_anchor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26F93C2A66582741"
+				item: "create_power_loader:brass_chunk_loader"
+				type: "item"
+			}]
+			title: "Chunk Loading"
+			x: 1.5d
+			y: 1.5d
+		}
 	]
 	subtitle: ["A guide to the base ores."]
 	title: "Slug Pharmacy"

@@ -62,7 +62,18 @@ export const doModRecipes = (event) => {
         adjustEssentialsRecipes(event);
     }
 
-    event.remove({ output: "createaddition:electric_motor" });
+    if (Platform.isLoaded("create_power_loader")) {
+        event.remove({mod: "create_power_loader"});
+        event.shaped(
+            "create_power_loader:brass_chunk_loader",
+            ["GGG", "GTG", "BBB"],
+            {
+                G: "#forge:glass",
+                T: "minecraft:ghast_tear",
+                B: "create:brass_casing"
+            }
+        ).id("nijika:misc/chunkloader");
+    }
 
     event
         .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {
