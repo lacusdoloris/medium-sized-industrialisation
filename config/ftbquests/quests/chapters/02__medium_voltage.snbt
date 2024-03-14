@@ -154,7 +154,7 @@
 				""
 				"Silicon is very easy to obtain; a good source is from &9centrifuging&r &dflint&r or &ddeepslate dust&r. You should already have a working gallium arsenide processing line."
 				""
-				"If you haven't already, its worth getting some ferrochrolumium coils to drastically speed up your blast furnaces."
+				"If you haven't already, it's worth getting some ferrochrolumium coils to drastically speed up your blast furnaces."
 			]
 			id: "0683F375C8886EEE"
 			tasks: [{
@@ -330,7 +330,7 @@
 			description: [
 				"Your first HV circuit!"
 				""
-				"The HV tier is closer to a stop-gap tier than a real progression tier; most of your MV-based machinery and factory lines will still work fine. You can upgrade to EV relatively quickly, so this quest chapter merges both MV and HV."
+				"HV is likely the tier that you will linger on for a while, so get ready to make a lot of these."
 			]
 			id: "020FAE71BEDA6B1E"
 			shape: "hexagon"
@@ -528,9 +528,10 @@
 			description: [
 				"You should consider upgrading your blast furnace and bessemer converter to use &dMV Energy Hatches&r (if not MV hatches for &oall&r I/O) so that you can run HV recipes."
 				""
-				"This goes for every tier, really."
+				"Note that HV Energy Hatches require &9sodium-potassium&r to make; they're both obtained from evaporation of dirt water. Check the recipes of the evaporation pool for more information."
 			]
 			id: "2585EF3B6EC40112"
+			min_width: 300
 			optional: true
 			tasks: [{
 				count: 2L

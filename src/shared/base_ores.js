@@ -5,42 +5,48 @@ const BASE_ORES = {
         colour: 0xf7a0b5,
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
-        intoOres: ["magnetite", "ilmenite"],
+        intoOres: ["magnetite", "ilmenite", "orpiment"],
+        gem: "amethyst"
     },
 
     nijikaite: {
         seed: 1929496478,
         colour: 0xf3e5a1,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["wulfenite", "scheelite"],
+        intoOres: ["molybdenite", "scheelite", "fluorite"],
+        gem: "emerald"
     },
 
     ryoite: {
         seed: 155659298,
         colour: 0x49679f,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["pyrolusite", "gold"],
+        intoOres: ["pyrolusite", "gold", "pentlandite"],
+        gem: "sapphire",
     },
 
     kitakitaite: {
         seed: 649130079,
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["chalcopyrite", "sphalerite"],
+        intoOres: ["chalcopyrite", "sphalerite", "saltpeter"],
+        gem: "ruby",
     },
 
     kikurite: {
         seed: 1321746503,
         colour: 0x995678,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: ["cassiterite", "galena"],
+        intoOres: ["cassiterite", "galena", "silver"],
+        gem: "opal",
     },
 
     yoyokite: {
         seed: 1191360869,
         colour: 0x5a3c2d,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: ["bauxite", "chromite"],
+        intoOres: ["bauxite", "chromite", "monazite"],
+        gem: "realgar",
     },
 };
 
@@ -86,8 +92,8 @@ export const addBaseOreRecipes = (event) => {
         // Similar to Angel's Refining.
         //
         // Crushed ore sorting: ore 1 + 2 + slag
-        // Refined ore (chunks): ore 1 + 2 + 3 + slag
-        // Impure ore (crystals): ore 1 + 2 + 3 + 4 + slag
+        // Impure ore (chunks): ore 1 + 2 + 3 + slag
+        // Refined ore (crystals): ore 1 + 2 + 3 + 4 + slag
         // Pure ore (... yeah): all 7 ores, no slag
 
         event.remove({ input: `gtceu:crushed_${name}_ore` });
@@ -102,5 +108,30 @@ export const addBaseOreRecipes = (event) => {
             .duration(5 * 20)
             .EUt(GTValues.VA[GTValues.HV])
             .circuit(1);
+
+        // Washing of crushed ore with distilled water.
+        // TODO: Wastewaterr.
+        event.remove({ input: `gtceu:impure_${name}_dust` });
+        event.recipes.gtceu
+            .ore_washer(`nijika:base_ores/${name}/washing`)
+            .itemInputs(`1x gtceu:crushed_${name}_ore`)
+            .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(2 * FluidAmounts.BUCKET))
+            .itemOutputs(`1x gtceu:impure_${name}_dust`)
+            .chancedOutput(`1x gtceu:raw_${oreData.gem}`, 5000.0, 0.0)
+            .EUt(GTValues.VHA[GTValues.EV])
+            .duration(20 * 20);
+        
+        event.recipes.gtceu
+            .ore_sorting(`nijika:base_ores/${name}/sorting_tier_2`)
+            .itemInputs(`4x gtceu:impure_${name}_dust`)
+            .itemOutputs(
+                `3x ${goldify(oreData.intoOres[0])}`,
+                `1x ${goldify(oreData.intoOres[1])}`,
+                `1x ${goldify(oreData.intoOres[2])}`,
+                "1x nijika:slag"
+            )
+            .duration(5 * 20)
+            .EUt(GTValues.VA[GTValues.EV])
+            .circuit(2);
     }
 };

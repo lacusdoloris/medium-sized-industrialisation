@@ -24,6 +24,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", (evt) => {
     addAllRecipeTypes(evt);
 
     GTRecipeTypes.MIXER_RECIPES.setMaxIOSize(6, 1, 3, 1);
+    GTRecipeTypes.ORE_WASHER_RECIPES.setMaxIOSize(2, 3, 1, 1);
 });
 
 StartupEvents.registry("item", (ev) => {

@@ -115,8 +115,8 @@
 			icon: "gtceu:raw_bocchinium"
 			id: "6C7B57A6456C017C"
 			tasks: [{
-				id: "0BB31BE22C4B5F20"
-				item: "gtceu:raw_bocchinium"
+				id: "7226AB9CEABD8A29"
+				item: "gtceu:crushed_bocchinium_ore"
 				type: "item"
 			}]
 			x: -0.5d
@@ -128,11 +128,11 @@
 			icon: "gtceu:raw_ryoite"
 			id: "226F73A245BB3CD5"
 			tasks: [{
-				id: "024E92859D143EE3"
-				item: "gtceu:raw_ryoite"
+				id: "1A1654E6EA88775A"
+				item: "gtceu:crushed_ryoite_ore"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -141,11 +141,11 @@
 			icon: "gtceu:raw_kitakitaite"
 			id: "1E3C65D5ABBFEE25"
 			tasks: [{
-				id: "660F47931804CEBF"
-				item: "gtceu:raw_kitakitaite"
+				id: "0C97DB608E2B543B"
+				item: "gtceu:crushed_kitakitaite_ore"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -154,11 +154,11 @@
 			icon: "gtceu:raw_nijikaite"
 			id: "6FA74A42A00CFD4F"
 			tasks: [{
-				id: "42B9BE4A6479C093"
-				item: "gtceu:raw_nijikaite"
+				id: "1D6C4BE65A70F253"
+				item: "gtceu:crushed_nijikaite_ore"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: 3.0d
 		}
 		{
@@ -167,8 +167,8 @@
 			icon: "gtceu:raw_kikurite"
 			id: "6A7DE62BB369C244"
 			tasks: [{
-				id: "11A32E01CC5711C4"
-				item: "gtceu:raw_kikurite"
+				id: "41DB1BEB7B9CDDE8"
+				item: "gtceu:crushed_kikurite_ore"
 				type: "item"
 			}]
 			x: -2.5d
@@ -180,11 +180,11 @@
 			icon: "gtceu:raw_yoyokite"
 			id: "7454B2E506441021"
 			tasks: [{
-				id: "47C9FA1D5744E134"
-				item: "gtceu:raw_yoyokite"
+				id: "036202E5D17E4788"
+				item: "gtceu:crushed_yoyokite_ore"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -204,6 +204,84 @@
 			title: "Chunk Loading"
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6A7DE62BB369C244"]
+			description: ["Impure Kikurite gets you Silver, as well as the result of sorting the crushed ores."]
+			id: "2F69A1FA48AF9E49"
+			tasks: [{
+				id: "05CD1E4DD8CD5D58"
+				item: "gtceu:impure_kikurite_dust"
+				type: "item"
+			}]
+			title: "Impure Kikurite"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E3C65D5ABBFEE25"]
+			description: ["Impure Kitakitaite gets you Saltpeter, as well as the result of sorting the crushed ores."]
+			id: "636278BBADABB9A2"
+			tasks: [{
+				id: "1B3D6C7AD85C8FBF"
+				item: "gtceu:impure_kitakitaite_dust"
+				type: "item"
+			}]
+			title: "Impure Kitakitaite"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6C7B57A6456C017C"]
+			description: ["Impure Bocchinium gets you Orpiment, as well as the result of sorting the crushed ores."]
+			id: "57C055EE02BA49D4"
+			tasks: [{
+				id: "46A8E80A6518B54F"
+				item: "gtceu:impure_bocchinium_dust"
+				type: "item"
+			}]
+			title: "Impure Bocchinium"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7454B2E506441021"]
+			description: ["Impure Yoyokite gets you Monazite, as well as the result of sorting the crushed ores."]
+			id: "3C75897B75226642"
+			tasks: [{
+				id: "24FB26291D858BDD"
+				item: "gtceu:impure_yoyokite_dust"
+				type: "item"
+			}]
+			title: "Impure Yoyokite"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["226F73A245BB3CD5"]
+			description: ["Impure Ryoite gets you Pentlandite, as well as the result of sorting the crushed ores."]
+			id: "38C797CC3DCF3A33"
+			tasks: [{
+				id: "0BA8608F29CAA90E"
+				item: "gtceu:impure_ryoite_dust"
+				type: "item"
+			}]
+			title: "Impure Ryoite"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6FA74A42A00CFD4F"]
+			description: ["Impure Nijikaite gets you Fluorite, as well as the result of sorting the crushed ores."]
+			id: "6706582D572DCB34"
+			tasks: [{
+				id: "4818F45E3FDC31E1"
+				item: "gtceu:impure_nijikaite_dust"
+				type: "item"
+			}]
+			title: "Impure Nijikaite"
+			x: 2.5d
+			y: 4.5d
 		}
 	]
 	subtitle: ["A guide to the base ores."]

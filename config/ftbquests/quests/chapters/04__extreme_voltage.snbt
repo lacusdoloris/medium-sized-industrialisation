@@ -219,9 +219,9 @@
 		{
 			dependencies: ["162A90AC0A02ABDE"]
 			description: [
-				"&dAZ91&r is an alloy of magnesium (88%), aluminium (9%) and zinc (1%). It's one of the secondary tier materials for EV. "
+				"&dAZ91&r is an alloy of magnesium (88%), aluminium (9%) and zinc (1%). It's one of the secondary tier materials for EV. (Well, those are the rough numbers anyway.)"
 				""
-				"(Well, those are the rough numbers anyway.)"
+				"You can get magnesium from &dbrine evaporation&r, or as a byproduct of certain ore processing."
 			]
 			id: "491804C9A1FE230D"
 			tasks: [{

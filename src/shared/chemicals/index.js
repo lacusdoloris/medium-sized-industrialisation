@@ -92,7 +92,4 @@ export const addChemicalProcessingRecipes = (event) => {
         .itemOutputs("1x gtceu:calcium_silicate_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);
-
-    event.remove({ id: "gtceu:centrifuge/salt_water_separation" });
-    event.recipes.gtceu();
 };
