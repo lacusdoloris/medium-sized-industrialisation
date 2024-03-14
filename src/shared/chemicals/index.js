@@ -16,6 +16,7 @@ import { addCopperRecipes } from "./metallurgy/copper";
 import { addPolysytreneRecipes } from "./organic/polystyrene";
 import { addTungstenMaterials, addTungstenRecipes } from "./metallurgy/tungsten";
 import { addPhosphorusRecipes } from "./phosphorus";
+import { addBariumRecipes } from "./metallurgy/barium";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -41,6 +42,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addPolysytreneRecipes(event);
     addTungstenRecipes(event);
     addPhosphorusRecipes(event);
+    addBariumRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu

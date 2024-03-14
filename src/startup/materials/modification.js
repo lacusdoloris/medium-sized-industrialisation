@@ -30,6 +30,8 @@ const DISABLE_DECOMPOSITION = [
     // trichloride.
     "arsenic_trioxide",
     "hsla_steel",
+    // Various misc materials.
+    "barite",
 ];
 
 /** A list of materials to actually add dusts & ingots to. */
@@ -222,10 +224,11 @@ export const customiseMaterials = () => {
     getMaterial("hydrogen_heptafluorotantalite").setFormula("H2[TaF7]");
     getMaterial("potassium_heptafluorotantalite").setFormula("K[TaF7]");
     getMaterial("ammonium_fluoride").setFormula("NH4F");
-    getMaterial("trimethylamine").setFormula("N(CH3)3");
+    getMaterial("barium_hydroxide").setFormula("Ba(OH)2");
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
+    getMaterial("trimethylamine").setFormula("N(CH3)3");
     getMaterial("polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3H)");
     getMaterial("sodium_polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3Na)");
     getMaterial("one_butanol").setFormula("C4H9OH");
