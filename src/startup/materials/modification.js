@@ -235,6 +235,9 @@ export const customiseMaterials = () => {
     getMaterial("tributyl_phosphate").setFormula("PO(OC4H9)3");
     getMaterial("trimethylamine").setFormula("N(CH3)3");
     getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
+    getMaterial("diacetone_alcohol").setFormula("CH3C(O)CH2C(OH)(CH3)2");
+    getMaterial("mesityl_oxide").setFormula("CH3C(O)CH=C(CH3)2");
+    getMaterial("methyl_isobutyl_ketone").setFormula("(CH3)2CHCH2C(O)CH3");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

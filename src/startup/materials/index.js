@@ -20,6 +20,7 @@ import { addPolystyreneMaterials } from "../../shared/chemicals/organic/polystyr
 import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten";
 import { addPhosphorusMaterials } from "../../shared/chemicals/phosphorus";
 import { addBariumMaterials } from "../../shared/chemicals/metallurgy/barium";
+import { addMIBKMaterials } from "../../shared/chemicals/organic/mibk";
 
 const GasTier = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty$GasTier"
@@ -49,6 +50,7 @@ export const addCustomMaterials = (event) => {
     addTungstenMaterials(event);
     addVanadiumMaterials(event);
 
+    addMIBKMaterials(event);
     addPolystyreneMaterials(event);
 
     addBrineMaterials(event);

@@ -117,6 +117,10 @@
     "material.nijika.molybdenum_disulfide": "Molybdenum Disulfide",
     "material.nijika.barium_oxide": "Barium Oxide",
     "material.nijika.barium_hydroxide": "Barium Hydroxide",
+    "material.nijika.diacetone_alcohol": "4-Hydroxy-4-methylpentan-2-one",
+    "material.nijika.mesityl_oxide": "4-Methylpent-3-en-2-one",
+    "material.nijika.methyl_isobutyl_ketone": "Methyl Isobutyl Ketone",
+    "material.nijika.diacetone_mixture": "Diacetone Mixture",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
