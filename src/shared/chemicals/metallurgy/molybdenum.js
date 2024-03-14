@@ -69,6 +69,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     event.remove({ input: "gtceu:crushed_molybdenite_ore" });
     event.remove({ input: "gtceu:crushed_wulfenite_ore" });
     event.remove({ id: "gtceu:smelting/smelt_raw_wulfenite_ore_to_ingot" });
+    event.remove({id: "gtceu:smelting/smelt_raw_molybdenite_ore_to_ingot" });
 
     // Wulfenite processing.
     // PbMoO4 + 2 NaOH = Pb(OH)2 + Na2MoO4
@@ -109,7 +110,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     // MoS2 + 6 MoO3 = 7 MoO2 + 2 SO2
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/molybdenum/molybdenite_oxidising")
-        .itemInputs("1x gtceu:molybdenite_dust", "6x gtceu:impure_molybdenum_trioxide_dust")
+        .itemInputs("1x gtceu:crushed_molybdenite_ore", "6x gtceu:impure_molybdenum_trioxide_dust")
         .itemOutputs("7x gtceu:molybdenum_dioxide_dust")
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.EV])
