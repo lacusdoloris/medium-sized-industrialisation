@@ -107,8 +107,8 @@ const fixupCreate = (event) => {
         event.replaceInput({ mod: mod }, "#forge:plates/brass", "#nijika:copper_alloy_plates");
     }
 
-    event.remove({id: "create:milling/coal"});
-    event.remove({id: "create:milling/charcoal"});
+    event.remove({ id: "create:milling/coal" });
+    event.remove({ id: "create:milling/charcoal" });
 };
 
 /**

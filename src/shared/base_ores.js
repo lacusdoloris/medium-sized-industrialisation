@@ -6,7 +6,7 @@ const BASE_ORES = {
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
         intoOres: ["magnetite", "ilmenite", "orpiment"],
-        gem: "amethyst"
+        gem: "amethyst",
     },
 
     nijikaite: {
@@ -14,7 +14,7 @@ const BASE_ORES = {
         colour: 0xf3e5a1,
         iconSet: GTMaterialIconSet.BRIGHT,
         intoOres: ["molybdenite", "scheelite", "fluorite"],
-        gem: "emerald"
+        gem: "emerald",
     },
 
     ryoite: {
@@ -120,7 +120,7 @@ export const addBaseOreRecipes = (event) => {
             .chancedOutput(`1x gtceu:raw_${oreData.gem}`, 5000.0, 0.0)
             .EUt(GTValues.VHA[GTValues.EV])
             .duration(20 * 20);
-        
+
         event.recipes.gtceu
             .ore_sorting(`nijika:base_ores/${name}/sorting_tier_2`)
             .itemInputs(`4x gtceu:impure_${name}_dust`)
