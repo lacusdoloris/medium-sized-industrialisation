@@ -62,11 +62,6 @@ export const addTitaniumRecipes = (event) => {
         .inputFluids(
             Fluid.of("gtceu:impure_titanium_tetrachloride").withAmount(20 * FluidAmounts.BUCKET)
         )
-        .outputFluids(
-            Fluid.of("gtceu:impure_titanium_tetrachloride_1").withAmount(
-                18800 * FluidAmounts.MILLIBUCKET
-            )
-        )
         .chancedFluidOutput(
             Fluid.of("gtceu:trichlorosilane").withAmount(200 * FluidAmounts.MILLIBUCKET),
             6500,
@@ -76,6 +71,11 @@ export const addTitaniumRecipes = (event) => {
             Fluid.of("gtceu:tin_iv_chloride").withAmount(150 * FluidAmounts.MILLIBUCKET),
             3500,
             0.0
+        )
+        .outputFluids(
+            Fluid.of("gtceu:impure_titanium_tetrachloride_1").withAmount(
+                18800 * FluidAmounts.MILLIBUCKET
+            )
         )
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.HV])
