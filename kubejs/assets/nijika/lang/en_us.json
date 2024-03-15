@@ -121,6 +121,8 @@
     "material.nijika.mesityl_oxide": "4-Methylpent-3-en-2-one",
     "material.nijika.methyl_isobutyl_ketone": "Methyl Isobutyl Ketone",
     "material.nijika.diacetone_mixture": "Diacetone Mixture",
+    "material.nijika.nickel_aluminium_mixture": "Nickel-Aluminium Mixture",
+    "material.nijika.spongy_nickel": "Raney Nickel",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

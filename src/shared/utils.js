@@ -1,5 +1,9 @@
 const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 
+export const GasTier = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty$GasTier"
+);
+
 let chemicalHelper$get =
     ChemicalHelper[
         "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material)"

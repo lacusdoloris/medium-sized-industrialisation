@@ -1,4 +1,4 @@
-import { nijikaId } from "../../shared/utils";
+import { GasTier, nijikaId } from "../../shared/utils";
 import { createAcidicIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChromiumMaterials } from "../../shared/chemicals/metallurgy/chromium";
@@ -21,10 +21,8 @@ import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten
 import { addPhosphorusMaterials } from "../../shared/chemicals/phosphorus";
 import { addBariumMaterials } from "../../shared/chemicals/metallurgy/barium";
 import { addMIBKMaterials } from "../../shared/chemicals/organic/mibk";
-
-const GasTier = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty$GasTier"
-);
+import { addNickelCatalystMaterials } from "../../shared/chemicals/catalysts/nickel";
+import { addCatalystMaterials } from "../../shared/chemicals/catalysts";
 
 /**
  * Adds new custom materials.
@@ -32,6 +30,8 @@ const GasTier = Java.loadClass(
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
     addBaseOreMaterials(event);
+
+    addCatalystMaterials(event);
 
     addAluminiumMaterials(event);
     addBariumMaterials(event);

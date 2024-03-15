@@ -2,6 +2,7 @@
 // subfolders. Thank you!
 
 import { nijikaId } from "../shared/utils";
+import { addCatalystItems } from "./catalysts";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 import { addCustomMaterials } from "./materials";
 import { customiseMaterials } from "./materials/modification";
@@ -29,4 +30,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", (evt) => {
 
 StartupEvents.registry("item", (ev) => {
     ev.create(nijikaId("slag"));
+
+    addCatalystItems(ev);
 });
