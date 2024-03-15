@@ -123,6 +123,8 @@
     "material.nijika.diacetone_mixture": "Diacetone Mixture",
     "material.nijika.nickel_aluminium_mixture": "Nickel-Aluminium Mixture",
     "material.nijika.spongy_nickel": "Raney Nickel",
+    "material.nijika.chloroethane": "Chloroethane",
+    "material.nijika.ethylene_dichloride": "1,2-Dichloroethane",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

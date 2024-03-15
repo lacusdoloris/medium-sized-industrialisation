@@ -390,7 +390,11 @@
 		}
 		{
 			dependencies: ["6946A93109A56A1B"]
-			description: ["Replacing polyethylene with &dpolyvinyl chloride&r in your circuit boards will get you twice the board per unit of plastic."]
+			description: [
+				"Replacing polyethylene with &dpolyvinyl chloride&r in your circuit boards will get you twice the board per unit of plastic."
+				""
+				"PVC is made by cracking &a1,2-Dichloroethane&r, which is itself made from the chlorination of ethylene."
+			]
 			id: "7EF458879D3031AF"
 			optional: true
 			tasks: [{

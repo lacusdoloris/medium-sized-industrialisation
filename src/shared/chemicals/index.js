@@ -19,6 +19,7 @@ import { addPhosphorusRecipes } from "./phosphorus";
 import { addBariumRecipes } from "./metallurgy/barium";
 import { addMIBKProcess } from "./organic/mibk";
 import { addCatalystRecipes } from "./catalysts";
+import { addOrganicChemRecipes } from "./organic";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -41,12 +42,12 @@ export const addChemicalProcessingRecipes = (event) => {
     addBrineRecipes(event);
     addTitaniumRecipes(event);
     addCopperRecipes(event);
-    addPolysytreneRecipes(event);
     addTungstenRecipes(event);
     addPhosphorusRecipes(event);
     addBariumRecipes(event);
-    addMIBKProcess(event);
+
     addCatalystRecipes(event);
+    addOrganicChemRecipes(event);
 
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu

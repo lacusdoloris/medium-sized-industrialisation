@@ -238,6 +238,9 @@ export const customiseMaterials = () => {
     getMaterial("diacetone_alcohol").setFormula("CH3C(O)CH2C(OH)(CH3)2");
     getMaterial("mesityl_oxide").setFormula("CH3C(O)CH=C(CH3)2");
     getMaterial("methyl_isobutyl_ketone").setFormula("(CH3)2CHCH2C(O)CH3");
+    getMaterial("chloroethane").setFormula("CH3CH2Cl");
+    getMaterial("ethylene_dichloride").setFormula("ClCH2CH2Cl");
+    getMaterial("vinyl_chloride").setFormula("CH2CHCl");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

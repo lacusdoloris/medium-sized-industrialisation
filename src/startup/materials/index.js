@@ -23,6 +23,7 @@ import { addBariumMaterials } from "../../shared/chemicals/metallurgy/barium";
 import { addMIBKMaterials } from "../../shared/chemicals/organic/mibk";
 import { addNickelCatalystMaterials } from "../../shared/chemicals/catalysts/nickel";
 import { addCatalystMaterials } from "../../shared/chemicals/catalysts";
+import { addOrganicChemMaterials } from "../../shared/chemicals/organic";
 
 /**
  * Adds new custom materials.
@@ -50,8 +51,7 @@ export const addCustomMaterials = (event) => {
     addTungstenMaterials(event);
     addVanadiumMaterials(event);
 
-    addMIBKMaterials(event);
-    addPolystyreneMaterials(event);
+    addOrganicChemMaterials(event);
 
     addBrineMaterials(event);
 
