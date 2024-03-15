@@ -69,7 +69,7 @@ export const addMIBKProcess = (event) => {
             Fluid.of("gtceu:mesityl_oxide").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:hydrogen").withAmount(2 * FluidAmounts.BUCKET)
         )
-        .notConsumable("23x gtceu:nickel_dust")
+        .itemInputs("1x nijika:nickel_catalyst")
         .outputFluids(Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.EV])
         .duration(10 * 20);
