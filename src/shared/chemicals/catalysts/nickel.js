@@ -26,7 +26,7 @@ export const addNickelCatalystMaterials = (event) => {
 export const addNickelCatalystRecipes = (event) => {
     // Sodium hydroxide activation of nickel-aluminium mixture.
     event.recipes.gtceu
-        .chemical_bath("nijika:catalysts/nickel/activation")
+        .chemical_reactor("nijika:catalysts/nickel/activation")
         .itemInputs("1x gtceu:nickel_aluminium_mixture_dust", "1x gtceu:sodium_hydroxide_dust")
         .itemOutputs("2x gtceu:small_spongy_nickel_dust")
         .outputFluids(Fluid.of("gtceu:sodium_aluminate").withAmount(500 * FluidAmounts.MB))
