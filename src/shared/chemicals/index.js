@@ -19,6 +19,7 @@ import { addCatalystRecipes } from "./catalysts";
 import { addOrganicChemRecipes } from "./organic";
 import { addTungstenRecipes } from "./metallurgy/tungsten";
 import { addHydrogenPeroxideRecipes } from "./hydrogen_peroxide";
+import { addIodineRecipes } from "./metallurgy/iodine";
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -45,6 +46,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addPhosphorusRecipes(event);
     addBariumRecipes(event);
     addHydrogenPeroxideRecipes(event);
+    addIodineRecipes(event);
 
     addCatalystRecipes(event);
     addOrganicChemRecipes(event);
