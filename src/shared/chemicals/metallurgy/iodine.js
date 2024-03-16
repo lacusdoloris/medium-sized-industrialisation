@@ -1,4 +1,8 @@
-import { createAcidicIntermediate, createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers";
+import {
+    createAcidicIntermediate,
+    createAqueousIntermediate,
+    createDustIntermediate,
+} from "../../materials/helpers";
 import { PropertyKey, getMaterial } from "../../utils";
 
 // Anything higher than Helium is a metal.
@@ -17,7 +21,7 @@ export const addIodineMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addIodineRecipes = (event) => {
-    // Burn sea salt 
+    // Burn sea salt
     event.recipes.gtceu
         .pyrolyse_oven("nijika:chemicals/iodine/sea_plant_ash")
         .itemInputs("48x #nijika:sea_plants")
@@ -25,7 +29,7 @@ export const addIodineRecipes = (event) => {
         .outputFluids(Fluid.of("minecraft:water").withAmount(12 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .duration(8 * 20)
-        .circuit(1);  // all the other recipes have it...
+        .circuit(1); // all the other recipes have it...
 
     // Mix with hydrogen peroxide to allow the iodide ions to be oxidised into regular iodine.
     // 2 I{-} + H2O2 + 2 H{+} = I2 + 2 H2O
@@ -36,12 +40,9 @@ export const addIodineRecipes = (event) => {
             Fluid.of("gtceu:hydrogen_peroxide").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:sulfuric_acid").withAmount(50 * FluidAmounts.MB)
         )
-        .outputFluids(
-            Fluid.of("gtceu:sea_ash_peroxide_mix").withAmount(1 * FluidAmounts.BUCKET)
-        )
+        .outputFluids(Fluid.of("gtceu:sea_ash_peroxide_mix").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VHA[GTValues.MV])
         .duration(5 * 20);
-
 
     // Mix again with cyclohexane to get the iodine-cyclohexane mixture.
     event.recipes.gtceu
@@ -60,7 +61,9 @@ export const addIodineRecipes = (event) => {
     // Finally, distill away the iodine-cyclohexane mixture to get pure iodine.
     event.recipes.gtceu
         .distillery("nijika:chemicals/iodine/pure_iodine_crystals")
-        .inputFluids(Fluid.of("gtceu:iodine_cyclohexane_mixture").withAmount(1 * FluidAmounts.BUCKET))
+        .inputFluids(
+            Fluid.of("gtceu:iodine_cyclohexane_mixture").withAmount(1 * FluidAmounts.BUCKET)
+        )
         .outputFluids(Fluid.of("gtceu:cyclohexane").withAmount(900 * FluidAmounts.MB))
         .itemOutputs("1x gtceu:iodine_dust")
         .EUt(GTValues.V[GTValues.LV])

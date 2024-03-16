@@ -61,7 +61,6 @@ export const addMIBKProcess = (event) => {
         .duration(2 * 20 + 10);
 
     // Finally, synthesis of MIBK from Mesityl oxide and hydrogen in the presence of nickel.
-    // TODO: Replace with proper honeycomb catalysts.
     // CH3C(O)CHC(CH3)2 + H2 = (CH3)2CHCH2C(O)CH3
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/mibk/mibk_from_mesityl")
