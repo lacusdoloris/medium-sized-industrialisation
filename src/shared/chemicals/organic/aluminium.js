@@ -60,4 +60,15 @@ export const addOrganoaluminiumRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:triethylaluminium").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.EV])
         .duration(10 * 20);
+
+    event.recipes.gtceu
+        .assembler("nijika:chemicals/organoaluminium/triethylaluminium_catalyst")
+        .itemInputs("32x nijika:empty_catalyst")
+        .inputFluids(
+            Fluid.of("gtceu:triethylaluminium").withAmount(1500 * FluidAmounts.MB)
+        )
+        .itemOutputs("32x nijika:triethylaluminium_catalyst")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.ULV])
+        .circuit(9);
 };
