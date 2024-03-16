@@ -243,7 +243,7 @@ export const addTungstenRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/tungsten/apt_reduction")
         .itemInputs("1x gtceu:ammonium_paratungstate_dust")
-        .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(36 * 2))
+        .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(36 * 2 * FluidAmounts.BUCKET))
         .itemOutputs("12x gtceu:tungsten_dust")
         .outputFluids(Fluid.of("gtceu:ammonia").withAmount(10 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
