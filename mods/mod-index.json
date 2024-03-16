@@ -580,14 +580,14 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "ab9f01f6e3f5879f2590aa609c4e43f9b93661e395d3c6ca95bc797de61ec8670e29585dad4b8aea33ec5e3edabff0017bb151cbbfb020ad5b83f9a999f0b1a8",
+        "checksum": "315d60a0b14a39af0accbc466b0e93103943fbd8da9a639074edd6ee8b95a7d14f3318daeee75462a6f3c18b1455ddb1fa5e1ee683733d5b13874764b0ef94e1",
         "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.4.0",
-        "version_id": "FWylBCxP"
+        "version": "1.4.1",
+        "version_id": "7fhw1OOV"
     },
     "hIO8IsD8": {
         "checksum": "dfa1d03d69676199cbef6d5b4d85432c4910c57b153deb3287a34850b4325cf99415d433675dfde00c07e6e19645d9bd289e152bffee9dc3bd55b35cc335e085",
@@ -720,14 +720,14 @@
         "version_id": "kC6SY4Zp"
     },
     "sdaSaQEz": {
-        "checksum": "ee3f9fc20dfa14113858a34dc23cb68cd1c1d62c62be8d338751ff275c49ecb40a6c57a1a0f942a9802f8027a6cb47d21c75043bff714215a33c9bf30e6741ac",
+        "checksum": "901fd965d8b03a820c90420b14671efe7a349b58190e7dec877b2a8937afe38221bea11574748c6e45a65a22952945864352562a99334cf582e51572262da6d5",
         "client_side_only": false,
         "name": "Almost Unified",
         "pinned": false,
         "project_id": "sdaSaQEz",
         "selected": true,
-        "version": "1.20.1-0.8.1+forge",
-        "version_id": "arDcFGHI"
+        "version": "1.20.1-0.9.0+forge",
+        "version_id": "yyVCxO7K"
     },
     "sk9knFPE": {
         "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
@@ -770,14 +770,14 @@
         "version_id": "XMT7Fj1v"
     },
     "u58R1TMW": {
-        "checksum": "40c7679a8a3d3a3d14e8711d8d215d438dbcd29b8c9265cf091cef0d09ac0cbf28ab7b1d6fc5135e5598fe7746403a9b74809447e8bc7af4b38dc8adfdb84596",
+        "checksum": "8bea6ea71431917a4ea5fc8ee1bf88faded68e36e7d933f1e53036a81fe69ac54a821b9b132d160bb5e15a295a700abf61fc77b4d4734e97ce591464dbb75b94",
         "client_side_only": false,
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.37+1.20.1",
-        "version_id": "uWns8SzT"
+        "version": "1.0.0-beta.39+1.20.1",
+        "version_id": "gM2p6NVT"
     },
     "u6dRKJwZ": {
         "checksum": "50b55e7c3ad0bd92829ce466e7265fff09026d8676693a94c174da5c16e843d933ecfa60de4c84efdbabe9d9e144819d8a6dae15ba4ec615134f59c71bb26e20",
@@ -810,14 +810,14 @@
         "version_id": "DNX6SE7o"
     },
     "vvuO3ImH": {
-        "checksum": "bdfcef70705596d41ecd12033d81baa049f9b4aceba8ca4c3d02ba3b12e3912f1f014b608d1a51900be74851c2003c4fe4621bc1ae44c5754166b3efc4b1b368",
+        "checksum": "64afcf60bef11cc50fc22c6a0de9ad28a55acdf1394c4473bfd347b95a1423760a116c00b8a9b06a49bc01037e489d465e065b67057d2ee59b517c96ca3c4417",
         "client_side_only": false,
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.7.1+1.20.1",
-        "version_id": "UfNitWgy"
+        "version": "5.7.2+1.20.1",
+        "version_id": "L0Tw2xgL"
     },
     "wPQ6GgFE": {
         "checksum": "d90e0517031af930ff4312f8ca2b3c32df7ecba578fdf8b011e0161da0a022fdfdd5c5d130c732527e596f4a013e3831ea8c24ab5523d847057724e802b21b58",
