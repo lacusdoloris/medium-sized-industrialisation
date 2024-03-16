@@ -125,6 +125,10 @@
     "material.nijika.spongy_nickel": "Raney Nickel",
     "material.nijika.chloroethane": "Chloroethane",
     "material.nijika.ethylene_dichloride": "1,2-Dichloroethane",
+    "material.nijika.ammonium_sulfate": "Ammonium Sulfate",
+    "material.nijika.ammonium_bisulfate": "Ammonium Bisulfate",
+    "material.nijika.ammonium_persulfate": "Ammonium Persulfate",
+    "material.nijija.hydrogen_peroxide": "Hydrogen Peroxide",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

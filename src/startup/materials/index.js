@@ -22,6 +22,7 @@ import { addBariumMaterials } from "../../shared/chemicals/metallurgy/barium";
 import { addCatalystMaterials } from "../../shared/chemicals/catalysts";
 import { addOrganicChemMaterials } from "../../shared/chemicals/organic";
 import { addIronMaterials } from "../../shared/chemicals/metallurgy/iron";
+import { addHydrogenPeroxideMaterials } from "../../shared/chemicals/hydrogen_peroxide";
 
 /**
  * Adds new custom materials.
@@ -52,6 +53,7 @@ export const addCustomMaterials = (event) => {
     addOrganicChemMaterials(event);
 
     addBrineMaterials(event);
+    addHydrogenPeroxideMaterials(event);
 
     addPhosphorusMaterials(event);
 
