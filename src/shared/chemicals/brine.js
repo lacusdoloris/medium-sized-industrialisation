@@ -1,8 +1,4 @@
-import {
-    createAqueousIntermediate,
-    createChemicalIntermediate,
-    createDustIntermediate,
-} from "../materials/helpers";
+import { createAqueousIntermediate, createChemicalIntermediate } from "../materials/helpers";
 
 export const addBrineMaterials = (event) => {
     createAqueousIntermediate(event, "brine", 0x9da9b0);

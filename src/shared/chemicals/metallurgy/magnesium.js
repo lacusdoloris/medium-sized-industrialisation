@@ -1,5 +1,4 @@
 import { createDustIntermediate } from "../../materials/helpers";
-import { nijikaId } from "../../utils";
 
 export const addMagnesiumMaterials = (event) => {
     createDustIntermediate(event, "magnesium_hydroxide", 0xdea6de).components(

@@ -25,7 +25,7 @@ const SPECIFIC_PLATES = [
  *
  * @param {Internal.RecipesEventJS} event
  */
-const addCreateLvMvMaterialRecipes = (event, addRod) => {
+const addCreateLvMvMaterialRecipes = (event) => {
     /** @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material */
     const addWireRecipes = (material, addRod) => {
         // let the record show that I got really fucking confused by this and wondered why
@@ -73,7 +73,6 @@ const addCreateLvMvMaterialRecipes = (event, addRod) => {
         let modId = material.modid == "nijika" ? "gtceu" : material.modid;
         let hasWire = material.hasProperty(PropertyKey.WIRE);
         let hasRod = material.hasFlag(GTMaterialFlags.GENERATE_ROD);
-        let hasPlate = material.hasFlag(GTMaterialFlags.GENERATE_PLATE);
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
             if (!Item.exists(`${modId}:${id}_foil`)) {

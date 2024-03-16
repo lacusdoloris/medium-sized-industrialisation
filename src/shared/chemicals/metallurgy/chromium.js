@@ -1,5 +1,5 @@
 // Anger, G., Halstenberg, J., Hochgeschwender, K., Scherhag, C., Korallus, U., Knopf, H., … Ohlinger, M. (2000). Chromium Compounds. Ullmann’s Encyclopedia of Industrial Chemistry. doi:10.1002/14356007.a07_067
-import { createChemicalIntermediate, createDustIntermediate } from "../../materials/helpers";
+import { createDustIntermediate } from "../../materials/helpers";
 
 export const addChromiumMaterials = (event) => {
     createDustIntermediate(event, "sodium_dichromate", 0xe37b2b).components(

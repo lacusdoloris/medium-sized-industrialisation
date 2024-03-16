@@ -1,7 +1,3 @@
-const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
-);
-
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
     event

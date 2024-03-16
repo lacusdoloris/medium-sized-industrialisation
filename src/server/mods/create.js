@@ -1,3 +1,4 @@
+/* eslint-disable no-unexpected-multiline */
 /**
  * Adjusts recipes for the Create mod.
  *

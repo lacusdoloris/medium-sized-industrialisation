@@ -1,6 +1,5 @@
 import {
     createAcidicIntermediate,
-    createAqueousIntermediate,
     createChemicalIntermediate,
     createDustIntermediate,
 } from "../../materials/helpers";

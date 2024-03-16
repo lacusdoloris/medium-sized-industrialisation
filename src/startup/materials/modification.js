@@ -1,6 +1,3 @@
-const PropertyKey = Java.loadClass(
-    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
-);
 const WireProperties = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
 );
@@ -10,7 +7,7 @@ const FluidProperty = Java.loadClass(
 const FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys");
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
-import { getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
+import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
 
 const DISABLE_DECOMPOSITION = [
     // Sulfur containing materials. These are roasted instead.

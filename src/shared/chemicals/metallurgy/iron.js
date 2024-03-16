@@ -5,7 +5,7 @@ export const addIronMaterials = (event) => {
         "2x gtceu:iron",
         "3x gtceu:oxygen"
     );
-}
+};
 
 /**
  * Adds a handful of miscellaneous iron processing recipes.

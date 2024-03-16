@@ -19,6 +19,7 @@ logs/*
 !logs/.gitkeep
 
 .vscode
+!.vscode/settings.json
 # auto-generated from FTB quests
 config/heracles
 

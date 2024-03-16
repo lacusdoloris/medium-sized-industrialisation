@@ -1,6 +1,3 @@
-const TagKey = Java.loadClass("net.minecraft.tags.TagKey");
-const Registries = Java.loadClass("net.minecraft.core.registries.Registries");
-
 // TODO: Fix vanilla ore veins for vanilla world type.
 /**
  * Removes the ore veins for the vanilla dimensions.
@@ -28,6 +25,6 @@ export const removeVanillaDimensionOreVeins = (event) => {
 /**
  * Adds Create: Ore Excavation ore veins.
  *
- * @param {Internal.GTOreVeinEventJS} event
+ * @param {Internal.GTOreVeinEventJS} _event
  */
-export const addFreshOreVeinsEvent = (event) => {};
+export const addFreshOreVeinsEvent = (_event) => {};

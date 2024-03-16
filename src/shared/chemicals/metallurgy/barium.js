@@ -1,4 +1,4 @@
-import { createChemicalIntermediate, createDustIntermediate } from "../../materials/helpers";
+import { createDustIntermediate } from "../../materials/helpers";
 
 export const addBariumMaterials = (event) => {
     createDustIntermediate(event, "barium_oxide", 0x5f857f).components(

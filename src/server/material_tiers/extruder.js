@@ -12,7 +12,6 @@ import { getStackForTagPrefix, iterateOverAllMaterials } from "../../shared/util
 const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
-const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 const PIPE_TYPES = [
     ["tiny", 1, 2],
     ["small", 1, 1],
@@ -87,8 +86,6 @@ export const fixExtruderRecipeTier = (event) => {
             .duration(0.25);
     }
 
-    /** @type {Internal.} */
-    let manager = GTCEuAPI.materialManager;
     iterateOverAllMaterials((material) => {
         /** @type {Internal.ItemStack} */
         let inputType = getStackForTagPrefix(TagPrefix.ingot, material);

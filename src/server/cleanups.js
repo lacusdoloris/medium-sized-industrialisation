@@ -114,6 +114,7 @@ const fixupCreate = (event) => {
 /**
  * Removes early tier GT generators.
  */
+// eslint-disable-next-line no-unused-vars
 const removeGTGenerators = (event) => {
     // TODO: should we actually do this?
 };

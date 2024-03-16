@@ -1,4 +1,4 @@
-import { createAcidicIntermediate, createAqueousIntermediate } from "../../materials/helpers";
+import { createAcidicIntermediate } from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addPolystyreneMaterials = (event) => {

@@ -1,8 +1,4 @@
-import {
-    createAcidicIntermediate,
-    createAqueousIntermediate,
-    createDustIntermediate,
-} from "../../materials/helpers";
+import { createAcidicIntermediate, createAqueousIntermediate } from "../../materials/helpers";
 
 export const addTitaniumMaterials = (event) => {
     // Crude TiCl4

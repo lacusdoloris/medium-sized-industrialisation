@@ -1,4 +1,3 @@
-import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { adjustCreateRecipes } from "./create";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
