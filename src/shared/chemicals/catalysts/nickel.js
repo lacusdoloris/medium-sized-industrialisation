@@ -9,7 +9,7 @@ export const addNickelCatalystMaterials = (event) => {
         .fluid()
         .color(0x97e8ae)
         .components("1x gtceu:nickel", "1x gtceu:aluminium")
-        .blastTemp(1801, GasTier.LOW, GTValues.VA[GTValues.HV]) // needs hot ingot for ABF
+        .blastTemp(1100, GasTier.LOW, GTValues.VA[GTValues.MV])
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     createDustIntermediate(event, "spongy_nickel", 0x969696).components(
@@ -24,6 +24,13 @@ export const addNickelCatalystMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addNickelCatalystRecipes = (event) => {
+    event.recipes.gtceu
+        .mixer("nijika:catalysts/nickel/mixed_dust")
+        .itemInputs("1x gtceu:nickel_dust", "1x gtceu:aluminium_dust")
+        .itemOutputs("2x gtceu:nickel_aluminium_mixture_dust")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(10);
+
     // Sodium hydroxide activation of nickel-aluminium mixture.
     event.recipes.gtceu
         .chemical_reactor("nijika:catalysts/nickel/activation")
