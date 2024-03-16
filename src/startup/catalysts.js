@@ -8,4 +8,5 @@ import { nijikaId } from "../shared/utils";
 export const addCatalystItems = (event) => {
     event.create(nijikaId("empty_catalyst"));
     event.create(nijikaId("nickel_catalyst"));
+    event.create(nijikaId("iodine_catalyst"));
 };

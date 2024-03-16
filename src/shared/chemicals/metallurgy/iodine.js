@@ -65,4 +65,12 @@ export const addIodineRecipes = (event) => {
         .itemOutputs("1x gtceu:iodine_dust")
         .EUt(GTValues.V[GTValues.LV])
         .duration(60 * 20);
+
+    event.recipes.gtceu
+        .assembler("nijika:catalysts/iodine/assembly")
+        .itemInputs("32x nijika:empty_catalyst", "2x gtceu:iodine_dust")
+        .itemOutputs("32x nijika:iodine_catalyst")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.ULV])
+        .circuit(9);
 };
