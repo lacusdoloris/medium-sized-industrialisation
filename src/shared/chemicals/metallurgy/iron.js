@@ -1,3 +1,12 @@
+import { createDustIntermediate } from "../../materials/helpers";
+
+export const addIronMaterials = (event) => {
+    createDustIntermediate(event, "iron_oxide", 0x5f412f).components(
+        "2x gtceu:iron",
+        "3x gtceu:oxygen"
+    );
+}
+
 /**
  * Adds a handful of miscellaneous iron processing recipes.
  *

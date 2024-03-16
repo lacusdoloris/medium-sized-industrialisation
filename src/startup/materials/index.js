@@ -24,6 +24,7 @@ import { addMIBKMaterials } from "../../shared/chemicals/organic/mibk";
 import { addNickelCatalystMaterials } from "../../shared/chemicals/catalysts/nickel";
 import { addCatalystMaterials } from "../../shared/chemicals/catalysts";
 import { addOrganicChemMaterials } from "../../shared/chemicals/organic";
+import { addIronMaterials } from "../../shared/chemicals/metallurgy/iron";
 
 /**
  * Adds new custom materials.
@@ -41,7 +42,7 @@ export const addCustomMaterials = (event) => {
     addCyanideMaterials(event);
     addGalliumArsenicMaterials(event);
     addGoldMaterials(event);
-
+    addIronMaterials(event);
     addMagnesiumMaterials(event);
     addManganeseMaterials(event);
     addMolybdenumMaterials(event);
@@ -72,11 +73,6 @@ export const addCustomMaterials = (event) => {
         .color(0x0c9949)
         .iconSet(GTMaterialIconSet.DIAMOND)
         .components("1x gtceu:calcium", "2x gtceu:fluorine");
-
-    createDustIntermediate(event, "iron_oxide", 0x5f412f).components(
-        "2x gtceu:iron",
-        "3x gtceu:oxygen"
-    );
 
     createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
     createAcidicIntermediate(event, "slag_slurry", 0x373226);
