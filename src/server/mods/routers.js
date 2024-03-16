@@ -4,6 +4,8 @@
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustModularRouterRecipes = (event) => {
+    event.remove({ id: "modularrouters:void_module" });
+
     // modules now require polyethylene or pvc
     event.remove({ id: "modularrouters:blank_module" });
     event.recipes.gtceu
