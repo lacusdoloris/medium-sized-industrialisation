@@ -206,6 +206,13 @@ export const customiseMaterials = () => {
         );
     }
 
+    let redstone = getMaterial("redstone");
+    {
+        let oreProp = getOreProperty(redstone);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts("cinnabar", "glowstone");
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
