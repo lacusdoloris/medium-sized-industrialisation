@@ -1,5 +1,7 @@
 import { addOrganoaluminiumMaterials, addOrganoaluminiumRecipes } from "./aluminium";
+import { addAmineMaterials, addAmineRecipes } from "./amines";
 import { addChloroethaneMaterials, addChloroethaneRecipes } from "./chloroethane";
+import { addZieglerProcessMaterials, addZieglerProcessRecipes } from "./fatty_alcohols";
 import { addMIBKMaterials, addMIBKProcess } from "./mibk";
 import { addPolystyreneMaterials, addPolysytreneRecipes } from "./polystyrene";
 
@@ -8,6 +10,8 @@ export const addOrganicChemMaterials = (event) => {
     addMIBKMaterials(event);
     addPolystyreneMaterials(event);
     addOrganoaluminiumMaterials(event);
+    addZieglerProcessMaterials(event);
+    addAmineMaterials(event);
 };
 
 /**
@@ -20,6 +24,8 @@ export const addOrganicChemRecipes = (event) => {
     addMIBKProcess(event);
     addPolysytreneRecipes(event);
     addOrganoaluminiumRecipes(event);
+    addZieglerProcessRecipes(event);
+    addAmineRecipes(event);
 
     event.remove({ id: "gtceu:chemical_reactor/cyclohexane" });
     event.remove({ id: "gtceu:large_chemical_reactor/cyclohexane" });

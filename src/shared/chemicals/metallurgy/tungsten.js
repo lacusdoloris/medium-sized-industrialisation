@@ -6,7 +6,6 @@ import {
 } from "../../materials/helpers";
 
 export const addTungstenMaterials = (event) => {
-    createAqueousIntermediate(event, "trimethylamine", 0xc1c0f0);
     createAqueousIntermediate(event, "one_butanol", 0xebd5ea);
     // used as part of thee ion-exchange resin mixture
     createAqueousIntermediate(event, "tributyl_phosphate", 0xb5a4a3);
@@ -150,31 +149,26 @@ export const addTungstenRecipes = (event) => {
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(10 * 20);
 
-    // Trimethylamine is made from ammonia and methanol.
-    // Not to be confused with Dimethylamine.
-    // Tri: 3 CH3OH + NH3 = (CH3)3N + 3 H2O
-    // Di: 2 CH3OH + NH3 = (CH3)2NH + 2 H2O
-    event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/tungsten/trimethylamine")
-        .inputFluids(
-            Fluid.of("gtceu:methanol").withAmount(3 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET)
-        )
-        .notConsumable("1x gtceu:aluminium_dust")
-        .notConsumable("1x gtceu:silicon_dust")
-        .outputFluids(
-            Fluid.of("gtceu:trimethylamine").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
-        )
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(12 * 20);
-
     // Mix them all together to get the Ion-Exchange resin.
     event.recipes.gtceu
         .mixer("nijika:chemicals/tungsten/ion_exchange_resin")
         .inputFluids(
             Fluid.of("gtceu:trimethylamine").withAmount(3 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:tributyl_phosphate").withAmount(140 * FluidAmounts.MB),
+            Fluid.of("gtceu:toluene").withAmount(860 * FluidAmounts.MB)
+        )
+        .itemInputs("32x gtceu:sodium_polystyrene_sulfonate_round")
+        .outputFluids(
+            Fluid.of("gtceu:tungstic_ion_exchange_medium").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(10);
+
+    event.recipes.gtceu
+        .mixer("nijika:chemicals/tungsten/ion_exchange_resin_octylamine")
+        .inputFluids(
+            // yes, I am aware this is not how chemistry works.
+            Fluid.of("gtceu:trioctylamine").withAmount(375 * FluidAmounts.MB),
             Fluid.of("gtceu:tributyl_phosphate").withAmount(140 * FluidAmounts.MB),
             Fluid.of("gtceu:toluene").withAmount(860 * FluidAmounts.MB)
         )

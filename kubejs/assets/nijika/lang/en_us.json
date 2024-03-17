@@ -134,6 +134,8 @@
     "material.nijika.iodine_cyclohexane_mixture": "Iodine/Cyclohexane Mixture",
     "material.nijika.triethylaluminium": "Triethylaluminium",
     "material.nijika.ethylaluminium_sesquichloride": "Ethylaluminium Sesquichloride",
+    "material.nijika.octanol": "1-Octanol",
+    "material.nijika.trioctylamine": "Trioctylamine",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

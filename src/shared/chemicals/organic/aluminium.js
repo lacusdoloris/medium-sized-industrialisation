@@ -61,7 +61,7 @@ export const addOrganoaluminiumRecipes = (event) => {
         .EUt(GTValues.V[GTValues.EV])
         .duration(10 * 20);
 
-    event.recipes.gtceu
+    /*event.recipes.gtceu
         .assembler("nijika:chemicals/organoaluminium/triethylaluminium_catalyst")
         .itemInputs("32x nijika:empty_catalyst")
         .inputFluids(
@@ -70,5 +70,5 @@ export const addOrganoaluminiumRecipes = (event) => {
         .itemOutputs("32x nijika:triethylaluminium_catalyst")
         .duration(10)
         .EUt(GTValues.VA[GTValues.ULV])
-        .circuit(9);
+        .circuit(9);*/
 };

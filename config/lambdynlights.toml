@@ -50,6 +50,7 @@ mode = "fancy"
 				mooshroom = true
 				glow_item_frame = false
 				parrot = true
+				lightning_bolt = true
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
