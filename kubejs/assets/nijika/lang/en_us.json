@@ -136,6 +136,11 @@
     "material.nijika.ethylaluminium_sesquichloride": "Ethylaluminium Sesquichloride",
     "material.nijika.octanol": "1-Octanol",
     "material.nijika.trioctylamine": "Trioctylamine",
+    "material.nijika.dissolved_platinum_group_sludge": "Dissolved Platinum Group Sludge",
+    "material.nijika.silver_chloride": "Silver Chloride",
+    "material.nijika.gold_mibk_mixture": "Gold-MIBK Mixture",
+    "material.nijika.gold_hydroxide": "Gold Hydroxide",
+    "material.nijika.dissolved_platinum_group_1": "Dissolved Platinum Group Mixture [1/5]",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

@@ -4,6 +4,8 @@ export const addGoldMaterials = (event) => {
     createChemicalIntermediate(event, "sodium_dicyanoaurate", 0xf0f6f1);
     createAqueousIntermediate(event, "gold_slurry", 0xc9ebae);
     createAqueousIntermediate(event, "gold_pulp_residue", 0x87967a);
+
+    createAqueousIntermediate(event, "gold_hydroxide", 0xd6c436);
 };
 
 /**
@@ -78,4 +80,29 @@ export const addGoldProcessingRecipes = (event) => {
         .chancedOutput("11x gtceu:tiny_copper_cyanide_dust", 1510.0, 7.0)
         .EUt(GTValues.VA[GTValues.MV])
         .duration(3 * 20 + 10);
+
+    // Recovery of gold from MIBK mixture.
+    // https://patents.google.com/patent/US4297134A/en
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/gold/mibk_recovery")
+        .inputFluids(Fluid.of("gtceu:gold_mibk_mixture").withAmount(250 * FluidAmounts.MB))
+        .itemInputs("4x gtceu:sodium_hydroxide_dust")
+        .itemOutputs("4x gtceu:salt_dust") // TODO: This might magic up chlorine.
+        .outputFluids(Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(185 * FluidAmounts.MB))
+        .chancedFluidOutput(Fluid.of("gtceu:gold_hydroxide").withAmount(100 * FluidAmounts.MB), 6500.0, 0.0)
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20);
+
+    // Reduction with good old hydrogen.
+    // 2 Au(OH)3 + 3 H2 = 2 Au + 6 H2O
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/gold/hydroxide_reduction")
+        .inputFluids(
+            Fluid.of("gtceu:gold_hydroxide").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(3 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("1x gtceu:gold_dust")
+        .outputFluids(Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(2 * 20 + 10);
 };

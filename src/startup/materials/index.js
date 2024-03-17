@@ -24,6 +24,7 @@ import { addOrganicChemMaterials } from "../../shared/chemicals/organic";
 import { addIronMaterials } from "../../shared/chemicals/metallurgy/iron";
 import { addHydrogenPeroxideMaterials } from "../../shared/chemicals/hydrogen_peroxide";
 import { addIodineMaterials } from "../../shared/chemicals/metallurgy/iodine";
+import { addPlatinumGroupMaterials } from "../../shared/chemicals/metallurgy/platinum";
 
 /**
  * Adds new custom materials.
@@ -46,6 +47,7 @@ export const addCustomMaterials = (event) => {
     addMagnesiumMaterials(event);
     addManganeseMaterials(event);
     addMolybdenumMaterials(event);
+    addPlatinumGroupMaterials(event);
     addRareEarthMaterials(event);
     addTantalumMaterials(event);
     addTitaniumMaterials(event);
