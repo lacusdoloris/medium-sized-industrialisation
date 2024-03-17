@@ -22,15 +22,15 @@ export const adjustCreateRecipes = (event) => {
         )
         .id("nijika:mods/create/crimsite_crushing");
 
-    /*event.recipes.create
+    event.recipes.create
         .crushing(
             [
-                Item.of("gtceu:crushed_gold_ore").withChance(0.4),
+                Item.of("gtceu:crushed_redstone_ore").withChance(0.4),
                 Item.of("minecraft:gold_nugget").withChance(0.4),
             ],
             "create:ochrum"
         )
-        .id("nijika:mods/create/ochrum_crushing");*/
+        .id("nijika:mods/create/ochrum_crushing");
 
     event.recipes.create
         .crushing(
