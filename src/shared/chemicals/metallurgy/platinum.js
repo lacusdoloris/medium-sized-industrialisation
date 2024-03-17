@@ -42,7 +42,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Solvent extraction using Methyl isobutyl ketone of gold.
     // "Extraction kinetics are fast and virtually instantaneous."
     event.recipes.gtceu
-        .mixer("nijika:chemicals/platinum/gold_extraction_using_mibk")
+        .chemical_reactor("nijika:chemicals/platinum/gold_extraction_using_mibk")
         .inputFluids(
             Fluid.of("gtceu:dissolved_platinum_group_sludge").withAmount(12 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(1 * FluidAmounts.BUCKET)
