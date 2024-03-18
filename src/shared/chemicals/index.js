@@ -86,6 +86,22 @@ export const addChemicalProcessingRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
 
+    // Catalytic synthesis of ammonia with Iron (III) oxide.
+    // This is significantly faster than the regular method.
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/misc/haber_process_catalysed")
+        .itemInputs("1x gtceu:tiny_iron_iii_oxide_dust")
+        .inputFluids(
+            Fluid.of("gtceu:nitrogen").withAmount(20 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(60 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:ammonia").withAmount(20 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(20 * 20)
+        .circuit(10);  // or 1 second per bucket, vs 15.
+
     // Direct reaction of calcium and hydrogen gets calcium hydride.
     event.recipes.gtceu
         .chemical_reactor("nijika:misc/calcium_hydride")
