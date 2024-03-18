@@ -229,6 +229,14 @@ export const customiseMaterials = () => {
     getMaterial("potassium_heptafluorotantalite").setFormula("K[TaF7]");
     getMaterial("ammonium_fluoride").setFormula("NH4F");
     getMaterial("barium_hydroxide").setFormula("Ba(OH)2");
+    getMaterial("gold_hydroxide").setFormula("Au(OH)3");
+    getMaterial("ammonium_sulfate").setFormula("(NH4)2SO4");
+    getMaterial("ammonium_bisulfate").setFormula("(NH4)HSO4");
+    getMaterial("ammonium_persulfate").setFormula("(NH4)2S2O8");
+    getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
+    getMaterial("ammonium_hexachloroiridate").setFormula("(NH4)2[IrCl6]");
+    getMaterial("ammonium_hexachloroplatinate").setFormula("(NH4)2[PtCl6]");
+    getMaterial("ammonium_hexachloropalladate").setFormula("(NH4)2[PdCl6]");
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
@@ -238,23 +246,17 @@ export const customiseMaterials = () => {
     getMaterial("one_butanol").setFormula("C4H9OH");
     getMaterial("tributyl_phosphate").setFormula("PO(OC4H9)3");
     getMaterial("trimethylamine").setFormula("N(CH3)3");
-    getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
     getMaterial("diacetone_alcohol").setFormula("CH3C(O)CH2C(OH)(CH3)2");
     getMaterial("mesityl_oxide").setFormula("CH3C(O)CH=C(CH3)2");
     getMaterial("methyl_isobutyl_ketone").setFormula("(CH3)2CHCH2C(O)CH3");
     getMaterial("chloroethane").setFormula("CH3CH2Cl");
     getMaterial("ethylene_dichloride").setFormula("ClCH2CH2Cl");
     getMaterial("vinyl_chloride").setFormula("CH2CHCl");
-    getMaterial("ammonium_sulfate").setFormula("(NH4)2SO4");
-    getMaterial("ammonium_bisulfate").setFormula("(NH4)HSO4");
-    getMaterial("ammonium_persulfate").setFormula("(NH4)2S2O8");
     getMaterial("triethylaluminium").setFormula("Al2(C2H5)6");
     getMaterial("ethylaluminium_sesquichloride").setFormula("(C2H5)3Al2Cl3");
     getMaterial("octanol").setFormula("CH3(CH2)7OH");
     getMaterial("trioctylamine").setFormula("(C8H17)3N");
-    getMaterial("gold_hydroxide").setFormula("Au(OH)3");
-    getMaterial("ammonium_hexachloroplatinate").setFormula("(NH4)2[PtCl6]");
-    getMaterial("ammonium_hexachloroiridate").setFormula("(NH4)2[IrCl6]");
+    getMaterial("formaldehyde").setFormula("CH2O");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

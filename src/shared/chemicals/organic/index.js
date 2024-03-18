@@ -1,3 +1,4 @@
+import { createAqueousIntermediate } from "../../materials/helpers";
 import { addOrganoaluminiumMaterials, addOrganoaluminiumRecipes } from "./aluminium";
 import { addAmineMaterials, addAmineRecipes } from "./amines";
 import { addChloroethaneMaterials, addChloroethaneRecipes } from "./chloroethane";
@@ -12,6 +13,8 @@ export const addOrganicChemMaterials = (event) => {
     addOrganoaluminiumMaterials(event);
     addZieglerProcessMaterials(event);
     addAmineMaterials(event);
+
+    createAqueousIntermediate(event, "formaldehyde", 0x594d36);
 };
 
 /**
@@ -40,5 +43,20 @@ export const addOrganicChemRecipes = (event) => {
         )
         .outputFluids(Fluid.of("gtceu:cyclohexane").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(20 * 20);
+        .duration(10 * 20);
+
+    // 2 CH3OH + O2 = 2 CH2O + 2 H2O
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/formaldehyde")
+        .itemInputs("1x gtceu:tiny_iron_iii_oxide_dust")
+        .inputFluids(
+            Fluid.of("gtceu:methanol").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:oxygen").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:formaldehyde").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20);
 };

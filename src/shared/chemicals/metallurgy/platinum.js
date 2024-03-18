@@ -2,6 +2,7 @@
 //
 // Various TODOs:
 // - Maybe use other amines too, rather than just trioctylamine?
+// - Dimethylglyoxime extraction of palladium, instead of extracting it with MIBK.
 
 import { createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers";
 
@@ -13,10 +14,12 @@ export const addPlatinumGroupMaterials = (event) => {
     );
 
     // Gold parts of the sludge.
-    createAqueousIntermediate(event, "gold_mibk_mixture", 0xede49f);
+    createAqueousIntermediate(event, "gold_palladium_mibk_mixture", 0xede49f);
+    createAqueousIntermediate(event, "gold_mibk_mixture", 0x5f0cc);
 
     createAqueousIntermediate(event, "dissolved_platinum_group_1", 0x5d6656);
     createAqueousIntermediate(event, "dissolved_platinum_group_2", 0x708878);
+    createAqueousIntermediate(event, "dissolved_platinum_group_3", 0x8ca193)
     // Pt-Ir separation.
     createAqueousIntermediate(event, "platinum_iridium_mixture_1", 0x70665a);
     createAqueousIntermediate(event, "platinum_iridium_mixture_2", 0x8e8171);
@@ -26,6 +29,7 @@ export const addPlatinumGroupMaterials = (event) => {
     // The actual salts of the metals that need reduction.
     createAqueousIntermediate(event, "ammonium_hexachloroplatinate", 0xbfa8d1);
     createAqueousIntermediate(event, "ammonium_hexachloroiridate", 0x6f6675);
+    createAqueousIntermediate(event, "ammonium_hexachloropalladate", 0xf2c877);
 };
 
 /**
@@ -66,23 +70,61 @@ export const addPlatinumGroupRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(10 * 20);
 
-    // Solvent extraction using Methyl isobutyl ketone of gold.
+    // Solution: Pd, Pt, Ir, Os, Rh, Ru
+
+    // Solvent extraction using Methyl isobutyl ketone of gold. Also extracts out palladium.
     // "Extraction kinetics are fast and virtually instantaneous."
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/platinum/gold_extraction_using_mibk")
         .inputFluids(
             Fluid.of("gtceu:dissolved_platinum_group_sludge").withAmount(12 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(1 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(2 * FluidAmounts.BUCKET)
         )
         .outputFluids(
-            Fluid.of("gtceu:gold_mibk_mixture").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:gold_palladium_mibk_mixture").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:dissolved_platinum_group_1").withAmount(10 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.EV])
         .duration(15);
 
+    // React out the palladium. This will use Dimethylglyoxime eventually, but for now we
+    // directly introduce ammonium hydroxide to the mixture.
+    // NH4+ + ClPd6- = (NH4)2[ClPd6]
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/ammonium_hexachloropalladate")
+        .inputFluids(
+            Fluid.of("gtceu:gold_palladium_mibk_mixture").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:ammonium_hydroxide").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen_peroxide").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:ammonium_hexachloropalladate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:gold_mibk_mixture").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(10 * 20);
+
+    // Reduce the palladium.
+    // (NH4)2[PdCl6] + 2 H2 + 6 NaOH = Pd + 2 NH3 + 6 H2O + 6 NaCl
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/palladium_reduction")
+        .itemInputs("6x gtceu:sodium_hydroxide_dust")
+        .inputFluids(
+            Fluid.of("gtceu:ammonium_hexachloropalladate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("1x gtceu:palladium_dust", "6x gtceu:salt_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonia").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.V[GTValues.EV])
+        .duration(15 * 20);
+
     // With Gold + Silver removed, we now have a relatively pure solution of platinum group
     // salts.
+    // Solution: Pt, Ir, Os, Rh, Ru
 
     // ---
     // Pt is then extracted by the use of a tertiary amine extractant such as Alamine 336.
@@ -228,4 +270,25 @@ export const addPlatinumGroupRecipes = (event) => {
         )
         .EUt(GTValues.V[GTValues.EV])
         .duration(15 * 20);
+
+    // Solution: Os, Rh, Ru
+
+    // Removal of Osmium using hydrogen peroxide, a small amount of sulfuric acid, and formaldehyde.
+    // This causes it to precipitate out as a solid metal.
+    // OsO4 + 2 CH2O = Os + 2 H2O + 2 CO2
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/osmium_precipitation")
+        .inputFluids(
+            Fluid.of("gtceu:dissolved_platinum_group_2").withAmount(6 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:formaldehyde").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen_peroxide").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:sulfuric_acid").withAmount(100 * FluidAmounts.MB)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:dissolved_platinum_group_3").withAmount(4 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:carbon_dioxide").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("1x gtceu:osmium_dust")
+        .EUt(GTValues.V[GTValues.EV])
+        .duration(5 * 20);
 };
