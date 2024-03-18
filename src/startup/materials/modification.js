@@ -253,6 +253,8 @@ export const customiseMaterials = () => {
     getMaterial("octanol").setFormula("CH3(CH2)7OH");
     getMaterial("trioctylamine").setFormula("(C8H17)3N");
     getMaterial("gold_hydroxide").setFormula("Au(OH)3");
+    getMaterial("ammonium_hexachloroplatinate").setFormula("(NH4)2[PtCl6]");
+    getMaterial("ammonium_hexachloroiridate").setFormula("(NH4)2[IrCl6]");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

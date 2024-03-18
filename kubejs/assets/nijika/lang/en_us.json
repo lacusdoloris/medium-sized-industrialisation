@@ -141,6 +141,11 @@
     "material.nijika.gold_mibk_mixture": "Gold-MIBK Mixture",
     "material.nijika.gold_hydroxide": "Gold Hydroxide",
     "material.nijika.dissolved_platinum_group_1": "Dissolved Platinum Group Mixture [1/5]",
+    "material.nijika.platinum_iridium_mixture_1": "Platinum-Iridium Mixture [1/2]",
+    "material.nijika.platinum_iridium_mixture_2": "Platinum-Iridium Mixture [2/2]",
+    "material.nijika.platinum_amine_mixture": "Platinum-Amine Mixture",
+    "material.nijika.ammonium_hexachloroplatinate": "Ammonium Hexachloroplatinate(IV)",
+    "material.nijika.ammonium_hexachloroiridate": "Ammonium Hexachloroiridate(IV)",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

@@ -129,6 +129,9 @@ const cleanupGTCEuOreProcessingRecipes = (event) => {
 
     // manual smelting of the dust to ore, which is not what we want.
     event.remove({ output: "#forge:ingots/zinc", input: /.*sphalerite.*/ });
+
+    // WHY does this give platinum.
+    event.remove({id: "gtceu:centrifuge/endstone_separation"});
 };
 
 /** @param {Internal.RecipesEventJS} event */

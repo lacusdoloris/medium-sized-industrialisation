@@ -89,7 +89,11 @@ export const addGoldProcessingRecipes = (event) => {
         .itemInputs("4x gtceu:sodium_hydroxide_dust")
         .itemOutputs("4x gtceu:salt_dust") // TODO: This might magic up chlorine.
         .outputFluids(Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(185 * FluidAmounts.MB))
-        .chancedFluidOutput(Fluid.of("gtceu:gold_hydroxide").withAmount(100 * FluidAmounts.MB), 6500.0, 0.0)
+        .chancedFluidOutput(
+            Fluid.of("gtceu:gold_hydroxide").withAmount(100 * FluidAmounts.MB),
+            6500.0,
+            0.0
+        )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
 
