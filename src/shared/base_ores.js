@@ -5,7 +5,7 @@ const BASE_ORES = {
         colour: 0xf7a0b5,
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
-        intoOres: ["magnetite", "ilmenite", "orpiment"],
+        intoOres: ["hematite", "ilmenite", "orpiment"],
         gem: "amethyst",
     },
 
