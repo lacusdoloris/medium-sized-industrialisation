@@ -29,6 +29,7 @@ const DISABLE_DECOMPOSITION = [
     "hsla_steel",
     // Various misc materials.
     "barite",
+    "redstone",
 ];
 
 /** A list of materials to actually add dusts & ingots to. */
