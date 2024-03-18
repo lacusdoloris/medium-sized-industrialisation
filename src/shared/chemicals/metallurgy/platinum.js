@@ -19,7 +19,7 @@ export const addPlatinumGroupMaterials = (event) => {
 
     createAqueousIntermediate(event, "dissolved_platinum_group_1", 0x5d6656);
     createAqueousIntermediate(event, "dissolved_platinum_group_2", 0x708878);
-    createAqueousIntermediate(event, "dissolved_platinum_group_3", 0x8ca193)
+    createAqueousIntermediate(event, "dissolved_platinum_group_3", 0x8ca193);
     // Pt-Ir separation.
     createAqueousIntermediate(event, "platinum_iridium_mixture_1", 0x70665a);
     createAqueousIntermediate(event, "platinum_iridium_mixture_2", 0x8e8171);

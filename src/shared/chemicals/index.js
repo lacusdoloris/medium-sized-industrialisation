@@ -95,12 +95,10 @@ export const addChemicalProcessingRecipes = (event) => {
             Fluid.of("gtceu:nitrogen").withAmount(20 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:hydrogen").withAmount(60 * FluidAmounts.BUCKET)
         )
-        .outputFluids(
-            Fluid.of("gtceu:ammonia").withAmount(20 * FluidAmounts.BUCKET)
-        )
+        .outputFluids(Fluid.of("gtceu:ammonia").withAmount(20 * FluidAmounts.BUCKET))
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(20 * 20)
-        .circuit(10);  // or 1 second per bucket, vs 15.
+        .circuit(10); // or 1 second per bucket, vs 15.
 
     // Direct reaction of calcium and hydrogen gets calcium hydride.
     event.recipes.gtceu
@@ -119,4 +117,18 @@ export const addChemicalProcessingRecipes = (event) => {
         .itemOutputs("1x gtceu:calcium_silicate_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20);
+
+    // TODO: own file, add deepslate decomposition
+    event.remove({ id: "gtceu:centrifuge/stone_dust_separation" });
+    event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__deepslate" });
+    event.recipes.gtceu
+        .centrifuge("nijika:chemicals/misc/stone_dust_separation")
+        .itemInputs("1x gtceu:stone_dust")
+        .chancedOutput("gtceu:quartzite_dust", 6500.0, 0.0)
+        .chancedOutput("gtceu:rock_salt_dust", 2400.0, 0.0)
+        .chancedOutput("gtceu:marble_dust", 2222.0, 0.0)
+        .chancedOutput("gtceu:salt_dust", 2800.0, 0.0)
+        .chancedOutput("gtceu:metal_mixture_dust", 650.0, 0.0)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(6 * 20 + 10);
 };
