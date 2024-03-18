@@ -29,7 +29,7 @@ const BASE_ORES = {
         seed: 649130079,
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["chalcopyrite", "sphalerite", "saltpeter"],
+        intoOres: ["chalcopyrite", "sphalerite", "tricalcium_phosphate"],
         gem: "ruby",
     },
 
