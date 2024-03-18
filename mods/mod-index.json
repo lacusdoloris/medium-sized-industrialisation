@@ -659,6 +659,16 @@
         "version": "11.7.1",
         "version_id": "cqz4BTbh"
     },
+    "o6qsdrrQ": {
+        "checksum": "fe537ce2d290aea1338de10cd4e8e015acdd940f30bc845f545cc41fd8cf47b870b5d973589ded978ff6484e11f0ccd6f68bd4632166a2dffb8b0a445c30604a",
+        "client_side_only": true,
+        "name": "Zume",
+        "pinned": false,
+        "project_id": "o6qsdrrQ",
+        "selected": true,
+        "version": "0.17.0",
+        "version_id": "RasOoR0k"
+    },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
         "client_side_only": false,
@@ -720,14 +730,14 @@
         "version_id": "kC6SY4Zp"
     },
     "sdaSaQEz": {
-        "checksum": "901fd965d8b03a820c90420b14671efe7a349b58190e7dec877b2a8937afe38221bea11574748c6e45a65a22952945864352562a99334cf582e51572262da6d5",
+        "checksum": "9c08ca9b811f5af876acc29c951ea18c87b378744d3dc30da65926d0e3120dc9128567523eb87b7e5e986d7029b1d4c57008378d22f32258b138b6b29c4cbd81",
         "client_side_only": false,
         "name": "Almost Unified",
         "pinned": false,
         "project_id": "sdaSaQEz",
         "selected": true,
-        "version": "1.20.1-0.9.0+forge",
-        "version_id": "yyVCxO7K"
+        "version": "1.20.1-0.9.2+forge",
+        "version_id": "lrwYXo99"
     },
     "sk9knFPE": {
         "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
