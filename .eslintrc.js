@@ -4,7 +4,10 @@ module.exports = {
         es2021: true,
         amd: true,
     },
-    extends: "eslint:recommended",
+    extends: [
+        "eslint:recommended",
+        "plugin:import/recommended"
+    ],
     overrides: [
         {
             env: {
@@ -27,7 +30,7 @@ module.exports = {
         },
     },
 
-    plugins: ["jsdoc"],
+    plugins: ["jsdoc", "import"],
 
     rules: {
         "jsdoc/no-undefined-types": 2,
