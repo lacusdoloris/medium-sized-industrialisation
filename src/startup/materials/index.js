@@ -1,74 +1,17 @@
 import { GasTier, nijikaId } from "../../shared/utils";
 import { createAcidicIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
-import { addChromiumMaterials } from "../../shared/chemicals/metallurgy/chromium";
-import { addGalliumArsenicMaterials } from "../../shared/chemicals/metallurgy/gallum_arsenic";
-import { addAluminiumMaterials } from "../../shared/chemicals/metallurgy/aluminium";
-import { addTantalumMaterials } from "../../shared/chemicals/metallurgy/tantalum";
-import { addManganeseMaterials } from "../../shared/chemicals/metallurgy/manganese";
-import { addVanadiumMaterials } from "../../shared/chemicals/metallurgy/vanadium";
-import { addRareEarthMaterials } from "../../shared/chemicals/rare_earths";
-import { addMagnesiumMaterials } from "../../shared/chemicals/metallurgy/magnesium";
-import { addMolybdenumMaterials } from "../../shared/chemicals/metallurgy/molybdenum";
-import { addGoldMaterials } from "../../shared/chemicals/metallurgy/gold";
-import { addCyanideMaterials } from "../../shared/chemicals/metallurgy/cyanide";
-import { addBrineMaterials } from "../../shared/chemicals/brine";
-import { addTitaniumMaterials } from "../../shared/chemicals/metallurgy/titanium";
-import { addCopperMaterials } from "../../shared/chemicals/metallurgy/copper";
-import { addBaseOreMaterials } from "../../shared/base_ores";
-import { addTungstenMaterials } from "../../shared/chemicals/metallurgy/tungsten";
-import { addPhosphorusMaterials } from "../../shared/chemicals/phosphorus";
-import { addBariumMaterials } from "../../shared/chemicals/metallurgy/barium";
-import { addCatalystMaterials } from "../../shared/chemicals/catalysts";
-import { addOrganicChemMaterials } from "../../shared/chemicals/organic";
-import { addIronMaterials } from "../../shared/chemicals/metallurgy/iron";
-import { addHydrogenPeroxideMaterials } from "../../shared/chemicals/hydrogen_peroxide";
-import { addIodineMaterials } from "../../shared/chemicals/metallurgy/iodine";
-import { addPlatinumGroupMaterials } from "../../shared/chemicals/metallurgy/platinum";
+import { addChemicalMaterials } from "../../shared/chemicals";
 
 /**
  * Adds new custom materials.
  */
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
-    addBaseOreMaterials(event);
-
-    addCatalystMaterials(event);
-
-    addAluminiumMaterials(event);
-    addBariumMaterials(event);
-    addChromiumMaterials(event);
-    addCopperMaterials(event);
-    addCyanideMaterials(event);
-    addGalliumArsenicMaterials(event);
-    addGoldMaterials(event);
-    addIronMaterials(event);
-    addIodineMaterials(event);
-    addMagnesiumMaterials(event);
-    addManganeseMaterials(event);
-    addMolybdenumMaterials(event);
-    addPlatinumGroupMaterials(event);
-    addRareEarthMaterials(event);
-    addTantalumMaterials(event);
-    addTitaniumMaterials(event);
-    addTungstenMaterials(event);
-    addVanadiumMaterials(event);
-
-    addOrganicChemMaterials(event);
-
-    addBrineMaterials(event);
-    addHydrogenPeroxideMaterials(event);
-
-    addPhosphorusMaterials(event);
+    addChemicalMaterials(event);
 
     // misc stuff.
     event.create(nijikaId("blood")).liquid().color(0xff0000);
-    createAcidicIntermediate(event, "ammonium_hydroxide", 0xcdd6f7).components(
-        "1x gtceu:ammonia",
-        "1x gtceu:oxygen",
-        "1x gtceu:hydrogen"
-    );
-
     event
         .create(nijikaId("fluorite"))
         .gem()

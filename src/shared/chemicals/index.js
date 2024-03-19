@@ -1,26 +1,61 @@
-import { addAluminiumProcessingRecipes } from "./metallurgy/aluminium";
-import { addChromiteProcessingRecipes } from "./metallurgy/chromium";
-import { addCyanideRecipes } from "./metallurgy/cyanide";
-import { addGalliumArsenicRecipes } from "./metallurgy/gallum_arsenic";
-import { addMiscIronRecipes } from "./metallurgy/iron";
-import { addMagnesiumProcessingRecipes } from "./metallurgy/magnesium";
-import { addManganeseProcessingRecipes } from "./metallurgy/manganese";
-import { addMolybdenumProcessingRecipes } from "./metallurgy/molybdenum";
-import { addRareEarthProcessingChain } from "./rare_earths";
-import { addTantaliteProcessingChain } from "./metallurgy/tantalum";
-import { addVanadiumChemicalChain } from "./metallurgy/vanadium";
-import { addBrineRecipes } from "./brine";
-import { addGoldProcessingRecipes } from "./metallurgy/gold";
-import { addTitaniumRecipes } from "./metallurgy/titanium";
-import { addCopperRecipes } from "./metallurgy/copper";
-import { addPhosphorusRecipes } from "./phosphorus";
-import { addBariumRecipes } from "./metallurgy/barium";
-import { addCatalystRecipes } from "./catalysts";
-import { addOrganicChemRecipes } from "./organic";
-import { addTungstenRecipes } from "./metallurgy/tungsten";
-import { addHydrogenPeroxideRecipes } from "./hydrogen_peroxide";
-import { addIodineRecipes } from "./metallurgy/iodine";
-import { addPlatinumGroupRecipes } from "./metallurgy/platinum";
+import { addChromiumMaterials, addChromiteProcessingRecipes } from "./metallurgy/chromium";
+import { addGalliumArsenicMaterials, addGalliumArsenicRecipes } from "./metallurgy/gallum_arsenic";
+import { addAluminiumMaterials, addAluminiumProcessingRecipes } from "./metallurgy/aluminium";
+import { addTantalumMaterials, addTantaliteProcessingChain } from "./metallurgy/tantalum";
+import { addManganeseMaterials, addManganeseProcessingRecipes } from "./metallurgy/manganese";
+import { addVanadiumMaterials, addVanadiumChemicalChain } from "./metallurgy/vanadium";
+import { addRareEarthMaterials, addRareEarthProcessingChain } from "./rare_earths";
+import { addMagnesiumMaterials, addMagnesiumProcessingRecipes } from "./metallurgy/magnesium";
+import { addMolybdenumMaterials, addMolybdenumProcessingRecipes } from "./metallurgy/molybdenum";
+import { addGoldMaterials, addGoldProcessingRecipes } from "./metallurgy/gold";
+import { addCyanideMaterials, addCyanideRecipes } from "./metallurgy/cyanide";
+import { addBrineMaterials, addBrineRecipes } from "./brine";
+import { addTitaniumMaterials, addTitaniumRecipes } from "./metallurgy/titanium";
+import { addCopperMaterials, addCopperRecipes } from "./metallurgy/copper";
+import { addBaseOreMaterials } from "../../shared/base_ores";
+import { addTungstenMaterials, addTungstenRecipes } from "./metallurgy/tungsten";
+import { addPhosphorusMaterials, addPhosphorusRecipes } from "./phosphorus";
+import { addBariumMaterials, addBariumRecipes } from "./metallurgy/barium";
+import { addCatalystMaterials, addCatalystRecipes } from "./catalysts";
+import { addOrganicChemMaterials, addOrganicChemRecipes } from "./organic";
+import { addIronMaterials, addMiscIronRecipes } from "./metallurgy/iron";
+import { addHydrogenPeroxideMaterials, addHydrogenPeroxideRecipes } from "./hydrogen_peroxide";
+import { addIodineMaterials, addIodineRecipes } from "./metallurgy/iodine";
+import { addPlatinumGroupMaterials, addPlatinumGroupRecipes } from "./metallurgy/platinum";
+import { addAmmoniaMaterials, addAmmoniaRecipes } from "./ammonia";
+
+export const addChemicalMaterials = (event) => {
+    addBaseOreMaterials(event);
+
+    addCatalystMaterials(event);
+
+    addAluminiumMaterials(event);
+    addBariumMaterials(event);
+    addChromiumMaterials(event);
+    addCopperMaterials(event);
+    addCyanideMaterials(event);
+    addGalliumArsenicMaterials(event);
+    addGoldMaterials(event);
+    addIronMaterials(event);
+    addIodineMaterials(event);
+    addMagnesiumMaterials(event);
+    addManganeseMaterials(event);
+    addMolybdenumMaterials(event);
+    addPlatinumGroupMaterials(event);
+    addRareEarthMaterials(event);
+    addTantalumMaterials(event);
+    addTitaniumMaterials(event);
+    addTungstenMaterials(event);
+    addVanadiumMaterials(event);
+
+    addOrganicChemMaterials(event);
+
+    addAmmoniaMaterials(event);
+    addBrineMaterials(event);
+    addHydrogenPeroxideMaterials(event);
+
+    addPhosphorusMaterials(event);
+};
 
 /**
  * Adds various chemical or metallurgical processing recipes.
@@ -50,6 +85,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addIodineRecipes(event);
     addPlatinumGroupRecipes(event);
 
+    addAmmoniaRecipes(event);
     addCatalystRecipes(event);
     addOrganicChemRecipes(event);
 
@@ -62,43 +98,6 @@ export const addChemicalProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.LV])
         .duration(2 * 20);
-
-    // NH3 + H2O ↽ − ⇀ NH+4 + OH−.
-    // ammonium hydroxide -> ammonia + water
-    event.recipes.gtceu
-        .centrifuge("nijika:misc/ammonium_hydroxide_centrifuging")
-        .inputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(1 * FluidAmounts.BUCKET))
-        .outputFluids(
-            Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
-        )
-        .EUt(GTValues.VH[GTValues.LV])
-        .duration(10);
-
-    // ... and the other way around.
-    event.recipes.gtceu
-        .mixer("nijika:misc/ammonium_hydroxide_mixing")
-        .outputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(1 * FluidAmounts.BUCKET))
-        .inputFluids(
-            Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
-        )
-        .EUt(GTValues.VH[GTValues.LV])
-        .duration(10);
-
-    // Catalytic synthesis of ammonia with Iron (III) oxide.
-    // This is significantly faster than the regular method.
-    event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/misc/haber_process_catalysed")
-        .itemInputs("1x gtceu:tiny_iron_iii_oxide_dust")
-        .inputFluids(
-            Fluid.of("gtceu:nitrogen").withAmount(20 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen").withAmount(60 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(Fluid.of("gtceu:ammonia").withAmount(20 * FluidAmounts.BUCKET))
-        .EUt(GTValues.VHA[GTValues.HV])
-        .duration(20 * 20)
-        .circuit(10); // or 1 second per bucket, vs 15.
 
     // Direct reaction of calcium and hydrogen gets calcium hydride.
     event.recipes.gtceu
