@@ -20,6 +20,7 @@ export const addPlatinumGroupMaterials = (event) => {
     createAqueousIntermediate(event, "dissolved_platinum_group_1", 0x5d6656);
     createAqueousIntermediate(event, "dissolved_platinum_group_2", 0x708878);
     createAqueousIntermediate(event, "dissolved_platinum_group_3", 0x8ca193);
+    createAqueousIntermediate(event, "dissolved_platinum_group_4", 0xaec3b5);
     // Pt-Ir separation.
     createAqueousIntermediate(event, "platinum_iridium_mixture_1", 0x70665a);
     createAqueousIntermediate(event, "platinum_iridium_mixture_2", 0x8e8171);
@@ -30,6 +31,8 @@ export const addPlatinumGroupMaterials = (event) => {
     createAqueousIntermediate(event, "ammonium_hexachloroplatinate", 0xbfa8d1);
     createAqueousIntermediate(event, "ammonium_hexachloroiridate", 0x6f6675);
     createAqueousIntermediate(event, "ammonium_hexachloropalladate", 0xf2c877);
+    createAqueousIntermediate(event, "ammonium_hexachlororhodate", 0xa793db);
+    createAqueousIntermediate(event, "potassium_hexachlororuthenate", 0xa3b1c9);
 };
 
 /**
@@ -56,7 +59,14 @@ export const addPlatinumGroupRecipes = (event) => {
     // no elements should be accidentally synthesised, but it's okay if some elements are
     // accidentally removed.
 
+    // First, clean up some of the old platinum line recipes, to reduce confusion.
     event.remove({ id: "gtceu:centrifuge/pgs_separation" });
+    event.remove({ id: "gtceu:large_chemical_reactor/inert_metal_mixture_separation" });
+    event.remove({ id: "gtceu:electrolyzer/raw_platinum_separation" });
+    event.remove({ id: "gtceu:chemical_reactor/raw_palladium_separation" });
+    event.remove({ id: "gtceu:large_chemical_reactor/rarest_metal_mixture_separation" });
+    event.remove({ id: "gtceu:centrifuge/iridium_metal_residue_separation" });
+    event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue" });
 
     // Dissolve with HCl to get dissolved sludge and some silver chloride.
     event.recipes.gtceu
@@ -168,7 +178,7 @@ export const addPlatinumGroupRecipes = (event) => {
             Fluid.of("gtceu:dissolved_platinum_group_1").withAmount(12 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:hydrogen_peroxide").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:trioctylamine").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(350 * FluidAmounts.MB)
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(
             Fluid.of("gtceu:dissolved_platinum_group_2").withAmount(8 * FluidAmounts.BUCKET),
@@ -199,7 +209,7 @@ export const addPlatinumGroupRecipes = (event) => {
         .inputFluids(
             Fluid.of("gtceu:platinum_iridium_mixture_1").withAmount(4 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:ammonium_hydroxide").withAmount(4 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(300 * FluidAmounts.MB),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.B),
             Fluid.of("gtceu:hydrogen_peroxide").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(
@@ -291,4 +301,70 @@ export const addPlatinumGroupRecipes = (event) => {
         .itemOutputs("1x gtceu:osmium_dust")
         .EUt(GTValues.V[GTValues.EV])
         .duration(5 * 20);
+
+    // Solution: Rh, Ru
+
+    // Add ammonium chloride to the mixture to precipitate out Rhodium.
+    // 2 NH4Cl + H2O2 + RhCl6 = (NH4)2(RhCl6) + 2 HCl + O2
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/rhodium_precipitation")
+        .inputFluids(
+            Fluid.of("gtceu:dissolved_platinum_group_3").withAmount(4 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen_peroxide").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .itemInputs("2x gtceu:ammonium_chloride_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonium_hexachlororhodate").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:dissolved_platinum_group_4").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(10 * 20);
+
+    // Reduction of ammonium salt to get pure rhodium metal.
+    // (NH4)2[RhCl6] + 2 H2 + 6 NaOH = Rh + 2 NH3 + 6 H2O + 6 NaCl
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/rhodium_reduction")
+        .itemInputs("6x gtceu:sodium_hydroxide_dust")
+        .inputFluids(
+            Fluid.of("gtceu:ammonium_hexachlororhodate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("1x gtceu:rhodium_dust", "6x gtceu:salt_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonia").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.V[GTValues.EV])
+        .duration(15 * 20);
+
+    // Solution: Rh. I'm kinda winging it here.
+    // RuO4 + 6 KCl + 4 H2O = K2[RuCl6] + 4 K(OH)2
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/potassium_hexachlororuthenate")
+        .inputFluids(
+            Fluid.of("gtceu:dissolved_platinum_group_4").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .itemInputs("6x gtceu:rock_salt_dust")
+        .itemOutputs("4x gtceu:potassium_hydroxide_dust")
+        .outputFluids(
+            Fluid.of("gtceu:potassium_hexachlororuthenate").withAmount(1 * FluidAmounts.BUCKET),
+            // TODO: Leftovers?
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(10 * 20);
+
+    // Finally, Ruthenium reduction.
+    // K2[RuCl6] + 2 H2 = 2 KCl + Ru + 4 HCl
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/platinum/ruthenium_reduction")
+        .inputFluids(
+            Fluid.of("gtceu:potassium_hexachlororuthenate").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(4 * FluidAmounts.BUCKET)
+        )
+        .itemOutputs("2x gtceu:rock_salt_dust", "1x gtceu:ruthenium_dust")
+        .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(4 * FluidAmounts.BUCKET))
+        .EUt(GTValues.V[GTValues.EV])
+        .duration(15 * 20);
 };

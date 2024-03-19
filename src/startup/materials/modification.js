@@ -238,6 +238,8 @@ export const customiseMaterials = () => {
     getMaterial("ammonium_hexachloroiridate").setFormula("(NH4)2[IrCl6]");
     getMaterial("ammonium_hexachloroplatinate").setFormula("(NH4)2[PtCl6]");
     getMaterial("ammonium_hexachloropalladate").setFormula("(NH4)2[PdCl6]");
+    getMaterial("ammonium_hexachlororhodate").setFormula("(NH4)2[RhCl6]");
+    getMaterial("potassium_hexachlororuthenate").setFormula("K2[RuCl6]");
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
