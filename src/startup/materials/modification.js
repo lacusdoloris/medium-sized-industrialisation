@@ -5,6 +5,9 @@ const FluidProperty = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty"
 );
 const FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys");
+const MaterialStack = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.stack.MaterialStack"
+);
 
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
@@ -29,7 +32,6 @@ const DISABLE_DECOMPOSITION = [
     "hsla_steel",
     // Various misc materials.
     "barite",
-    "redstone",
 ];
 
 /** A list of materials to actually add dusts & ingots to. */
@@ -209,6 +211,12 @@ export const customiseMaterials = () => {
 
     let redstone = getMaterial("redstone");
     {
+        redstone.setComponents(
+            new MaterialStack(getMaterial("silicon"), 1),
+            new MaterialStack(getMaterial("pyrite"), 5),
+            new MaterialStack(getMaterial("cinnabar"), 1)
+        );
+
         let oreProp = getOreProperty(redstone);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts("cinnabar", "glowstone");
