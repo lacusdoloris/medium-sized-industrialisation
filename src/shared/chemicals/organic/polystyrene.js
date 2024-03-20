@@ -34,13 +34,12 @@ export const addPolysytreneRecipes = (event) => {
     // C6H6 + C2H4 = C6H5C2H5
     event.recipes.gtceu
         .large_chemical_reactor("nijika:chemicals/polystyrene/ethylbenzene")
-        .itemInputs("1x gtceu:aluminium_chloride_dust")
+        .itemInputs("1x gtceu:tiny_aluminium_chloride_dust")
         .inputFluids(
             Fluid.of("gtceu:ethylene").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:benzene").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(Fluid.of("gtceu:ethylbenzene").withAmount(1 * FluidAmounts.BUCKET))
-        .itemOutputs("8x gtceu:tiny_aluminium_chloride_dust")
         .EUt(GTValues.VHA[GTValues.EV]) // so that you need to use coal tar first
         .duration(3 * 20);
 

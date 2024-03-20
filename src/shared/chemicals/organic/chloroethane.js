@@ -22,13 +22,12 @@ export const addChloroethaneRecipes = (event) => {
     // C2H4 + HCl -> CH3CH2Cl
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/chloroethane/hydrochlorination")
-        .itemInputs("1x gtceu:small_aluminium_chloride_dust")
+        .itemInputs("1x gtceu:tiny_aluminium_chloride_dust")
         .inputFluids(
             Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:ethylene").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(Fluid.of("gtceu:chloroethane").withAmount(1 * FluidAmounts.BUCKET))
-        .itemOutputs("3x gtceu:tiny_aluminium_chloride_dust")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20)
         .circuit(2);
