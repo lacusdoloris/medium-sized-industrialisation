@@ -253,7 +253,7 @@ export const GT_MACHINE_TIERS = {
     }),
 
     IV: new Tier("iv", {
-        plate: Material.gtceu("titanium"),
+        plate: Material.gtceu("rhenium_superalloy"),
         hullPlate: Material.gtceu("polytetrafluoroethylene"),
         cable: Material.gtceu("platinum"),
         electricWire: Material.gtceu("osmium"), // lol, what?
@@ -262,11 +262,11 @@ export const GT_MACHINE_TIERS = {
         glass: "gtceu:laminated_glass",
         pipe: Material.gtceu("titanium"),
         heating: Material.gtceu("nichrome"), // changed from tungstensteel
-        rotor: Material.gtceu("titanium"), // changed from tungstensteel
+        rotor: Material.gtceu("tungstensteel"), // changed from tungstensteel
         grinder: "gtceu:diamond_grinding_head",
         emitterRod: Material.gtceu("iridium"),
         emitterGem: "gtceu:quantum_star",
-        gear: Material.gtceu("titanium"),
+        gear: Material.gtceu("nitinol"),
     }),
 
     /*

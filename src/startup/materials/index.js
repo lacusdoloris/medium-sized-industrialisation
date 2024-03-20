@@ -57,6 +57,7 @@ export const addCustomMaterials = (event) => {
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_GEAR,
             GTMaterialFlags.DISABLE_DECOMPOSITION
         );
 

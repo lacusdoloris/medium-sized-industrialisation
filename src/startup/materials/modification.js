@@ -59,6 +59,11 @@ export const customiseMaterials = () => {
         if (typeof gearMaterial !== "undefined") {
             getMaterial(gearMaterial.id).addFlags(GTMaterialFlags.GENERATE_GEAR);
         }
+
+        getMaterial(tier.materials.rotor).addFlags(
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROTOR
+        );
     }
 
     // remove auto-generated decomposition recipes for all of these
