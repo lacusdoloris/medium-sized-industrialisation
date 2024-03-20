@@ -35,5 +35,5 @@ export const addSlagProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
-        .circuit(8);
+        .circuit(18);
 };
