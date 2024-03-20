@@ -1,5 +1,5 @@
 import { GasTier, nijikaId } from "../../shared/utils";
-import { createAcidicIntermediate, createDustIntermediate } from "../../shared/materials/helpers";
+import { createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChemicalMaterials } from "../../shared/chemicals";
 
@@ -19,9 +19,6 @@ export const addCustomMaterials = (event) => {
         .color(0x0c9949)
         .iconSet(GTMaterialIconSet.DIAMOND)
         .components("1x gtceu:calcium", "2x gtceu:fluorine");
-
-    createDustIntermediate(event, "slag", 0x474236).iconSet(GTMaterialIconSet.FLINT);
-    createAcidicIntermediate(event, "slag_slurry", 0x373226);
 
     event
         .create(nijikaId("corinthian_bronze"))
