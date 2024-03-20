@@ -15,8 +15,8 @@ export const adjustCreateRecipes = (event) => {
     event.recipes.create
         .crushing(
             [
-                Item.of("gtceu:crushed_magnetite_ore").withChance(0.4),
-                Item.of("minecraft:iron_nugget").withChance(0.4),
+                Item.of("gtceu:crushed_magnetite_ore").withChance(0.6),
+                Item.of("minecraft:iron_nugget").withChance(0.6),
             ],
             "create:crimsite"
         )
@@ -25,8 +25,8 @@ export const adjustCreateRecipes = (event) => {
     event.recipes.create
         .crushing(
             [
-                Item.of("gtceu:crushed_redstone_ore").withChance(0.4),
-                Item.of("minecraft:gold_nugget").withChance(0.4),
+                Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
+                Item.of("minecraft:redstone_dust").withChance(0.6),
             ],
             "create:ochrum"
         )
@@ -35,8 +35,8 @@ export const adjustCreateRecipes = (event) => {
     event.recipes.create
         .crushing(
             [
-                Item.of("gtceu:crushed_chromite_ore").withChance(0.4),
-                Item.of("minecraft:iron_nugget").withChance(0.4),
+                Item.of("gtceu:crushed_chromite_ore").withChance(0.6),
+                Item.of("minecraft:iron_nugget").withChance(0.6),
             ],
             "create:veridium"
         )
@@ -45,8 +45,8 @@ export const adjustCreateRecipes = (event) => {
     event.recipes.create
         .crushing(
             [
-                Item.of("gtceu:crushed_cassiterite_ore").withChance(0.4),
-                Item.of("gtceu:tin_nugget").withChance(0.4),
+                Item.of("gtceu:crushed_cassiterite_ore").withChance(0.6),
+                Item.of("gtceu:tin_nugget").withChance(0.6),
             ],
             "create:asurine"
         )
