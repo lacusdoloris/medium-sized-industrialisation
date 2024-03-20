@@ -2,7 +2,7 @@ import { createAcidicIntermediate } from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addPolystyreneMaterials = (event) => {
-    createAcidicIntermediate(event, "polystyrene_sulfonate", 0xcfd4a7);
+    createAcidicIntermediate(event, "polystyrene_sulfonate", 0xcfd4a7).dust();
 
     event
         .create(nijikaId("sodium_polystyrene_sulfonate"))

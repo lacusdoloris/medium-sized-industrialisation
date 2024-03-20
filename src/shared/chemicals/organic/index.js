@@ -59,4 +59,20 @@ export const addOrganicChemRecipes = (event) => {
         )
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
+
+    // Catalytic toluene synthesis.
+    // C6H6 + CH3OH = C6H5CH3 + H2O
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/toluene/catalytic_synthesis")
+        .itemInputs("1x gtceu:tiny_polystyrene_sulfonate_dust")
+        .inputFluids(
+            Fluid.of("gtceu:benzene").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:methanol").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:toluene").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(2 * 20 + 10);
 };
