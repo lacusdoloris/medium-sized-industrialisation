@@ -23,6 +23,7 @@ import { addHydrogenPeroxideMaterials, addHydrogenPeroxideRecipes } from "./hydr
 import { addIodineMaterials, addIodineRecipes } from "./metallurgy/iodine";
 import { addPlatinumGroupMaterials, addPlatinumGroupRecipes } from "./metallurgy/platinum";
 import { addAmmoniaMaterials, addAmmoniaRecipes } from "./ammonia";
+import { addRheniumMaterials, addRheniumRecipes } from "./metallurgy/rhenium";
 
 export const addChemicalMaterials = (event) => {
     addBaseOreMaterials(event);
@@ -42,6 +43,7 @@ export const addChemicalMaterials = (event) => {
     addManganeseMaterials(event);
     addMolybdenumMaterials(event);
     addPlatinumGroupMaterials(event);
+    addRheniumMaterials(event);
     addRareEarthMaterials(event);
     addTantalumMaterials(event);
     addTitaniumMaterials(event);
@@ -84,6 +86,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addHydrogenPeroxideRecipes(event);
     addIodineRecipes(event);
     addPlatinumGroupRecipes(event);
+    addRheniumRecipes(event);
 
     addAmmoniaRecipes(event);
     addCatalystRecipes(event);

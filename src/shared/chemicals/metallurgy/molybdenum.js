@@ -5,6 +5,7 @@ import {
     createAqueousIntermediate,
     createDustIntermediate,
 } from "../../materials/helpers";
+import { nijikaId } from "../../utils";
 
 export const addMolybdenumMaterials = (event) => {
     createDustIntermediate(event, "impure_molybdenum_trioxide", 0xc6a9fc).components(
@@ -47,6 +48,12 @@ export const addMolybdenumMaterials = (event) => {
         "1x gtceu:molybdenum",
         "2x gtceu:sulfur"
     );
+
+    event
+        .create(nijikaId("molybdenum_flue"))
+        .gas()
+        .color(0xe3dd6d)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     event
         .create(new ResourceLocation("nijika:ferromolybdenum"))
@@ -102,7 +109,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(14 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:impure_molybdenum_trioxide_dust")
         .chancedOutput("1x gtceu:impure_molybdenum_trioxide_dust", 6500.0, 0.0) // Flat 65% chance, no boost!
-        .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(4 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:molybdenum_flue").withAmount(4 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.EV])
         .duration(6 * 20)
         .blastFurnaceTemp(900);
@@ -112,7 +119,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .electric_blast_furnace("nijika:chemicals/molybdenum/molybdenite_oxidising")
         .itemInputs("1x gtceu:crushed_molybdenite_ore", "6x gtceu:impure_molybdenum_trioxide_dust")
         .itemOutputs("7x gtceu:molybdenum_dioxide_dust")
-        .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(2 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:molybdenum_flue").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.EV])
         .duration(10 * 20)
         .blastFurnaceTemp(950);

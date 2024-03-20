@@ -154,6 +154,11 @@
     "material.nijika.potassium_hexachlororuthenate": "Potassium Hexachlororuthenate(IV)",
     "material.nijika.gold_palladium_mibk_mixture": "Gold-Palladium MIBK Mixture",
     "material.nijika.formaldehyde": "Formaldehyde",
+    "material.nijika.sulfuric_molybdenite_runoff": "Sulfuric Molybdenite Runoff",
+    "material.nijika.rhenium_tbp_mixture": "Rhenium-TBP Mixture",
+    "material.nijika.ammonium_perrhenate": "Ammonium Perrhenate",
+    "material.nijika.rhenium_superalloy": "Rhenium Superalloy",
+    "material.nijika.molybdenum_flue": "Molybdenum Flue",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

@@ -242,6 +242,7 @@ export const customiseMaterials = () => {
     getMaterial("ammonium_sulfate").setFormula("(NH4)2SO4");
     getMaterial("ammonium_bisulfate").setFormula("(NH4)HSO4");
     getMaterial("ammonium_persulfate").setFormula("(NH4)2S2O8");
+    getMaterial("ammonium_perrhenate").setFormula("NH4ReO4");
     getMaterial("ammonium_paratungstate").setFormula("(NH4)10(H2W12O42)");
     getMaterial("ammonium_hexachloroiridate").setFormula("(NH4)2[IrCl6]");
     getMaterial("ammonium_hexachloroplatinate").setFormula("(NH4)2[PtCl6]");
