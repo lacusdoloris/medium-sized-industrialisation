@@ -122,7 +122,8 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:molybdenum_flue").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.EV])
         .duration(10 * 20)
-        .blastFurnaceTemp(950);
+        .blastFurnaceTemp(950)
+        .circuit(1);
 
     // 2 MoO2 + O2 = 2 MoO3
     event.recipes.gtceu
