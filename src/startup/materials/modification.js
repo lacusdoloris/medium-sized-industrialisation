@@ -60,7 +60,7 @@ export const customiseMaterials = () => {
             getMaterial(gearMaterial.id).addFlags(GTMaterialFlags.GENERATE_GEAR);
         }
 
-        getMaterial(tier.materials.rotor).addFlags(
+        getMaterial(tier.materials.rotor.id).addFlags(
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROTOR
         );

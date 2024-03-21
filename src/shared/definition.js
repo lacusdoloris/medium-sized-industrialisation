@@ -262,7 +262,7 @@ export const GT_MACHINE_TIERS = {
         glass: "gtceu:laminated_glass",
         pipe: Material.gtceu("titanium"),
         heating: Material.gtceu("nichrome"), // changed from tungstensteel
-        rotor: Material.gtceu("tungstensteel"), // changed from tungstensteel
+        rotor: Material.gtceu("tungsten_steel"),
         grinder: "gtceu:diamond_grinding_head",
         emitterRod: Material.gtceu("iridium"),
         emitterGem: "gtceu:quantum_star",
