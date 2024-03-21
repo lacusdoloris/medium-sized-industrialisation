@@ -227,6 +227,13 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts("cinnabar", "glowstone");
     }
 
+    let tricalcumPhosphate = getMaterial("tricalcium_phosphate");
+    {
+        let oreProp = getOreProperty(tricalcumPhosphate);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts("apatite", "rock_salt", "phosphate");
+    }
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
