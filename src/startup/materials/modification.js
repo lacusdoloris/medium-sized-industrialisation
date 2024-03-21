@@ -234,6 +234,10 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts("apatite", "rock_salt", "phosphate");
     }
 
+    let palladium = getMaterial("palladium");
+    palladium.setMaterialARGB(0xe4340c);
+    palladium.setMaterialSecondaryARGB(0xf45c34);
+
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
     getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
