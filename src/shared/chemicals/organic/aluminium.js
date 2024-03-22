@@ -54,7 +54,7 @@ export const addOrganoaluminiumRecipes = (event) => {
         .inputFluids(
             Fluid.of("gtceu:triethylaluminium").withAmount(250 * FluidAmounts.MB),
             Fluid.of("gtceu:ethylene").withAmount(4500 * FluidAmounts.MB),
-            Fluid.of("gtceu:hydrogen").withAmount(1 * FluidAmounts.BUCKET) // fake catalyst
+            Fluid.of("gtceu:hydrogen").withAmount(500 * FluidAmounts.MB) // fake catalyst
         )
         .itemInputs("8x gtceu:small_aluminium_dust")
         .outputFluids(Fluid.of("gtceu:triethylaluminium").withAmount(1 * FluidAmounts.BUCKET))

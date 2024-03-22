@@ -139,7 +139,7 @@ export const addRareEarthProcessingChain = (event) => {
             "10x gtceu:nickel_dust"
         )
         .itemOutputs("2x gtceu:lanthanum_nickel_alloy_ingot", "3x gtceu:quicklime_dust")
-        .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(3 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.MV])
         .duration(90 * 20)
         .blastFurnaceTemp(1400);

@@ -50,18 +50,19 @@ export const addBrineRecipes = (event) => {
 
     // potassium hydroxide production
     // uh, is this brine? can't think of anywheree else to put it lol.
-    // KCl + H2O = KOH + H + Cl
+    // 2 KCl + 2 H2O = 2 KOH + H2 + Cl2
     event.recipes.gtceu
         .electrolyzer("nijika:chemicals/brine/potassium_hydroxide_electrolysis")
-        .itemInputs("1x gtceu:rock_salt_dust")
-        .inputFluids(Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET))
-        .itemOutputs("1x gtceu:potassium_hydroxide_dust")
+        .itemInputs("2x gtceu:rock_salt_dust")
+        .inputFluids(Fluid.of("minecraft:water").withAmount(2 * FluidAmounts.BUCKET))
+        .itemOutputs("2x gtceu:potassium_hydroxide_dust")
         .outputFluids(
-            Fluid.of("gtceu:hydrogen").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:chlorine").withAmount(1 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:hydrogen").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:chlorine").withAmount(2 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.LV])
-        .duration(64);
+        .duration(64)
+        .circuit(3);
 
     // KOH + HF = KF + H2O
     event.recipes.gtceu

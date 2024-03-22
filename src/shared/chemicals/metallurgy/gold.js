@@ -103,7 +103,7 @@ export const addGoldProcessingRecipes = (event) => {
         .chemical_reactor("nijika:chemicals/gold/hydroxide_reduction")
         .inputFluids(
             Fluid.of("gtceu:gold_hydroxide").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen").withAmount(3 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET)
         )
         .itemOutputs("1x gtceu:gold_dust")
         .outputFluids(Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET))
