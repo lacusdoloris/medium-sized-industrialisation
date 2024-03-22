@@ -1,3 +1,1 @@
 * text=auto eol=lf
-*.jar !text !filter !merge !diff
-*.png !text !filter !merge !diff
