@@ -449,6 +449,16 @@
         "version": "4.4.1+forge",
         "version_id": "66z4rv38"
     },
+    "Wnxd13zP": {
+        "checksum": "7c07f2b9086f5469eca5cf862f5a85b5ffd35e194cef95d6533855368daadad03d8a6e81384fcff17f6c8cf0516cf856e71874ddea1a512e531ac7108bdea3e5",
+        "client_side_only": false,
+        "name": "Clumps",
+        "pinned": false,
+        "project_id": "Wnxd13zP",
+        "selected": true,
+        "version": "12.0.0.3",
+        "version_id": "yQVnODwU"
+    },
     "XExdLWCQ": {
         "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
         "client_side_only": false,
