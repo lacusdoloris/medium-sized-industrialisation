@@ -86,6 +86,9 @@ export const addVanadiumChemicalChain = (event) => {
 
     // replace clean stainless steel casing with vanadium steel casing
     event.remove({ id: "gtceu:assembler/casing_stainless_clean" });
+    event.remove({ id: "gtceu:arc_furnace/arc_clean_machine_casing" });
+    event.remove({ id: "gtceu:macerator/macerate_clean_machine_casing" });
+
     event.recipes.gtceu
         .assembler("nijika:misc/casings/clean")
         .itemInputs("6x #forge:plates/vanadium_steel", "1x gtceu:vanadium_steel_frame")
