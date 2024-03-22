@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 const WireProperties = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties"
 );
@@ -265,6 +271,7 @@ export const customiseMaterials = () => {
     getMaterial("ammonium_hexachloropalladate").setFormula("(NH4)2[PdCl6]");
     getMaterial("ammonium_hexachlororhodate").setFormula("(NH4)2[RhCl6]");
     getMaterial("potassium_hexachlororuthenate").setFormula("K2[RuCl6]");
+    getMaterial("rhodium_trichloride_trihydrate").setFormula("RhCl3.(H20)3");
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
@@ -285,6 +292,10 @@ export const customiseMaterials = () => {
     getMaterial("octanol").setFormula("CH3(CH2)7OH");
     getMaterial("trioctylamine").setFormula("(C8H17)3N");
     getMaterial("formaldehyde").setFormula("CH2O");
+    getMaterial("triphenylphosphine").setFormula("PPh3");
+    getMaterial("triphenylphosphine_oxide").setFormula("OPPh3");
+    getMaterial("triphenylphosphine_chloride").setFormula("PPh3Cl2");
+    getMaterial("wilkinson_catalyst_raw").setFormula("RhCl(PPh3)3");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

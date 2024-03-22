@@ -159,6 +159,15 @@
     "material.nijika.ammonium_perrhenate": "Ammonium Perrhenate",
     "material.nijika.rhenium_superalloy": "Rhenium Superalloy",
     "material.nijika.molybdenum_flue": "Molybdenum Flue",
+    "material.nijika.rhodium_iii_oxide": "Rhodium(III) Oxide",
+    "material.nijika.rhodium_trichloride": "Rhodium Trichloride",
+    "material.nijika.rhodium_trichloride_trihydrate": "Rhodium Trichloride (Trihydrate)",
+    "material.nijika.ozone": "Ozone",
+    "material.nijika.triphenylphosphine": "Triphenylphosphine",
+    "material.nijika.triphenylphosphine_oxide": "Triphenylphospine Oxide",
+    "material.nijika.triphenylphosphine_chloride": "Triphenylphospine Chloride",
+    "material.nijika.wilkinson_catalyst_raw": "Cloridotris(triphenylphosphene)rhodium(I)",
+    "material.nijika.phosgene": "Phosgene",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
@@ -170,6 +179,7 @@
     "gtceu.ore_sorting": "Ore Sorting",
 
     "item.nijika.slag": "Ore Slag",
+    "item.nijika.wilkinson_catalyst": "Wilkinson's Catalyst",
 
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
     "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
