@@ -108,6 +108,13 @@ export const doTier04Content = (event) => {
         .duration(3 * 20 + 15)
         .EUt(GTValues.VA[GTValues.MV]);
 
+    event.replaceInput(
+        { type: "gtceu:assembler" },
+        "gtceu:long_magnalium_rod",
+        "gtceu:long_az_91_rod"
+    );
+    event.replaceInput({ type: "gtceu:assembler" }, "gtceu:magnalium_plate", "gtceu:az_91_plate");
+
     // finally, unfuck the ABF recipes
     event.remove({ id: "gtceu:arc_furnace/arc_alloy_blast_smelter" });
     event.remove({ id: "gtceu:macerator/macerate_alloy_blast_smelter" });

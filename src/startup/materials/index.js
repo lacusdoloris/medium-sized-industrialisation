@@ -81,6 +81,7 @@ export const addCustomMaterials = (event) => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROTOR,
             GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.DISABLE_ALLOY_BLAST
