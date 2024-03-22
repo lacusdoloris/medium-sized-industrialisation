@@ -41,7 +41,7 @@ export const addChromiteProcessingRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:tier02/chromium/chromite_to_sodium_chromate")
         .itemInputs("4x #forge:dusts/chromite", "8x #forge:dusts/soda_ash")
-        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(7 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(14 * FluidAmounts.BUCKET))
         .itemOutputs("8x gtceu:sodium_chromate_dust", "2x gtceu:iron_oxide_dust")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(8 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.MV])

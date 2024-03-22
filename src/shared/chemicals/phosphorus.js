@@ -28,6 +28,7 @@ export const addPhosphorusRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
 
+    // 4 P + 6 Cl2 = 4 PCl3
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/phosphorus/trichloride")
         .itemInputs("4x gtceu:phosphorus_dust")

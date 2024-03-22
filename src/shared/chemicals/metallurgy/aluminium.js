@@ -78,12 +78,12 @@ export const addAluminiumProcessingRecipes = (event) => {
         .duration(6 * 20)
         .blastFurnaceTemp(1470);
 
-    // Step 4: Al2O3 -> 2Al + 3O
+    // Step 4: 2 Al2O3 = 4 Al + 3 O2
     event.recipes.gtceu
         .electrolyzer("nijika:tier02/aluminium/not_hall_heroult")
-        .itemInputs("gtceu:alumina_dust")
-        .itemOutputs("2x gtceu:aluminium_dust")
-        .outputFluids(Fluid.of("gtceu:oxygen").withAmount(3 * FluidAmounts.BUCKET))
+        .itemInputs("2x gtceu:alumina_dust")
+        .itemOutputs("4x gtceu:aluminium_dust")
+        .outputFluids(Fluid.of("gtceu:oxygen").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .duration(15 * 20);
 

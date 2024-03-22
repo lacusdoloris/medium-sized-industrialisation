@@ -238,6 +238,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .blastFurnaceTemp(2700);
 
     // Produce molybdenum trioxide from the disulfide.
+    // 2 MoS2 + 7 O2 = 2 MoO3 + 4 SO2
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/molybdenum/desulfurisation")
         .itemInputs("2x gtceu:molybdenum_disulfide_dust")
