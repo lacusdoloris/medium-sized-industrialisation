@@ -103,6 +103,9 @@ export const doTier04Content = (event) => {
         .EUt(GTValues.VA[GTValues.MV]);
 
     // finally, unfuck the ABF recipes
+    event.remove({ id: "gtceu:arc_furnace/arc_alloy_blast_smelter" });
+    event.remove({ id: "gtceu:macerator/macerate_alloy_blast_smelter" });
+    
     event.remove({ id: "gtceu:shaped/blast_alloy_smelter" });
     event
         .shaped("gtceu:alloy_blast_smelter", ["PCP", "WHW", "PCP"], {
