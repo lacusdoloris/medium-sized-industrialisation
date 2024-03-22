@@ -92,6 +92,19 @@ export const addChemicalProcessingRecipes = (event) => {
     addCatalystRecipes(event);
     addOrganicChemRecipes(event);
 
+    event.recipes.gtceu
+        .mixer("nijika:chemicals/misc/diluted_hydrochloric_acid")
+        .inputFluids(
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VH[GTValues.ULV])
+        .duration(10)
+        .circuit(1);
+
     // BeH2 + 2 HCl → BeCl2 + 2 H2
     event.recipes.gtceu
         .chemical_bath("nijika:misc/beryllium_chloride")
