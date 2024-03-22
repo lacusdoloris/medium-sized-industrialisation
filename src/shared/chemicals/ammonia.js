@@ -37,6 +37,18 @@ export const addAmmoniaRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
 
+    // N2 + 3 H2 = 2 NH3
+    event.remove({ id: "gtceu:chemical_reactor/ammonia_from_elements" });
+    event.recipes.gtceu.chemical_reactor("nijika:chemicals/ammonia/haber_process")
+        .inputFluids(
+            Fluid.of("gtceu:nitrogen").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(Fluid.of("gtceu:ammonia").withAmount(2 * FluidAmounts.BUCKET))
+        .duration(24 * 20)
+        .EUt(384)
+        .circuit(1);
+        
     // Catalytic synthesis of ammonia with Iron (III) oxide.
     // This is significantly faster than the regular method.
     event.recipes.gtceu
