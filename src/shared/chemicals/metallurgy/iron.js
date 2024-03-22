@@ -60,4 +60,32 @@ export const addMiscIronRecipes = (event) => {
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20)
         .blastFurnaceTemp(1100);
+
+    // Production of Iron (III) Chloride.
+    // 2 Fe + 6 HCl = 2 FeCl3 + 3 H2
+    event.remove({ id: "gtceu:chemical_reactor/iron_3_chloride" }); // Uses non-molar hydrogen.
+    event.remove({ id: "gtceu:large_chemical_reactor/iron_3_chloride" });
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/iron/iron_iii_chloride_sucky")
+        .itemInputs("2x gtceu:iron_dust")
+        .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:iron_iii_chloride").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(30 * 20)
+        .circuit(1);
+
+    // Fe2O3 + 6 HCl = 2 FeCl3 + 3 H2O
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/iron/iron_iii_chloride")
+        .itemInputs("32x gtceu:iron_oxide_dust")
+        .inputFluids(Fluid.of("gtceu:chlorine").withAmount(6 * 2 * 32 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:iron_iii_chloride").withAmount(2 * 32 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(3 * 32 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.V[GTValues.HV])
+        .duration(180 * 20); // regular is 15s per bucket, this is 5.65.
 };
