@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 import { TIER_TO_HIGHER_TIER_MAP, Tier } from "../../shared/definition";
 
 // As a side note, a lot of these simply re-create the recipes; this is to allow us to more

@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 /**
  * This is the primary entrypoint for Bigger Industrialisation's content tweaks. Please avoid adding
  * things here directly, and instead call the appropriate function from the two mega-events.

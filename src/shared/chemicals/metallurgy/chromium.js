@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 // Anger, G., Halstenberg, J., Hochgeschwender, K., Scherhag, C., Korallus, U., Knopf, H., … Ohlinger, M. (2000). Chromium Compounds. Ullmann’s Encyclopedia of Industrial Chemistry. doi:10.1002/14356007.a07_067
 import { createDustIntermediate } from "../../materials/helpers";
 

@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 // https://sourcegraph.com/github.com/GregTechCEu/GregTech-Modern@e9a5704a58dd5735b2f445c31f440775760b2312/-/blob/src/main/java/com/gregtechceu/gtceu/data/recipe/generated/PartsRecipeHandler.java
 // gears: material mass * 5
 // small gears: material mass alone

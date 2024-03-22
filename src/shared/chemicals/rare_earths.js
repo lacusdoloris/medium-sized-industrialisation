@@ -1,3 +1,9 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 // See doi:10.1088/1742-6596/1436/1/012070 (open access) for the Monazite processing.
 
 import { createChemicalIntermediate, createDustIntermediate } from "../materials/helpers";
