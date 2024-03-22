@@ -7,6 +7,8 @@ export const doTier03Content = (event) => {
     // for whattever reason, CEu has this at EV.
     // so let's move it down to HV.
     event.remove({ id: "gtceu:shaped/distillation_tower" });
+    event.remove({ id: "gtceu:macerator/macerate_distillation_tower" });
+    event.remove({ id: "gtceu:arc_furnace/arc_distillation_tower" });
 
     event
         .shaped("gtceu:distillation_tower", ["CFC", "PHP", "CFC"], {
