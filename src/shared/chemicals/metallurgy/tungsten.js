@@ -126,10 +126,9 @@ export const addTungstenRecipes = (event) => {
     // TODO: Wulfenite.
 
     // 1-Butanol is made from the catalytic hydroformylation of propene.
-    // TODO: Cobalt catalyst? Maybe as an optional extra recipe. Is Cobalt needed yet?
     // C3H6 + CO + 2 H2 = C4H9OH
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/tungsten/1_butanol")
+        .chemical_reactor("nijika:chemicals/tungsten/1_butanol")
         .inputFluids(
             Fluid.of("gtceu:propene").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:carbon_monoxide").withAmount(1 * FluidAmounts.BUCKET),
@@ -137,7 +136,21 @@ export const addTungstenRecipes = (event) => {
         )
         .outputFluids(Fluid.of("gtceu:one_butanol").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(30 * 20);
+        .duration(15 * 20)
+        .circuit(1);
+
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/tungsten/1_butanol_fast")
+        .itemInputs("1x nijika:wilkinson_catalyst")
+        .inputFluids(
+            Fluid.of("gtceu:propene").withAmount(50 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:carbon_monoxide").withAmount(50 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(200 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(Fluid.of("gtceu:one_butanol").withAmount(50 * FluidAmounts.BUCKET))
+        .EUt(GTValues.V[GTValues.EV])
+        .duration(360 * 20)
+        .circuit(2);
 
     // 1-Butanol can be reacted with phosphoryl chloride to get tributyl phosphate, one of the
     // components of the LIX resin.
