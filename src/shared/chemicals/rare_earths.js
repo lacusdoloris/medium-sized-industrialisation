@@ -29,32 +29,32 @@ export const addRareEarthMaterials = (event) => {
         .color(0xff47a1)
         .components("3x gtceu:sodium", "1x gtceu:phosphorus", "3x gtceu:oxygen");
 
-    createDustIntermediate(event, "lanthanum_iii_oxide", 0x53a1c7).components(
+    createDustIntermediate(event, "lanthanum_iii_oxide", 0x53a1c7, true).components(
         "2x gtceu:lanthanum",
         "3x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "neodymium_iii_oxide", 0x18fc4e).components(
+    createDustIntermediate(event, "neodymium_iii_oxide", 0x18fc4e, true).components(
         "2x gtceu:neodymium",
         "3x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "samarium_iii_oxide", 0xf37a7a).components(
+    createDustIntermediate(event, "samarium_iii_oxide", 0xf37a7a, true).components(
         "2x gtceu:samarium",
         "3x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "yttrium_iii_oxide", 0x4561a8).components(
+    createDustIntermediate(event, "yttrium_iii_oxide", 0x4561a8, true).components(
         "2x gtceu:yttrium",
         "3x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "cerium_iv_oxide", 0x62b9d7).components(
+    createDustIntermediate(event, "cerium_iv_oxide", 0x62b9d7, true).components(
         "1x gtceu:cerium",
         "2x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "thorium_hydroxide", 0x232323).components(
+    createDustIntermediate(event, "thorium_hydroxide", 0x232323, true).components(
         "1x gtceu:thorium",
         "4x gtceu:oxygen",
         "4x gtceu:hydrogen"
