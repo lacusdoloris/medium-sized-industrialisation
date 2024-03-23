@@ -8,6 +8,11 @@
     "material.nijika.iron_oxide": "Iron(III) Oxide",
     "material.nijika.fluorite": "Fluorite",
     "material.gtceu.monazite": "Monzaite",
+    "material.gtceu.polyvinyl_chloride": "Poly(vinyl chloride)",
+    "material.gtceu.polyvinyl_acetate": "Poly(vinyl acetate)",
+    "material.gtceu.polyvinyl_butyral": "Poly(vinyl butyral)",
+    "material.gtceu.polydimethylsiloxane": "Poly(dimethylsiloxane)",
+    "material.gtceu.polytetrafluoroethylene": "Poly(tetrafluoroethylene)",
 
     "material.nijika.bocchinium": "§dBocchinium§r",
     "material.nijika.nijikaite": "§eNijikaite§r",
@@ -168,6 +173,9 @@
     "material.nijika.triphenylphosphine_chloride": "Triphenylphospine Chloride",
     "material.nijika.wilkinson_catalyst_raw": "Cloridotris(triphenylphosphene)rhodium(I)",
     "material.nijika.phosgene": "Phosgene",
+    "material.nijika.trimethylolpropane": "2-Ethyl-2-(hydroxymethyl)propane-1,3-diol",
+    "material.nijika.sodium_formate": "Sodium Formate",
+    "material.nijika.polyvinyl_alcohol": "Poly(vinyl alcohol)",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

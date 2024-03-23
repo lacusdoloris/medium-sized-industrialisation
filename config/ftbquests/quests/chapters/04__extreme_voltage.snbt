@@ -379,6 +379,31 @@
 			x: 2.5d
 			y: 8.0d
 		}
+		{
+			dependencies: ["42CF97F7842B306B"]
+			description: [
+				"&dLaminated Glass&r is the glass material used in IV, replacing tempered glass within chemical reactors. It's made from two sheets of glass with a layer of poly(vinyl butyral) pressed between them in the forming press."
+				""
+				"&aPolyvinyl butyral&r (hereafter referred to as PVB) has had its chemical chain corrected, requiring reacting &6butyraldehyde&r and &6polyvinyl alcohol&r together. And this time, you won't get away with using air as the polymerisation agent; instead, &dTrimethylolpropane&r is required to polymerise &dvinyl acetate&r, which can then be converted into PV-OH. "
+				""
+				"This requires &dprecious metal catalysts&r, including &dWilkinson's catalyst&r, which has its own complex processing chain. Time to get your notebook out again."
+			]
+			id: "717F948852D74D03"
+			min_width: 400
+			rewards: [{
+				id: "427491D38EB113D0"
+				item: "gtceu:hot_rhodium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "528E99DB055C203A"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			title: "Annoying TV Jingles"
+			x: 1.5d
+			y: 9.5d
+		}
 	]
 	title: "EV - So Cold"
 }

@@ -11,6 +11,7 @@ import { addChloroethaneMaterials, addChloroethaneRecipes } from "./chloroethane
 import { addZieglerProcessMaterials, addZieglerProcessRecipes } from "./fatty_alcohols";
 import { addMIBKMaterials, addMIBKProcess } from "./mibk";
 import { addPolystyreneMaterials, addPolysytreneRecipes } from "./polystyrene";
+import { addPolyvinylButyralMaterials, addPolyvinylButyralRecipes } from "./pvb";
 
 export const addOrganicChemMaterials = (event) => {
     addChloroethaneMaterials(event);
@@ -19,6 +20,7 @@ export const addOrganicChemMaterials = (event) => {
     addOrganoaluminiumMaterials(event);
     addZieglerProcessMaterials(event);
     addAmineMaterials(event);
+    addPolyvinylButyralMaterials(event);
 
     createAqueousIntermediate(event, "formaldehyde", 0x594d36);
 };
@@ -35,6 +37,7 @@ export const addOrganicChemRecipes = (event) => {
     addOrganoaluminiumRecipes(event);
     addZieglerProcessRecipes(event);
     addAmineRecipes(event);
+    addPolyvinylButyralRecipes(event);
 
     event.remove({ id: "gtceu:chemical_reactor/cyclohexane" });
     event.remove({ id: "gtceu:large_chemical_reactor/cyclohexane" });
@@ -54,7 +57,7 @@ export const addOrganicChemRecipes = (event) => {
     // 2 CH3OH + O2 = 2 CH2O + 2 H2O
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/formaldehyde")
-        .itemInputs("1x gtceu:tiny_iron_iii_oxide_dust")
+        .itemInputs("1x gtceu:tiny_iron_oxide_dust")
         .inputFluids(
             Fluid.of("gtceu:methanol").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:oxygen").withAmount(2 * FluidAmounts.BUCKET)
@@ -64,7 +67,8 @@ export const addOrganicChemRecipes = (event) => {
             Fluid.of("minecraft:water").withAmount(2 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(5 * 20);
+        .duration(5 * 20)
+        .circuit(2);
 
     // Catalytic toluene synthesis.
     // C6H6 + CH3OH = C6H5CH3 + H2O

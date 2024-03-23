@@ -296,6 +296,8 @@ export const customiseMaterials = () => {
     getMaterial("triphenylphosphine_oxide").setFormula("OPPh3");
     getMaterial("triphenylphosphine_chloride").setFormula("PPh3Cl2");
     getMaterial("wilkinson_catalyst_raw").setFormula("RhCl(PPh3)3");
+    getMaterial("trimethylolpropane").setFormula("CH3CH2C(CH2OH)3");
+    getMaterial("polyvinyl_alcohol").setFormula("(C2H3(OH))");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it
