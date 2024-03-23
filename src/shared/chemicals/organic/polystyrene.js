@@ -103,13 +103,13 @@ export const addPolysytreneRecipes = (event) => {
     // Polystyrene sulfonation to get... polystyrene sulfonate.
     // CH2CHC6H5 + HSO3Cl = CH2CHC6H4SO3H + HCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/polystyrene/styrene_sulfonation")
+        .chemical_reactor("nijika:chemicals/polystyrene/styrene_sulfonation")
         .inputFluids(
             Fluid.of("gtceu:styrene").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:chlorosulfuric_acid").withAmount(1 * FluidAmounts.BUCKET)
         )
+        .itemOutputs("1x gtceu:polystyrene_sulfonate_dust")
         .outputFluids(
-            Fluid.of("gtceu:polystyrene_sulfonate").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.HV])
@@ -119,8 +119,7 @@ export const addPolysytreneRecipes = (event) => {
     // CH2CHC6H4SO3H + NaOH = CH2CHC6H4SO3Na + H2O
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/polystyrene/sodium_polystyrene_sulfonate")
-        .inputFluids(Fluid.of("gtceu:polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET))
-        .itemInputs("1x gtceu:sodium_hydroxide_dust")
+        .itemInputs("1x gtceu:sodium_hydroxide_dust", "1x gtceu:polystyrene_sulfonate_dust")
         .outputFluids(
             Fluid.of("gtceu:sodium_polystyrene_sulfonate").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
