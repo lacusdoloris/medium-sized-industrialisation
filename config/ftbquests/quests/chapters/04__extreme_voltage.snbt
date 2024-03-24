@@ -404,6 +404,42 @@
 			x: 1.5d
 			y: 9.5d
 		}
+		{
+			dependencies: ["42CF97F7842B306B"]
+			description: [
+				"Instead of Magnetic Steel, IV and LuV use &aMagnetic Neodymium&r in their motor recipes."
+				""
+				"This means that you need to recover it from rare earth mixtures; &dMonzaite&r is a tier 2 base ore and is the primary source of rare earths."
+			]
+			id: "19FF1D5D4918BF4B"
+			tasks: [{
+				id: "321A09D6F823E61D"
+				item: "gtceu:magnetic_neodymium_rod"
+				type: "item"
+			}]
+			title: "Neodymium"
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["799B3170B5636046"]
+			description: [
+				"&dRhenium&r is one of the rarest elements in the overworld's crust; it's exclusively found as tiny concentrations in molybdenum ores. "
+				""
+				"The only way to get it as a byproduct of &dMolybdenite&r roasting, in the extracted flues. You can precipitate it out as the ammonium salt using tributyl phosphate, but this requires processing a significant amount of molybdenite."
+				""
+				"Rhenium's exclusive use is in &arhenium superalloy&r which is required for IV. This presents a bit of a conundrum!"
+			]
+			id: "478FE5E07E79C43B"
+			tasks: [{
+				id: "01569BB0177EF58D"
+				item: "gtceu:rhenium_dust"
+				type: "item"
+			}]
+			title: "Rhenium"
+			x: -0.5d
+			y: 9.5d
+		}
 	]
 	title: "EV - So Cold"
 }

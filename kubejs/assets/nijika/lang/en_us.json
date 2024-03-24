@@ -63,6 +63,7 @@
     "material.nijika.samarium_iii_oxide": "Samarium(III) Oxide",
     "material.nijika.yttrium_iii_oxide": "Yttrium(III) Oxide",
     "material.nijika.cerium_iv_oxide": "Cerium(IV) Oxide",
+    "material.nijika.europium_iii_oxide": "Europium(III) Oxide",
     "material.nijika.thorium_hydroxide": "Thorium Hydroxide",
     "material.nijika.lanthanum_nickel_alloy": "Lanthanum-Nickel Alloy",
     "material.nijika.neodymium_iii_oxide": "Neodymium(III) Oxide Dust",
@@ -176,6 +177,10 @@
     "material.nijika.trimethylolpropane": "2-Ethyl-2-(hydroxymethyl)propane-1,3-diol",
     "material.nijika.sodium_formate": "Sodium Formate",
     "material.nijika.polyvinyl_alcohol": "Poly(vinyl alcohol)",
+    "material.nijika.dehpa": "Di(2-ethylhexyl)phosphoric Acid",
+    "material.nijika.two_ethylhexanol": "2-Ethylhexanol",
+    "material.nijika.heavy_rare_earth_oxides": "Heavy Rare Earth Oxides",
+    "material.nijika.light_rare_earth_oxides": "Light Rare Earth Oxides",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",

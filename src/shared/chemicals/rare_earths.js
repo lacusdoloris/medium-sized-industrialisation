@@ -10,6 +10,9 @@ import { createChemicalIntermediate, createDustIntermediate } from "../materials
 
 // TODO: Bastanite, other rare earth containing minerals?
 // TODO: Uranium extraction.
+// TODO: Custom decomposition reactions.
+//
+// Heavy rare earths are samarium-ytterbium, light rare earths are lanthanum-promethium.
 
 export const addRareEarthMaterials = (event) => {
     event
@@ -18,7 +21,7 @@ export const addRareEarthMaterials = (event) => {
         .color(0xf7e3e1)
         .components("1x gtceu:calcium", "2x gtceu:hydrogen");
 
-    createChemicalIntermediate(event, "rare_earth_hydroxides", 0x1845ff);
+    createDustIntermediate(event, "rare_earth_hydroxides", 0xa7acd9);
     createDustIntermediate(event, "rare_earth_mixture", 0x18453f);
     createChemicalIntermediate(event, "rare_earth_chlorides", 0x447a12);
 
@@ -29,12 +32,16 @@ export const addRareEarthMaterials = (event) => {
         .color(0xff47a1)
         .components("3x gtceu:sodium", "1x gtceu:phosphorus", "3x gtceu:oxygen");
 
+    // light vs heavy rare earths.
+    createDustIntermediate(event, "heavy_rare_earth_oxides", 0x2c1736);
+    createDustIntermediate(event, "light_rare_earth_oxides", 0xc9a7d9);
+
     createDustIntermediate(event, "lanthanum_iii_oxide", 0x53a1c7, true).components(
         "2x gtceu:lanthanum",
         "3x gtceu:oxygen"
     );
 
-    createDustIntermediate(event, "neodymium_iii_oxide", 0x18fc4e, true).components(
+    createDustIntermediate(event, "neodymium_iii_oxide", 0x4d506b, true).components(
         "2x gtceu:neodymium",
         "3x gtceu:oxygen"
     );
@@ -58,6 +65,11 @@ export const addRareEarthMaterials = (event) => {
         "1x gtceu:thorium",
         "4x gtceu:oxygen",
         "4x gtceu:hydrogen"
+    );
+
+    createDustIntermediate(event, "europium_iii_oxide", 0x615d8c, true).components(
+        "2x gtceu:europium",
+        "3x gtceu:oxygen"
     );
 
     event
@@ -91,8 +103,7 @@ export const addRareEarthProcessingChain = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/rare_earths/monazite_decomposition")
         .itemInputs("1x gtceu:monazite_dust", "3x gtceu:sodium_hydroxide_dust")
-        .itemOutputs("1x gtceu:trisodium_phosphate_dust")
-        .outputFluids(Fluid.of("gtceu:rare_earth_hydroxides").withAmount(1 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:trisodium_phosphate_dust", "1x gtceu:rare_earth_hydroxides_dust")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(60 * 20);
 
@@ -100,36 +111,55 @@ export const addRareEarthProcessingChain = (event) => {
     // (Ce...)(OH)3 + 3HCL -> (Ce...)Cl3 + 3H20
 
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/rare_earths/rare_earth_hydroxide_chlorides")
-        .inputFluids(
-            Fluid.of("gtceu:rare_earth_hydroxides").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(3 * FluidAmounts.BUCKET)
-        )
+        .chemical_bath("nijika:chemicals/rare_earths/rare_earth_hydroxide_chlorides")
+        .itemInputs("1x gtceu:rare_earth_hydroxides_dust")
+        .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(3 * FluidAmounts.BUCKET))
         .itemOutputs("3x gtceu:rare_earth_chlorides_dust")
+        .outputFluids(Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
 
     // 3) Precipitation of uranium and thorium hydroxide.
     // (Ce...)Cl3 + 3NH4OH = (Ce...)OH + 3NH4Cl
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/rare_earths/rare_earth_precipitation")
-        .itemInputs("1x gtceu:rare_earth_chlorides_dust")
-        .inputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(3 * FluidAmounts.BUCKET))
-        .itemOutputs("1x gtceu:rare_earth_mixture_dust", "3x gtceu:ammonium_chloride_dust")
-        .chancedOutput("3x gtceu:small_thorium_hydroxide_dust", 5000, 5.0)
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(5 * 20);
+        .large_chemical_reactor("nijika:chemicals/rare_earths/rare_earth_precipitation")
+        .itemInputs("40x gtceu:rare_earth_chlorides_dust")
+        .inputFluids(Fluid.of("gtceu:ammonium_hydroxide").withAmount(3 * 40 * FluidAmounts.BUCKET))
+        .itemOutputs("40x gtceu:rare_earth_mixture_dust", "120x gtceu:ammonium_chloride_dust")
+        .chancedOutput("50x gtceu:small_thorium_hydroxide_dust", 5000, 0.0) // tfw no ranged outputs
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(20 * 20);
+
+    // Separate out the heavy ones from the light onees witth DEHPA.
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/rare_earths/dehpa_separation")
+        .itemInputs("50x gtceu:rare_earth_mixture_dust")
+        .inputFluids(Fluid.of("gtceu:dehpa").withAmount(75 * FluidAmounts.BUCKET))
+        .itemOutputs(
+            "35x gtceu:light_rare_earth_oxides_dust",
+            "15x gtceu:heavy_rare_earth_oxides_dust"
+        )
+        .outputFluids(Fluid.of("gtceu:dehpa").withAmount(60 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(35 * 20);
 
     // see Table 1. the numbers have been adjusted for gameplay purposes.
     event.recipes.gtceu
-        .centrifuge("nijika:chemicals/rare_earths/centrifuging_result")
-        .itemInputs("2x gtceu:rare_earth_mixture_dust")
+        .centrifuge("nijika:chemicals/rare_earths/light_centrifuging")
+        .itemInputs("2x gtceu:light_rare_earth_oxides_dust")
         .chancedOutput("1x gtceu:cerium_iv_oxide_dust", 6200.0, 500.0)
         .chancedOutput("1x gtceu:lanthanum_iii_oxide_dust", 3500.0, 500.0)
         .chancedOutput("1x gtceu:neodymium_iii_oxide_dust", 3000.0, 500.0)
-        .chancedOutput("1x gtceu:yttrium_iii_oxide_dust", 1300.0, 500.0)
-        .chancedOutput("1x gtceu:samarium_iii_oxide_dust", 7000, 750.0)
         .chancedOutput("1x gtceu:small_rare_earth_hydroxides_dust", 5000.0, 0.0)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(1 * 20);
+
+    event.recipes.gtceu
+        .centrifuge("nijika:chemicals/rare_earths/heavy_centrifuging")
+        .itemInputs("2x gtceu:heavy_rare_earth_oxides_dust")
+        .chancedOutput("1x gtceu:yttrium_iii_oxide_dust", 1300.0, 500.0)
+        .chancedOutput("1x gtceu:samarium_iii_oxide_dust", 7000.0, 750.0)
+        .chancedOutput("1x gtceu:small_europium_iii_oxide_dust", 670.0, 350.0)
         .EUt(GTValues.VA[GTValues.MV])
         .duration(1 * 20);
 
@@ -140,12 +170,12 @@ export const addRareEarthProcessingChain = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/rare_earth/lanthanum_reduction_calcium")
         .itemInputs(
-            "1x gtceu:lanthanum_iii_oxide_dust",
-            "3x gtceu:calcium_hydride_dust",
-            "10x gtceu:nickel_dust"
+            "3x gtceu:lanthanum_iii_oxide_dust",
+            "9x gtceu:calcium_hydride_dust",
+            "30x gtceu:nickel_dust"
         )
-        .itemOutputs("2x gtceu:lanthanum_nickel_alloy_ingot", "3x gtceu:quicklime_dust")
-        .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
+        .itemOutputs("6x gtceu:lanthanum_nickel_alloy_ingot", "9x gtceu:quicklime_dust")
+        .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(18 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.MV])
         .duration(90 * 20)
         .blastFurnaceTemp(1400);
