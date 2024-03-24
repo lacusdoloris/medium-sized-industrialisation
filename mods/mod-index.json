@@ -790,14 +790,14 @@
         "version_id": "XMT7Fj1v"
     },
     "u58R1TMW": {
-        "checksum": "8bea6ea71431917a4ea5fc8ee1bf88faded68e36e7d933f1e53036a81fe69ac54a821b9b132d160bb5e15a295a700abf61fc77b4d4734e97ce591464dbb75b94",
+        "checksum": "8e2758df4bfade7f46d41f0d1670525a0e07965ed8dd035b50b4a82568effb9abd6d3bd453403f5250d06ad538ac0431c9e2f8ea580b5271314322a466bea014",
         "client_side_only": false,
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.39+1.20.1",
-        "version_id": "gM2p6NVT"
+        "version": "1.0.0-beta.40+1.20.1",
+        "version_id": "aKnE8qBS"
     },
     "u6dRKJwZ": {
         "checksum": "50b55e7c3ad0bd92829ce466e7265fff09026d8676693a94c174da5c16e843d933ecfa60de4c84efdbabe9d9e144819d8a6dae15ba4ec615134f59c71bb26e20",
