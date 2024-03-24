@@ -401,7 +401,7 @@
 				type: "item"
 			}]
 			title: "Annoying TV Jingles"
-			x: 1.5d
+			x: 2.5d
 			y: 9.5d
 		}
 		{
@@ -418,7 +418,7 @@
 				type: "item"
 			}]
 			title: "Neodymium"
-			x: 2.5d
+			x: 3.5d
 			y: 9.5d
 		}
 		{
@@ -438,6 +438,22 @@
 			}]
 			title: "Rhenium"
 			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"42CF97F7842B306B"
+				"478FE5E07E79C43B"
+			]
+			description: ["&aRhenium Superalloy&r is the IV tier material. It's an alloy primarily consisting of nickel, with Rhenium and Ruthenium added to give it extra durability and resistance."]
+			id: "06C12D2885E03C19"
+			tasks: [{
+				id: "28E0CB1810E12277"
+				item: "gtceu:rhenium_superalloy_plate"
+				type: "item"
+			}]
+			title: "Superalloys"
+			x: 1.0d
 			y: 9.5d
 		}
 	]
