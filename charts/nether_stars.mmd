@@ -1,0 +1,38 @@
+%% Copyright (c) 2024 Lura Skye
+%% 
+%% This Source Code Form is subject to the terms of the Mozilla Public
+%% License, v. 2.0. If a copy of the MPL was not distributed with this
+%% file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+graph TB
+    Silver{{Silver}} -..-> _1
+    MA[Ethylene] & MB[Oxygen] --> _1[[Large Chemical Reactor]]:::machine
+    _1 --> W1[Water]
+    _1 --> MC[Ethylene Oxide]
+    MC & MD[Ammonia] & W2[Water] --> _2[[Chemical Reactor]]:::machine
+    _2 --> ME[Diethanolamine] & W3[Water]
+    ME & MSulfuric{{Sulfuric Acid}} --> _3[[Chemical Reactor]]:::machine
+    _3 --> Morpholine & W4[Water]
+
+    AlCl3 -..-> _4
+    HX1[Chlorine] & HX2[Butadiene]  ---> _4[[Chemical Reactor]]:::machine
+    _4 --> Hexachlorobutadiene & HX4[Hydrogen]
+
+    Hexachlorobutadiene & Morpholine --> _5[[Large Chemical Reactor]]:::machine
+    Toluene{{Toluene}} -..-> _5
+    _5 --> SQI1[TMBD] & MHX[Morpholine Hydrochloride]
+    SQI1 & SQW[Water] --> _6[[Chemical Reactor]]:::machine
+    _6 --> SQI2[MCB]
+    SQI2 & SQW2[Water] --> _7[[Large Chemical Reactor]]:::machine
+    _7 --> MHX1[Morpholine Hydrochloride] & SQO[Squaric Acid] 
+
+    SQO & NH4[Ammonium Hydroxide] --> _9[[Chemical Reactor]]:::machine
+    _9 --> NH4C4O4[Ammonium Squarate]
+
+    MNO2[Manganese Dioxide] & NO2[Nitrogen Dioxide] --> _10[[Chemical Reactor]]:::machine
+    _10 --> MNNO3[Manganese Nitrate]
+
+    MNNO3 & NH4C4O4 --> _11[[Chemical Reactor]]:::machine
+    _11 --> MNC4O4[Manganese Squarate] & NH4NO3[Ammonium Nitrate]
+
+    classDef machine fill:#111321,color:white

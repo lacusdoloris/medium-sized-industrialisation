@@ -6,6 +6,37 @@
 
 import { createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers"
 
+/*
+graph TB
+
+    MA[Ethylene] & MB[Oxygen] & Silver{{Silver Dust}} -..-> _1[Large Chemical Reactor]
+    _1 --> MC[Ethylene Oxide] & MF[Water]
+    MC & MD[Ammonia] & MF --> _2[Chemical Reactor]
+    _2 --> ME[Diethanolamine] & MF
+    ME & MSulfuric{{Sulfuric Acid}} --> _3[Chemical Reactor]
+    _3 --> MR[Morpholine] & MF
+
+    HX1[Chlorine] & HX2[Butadiene] & AlCl3{{AlCl3}} ---> _4[Chemical Reactor]
+    _4 --> HX3[Hexachlorobutadiene] & HX4[Hydrogen]
+
+    HX3 & MR & SA1{{Toluene}} --> _5[Large Chemical Reactor]
+    _5 --> SQI1[TMBD] & MHX[Morpholine Hydrochloride]
+    SQI1 & SQW[Water] --> _6[Chemical Reactor]
+    _6 --> SQI2[MCB] & MR
+    SQI2 & SQW2[Water] --> _7[Large Chemical Reactor]
+    _7 --> SQO[Squaric Acid] & MHX
+
+    MHX & SA[Sodium Hydroxide] --> _8[Chemical Reactor]
+    _8 --> MR
+
+    SQO & NH4[Ammonium Hydroxide] --> _9[Chemical Reactor]
+    _9 --> NH4C4O4[Ammonium Squarate]
+
+    MNO2[Manganese Dioxide] & NO2 --> _10[Chemical Reactor]
+    _10 --> MNNO3[Manganese Nitrate]
+
+    MNNO3 & NH4C4O4 --> MNC4O4[Manganese Squarate]
+*/
 
 
 export const addSquaricAcidMaterials = (event) => {
@@ -57,7 +88,7 @@ export const addSquaricAcidRecipes = (event) => {
     // epoxidation of ethylene over silver catalyst. 
     // The Mechanism of Ethylene Epoxidation Catalysis, 10.1007/s10562-012-0957-3
     // 
-    // So for every 20 moles of ethylene, 18 end up as ethylene oxide, and two end up as CO2/H2O.
+    // So for every 20 moles of ethylene, 18 end up as ethylene oxide, and two end up as CO2/H2O.3
     // Thus...
     // 20 CH2CH2 + 24 O2 = 18 C2H40 + 4 CO2 + 4 H2O
     event.recipes.gtceu
@@ -115,27 +146,8 @@ export const addSquaricAcidRecipes = (event) => {
             Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VHA[GTValues.EV])
-        .duration(8 * 20);
+        .duration(8 * 20);3
 
-    // Direct production of Squaric Acid at ZPM from hexachlorobutadiene and morpholine, using
-    // aluminium chloride and sulfuric as the catalysts.
-    // 4 H2O + Cl2CC(Cl)C(Cl)CCl2 + 6 O(CH2CH2)2NH = C4O2(OH)2 + 6 C4H10ClNO
-    event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/squaric_acid/squaric_fast")
-        .inputFluids(
-            Fluid.of("gtceu:hexachlorobutadiene").withAmount(1 * 40 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:morpholine").withAmount(6 * 40 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(4 * 40 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:sulfuric_acid").withAmount(250 * 40 * FluidAmounts.MB)
-        )
-        .itemInputs("8x gtceu:aluminium_chloride_dust")
-        .outputFluids(
-            Fluid.of("gtceu:squaric_acid").withAmount(1 * 40 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:morpholine_hydrochloride").withAmount(6 * 40 * FluidAmounts.BUCKET)
-        )
-        .EUt(GTValues.V[GTValues.ZPM])
-        .duration(60 * 20)  // 1.5 seconds per mole.
-        .circuit(7);
 
     // 1. In a process for the preparation of 3,4-dihydroxy-3-cyclobutene-1,2-dione by the steps of 
     // (a) reacting hexachlorobutadiene with an excess of morpholine, the morpholine being 
@@ -166,6 +178,26 @@ export const addSquaricAcidRecipes = (event) => {
         .duration(10 * 20)
         .circuit(3);
 
+    // Direct production of Squaric Acid at ZPM from hexachlorobutadiene and morpholine, using
+    // aluminium chloride and sulfuric as the catalysts.
+    // 4 H2O + Cl2CC(Cl)C(Cl)CCl2 + 6 O(CH2CH2)2NH = C4O2(OH)2 + 6 C4H10ClNO
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/squaric_acid/squaric_fast")
+        .inputFluids(
+            Fluid.of("gtceu:hexachlorobutadiene").withAmount(1 * 40 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:morpholine").withAmount(6 * 40 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(4 * 40 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:sulfuric_acid").withAmount(250 * 40 * FluidAmounts.MB)
+        )
+        .itemInputs("8x gtceu:aluminium_chloride_dust")
+        .outputFluids(
+            Fluid.of("gtceu:squaric_acid").withAmount(1 * 40 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:morpholine_hydrochloride").withAmount(6 * 40 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.V[GTValues.ZPM])
+        .duration(60 * 20)  // 1.5 seconds per mole.
+        .circuit(7);
+
     // Intermediate production of TMBD, catalysed by Toluene.
     // This does produce 3-Methoxyazetidine hydrochloride as a byproduct, but that is *literally*
     // useless. Just neutralise it and recycle the morpholine.
@@ -187,7 +219,6 @@ export const addSquaricAcidRecipes = (event) => {
         .duration(20 * 20);
 
 
-
     // Production of MCB from TMBD.
     // H2O + C16H24Cl3N3O3 = C8H8Cl3NO2 + 2 C4H9NO
     event.recipes.gtceu
@@ -204,7 +235,7 @@ export const addSquaricAcidRecipes = (event) => {
         .duration(10 * 20);
 
     // Finally, production of squaric acid from the hydrolysis of MCB.
-    // C8H8Cl3NO2 + 3 H2O = C4O2(OH)2 + C4H9NO + 3 HCl
+    // C8H8Cl3NO2 + 3 H2O = C4O2(OH)2 + C4H10ClNO + 2 HCl
     event.recipes.gtceu
         .large_chemical_reactor("nijika:chemicals/squaric_acid/squaric_slow")
         .inputFluids(
@@ -214,8 +245,8 @@ export const addSquaricAcidRecipes = (event) => {
         )
         .outputFluids(
             Fluid.of("gtceu:squaric_acid").withAmount(1 * 10 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:morpholine").withAmount(2 * 10 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(3 * 10 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:morpholine_hydrochloride").withAmount(1 * 10 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * 10 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.V[GTValues.EV])
         .duration(30 * 20);  // 3s per molen
