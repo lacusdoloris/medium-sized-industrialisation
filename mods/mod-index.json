@@ -99,6 +99,16 @@
         "version": "1.20-6.0.5",
         "version_id": "v85dnRYJ"
     },
+    "7tG215v7": {
+        "checksum": "cacd2e810a94000e9f2154d21c0a3053b89a6414fdc0727985dd0a5885b613daf9128451088d6dd02cbfff469415973b1cb88f82e7c14cd854425974c1e26cc5",
+        "client_side_only": false,
+        "name": "GregTechCEu Modern",
+        "pinned": false,
+        "project_id": "7tG215v7",
+        "selected": true,
+        "version": "mc1.20.1-1.1.4",
+        "version_id": "DJZY8hxL"
+    },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
         "client_side_only": true,
