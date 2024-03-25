@@ -456,6 +456,26 @@
 			x: 1.0d
 			y: 9.5d
 		}
+		{
+			dependencies: ["799B3170B5636046"]
+			description: [
+				"The humble &aNether Star&r is required for &aIV Emitters&r or &aSensors&r, as well as all of the tiers of emitters and sensors beyond that. But with mandatory peaceful mode, how are you going to get one?"
+				""
+				"Simple! It's the reaction of &dammonium squarate&r with &dmanganese nitrate&r. Ammonium squarate being the ammonia salt of &asquaric acid&r; or, its systemic IUPAC name: 3,4-Dihydroxycyclobut-3-ene-1,2-dione."
+				""
+				"This one took a lot of sifting through papers to figure out. You're welcome."
+			]
+			id: "1DD4216DE7D170EA"
+			min_width: 350
+			tasks: [{
+				id: "2B71D0A4EB2B139B"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "Manganese squarite"
+			x: -2.0d
+			y: 8.0d
+		}
 	]
 	title: "EV - So Cold"
 }

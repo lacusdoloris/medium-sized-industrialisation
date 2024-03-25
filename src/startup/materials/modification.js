@@ -246,7 +246,7 @@ export const customiseMaterials = () => {
 
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
-    getMaterial("ammonium_hydroxide").setFormula("[NH+4][OH-]");
+    getMaterial("ammonium_hydroxide").setFormula("[NH4+][OH-]");
     getMaterial("aluminium_hydroxide").setFormula("Al(OH)3");
     getMaterial("rare_earth_hydroxides").setFormula("(Ce...)(OH)3");
     getMaterial("rare_earth_mixture").setFormula("(Ce...)");
@@ -272,6 +272,9 @@ export const customiseMaterials = () => {
     getMaterial("ammonium_hexachlororhodate").setFormula("(NH4)2[RhCl6]");
     getMaterial("potassium_hexachlororuthenate").setFormula("K2[RuCl6]");
     getMaterial("rhodium_trichloride_trihydrate").setFormula("RhCl3.(H20)3");
+    getMaterial("manganese_nitrate").setFormula("Mn(NO3)2");
+    getMaterial("ammonium_squarate").setFormula("(NH4)2C4O4");
+    getMaterial("nether_star").setFormula("Mn(C4O4)");
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
@@ -299,6 +302,14 @@ export const customiseMaterials = () => {
     getMaterial("trimethylolpropane").setFormula("CH3CH2C(CH2OH)3");
     getMaterial("polyvinyl_alcohol").setFormula("(C2H3(OH))");
     getMaterial("dehpa").setFormula("(C8H17O)2PO2H");
+    getMaterial("hexachlorobutadiene").setFormula("Cl2CC(Cl)C(Cl)CCl2");
+    getMaterial("morpholine").setFormula("O(CH2CH2)2NH");
+    getMaterial("diethanolamine").setFormula("HN(C2H5OH)2");
+    getMaterial("ethylene_oxide").setFormula("C2H4O");
+    getMaterial("tmbd").setFormula("C16H24Cl3N3O3");
+    getMaterial("mcb").setFormula("C8H8Cl3NO2");
+    getMaterial("morpholine_hydrochloride").setFormula("C4H10ClNO");
+    getMaterial("squaric_acid").setFormula("C4O2(OH)2");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it

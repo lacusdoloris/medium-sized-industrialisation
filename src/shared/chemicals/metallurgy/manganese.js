@@ -24,6 +24,9 @@ export const addManganeseMaterials = (event) => {
         .color(0x535353)
         .components("1x gtceu:manganese", "1x gtceu:oxygen")
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING);
+
+    createDustIntermediate(event, "manganese_nitrate", 0xdba9c7, true)
+        .components("1x gtceu:manganese", "2x gtceu:nitrogen", "6x gtceu:oxygen");
 };
 
 /**
@@ -81,4 +84,14 @@ export const addManganeseProcessingRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(15 * 20)
         .blastFurnaceTemp(1600);
+
+    // Manganese nitrate synthesis.
+    // MnO2 + 2 NO2 = Mn(NO3)2
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/manganese/nitrate")
+        .itemInputs("1x gtceu:pyrolusite_dust")
+        .inputFluids(Fluid.of("gtceu:nitrogen_dioxide").withAmount(2 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:manganese_nitrate_dust")
+        .EUt(GTValues.VHA[GTValues.MV])
+        .duration(6 * 20);
 };

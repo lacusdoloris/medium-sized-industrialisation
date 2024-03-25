@@ -13,6 +13,7 @@ import { addZieglerProcessMaterials, addZieglerProcessRecipes } from "./fatty_al
 import { addMIBKMaterials, addMIBKProcess } from "./mibk";
 import { addPolystyreneMaterials, addPolysytreneRecipes } from "./polystyrene";
 import { addPolyvinylButyralMaterials, addPolyvinylButyralRecipes } from "./pvb";
+import { addSquaricAcidMaterials, addSquaricAcidRecipes } from "./squaric";
 
 export const addOrganicChemMaterials = (event) => {
     addChloroethaneMaterials(event);
@@ -23,6 +24,7 @@ export const addOrganicChemMaterials = (event) => {
     addAmineMaterials(event);
     addPolyvinylButyralMaterials(event);
     addDehpaMaterials(event);
+    addSquaricAcidMaterials(event);
 
     createAqueousIntermediate(event, "formaldehyde", 0x594d36);
 };
@@ -41,6 +43,7 @@ export const addOrganicChemRecipes = (event) => {
     addAmineRecipes(event);
     addPolyvinylButyralRecipes(event);
     addDehpaRecipes(event);
+    addSquaricAcidRecipes(event);
 
     event.remove({ id: "gtceu:chemical_reactor/cyclohexane" });
     event.remove({ id: "gtceu:large_chemical_reactor/cyclohexane" });
