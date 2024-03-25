@@ -4,6 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { createDustIntermediate } from "../../materials/helpers";
 import { nijikaId } from "../../utils";
 
 export const addManganeseMaterials = (event) => {
@@ -32,14 +33,14 @@ export const addManganeseMaterials = (event) => {
  */
 export const addManganeseProcessingRecipes = (event) => {
     // Standard carbinothermic and aluminothermic reductions of MnO2.
-    // 2 Mn2O3 + 3 C = 4 Mn + 3 CO2
-    // Mn2O3 + 2 Al = Al2O3 + 2 Mn
+    // MnO2 + C = Mn + CO2
+    // 3 MnO2 + 4 Al = 3 Mn + 2 Al2O3
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/manganese/pyrolusite_reduction_carbon")
-        .itemInputs("2x gtceu:pyrolusite_dust", "3x #nijika:carbon_rich_dusts")
-        .itemOutputs("4x gtceu:manganese_dust")
-        .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(3 * FluidAmounts.BUCKET))
+        .itemInputs("1x gtceu:pyrolusite_dust", "1x #nijika:carbon_rich_dusts")
+        .itemOutputs("1x gtceu:manganese_dust")
+        .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
         .circuit(2)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10 * 20)
@@ -47,8 +48,8 @@ export const addManganeseProcessingRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/manganese/pyrolusite_reduction_alumina")
-        .itemInputs("gtceu:pyrolusite_dust", "2x gtceu:aluminium_dust")
-        .itemOutputs("2x gtceu:manganese_dust", "1x gtceu:alumina_dust")
+        .itemInputs("3x gtceu:pyrolusite_dust", "4x gtceu:aluminium_dust")
+        .itemOutputs("3x gtceu:manganese_dust", "2x gtceu:alumina_dust")
         .circuit(2)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10 * 20)
