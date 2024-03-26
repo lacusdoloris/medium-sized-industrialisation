@@ -1,0 +1,56 @@
+%% Copyright (c) 2024 Lura Skye
+%% 
+%% This Source Code Form is subject to the terms of the Mozilla Public
+%% License, v. 2.0. If a copy of the MPL was not distributed with this
+%% file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+
+graph LR
+    PGS[Platinum Group Sludge] & HCl --> _1[[Chemical Bath]]:::machine
+    _1 -..-> AgCl[Silver Chloride]
+    _1 --> DPGS[PG Solution #1]
+
+    DPGS & MIBK[Methyl Isobutyl Ketone] --> _2[[Chemical Reactor]]:::machine
+    _2 --> GPM[Gold-Palladium Mixture] & DPGS1[PG Solution #2]
+
+    GPM & AH1[Ammonium Hydroxide] --> _3[[Large Chemical Reactor]]:::machine
+    _3 --> PdCl6[Ammonium hexachloropalladate]
+    _3 -..-> AuOH[Gold Hydroxide]
+
+    PdCl6 & PdH2[Hydrogen] & PdNaOH[Sodium Hydroxide] --> _4[[Large Chemical Reactor]]:::machine
+    _4 --> Palladium>Palladium]:::endProduct & PdA[Ammonia] & PdB[Salt]
+
+    DPGS1 & PtTR[Trioctylamine] & PtH2O2[Hydrogen Peroxide] --> _5[[Large Chemical Reactor]]:::machine
+    _5 --> PtIrMix[Platinum-Iridium Mixture] & DPGS2[PG Solution #3]
+
+    PtIrMix & PtIrH2O2[Hydrogen Peroxide] & PtNH4[Ammonium Hydroxide] --> _6[[Large Chemical Reactor]]:::machine
+    _6 --> PtIrMix2[Stripped Platinum-Iridium Mixture]
+    PtIrMix2 & PtTR2[Trioctylamine] --> _7[[Chemical Reactor]]
+    _7 --> IrCl6[Ammonium hexachloroiridate] & PtAm[Platinum/Amine Mixture]
+
+    IrCl6 & IrNaOH[Sodium Hydroxide] & IrH2[Hydrogen] --> _8[[Large Chemical Reduction]]:::machine
+    _8 --> Iridium>Iridium]:::endProduct & IrA[Ammonia] & IrB[Salt]
+
+    PtAm & PtOH1[Sodium Hydroxide] --> _9[[Chemical Reactor]]
+    _9 --> PtCl6[Platinum Hexachloroplatinate]
+
+    PtCl6 & PtOH2[Sodium Hydroxide] & PtH2[Hydrogen] --> _10[[Large Chemical Reactor]]:::machine
+    _10 --> Platinum>Platinum]:::endProduct & PtA[Ammonia] & PtB[Salt]
+
+    DPGS2 & OsFm[Formaldehyde] & OsH2O2[Hydrogen Peroxide] --> _11[[Large Chemical Reactor]]:::machine
+    _11 --> Osmium>Osmium]:::endProduct & CO2[Carbon Dioxide] & DPGS3[PG Solution #4]
+
+    DPGS3 & NH4CL[Ammonium Chloride] & RhH2O2[Hydrogen Peroxide] --> _12[[Large Chemical Reactor]]:::machine
+    _12 --> RhCl6[Ammonium Hexachlororhodate] & DPGS4[PG Solution #5]
+
+    RhCl6 & RhOH[Sodium Hydroxide] & RhH2[Hydrogen] --> _13[[Large Chemical Reactor]]:::machine
+    _13 --> Rhodium>Rhodium]:::endProduct & RhA[Ammonia] & RhB[Salt]
+
+    DPGS4 & KCl[Potassium Chloride] --> _14[[Large Chemical Reactor]]:::machine
+    _14 --> RuCl6[Potassium Hexachlororuthenate] & KOH[Potassium Hydroxide]
+
+    RuCl6 & RuH2[Hydrogen] --> _15[[Large Chemical Reactor]]:::machine
+    _15 --> Ruthenium>Ruthenium]:::endProduct & RuKCl[Potassium Chloride]
+
+    classDef machine fill:#111321,color:white
+    classDef endProduct fill:#4ed9af,color:black
