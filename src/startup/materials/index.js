@@ -8,6 +8,7 @@ import { GasTier, nijikaId } from "../../shared/utils";
 import { createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChemicalMaterials } from "../../shared/chemicals";
+import { addSlagProcessingMaterials } from "../../server/misc/slag_processing";
 
 /**
  * Adds new custom materials.
@@ -15,6 +16,7 @@ import { addChemicalMaterials } from "../../shared/chemicals";
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
     addChemicalMaterials(event);
+    addSlagProcessingMaterials(event);
 
     // misc stuff.
     event.create(nijikaId("blood")).liquid().color(0xff0000);

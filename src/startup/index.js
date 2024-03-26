@@ -37,6 +37,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", (evt) => {
 
 StartupEvents.registry("item", (ev) => {
     ev.create(nijikaId("slag"));
+    ev.create(nijikaId("catalysator_brown"));
 
     addCatalystItems(ev);
 });

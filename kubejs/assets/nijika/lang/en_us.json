@@ -192,6 +192,7 @@
     "material.nijika.manganese_nitrate": "Manganese Nitrate",
     "material.nijika.ammonium_nitrate": "Ammonium Nitrate",
     "material.nijika.ammonium_squarate": "Ammonium Squarate",
+    "material.nijika.mineral_sludge": "Mineral Sludge",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
@@ -203,6 +204,9 @@
     "gtceu.ore_sorting": "Ore Sorting",
 
     "item.nijika.slag": "Ore Slag",
+    "item.nijika.catalysator_brown": "Mineral Catalyst",
+    "item.nijika.catalysator_green": "Crystal Catalyst",
+    "item.nijika.catalysator_orange": "Hybrid Catalyst",
     "item.nijika.wilkinson_catalyst": "Wilkinson's Catalyst",
 
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",

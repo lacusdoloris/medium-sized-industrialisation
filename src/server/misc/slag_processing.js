@@ -4,7 +4,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-// https://www.researchgate.net/figure/Typical-chemical-compositions-of-slag-produced-by-titanomagnetite-smelters-mass_tbl2_350654424
+import { createAqueousIntermediate } from "../../shared/materials/helpers";
+
+
+export const addSlagProcessingMaterials = (event) => {
+    createAqueousIntermediate(event, "slag_slurry", 0x575445);
+    createAqueousIntermediate(event, "mineral_sludge", 0xb1aa86);
+}
 
 /**
  * Adds slag processing recipes.
@@ -42,4 +48,36 @@ export const addSlagProcessingRecipes = (event) => {
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
         .circuit(18);
+
+    // dissolve slag with sulfuric acid to get slag slurry
+    event.recipes.gtceu
+        .chemical_bath("nijika:misc/slag_processing/slag_slurry")
+        .itemInputs("4x nijika:slag")
+        .inputFluids(
+            Fluid.of("gtceu:sulfuric_acid").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:slag_slurry").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20);
+
+    // pass slag slurry thru carbon to get mineral sludge
+    event.recipes.gtceu
+        .ore_washer("nijika:misc/slag_processing/mineral_sludge")
+        .itemInputs("2x #nijika:carbon_rich_dusts")
+        .inputFluids(Fluid.of("gtceu:slag_slurry").withAmount(1 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:mineral_sludge").withAmount(750 * FluidAmounts.MB))
+        .chancedOutput("gtceu:tiny_magnetite_dust", 1100.0, 750.0)
+        .chancedOutput("gtceu:tiny_alumina_dust", 1500.0, 750.0)
+        .EUt(GTValues.VH[GTValues.HV])
+        .duration(10 * 20);
+
+    // finally, autoclave it into mineral catalysts.
+    event.recipes.gtceu
+        .autoclave("nijika:misc/slag_processing/mineral_catalyst")
+        .inputFluids(Fluid.of("gtceu:mineral_sludge"))
+        .itemOutputs("1x nijika:catalysator_brown")
+        .EUt(GTValues.V[GTValues.HV])
+        .duration(13 * 20 + 15);
 };
