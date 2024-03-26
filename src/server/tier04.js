@@ -10,6 +10,8 @@ import { GT_MACHINE_TIERS } from "../shared/definition";
 export const doTier04Content = (event) => {
     event.remove({ id: "gtceu:assembler/casing_high_temperature_smelting" });
 
+    event.remove({ id: "gtceu:macerator/macerate_end_stone" });
+
     // Calcium silicate is commonly used as a safe alternative to asbestos for high-temperature
     // insulation materials. [citation needed]
     //
