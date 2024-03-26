@@ -266,7 +266,7 @@ export const GT_MACHINE_TIERS = {
         motorWire: Material.gtceu("graphene"),
         magnetic: Material.gtceu("magnetic_neodymium"),
         glass: "gtceu:laminated_glass",
-        pipe: Material.gtceu("titanium"),
+        pipe: Material.gtceu("nitinol"),
         heating: Material.gtceu("nichrome"), // changed from tungstensteel
         rotor: Material.gtceu("tungsten_steel"),
         grinder: "gtceu:diamond_grinding_head",
