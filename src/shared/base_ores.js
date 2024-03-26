@@ -64,7 +64,7 @@ const COMBO_SORTING = {
         ["kitakitaite", "ryoite", "molybdenite"],
         // approved by hamazi-san herself!
         ["bocchinium", "yoyokite", "bauxite"],
-    ]
+    ],
 };
 
 /**

@@ -25,8 +25,11 @@ export const addManganeseMaterials = (event) => {
         .components("1x gtceu:manganese", "1x gtceu:oxygen")
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING);
 
-    createDustIntermediate(event, "manganese_nitrate", 0xdba9c7, true)
-        .components("1x gtceu:manganese", "2x gtceu:nitrogen", "6x gtceu:oxygen");
+    createDustIntermediate(event, "manganese_nitrate", 0xdba9c7, true).components(
+        "1x gtceu:manganese",
+        "2x gtceu:nitrogen",
+        "6x gtceu:oxygen"
+    );
 };
 
 /**

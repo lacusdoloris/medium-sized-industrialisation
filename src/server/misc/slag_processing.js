@@ -6,11 +6,10 @@
 
 import { createAqueousIntermediate } from "../../shared/materials/helpers";
 
-
 export const addSlagProcessingMaterials = (event) => {
     createAqueousIntermediate(event, "slag_slurry", 0x575445);
     createAqueousIntermediate(event, "mineral_sludge", 0xb1aa86);
-}
+};
 
 /**
  * Adds slag processing recipes.
@@ -53,12 +52,8 @@ export const addSlagProcessingRecipes = (event) => {
     event.recipes.gtceu
         .chemical_bath("nijika:misc/slag_processing/slag_slurry")
         .itemInputs("4x nijika:slag")
-        .inputFluids(
-            Fluid.of("gtceu:sulfuric_acid").withAmount(2 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(
-            Fluid.of("gtceu:slag_slurry").withAmount(2 * FluidAmounts.BUCKET)
-        )
+        .inputFluids(Fluid.of("gtceu:sulfuric_acid").withAmount(2 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:slag_slurry").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20);
 
