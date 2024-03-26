@@ -35,7 +35,7 @@ const BASE_ORES = {
         seed: 649130079,
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["chalcopyrite", "sphalerite", "tricalcium_phosphate"],
+        intoOres: ["cassiterite", "sphalerite", "tricalcium_phosphate"],
         gem: "ruby",
     },
 
@@ -43,7 +43,7 @@ const BASE_ORES = {
         seed: 1321746503,
         colour: 0x995678,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: ["cassiterite", "galena", "silver"],
+        intoOres: ["chalcopyrite", "galena", "silver"],
         gem: "opal",
     },
 
@@ -54,6 +54,17 @@ const BASE_ORES = {
         intoOres: ["bauxite", "chromite", "monazite"],
         gem: "realgar",
     },
+};
+
+const COMBO_SORTING = {
+    brown: [
+        ["bocchinium", "nijikaite", "hematite"],
+        ["ryoite", "bocchinium", "pyrolusite"],
+        ["kitakitaite", "nijikaite", "cassiterite"],
+        ["kitakitaite", "ryoite", "molybdenite"],
+        // approved by hamazi-san herself!
+        ["bocchinium", "yoyokite", "bauxite"],
+    ]
 };
 
 /**
@@ -139,5 +150,20 @@ export const addBaseOreRecipes = (event) => {
             .duration(5 * 20)
             .EUt(GTValues.VA[GTValues.EV])
             .circuit(2);
+    }
+
+    // Combination sorting.
+    for (let [inp1, inp2, output] of COMBO_SORTING.brown) {
+        event.recipes.gtceu
+            .ore_sorting(`nijika:base_ores/combo_sorting/${output}`)
+            .itemInputs(
+                `3x gtceu:crushed_${inp1}_ore`,
+                `3x gtceu:crushed_${inp2}_ore`,
+                "1x nijika:catalysator_brown"
+            )
+            .itemOutputs(`6x ${goldify(output)}`)
+            .duration(10 * 20)
+            .EUt(GTValues.V[GTValues.HV])
+            .circuit(11);
     }
 };
