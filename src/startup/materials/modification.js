@@ -63,7 +63,10 @@ export const customiseMaterials = () => {
 
         let gearMaterial = tier.materials.gear;
         if (typeof gearMaterial !== "undefined") {
-            getMaterial(gearMaterial.id).addFlags(GTMaterialFlags.GENERATE_GEAR);
+            getMaterial(gearMaterial.id).addFlags(
+                GTMaterialFlags.GENERATE_GEAR,
+                GTMaterialFlags.GENERATE_SMALL_GEAR
+            );
         }
 
         getMaterial(tier.materials.rotor.id).addFlags(
