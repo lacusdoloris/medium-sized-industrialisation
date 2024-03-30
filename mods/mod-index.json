@@ -70,14 +70,14 @@
         "version_id": "8w9SsgMR"
     },
     "5ZwdcRci": {
-        "checksum": "a52e698dadf564ee7596bc6472a2bee9c5fc71734da6cf594e4164f907eea01cbdd82a6b474b02894d5550865ecd94d26fc70fa38481a6ed74a2dc5197663f75",
+        "checksum": "4b97668938e1bc561d23861e00c04f8ab56cb1f3476260324fce5fb11dfaccbdabb77b44c79a6007a9c2589ba865492095af2b4130edacade48c10ae1044f19b",
         "client_side_only": true,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
         "selected": true,
-        "version": "1.2.10+1.20.4-forge",
-        "version_id": "v2sxhCOI"
+        "version": "1.2.11+1.20.4-forge",
+        "version_id": "7DjvwG1b"
     },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
@@ -100,14 +100,14 @@
         "version_id": "v85dnRYJ"
     },
     "7tG215v7": {
-        "checksum": "cacd2e810a94000e9f2154d21c0a3053b89a6414fdc0727985dd0a5885b613daf9128451088d6dd02cbfff469415973b1cb88f82e7c14cd854425974c1e26cc5",
+        "checksum": "050e38f177a97f428e6c8a1eef2787b65e16478d228f55609bdb17a0f7b7025061e661ed0c11ab92b127407eb0bc4920c04ad75a8aadb2ee372febe10bbb799b",
         "client_side_only": false,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.1.4",
-        "version_id": "DJZY8hxL"
+        "version": "mc1.20.1-1.1.4.a",
+        "version_id": "C87fB3nv"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -250,14 +250,14 @@
         "version_id": "bWPRSm4H"
     },
     "G1hIVOrD": {
-        "checksum": "211f6aa2e3ee7c5b04ead646fc0460a26ab937ce0091e76b6de5b47410fae78449a2f7138d16a66051287e30dbf9f3a5edea952bba654481dd35dc46616d301b",
+        "checksum": "afff5a58b5c79314f3039474319cd77067b128691fb7006a855e3836ac1710adab2da61bd122f949890f2fc4189524d92629281c7d9a0b0f0601ad758262a1b4",
         "client_side_only": false,
         "name": "Resourceful Lib",
         "pinned": false,
         "project_id": "G1hIVOrD",
         "selected": false,
-        "version": "2.1.23",
-        "version_id": "6ITzrUzY"
+        "version": "2.1.24",
+        "version_id": "l4YYn2wS"
     },
     "G41VOlFe": {
         "checksum": "c31ac64ac4cbac2d0d4463355d734d441f2a6bf1723e954691857c0c6ef7e490a1656ac6f7c4f4a0ff439d5fc7e6204493cade47c30bacd78cb16e8e665d07d2",
@@ -290,14 +290,14 @@
         "version_id": "dKpG1Cq3"
     },
     "IhBYAM6m": {
-        "checksum": "b23581b4c6ad4cbec6e95c176077959a62ce63e34db952688d93f9d54a14577ab32af165c09fe1f283825768ecbd7371a94a4f6e9d3a6375184b47b6abe6a1d5",
+        "checksum": "5ef7d01aa6f668f59b92c63252fc494cae4908efd139e0de2cf0cf6ddb0ceacc789afe51dacc1c953c78071495f387c0c8501aa295a667792c90e48370cff6af",
         "client_side_only": false,
         "name": "Enhanced Workbenches",
         "pinned": false,
         "project_id": "IhBYAM6m",
         "selected": true,
-        "version": "1.1+1.20.1",
-        "version_id": "reJvM5cv"
+        "version": "1.1.1+1.20.1",
+        "version_id": "4dXNFbp0"
     },
     "JJNYRb4B": {
         "checksum": "3350d59cefeeec9141904d7048e637a3d4be04943599ece6a7be78507c69b52e7457db728ba2a648c03ce7b56ceabee2d2c1f6212999535cc8e3d8bd98c946fe",
@@ -400,14 +400,14 @@
         "version_id": "8tVulaR5"
     },
     "ResbpANg": {
-        "checksum": "26f0d700d207cae67df3c5d7941c546a2e56b4718fb055ade34b694aa89d903135850b888a1c685646294d6d3e68ba2be957811fc3e2516275a79a98dbfa0a79",
+        "checksum": "14c621acdd9a65b0a1516fedd702b38cf736531e8ed1c44118abf9968efbab4bf0d8415c2a4fbef7dc0f87eb888e77d9237e2c3b52912b09183fa3c0d9ae45e1",
         "client_side_only": false,
         "name": "Create Ore Excavation",
         "pinned": false,
         "project_id": "ResbpANg",
         "selected": true,
-        "version": "1.20.1-1.4.2",
-        "version_id": "GFgnNddX"
+        "version": "1.20.1-1.4.3",
+        "version_id": "WI7OOfLA"
     },
     "S1tndFDa": {
         "checksum": "c985ee61ad6a42629b0bb48fe504b3826afb12e507a72faf1cdc56eeac7b6e3de8e92fbab1c1c153ac47c6c98359296c63cc7921888b387e6be7371893e07e2b",
@@ -430,14 +430,14 @@
         "version_id": "hei9cDRa"
     },
     "TkC4Gtkt": {
-        "checksum": "2d48b053edc232e1b9d2ccfa995fc1e4e2d7db858d83438ad3be577ebbc922b68e68782402aec52851b9561d688fa0dee97d763e7c2cd2ec9adff738bca90803",
+        "checksum": "a894b2f7fb34f6c9f2db271b65cdf3c41729ac4edd4d08ad941b17ae476b629ee2d31bc65d75adc69d45700cb58ba323ae5cd8672b63dde24210a3b0d6b88bd8",
         "client_side_only": true,
         "name": "Lazurite",
         "pinned": false,
         "project_id": "TkC4Gtkt",
         "selected": true,
-        "version": "1.0.3+mc1.20.1",
-        "version_id": "7XSkM0oe"
+        "version": "1.0.4+mc1.20.1",
+        "version_id": "3Ro7216v"
     },
     "UxYNfnfx": {
         "checksum": "61fb2a73131fdfa5de73b5ed85ef381555f9b6ab6267097494af240666f40cb6fa65d54358e03b013d0a9875f94940401d23f2049cdb537253862862eef9f4bc",
@@ -650,14 +650,14 @@
         "version_id": "1MKTLiiG"
     },
     "lo90fZoB": {
-        "checksum": "a3c6cb463a16a63b4b3357f9acd00e987da3a517ea97650b7bfc13b5b6a6af131db49d5fc306d85c525f0bfc5a2d97561a1bddaf84e7b9d5c90abc09a0a0567e",
+        "checksum": "1f41856ab1080fcc32e5b69876f5029348d30575f1e434fa3d3d5fdff034666ae5e97b39f7efcc5aa28e8912d183a939f3ad0f81b25145753ab087c67f531c0f",
         "client_side_only": false,
         "name": "Heracles",
         "pinned": false,
         "project_id": "lo90fZoB",
         "selected": true,
-        "version": "1.1.11",
-        "version_id": "8zxzPvyF"
+        "version": "1.1.12",
+        "version_id": "UVyQoEfQ"
     },
     "nU0bVIaL": {
         "checksum": "d6ecdc347f0c418bd82c9096ca8e3db428e67b245d915d8a484268af99f8ea7e0cb6040cb26be42aa935baf4cb4fbab598449adc6a17f2197ee79504493a5a3b",
@@ -721,7 +721,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": true,
+        "client_side_only": false,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -770,14 +770,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "0f51dc6eb537f3e11b9dea671ec5ea642db7c2d52fc27f3be335b35625f2d2b42f51c36618ce67bc6902652df7dae2c6f277eb74c0e2e8d57f31defcf8aa79d5",
+        "checksum": "29be7af5349f7b9b493f712ac2b6beac2b5ba25d42fddbcfd83e7e7ed1f3542b3f392dbf1a30d55b21172d8588d11f5e840ba512278776dcf4c32d8b91ae9aca",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.9+mc1.20.1",
-        "version_id": "H9CSyX47"
+        "version": "0.3.11+mc1.20.1",
+        "version_id": "haHMWqFb"
     },
     "soWqucCB": {
         "checksum": "f333fe4399b29d4bc5f93fa423d0b1acd84c9e1e5dbe94f077937fe2ff583d287a2fcc088acc775efe5cec383b791054531086e7136239d1f248e004280e0179",
