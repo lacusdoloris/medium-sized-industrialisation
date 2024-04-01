@@ -30,14 +30,14 @@
         "version_id": "TgyyhU8M"
     },
     "2gvRmQXx": {
-        "checksum": "75b2a1ee57f494a9d2c22ca4bd7cce5c640ddc8f45ae319b3f98c9384133e8b488487ec6d40a52cd10dfbd77a495d324d5cfc9002f534a520a5f4e259985ec5f",
+        "checksum": "a46e9f13a32685ed66570edcb55f60f9f8a8a1a270cd2238a199fcc1cd0ce6fa14608195f5875a1b573611f70d6b848dae9186ff8ae15f76b5feada8c345dd00",
         "client_side_only": false,
         "name": "Radium",
         "pinned": false,
         "project_id": "2gvRmQXx",
         "selected": true,
-        "version": "0.12.2+git.5f80f74",
-        "version_id": "RxCu0tXs"
+        "version": "0.12.3+git.e2cf570",
+        "version_id": "cLwWyDwB"
     },
     "2u6LRnMa": {
         "checksum": "13dcddc9b46fdfa93b5752307eb1afc409f37b101becbc8674d8c41e9be871d346fb18ae04cbc1d2bd6725992dc97d676cf411eb4fb8e17dd20e98150cf80c62",
@@ -100,14 +100,14 @@
         "version_id": "v85dnRYJ"
     },
     "7tG215v7": {
-        "checksum": "050e38f177a97f428e6c8a1eef2787b65e16478d228f55609bdb17a0f7b7025061e661ed0c11ab92b127407eb0bc4920c04ad75a8aadb2ee372febe10bbb799b",
+        "checksum": "be1f8c8d2fc44a44db44ecc7796a795cfe8c61045376cfd84a9ac1800dd7b5ae7c408b925c0c5e6f427c5fd3d7b819291a3f20408034a64c946eeae2e64788a4",
         "client_side_only": false,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.1.4.a",
-        "version_id": "C87fB3nv"
+        "version": "mc1.20.1-1.1.4.b",
+        "version_id": "vUGl54cK"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
