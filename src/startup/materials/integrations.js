@@ -40,5 +40,5 @@ export const addIntegrationMaterials = (event) => {
         .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:certus_quartz", "1x gtceu:stainless_steel", "1x gtceu:sky_stone")
         .blastTemp(2700, GasTier.MID, GTValues.VA[GTValues.HV])
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION);
 };

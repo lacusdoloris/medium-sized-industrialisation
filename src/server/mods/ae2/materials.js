@@ -1,12 +1,12 @@
 // Copyright (c) 2024 Lura Skye
-// 
+//
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 /**
  * Adjusts the recipes for AE2 materials.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustAe2MaterialsRecipes = (event) => {
@@ -84,4 +84,4 @@ export const adjustAe2MaterialsRecipes = (event) => {
         .itemOutputs("1x ae2:sky_dust")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(10 * 20);
-}
+};

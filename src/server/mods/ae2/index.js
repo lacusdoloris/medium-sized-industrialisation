@@ -20,44 +20,38 @@ export const adjustAe2Recipes = (event) => {
     // clean up inscriber -> dust recipes
     event.remove({ type: "ae2:inscriber", output: "#forge:dusts" });
 
-    event.remove({ id: "ae2:charger/meteorite_compass"});
+    event.remove({ id: "ae2:charger/meteorite_compass" });
 
     // clean up a lot of recipes to make it clearer how to actually get certus quartz.
     event.remove({ output: "#forge:gems/certus_quartz", type: "minecraft:smelting" });
     event.remove({ output: "#forge:gems/certus_quartz", type: "gtceu:macerator" });
-    
-    event.shaped(
-        "2x ae2:blank_pattern",
-        ["QGQ", "GCG", "VVV"],
-        {
+
+    event
+        .shaped("2x ae2:blank_pattern", ["QGQ", "GCG", "VVV"], {
             Q: "ae2:quartz_glass",
             G: "#forge:dusts/glowstone",
             V: "#forge:plates/polyvinyl_chloride",
             C: "#forge:gems/certus_quartz",
-        }
-    ).id("ae2:network/crafting/patterns_blank");
+        })
+        .id("ae2:network/crafting/patterns_blank");
 
-    event.shaped(
-        "2x ae2:basic_card",
-        ["SI ", "RCI", "SI "],
-        {
+    event
+        .shaped("2x ae2:basic_card", ["SI ", "RCI", "SI "], {
             S: "#forge:plates/silver",
             I: "#forge:plates/iron",
             R: "gtceu:fine_red_alloy_wire",
             C: "ae2:calculation_processor",
-        }
-    ).id("ae2:materials/basiccard");
+        })
+        .id("ae2:materials/basiccard");
 
-    event.shaped(
-        "2x ae2:advanced_card",
-        ["DP ", "RCP", "DP "],
-        {
+    event
+        .shaped("2x ae2:advanced_card", ["DP ", "RCP", "DP "], {
             D: "#forge:gems/diamond",
             P: "#forge:plates/iron",
             R: "#forge:dusts/redstone",
-            C: "ae2:basic_card"
-        }
-    ).id("ae2:materials/advancedcard")
+            C: "ae2:basic_card",
+        })
+        .id("ae2:materials/advancedcard");
 
     adjustAe2MaterialsRecipes(event);
     adjustAe2CableRecipes(event);
