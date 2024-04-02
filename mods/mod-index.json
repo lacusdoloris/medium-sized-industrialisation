@@ -540,14 +540,14 @@
         "version_id": "stb5nE30"
     },
     "bb2EpKpx": {
-        "checksum": "4433fa3f3ed126eee6fbc317fdde594732b38dfe83893bc9c6c70dd43aa181a7264682d4d30230c6632f166e2d5856f10995e79e0e05949c29825007d5a52c08",
+        "checksum": "1006f9fd1a6f7c72427f6da1ed634878a0bac7750a309b859d14b008b434b84a8bbf1f038b6c4921464411db2c76927bf87243c3210e7c3a0ea03fbedf2704b6",
         "client_side_only": false,
         "name": "Argonauts",
         "pinned": false,
         "project_id": "bb2EpKpx",
         "selected": true,
-        "version": "1.0.8",
-        "version_id": "WJ2oWLzK"
+        "version": "1.0.9",
+        "version_id": "Ibub9zqP"
     },
     "czWH0F4i": {
         "checksum": "565864443714a524237e55aec0f0b0894f2d287faeda73fcb85d44f37103d50dba66d91d12daa67d74c32ad1082f8e40dcf81414cd31d7152073b093e5ff09e5",
@@ -731,7 +731,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": false,
+        "client_side_only": true,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",

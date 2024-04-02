@@ -36,6 +36,7 @@ mode = "fancy"
 				camel = true
 				rabbit = true
 				cat = true
+				armor_stand = true
 				drowned = true
 				ghast = true
 				sheep = true
