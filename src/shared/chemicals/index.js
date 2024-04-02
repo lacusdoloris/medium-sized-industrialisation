@@ -150,6 +150,6 @@ export const addChemicalProcessingRecipes = (event) => {
         .chancedOutput("gtceu:marble_dust", 2222.0, 0.0)
         .chancedOutput("gtceu:salt_dust", 2800.0, 0.0)
         .chancedOutput("gtceu:metal_mixture_dust", 650.0, 0.0)
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VA[GTValues.LV])
         .duration(6 * 20 + 10);
 };
