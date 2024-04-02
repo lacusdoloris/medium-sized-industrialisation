@@ -113,7 +113,7 @@ export const adjustVariousMiscRecipes = (event) => {
         .electric_blast_furnace("nijika:misc/end_cheese")
         .itemInputs("2x cheese:cheese", "1x minecraft:bread", "1x #forge:dusts/ender_pearl")
         .itemOutputs("cheese:grilled_cheese")
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.MV])
         .duration(20)
         .blastFurnaceTemp(453.15);
 
