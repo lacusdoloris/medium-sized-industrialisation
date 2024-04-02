@@ -46,7 +46,7 @@ export const adjustRfToolsRecipes = (event) => {
         .circuit_assembler("nijika:mods/rftools/card_base")
         .itemInputs(
             "gtceu:resin_printed_circuit_board",
-            "1x #gtceu:lv_circuits",
+            "1x #gtceu:circuits/lv",
             "1x rftools:dimensionalshard",
             "2x gtceu:red_alloy_single_wire"
         )

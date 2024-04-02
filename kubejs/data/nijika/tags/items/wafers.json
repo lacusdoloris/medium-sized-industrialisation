@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "gtceu:silicon_wafer",
+        "gtceu:phosphorus_wafer",
+        "gtceu:naquadah_wafer",
+        "gtceu:neutronium_wafer"
+    ]
+}

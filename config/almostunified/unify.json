@@ -4,7 +4,7 @@
     "kubejs",
     "gtceu",
     "create",
-    "occultism"
+    "ae2"
   ],
   "stoneStrata": [
     "stone",
@@ -31,13 +31,12 @@
     "forge:storage_blocks/raw_{material}"
   ],
   "materials": [
-    "aeternium",
-    "aluminum",
+    "aluminium",
     "amber",
     "apatite",
-    "bitumen",
     "brass",
     "bronze",
+    "certus_quartz",
     "chrome",
     "cinnabar",
     "coke",
@@ -46,7 +45,6 @@
     "copper",
     "diamond",
     "electrum",
-    "elementium",
     "emerald",
     "enderium",
     "fluorite",
@@ -58,14 +56,12 @@
     "lapis",
     "lead",
     "lumium",
-    "mithril",
     "netherite",
     "nickel",
     "obsidian",
     "osmium",
     "peridot",
     "platinum",
-    "potassium_nitrate",
     "ruby",
     "sapphire",
     "signalum",
@@ -76,13 +72,18 @@
     "tungsten",
     "uranium",
     "zinc",
-    "red_alloy"
+    "red_alloy",
+    "ender_pearl",
+    "sky_stone",
+    "sky_steel"
   ],
   "priorityOverrides": {
     "forge:ores/iron": "gtceu",
     "forge:ores/copper": "gtceu",
     "forge:ores/gold": "gtceu",
-    "forge:ores/emerald": "gtceu"
+    "forge:ores/emerald": "gtceu",
+    "forge:dusts/sky_stone": "ae2",
+    "forge:ingots/sky_steel": "megacells"
   },
   "customTags": {},
   "tagOwnerships": {},

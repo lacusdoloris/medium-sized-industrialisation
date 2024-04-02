@@ -16,6 +16,18 @@
 				"Please note that this quest book gives minimal rewards. It is intended as a guide, not a checklist. "
 			]
 			id: "473EF5FF75ACB3EC"
+			rewards: [
+				{
+					id: "6B291447C3C479AE"
+					item: "integrateddynamics:menril_sapling"
+					type: "item"
+				}
+				{
+					id: "575AF988D08C5D0F"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5C53A347BBB40D7B"
 				title: "The Rebel Path"

@@ -23,20 +23,27 @@ export const adjustIntegratedDynamicsRecipes = (event) => {
         .chancedOutput("integrateddynamics:crystalized_menril_chunk", 5000.0, 1200.0)
         .chancedOutput("gtceu:plant_ball", 3750, 900.0)
         .outputFluids(
-            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET)
+            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.INGOT)
         )
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(5 * 20);
 
     event.recipes.gtceu
         .autoclave("nijika:mods/id/menril_chunk_from_autoclave")
-        .inputFluids(
-            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.BUCKET)
-        )
+        .inputFluids(Fluid.of("integrateddynamics:menril_resin").withAmount(9 * FluidAmounts.INGOT))
         .itemOutputs("9x integrateddynamics:crystalized_menril_chunk")
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(10 * 20)
         .circuit(1);
+
+    event.recipes.gtceu
+        .extractor("nijika:mods/id/menril_resin_from_chunk")
+        .itemInputs("1x integrateddynamics:crystalized_menril_chunk")
+        .outputFluids(
+            Fluid.of("integrateddynamics:menril_resin").withAmount(1 * FluidAmounts.INGOT)
+        )
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(10);
 
     event.recipes.gtceu
         .autoclave("nijika:mods/id/menril_glass")

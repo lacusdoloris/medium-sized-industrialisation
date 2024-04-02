@@ -4,6 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { adjustAe2Recipes } from "./ae2";
 import { adjustCreateRecipes } from "./create";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
@@ -76,6 +77,10 @@ export const doModRecipes = (event) => {
                 B: "create:brass_casing",
             })
             .id("nijika:misc/chunkloader");
+    }
+
+    if (Platform.isLoaded("ae2")) {
+        adjustAe2Recipes(event);
     }
 
     event
