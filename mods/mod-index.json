@@ -669,6 +669,16 @@
         "version": "1.20.1-84-forge",
         "version_id": "JMtc0mTS"
     },
+    "nmDcB62a": {
+        "checksum": "32f6ab167bf7e534519d13dd126ce6bee359f17e5abe6f70efd6f4bd2c52d873e218edbebe2dea69b843e31b496481755cfbe3e0b2c12fdf9008e938001544bc",
+        "client_side_only": false,
+        "name": "ModernFix",
+        "pinned": false,
+        "project_id": "nmDcB62a",
+        "selected": true,
+        "version": "5.15.0+mc1.20.1",
+        "version_id": "u1FOqNCn"
+    },
     "nvQzSEkH": {
         "checksum": "634cdd2329662484e8fd48bbf2307a1547c9f16ad9f89f3ead7d0e4ea589f357491757b5e01c98e1136952d998fce2735eff658a9ae2793aa44edd4d385aa201",
         "client_side_only": false,
