@@ -18,8 +18,6 @@ overhaul mod like Bobs & Angel's Mods; it's a lot like that, only 3D and more in
 Notable features:
 
 - An accelerated earlygame compared to most GregTech packs
-- No AE2! Instead, you'll need to learn redstone, Integrated Dynamics, or RFTools to manage 
-  logistics.
 - Mandatory peaceful mode - minimal survival, minimal noise, only industry.
 - Semi-realistic chemical chains with lots of steps, intermediates, byproducts, and research gone into them
 - A 2048-block tall world powered by `Big Globe`_!
@@ -45,6 +43,13 @@ A Note on Completion
 
 The current content is complete up to the very beginning of the Insane Voltage tier. Content after
 that may be incoherent, dissonant, or straight-up unplayable. 
+
+A Note on AE2
+~~~~~~~~~~~~~
+
+Unlike a lot of packs, Applied Energistics 2 is not included by default. BI comes with full recipe
+integration for AE2 and Mega Cells (moving them up to LV and EV, respectively) if you choose to
+install it.
 
 User Installation Guide
 -----------------------
