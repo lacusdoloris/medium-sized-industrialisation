@@ -34,3 +34,4 @@ config/DistantHorizons.toml
 
 # stores world-specific stuff.
 config/inventoryprofilesnext
+config/invtweaksemuforipn
