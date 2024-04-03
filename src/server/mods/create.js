@@ -32,7 +32,7 @@ export const adjustCreateRecipes = (event) => {
         .crushing(
             [
                 Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
-                Item.of("minecraft:redstone_dust").withChance(0.6),
+                Item.of("minecraft:redstone").withChance(0.6),
             ],
             "create:ochrum"
         )
