@@ -119,6 +119,16 @@
         "version": "7.0.2",
         "version_id": "xo6HmgWj"
     },
+    "9ggA4qiy": {
+        "checksum": "bddfaa469dff9559b31f01b257f99af10feb0a6ab8456419a4ce283808c6f1840ca8afbd6919f4ddb305fc81c5b4f3e3b53e3e2388f6353f14f2e28c1fbf2a28",
+        "client_side_only": true,
+        "name": "StepItUp",
+        "pinned": false,
+        "project_id": "9ggA4qiy",
+        "selected": true,
+        "version": "2.0.1-1.20.1",
+        "version_id": "cbQ9O3rb"
+    },
     "9s6osm5g": {
         "checksum": "2f6c78de05f0c60fcd61a05ee272618a6522f8039805ab8c97b28c9cd123ff55ff7153224203f824261e509a478cee2ae100a5d428ae488239d089916a70e6ed",
         "client_side_only": false,
