@@ -94,6 +94,8 @@ export const addBaseOreRecipes = (event) => {
     event.remove({ type: "createoreexcavation:drilling" });
     event.remove({ type: "createoreexcavation:extracting" });
 
+    // TODO: Find a way to only register these if we're loaded on a Vanilla world preset.
+
     for (let [name, oreData] of Object.entries(BASE_ORES)) {
         event.recipes.createoreexcavation
             .vein(Component.translatable(`vein.nijika.${name}`), `gtceu:raw_${name}`)
@@ -102,9 +104,20 @@ export const addBaseOreRecipes = (event) => {
             .id(`nijika:veins/overworld/${name}`);
 
         event.recipes.createoreexcavation
+            .vein(Component.translatable(`vein.nijika.${name}`), `gtceu:raw_${name}`)
+            .biomeWhitelist("minecraft:is_overworld")
+            .placement(128, 32, oreData.seed)
+            .id(`nijika:veins/overworld_vanilla/${name}`);
+
+        event.recipes.createoreexcavation
             .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld/${name}`, 200)
             .fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET))
             .id(`nijika:drilling/overworld/${name}`);
+
+        event.recipes.createoreexcavation
+            .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld_vanilla/${name}`, 200)
+            .fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET))
+            .id(`nijika:drilling/overworld_vanilla/${name}`);
 
         // Similar to Angel's Refining.
         //
