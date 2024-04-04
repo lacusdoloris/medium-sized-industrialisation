@@ -30,7 +30,9 @@ odysseus
 config/spark
 
 defaultconfigs/ftbultimine
+defaultconfigs/ftbchunks
 config/DistantHorizons.toml
+config/sidebar_buttons.json
 
 # stores world-specific stuff.
 config/inventoryprofilesnext
