@@ -19,7 +19,7 @@ export const adjustCreateRecipes = (event) => {
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
     // this is only useful in LV as then you can actually *do* ore processing.
     event.recipes.create
-        .crushing(
+        .milling(
             [
                 Item.of("gtceu:crushed_magnetite_ore").withChance(0.6),
                 Item.of("minecraft:iron_nugget").withChance(0.6),
@@ -29,7 +29,7 @@ export const adjustCreateRecipes = (event) => {
         .id("nijika:mods/create/crimsite_crushing");
 
     event.recipes.create
-        .crushing(
+        .milling(
             [
                 Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
                 Item.of("minecraft:redstone").withChance(0.6),
@@ -39,17 +39,17 @@ export const adjustCreateRecipes = (event) => {
         .id("nijika:mods/create/ochrum_crushing");
 
     event.recipes.create
-        .crushing(
+        .milling(
             [
-                Item.of("gtceu:crushed_chromite_ore").withChance(0.6),
-                Item.of("minecraft:iron_nugget").withChance(0.6),
+                Item.of("gtceu:crushed_chalcopyrite_ore").withChance(0.6),
+                Item.of("gtceu:copper_nugget").withChance(0.6),
             ],
             "create:veridium"
         )
         .id("nijika:mods/create/veridium_crushing");
 
     event.recipes.create
-        .crushing(
+        .milling(
             [
                 Item.of("gtceu:crushed_cassiterite_ore").withChance(0.6),
                 Item.of("gtceu:tin_nugget").withChance(0.6),
