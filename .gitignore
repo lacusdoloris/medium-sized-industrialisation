@@ -37,3 +37,5 @@ config/sidebar_buttons.json
 # stores world-specific stuff.
 config/inventoryprofilesnext
 config/invtweaksemuforipn
+
+config/xaero*
