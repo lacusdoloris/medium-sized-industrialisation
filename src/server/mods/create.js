@@ -14,6 +14,10 @@ export const adjustCreateRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 
+    // duplicate recipes that take in the stone types. use da stonecutter
+    event.remove({ id: "create:crushing/diorite_recycling" });
+    event.remove({ id: "create:crushing/tuff_recycling"});
+
     event.replaceInput({ mod: "create" }, "#forge:plates/gold", "#forge:plates/corinthian_bronze");
 
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
@@ -57,6 +61,50 @@ export const adjustCreateRecipes = (event) => {
             "create:asurine"
         )
         .id("nijika:mods/create/asurine_crushing");
+
+    event.recipes.create
+        .milling(
+            [
+                Item.of("gtceu:crushed_silver_ore").withChance(0.6),
+                Item.of("gtceu:silver_nugget").withChance(0.6),
+            ],
+            "create:scoria"
+        )
+        .id("nijika:mods/create/scoria_crushing");
+
+    event.recipes.create
+        .milling(
+            [
+                Item.of("gtceu:crushed_galena_ore").withChance(0.6),
+                Item.of("gtceu:lead_nugget").withChance(0.6),
+            ],
+            "create:scorchia"
+        )
+        .id("nijika:mods/create/schorchia_crushing");
+
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("gtceu:crushed_nether_quartz_ore").withChance(0.25),
+                Item.of("minecraft:quartz").withChance(0.25)
+            ],
+            "minecraft:diorite"
+        )
+        .id("create:crushing/diorite");
+        
+    event.recipes.create
+        .crushing(
+            [
+                Item.of("minecraft:flint").withChance(0.25),
+                Item.of("minecraft:iron_nugget").withChance(0.1),
+                Item.of("gtceu:copper_nugget").withChance(0.1),
+                Item.of("gtceu:tin_nugget").withChance(0.1),
+                Item.of("gtceu:lead_nugget").withChance(0.1),
+                Item.of("gtceu:silver_nugget").withChance(0.1)
+            ],
+            "minecraft:tuff"
+        )
+        .id("create:crushing/tuff")
 
     event.smelting("1x create:crimsite", "1x create:cut_crimsite");
     event.smelting("1x create:ochrum", "1x create:cut_ochrum");
@@ -153,5 +201,16 @@ export const adjustCreateRecipes = (event) => {
         I: "#forge:ingots/corinthian_bronze",
         S: "#forge:rods/treated_wood",
         E: "create:electron_tube",
-    });
+    }).id("create:crafting/kinetics/controller_rail");
+
+    // fuck the stupid assembling system
+    event.remove({ id: "create:mechanical_crafting/crushing_wheel" });
+    event.shaped(
+        "1x create:crushing_wheel",
+        ["RRR", "RSR", "RRR"],
+        {
+            R: "#forge:cobblestone",
+            S: "create:shaft"
+        }
+    ).id("nijika:mods/create/crushing_wheel_easy");
 };
