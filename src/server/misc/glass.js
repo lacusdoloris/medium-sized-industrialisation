@@ -19,12 +19,13 @@ export const redoGlassProcessing = (event) => {
 
     // make molten glass with create for either making glass tubes or regular glass
     event.recipes.create
-        .mixing(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.MB), [
-            "#forge:dusts/quartz_sand",
-            "#forge:tiny_dusts/flint",
+        .mixing(Fluid.of("gtceu:glass").withAmount(144 * 9 * FluidAmounts.MB), [
+            "9x #forge:dusts/quartz_sand",
+            "1x #forge:dusts/flint",
         ])
         .heated()
         .id("nijika:glass/mix_molten_glass_from_raw_dusts");
+
     event.recipes.create
         .mixing(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.MB), "#forge:dusts/glass")
         .heated()
