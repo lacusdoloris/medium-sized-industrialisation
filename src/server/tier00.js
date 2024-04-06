@@ -54,7 +54,7 @@ export const doTier00Content = (event) => {
     event.remove({ id: "gtceu:shaped/compressed_coke_clay" });
 
     event
-        .shapeless("gtceu:compressed_coke_clay", ["1x #forge:ingots/clay", "2x minecraft:sand"])
+        .shapeless("gtceu:compressed_coke_clay", ["1x #forge:ingots/clay", "2x #minecraft:sand"])
         .id("nijika:tier00/less_evil_coke_clay");
 
     event.remove({ id: "gtceu:shaped/coke_oven" });
