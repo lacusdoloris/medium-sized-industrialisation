@@ -16,7 +16,7 @@ export const adjustCreateRecipes = (event) => {
 
     // duplicate recipes that take in the stone types. use da stonecutter
     event.remove({ id: "create:crushing/diorite_recycling" });
-    event.remove({ id: "create:crushing/tuff_recycling"});
+    event.remove({ id: "create:crushing/tuff_recycling" });
 
     event.replaceInput({ mod: "create" }, "#forge:plates/gold", "#forge:plates/corinthian_bronze");
 
@@ -86,12 +86,12 @@ export const adjustCreateRecipes = (event) => {
         .crushing(
             [
                 Item.of("gtceu:crushed_nether_quartz_ore").withChance(0.25),
-                Item.of("minecraft:quartz").withChance(0.25)
+                Item.of("minecraft:quartz").withChance(0.25),
             ],
             "minecraft:diorite"
         )
         .id("create:crushing/diorite");
-        
+
     event.recipes.create
         .crushing(
             [
@@ -100,11 +100,11 @@ export const adjustCreateRecipes = (event) => {
                 Item.of("gtceu:copper_nugget").withChance(0.1),
                 Item.of("gtceu:tin_nugget").withChance(0.1),
                 Item.of("gtceu:lead_nugget").withChance(0.1),
-                Item.of("gtceu:silver_nugget").withChance(0.1)
+                Item.of("gtceu:silver_nugget").withChance(0.1),
             ],
             "minecraft:tuff"
         )
-        .id("create:crushing/tuff")
+        .id("create:crushing/tuff");
 
     event.smelting("1x create:crimsite", "1x create:cut_crimsite");
     event.smelting("1x create:ochrum", "1x create:cut_ochrum");
@@ -197,20 +197,20 @@ export const adjustCreateRecipes = (event) => {
         })
         .id("create:crafting/curiosities/brown_toolbox");
 
-    event.shaped("8x create:controller_rail", ["I I", "ISI", "IEI"], {
-        I: "#forge:ingots/corinthian_bronze",
-        S: "#forge:rods/treated_wood",
-        E: "create:electron_tube",
-    }).id("create:crafting/kinetics/controller_rail");
+    event
+        .shaped("8x create:controller_rail", ["I I", "ISI", "IEI"], {
+            I: "#forge:ingots/corinthian_bronze",
+            S: "#forge:rods/treated_wood",
+            E: "create:electron_tube",
+        })
+        .id("create:crafting/kinetics/controller_rail");
 
     // fuck the stupid assembling system
     event.remove({ id: "create:mechanical_crafting/crushing_wheel" });
-    event.shaped(
-        "1x create:crushing_wheel",
-        ["RRR", "RSR", "RRR"],
-        {
+    event
+        .shaped("1x create:crushing_wheel", ["RRR", "RSR", "RRR"], {
             R: "#forge:cobblestone",
-            S: "create:shaft"
-        }
-    ).id("nijika:mods/create/crushing_wheel_easy");
+            S: "create:shaft",
+        })
+        .id("nijika:mods/create/crushing_wheel_easy");
 };

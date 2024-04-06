@@ -50,9 +50,9 @@ export const doTier00Content = (event) => {
         .id("nijika:tier00/high_pressure_liquid_boiler");
 
     // make rubber planks cuttable from rubber logs
-    event.recipes.create.cutting(
-        ["6x gtceu:rubber_planks"], "1x gtceu:rubber_log"
-    ).id("nijika:tier00/rubber_planks_cutting");
+    event.recipes.create
+        .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
+        .id("nijika:tier00/rubber_planks_cutting");
 
     // coke oven tweaks.
     // this makes it dramatically easier, no more fucking brick mould
@@ -170,12 +170,11 @@ export const doTier00Content = (event) => {
 
     // vacuum tubes aren't accurate to how they are irl...
     // but nobody really wants to deal with that.
-    event.recipes.create
-        .filling("gtceu:glass_tube", [
-            "#forge:ingots/clay",
-            Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.MB),
-        ])
-        .id("nijika:tier00/glass_tube");
+    event
+        .shaped("1x gtceu:glass_tube", ["GGG", "G G"], {
+            G: "#forge:glass",
+        })
+        .id("nijika:tier0/easy_mode_glass_tube");
 
     event.remove({ id: "gtceu:shaped/vacuum_tube" });
     event
