@@ -49,6 +49,11 @@ export const doTier00Content = (event) => {
         })
         .id("nijika:tier00/high_pressure_liquid_boiler");
 
+    // make rubber planks cuttable from rubber logs
+    event.recipes.create.cutting(
+        ["6x gtceu:rubber_planks"], "1x gtceu:rubber_log"
+    ).id("nijika:tier00/rubber_planks_cutting");
+
     // coke oven tweaks.
     // this makes it dramatically easier, no more fucking brick mould
     event.remove({ id: "gtceu:shaped/compressed_coke_clay" });
