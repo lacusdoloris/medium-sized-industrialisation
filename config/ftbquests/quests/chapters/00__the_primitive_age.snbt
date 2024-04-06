@@ -58,8 +58,9 @@
 			description: [
 				"&aSticky Resin&r is a byproduct of chopping down &arubber trees&r. These trees naturally grow in hotter parts of the overworld."
 				""
-				"If you don't get enough from chopping them, &dpressing&r the resultant logs will squeeze some out. Yuck!"
+				"If you don't get enough from chopping them, &drolling&r the resultant logs will squeeze some out. Yuck!"
 			]
+			icon: "gtceu:sticky_resin"
 			id: "47009408B5746D5F"
 			tasks: [{
 				count: 64L
@@ -445,16 +446,13 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"29823463D2E80DB2"
-				"003EA50F554DA76F"
-			]
+			dependencies: ["29823463D2E80DB2"]
 			description: [
 				"Every &acircuit&r needs a set of &delectronic components&r mounted onto the circuit board to function."
 				""
 				"In the case of your first LV circuit, it needs &aresistors&r and &avacuum tubes&r. "
 				""
-				"Resistors are made of &acopper wire&r, &acarbon dust&r (you can use coal or charcoal for this), and &apaper&r stuck together with some &aglue-like&r material. You might want to consider setting up a &ewheat farm&r for dough."
+				"Resistors are made of &acopper wire&r, &acarbon dust&r (you can use coal or charcoal for this), and &apaper&r stuck together with some &aglue-like&r material."
 			]
 			id: "000079EED3BDE2F5"
 			tasks: [
@@ -597,23 +595,6 @@
 			title: "Copper Alloys"
 			x: 3.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["714A323489D928B7"]
-			description: [
-				"You need glass to make vacuum tubes. But not just any glass - liquid glass. You can make this from mixing together &dQuartz Sand&r and &dFlint Dust&r."
-				""
-				"Not to be confused with decorative glass, which is the same recipe as vanilla. (Later, you can turn decorative glass into glass dust.)"
-			]
-			id: "003EA50F554DA76F"
-			tasks: [{
-				id: "3A22FC4C46B45FE7"
-				item: "gtceu:quartz_sand_dust"
-				type: "item"
-			}]
-			title: "Glass?"
-			x: 6.5d
-			y: 3.0d
 		}
 	]
 	subtitle: ["Boo! Did I scare you? I'm Andesite Alloy!"]
