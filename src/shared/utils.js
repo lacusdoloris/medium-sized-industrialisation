@@ -3,6 +3,8 @@
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
+//
+/* eslint-disable no-unexpected-multiline */
 
 const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 
@@ -107,12 +109,6 @@ export const addRockBreakingRecipe = (event, rockType, energy) => {
         .itemOutputs(rockType)
         .duration(16)
         .EUt(energy)
-        [
-            // eslint-disable-next-line no-unexpected-multiline
-            "addData(java.lang.String,java.lang.String)"
-        ]("fluidA", "minecraft:lava")
-        [
-            // eslint-disable-next-line no-unexpected-multiline
-            "addData(java.lang.String,java.lang.String)"
-        ]("fluidB", "minecraft:water");
+        ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
+        ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
 };
