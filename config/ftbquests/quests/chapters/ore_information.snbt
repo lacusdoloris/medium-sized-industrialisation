@@ -57,6 +57,7 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"There's no passive resource generation until EV, when you can finally start using &dCreate Ore Excavation&r (not as easy as it sounds)."
 				""
@@ -64,6 +65,7 @@
 				""
 				"I'm not fucking joking. Put some drills on an elevator pulley and get to work."
 			]
+			disable_toast: true
 			id: "4CD9D7A96956380B"
 			subtitle: "The other 1.7."
 			tasks: [{
@@ -77,11 +79,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"Iron Ore comes in the form of &dmagnetite&r, which is found... well, everywhere."
 				""
 				"It peaks at 512 blocks below the local surface, but it can be found at practically any layer. "
 			]
+			disable_toast: true
 			id: "4E9EC41540743E14"
 			tasks: [{
 				count: 64L
@@ -95,11 +99,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dChalcopyrite&r replaces Copper Ore."
 				""
 				"It has a similar distribution to iron, and is found most commonly at 512 blocks below the local surface."
 			]
+			disable_toast: true
 			id: "4A99988A2655BF2D"
 			tasks: [{
 				count: 64L
@@ -113,11 +119,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dChromite&r is the primary ore for Chromium."
 				""
 				"It has an identical distribution to magnetite; it peaks at 512 blocks below the local surface, but can be found anywhere."
 			]
+			disable_toast: true
 			id: "6C5BBC98C22C4DD3"
 			tasks: [{
 				count: 64L
@@ -131,11 +139,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dGold&r ore is one of the ores with a biome requirement."
 				""
 				"It's exclusively found in &9warm biomes&r, peaking at 384 blocks below the local surface."
 			]
+			disable_toast: true
 			id: "43F5F20F2E06A1A7"
 			tasks: [{
 				count: 64L
@@ -149,11 +159,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dCassiterite&r is the ore for Tin."
 				""
 				"It's found more towards the local surface, peaking at 256 blocks below the local surface and falling off sharply below that."
 			]
+			disable_toast: true
 			id: "29E7EA110C9D5A40"
 			tasks: [{
 				id: "29FC80CCD071E058"
@@ -166,11 +178,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dBauxite&r is the primary ore of aluminium."
 				""
 				"It's found all over, but only near the surface."
 			]
+			disable_toast: true
 			id: "14D30A43CAC8011F"
 			tasks: [{
 				count: 64L
@@ -184,11 +198,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dSilver&r ore has an identical distribution to lead."
 				""
 				"It spawns rarely around 300 blocks below the local surface and tapers off above and below that."
 			]
+			disable_toast: true
 			id: "19186FD4E2D1AFE1"
 			tasks: [{
 				count: 64L
@@ -202,11 +218,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dGalena&r is the ore for Lead. It has an identical distribution to silver."
 				""
 				"It spawns rarely around 300 blocks below the local surface and tapers off above and below that."
 			]
+			disable_toast: true
 			id: "4E972D1A47E0A5C7"
 			tasks: [{
 				count: 64L
@@ -220,11 +238,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dGarnierite&r and &dPentlandite&r are the two ores of Nickel."
 				""
 				"They have identical distribution; a peak at 700 blocks below the local surface, and then falling off sharply with no ore below Y=-800."
 			]
+			disable_toast: true
 			id: "739080C155322A7D"
 			tasks: [
 				{
@@ -246,11 +266,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dStibnite&r is the primary ore of antimony, but not the only way to obtain it."
 				""
 				"It's found in extremely rare deposits 768 blocks below the local surface."
 			]
+			disable_toast: true
 			id: "01294E25CB568AA8"
 			tasks: [{
 				id: "72B5B3530D3D0D3B"
@@ -263,11 +285,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dRedstone&r is still in the vanilla ore form."
 				""
 				"It's found exclusively in cold biomes, peaking at 384 blocks below the local surface."
 			]
+			disable_toast: true
 			id: "5C58C32A278D55F3"
 			tasks: [{
 				count: 64L
@@ -281,7 +305,9 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: ["&dDiamond&r is found everywhere in the overworld, at low Y levels."]
+			disable_toast: true
 			id: "2659D5D145E08FBA"
 			tasks: [{
 				count: 64L
@@ -295,11 +321,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dLapis&r is found under the sea."
 				""
 				"Good luck mining that."
 			]
+			disable_toast: true
 			id: "01DD243AA49453DB"
 			tasks: [{
 				count: 64L
@@ -313,11 +341,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dCoal&r is still the vanilla gem. "
 				""
 				"It has a flat 25% chance to be selected to spawn in a given chunk section."
 			]
+			disable_toast: true
 			id: "6A2F727F1E88DD93"
 			tasks: [{
 				count: 64L
@@ -331,11 +361,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dEmeralds&r are only found in high hilliness areas, such as mountains."
 				""
 				"Time to find some Extreme Hills."
 			]
+			disable_toast: true
 			id: "09D7C99D8BDFD6BE"
 			tasks: [{
 				count: 64L
@@ -349,11 +381,13 @@
 		}
 		{
 			dependencies: ["7C111E62C0655371"]
+			dependency_requirement: "one_started"
 			description: [
 				"&dCobaltite&r is the ore for cobalt. It has an identical distribution to gold."
 				""
 				"It's exclusively found in &9warm biomes&r, peaking at 384 blocks below the local surface."
 			]
+			disable_toast: true
 			id: "2A9ED9A753BBA837"
 			tasks: [{
 				count: 64L
@@ -390,6 +424,7 @@
 				""
 				"They're both found in sulfuric Nether biomes, i.e. Ashen Wastes and Nether Wastes."
 			]
+			disable_toast: true
 			id: "48F929CDE9847D17"
 			tasks: [
 				{
@@ -416,6 +451,7 @@
 				""
 				"It's found in all nether biomes."
 			]
+			disable_toast: true
 			id: "147BD2C894F0B0D8"
 			tasks: [{
 				count: 64L
@@ -434,6 +470,7 @@
 				""
 				"It's found in all nether biomes."
 			]
+			disable_toast: true
 			id: "5F098DC471CBF2CF"
 			tasks: [{
 				count: 64L
@@ -454,6 +491,7 @@
 				""
 				"Obviously, they're botth found in the Valley of Souls biome."
 			]
+			disable_toast: true
 			id: "434AE231D11E4C2B"
 			rewards: [{
 				id: "6F606ACE780F10E1"
@@ -485,6 +523,7 @@
 				""
 				"It's found in sulfuric Nether biomes, i.e. Ashen Wastes and Nether Wastes."
 			]
+			disable_toast: true
 			id: "3981DD588526C43E"
 			tasks: [{
 				count: 64L
@@ -499,6 +538,7 @@
 		{
 			dependencies: ["6278EA9D9DFCE1FB"]
 			description: ["&dFlourite&r is the primary carrier material for fluorine. It's found in the same places as sulfur."]
+			disable_toast: true
 			id: "281EDA14FB191A8F"
 			tasks: [{
 				count: 64L
@@ -517,6 +557,7 @@
 				""
 				"It's found rarely everywhere in the nether."
 			]
+			disable_toast: true
 			id: "2002B953007BC17C"
 			tasks: [{
 				id: "136FD8A006B94A7F"
