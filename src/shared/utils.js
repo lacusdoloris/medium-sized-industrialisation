@@ -90,3 +90,29 @@ export const getOreProperty = (material) => {
 export const getBlastProperty = (material) => {
     return definitelyMaterial(material).getProperty(PropertyKey.BLAST);
 };
+
+/**
+ * Adds a new rock breaker recipe.
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {string} rockType The ID of the rock block to use.
+ * @param {number} energy The EUt value for this recipe.
+ */
+export const addRockBreakingRecipe = (event, rockType, energy) => {
+    let rockId = new ResourceLocation(rockType);
+
+    event.recipes.gtceu
+        .rock_breaker(`nijika:misc/${rockId.path}_rock_breaker`)
+        .notConsumable(rockType)
+        .itemOutputs(rockType)
+        .duration(16)
+        .EUt(energy)
+        [
+            // eslint-disable-next-line no-unexpected-multiline
+            "addData(java.lang.String,java.lang.String)"
+        ]("fluidA", "minecraft:lava")
+        [
+            // eslint-disable-next-line no-unexpected-multiline
+            "addData(java.lang.String,java.lang.String)"
+        ]("fluidB", "minecraft:water");
+};

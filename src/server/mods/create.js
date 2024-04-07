@@ -4,6 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { addRockBreakingRecipe } from "../../shared/utils";
+
 /* eslint-disable no-unexpected-multiline */
 /**
  * Adjusts recipes for the Create mod.
@@ -22,94 +24,6 @@ export const adjustCreateRecipes = (event) => {
 
     // replace all of the crushed raw material processing with producing crushed gtceu materials.
     // this is only useful in LV as then you can actually *do* ore processing.
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_magnetite_ore").withChance(0.6),
-                Item.of("minecraft:iron_nugget").withChance(0.6),
-            ],
-            "create:crimsite"
-        )
-        .id("nijika:mods/create/crimsite_crushing");
-
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
-                Item.of("minecraft:redstone").withChance(0.6),
-            ],
-            "create:ochrum"
-        )
-        .id("nijika:mods/create/ochrum_crushing");
-
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_chalcopyrite_ore").withChance(0.6),
-                Item.of("gtceu:copper_nugget").withChance(0.6),
-            ],
-            "create:veridium"
-        )
-        .id("nijika:mods/create/veridium_crushing");
-
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_cassiterite_ore").withChance(0.6),
-                Item.of("gtceu:tin_nugget").withChance(0.6),
-            ],
-            "create:asurine"
-        )
-        .id("nijika:mods/create/asurine_crushing");
-
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_silver_ore").withChance(0.6),
-                Item.of("gtceu:silver_nugget").withChance(0.6),
-            ],
-            "create:scoria"
-        )
-        .id("nijika:mods/create/scoria_crushing");
-
-    event.recipes.create
-        .milling(
-            [
-                Item.of("gtceu:crushed_galena_ore").withChance(0.6),
-                Item.of("gtceu:lead_nugget").withChance(0.6),
-            ],
-            "create:scorchia"
-        )
-        .id("nijika:mods/create/schorchia_crushing");
-
-    event.recipes.create
-        .crushing(
-            [
-                Item.of("gtceu:crushed_nether_quartz_ore").withChance(0.25),
-                Item.of("minecraft:quartz").withChance(0.25),
-            ],
-            "minecraft:diorite"
-        )
-        .id("create:crushing/diorite");
-
-    event.recipes.create
-        .crushing(
-            [
-                Item.of("minecraft:flint").withChance(0.25),
-                Item.of("minecraft:iron_nugget").withChance(0.1),
-                Item.of("gtceu:copper_nugget").withChance(0.1),
-                Item.of("gtceu:tin_nugget").withChance(0.1),
-                Item.of("gtceu:lead_nugget").withChance(0.1),
-                Item.of("gtceu:silver_nugget").withChance(0.1),
-            ],
-            "minecraft:tuff"
-        )
-        .id("create:crushing/tuff");
-
-    event.smelting("1x create:crimsite", "1x create:cut_crimsite");
-    event.smelting("1x create:ochrum", "1x create:cut_ochrum");
-    event.smelting("1x create:veridium", "1x create:cut_veridium");
-    event.smelting("1x create:asurine", "1x create:cut_asurine");
 
     event.remove({ id: "create:crafting/kinetics/empty_blaze_burner" });
     event
@@ -179,14 +93,7 @@ export const adjustCreateRecipes = (event) => {
         .EUt(2)
         .duration(7 * 20 + 10);
 
-    event.recipes.gtceu
-        .rock_breaker("nijika:misc/limestone_rock_breaker")
-        .notConsumable("1x create:limestone")
-        .itemOutputs("1x create:limestone")
-        .duration(16)
-        .EUt(GTValues.VA[GTValues.HV])
-        ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
-        ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
+    addRockBreakingRecipe(event, "create:limestone", GTValues.VA[GTValues.MV]);
 
     event
         .shaped("create:brown_toolbox", [" W ", "SCS", " K "], {

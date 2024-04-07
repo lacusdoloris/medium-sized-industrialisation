@@ -111,7 +111,7 @@
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Bocchinium can be sorted into &dMagnetite&r and &dIlmenite&r ore."]
+			description: ["Crushed Bocchinium can be sorted into &dIlmenite&r and &dOrpiment&r ore."]
 			icon: "gtceu:raw_bocchinium"
 			id: "6C7B57A6456C017C"
 			tasks: [{
@@ -137,7 +137,7 @@
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Kitakitaite can be sorted into &dChalcopyrite&r and &dSphalerite&r."]
+			description: ["Crushed Kitakitaite can be sorted into &dPentlandite&r and &dSphalerite&r."]
 			icon: "gtceu:raw_kitakitaite"
 			id: "1E3C65D5ABBFEE25"
 			tasks: [{
@@ -150,7 +150,7 @@
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed &eNijikaite&r can be be sorted into &dWulfenite&r and &dScheelite&r."]
+			description: ["Crushed &eNijikaite&r can be be sorted into &dBeryillium&r and &dScheelite&r."]
 			icon: "gtceu:raw_nijikaite"
 			id: "6FA74A42A00CFD4F"
 			tasks: [{
@@ -163,7 +163,7 @@
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Kikurite can be sorted into &dCassiterite&r and &dGalena&r."]
+			description: ["Crushed Kikurite can be sorted into &dMolybenite&r and &dAsbestos&r."]
 			icon: "gtceu:raw_kikurite"
 			id: "6A7DE62BB369C244"
 			tasks: [{
@@ -207,7 +207,7 @@
 		}
 		{
 			dependencies: ["6A7DE62BB369C244"]
-			description: ["Impure Kikurite gets you Silver, as well as the result of sorting the crushed ores."]
+			description: ["Impure Kikurite gets you &dStibnite&r, as well as the result of sorting the crushed ores."]
 			id: "2F69A1FA48AF9E49"
 			tasks: [{
 				id: "05CD1E4DD8CD5D58"
@@ -220,7 +220,7 @@
 		}
 		{
 			dependencies: ["1E3C65D5ABBFEE25"]
-			description: ["Impure Kitakitaite gets you Saltpeter, as well as the result of sorting the crushed ores."]
+			description: ["Impure Kitakitaite gets you &dTricalcium phosphate&r, as well as the result of sorting the crushed ores."]
 			id: "636278BBADABB9A2"
 			tasks: [{
 				id: "1B3D6C7AD85C8FBF"
@@ -233,7 +233,7 @@
 		}
 		{
 			dependencies: ["6C7B57A6456C017C"]
-			description: ["Impure Bocchinium gets you Orpiment, as well as the result of sorting the crushed ores."]
+			description: ["Impure Bocchinium gets you &dRealgar&r, as well as the result of sorting the crushed ores."]
 			id: "57C055EE02BA49D4"
 			tasks: [{
 				id: "46A8E80A6518B54F"
@@ -259,7 +259,7 @@
 		}
 		{
 			dependencies: ["226F73A245BB3CD5"]
-			description: ["Impure Ryoite gets you Pentlandite, as well as the result of sorting the crushed ores."]
+			description: ["Impure Ryoite gets you &dHematite&r, as well as the result of sorting the crushed ores."]
 			id: "38C797CC3DCF3A33"
 			tasks: [{
 				id: "0BA8608F29CAA90E"
@@ -272,7 +272,7 @@
 		}
 		{
 			dependencies: ["6FA74A42A00CFD4F"]
-			description: ["Impure Nijikaite gets you Fluorite, as well as the result of sorting the crushed ores."]
+			description: ["Impure Nijikaite gets you &dFluorite&r, as well as the result of sorting the crushed ores."]
 			id: "6706582D572DCB34"
 			tasks: [{
 				id: "4818F45E3FDC31E1"
@@ -282,6 +282,126 @@
 			title: "Impure Nijikaite"
 			x: 2.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["473EF5FF75ACB3EC"]
+			description: [
+				"Can't find enough ore underground? Or are you just plain lazy?"
+				""
+				"The Create decorative rocks come in much more useful than before; they can be &dcrushed&r or &dmilled&r into various useful &aearly-game ores&r."
+			]
+			id: "222C90F2D2CF1E89"
+			tasks: [{
+				id: "7EFB6BB86B450D1B"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Early Ores"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Veridium can be crushed or milled to get &dTetrahedrite&r ore."]
+			id: "7CAE94E81AFF2573"
+			rewards: [{
+				id: "33ADBCE8C75CEA51"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5F9493F1C0AD2469"
+				item: "create:veridium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Ochrium can be milled or crushed to get &dRedstone&r ore."]
+			id: "2A2A3990F11A484F"
+			tasks: [{
+				count: 64L
+				id: "5E995BB9CDEA4142"
+				item: "create:ochrum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Asurine can be crushed or milled to get &dCassiterite&r ore."]
+			id: "75DEE8831FBA67F8"
+			rewards: [{
+				id: "6A5CC708D45CC343"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0EBD0C966FE5BD4A"
+				item: "create:asurine"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Scoria can be crushed or milled to get &dSilver&r ore."]
+			id: "77A64F6E53E06202"
+			rewards: [{
+				id: "5DA8D4B62C4313B8"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0EC7D8A6F4CE8DAD"
+				item: "create:scoria"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Scorchia can be crushed or milled to get &dGalena&r ore."]
+			id: "1138542B4203975D"
+			rewards: [{
+				id: "09CEEAA0FE9EDE94"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3C12542C1A3DB779"
+				item: "create:scorchia"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Crimsite can be milled or crushed to get &dMagnetite&r ore."]
+			id: "0C8CFD9420F9E47A"
+			rewards: [{
+				id: "41ACA6F4BD87C3E5"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4B2FC7602CAC93FE"
+				item: "create:crimsite"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
 		}
 	]
 	subtitle: ["A guide to the base ores."]
