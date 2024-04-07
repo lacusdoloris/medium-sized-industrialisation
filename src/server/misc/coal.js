@@ -40,4 +40,8 @@ export const unfuckCoalRecipes = (event) => {
         .itemOutputs("1x gtceu:coal_dust")
         .EUt(2)
         .duration(12);
+
+    event.recipes.create
+        .milling("1x gtceu:coal_dust", "#nijika:actually_fucking_coal")
+        .id("nijika:auto/dust/coal");
 };

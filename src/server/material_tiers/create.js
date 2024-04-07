@@ -94,6 +94,11 @@ const addCreateLvMvMaterialRecipes = (event) => {
 
         // auto-generate millstone + crushing wheel recipes for mortar recipes.
         if (material.hasFlag(GTMaterialFlags.MORTAR_GRINDABLE)) {
+            // bc coal is fucked up
+            if (material.name == "coal") {
+                return;
+            }
+
             let recipeId = `nijika:auto/dust/${id}`;
             if (material.hasProperty(PropertyKey.INGOT)) {
                 event.recipes.create
