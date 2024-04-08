@@ -115,7 +115,9 @@
     "quartz",
     "hsla_steel",
     "boron",
-    "bismuth"
+    "bismuth",
+    "osmiridium",
+    "nichrome"
   ],
   "priorityOverrides": {
     "forge:ores/iron": "gtceu",
