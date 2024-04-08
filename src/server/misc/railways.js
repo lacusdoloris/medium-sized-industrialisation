@@ -16,7 +16,7 @@ export const rewriteRailwayRecipes = (event) => {
     // Uses treated wood and rods.
     event.remove({ id: "gtceu:shaped/treated_wood_planks" });
     event.recipes.create
-        .filling("1x gtceu:treated_wood", [
+        .filling("1x gtceu:treated_wood_planks", [
             "1x #minecraft:planks",
             Fluid.of("gtceu:creosote").withAmount(100 * FluidAmounts.MB),
         ])
