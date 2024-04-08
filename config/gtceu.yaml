@@ -295,12 +295,12 @@ compat:
     # Platform native Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
     # Default: 4 FE/Energy == 1 EU
-    platformToEuRatio: 4
+    platformToEuRatio: 1
 
     # GTEU to Platform native Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
     # Default: 4 FE/Energy == 1 EU
-    euToPlatformRatio: 4
+    euToPlatformRatio: 1
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
