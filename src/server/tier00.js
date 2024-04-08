@@ -99,6 +99,14 @@ export const doTier00Content = (event) => {
         .heated()
         .id("nijika:tier00/rubber_mixing");
 
+    // funny...
+    event.recipes.create
+        .mixing(
+            "1x gtceu:rubber_mallet",
+            [Fluid.of("gtceu:rubber").withAmount(144 * 6 * FluidAmounts.MB), "2x #forge:rods/wooden"]
+        )
+        .id("nijika:tier00/rubber_mallet");
+
     event.recipes.create
         .mixing("1x gtceu:red_alloy_dust", ["1x #forge:dusts/copper", "4x #forge:dusts/redstone"])
         .id("nijika:tier00/red_alloy_mixing");
@@ -197,6 +205,7 @@ export const doTier00Content = (event) => {
             "1x #forge:dusts/silver",
         ])
         .id("nijika:tier00/corinthian_bronze");
+
     event.recipes.create
         .mixing("5x gtceu:corinthian_bronze_ingot", [
             "4x #forge:ingots/copper",
