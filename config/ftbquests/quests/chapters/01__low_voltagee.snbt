@@ -56,7 +56,6 @@
 			y: 1.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["4E722FB95D8BE0E0"]
 			description: [
 				"You've been spared from dealing with manual tool crafting recipes, but you'll still need some tools."
@@ -82,94 +81,6 @@
 				}
 			}
 			id: "4B215E2BA5E3CB58"
-			rewards: [
-				{
-					id: "185AC29AEEA4608B"
-					item: {
-						Count: 1b
-						id: "gtceu:neutronium_wire_cutter"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-							}
-							GT.Tool: {
-								Damage: 0
-								HarvestLevel: 6
-								MaxDamage: 65534
-								ToolSpeed: 184.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0272F94FD166F388"
-					item: {
-						Count: 1b
-						id: "gtceu:neutronium_wrench"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-							}
-							GT.Tool: {
-								Damage: 0
-								HarvestLevel: 6
-								MaxDamage: 65534
-								ToolSpeed: 184.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "37E4E9F6A5783BE4"
-					item: {
-						Count: 1b
-						id: "gtceu:neutronium_crowbar"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-							}
-							GT.Tool: {
-								Damage: 0
-								HarvestLevel: 6
-								MaxDamage: 65534
-								ToolSpeed: 184.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "68513D5D70DABE7B"
-					item: {
-						Count: 1b
-						id: "gtceu:neutronium_screwdriver"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-							}
-							GT.Tool: {
-								Damage: 0
-								MaxDamage: 65534
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-			]
 			tasks: [{
 				id: "5FD6EF2A16CF7BBA"
 				item: {
@@ -921,6 +832,108 @@
 			title: "Well, Jimmy..."
 			x: 4.0d
 			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4B215E2BA5E3CB58"]
+			description: ["Click here to get a fresh set of unbreakable Neutronium tools."]
+			id: "16C15BC8A13793D6"
+			optional: true
+			rewards: [
+				{
+					id: "658E2BD5E1D0B8E3"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C0E017C8972F55D"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03C268FA543A9A02"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_crowbar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E3896483D807141"
+					item: {
+						Count: 1b
+						id: "gtceu:neutronium_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1208DF87517B65E9"
+				title: "I lost my FUCKING TOOLS"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron."]
