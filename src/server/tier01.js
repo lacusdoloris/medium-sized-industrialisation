@@ -90,4 +90,12 @@ export const doTier01Content = (event) => {
     // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });
     event.remove({ id: "gtceu:assembler/cover_item_voiding" });
+
+    event.remove({ id: "gtceu:assembler/cover_infinite_water" });
+    event.recipes.gtceu
+        .assembler("nijika:tier01/infinite_water_cover")
+        .itemInputs("2x gtceu:lv_electric_pump", "minecraft:cauldron", "#gtceu:circuits/lv")
+        .itemOutputs("gtceu:infinite_water_cover")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20);
 };

@@ -46,11 +46,4 @@ export const doTier02Content = (event) => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
 
-    event.remove({ id: "gtceu:assembler/cover_infinite_water" });
-    event.recipes.gtceu
-        .assembler("nijika:tier02/infinite_water_cover")
-        .itemInputs("2x gtceu:mv_electric_pump", "minecraft:cauldron", "#gtceu:circuits/mv")
-        .itemOutputs("gtceu:infinite_water_cover")
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(5 * 20);
 };
