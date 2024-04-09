@@ -30,14 +30,14 @@
         "version_id": "TgyyhU8M"
     },
     "2gvRmQXx": {
-        "checksum": "a46e9f13a32685ed66570edcb55f60f9f8a8a1a270cd2238a199fcc1cd0ce6fa14608195f5875a1b573611f70d6b848dae9186ff8ae15f76b5feada8c345dd00",
+        "checksum": "2c857bdc6a7ba0fdfac0875a9aade7cf3247d9f62b25a95c237051e674c05a0028ffdfe6ef8b5cc431b943a28a508cb1d51d2919dac1be6739e8b5b99f9ae8f7",
         "client_side_only": false,
         "name": "Radium",
         "pinned": false,
         "project_id": "2gvRmQXx",
         "selected": true,
-        "version": "0.12.3+git.e2cf570",
-        "version_id": "cLwWyDwB"
+        "version": "0.12.3",
+        "version_id": "NhMILNAm"
     },
     "2u6LRnMa": {
         "checksum": "13dcddc9b46fdfa93b5752307eb1afc409f37b101becbc8674d8c41e9be871d346fb18ae04cbc1d2bd6725992dc97d676cf411eb4fb8e17dd20e98150cf80c62",
@@ -140,14 +140,14 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "c61612cd3c03696405647b539c1b12df856d5877747526f35f6d9c22c7243d21c1729dc596e5e13ec29fda40c80aed44cef53d353e83e1d8fc514279083852ac",
+        "checksum": "d5b206756d37427cc1d6a8ca03637d4690a7cb38f7f90dca4a25e1d51c41c9a9c89d514d2d0658bf85705ba31beb8b80acbdef411ccc7555022381479626fa4f",
         "client_side_only": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.92.0+1.11.3+1.20.1",
-        "version_id": "pWa2YXuc"
+        "version": "0.92.0+1.11.5+1.20.1",
+        "version_id": "nrJg60PH"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -610,14 +610,14 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "315d60a0b14a39af0accbc466b0e93103943fbd8da9a639074edd6ee8b95a7d14f3318daeee75462a6f3c18b1455ddb1fa5e1ee683733d5b13874764b0ef94e1",
+        "checksum": "b128d51610518f645bc7f7552f6cff01a04a70df168b1d7e246f741787bbf09c50fe12a83a933b1824b8fb6ae4e53df269aeafd3408f4136591c91ddb625ffcc",
         "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.4.1",
-        "version_id": "7fhw1OOV"
+        "version": "1.5.1",
+        "version_id": "dGkwVfkj"
     },
     "hIO8IsD8": {
         "checksum": "dfa1d03d69676199cbef6d5b4d85432c4910c57b153deb3287a34850b4325cf99415d433675dfde00c07e6e19645d9bd289e152bffee9dc3bd55b35cc335e085",
@@ -700,14 +700,14 @@
         "version_id": "cqz4BTbh"
     },
     "o6qsdrrQ": {
-        "checksum": "fe537ce2d290aea1338de10cd4e8e015acdd940f30bc845f545cc41fd8cf47b870b5d973589ded978ff6484e11f0ccd6f68bd4632166a2dffb8b0a445c30604a",
+        "checksum": "a5adb4edf995e288783bbdd5be8dee6647021fe6bd71932623e43c6924cd014b5be50d4670343dc55c2fc437f528321883f878e72440a0ca8a98964e1c50c96b",
         "client_side_only": true,
         "name": "Zume",
         "pinned": false,
         "project_id": "o6qsdrrQ",
         "selected": true,
-        "version": "0.17.0",
-        "version_id": "RasOoR0k"
+        "version": "0.18.0",
+        "version_id": "MqljUZ0u"
     },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
@@ -790,14 +790,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "29be7af5349f7b9b493f712ac2b6beac2b5ba25d42fddbcfd83e7e7ed1f3542b3f392dbf1a30d55b21172d8588d11f5e840ba512278776dcf4c32d8b91ae9aca",
+        "checksum": "5e20acfe7b946ea994227634a9a592f513362b21bf768f0d91d59637d0071043d2672c818571c15d60ae18651aa8976bed9558f3d88748ad07e8b1975adecbba",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.11+mc1.20.1",
-        "version_id": "haHMWqFb"
+        "version": "0.3.12+mc1.20.1",
+        "version_id": "aVRvM7I7"
     },
     "soWqucCB": {
         "checksum": "f333fe4399b29d4bc5f93fa423d0b1acd84c9e1e5dbe94f077937fe2ff583d287a2fcc088acc775efe5cec383b791054531086e7136239d1f248e004280e0179",
@@ -820,14 +820,14 @@
         "version_id": "XMT7Fj1v"
     },
     "u58R1TMW": {
-        "checksum": "8e2758df4bfade7f46d41f0d1670525a0e07965ed8dd035b50b4a82568effb9abd6d3bd453403f5250d06ad538ac0431c9e2f8ea580b5271314322a466bea014",
+        "checksum": "12eaddde779e07d299b3b121d7a2c7280e44077bde372fe55ffa47255176fa8d6619c7f4ebe83f393aea62cd137dc3baaa1b69efa5ffc35a583257c5952b6358",
         "client_side_only": false,
         "name": "Sinytra Connector",
         "pinned": false,
         "project_id": "u58R1TMW",
         "selected": true,
-        "version": "1.0.0-beta.40+1.20.1",
-        "version_id": "aKnE8qBS"
+        "version": "1.0.0-beta.41+1.20.1",
+        "version_id": "4wu0Vsg4"
     },
     "u6dRKJwZ": {
         "checksum": "50b55e7c3ad0bd92829ce466e7265fff09026d8676693a94c174da5c16e843d933ecfa60de4c84efdbabe9d9e144819d8a6dae15ba4ec615134f59c71bb26e20",
