@@ -59,23 +59,23 @@ export const fixExtruderRecipeTier = (event) => {
     const generatePipes = (material, type) => {
         let modid = material.modid == "nijika" ? "gtceu" : material.modid;
 
-        for (let [size_name, in_count, out_count] of PIPE_TYPES) {
+        for (let [sizeName, inCount, outCount] of PIPE_TYPES) {
             // item pipes don't have a tiny size.
-            if (type == "item" && size_name == "tiny") {
+            if (type == "item" && sizeName == "tiny") {
                 continue;
             }
 
             event.recipes.gtceu
-                .extruder(`nijika:auto/pipes/${material.name}/${type}/${size_name}`)
-                .itemInputs(Item.of(`#forge:ingots/${material.name}`).withCount(in_count))
-                .notConsumable(`gtceu:${size_name}_pipe_extruder_mold`)
+                .extruder(`nijika:auto/pipes/${material.name}/${type}/${sizeName}`)
+                .itemInputs(Item.of(`#forge:ingots/${material.name}`).withCount(inCount))
+                .notConsumable(`gtceu:${sizeName}_pipe_extruder_mold`)
                 .itemOutputs(
-                    Item.of(`${modid}:${material.name}_${size_name}_${type}_pipe`).withCount(
-                        out_count
+                    Item.of(`${modid}:${material.name}_${sizeName}_${type}_pipe`).withCount(
+                        outCount
                     )
                 )
                 .EUt(GTValues.VA[GTValues.LV])
-                .duration(material.mass * in_count);
+                .duration(material.mass * inCount);
         }
     };
 
@@ -89,7 +89,7 @@ export const fixExtruderRecipeTier = (event) => {
             .notConsumable(GTItems.SHAPE_EXTRUDER_PLATE.get())
             .itemOutputs(`gtceu:${rubber}_plate`)
             .EUt(16)
-            .duration(0.25);
+            .duration(5);
     }
 
     iterateOverAllMaterials((material) => {
