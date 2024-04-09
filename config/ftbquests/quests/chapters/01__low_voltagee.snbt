@@ -303,7 +303,7 @@
 			description: [
 				"A lot of GregTech is based around doing &aore processing&r. Unlike most modpacks, this isn't just a straightforward \"put one ore in, get two dusts out, smelt them for ingots\" and variations within; instead, ore processing is mainly focused on &abyproducts&r."
 				""
-				"For example, from a single piece of &aRaw Iron&r you can also get &dgold&r, &dnickel&r, and &dtin&r dusts. If you press your recipe keybind on a crushed ore, purified ore, dust, or anything inbetween, then there is a special &aEMI tab&r that shows you all the possible byproducts from a specific line of ore."
+				"For example, from a single piece of &aRaw Magnetite&r you can also get &dvanadium&r, &dmagnesia&r, and &dgold&r dusts. If you press your recipe keybind on a crushed ore, purified ore, dust, or anything inbetween, then there is a special &aEMI tab&r that shows you all the possible byproducts from a specific line of ore."
 				""
 				"This is also a good way to figure out what base ore you need for paticular materials."
 			]
@@ -385,7 +385,7 @@
 		{
 			dependencies: ["4B215E2BA5E3CB58"]
 			description: [
-				"The &aArc Furnace&r's primary useages are to turn sand into glass without needing to go through glass dust and to make &dannealed copper&r."
+				"The &aArc Furnace&r's primary usage is to make &dannealed copper&r."
 				""
 				"Both of these requiree &doxygen&r. You can get it through various means:"
 				""
@@ -792,6 +792,7 @@
 			]
 			id: "3134403B5536B7A1"
 			min_width: 400
+			optional: true
 			tasks: [
 				{
 					id: "52BE5C75F41C1259"
