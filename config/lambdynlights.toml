@@ -13,6 +13,7 @@
 				horse = true
 				minecart = true
 				item = true
+				donkey = true
 				furnace_minecart = true
 				chest_minecart = true
 				experience_orb = true
@@ -21,4 +22,9 @@
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
 				super_glue = true
+
+			[light_sources.settings.entities.littlelogistics]
+				seater_car = true
+				steam_locomotive = true
+				fluid_car = true
 

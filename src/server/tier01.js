@@ -87,6 +87,26 @@ export const doTier01Content = (event) => {
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(20 * 5);
 
+    // make the vacuum tube recipes consistent
+    event.remove({ output: "gtceu:vacuum_tube", type: "gtceu:assembler" });
+    event.recipes.gtceu.assembler("nijika:tier01/vacuum_tubes")
+        .itemInputs(
+            "2x gtceu:copper_single_wire",
+            "1x gtceu:glass_tube"
+        )
+        .itemOutputs("2x gtceu:vacuum_tube")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(6 * 20);
+    
+    event.recipes.gtceu.assembler("nijika:tier01/vacuum_tubes_annealed")
+        .itemInputs(
+            "2x gtceu:annealed_copper_single_wire",
+            "1x gtceu:glass_tube"
+        )
+        .itemOutputs("3x gtceu:vacuum_tube")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(2 * 20);
+
     // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });
     event.remove({ id: "gtceu:assembler/cover_item_voiding" });
