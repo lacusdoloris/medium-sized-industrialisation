@@ -12,6 +12,7 @@ import { adjustMachineRecipesForTier } from "./machines";
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { fixLensRecipes } from "./lenses";
 import { adjustGtGeneratorTiers } from "./generators";
+import { adjustMultiblockComponentsForTier } from "./multiblock";
 
 /**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.
@@ -52,5 +53,6 @@ export const adjustMaterialTierRecipes = (event) => {
 
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
         adjustMachineRecipesForTier(event, tier);
+        adjustMultiblockComponentsForTier(event, tier);
     }
 };
