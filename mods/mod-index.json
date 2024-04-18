@@ -140,14 +140,14 @@
         "version_id": "nr1znv5v"
     },
     "Aqlf1Shp": {
-        "checksum": "841db27032be218040fbe0b01376892bb07c422a144ec7af23c913c973cb233ddeec585cffc4f75b41a34d6121d888b6930c88225610c61016f24b7eac6ab8a4",
+        "checksum": "c612127c41acb1e67fe5a3b34def62d37a37fe39c9d2dd4fde3c70f9bfd3506690599bde3d3a77033eaae170ac65266bbfadf25e33939eb407ba453a0a6d7c2a",
         "client_side_only": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.92.1+1.11.7+1.20.1",
-        "version_id": "gwP6WAQb"
+        "version": "0.92.1+1.11.8+1.20.1",
+        "version_id": "DXF7HH4f"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -680,14 +680,14 @@
         "version_id": "JMtc0mTS"
     },
     "nmDcB62a": {
-        "checksum": "969a3fdefba4263a327fe74393bc04d568d9db7270425f827b61ceec77ca01d6174597d81f844cb19e53909b3da60f83a7e9840c2c223df7e8e883961a2a8537",
+        "checksum": "189f69021e74f79a027488d70e3345b411272a4ed1b4edfc5dee752cf3440c927b1576cb2884679869dfbe973f129ce2c57947bdf45e626d3b6246bf4a4e6b96",
         "client_side_only": false,
         "name": "ModernFix",
         "pinned": false,
         "project_id": "nmDcB62a",
         "selected": true,
-        "version": "5.16.0+mc1.20.1",
-        "version_id": "nQTU8UXe"
+        "version": "5.16.1+mc1.20.1",
+        "version_id": "2Rr52SPW"
     },
     "nvQzSEkH": {
         "checksum": "634cdd2329662484e8fd48bbf2307a1547c9f16ad9f89f3ead7d0e4ea589f357491757b5e01c98e1136952d998fce2735eff658a9ae2793aa44edd4d385aa201",
@@ -700,14 +700,14 @@
         "version_id": "cqz4BTbh"
     },
     "o6qsdrrQ": {
-        "checksum": "a5adb4edf995e288783bbdd5be8dee6647021fe6bd71932623e43c6924cd014b5be50d4670343dc55c2fc437f528321883f878e72440a0ca8a98964e1c50c96b",
+        "checksum": "69f6c386fa358a2e55958bfed7fc56ffaa9420422c2717892383f45c524d4dfed82ad7210ad75b3f19fe202fde6e84d7b496c855708e95da93c4d5d1b360705c",
         "client_side_only": true,
         "name": "Zume",
         "pinned": false,
         "project_id": "o6qsdrrQ",
         "selected": true,
-        "version": "0.18.0",
-        "version_id": "MqljUZ0u"
+        "version": "0.18.1",
+        "version_id": "iRXvs2SA"
     },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
@@ -741,7 +741,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": false,
+        "client_side_only": true,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -850,24 +850,24 @@
         "version_id": "DG5Fn9Sz"
     },
     "umyGl7zF": {
-        "checksum": "629092cdb255125497ee4f5d356bb4940fcb3b34ec5fc89f0e0f3e4d20ef870a94f23341c927849c3427aa57cc98d8c02b8436b085407b63d6f3798fb54c6b2a",
+        "checksum": "b9749a916428d316233f57257dd0173c420b5fc856eece16c6d1632a162b78d0764007ca03903ba334f8283aba7cf6c2ee5c67c4f699be342bd98d0163605236",
         "client_side_only": false,
         "name": "KubeJS",
         "pinned": false,
         "project_id": "umyGl7zF",
         "selected": true,
-        "version": "2001.6.4-build.138+forge",
-        "version_id": "DNX6SE7o"
+        "version": "2001.6.5-build.7+forge",
+        "version_id": "YAwgjR2e"
     },
     "vvuO3ImH": {
-        "checksum": "08261698122206818bdc3c30a4b6edbaf608b4d0c3831326f90fd72e6303e5f1478f647a7fac08ab1129fe75809e88dc519bbd9677de773170745ce7be39f980",
+        "checksum": "b72f9b7be15dd0b8913577b9e742b2b45b96f9eaf0c03e76aa6152ae4c9f2589be79e3acaf88ef7f316df63809a8f5ca3ab5a6b8124af33a7db1700d516def0f",
         "client_side_only": false,
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.8.0+1.20.1",
-        "version_id": "YGa5gGxr"
+        "version": "5.8.1+1.20.1",
+        "version_id": "6EgL0aP4"
     },
     "wPQ6GgFE": {
         "checksum": "d90e0517031af930ff4312f8ca2b3c32df7ecba578fdf8b011e0161da0a022fdfdd5c5d130c732527e596f4a013e3831ea8c24ab5523d847057724e802b21b58",
