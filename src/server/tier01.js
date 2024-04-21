@@ -65,11 +65,11 @@ export const doTier01Content = (event) => {
     // im so sorry.
     event.recipes.create
         .sequenced_assembly("1x gtceu:small_iron_gear", "1x gtceu:iron_plate", [
-            event.recipes.create.deploying("gtceu:wrought_iron_plate", [
+            event.recipes.create.deploying("gtceu:iron_plate", [
                 "gtceu:iron_plate",
                 "#forge:rods/iron",
             ]),
-            event.recipes.create.pressing("gtceu:_iron_plate", ["gtceu:iron_plate"]),
+            event.recipes.create.pressing("gtceu:iron_plate", ["gtceu:iron_plate"]),
         ])
         .transitionalItem("gtceu:iron_plate")
         .loops(4)
@@ -89,20 +89,16 @@ export const doTier01Content = (event) => {
 
     // make the vacuum tube recipes consistent
     event.remove({ output: "gtceu:vacuum_tube", type: "gtceu:assembler" });
-    event.recipes.gtceu.assembler("nijika:tier01/vacuum_tubes")
-        .itemInputs(
-            "2x gtceu:copper_single_wire",
-            "1x gtceu:glass_tube"
-        )
+    event.recipes.gtceu
+        .assembler("nijika:tier01/vacuum_tubes")
+        .itemInputs("2x gtceu:copper_single_wire", "1x gtceu:glass_tube")
         .itemOutputs("2x gtceu:vacuum_tube")
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(6 * 20);
-    
-    event.recipes.gtceu.assembler("nijika:tier01/vacuum_tubes_annealed")
-        .itemInputs(
-            "2x gtceu:annealed_copper_single_wire",
-            "1x gtceu:glass_tube"
-        )
+
+    event.recipes.gtceu
+        .assembler("nijika:tier01/vacuum_tubes_annealed")
+        .itemInputs("2x gtceu:annealed_copper_single_wire", "1x gtceu:glass_tube")
         .itemOutputs("3x gtceu:vacuum_tube")
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(2 * 20);
