@@ -27,7 +27,7 @@ const MOB_TYPES = {
  *
  * @param {Internal.RecipesEventJS} event
  */
-export const addMobRecipes = (event) => {
+const addMobRecipes = (event) => {
     let blood = Fluid.of("gtceu:blood").withAmount(250 * FluidAmounts.MILLIBUCKET);
 
     for (let [idx, mob] of Object.keys(MOB_TYPES).entries()) {

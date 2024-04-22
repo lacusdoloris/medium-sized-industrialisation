@@ -11,7 +11,6 @@
 
 import { MODPACK_SETTINGS } from "../settings";
 import { addChemicalProcessingRecipes } from "../shared/chemicals";
-import { addBaseOreRecipes } from "../shared/base_ores";
 import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
@@ -24,6 +23,7 @@ import { doTier02Content } from "./tier02";
 import { doTier03Content } from "./tier03";
 import { doTier04Content } from "./tier04";
 import { addOreGenerationRecipes } from "./ores";
+import { addNonSpecificMachineRecipes } from "./machines";
 
 ServerEvents.tags("items", setupItemTags);
 
@@ -35,6 +35,7 @@ ServerEvents.recipes((event) => {
     doModRecipes(event);
     addChemicalProcessingRecipes(event);
     addOreGenerationRecipes(event);
+    addNonSpecificMachineRecipes(event);
 
     // == TIERED CONTENT == //
 
