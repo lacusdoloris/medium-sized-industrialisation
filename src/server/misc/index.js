@@ -4,7 +4,6 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { redoGlassProcessing } from "./glass";
 import { addMobFarmRelatedRecipes } from "./mob_farming";
 import { rewriteRailwayRecipes } from "./railways";
 import { addSlagProcessingRecipes } from "./slag_processing";
@@ -152,7 +151,6 @@ export const adjustVariousMiscRecipes = (event) => {
         .duration(10 * 20);
 
     rewriteRailwayRecipes(event);
-    redoGlassProcessing(event);
     addSlagProcessingRecipes(event);
     addMobFarmRelatedRecipes(event);
 };
