@@ -282,6 +282,7 @@ export const customiseMaterials = () => {
 
     // more useful formulas for organic chemicals.
     getMaterial("styrene").setFormula("C6H5CH=CH2");
+    getMaterial("dimethylamine").setFormula("NH(CH3)2");
     getMaterial("trimethylamine").setFormula("N(CH3)3");
     getMaterial("polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3H)");
     getMaterial("sodium_polystyrene_sulfonate").setFormula("(CH2CHC6H4SO3Na)");
