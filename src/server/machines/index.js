@@ -4,6 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { addIonExchangerRecipes } from "./ion_exchanger";
 import { addMobFarmRelatedRecipes } from "./mob_farming";
 
 /**
@@ -13,4 +14,5 @@ import { addMobFarmRelatedRecipes } from "./mob_farming";
  */
 export const addNonSpecificMachineRecipes = (event) => {
     addMobFarmRelatedRecipes(event);
+    addIonExchangerRecipes(event);
 };
