@@ -204,6 +204,8 @@
     "gtceu.butchering": "Butchering",
     "block.gtceu.ore_sorter": "Ore Sorter",
     "gtceu.ore_sorting": "Ore Sorting",
+    "block.gtceu.ion_exchanger": "Ion Exchanger",
+    "gtceu.ion_exchange": "Ion Exchange",
 
     "item.nijika.slag": "Ore Slag",
     "item.nijika.catalysator_brown": "Mineral Catalyst",
