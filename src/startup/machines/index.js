@@ -7,6 +7,7 @@
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
 import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
+import { addIonExchangerMultiblock, addIonExchangerRecipeType } from "./ion_exchanger";
 import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
 
 // some notes
@@ -34,6 +35,9 @@ export const addAllRecipeTypes = (event) => {
 
     let sorter = event.create("ore_sorting");
     addOreSortingRecipeType(sorter);
+
+    let ionExchanger = event.create("ion_exchange");
+    addIonExchangerRecipeType(ionExchanger);
 };
 
 /**
@@ -53,4 +57,7 @@ export const addAllMachineTypes = (event) => {
 
     let sorter = event.create("nijjika:ore_sorter", "multiblock");
     addOreSortingMultiblock(sorter);
+
+    let ionExchanger = event.create("nijika:ion_exchanger", "multiblock");
+    addIonExchangerMultiblock(ionExchanger);
 };

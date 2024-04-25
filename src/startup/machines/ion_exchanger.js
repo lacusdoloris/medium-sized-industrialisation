@@ -1,0 +1,107 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+/**
+ * @param {Internal.GTRecipeType} type
+ */
+export const addIonExchangerRecipeType = (type) => {
+    type.setEUIO("in")
+        .setMaxIOSize(3, 3, 3, 3)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.DOWN_TO_UP)
+        .setSound(GTSoundEntries.CHEMICAL);
+};
+
+/**
+ * @param {Internal.MultiblockMachineBuilder} builder
+ */
+export const addIonExchangerMultiblock = (builder) => {
+    /** @param {Internal.MultiblockMachineDefinition} definition */
+    const patternCallback = (definition) => {
+        return FactoryBlockPattern.start()
+            .aisle(
+                // Back wall
+                "#VVVVVVV#",
+                "VGGGGGGGV",
+                "VVVVVVVVV",
+                "VV     VV",
+                "VV     VV",
+                "VV     VV"
+            )
+            .aisle(
+                // Middle wall
+                "VVVVVVVVV",
+                "IPPPPPPPO",
+                "IPVVVVVPO",
+                "IPV###VPO",
+                "IPV###VPO",
+                "VVV###VVV"
+            )
+            .aisle(
+                // Front wall
+                "#VVVEVVV#",
+                "VGGGCGGGV",
+                "VVVVEVVVV",
+                "VV     VV",
+                "VV     VV",
+                "VV     VV"
+            )
+            .where("#", Predicates.any())
+            .where(
+                "V",
+                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(
+                    Predicates.abilities(PartAbility.PARALLEL_HATCH)
+                )
+            )
+            .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where("P", Predicates.blocks(GTBlocks.CASING_POLYTETRAFLUOROETHYLENE_PIPE.get()))
+            .where(
+                "I",
+                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
+                .or(
+                    Predicates.abilities(PartAbility.IMPORT_FLUIDS)
+                        .setMinGlobalLimited(1, 4)
+                        .setMaxGlobalLimited(6)
+                        .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6))
+                )
+            )
+            .where(
+                "O",
+                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
+                .or(
+                    Predicates.abilities(PartAbility.EXPORT_FLUIDS)
+                        .setMinGlobalLimited(1, 4)
+                        .setMaxGlobalLimited(6)
+                        .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(6))
+                )
+            )
+            .where(
+                "E",
+                Predicates.abilities(PartAbility.INPUT_ENERGY)
+                    .setMinGlobalLimited(1, 2)
+                    .setMaxGlobalLimited(2)
+                    .or(Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()))
+            )
+            .where("C", Predicates.controller(Predicates.blocks(definition.get())))
+            .build();
+    };
+
+    builder
+        .pattern(patternCallback)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
+            "gtceu:block/machines/sifter"
+        )
+        .recipeTypes("ion_exchange")
+        .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .recipeModifier(
+            GTRecipeModifiers.PARALLEL_HATCH.apply(
+                OverclockingLogic.NON_PERFECT_OVERCLOCK,
+                GTRecipeModifiers.ELECTRIC_OVERCLOCK
+            )
+        );
+};

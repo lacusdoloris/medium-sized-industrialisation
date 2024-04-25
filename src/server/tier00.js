@@ -101,10 +101,10 @@ export const doTier00Content = (event) => {
 
     // funny...
     event.recipes.create
-        .mixing(
-            "1x gtceu:rubber_mallet",
-            [Fluid.of("gtceu:rubber").withAmount(144 * 6 * FluidAmounts.MB), "2x #forge:rods/wooden"]
-        )
+        .mixing("1x gtceu:rubber_mallet", [
+            Fluid.of("gtceu:rubber").withAmount(144 * 6 * FluidAmounts.MB),
+            "2x #forge:rods/wooden",
+        ])
         .id("nijika:tier00/rubber_mallet");
 
     event.recipes.create

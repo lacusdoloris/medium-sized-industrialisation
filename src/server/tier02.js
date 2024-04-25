@@ -45,5 +45,4 @@ export const doTier02Content = (event) => {
         .itemOutputs("1x gtceu:mv_cadmium_battery")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
-
 };
