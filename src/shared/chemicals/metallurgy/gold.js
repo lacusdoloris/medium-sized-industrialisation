@@ -51,7 +51,7 @@ export const addGoldProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:gold_slurry").withAmount(2 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:sodium_dicyanoaurate").withAmount(200 * FluidAmounts.MB),
-            Fluid.of("gtceu:gold_slurry").withAmount(800 * FluidAmounts.B)
+            Fluid.of("gtceu:gold_slurry").withAmount(800 * FluidAmounts.MB)
         )
         .chancedOutput("1x gtceu:crushed_gold_ore", 3500.0, 0.0)
         .EUt(GTValues.VA[GTValues.LV])
