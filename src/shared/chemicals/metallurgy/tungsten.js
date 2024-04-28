@@ -12,10 +12,6 @@ import {
 } from "../../materials/helpers";
 
 export const addTungstenMaterials = (event) => {
-    createAqueousIntermediate(event, "one_butanol", 0xebd5ea);
-    // used as part of thee ion-exchange resin mixture
-    createAqueousIntermediate(event, "tributyl_phosphate", 0xb5a4a3);
-
     createAqueousIntermediate(event, "tungstic_ion_exchange_medium", 0xf0717a);
     createAqueousIntermediate(event, "used_up_tungstic_ion_exchange_medium", 0x58090e);
 
@@ -125,56 +121,12 @@ export const addTungstenRecipes = (event) => {
 
     // TODO: Wulfenite.
 
-    // 1-Butanol is made from the catalytic hydroformylation of propene.
-    // C3H6 + CO + 2 H2 = C4H9OH
-    event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/tungsten/1_butanol")
-        .inputFluids(
-            Fluid.of("gtceu:propene").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:carbon_monoxide").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen").withAmount(4 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(Fluid.of("gtceu:one_butanol").withAmount(1 * FluidAmounts.BUCKET))
-        .EUt(GTValues.VA[GTValues.HV])
-        .duration(15 * 20)
-        .circuit(1);
-
-    event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/tungsten/1_butanol_fast")
-        .itemInputs("1x nijika:wilkinson_catalyst")
-        .inputFluids(
-            Fluid.of("gtceu:propene").withAmount(50 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:carbon_monoxide").withAmount(50 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen").withAmount(200 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(Fluid.of("gtceu:one_butanol").withAmount(50 * FluidAmounts.BUCKET))
-        .EUt(GTValues.V[GTValues.EV])
-        .duration(360 * 20)
-        .circuit(2);
-
-    // 1-Butanol can be reacted with phosphoryl chloride to get tributyl phosphate, one of the
-    // components of the LIX resin.
-    // POCl3 + 3 C4H9OH = PO(OC4H9)3 + 3 HCl
-    event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/tungsten/tributyl_phosphate")
-        .inputFluids(
-            Fluid.of("gtceu:phosphoryl_chloride").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:one_butanol").withAmount(3 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(
-            Fluid.of("gtceu:tributyl_phosphate").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET)
-        )
-        .EUt(GTValues.VHA[GTValues.HV])
-        .duration(10 * 20);
-
     // Mix them all together to get the Ion-Exchange resin.
     event.recipes.gtceu
         .mixer("nijika:chemicals/tungsten/ion_exchange_resin")
         .inputFluids(
             Fluid.of("gtceu:trimethylamine").withAmount(3 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:tributyl_phosphate").withAmount(140 * FluidAmounts.MB),
-            Fluid.of("gtceu:toluene").withAmount(860 * FluidAmounts.MB)
+            Fluid.of("gtceu:solvent_extraction_helper").withAmount(1 * FluidAmounts.BUCKET)
         )
         .itemInputs("32x gtceu:sodium_polystyrene_sulfonate_round")
         .outputFluids(
@@ -188,8 +140,7 @@ export const addTungstenRecipes = (event) => {
         .inputFluids(
             // yes, I am aware this is not how chemistry works.
             Fluid.of("gtceu:trioctylamine").withAmount(375 * FluidAmounts.MB),
-            Fluid.of("gtceu:tributyl_phosphate").withAmount(140 * FluidAmounts.MB),
-            Fluid.of("gtceu:toluene").withAmount(860 * FluidAmounts.MB)
+            Fluid.of("gtceu:solvent_extraction_helper").withAmount(1 * FluidAmounts.BUCKET)
         )
         .itemInputs("32x gtceu:sodium_polystyrene_sulfonate_round")
         .outputFluids(
@@ -201,8 +152,9 @@ export const addTungstenRecipes = (event) => {
     // Ion-exchange reaction with the organic solvent, and introduction of ammonia to get
     // ammonium paratungstate.
     // This is the most abstracted part of the process.
+
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/tungsten/ammonium_paratungstate")
+        .ion_exchange("nijika:chemicals/tungsten/ammonium_paratungstate")
         .inputFluids(
             Fluid.of("gtceu:sodium_tungstate").withAmount(132 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:tungstic_ion_exchange_medium").withAmount(250 * FluidAmounts.BUCKET),
@@ -260,6 +212,6 @@ export const addTungstenRecipes = (event) => {
         .itemOutputs("12x gtceu:tungsten_dust")
         .outputFluids(Fluid.of("gtceu:ammonia").withAmount(10 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
-        .duration(10 * 20)
+        .duration(30 * 20)
         .blastFurnaceTemp(2800);
 };

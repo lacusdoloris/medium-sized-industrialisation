@@ -104,4 +104,6 @@ export const addTitaniumRecipes = (event) => {
         .chancedOutput("2x gtceu:tiny_vanadium_oxytrichloride_dust", 7800.0, 0.0)
         .duration(7 * 20 + 10)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    // from here, titanium tetrachloride reactions proceed as in thee base mod.
 };

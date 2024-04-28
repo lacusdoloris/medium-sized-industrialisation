@@ -51,7 +51,7 @@ export const addRheniumRecipes = (event) => {
         .mixer("nijika:chemicals/rhenium/sulfuric_molybdenite_runoff")
         .inputFluids(
             Fluid.of("gtceu:molybdenum_flue").withAmount(6 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET)
+            Fluid.of("minecraft:distilled_water").withAmount(4 * FluidAmounts.BUCKET)
         )
         .outputFluids(
             Fluid.of("gtceu:sulfuric_molybdenite_runoff").withAmount(6 * FluidAmounts.BUCKET)
@@ -63,20 +63,21 @@ export const addRheniumRecipes = (event) => {
     // The rhenium can be separated out with tributyl phosphate liquid-liquid extraction, and
     // converted into ammonia salts by neutralisation.
     // TODO: Extra molybdenum?
+
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/rhenium/rhenium_separation")
+        .ion_exchange("nijika:chemicals/rhenium/rhenium_separation")
         .inputFluids(
-            Fluid.of("gtceu:sulfuric_molybdenite_runoff").withAmount(1800 * FluidAmounts.MB),
-            Fluid.of("gtceu:tributyl_phosphate").withAmount(200 * FluidAmounts.MB),
-            Fluid.of("gtceu:toluene").withAmount(750 * FluidAmounts.MB)
+            Fluid.of("gtceu:sulfuric_molybdenite_runoff").withAmount(180 * FluidAmounts.B),
+            Fluid.of("gtceu:solvent_extraction_helper").withAmount(150 * FluidAmounts.BUCKET)
         )
         .outputFluids(
-            Fluid.of("gtceu:rhenium_tbp_mixture").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:sulfuric_acid").withAmount(900 * FluidAmounts.MB)
+            Fluid.of("gtceu:rhenium_tbp_mixture").withAmount(18 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:sulfuric_acid").withAmount(90 * FluidAmounts.B)
         )
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(20);
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(120 * 60);
 
+    // Recycle the extraction helper and extract the Rhenium using Ammonia.
     // ReO4{-} + NH4{+} = NH4ReO4
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/rhenium/ammonium_perrhenate")
@@ -84,10 +85,7 @@ export const addRheniumRecipes = (event) => {
             Fluid.of("gtceu:rhenium_tbp_mixture").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:ammonium_hydroxide").withAmount(144 * FluidAmounts.MB)
         )
-        .outputFluids(
-            Fluid.of("gtceu:tributyl_phosphate").withAmount(150 * FluidAmounts.MB),
-            Fluid.of("gtceu:toluene").withAmount(700 * FluidAmounts.MB)
-        )
+        .outputFluids(Fluid.of("gtceu:solvent_extraction_helper").withAmount(650 * FluidAmounts.MB))
         .itemOutputs("1x gtceu:tiny_ammonium_perrhenate_dust")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);

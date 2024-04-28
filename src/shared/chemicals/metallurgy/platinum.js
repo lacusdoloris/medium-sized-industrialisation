@@ -48,7 +48,7 @@ export const addPlatinumGroupMaterials = (event) => {
  */
 export const addPlatinumGroupRecipes = (event) => {
     // A lot of this is pieced together from various patents, papers, and encyclopedias.
-    // It *roughly* follows Modern Separation Process F from Ullman's Encylopedia, but not exactly.
+    // It *roughly* follows Modern Separation Process F from Ullman's Encyclopedia, but not exactly.
     //
     // This also references:
     // Patent GB2065092:  Solvent extraction of platinum group metals
@@ -91,7 +91,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Solvent extraction using Methyl isobutyl ketone of gold. Also extracts out palladium.
     // "Extraction kinetics are fast and virtually instantaneous."
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/platinum/gold_extraction_using_mibk")
+        .ion_exchange("nijika:chemicals/platinum/gold_extraction_using_mibk")
         .inputFluids(
             Fluid.of("gtceu:dissolved_platinum_group_sludge").withAmount(12 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:methyl_isobutyl_ketone").withAmount(2 * FluidAmounts.BUCKET)
@@ -124,7 +124,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Reduce the palladium.
     // (NH4)2[PdCl6] + 2 H2 + 6 NaOH = Pd + 2 NH3 + 6 H2O + 6 NaCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/palladium_reduction")
+        .chemical_reactor("nijika:chemicals/platinum/palladium_reduction")
         .itemInputs("6x gtceu:sodium_hydroxide_dust")
         .inputFluids(
             Fluid.of("gtceu:ammonium_hexachloropalladate").withAmount(1 * FluidAmounts.BUCKET),
@@ -211,7 +211,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Steps e'-f'.
     // Allows recovering some of the trioctylamine used in the process.
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/platinum_iridium_stripping")
+        .ion_exchange("nijika:chemicals/platinum/platinum_iridium_stripping")
         .inputFluids(
             Fluid.of("gtceu:platinum_iridium_mixture_1").withAmount(4 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:ammonium_hydroxide").withAmount(4 * FluidAmounts.BUCKET),
@@ -228,7 +228,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Step g'.
     // This extracts 1 mole of ammonium hexachloroplatinate from the mixture using trioctylamine
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/platinum/platinum_iridium_separation")
+        .ion_exchange("nijika:chemicals/platinum/platinum_iridium_separation")
         .inputFluids(
             Fluid.of("gtceu:platinum_iridium_mixture_2").withAmount(4 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:trioctylamine").withAmount(2 * FluidAmounts.BUCKET)
@@ -256,7 +256,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Reduction of platinum salt with sodium hydroxide and hydrogen to get pure platinum metal.
     // (NH4)2[PtCl6] + 2 H2 + 6 NaOH = Pt + 2 NH3 + 6 H2O + 6 NaCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/platinum_reduction")
+        .chemical_reactor("nijika:chemicals/platinum/platinum_reduction")
         .itemInputs("6x gtceu:sodium_hydroxide_dust")
         .inputFluids(
             Fluid.of("gtceu:ammonium_hexachloroplatinate").withAmount(1 * FluidAmounts.BUCKET),
@@ -273,7 +273,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Reduction of ammonium salt with sodium hydroxide and hydrogen to get pure iridium metal.
     // (NH4)2[IrCl6] + 2 H2 + 6 NaOH = Ir + 2 NH3 + 6 H2O + 6 NaCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/iridium_reduction")
+        .chemical_reactor("nijika:chemicals/platinum/iridium_reduction")
         .itemInputs("6x gtceu:sodium_hydroxide_dust")
         .inputFluids(
             Fluid.of("gtceu:ammonium_hexachloroiridate").withAmount(1 * FluidAmounts.BUCKET),
@@ -329,7 +329,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Reduction of ammonium salt to get pure rhodium metal.
     // (NH4)2[RhCl6] + 2 H2 + 6 NaOH = Rh + 2 NH3 + 6 H2O + 6 NaCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/rhodium_reduction")
+        .chemical_reactor("nijika:chemicals/platinum/rhodium_reduction")
         .itemInputs("6x gtceu:sodium_hydroxide_dust")
         .inputFluids(
             Fluid.of("gtceu:ammonium_hexachlororhodate").withAmount(1 * FluidAmounts.BUCKET),
@@ -346,7 +346,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Solution: Rh. I'm kinda winging it here.
     // RuO4 + 6 KCl + 4 H2O = K2[RuCl6] + 4 K(OH)2
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/potassium_hexachlororuthenate")
+        .chemical_bath("nijika:chemicals/platinum/potassium_hexachlororuthenate")
         .inputFluids(
             Fluid.of("gtceu:dissolved_platinum_group_4").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET)
@@ -364,7 +364,7 @@ export const addPlatinumGroupRecipes = (event) => {
     // Finally, Ruthenium reduction.
     // K2[RuCl6] + 2 H2 = 2 KCl + Ru + 4 HCl
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/platinum/ruthenium_reduction")
+        .chemical_reactor("nijika:chemicals/platinum/ruthenium_reduction")
         .inputFluids(
             Fluid.of("gtceu:potassium_hexachlororuthenate").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:hydrogen").withAmount(4 * FluidAmounts.BUCKET)

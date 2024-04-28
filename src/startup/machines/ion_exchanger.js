@@ -9,8 +9,8 @@
  */
 export const addIonExchangerRecipeType = (type) => {
     type.setEUIO("in")
-        .setMaxIOSize(3, 3, 3, 3)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_DISTILLATION_TOWER, FillDirection.DOWN_TO_UP)
+        .setMaxIOSize(4, 4, 4, 4)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MIXER, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.CHEMICAL);
 };
 
@@ -59,8 +59,7 @@ export const addIonExchangerMultiblock = (builder) => {
             .where("P", Predicates.blocks(GTBlocks.CASING_POLYTETRAFLUOROETHYLENE_PIPE.get()))
             .where(
                 "I",
-                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
-                .or(
+                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(
                     Predicates.abilities(PartAbility.IMPORT_FLUIDS)
                         .setMinGlobalLimited(1, 4)
                         .setMaxGlobalLimited(6)
@@ -69,8 +68,7 @@ export const addIonExchangerMultiblock = (builder) => {
             )
             .where(
                 "O",
-                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
-                .or(
+                Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(
                     Predicates.abilities(PartAbility.EXPORT_FLUIDS)
                         .setMinGlobalLimited(1, 4)
                         .setMaxGlobalLimited(6)

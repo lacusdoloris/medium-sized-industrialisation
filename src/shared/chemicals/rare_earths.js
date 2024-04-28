@@ -130,16 +130,22 @@ export const addRareEarthProcessingChain = (event) => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(20 * 20);
 
-    // Separate out the heavy ones from the light onees witth DEHPA.
+    // Separate out the heavy ones from the light onees with DEHPA.
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/rare_earths/dehpa_separation")
+        .ion_exchange("nijika:chemicals/rare_earths/dehpa_separation")
         .itemInputs("50x gtceu:rare_earth_mixture_dust")
-        .inputFluids(Fluid.of("gtceu:dehpa").withAmount(75 * FluidAmounts.BUCKET))
+        .inputFluids(
+            Fluid.of("gtceu:dehpa").withAmount(75 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:solvent_extraction_helper").withAmount(50 * FluidAmounts.BUCKET)
+        )
         .itemOutputs(
             "35x gtceu:light_rare_earth_oxides_dust",
             "15x gtceu:heavy_rare_earth_oxides_dust"
         )
-        .outputFluids(Fluid.of("gtceu:dehpa").withAmount(60 * FluidAmounts.BUCKET))
+        .outputFluids(
+            Fluid.of("gtceu:dehpa").withAmount(60 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:solvent_extraction_helper").withAmount(25 * FluidAmounts.BUCKET)
+        )
         .EUt(GTValues.VA[GTValues.EV])
         .duration(35 * 20);
 
