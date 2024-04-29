@@ -63,6 +63,7 @@ export const addCustomMaterials = (event) => {
         .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:titanium", "1x gtceu:nickel")
         .blastTemp(3050, GasTier.MID, GTValues.VA[GTValues.EV])
+        .fluidPipeProperties(2426, 150, true)
         .flags(
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_FOIL,
