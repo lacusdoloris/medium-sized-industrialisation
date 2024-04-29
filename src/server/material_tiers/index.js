@@ -36,7 +36,7 @@ export const adjustMaterialTierRecipes = (event) => {
     // ... and also remove the completely useless ones that just clog up EMI.
     event.remove({
         type: "gtceu:extruder",
-        input: /gtceu:(?:long_)?(?:rod|block|wire|plate|ingot)_extruder_mold/,
+        input: /gtceu:(?:long_)?(?:rod|block|wire|plate|ingot|ring)_extruder_mold/,
     });
 
     // so true...

@@ -126,7 +126,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/rings/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_RING.get())
-                .itemOutputs(`${modid}:${material.name}_ring`)
+                .itemOutputs(`4x ${modid}:${material.name}_ring`)
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass);
         }
