@@ -246,6 +246,7 @@
     "tag.item.nijika.bessemer_limestone": "Valid Limestones",
     "tag.item.nijika.rubber_plates": "All Rubber Plates",
 
+    "tag.item.gtceu.circuits.ulv": "ULV Circuits",
     "tag.item.gtceu.circuits.lv": "Low Voltage Circuits",
     "tag.item.gtceu.circuits.mv": "Medium Voltage Circuits",
     "tag.item.gtceu.circuits.hv": "High Voltage Circuits",
@@ -255,6 +256,11 @@
     "tag.item.gtceu.circuits.zpm": "ZPM Circuits",
     "tag.item.gtceu.circuits.uv": "UV Circuits",
     "tag.item.gtceu.circuits.uhv": "UHV Circuits",
+    "tag.item.gtceu.capacitors": "Regular Capacitors",
+    "tag.item.gtceu.inductors": "Regular Inductors",
+    "tag.item.gtceu.resistors": "Regular Resistors",
+    "tag.item.gtceu.diodes": "Regular Diodes",
+    "tag.item.gtceu.transistors": "Regular Transistors",
 
     "biome.bigglobe.cold_forest": "Cold Forest",
     "biome.bigglobe.cold_plains": "Cold Plains",
