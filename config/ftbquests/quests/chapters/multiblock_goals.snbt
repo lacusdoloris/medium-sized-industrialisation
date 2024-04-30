@@ -389,6 +389,23 @@
 			x: 3.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["020FAE71BEDA6B1E"]
+			description: [
+				"The &dIon Exchanger&r  is another custom multiblock that becomes very useful in the EV tier and beyond for doing... well, ion exchange reactions."
+				""
+				"Despite the name, it's also used for &dliquid-liquid&r exchange reactions, such as the ones in tungsten processing."
+			]
+			id: "0988AA5905F04AD2"
+			tasks: [{
+				id: "5F1528B8016F979F"
+				item: "gtceu:ion_exchanger"
+				type: "item"
+			}]
+			title: "Reverse Osmosis"
+			x: 6.5d
+			y: 3.0d
+		}
 	]
 	subtitle: ["A guide to the various multiblocks you can build."]
 	title: "Isopod Collection"
