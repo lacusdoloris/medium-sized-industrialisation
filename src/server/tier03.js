@@ -114,4 +114,16 @@ export const doTier03Content = (event) => {
         .EUt(GTValues.VH[GTValues.HV])
         .duration(5 * 20)
         .circuit(1);
+
+    event.shaped(
+        "gtceu:large_chemical_reactor",
+        ["CRC", "PMP", "CHC"],
+        {
+            C: GT_MACHINE_TIERS.HV.circuitTag,
+            R: GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors"),
+            P: "gtceu:polytetrafluoroethylene_large_fluid_pipe",
+            M: "gtceu:hv_electric_motor",
+            H: GT_MACHINE_TIERS.HV.machineHull,
+        }
+    ).id("gtceu:shaped/large_chemical_reactor");
 };
