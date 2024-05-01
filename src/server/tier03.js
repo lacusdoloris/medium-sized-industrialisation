@@ -10,6 +10,9 @@ import { GT_MACHINE_TIERS } from "../shared/definition";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier03Content = (event) => {
+    // remove heavy oil from logs, to be replaced with our own multiblock.
+    event.remove({ id: "gtceu:pyrolyse_oven/log_to_heavy_oil" });
+
     // for whattever reason, CEu has this at EV.
     // so let's move it down to HV.
     event.remove({ id: "gtceu:shaped/distillation_tower" });
@@ -115,15 +118,13 @@ export const doTier03Content = (event) => {
         .duration(5 * 20)
         .circuit(1);
 
-    event.shaped(
-        "gtceu:large_chemical_reactor",
-        ["CRC", "PMP", "CHC"],
-        {
+    event
+        .shaped("gtceu:large_chemical_reactor", ["CRC", "PMP", "CHC"], {
             C: GT_MACHINE_TIERS.HV.circuitTag,
             R: GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors"),
             P: "gtceu:polytetrafluoroethylene_large_fluid_pipe",
             M: "gtceu:hv_electric_motor",
             H: GT_MACHINE_TIERS.HV.machineHull,
-        }
-    ).id("gtceu:shaped/large_chemical_reactor");
+        })
+        .id("gtceu:shaped/large_chemical_reactor");
 };
