@@ -318,19 +318,21 @@
 		}
 		{
 			dependencies: ["232472832AA5E201"]
+			description: ["Your fourth coil, available in late &dEV&r. This one is made of &dRTM&r (Ruthenium-Tungsten-Molybdenum) alloy."]
 			id: "2E751DC3293936A1"
-			invisible: true
 			tasks: [{
 				id: "4E2FDE6B9F8D50C4"
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
+			title: "Coil #4"
 			x: 1.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2E751DC3293936A1"]
 			id: "71AD47D8083E6F91"
+			invisible: true
 			tasks: [{
 				id: "28892588C0723D87"
 				item: "gtceu:hssg_coil_block"
