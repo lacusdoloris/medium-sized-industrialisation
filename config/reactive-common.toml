@@ -19,4 +19,10 @@
 	#The crucible checks an area this many blocks in radius up to a few times a second. Do not set this too high. [Default: 6]
 	#Range: 2 ~ 64
 	areaMemoryRange = 6
+	#Blocks with a base break time beyond this cannot be displaced or made to fall. For finer control, use the relevant block tags. [Default: 35.0]
+	#Range: 0.0 ~ 10000.0
+	maxMoveBlockBreakTime = 35.0
+	#The maximum distance that a block like Copper can convey a displacement pulse [Default: 8]
+	#Range: 1 ~ 4096
+	copperDisplaceConductRange = 8
 

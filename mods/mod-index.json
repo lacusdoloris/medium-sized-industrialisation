@@ -70,14 +70,14 @@
         "version_id": "8w9SsgMR"
     },
     "5ZwdcRci": {
-        "checksum": "246b4cbf0d08a655512800e14c3ef2083c956093f62b264d399c2ae66195df65f674e367ae465d9e9915e4fb14e8c7e355bcdbf7b3f70a6871a1b1c03e836a9f",
+        "checksum": "41f0b25c8692b45784e7272eb846836ff32d404aaa50a3bcbc7a4eb129f715a9fae2ec74dd9f35a9dfdb6a82398f3d932376342f3cea8622717d16619f4bda4e",
         "client_side_only": true,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
         "selected": true,
-        "version": "1.2.12+1.20.4-forge",
-        "version_id": "Zmg9Im8A"
+        "version": "1.2.13+1.20.4-forge",
+        "version_id": "7Twx0B8r"
     },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
@@ -103,7 +103,7 @@
         "checksum": "bb3eefe98a6d22b2819a25ea003b155162b165d40d950882b14b3786de44660beedc565c58c2b00be395e450d5ecb2e6ac4cc004c79881bc3acfb10a4c9fea84",
         "client_side_only": false,
         "name": "GregTechCEu Modern",
-        "pinned": false,
+        "pinned": true,
         "project_id": "7tG215v7",
         "selected": true,
         "version": "mc1.20.1-1.2.0.a",
@@ -419,16 +419,6 @@
         "version": "1.20.1-1.4.3",
         "version_id": "WI7OOfLA"
     },
-    "S1tndFDa": {
-        "checksum": "c985ee61ad6a42629b0bb48fe504b3826afb12e507a72faf1cdc56eeac7b6e3de8e92fbab1c1c153ac47c6c98359296c63cc7921888b387e6be7371893e07e2b",
-        "client_side_only": true,
-        "name": "TexTrue's Embeddium Options",
-        "pinned": false,
-        "project_id": "S1tndFDa",
-        "selected": true,
-        "version": "0.1.5+mc1.20.1",
-        "version_id": "r66v9j9a"
-    },
     "T38eAZQC": {
         "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
         "client_side_only": false,
@@ -580,14 +570,14 @@
         "version_id": "1TsVpRht"
     },
     "fRiHVvU7": {
-        "checksum": "e8a75017f8fb999713ee27732330a616a4c8f8ba95b7f40bea49a2b23ba167830e269cb3c6894b62788667b6610cc550dd7e0d6a5c7350a20d083ef6f7b35235",
+        "checksum": "3869db293b27956b43d830b9083d91220d90d614369d6216fb804a870fdfbe5f3447457366073c6d12d6fd0b6c071482784dfa6e4ec7d76972fa68257475ac82",
         "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.4+1.20.1+forge",
-        "version_id": "lDQkgadT"
+        "version": "1.1.6+1.20.1+forge",
+        "version_id": "5b1435Qy"
     },
     "ftdbN0KK": {
         "checksum": "2456e4876827ba922fa2629c3a7970205a8f9cef08636d78468038433a0cf1d1806d140b20c470fa4b13dbb4800abe32f1a8421c5385c37681d9222f72045310",
@@ -790,14 +780,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "b22a3228a4405609f4ab6f2c58c133eaae74a50856f4a39b587376889f8ce932d9bdfc34e8b7fefe92e872f080e6bf80690a7822b35746b0ac6bf180e46db814",
+        "checksum": "70cf1e5128d88b6e0d70757136c70099b3541e9030be3cd5e43bb90349aa420c6e5211937e3426a46a7df040bec01a594e479d909c7001b767604ad8e092b554",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.14+mc1.20.1",
-        "version_id": "Yf0WdDp1"
+        "version": "0.3.17+mc1.20.1",
+        "version_id": "GlQtV4sX"
     },
     "soWqucCB": {
         "checksum": "26929e0fe5cfc047e52323129e172daa8caee1529491cc7d4ecaed33d87c26bd1b2545c05eb7b915cfb0639300c16cfecf64c9efda4f9bd1bccb7249084f1008",
