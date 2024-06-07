@@ -68,10 +68,8 @@ export const addOreSortingMultiblock = (builder) => {
         .recipeTypes("ore_sorting")
         .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
-        .recipeModifier(
-            GTRecipeModifiers.PARALLEL_HATCH.apply(
-                OverclockingLogic.NON_PERFECT_OVERCLOCK,
-                GTRecipeModifiers.ELECTRIC_OVERCLOCK
-            )
-        );
+        .recipeModifiers([
+            GTRecipeModifiers.PARALLEL_HATCH,
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),
+        ]);
 };

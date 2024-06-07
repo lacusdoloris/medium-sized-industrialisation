@@ -43,7 +43,7 @@ export const addEvaporationPoolMultiblock = (builder) => {
             "gtceu:block/machines/ore_washer" // TODO: Custom texture?
         )
         .recipeType("evaporation_pool")
-        .recipeModifier(
-            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)
-        );
+        .recipeModifiers([
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+        ]);
 };

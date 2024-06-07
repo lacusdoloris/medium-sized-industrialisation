@@ -96,10 +96,8 @@ export const addIonExchangerMultiblock = (builder) => {
         .recipeTypes("ion_exchange")
         .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .recipeModifier(
-            GTRecipeModifiers.PARALLEL_HATCH.apply(
-                OverclockingLogic.NON_PERFECT_OVERCLOCK,
-                GTRecipeModifiers.ELECTRIC_OVERCLOCK
-            )
-        );
+        .recipeModifiers([
+            GTRecipeModifiers.PARALLEL_HATCH,
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),
+        ]);
 };

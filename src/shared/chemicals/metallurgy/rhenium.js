@@ -26,7 +26,7 @@ export const addRheniumMaterials = (event) => {
         .iconSet(GTMaterialIconSet.SHINY)
         .components("1x gtceu:rhenium", "1x gtceu:ruthenium", "18x gtceu:nickel") // 5% rhenium, 5% ruthenium, 90% nickel
         .blastTemp(3460, GasTier.MID, GTValues.VA[GTValues.EV])
-        .rotorStats(10.0, 3.0, 4200)
+        .rotorStats(200, 150, 3.0, 4200)
         .flags(
             GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.GENERATE_FOIL,

@@ -37,7 +37,7 @@ export const addCustomMaterials = (event) => {
         .dust()
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
         .iconSet(GTMaterialIconSet.SHINY)
-        .rotorStats(13.0, 2.0, 196)
+        .rotorStats(100, 100, 2.0, 196)
         .components("4x gtceu:copper", "1x gtceu:silver");
 
     // fine to create decompositions for this, actually.

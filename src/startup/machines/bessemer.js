@@ -84,7 +84,7 @@ export const addBessemerMultiblock = (builder) => {
         .recipeType("bessemer_smelting")
         .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
         // what could this mean?
-        .recipeModifier(
-            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)
-        );
+        .recipeModifiers([
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),
+        ]);
 };

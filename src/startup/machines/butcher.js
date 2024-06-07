@@ -55,10 +55,8 @@ export const addButcheringMultiblock = (builder) => {
         .recipeType("butchering")
         .tooltips(Component.translatable("gtceu.multiblock.parallelizable.tooltip"))
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeModifier(
-            GTRecipeModifiers.PARALLEL_HATCH.apply(
-                OverclockingLogic.PERFECT_OVERCLOCK,
-                GTRecipeModifiers.ELECTRIC_OVERCLOCK
-            )
-        );
+        .recipeModifiers([
+            GTRecipeModifiers.PARALLEL_HATCH,
+            GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK),
+        ]);
 };
