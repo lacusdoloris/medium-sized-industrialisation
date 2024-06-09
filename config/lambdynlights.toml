@@ -13,6 +13,8 @@
 				item = true
 				minecart = true
 				bee = true
+				cat = true
+				witch = true
 				furnace_minecart = true
 				experience_orb = true
 				chest_minecart = true
