@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "chromite",
+
 		"blocks": {
             "minecraft:stone": "gtceu:chromite_ore",
             "minecraft:cobblestone": "gtceu:chromite_ore",

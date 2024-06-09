@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "cassiterite",
+
         "blocks": {
             "minecraft:stone": "gtceu:cassiterite_ore",
             "minecraft:cobblestone": "gtceu:cassiterite_ore",

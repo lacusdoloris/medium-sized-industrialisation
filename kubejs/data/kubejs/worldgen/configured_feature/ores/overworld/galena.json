@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "galena",
+
         "blocks": {
             "minecraft:stone": "gtceu:galena_ore",
             "minecraft:cobblestone": "gtceu:galena_ore",

@@ -1,0 +1,14 @@
+{
+    "replace": true,
+    "values": [
+        "kubejs:ores/overworld/bauxite",
+        "kubejs:ores/overworld/cassiterite",
+        "kubejs:ores/overworld/chromite",
+        "kubejs:ores/overworld/galena",
+        "kubejs:ores/overworld/garnierite",
+        "kubejs:ores/overworld/graphite",
+        "kubejs:ores/overworld/pentlandite",
+        "kubejs:ores/overworld/silver",
+        "kubejs:ores/overworld/stibnite"
+    ]
+}

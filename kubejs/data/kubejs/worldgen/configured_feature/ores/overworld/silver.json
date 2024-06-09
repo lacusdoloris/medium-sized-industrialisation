@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "silver",
+
         "blocks": {
             "minecraft:stone": "gtceu:silver_ore",
             "minecraft:cobblestone": "gtceu:silver_ore",

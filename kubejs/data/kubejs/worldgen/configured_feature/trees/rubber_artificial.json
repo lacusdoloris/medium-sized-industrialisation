@@ -2,15 +2,17 @@
 	"type": "bigglobe:artificial_tree",
 	"config": {
 		"palette": "kubejs:rubber",
+		"height": "max(random.roundInt(baseRadius * 8.0L), 4)",
 		"trunk": {
 			"type": "bigglobe:straight",
+			"thickness": "mixLinear(max(height * 0.125L, minThickness), minThickness, fraction)",
 			"require_natural_ground": false,
 			"can_generate_in_liquid": false
 		},
-        "branches": {
+		"branches": {
 			"start_frac_y": { "type": "uniform", "min": 0.5, "max": 0.75 },
 			"count_per_layer": { "type": "uniform", "min": 4.0, "max": 8.0 },
-			"length_function": "fraction ^ 2 * random.nextDouble(1.0, 1.5)",
+			"length_function": "fraction ^ 2 * random.nextDouble(1.5, 2.0)",
 			"height_function": "-0.25 * fraction ^ 2"
 		},
 		"decorations": {

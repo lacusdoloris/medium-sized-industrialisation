@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "emerald",
+
 		"blocks": {
             "minecraft:stone": "gtceu:emerald_ore",
             "minecraft:cobblestone": "gtceu:emerald_ore",
@@ -11,7 +13,7 @@
             "minecraft:tuff": "gtceu:tuff_emerald_ore",
             "minecraft:basalt": "gtceu:basalt_emerald_ore"
 		},
-		"chance": "exp(distance_below_max_y / -192.0L) * `overworld/hilliness`",
+		"chance": "exp(`bigglobe:overworld/distance_below_surface` / -192.0L) * `bigglobe:overworld/hilliness`",
 		"radius": {
 			"type": "average",
 			"min": 1.5,

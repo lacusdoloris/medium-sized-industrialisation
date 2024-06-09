@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "copper",
+
 		"blocks": {
             "minecraft:stone": "gtceu:chalcopyrite_ore",
             "minecraft:cobblestone": "gtceu:chalcopyrite_ore",

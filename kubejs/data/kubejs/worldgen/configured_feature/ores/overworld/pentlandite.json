@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "pentlandite",
+
         "blocks": {
             "minecraft:stone": "gtceu:pentlandite_ore",
             "minecraft:cobblestone": "gtceu:pentlandite_ore",

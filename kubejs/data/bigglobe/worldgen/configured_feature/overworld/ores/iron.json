@@ -1,6 +1,8 @@
 {
-	"type": "bigglobe:overworld_ore",
+	"type": "bigglobe:ore",
 	"config": {
+        "seed": "iron",
+
 		"blocks": {
             "minecraft:stone": "gtceu:magnetite_ore",
             "minecraft:cobblestone": "gtceu:magnetite_ore",
