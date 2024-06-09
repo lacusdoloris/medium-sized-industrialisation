@@ -509,6 +509,16 @@
         "version": "1.20.1-1.19.1",
         "version_id": "FsSSN0TX"
     },
+    "ZM3tt6p1": {
+        "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
+        "client_side_only": false,
+        "name": "Create: Diesel Generators",
+        "pinned": false,
+        "project_id": "ZM3tt6p1",
+        "selected": true,
+        "version": "1.20.1-1.2i",
+        "version_id": "R6vueHQB"
+    },
     "ZtdULK5c": {
         "checksum": "a47b1e52a8be1688c2a3018e3bf222de4d9789e4595f31c7a8058fbf4fa919c3b7e2573c4d464dd47473f62949e160976ce7de01aeeeee492bdea56dd261cba9",
         "client_side_only": false,
