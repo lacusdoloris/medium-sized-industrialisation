@@ -70,14 +70,14 @@
         "version_id": "8w9SsgMR"
     },
     "5ZwdcRci": {
-        "checksum": "98819d3e6beddb8f9890d4e697b8e6e6107f1d574e407623a0e92449904fe4630b63fffe5307e5ed598c93398668e3ea43e01cd61f40a1e5e64c933c7bf2becd",
+        "checksum": "c6f966e43101646744d13a05a912987618175512c5929172e9580a7bd115b33cc9d139de67ae0e5e2c40cbdee9d7881dcaaa7cb3cc9f5cc174e30adfb996ffb6",
         "client_side_only": true,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
         "selected": true,
-        "version": "1.2.17+1.20.4-forge",
-        "version_id": "DQelIUm0"
+        "version": "1.2.18+1.20.4-forge",
+        "version_id": "XgQjD9fF"
     },
     "5ibSyLAz": {
         "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
@@ -100,14 +100,14 @@
         "version_id": "t0uY61gM"
     },
     "7tG215v7": {
-        "checksum": "3a54d4055af4d58f173f477e56481dc25b75899312a94f2b4637e575d7f0319890652ef98d1d8e7987ea4b899ee4c77c0d4653e7d4a73b1c432424f29bb1b6a9",
+        "checksum": "a3c6765b6ee8432d6ca3e4dfebc2c4509965713d9ab2ecfc209bc40bfb0505c2619f85588e51ca0bf8f42ad71cb2a9bab15aaf9c18ffb887f2d9ae3e0fca4d24",
         "client_side_only": false,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.2.3.a",
-        "version_id": "K6pno1JG"
+        "version": "mc1.20.1-1.3.0",
+        "version_id": "C9gtIFND"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -570,14 +570,14 @@
         "version_id": "1TsVpRht"
     },
     "fRiHVvU7": {
-        "checksum": "3869db293b27956b43d830b9083d91220d90d614369d6216fb804a870fdfbe5f3447457366073c6d12d6fd0b6c071482784dfa6e4ec7d76972fa68257475ac82",
+        "checksum": "4cbf5b68255fbf9d1ca2e91216efa76b6248525224086a71b46e6b53e9fc8d89e16d51d17d0f91f887f6f362fcfd720ffd61c274eef94f7cff167e2e929c538d",
         "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.6+1.20.1+forge",
-        "version_id": "5b1435Qy"
+        "version": "1.1.7+1.20.1+forge",
+        "version_id": "QT6oPqYH"
     },
     "ftdbN0KK": {
         "checksum": "2456e4876827ba922fa2629c3a7970205a8f9cef08636d78468038433a0cf1d1806d140b20c470fa4b13dbb4800abe32f1a8421c5385c37681d9222f72045310",
@@ -690,14 +690,14 @@
         "version_id": "NruPjXIH"
     },
     "o6qsdrrQ": {
-        "checksum": "53677b22036fee114ffe6b89bef5126c7e839fce22bf2e698bf5249905cd38afeac1d441736eb9d1ae5fdf8ec46a6078bbc78256bd1b5edcde089132add6451d",
+        "checksum": "dab133c74c35ecbf1980671f9685b9d84ee6c3965eab33827b51252234fcc7bcd32e2eb080e107b53954cfa3268f2759879f360a5f8fdd3ba6ed44a50c51eaa0",
         "client_side_only": true,
         "name": "Zume",
         "pinned": false,
         "project_id": "o6qsdrrQ",
         "selected": true,
-        "version": "0.19.1",
-        "version_id": "X9nnU40F"
+        "version": "1.0.0",
+        "version_id": "EDf05717"
     },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
@@ -820,14 +820,14 @@
         "version_id": "LM3aqTbN"
     },
     "u6dRKJwZ": {
-        "checksum": "50b55e7c3ad0bd92829ce466e7265fff09026d8676693a94c174da5c16e843d933ecfa60de4c84efdbabe9d9e144819d8a6dae15ba4ec615134f59c71bb26e20",
+        "checksum": "e460c17a864311018521a5cede9bb3015f25d4557aa2eb109a18c2fb2364f7e2c8a1ad0df3a730175ca4d2f582086c3a0b0e8d06e16ba149b602d2c3bded4264",
         "client_side_only": true,
         "name": "Just Enough Items",
         "pinned": false,
         "project_id": "u6dRKJwZ",
         "selected": true,
-        "version": "15.3.0.4",
-        "version_id": "PeYsGsQy"
+        "version": "15.3.0.7",
+        "version_id": "RqMCH4KZ"
     },
     "uXXizFIs": {
         "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
