@@ -4,7 +4,6 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { createAqueousIntermediate } from "../../materials/helpers";
 import { addOrganoaluminiumMaterials, addOrganoaluminiumRecipes } from "./aluminium";
 import { addAmineMaterials, addAmineRecipes } from "./amines";
 import { addChloroethaneMaterials, addChloroethaneRecipes } from "./chloroethane";
@@ -27,8 +26,6 @@ export const addOrganicChemMaterials = (event) => {
     addDehpaMaterials(event);
     addSquaricAcidMaterials(event);
     addTributylPhosphateMaterials(event);
-
-    createAqueousIntermediate(event, "formaldehyde", 0x594d36);
 };
 
 /**
@@ -50,6 +47,11 @@ export const addOrganicChemRecipes = (event) => {
 
     event.remove({ id: "gtceu:chemical_reactor/cyclohexane" });
     event.remove({ id: "gtceu:large_chemical_reactor/cyclohexane" });
+
+    // fuck off, gtceu
+    event.remove({ id: "gtceu:chemical_reactor/formaldehyde" });
+    event.remove({ id: "gtceu:large_chemical_reactor/formaldehyde" });
+    
 
     // C6H6 + 3 H2 = C6H12
     event.recipes.gtceu

@@ -15,6 +15,8 @@ export const doTier02Content = (event) => {
 
     let mvTier = GT_MACHINE_TIERS.MV;
 
+    // mine is cooler.
+    event.remove({ id: "gtceu:shaped/evaporation_plant" });
     event
         .shaped("gtceu:evaporation_pool", ["RGR", "CHC", "PBP"], {
             R: mvTier.materials.rotor.tagged("rotors"),
@@ -27,7 +29,7 @@ export const doTier02Content = (event) => {
         .id("nijika:tier02/evaporation_pool");
 
     event.recipes.gtceu
-        .evaporation_pool("nijika:tier02/basic_brine_production")
+        .evaporation_pool("nijika:tier02/basic_salt_water_production")
         .inputFluids(Fluid.of("minecraft:water").withAmount(250 * FluidAmounts.BUCKET))
         .outputFluids(Fluid.of("gtceu:salt_water").withAmount(50 * FluidAmounts.BUCKET))
         .chancedOutput("8x gtceu:sodium_hydroxide_dust", 5000.0, 0.0)

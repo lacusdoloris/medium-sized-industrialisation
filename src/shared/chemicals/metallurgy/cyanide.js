@@ -4,14 +4,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { createAqueousIntermediate, createDustIntermediate } from "../../materials/helpers";
+import { createDustIntermediate } from "../../materials/helpers";
 
 export const addCyanideMaterials = (event) => {
-    createAqueousIntermediate(event, "hydrogen_cyanide", 0xf2f5c6).components(
-        "1x gtceu:hydrogen",
-        "1x gtceu:carbon",
-        "1x gtceu:hydrogen"
-    );
 
     createDustIntermediate(event, "sodium_cyanide", 0xccc9f5).components(
         "1x gtceu:sodium",
