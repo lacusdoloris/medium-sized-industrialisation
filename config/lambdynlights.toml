@@ -10,6 +10,7 @@
 		[light_sources.settings.entities]
 
 			[light_sources.settings.entities.minecraft]
+				horse = true
 				item = true
 				minecart = true
 				bee = true
@@ -19,6 +20,9 @@
 				experience_orb = true
 				chest_minecart = true
 				player = true
+
+			[light_sources.settings.entities.surface]
+				grizzly_bear = true
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true

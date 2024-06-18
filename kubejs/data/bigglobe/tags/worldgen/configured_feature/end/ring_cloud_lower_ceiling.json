@@ -1,8 +1,0 @@
-{
-	"replace": false,
-	"values": [
-        "kubejs:trees/menril",
-        "kubejs:end_grass",
-        "kubejs:end_flowers"
-    ]
-}

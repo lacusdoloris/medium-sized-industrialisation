@@ -869,16 +869,6 @@
         "version": "1.5.0-mc1.20.1",
         "version_id": "qLKpNYzC"
     },
-    "xsng1aJf": {
-        "checksum": "3c05e3e57306da451508f3347f180bab1b66d6293b796aaca54adb2b94d66f52995d29f7b4a4c6a5187a08575897ec59883eea65b7038b12ee9d7b2c0ab5317d",
-        "client_side_only": false,
-        "name": "Big Globe",
-        "pinned": false,
-        "project_id": "xsng1aJf",
-        "selected": true,
-        "version": "4.2.0",
-        "version_id": "bwcMF619"
-    },
     "y7ACoOzz": {
         "checksum": "2bd40cde2b0f6b9e8f67da2664b231f1eb210d67121e371f9d18f31726a3de143d5d04ddca433877cf0debba8cf077d04240c7bc07aee92b8cac19e98ecb283d",
         "client_side_only": false,
