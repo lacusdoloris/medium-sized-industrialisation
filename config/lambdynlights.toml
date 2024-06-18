@@ -15,8 +15,10 @@
 				minecart = true
 				bee = true
 				cat = true
+				donkey = true
 				witch = true
 				furnace_minecart = true
+				parrot = true
 				experience_orb = true
 				chest_minecart = true
 				player = true

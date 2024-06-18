@@ -49,6 +49,16 @@
         "version": "2.3.3",
         "version_id": "rkELoRmb"
     },
+    "3DxDmIN5": {
+        "checksum": "b1f97ca239433001353e4d7be5b5c583680f9b6d2d718e85478af434edfb8060395f75e4f8bed24552ab670b5904e33f1fdffe917e4752cbc7a267e878d54669",
+        "client_side_only": false,
+        "name": "Aquifers Be Gone",
+        "pinned": false,
+        "project_id": "3DxDmIN5",
+        "selected": true,
+        "version": "1.2.0",
+        "version_id": "jIKbUzmg"
+    },
     "3mW8PdUo": {
         "checksum": "33591af8c7772a87c4e9b1166b1d8bb1a3b3f7589d1280db75538a13cc3012f157166da9245c16c3cd655805943f588f65ec330123b900f30e149b781d178970",
         "client_side_only": true,
@@ -468,6 +478,16 @@
         "selected": true,
         "version": "12.0.0.4",
         "version_id": "nAHGB5ls"
+    },
+    "WtcuxDNN": {
+        "checksum": "88713ab73bce218f23247c5b06915fe381c6868851b038c6ce06ac8aa902e02d1bc4954f541e0c30c15b672c3917dbecb46e5a48e6ada655735b0df8bfd5f92d",
+        "client_side_only": false,
+        "name": "Ecospherical Expansion",
+        "pinned": false,
+        "project_id": "WtcuxDNN",
+        "selected": true,
+        "version": "2.4.6",
+        "version_id": "5lXIJiba"
     },
     "XExdLWCQ": {
         "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
