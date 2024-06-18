@@ -329,6 +329,16 @@
         "version": "3.1.0",
         "version_id": "iQqivQMQ"
     },
+    "KuNKN7d2": {
+        "checksum": "a4ff659e01a7077a43e487d4f8ff55111dd4282706352a94a5bcd7c77a999530892e11a19606bf5ad08585235054eeb64b81cbe6863f71e50f0dfd590e31ef73",
+        "client_side_only": false,
+        "name": "Noisium",
+        "pinned": false,
+        "project_id": "KuNKN7d2",
+        "selected": true,
+        "version": "2.0.3+mc1.20-1.20.1",
+        "version_id": "EuQErqo9"
+    },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
         "client_side_only": false,
