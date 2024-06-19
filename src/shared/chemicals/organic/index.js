@@ -51,7 +51,6 @@ export const addOrganicChemRecipes = (event) => {
     // fuck off, gtceu
     event.remove({ id: "gtceu:chemical_reactor/formaldehyde" });
     event.remove({ id: "gtceu:large_chemical_reactor/formaldehyde" });
-    
 
     // C6H6 + 3 H2 = C6H12
     event.recipes.gtceu

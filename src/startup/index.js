@@ -12,6 +12,7 @@ import { addCatalystItems } from "./catalysts";
 import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 import { addCustomMaterials } from "./materials";
 import { customiseMaterials } from "./materials/modification";
+import { adjustWorldgenRemovals } from "./worldgen";
 
 /**
  * @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event
@@ -40,4 +41,8 @@ StartupEvents.registry("item", (ev) => {
     ev.create(nijikaId("catalysator_brown"));
 
     addCatalystItems(ev);
+});
+
+WorldgenEvents.remove((evt) => {
+    adjustWorldgenRemovals(evt);
 });

@@ -7,7 +7,6 @@
 import { createDustIntermediate } from "../../materials/helpers";
 
 export const addCyanideMaterials = (event) => {
-
     createDustIntermediate(event, "sodium_cyanide", 0xccc9f5).components(
         "1x gtceu:sodium",
         "1x gtceu:carbon",

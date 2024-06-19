@@ -53,7 +53,7 @@ export const addBrineRecipes = (event) => {
 
     // wwhy the fuck is this MV lol
     event.remove({ id: "gtceu:chemical_reactor/calcium_hydroxide" });
-    event.remove({ id: "gtceu:large_chemical_reactor/calcium_hydroxide" })
+    event.remove({ id: "gtceu:large_chemical_reactor/calcium_hydroxide" });
 
     // calcium hydroxide neutralisation
     // 2 HCl + Ca(OH)2 = CaCl2 + 2 H2O

@@ -91,6 +91,9 @@
     "bigglobe:molten_rock_5",
     "bigglobe:molten_rock_6",
     "bigglobe:molten_rock_7",
-    "bigglobe:molten_rock_8"
+    "bigglobe:molten_rock_8",
+    "minecraft:coarse_dirt",
+    "minecraft:mud",
+    "minecraft:rooted_dirt"
   ]
 }

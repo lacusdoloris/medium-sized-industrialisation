@@ -9,13 +9,12 @@
  * things here directly, and instead call the appropriate function from the two mega-events.
  */
 
-import { MODPACK_SETTINGS } from "../settings";
 import { addChemicalProcessingRecipes } from "../shared/chemicals";
 import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
 import { doModRecipes } from "./mods";
-import { addFreshOreVeinsEvent, removeVanillaDimensionOreVeins } from "./ores/vanilla";
+import { addFreshOreVeinsEvent, fixupBuiltinOreVeins } from "./ores/overworld";
 import { setupItemTags } from "./tags";
 import { doTier00Content } from "./tier00";
 import { doTier01Content } from "./tier01";
@@ -51,9 +50,6 @@ ServerEvents.recipes((event) => {
 });
 
 GTCEuServerEvents.oreVeins((event) => {
-    if (MODPACK_SETTINGS.deleteVanillaOreVeins) {
-        removeVanillaDimensionOreVeins(event);
-    }
-
+    fixupBuiltinOreVeins(event);
     addFreshOreVeinsEvent(event);
 });

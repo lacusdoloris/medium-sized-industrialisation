@@ -85,5 +85,8 @@ module.exports = {
         Internal: "readonly",
         com: "readonly",
         Registry: "readonly",
+        WorldgenEvents: "readonly",
+        GTWorldGenLayers: "readonly",
+        GTOres: "readonly",
     },
 };
