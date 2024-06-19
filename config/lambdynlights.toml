@@ -15,8 +15,10 @@
 				donkey = true
 				furnace_minecart = true
 				chest_minecart = true
+				strider = true
 				horse = true
 				minecart = true
+				zombified_piglin = true
 				cat = true
 				witch = true
 				drowned = true

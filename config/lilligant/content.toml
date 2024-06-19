@@ -22,7 +22,7 @@ applyDefaultGameRules = true
 
 [portalFormation]
 # If true, enables the height-based Nether Portal interceptor. This ain't for you.
-enableHeightBasedInterceptor = true
+enableHeightBasedInterceptor = false
 
 maxPortalWorldHeight = -1000
 minPortalWorldHeight = -1030
