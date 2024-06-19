@@ -640,14 +640,14 @@
         "version_id": "IaNkecwg"
     },
     "hIO8IsD8": {
-        "checksum": "d2ea068c63455b784dd98b9db208d72a9011c6130a82d3233d018ccdcad8a42417a9aa6bfb9f746785228c9a755b9022228d360f69d69a505ec303593ab25458",
+        "checksum": "d485a4c944bc2217bba057b716866677cc13c3d0347249faf9c25b0706de63784ba98a2228e11d634d2a383a32810580ea6751bc1c2ffd3c8759a4b987fea8b2",
         "client_side_only": false,
         "name": "RFTools Base",
         "pinned": false,
         "project_id": "hIO8IsD8",
         "selected": false,
-        "version": "1.20-5.0.3",
-        "version_id": "2BMusCMX"
+        "version": "1.20-5.0.4",
+        "version_id": "aSq3dAzO"
     },
     "kU1G12Nn": {
         "checksum": "cb1cf754f21faa06eee81bb4da7098377712e6112520d9a78e50d5beff63fbf44d9e57b47e4d0edd82cc0ede6d70ecc3d0983fe88bd72be5bafed1a19986c5df",
@@ -850,14 +850,14 @@
         "version_id": "LM3aqTbN"
     },
     "u6dRKJwZ": {
-        "checksum": "e460c17a864311018521a5cede9bb3015f25d4557aa2eb109a18c2fb2364f7e2c8a1ad0df3a730175ca4d2f582086c3a0b0e8d06e16ba149b602d2c3bded4264",
+        "checksum": "3c0cebff0a20d2906883bcf695a9db4d318280130e07ad1b66fcd1db6e494ea286d14e21c25a30378d1076d3fd208916733de53eb3d2245559122dbffe1ff49b",
         "client_side_only": true,
         "name": "Just Enough Items",
         "pinned": false,
         "project_id": "u6dRKJwZ",
         "selected": true,
-        "version": "15.3.0.7",
-        "version_id": "RqMCH4KZ"
+        "version": "15.3.0.8",
+        "version_id": "C3OE8nXl"
     },
     "uXXizFIs": {
         "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
