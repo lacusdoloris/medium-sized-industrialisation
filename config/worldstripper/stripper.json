@@ -94,6 +94,11 @@
     "bigglobe:molten_rock_8",
     "minecraft:coarse_dirt",
     "minecraft:mud",
-    "minecraft:rooted_dirt"
+    "minecraft:rooted_dirt",
+    "minecraft:moss_block",
+    "minecraft:pointed_dripstone",
+    "minecraft:flowering_azalea",
+    "minecraft:azalea",
+    "minecraft:moss_carpet"
   ]
 }

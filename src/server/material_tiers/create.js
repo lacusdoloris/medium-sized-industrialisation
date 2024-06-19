@@ -10,6 +10,7 @@ const PropertyKey = Java.loadClass(
 
 import { iterateOverAllMaterials } from "../../shared/utils";
 import { GT_WIRE_TYPES } from "../../shared/definition";
+import { BASE_ORES } from "../../shared/base_ores";
 
 // don't want to make it obviously superior to the bending machine, so this only supports a
 // short list.
@@ -108,6 +109,22 @@ const addCreateLvMvMaterialRecipes = (event) => {
                 event.recipes.create
                     .milling(`1x ${modId}:${id}_dust`, `#forge:gems/${id}`)
                     .id(recipeId);
+            }
+        }
+
+        // auto-generate crushing wheel recipes for ores
+        if (material.hasProperty(PropertyKey.ORE)) {
+            event.recipes.create
+                .crushing(`1x ${modId}:crushed_${id}_ore`, `1x ${modId}:raw_${id}`)
+                .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
+            event.recipes.create
+                .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
+                .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
+
+            if (typeof BASE_ORES[id] === "undefined") {
+                event.recipes.create
+                    .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
+                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
             }
         }
 
