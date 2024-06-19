@@ -879,6 +879,16 @@
         "version": "2001.6.5-build.7+forge",
         "version_id": "YAwgjR2e"
     },
+    "uuVy6k1s": {
+        "checksum": "cef22d934e04f0de626cef4199ad6f89afb3a9a8aea980d843a01d33a2fca1f61a7dbbb5175eeb3f17fdf174230d09ed9395e08e99c40b9c862cd08a7a1e9a09",
+        "client_side_only": false,
+        "name": "Create: Molten Vents",
+        "pinned": false,
+        "project_id": "uuVy6k1s",
+        "selected": true,
+        "version": "2.0.6",
+        "version_id": "2HJ2GTWD"
+    },
     "vvuO3ImH": {
         "checksum": "786c6c34e3f1a5358075cf95330b3e732293861a4ca60e4aa1780b55d32d3ab5b998b014bd521b3567f474a7bab738f821d46b71a7da201e0fa9321bb8e7e03b",
         "client_side_only": false,
