@@ -323,7 +323,7 @@
         "checksum": "3350d59cefeeec9141904d7048e637a3d4be04943599ece6a7be78507c69b52e7457db728ba2a648c03ce7b56ceabee2d2c1f6212999535cc8e3d8bd98c946fe",
         "client_side_only": true,
         "name": "ProbeJS",
-        "pinned": false,
+        "pinned": true,
         "project_id": "JJNYRb4B",
         "selected": true,
         "version": "6.0.0",
