@@ -18,8 +18,8 @@ export const adjustCreateOreGenerationRecipes = (event) => {
     event.recipes.create
         .milling(
             [
-                Item.of("gtceu:crushed_magnetite_ore").withChance(0.6),
-                Item.of("minecraft:iron_nugget").withChance(0.6),
+                Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
+                Item.of("minecraft:redstone").withChance(0.6),
             ],
             "create:crimsite"
         )
@@ -28,8 +28,8 @@ export const adjustCreateOreGenerationRecipes = (event) => {
     event.recipes.create
         .milling(
             [
-                Item.of("gtceu:crushed_redstone_ore").withChance(0.6),
-                Item.of("minecraft:redstone").withChance(0.6),
+                Item.of("gtceu:crushed_hematite_ore").withChance(0.6),
+                Item.of("minecraft:iron_nugget").withChance(0.6),
             ],
             "create:ochrum"
         )
