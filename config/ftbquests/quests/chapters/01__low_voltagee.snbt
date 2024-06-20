@@ -68,7 +68,7 @@
 				"You might want to consider making a &dtool belt&r to store all of your tools. Additionally, this quest is &9repeatable&r, so if you lose your tools you can access it to get another set."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:rubber_mallet"
 				tag: {
 					DisallowContainerItem: 0b
@@ -84,7 +84,7 @@
 			tasks: [{
 				id: "5FD6EF2A16CF7BBA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:rubber_mallet"
 					tag: {
 						DisallowContainerItem: 0b
@@ -174,7 +174,7 @@
 			rewards: [{
 				id: "2CD22F62FBA1F168"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:purple_dye"
 					tag: {
 						RepairCost: 0
@@ -281,7 +281,7 @@
 				"Thanks to innovations in GTCEu, all machines and multiblock inputs have a &avirtual circuit&r, which lets you customise the circuit number directly. That said, you can still make the physical circuit objects using a single LV circuit."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:programmed_circuit"
 				tag: {
 					Configuration: 0
@@ -417,7 +417,7 @@
 			tasks: [{
 				count: 16L
 				id: "36BF48D39D5B5840"
-				item: { Count: 16b, id: "gtceu:raw_orpiment" }
+				item: { Count: 16, id: "gtceu:raw_orpiment" }
 				type: "item"
 			}]
 			title: "Horrible Science"
@@ -505,7 +505,7 @@
 			rewards: [{
 				id: "3652CA847AD2DC14"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "exposure:photograph"
 					tag: {
 						Biome: "bigglobe:temperate_plains"
@@ -543,7 +543,7 @@
 				{
 					count: 10L
 					id: "6A28C065148A9304"
-					item: { Count: 10b, id: "gtceu:heatproof_machine_casing" }
+					item: { Count: 10, id: "gtceu:heatproof_machine_casing" }
 					type: "item"
 				}
 				{
@@ -569,7 +569,7 @@
 				{
 					count: 2L
 					id: "50F19EC02019A89C"
-					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
 					type: "item"
 				}
 				{
@@ -623,7 +623,7 @@
 				{
 					count: 2L
 					id: "362245643528AC82"
-					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
 					type: "item"
 				}
 				{
@@ -844,7 +844,7 @@
 				{
 					id: "658E2BD5E1D0B8E3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:neutronium_wire_cutter"
 						tag: {
 							DisallowContainerItem: 0b
@@ -866,7 +866,7 @@
 				{
 					id: "1C0E017C8972F55D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:neutronium_wrench"
 						tag: {
 							DisallowContainerItem: 0b
@@ -888,7 +888,7 @@
 				{
 					id: "03C268FA543A9A02"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:neutronium_crowbar"
 						tag: {
 							DisallowContainerItem: 0b
@@ -910,7 +910,7 @@
 				{
 					id: "5E3896483D807141"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:neutronium_screwdriver"
 						tag: {
 							DisallowContainerItem: 0b
@@ -938,5 +938,5 @@
 		}
 	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron."]
-	title: "LV - Out Loud"
+	title: "LV - x-sen shushi 7000"
 }

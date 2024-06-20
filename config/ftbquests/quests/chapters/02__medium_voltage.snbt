@@ -540,7 +540,7 @@
 			tasks: [{
 				count: 2L
 				id: "0D585651002653BA"
-				item: { Count: 2b, id: "gtceu:mv_energy_input_hatch" }
+				item: { Count: 2, id: "gtceu:mv_energy_input_hatch" }
 				type: "item"
 			}]
 			title: "HV Multiblocks"
@@ -646,5 +646,5 @@
 		}
 	]
 	subtitle: ["The real fun begins here."]
-	title: "MV \\& HV - Falling Stars"
+	title: "MV \\& HV - jiyugaoka rebirth"
 }

@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "genesis"
 	group: ""
-	icon: "bigglobe:rock"
+	icon: "gtceu:raw_lepidolite"
 	id: "1D337685AF92C8E5"
 	order_index: 0
 	quest_links: [ ]
@@ -45,7 +45,7 @@
 				"This pack uses the &aSquake&r mod for movement which provides &dQuake/Source Engine&r movement capabilities to your character. Try it out by holding down &djump&r and the sideways directional keys."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:firework_rocket"
 				tag: {
 					Fireworks: {
@@ -59,31 +59,8 @@
 				type: "checkmark"
 			}]
 			title: "Team Fortress 2"
-			x: -1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["473EF5FF75ACB3EC"]
-			description: [
-				"This pack uses the &aBig Globe&r mod for world generation. As the name states, this means the world is &osignificantly&r bigger in the vertical axis."
-				""
-				"Specifically, the world now extends from &a-1024&r at the bedrock layer to &a1024&r blocks into the sky, with all major world features extending both higher and lower in the world as appropriate. This is where the quake movement comes in handy!"
-			]
-			icon: "bigglobe:soul_magma"
-			id: "5A4B379F055EDF13"
-			rewards: [{
-				id: "3DF1FA54807B4122"
-				item: "gtceu:rubber_sapling"
-				type: "item"
-			}]
-			subtitle: "Your first step into a slightly larger world..."
-			tasks: [{
-				id: "64B90D299BCA31CF"
-				type: "checkmark"
-			}]
-			title: "Bigger Luke"
-			x: 1.0d
-			y: 1.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["473EF5FF75ACB3EC"]
@@ -122,15 +99,15 @@
 				type: "checkmark"
 			}]
 			title: "Expert Mode?"
-			x: 1.5d
-			y: 0.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["473EF5FF75ACB3EC"]
 			description: ["This will be one of your only gifts. Use wisely, and don't lose it."]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "eccentrictome:tome"
 				tag: {
 					"eccentrictome:mods": { }
@@ -140,7 +117,7 @@
 			rewards: [{
 				id: "0908A0262E2FF9DE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "eccentrictome:tome"
 					tag: {
 						"eccentrictome:mods": {
@@ -214,7 +191,7 @@
 			rewards: [{
 				id: "17A74F9A72269112"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "wenospeakumbrellarino:umbrella"
 					tag: { }
 				}
@@ -224,13 +201,13 @@
 				{
 					count: 128L
 					id: "1C4C227C0A1E7560"
-					item: { Count: 64b, id: "minecraft:iron_ingot" }
+					item: { Count: 64, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					count: 128L
 					id: "077D4BF724464CFD"
-					item: { Count: 64b, id: "minecraft:copper_ingot" }
+					item: { Count: 64, id: "minecraft:copper_ingot" }
 					type: "item"
 				}
 				{
@@ -242,38 +219,19 @@
 				{
 					count: 256L
 					id: "040DD2E0A2BE9FA3"
-					item: { Count: 64b, id: "minecraft:redstone" }
+					item: { Count: 64, id: "minecraft:redstone" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "2C365CEF7DDC4E5E"
-					item: { Count: 32b, id: "gtceu:bronze_ingot" }
+					item: { Count: 32, id: "gtceu:bronze_ingot" }
 					type: "item"
 				}
 			]
 			title: "I Won't Hold Your Hand"
 			x: 0.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["473EF5FF75ACB3EC"]
-			description: [
-				"If you're used to other GregTech packs having &aore chunks&r; read on."
-				""
-				"Due to the way Big Globe works, ore generation is done &ain parallel&r to keep the extremely high world generation performance, but this sadly limit ores to a single type per vein. The extreme world height makes up for it, though."
-			]
-			icon: "gtceu:deepslate_malachite_ore"
-			id: "03A2D5E11DC16E01"
-			subtitle: "A note on ores"
-			tasks: [{
-				id: "13DBB8F2AE81816D"
-				title: "Ore Veins"
-				type: "checkmark"
-			}]
-			title: "Ore Chunks?"
-			x: 1.0d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["473EF5FF75ACB3EC"]
@@ -317,8 +275,8 @@
 			}]
 			title: "You know sheep?"
 			x: -0.5d
-			y: 3.0d
+			y: 1.5d
 		}
 	]
-	title: "Disappear"
+	title: "Fading Lights (START HERE)"
 }

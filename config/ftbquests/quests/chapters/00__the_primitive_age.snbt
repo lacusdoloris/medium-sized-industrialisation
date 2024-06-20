@@ -161,7 +161,7 @@
 				{
 					count: 16L
 					id: "73F62B270E43ED9C"
-					item: { Count: 16b, id: "gtceu:tin_single_cable" }
+					item: { Count: 16, id: "gtceu:tin_single_cable" }
 					type: "item"
 				}
 				{
@@ -224,7 +224,7 @@
 			rewards: [{
 				id: "66974E1BF97896D5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "exposure:photograph"
 					tag: {
 						Biome: "bigglobe:temperate_plains"
@@ -274,7 +274,7 @@
 			rewards: [{
 				id: "61807C115AE99EF3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:rail"
 					tag: {
 						RepairCost: 0
@@ -338,7 +338,7 @@
 			tasks: [{
 				count: 16L
 				id: "57E0DCA9C4C4B673"
-				item: { Count: 16b, id: "gtceu:magnetic_iron_ingot" }
+				item: { Count: 16, id: "gtceu:magnetic_iron_ingot" }
 				type: "item"
 			}]
 			title: "Magnetic Iron"
@@ -362,7 +362,7 @@
 			tasks: [{
 				count: 8L
 				id: "1F68FF60FB3F6249"
-				item: { Count: 8b, id: "create_new_age:magnetite_block" }
+				item: { Count: 8, id: "create_new_age:magnetite_block" }
 				type: "item"
 			}]
 			title: "Magnetic Generation"
@@ -459,13 +459,13 @@
 				{
 					count: 32L
 					id: "4978410598D4F83C"
-					item: { Count: 32b, id: "gtceu:resistor" }
+					item: { Count: 32, id: "gtceu:resistor" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "1069863D6CE72E7D"
-					item: { Count: 32b, id: "gtceu:vacuum_tube" }
+					item: { Count: 32, id: "gtceu:vacuum_tube" }
 					type: "item"
 				}
 			]
@@ -516,7 +516,7 @@
 				{
 					id: "4475703DCA7C775F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:written_book"
 						tag: {
 							author: "Benjamin C. Pierce"
@@ -530,7 +530,7 @@
 				{
 					id: "03D9FF7861D84AD0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:written_book"
 						tag: {
 							author: "Dr. Liam O’Connor"
@@ -598,5 +598,5 @@
 		}
 	]
 	subtitle: ["Boo! Did I scare you? I'm Andesite Alloy!"]
-	title: "Somewhere Between"
+	title: "intro1"
 }

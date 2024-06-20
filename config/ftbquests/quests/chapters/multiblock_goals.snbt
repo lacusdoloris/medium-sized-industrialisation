@@ -6,7 +6,7 @@
 	group: "14EE7AEE0EF05AEE"
 	icon: "gtceu:uv_parallel_hatch"
 	id: "3C278A17A70F0701"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -205,13 +205,13 @@
 				{
 					count: 18L
 					id: "261902064309166D"
-					item: { Count: 18b, id: "gtceu:clean_machine_casing" }
+					item: { Count: 18, id: "gtceu:clean_machine_casing" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "4BCDE8D9837512F5"
-					item: { Count: 8b, id: "gtceu:kanthal_coil_block" }
+					item: { Count: 8, id: "gtceu:kanthal_coil_block" }
 					type: "item"
 				}
 			]
@@ -244,7 +244,7 @@
 				{
 					count: 21L
 					id: "44ACD456ED94DCEB"
-					item: { Count: 21b, id: "gtceu:clean_machine_casing" }
+					item: { Count: 21, id: "gtceu:clean_machine_casing" }
 					type: "item"
 				}
 			]
