@@ -143,17 +143,9 @@ export const doTier00Content = (event) => {
                 "minecraft:iron_ingot",
                 "#forge:dusts/redstone",
             ]),
-            event.recipes.create.deploying("minecraft:iron_ingot", [
-                "minecraft:iron_ingot",
-                "#forge:dusts/redstone",
-            ]),
-            event.recipes.create.deploying("minecraft:iron_ingot", [
-                "minecraft:iron_ingot",
-                "#forge:dusts/redstone",
-            ]),
         ])
         .transitionalItem("minecraft:iron_ingot")
-        .loops(1)
+        .loops(3)
         .id("nijika:tier00/magnetic_iron");
 
     // fix the resistor recipes so it uses tags, wtf gtceu?
