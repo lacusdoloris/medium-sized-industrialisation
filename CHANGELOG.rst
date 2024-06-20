@@ -39,6 +39,14 @@ Recipe Changes
 
 - Unified certain extraction mechanisms with a new Solvent Extraction Helper fluid.
 
+- Tier 0 (earlygame) changes:
+
+  - Added crushing wheel recipes for 1-to-1 ore processing. This is also mandatory for redstone now
+    that redstone veins are GTCEu-provided.
+
+  - Changed the sequenced recipe for Magnetic Iron to use three loops of one deployer, rather than
+    one loop of three deployers.
+
 Machine Changes
 ~~~~~~~~~~~~~~~
 
