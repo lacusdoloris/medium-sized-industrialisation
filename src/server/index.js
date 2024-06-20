@@ -21,8 +21,8 @@ import { doTier01Content } from "./tier01";
 import { doTier02Content } from "./tier02";
 import { doTier03Content } from "./tier03";
 import { doTier04Content } from "./tier04";
-import { addOreGenerationRecipes } from "./ores";
 import { addNonSpecificMachineRecipes } from "./machines";
+import { addCustomOreProcessingRecipes } from "../shared/ores";
 
 ServerEvents.tags("items", setupItemTags);
 
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
     adjustVariousMiscRecipes(event);
     doModRecipes(event);
     addChemicalProcessingRecipes(event);
-    addOreGenerationRecipes(event);
+    addCustomOreProcessingRecipes(event);
     addNonSpecificMachineRecipes(event);
 
     // == TIERED CONTENT == //

@@ -10,7 +10,7 @@ const PropertyKey = Java.loadClass(
 
 import { iterateOverAllMaterials } from "../../shared/utils";
 import { GT_WIRE_TYPES } from "../../shared/definition";
-import { BASE_ORES } from "../../shared/base_ores";
+import { BASE_ORES } from "../../shared/ores/bocchi";
 
 // don't want to make it obviously superior to the bending machine, so this only supports a
 // short list.

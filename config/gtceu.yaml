@@ -71,7 +71,7 @@ recipes:
 
   # Whether to remove Vanilla TNT Recipe from the Crafting Table.
   # Default: true
-  removeVanillaTNTRecipe: true
+  removeVanillaTNTRecipe: false
 
   # How many Multiblock Casings to make per craft. Either 1, 2, or 3.
   # Default: 2

@@ -18,7 +18,7 @@ import { addCyanideMaterials, addCyanideRecipes } from "./metallurgy/cyanide";
 import { addBrineMaterials, addBrineRecipes } from "./brine";
 import { addTitaniumMaterials, addTitaniumRecipes } from "./metallurgy/titanium";
 import { addCopperMaterials, addCopperRecipes } from "./metallurgy/copper";
-import { addBaseOreMaterials } from "../../shared/base_ores";
+import { addBaseOreMaterials } from "../../shared/ores/bocchi";
 import { addTungstenMaterials, addTungstenRecipes } from "./metallurgy/tungsten";
 import { addPhosphorusMaterials, addPhosphorusRecipes } from "./phosphorus";
 import { addBariumMaterials, addBariumRecipes } from "./metallurgy/barium";

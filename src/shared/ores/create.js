@@ -4,14 +4,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { addRockBreakingRecipe } from "../../shared/utils";
+import { addRockBreakingRecipe } from "../utils";
 
 /**
  * Adjusts the ore rock recipes from Create.
  *
  * @param {Internal.RecipesEventJS} event
  */
-export const adjustCreateOreGenerationRecipes = (event) => {
+export const adjustCreateDirectOreCrushingRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 

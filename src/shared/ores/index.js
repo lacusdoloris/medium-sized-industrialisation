@@ -1,0 +1,25 @@
+// Copyright (c) 2024 Lura Skye
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+import { addBaseOreMaterials, addBaseOreRecipes } from "./bocchi";
+import { adjustCreateDirectOreCrushingRecipes } from "./create";
+
+// custom ores means the sorted ores,
+
+/**
+ * Adds all the custom ores.
+ */
+export const addCustomOreMaterials = (event) => {
+    addBaseOreMaterials(event);
+};
+
+/**
+ * Adds all of the processing recipes for custom ores.
+ */
+export const addCustomOreProcessingRecipes = (event) => {
+    adjustCreateDirectOreCrushingRecipes(event);
+    addBaseOreRecipes(event);
+};

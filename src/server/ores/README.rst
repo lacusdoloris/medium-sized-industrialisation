@@ -13,9 +13,3 @@ fully automated ore generation in MV and beyond.
 - Scoria: **Silver**, **Lead**, **Gold**
 - Scorchia: **Lead**, **Sulfur**, **Silver**
 
-Ore Sorting
------------
-
-Ore sorting comes in at HV.
-
-- 
