@@ -7,7 +7,7 @@
     "license": "MPL-2.0",
     "private": true,
     "devDependencies": {
-        "@babel/core": "^7.24.4",
+        "@babel/core": "^7.24.7",
         "@babel/plugin-transform-classes": "^7.24.1",
         "@babel/plugin-transform-new-target": "^7.24.1",
         "@babel/plugin-transform-numeric-separator": "^7.24.1",

@@ -85,10 +85,9 @@ const addCreateLvMvMaterialRecipes = (event) => {
             if (!Item.exists(`${modId}:${id}_foil`)) {
                 console.warn("missing foil for " + modId + ":" + id + "???");
             } else {
-                event.recipes.createaddition.rolling(
-                    `2x ${modId}:${id}_foil`,
-                    `#forge:plates/${id}`
-                ).id(`nijika:auto/foil/${id}`);
+                event.recipes.createaddition
+                    .rolling(`2x ${modId}:${id}_foil`, `#forge:plates/${id}`)
+                    .id(`nijika:auto/foil/${id}`);
             }
             3;
         }

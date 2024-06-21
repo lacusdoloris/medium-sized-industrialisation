@@ -19,6 +19,8 @@
 				horse = true
 				minecart = true
 				zombified_piglin = true
+				piglin = true
+				hoglin = true
 				cat = true
 				witch = true
 				drowned = true

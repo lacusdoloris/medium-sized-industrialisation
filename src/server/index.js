@@ -14,7 +14,7 @@ import { doCleanups } from "./cleanups";
 import { adjustMaterialTierRecipes } from "./material_tiers";
 import { adjustVariousMiscRecipes } from "./misc";
 import { doModRecipes } from "./mods";
-import { addFreshOreVeinsEvent, fixupBuiltinOreVeins } from "./ores/overworld";
+import { addFreshOreVeinsEvent, fixupBuiltinOreVeins } from "../shared/ores/overworld";
 import { setupItemTags } from "./tags";
 import { doTier00Content } from "./tier00";
 import { doTier01Content } from "./tier01";

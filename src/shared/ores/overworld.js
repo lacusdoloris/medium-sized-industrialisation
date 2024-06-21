@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { getMaterial } from "../../shared/utils";
+import { getMaterial } from "../utils";
 
 /**
  * Fixes up some of the ore veins for the vanilla dimensions.
@@ -12,11 +12,8 @@ import { getMaterial } from "../../shared/utils";
  * @param {Internal.GTOreVeinEventJS} event
  */
 export const fixupBuiltinOreVeins = (event) => {
-    // remove end/nether veins, as they are mostly untouched biomes
-    event.removeAll(
-        (name, vein) =>
-            vein.layer() == GTWorldGenLayers.NETHERRACK || vein.layer() == GTWorldGenLayers.ENDSTONE
-    );
+    // remove end veins, as the end is entirely untouched
+    event.removeAll((name, vein) => vein.layer() == GTWorldGenLayers.ENDSTONE);
 
     // remove the fucking indicators
     event.modifyAll((_name, vein) => {
@@ -30,6 +27,9 @@ export const fixupBuiltinOreVeins = (event) => {
     event.remove("gtceu:mica_vein");
     event.remove("gtceu:olivine_vein");
     event.remove("gtceu:sapphire_vein");
+    event.remove("gtceu:redstone_vein"); // the *nether* vein
+    event.remove("gtceu:banded_iron_vein");
+    event.remove("gtceu:topaz_vein");
 
     // remove extra ores from certain veins
     // cassiterite: remove regular tin, replace it with fluorite and molybdenite
