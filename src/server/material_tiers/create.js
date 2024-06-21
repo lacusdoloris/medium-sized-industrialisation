@@ -88,7 +88,7 @@ const addCreateLvMvMaterialRecipes = (event) => {
                 event.recipes.createaddition.rolling(
                     `2x ${modId}:${id}_foil`,
                     `#forge:plates/${id}`
-                );
+                ).id(`nijika:auto/foil/${id}`);
             }
             3;
         }
@@ -113,15 +113,23 @@ const addCreateLvMvMaterialRecipes = (event) => {
         }
 
         // auto-generate crushing wheel recipes for ores
-        if (material.hasProperty(PropertyKey.ORE)) {
+        if (material.hasProperty(PropertyKey.ORE) && id !== "gold") {
             event.recipes.create
-                .crushing(`1x ${modId}:crushed_${id}_ore`, `1x ${modId}:raw_${id}`)
+                .crushing(`1x ${modId}:crushed_${id}_ore`, `1x #forge:raw_materials/${id}`)
                 .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
             event.recipes.create
                 .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
                 .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
 
-            if (typeof BASE_ORES[id] === "undefined") {
+            // weird if statement lets us combine everything into one chain rather than a nested
+            // if.
+            if (typeof BASE_ORES[id] !== "undefined") {
+                // pass
+            } else if (id === "redstone") {
+                event.recipes.create
+                    .splashing("1x minecraft:redstone", `1x ${modId}:impure_${id}_dust`)
+                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+            } else {
                 event.recipes.create
                     .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
                     .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
