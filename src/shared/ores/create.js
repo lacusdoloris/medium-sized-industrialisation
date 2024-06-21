@@ -58,7 +58,7 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
     event.recipes.create
         .milling(
             [
-                Item.of("gtceu:crushed_silver_ore").withChance(0.6),
+                Item.of("gtceu:crushed_bauxite_ore").withChance(0.6),
                 Item.of("gtceu:silver_nugget").withChance(0.6),
             ],
             "create:scoria"
