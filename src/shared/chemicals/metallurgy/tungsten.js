@@ -77,6 +77,7 @@ export const addTungstenRecipes = (event) => {
         .chancedOutput("16x gtceu:gypsum_dust", 3500.0, 55.0)
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(8 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.EV])
+        .blastFurnaceTemp(2600)
         .duration(60 * 20);
 
     // The first paper suggests using Na2CO3 for digestion, but chinese plants use regular NaOH.
