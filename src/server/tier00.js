@@ -136,6 +136,12 @@ export const doTier00Content = (event) => {
         .loops(1)
         .id("nijika:tier00/easier_resin_printed_circuits");
 
+    // extremely expensive magnetic iron recipe
+    event.shapeless("gtceu:magnetic_iron_ingot", [
+        "1x #forge:ingots/iron",
+        "5x #forge:dusts/redstone",
+    ]);
+
     // add sequenced assembly alternative for magnetic iron
     event.recipes.create
         .sequenced_assembly("1x gtceu:magnetic_iron_ingot", "minecraft:iron_ingot", [
