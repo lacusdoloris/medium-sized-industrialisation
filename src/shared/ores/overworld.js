@@ -30,6 +30,7 @@ export const fixupBuiltinOreVeins = (event) => {
     event.remove("gtceu:redstone_vein"); // the *nether* vein
     event.remove("gtceu:banded_iron_vein");
     event.remove("gtceu:topaz_vein");
+    event.remove("gtceu:certus_quartz");
 
     // remove extra ores from certain veins
     // cassiterite: remove regular tin, replace it with fluorite and molybdenite
