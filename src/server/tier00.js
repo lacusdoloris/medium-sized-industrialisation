@@ -49,6 +49,14 @@ export const doTier00Content = (event) => {
         })
         .id("nijika:tier00/high_pressure_liquid_boiler");
 
+    // make heavy oil from oilsands obtainable without electricity
+    event.recipes.create
+        .compacting(
+            Fluid.of("gtceu:oil_heavy").withAmount(1500 * FluidAmounts.MB),
+            "#forge:dusts/oilsands"
+        )
+        .id("nijika:tier00/oilsands_compacting");
+
     // make rubber planks cuttable from rubber logs
     event.recipes.create
         .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
