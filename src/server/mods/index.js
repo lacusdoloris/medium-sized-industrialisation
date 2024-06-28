@@ -6,6 +6,7 @@
 
 import { adjustAe2Recipes } from "./ae2";
 import { adjustCreateRecipes } from "./create";
+import { adjustDieselGeneratorRecipes } from "./diesel";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
@@ -81,6 +82,10 @@ export const doModRecipes = (event) => {
 
     if (Platform.isLoaded("ae2")) {
         adjustAe2Recipes(event);
+    }
+
+    if (Platform.isLoaded("createdieselgenerators")) {
+        adjustDieselGeneratorRecipes(event);
     }
 
     event
