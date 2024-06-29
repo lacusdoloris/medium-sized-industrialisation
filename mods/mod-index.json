@@ -389,16 +389,6 @@
         "version": "1.20.1-1.0.0+forge",
         "version_id": "UyNuFWXF"
     },
-    "NmDRyAF4": {
-        "checksum": "7690f65f18e119733aba026ea6dff066c8692535b55a30f095b2494a19baeb6b5f1f3cbd187bc1dbf14588230510d31ced3da155dd51612759ac0ec449df6272",
-        "client_side_only": false,
-        "name": "VerdantVibes",
-        "pinned": false,
-        "project_id": "NmDRyAF4",
-        "selected": true,
-        "version": "1.0.4-1.20.1",
-        "version_id": "qehTPFjX"
-    },
     "NtlsPMR3": {
         "checksum": "d48be372aa7a9f5a306577957d7013ee70b999f5e0ddad0bb40c1e768de0c42cbdcf2d67c08ab38b40c016340b0205dfe1a13838651e90beb9eb0f2efc672c33",
         "client_side_only": false,
@@ -408,16 +398,6 @@
         "selected": true,
         "version": "1.1.0+1.20",
         "version_id": "pG5rD3S9"
-    },
-    "QUH6A4xu": {
-        "checksum": "bfb983b8fa70b64ce00313d159b6449d87634684ca32623280afa1970cf4d30c203a2ca1bef41bff315cb41900b2534c489464b028c152bd2503d3d57218135c",
-        "client_side_only": false,
-        "name": "Many Flowers",
-        "pinned": false,
-        "project_id": "QUH6A4xu",
-        "selected": true,
-        "version": "1.20.1-1.5",
-        "version_id": "Uq6KDxNU"
     },
     "QXU3UqPY": {
         "checksum": "b05d7f61974a08ceea814ff593aa73add8a386b87bc8cbf26541ddbf64a226ec78e86b9e42bb6440ca50df8ddb79c9496f38634634e27d5e1e79b333abdf30c9",
