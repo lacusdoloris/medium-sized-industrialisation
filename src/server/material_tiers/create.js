@@ -60,6 +60,12 @@ const addCreateLvMvMaterialRecipes = (event) => {
 
         // MV and lower wires get a spout filling recipe ONLY
         if (wireProps.voltage <= GTValues.V[GTValues.MV] && !wireProps.isSuperconductor()) {
+            // additionally, single wires get a deployer covering recipe
+            event.recipes.create.deploying(
+                `1x gtceu:${material.name}_single_cable`,
+                ["1x gtceu:rubber_plate", `1x gtceu:${material.name}_single_wire`]
+            ).id(`nijika:auto/cables/${material.name}_deploying`);
+
             let counter = 0;
             for (let [multiplier, type] of GT_WIRE_TYPES) {
                 event.recipes.create
@@ -89,7 +95,6 @@ const addCreateLvMvMaterialRecipes = (event) => {
                     .rolling(`2x ${modId}:${id}_foil`, `#forge:plates/${id}`)
                     .id(`nijika:auto/foil/${id}`);
             }
-            3;
         }
 
         // auto-generate millstone + crushing wheel recipes for mortar recipes.
