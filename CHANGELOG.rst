@@ -47,6 +47,12 @@ Recipe Changes
   - Changed the sequenced recipe for Magnetic Iron to use three loops of one deployer, rather than
     one loop of three deployers.
 
+  - Rubber is now more consistent; mixing raw rubber and sulfur together in a regular heated basin
+    will get rubber pulp rather than liquid rubber, which can be rolled and pressed to get rubber
+    sheets.
+
+    Liquid rubber can still be made via superheating from both raw rubber and regular rubber pulp.
+
 Machine Changes
 ~~~~~~~~~~~~~~~
 

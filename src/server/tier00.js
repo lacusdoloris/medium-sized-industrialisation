@@ -57,11 +57,6 @@ export const doTier00Content = (event) => {
         )
         .id("nijika:tier00/oilsands_compacting");
 
-    // make rubber planks cuttable from rubber logs
-    event.recipes.create
-        .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
-        .id("nijika:tier00/rubber_planks_cutting");
-
     // coke oven tweaks.
     // this makes it dramatically easier, no more fucking brick mould
     event.remove({ id: "gtceu:shaped/compressed_coke_clay" });
@@ -90,6 +85,8 @@ export const doTier00Content = (event) => {
         .smelting("gtceu:wrought_iron_ingot", "#forge:ingots/iron")
         .id("nijika:tier00/less_evil_wrought_iron");
 
+    // == Rubber == //
+
     // no extractor needed!
     event.recipes.create
         .pressing("1x gtceu:raw_rubber_dust", ["1x gtceu:sticky_resin"])
@@ -98,23 +95,39 @@ export const doTier00Content = (event) => {
         .rolling(Item.of("gtceu:sticky_resin").withChance(0.5), "gtceu:rubber_log")
         .id("nijika:tier00/merciful_sticky_resin_production");
 
-    // no alloy smelter needed!
+    // make rubber planks cuttable from rubber logs
+    event.recipes.create
+    .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
+    .id("nijika:tier00/rubber_planks_cutting");
+
+    // earlygame rubber:
+    // 1) mix with heat to get plain rubber pulp
+    // 2) mix superheated to get rubber liquid
+
+    event.recipes.create
+        .mixing("1x gtceu:rubber_dust", ["1x #forge:dusts/sulfur", "2x #forge:dusts/raw_rubber"])
+        .heated()
+        .id("nijika:tier00/rubber/mixing_dust");
+
     event.recipes.create
         .mixing(Fluid.of("gtceu:rubber", 144 * FluidAmounts.MB), [
             "1x #forge:dusts/sulfur",
-            "3x #forge:dusts/raw_rubber",
+            "2x #forge:dusts/raw_rubber",
         ])
-        .heated()
-        .id("nijika:tier00/rubber_mixing");
+        .superheated()
+        .id("nijika:tier00/rubber/mixing_fluid");
 
-    // funny...
     event.recipes.create
-        .mixing("1x gtceu:rubber_mallet", [
-            Fluid.of("gtceu:rubber").withAmount(144 * 6 * FluidAmounts.MB),
-            "2x #forge:rods/wooden",
-        ])
-        .id("nijika:tier00/rubber_mallet");
+        .mixing(Fluid.of("gtceu:rubber", 144 * FluidAmounts.MB), ["1x #forge:dusts/rubber"])
+        .superheated()
+        .id("nijika:tier00/rubber/melting");
 
+    // eh.
+    event.recipes.createaddition.rolling("1x gtceu:rubber_ingot", "1x #forge:dusts/rubber");
+
+    // == Circuits == //
+
+    // earlygame red alloy
     event.recipes.create
         .mixing("1x gtceu:red_alloy_dust", ["1x #forge:dusts/copper", "4x #forge:dusts/redstone"])
         .id("nijika:tier00/red_alloy_mixing");

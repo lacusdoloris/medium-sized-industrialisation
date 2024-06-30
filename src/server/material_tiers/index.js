@@ -39,11 +39,6 @@ export const adjustMaterialTierRecipes = (event) => {
         input: /gtceu:(?:long_)?(?:rod|block|wire|plate|ingot|ring)_extruder_mold/,
     });
 
-    // so true...
-    event
-        .smelting("3x gtceu:rubber_nugget", "#forge:dusts/rubber")
-        .id("nijika:misc/rubber_dust_to_ingot_earlygame");
-
     addCreateRecipes(event);
     rewriteLowerTierComponentRecipes(event);
     fixExtruderRecipeTier(event);
