@@ -76,7 +76,11 @@ const addCreateLvMvMaterialRecipes = (event) => {
                     .id(`nijika:auto/cables/${material.name}_${type}`);
 
                 // make sure there's no rubber plate recipe anymore
-                event.remove({ id: `gtceu:shapeless/${material.name}_cable_${++counter}` });
+                if (type == "octal" || type == "hex") {  // thanks gtceu.
+                    event.remove({ id: `gtceu:shapeless/${material.name}_${type}_cable`})
+                } else {
+                    event.remove({ id: `gtceu:shapeless/${material.name}_cable_${++counter}` });
+                }
             }
         }
     };
