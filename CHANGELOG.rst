@@ -77,3 +77,8 @@ World Changes
     salts and lubricants are now available as ores in addition to all of the previous ores.
 
   - Surface ore indicators have been disabled. Use the prospector.
+
+Miscellaneous Bugfixes
+~~~~~~~~~~~~~~~~~~~~~~
+
+- Fix usages of the old ``#forge:sticks/wood`` tag.

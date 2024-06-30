@@ -92,7 +92,7 @@ export const adjustLittleLogisticsRecipes = (event) => {
     event.remove({ id: "littlelogistics:fluid_barge" });
     event
         .shaped("littlelogistics:fluid_barge", ["SFS", "BBB"], {
-            S: "#forge:sticks/wood",
+            S: "#forge:rods/wood",
             F: "create:fluid_tank",
             B: "#nijika:valid_boat_bottoms",
         })
@@ -101,7 +101,7 @@ export const adjustLittleLogisticsRecipes = (event) => {
     event.remove({ id: "littlelogistics:seater_barge" });
     event
         .shaped("littlelogistics:seater_barge", ["RSR", "BBB"], {
-            R: "#forge:sticks/wood",
+            R: "#forge:rods/wood",
             S: "#create:seats",
             B: "#nijika:valid_boat_bottoms",
         })
