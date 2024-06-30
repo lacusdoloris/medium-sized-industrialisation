@@ -61,12 +61,13 @@ const addCreateLvMvMaterialRecipes = (event) => {
         // MV and lower wires get a spout filling recipe ONLY
         if (wireProps.voltage <= GTValues.V[GTValues.MV] && !wireProps.isSuperconductor()) {
             // additionally, single wires get a deployer covering recipe
-            event.recipes.create.deploying(
-                `1x gtceu:${material.name}_single_cable`,
-                ["1x gtceu:rubber_plate", `1x gtceu:${material.name}_single_wire`]
-            ).id(`nijika:auto/cables/${material.name}_deploying`);
+            event.recipes.create
+                .deploying(`1x gtceu:${material.name}_single_cable`, [
+                    "1x gtceu:rubber_plate",
+                    `1x gtceu:${material.name}_single_wire`,
+                ])
+                .id(`nijika:auto/cables/${material.name}_deploying`);
 
-            let counter = 0;
             for (let [multiplier, type] of GT_WIRE_TYPES) {
                 event.recipes.create
                     .filling(`1x gtceu:${material.name}_${type}_cable`, [
@@ -76,11 +77,8 @@ const addCreateLvMvMaterialRecipes = (event) => {
                     .id(`nijika:auto/cables/${material.name}_${type}`);
 
                 // make sure there's no rubber plate recipe anymore
-                if (type == "octal" || type == "hex") {  // thanks gtceu.
-                    event.remove({ id: `gtceu:shapeless/${material.name}_${type}_cable`})
-                } else {
-                    event.remove({ id: `gtceu:shapeless/${material.name}_cable_${++counter}` });
-                }
+
+                event.remove({ id: `gtceu:shapeless/${material.name}_cable_${multiplier}` });
             }
         }
     };

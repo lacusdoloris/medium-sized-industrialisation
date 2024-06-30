@@ -97,8 +97,8 @@ export const doTier00Content = (event) => {
 
     // make rubber planks cuttable from rubber logs
     event.recipes.create
-    .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
-    .id("nijika:tier00/rubber_planks_cutting");
+        .cutting(["6x gtceu:rubber_planks"], "1x gtceu:rubber_log")
+        .id("nijika:tier00/rubber_planks_cutting");
 
     // earlygame rubber:
     // 1) mix with heat to get plain rubber pulp
@@ -123,7 +123,18 @@ export const doTier00Content = (event) => {
         .id("nijika:tier00/rubber/melting");
 
     // eh.
-    event.recipes.createaddition.rolling("1x gtceu:rubber_ingot", "1x #forge:dusts/rubber");
+    event.recipes.createaddition
+        .rolling("1x gtceu:rubber_ingot", "1x #forge:dusts/rubber")
+        .id("nijika:tier00/rubber/dust_to_ingot");
+
+    // add the ability to recycle rubber ingots/plates too, for liquid rubber
+    event.recipes.create
+        .milling("1x gtceu:rubber_dust", "1x #forge:ingots/rubber")
+        .id("nijika:tier00/rubber/ingot_milling");
+
+    event.recipes.create
+        .milling("1x gtceu:rubber_dust", "1x #forge:plates/rubber")
+        .id("nijika:tier00/rubber/plate_milling");
 
     // == Circuits == //
 
