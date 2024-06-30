@@ -87,6 +87,7 @@ const addCreateLvMvMaterialRecipes = (event) => {
         let id = material.name;
         let modId = material.modid == "nijika" ? "gtceu" : material.modid;
         let hasWire = material.hasProperty(PropertyKey.WIRE);
+        let hasIngot = material.hasProperty(PropertyKey.INGOT);
         let hasRod = material.hasFlag(GTMaterialFlags.GENERATE_ROD);
 
         if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
@@ -107,7 +108,7 @@ const addCreateLvMvMaterialRecipes = (event) => {
             }
 
             let recipeId = `nijika:auto/dust/${id}`;
-            if (material.hasProperty(PropertyKey.INGOT)) {
+            if (hasIngot) {
                 event.recipes.create
                     .milling(`1x ${modId}:${id}_dust`, `#forge:ingots/${id}`)
                     .id(recipeId);
@@ -142,7 +143,7 @@ const addCreateLvMvMaterialRecipes = (event) => {
             }
         }
 
-        if (hasRod) {
+        if (hasRod && hasIngot) {
             // yeeah, idk either. thanks gtceu.
             if (Item.exists(`${modId}:${id}_rod`)) {
                 event.recipes.createaddition

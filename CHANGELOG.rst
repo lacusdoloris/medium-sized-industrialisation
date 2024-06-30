@@ -81,4 +81,6 @@ World Changes
 Miscellaneous Bugfixes
 ~~~~~~~~~~~~~~~~~~~~~~
 
-- Fix usages of the old ``#forge:sticks/wood`` tag.
+- Fixed usages of the old ``#forge:sticks/wood`` tag.
+
+- Fixed broken rolling machine recipes being created for rods that don't have an ingot.
