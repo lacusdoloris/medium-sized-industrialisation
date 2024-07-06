@@ -17,37 +17,18 @@ import { adjustPrettyPipesRecipes } from "./prettypipes";
 import { adjustRfToolsRecipes } from "./rftools";
 import { adjustModularRouterRecipes } from "./routers";
 
-/**
- * Processes recipes for included mods.
- *
+/** 
+ * @callback recipeEventCallback
  * @param {Internal.RecipesEventJS} event
  */
-export const doModRecipes = (event) => {
-    adjustCreateRecipes(event);
-    adjustCreateNewAgeRecipes(event);
-    adjustRfToolsRecipes(event);
-
-    // not optional due to worldgen.
-    adjustIntegratedDynamicsRecipes(event);
-    adjustCreateOreExcavationRecipes(event);
-
-    if (Platform.isLoaded("littlelogistics")) {
-        adjustLittleLogisticsRecipes(event);
-    }
-
-    if (Platform.isLoaded("modularrouters")) {
-        adjustModularRouterRecipes(event);
-    }
-
-    if (Platform.isLoaded("prettypipes")) {
-        adjustPrettyPipesRecipes(event);
-    }
-
-    if (Platform.isLoaded("pack_it_up")) {
-        adjustPackItUpRecipes(event);
-    }
-
-    if (Platform.isLoaded("toolbelt")) {
+/** @type {Object.<string, recipeEventCallback>} */
+const MOD_TWEAKER_FUNCTIONS = {
+    "create_new_age": adjustCreateNewAgeRecipes,
+    "littlelogistics": adjustLittleLogisticsRecipes,
+    "modularrouters": adjustModularRouterRecipes,
+    "prettypipes": adjustPrettyPipesRecipes,
+    "pack_it_up": adjustPackItUpRecipes,
+    "toolbelt": (event) => {
         event
             .shaped("toolbelt:belt", ["SKS", "K K", "KFK"], {
                 S: "minecraft:string",
@@ -63,13 +44,10 @@ export const doModRecipes = (event) => {
                 G: "#forge:nuggets/corinthian_bronze",
             })
             .id("toolbelt:pouch");
-    }
-
-    if (Platform.isLoaded("essentials")) {
-        adjustEssentialsRecipes(event);
-    }
-
-    if (Platform.isLoaded("create_power_loader")) {
+    },
+    // NOT "essential"!
+    "essentials": adjustEssentialsRecipes,
+    "create_power_loader": (event) => {
         event.remove({ mod: "create_power_loader" });
         event
             .shaped("create_power_loader:brass_chunk_loader", ["GGG", "GTG", "BBB"], {
@@ -78,14 +56,28 @@ export const doModRecipes = (event) => {
                 B: "create:brass_casing",
             })
             .id("nijika:misc/chunkloader");
-    }
+    },
+    "ae2": adjustAe2Recipes,
+    "createdieselgenerators": adjustDieselGeneratorRecipes,
+}
 
-    if (Platform.isLoaded("ae2")) {
-        adjustAe2Recipes(event);
-    }
+/**
+ * Processes recipes for included mods.
+ *
+ * @param {Internal.RecipesEventJS} event
+ */
+export const doModRecipes = (event) => {
+    adjustCreateRecipes(event);
+    adjustRfToolsRecipes(event);
 
-    if (Platform.isLoaded("createdieselgenerators")) {
-        adjustDieselGeneratorRecipes(event);
+    // not optional due to worldgen.
+    adjustIntegratedDynamicsRecipes(event);
+    adjustCreateOreExcavationRecipes(event);
+
+    for (let [name, fn] of Object.entries(MOD_TWEAKER_FUNCTIONS)) {
+        if (Platform.isLoaded(name)) {
+            fn(event);
+        }
     }
 
     event
