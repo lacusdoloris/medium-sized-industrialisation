@@ -50,5 +50,6 @@
                 "browsers": "firefox > 90"
             }
         }
-    }
+    },
+    "dependencies": {}
 }
