@@ -1,6 +1,8 @@
 {
     "nijika.tooltip.umbrella": "Provides slow fall when held open.",
 
+    "material.gtceu.rubber": "Natural Rubber",
+    "material.gtceu.raw_rubber": "Raw Natural Rubber",
     "material.gtceu.kanthal": "Ferrochroluminum",
     "material.gtceu.cooperite": "Cooperite",
     "material.gtceu.hsla_steel": "HSLA Steel",
