@@ -404,6 +404,6 @@
 			y: -4.0d
 		}
 	]
-	subtitle: ["A guide to the base ores."]
-	title: "Slug Pharmacy"
+	subtitle: ["Slug Pharmacy"]
+	title: "Passive Ore Generation"
 }

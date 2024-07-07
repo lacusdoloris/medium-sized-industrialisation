@@ -409,6 +409,6 @@
 			y: 3.0d
 		}
 	]
-	subtitle: ["A guide to the various multiblocks you can build."]
-	title: "Isopod Collection"
+	subtitle: ["Isopod Collection"]
+	title: "Multiblock Info"
 }

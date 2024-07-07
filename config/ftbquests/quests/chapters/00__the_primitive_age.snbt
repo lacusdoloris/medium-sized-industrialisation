@@ -21,16 +21,15 @@
 				"&cDo not re-smelt all of your iron.&r The two types of iron are &onot&r interchangable. You will need regular iron, too."
 			]
 			id: "70299F6D0B671948"
-			subtitle: "Stick some iron in your mouth and pull the trigger!"
 			tasks: [{
 				count: 64L
 				id: "71635A3517F7D4E7"
 				item: "gtceu:wrought_iron_plate"
 				type: "item"
 			}]
-			title: "Iron 2"
-			x: 0.0d
-			y: 0.0d
+			title: "Twice-Cooked Iron"
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["70299F6D0B671948"]
@@ -38,10 +37,7 @@
 				"&dGregTech&r machines are made up of several components such as motors, circuits, and wires. Every single machine is made up of exactly one &amachine hull&r, which is made from a &amachine casing&r combined with tier-specific plates and wires."
 				""
 				"Machine casings are made of &aeight tier material plates&r (in this case, wrought iron plates) in a chest shape."
-				""
-				"Hold on to your casings; it's likely you made them &etoo early&r and can't craft hulls yet."
 			]
-			hide_dependent_lines: true
 			id: "05F0896CE8F0B7C0"
 			tasks: [{
 				count: 8L
@@ -50,8 +46,8 @@
 				type: "item"
 			}]
 			title: "First Casing"
-			x: 0.0d
-			y: 1.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["714A323489D928B7"]
@@ -69,35 +65,15 @@
 				title: "Sticky Resin"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["714A323489D928B7"]
 			description: [
-				"In order to make &arubber&r for cables, you need sulfur. Where do you get sulfur? The &9Nether(lands)&r, of course."
+				"Sulfur is required for &dvulcanisation of rubber&r, amongst other, more useful things later in the game. You can intially find it in large veins throughout the Nether."
 				""
-				"This normally isn't even worth mentioning, but Nether portals function &ba bit differently&r; entrance portals only function &l&aat the bottom of the world&r. (Exit portals will still form anywhere in the overworld)."
-				""
-				"You might want to consider getting a Create &aElevator&r set up at this point."
-			]
-			id: "49C36B48DDBFFCC6"
-			subtitle: "Get the payload on the elevator, arm it, let gravity do its thing."
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "63E62B1B497E6ADE"
-				type: "dimension"
-			}]
-			title: "The Nether"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["49C36B48DDBFFCC6"]
-			description: [
-				"&aSulfur&r can be found in massive veins in the &aNether&r in the &dAshen Wastes&r and &dNether Wastes&r biomes. "
-				""
-				"You can get sulfur dust from smelting the raw sulfur. Duh!"
+				"You can get sulfur dust from smelting the raw sulfur."
 			]
 			id: "204E3B62FC3FDC23"
 			tasks: [{
@@ -107,11 +83,14 @@
 				type: "item"
 			}]
 			title: "Sulfur with an F"
-			x: 2.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["47009408B5746D5F"]
+			dependencies: [
+				"47009408B5746D5F"
+				"29823463D2E80DB2"
+			]
 			description: [
 				"If you use a &apress&r on &dSticky Resin&r, you'll get &aRaw Rubber Pulp&r. "
 				""
@@ -130,33 +109,21 @@
 		}
 		{
 			dependencies: [
+				"39BEE00A0E068CB5"
 				"204E3B62FC3FDC23"
 				"212C31C5C891836D"
 			]
 			description: [
-				"Mix &aRaw Rubber Pulp&r and &aSulfur Dust&r in a &6heated basin&r to get &aLiquid Rubber&r. "
+				"&aCables&r are the primary form of energy transmission within GregTech, as well as a &dkey ingredient&r in certain circuits and machines."
 				""
-				"I'm not evil. I won't make you pipette fluids. Please only hit the checkbox when you've actually done it!"
+				"Cables are like wires, but are covered in some form of rubber instead, In the early game, you'll be using &anatural rubber&r obtained from processing rubber trees; you can get it by mixing &draw rubber pulp&r and &dsulfur&r in a &dheated basin&r to get &arubber pulp&r."
+				""
+				"If you press the rubber pulp, you can get &drubber sheets&r which can be used in a deployer to cover &esingle wires&r to make cables. Alternatively, you can mix the ingredients in a &dsuperheated&r basin to get liquid natural rubber; this can be used in a spout or assembler to make &e2x cables&r or larger (in addition to the single cables)."
+				""
+				"For the earlygame, you'll be needing &atin&r and &ared alloy&r cables."
 			]
-			icon: "gtceu:rubber_bucket"
-			id: "0D4436DD0D650674"
-			tasks: [{
-				id: "2CF299D75F15FAA0"
-				title: "Rubber Bars"
-				type: "checkmark"
-			}]
-			title: "Rubber Bars"
-			x: 3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"0D4436DD0D650674"
-				"39BEE00A0E068CB5"
-				"29823463D2E80DB2"
-			]
-			description: ["&aCables&r are the primary form of energy transmission within &dGregTech&r. They are &awires&r wrapped in a form of plastic or rubber."]
 			id: "56F0F1D144AA8F41"
+			min_width: 350
 			tasks: [
 				{
 					count: 16L
@@ -173,30 +140,12 @@
 			]
 			title: "Cables"
 			x: 3.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["714A323489D928B7"]
 			description: [
-				"The &aRolling Mill&r is a &aCreate Additions&r machine that is used to turn plates into &drods&r, and rods into &dwires&r."
-				""
-				"This is very inefficient (a lathe and wiremill, respectively, will get you twice as many per ingot) but it works until you have electricity."
-			]
-			hide_dependent_lines: true
-			id: "29823463D2E80DB2"
-			tasks: [{
-				id: "01D875CB16DCFC43"
-				item: "createaddition:rolling_mill"
-				type: "item"
-			}]
-			title: "Worse Lathe"
-			x: 3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["714A323489D928B7"]
-			description: [
-				"&aRed Alloy&r is an extremely important alloy for the early game. It's made by mixing &dcopper dust&r and &dredstone dust&r together in a mixer and then smelting the result."
+				"&aRed Alloy&r is an extremely important alloy for the early game. It's made by mixing &dcopper dust&r and &dredstone dust&r together in a mixer and then smelting the result. Despite the recipe viewer, you need &efour redstone&r to make one red alloy dust in a &dcreate-based mixer&r."
 				""
 				"The later electrical recipes make this significantly less punishing redstone consumption-wise."
 			]
@@ -209,7 +158,7 @@
 			}]
 			title: "Red Alloy"
 			x: 2.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["714A323489D928B7"]
@@ -263,51 +212,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5C1D408B89B4A2FF"]
+			dependencies: ["47009408B5746D5F"]
 			description: [
-				"Through the magic of &aCreate Crafts \\& Additions&r, the &astraw&r can be used to feed liquid fuel to &aBlaze Burners&r. "
+				"GregTech circuits invariably require a &dcircuit board&r to place the electronic components on. For the LV tier, this is the &aresin-coated circuit board&r, which is a plate of wood coated in &dsticky resin&r and with &dcopper wires&r applied to carry the electrical signals."
 				""
-				"Consider this a good outlet for your creosote. (Just don't cry about minecart tracks if you use it all up.)"
-			]
-			id: "3FCF0A7D4254DB6F"
-			optional: true
-			rewards: [{
-				id: "61807C115AE99EF3"
-				item: {
-					Count: 1
-					id: "minecraft:rail"
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"I'm stupid and burnt all my creosote\"}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2131B39727B88502"
-				item: "createaddition:straw"
-				type: "item"
-			}]
-			title: "Straww"
-			x: 6.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"212C31C5C891836D"
-				"29823463D2E80DB2"
-			]
-			description: [
-				"The &aResin-coated Circuit Board&r is your first circuit board. It uses a &dwood plank&r (or plate) coated in &dsticky resin&r with &dcopper wires&r applied to it."
-				""
-				"There's two recipes for this:"
-				""
-				"- The &eeasier, hand-crafted&r version which takes eight wires (and, thus, eight copper ingots)"
-				"- The &dsequenced assembly&r version which only takes three wires (and, thus, three ingots). "
-				""
-				"Pick whichever one you prefer."
+				"You can make this either by hand, which will require eight copper wires, or with a sequenced assembly recipe that only requires three copper wires."
 			]
 			id: "3B10982B75DBEA5D"
 			rewards: [{
@@ -323,76 +232,42 @@
 			}]
 			title: "Circuit Boards"
 			x: 5.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["714A323489D928B7"]
-			description: [
-				"Iron is already magnetic. (All elements are magnetic.) A more accurate way of describing this would be &apermanently magnetic iron&r, like a bar magnet."
-				""
-				"Nevertheless, &aMagnetic Iron&r is required for building both &dCreate: New Age&r magnets and &aMotors&r, a component you need for most machines in some form."
-				""
-				"It can be made by applying &aRedstone&r to regular &aIron Ingots&r. "
-			]
-			id: "14F8B5FF6779FCDA"
-			tasks: [{
-				count: 16L
-				id: "57E0DCA9C4C4B673"
-				item: { Count: 16, id: "gtceu:magnetic_iron_ingot" }
-				type: "item"
-			}]
-			title: "Magnetic Iron"
-			x: 0.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["14F8B5FF6779FCDA"]
+			dependencies: ["56F0F1D144AA8F41"]
 			description: [
-				"&aMagnetic&r blocks form the outside structure of a turbine. The stronger the magnet, the more RF/t a turbine generates (but also the more stress it uses)."
+				"Every GregTech machine is made up of &delectronic components&r; the first of such is the &delectric motor&r. This is used in every machine that requires movement, either directly or indirectly (such as through pumps). "
 				""
-				"Each basic magnet will cost you &dsixteen iron&r, and you need &dtwelve magnets&r per generator coil, or &c192 ingots&r for a complete circle. "
-			]
-			id: "2355694D2F89321A"
-			rewards: [{
-				count: 7
-				id: "2A1DF943B8CE9B90"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 8L
-				id: "1F68FF60FB3F6249"
-				item: { Count: 8, id: "create_new_age:magnetite_block" }
-				type: "item"
-			}]
-			title: "Magnetic Generation"
-			x: 0.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"14F8B5FF6779FCDA"
-				"56F0F1D144AA8F41"
-			]
-			description: [
-				"The &aElectric Motor&r is the first and most important \"component\" you will make."
+				"In order to make an electric motor, you need &dmagnetic iron&r. Whilst iron is already magnetic (all elements are magnetic), A more accurate way of describing this would be &apermanently magnetic iron&r, like a bar magnet."
 				""
-				"Most &9machines&r are made up of several &9components&r, such as motors, conveyors, or pumps. Each tier has their own set of componenets."
-				""
-				"You'll be needing to make a lot of these!"
+				"You can make it in two ways: by crafting together &dredstone&r and &diron&r (which requires five redstone), or by using a deployer to apply redstone to an iron ingot (which only requires three redstone). Later on, you can use a polarizer to make it for free."
 			]
 			id: "10929AE92C571AE0"
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				count: 5L
-				id: "0A56CC5FAD884435"
-				item: "gtceu:lv_electric_motor"
+			rewards: [{
+				id: "3568DCBEA21A58D3"
+				item: "minecraft:redstone_block"
 				type: "item"
 			}]
-			title: "&9Components&r: Motors"
-			x: 2.0d
-			y: 4.5d
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					count: 5L
+					id: "0A56CC5FAD884435"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3BA723861602C84F"
+					item: { Count: 8, id: "gtceu:magnetic_iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Ferromagnetism"
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -417,36 +292,9 @@
 			}]
 			title: "&aCircuit Number One&r"
 			x: 5.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["10929AE92C571AE0"]
-			description: [
-				"Once you have your low-voltage machines... they're not going to be very useful without a &apower supply&r."
-				""
-				"Your early-game power generation solution will be the &aNew Age&r magnetic generators. These are a set of &agenerator coils&r (up to eight in a row) placed inside a ring of magnets, and connected to a &acarbon brush&r which collects the power."
-				""
-				"A single coil with twelve magnets in the ring produces 90RF/t at 256RPM."
-			]
-			id: "2B25EB53099B4626"
-			tasks: [
-				{
-					id: "118416209B425DCE"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-				{
-					id: "2B0B33C906BECB6B"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-			]
-			title: "Pretty Turbines"
-			x: 2.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["29823463D2E80DB2"]
 			description: [
 				"Every &acircuit&r needs a set of &delectronic components&r mounted onto the circuit board to function."
 				""
@@ -471,7 +319,7 @@
 			]
 			title: "Basic Electronic Components"
 			x: 6.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -492,90 +340,8 @@
 				type: "item"
 			}]
 			title: "&aLow Voltage Hulls&r"
-			x: 3.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["2B25EB53099B4626"]
-			description: [
-				"&dGregTech&r uses an entirely &adifferent&r power system to most. Unlike a lot of mods, where power is a single scalar quantity (RF), GTEU consists of two parts: a &avoltage&r and an &aamperage&r."
-				""
-				"Like monads, GTEU is significantly easier to understand by using rather than explaining. That said, here's an attempt anyway."
-				""
-				"&aVoltage&r can be conceptualised as the size of a single \"packet\" of energy over a wire. Each wire, machine, and generator fits into a &6voltage tier&r (these tiers have names, see the chapter listing) which specifies the maximum size of an energy packett a wire can transfer, a machine can use, or a generator can produce."
-				""
-				"&aAmperage&r is only relevant to wires; the number of amps is the maximum number of packets of energy a wire can carry. Thus, a wire's maximum capacity is expressed as (VOLTAGE_TIER) * (AMPERAGE_CAPACITY); a 4A LV wire can carry four amps of LV energy, or 128EU/t. (But each machine on the wire can only accept up to 32EU/t)."
-				""
-				"In any case, you can convert between RF and GTEU at a 1:1 ratio using a power converter. I doubt you'll be able to supply more than 4 amps yet (hence why this quest calls for a 4A converter), but in practice there's no reason to ever not use the 16A converters."
-				""
-				"In addition, GT wires will convert &oback&r to RF natively at the other end, so GTEU->RF converters are mostly useless."
-			]
-			id: "6146BF353E480854"
-			min_width: 400
-			rewards: [
-				{
-					id: "4475703DCA7C775F"
-					item: {
-						Count: 1
-						id: "minecraft:written_book"
-						tag: {
-							author: "Benjamin C. Pierce"
-							pages: ["[\"\",\"Here's the thing. You said a \\\"monad is a monoid in the category of endofunctors.\\\"\",\"\\n\",\"\\n\",\"Is it in the same family? Yes. No one's arguing that.\"]"]
-							resolved: 1b
-							title: "Basic Category Theory for Computer Scientists "
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "03D9FF7861D84AD0"
-					item: {
-						Count: 1
-						id: "minecraft:written_book"
-						tag: {
-							author: "Dr. Liam O’Connor"
-							pages: ["{\"clickEvent\":{\"action\":\"open_url\",\"value\":\"http://learnyouanagda.liamoc.net/pages/introduction.html\"},\"text\":\"http://learnyouanagda.liamoc.net/pages/introduction.html\"}"]
-							resolved: 1b
-							title: "Learn You an Agda"
-						}
-					}
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			subtitle: "A monad is just a monoid in the category of endofunctors, what's the problem?"
-			tasks: [{
-				id: "5AE40DD8E7BFAB78"
-				item: "gtceu:lv_4a_energy_converter"
-				type: "item"
-			}]
-			title: "&aLow Voltage Power&r"
 			x: 2.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"273AF8ED27438CFE"
-				"6146BF353E480854"
-				"16105D268A18BB51"
-			]
-			description: [
-				"If you've reached this, &ayou've done it&r! You beat the primitive era! You unlocked electricity!"
-				""
-				"Now you can progress through the &alow-voltage&r tier. You should consider setting up &aquarries&r using Create and &aLittle Logistics&r for strip-mining large chunks of the world, getting a &aPretty Pipes&r storage network running, or looking into &dIntegrated Dynamics&r."
-				""
-				"The world is your oyster."
-			]
-			id: "4E722FB95D8BE0E0"
-			shape: "octagon"
-			tasks: [{
-				id: "0ECCD8A630BF8754"
-				title: "I Survived The Primitive Era"
-				type: "checkmark"
-			}]
-			title: "analphabetapolothology"
-			x: 3.5d
-			y: 9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["714A323489D928B7"]
@@ -593,8 +359,74 @@
 				type: "checkmark"
 			}]
 			title: "Copper Alloys"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["714A323489D928B7"]
+			description: [
+				"GregTech uses &dplates&r instead of ingots and &dwires&r instead of redstone. The original way to make these was with the hand-crafting tools, but those are entirely &cdisabled!&r"
+				""
+				"To make plates, you use a &dMechanical Press&r, to make wires and foils you use a &dRolling Mill&r, and to make alloys and rubber you need to use a &dMechanical Mixer&r. "
+				""
+				"If you don't really like Create, you can get by with just putting a handcrank onto the workstation and holding down right click. It's the same level of RSI as the tools."
+			]
+			id: "29823463D2E80DB2"
+			tasks: [
+				{
+					id: "01D875CB16DCFC43"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "31BEBDF401C3A5DB"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "5335169CDCED7EF4"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "4B27AED605DA5420"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
+			title: "The Elephant"
 			x: 3.5d
-			y: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"16105D268A18BB51"
+				"273AF8ED27438CFE"
+				"10929AE92C571AE0"
+			]
+			description: [
+				"With your first circuit and casing, you can now make a &abasic steam turbine&r that will produce 32EU/t from inputted steam."
+				""
+				"The &aHigh Pressure&r steam boiler is the recommended boiler here, but you can also use low pressure boilers if you're cheap or fluid boilers if you've found oil. With a combination of these, you now have enough to power some basic machines!"
+				""
+				"For more specifics on how GregTech power works, check out the Electricity Generation tab."
+			]
+			id: "62A3767C892FFFEB"
+			tasks: [
+				{
+					id: "14993A2704D222CE"
+					item: "gtceu:lv_steam_turbine"
+					type: "item"
+				}
+				{
+					id: "1B35247D4EDA6835"
+					item: "gtceu:hp_steam_solid_boiler"
+					type: "item"
+				}
+			]
+			title: "Steam Power!"
+			x: 3.5d
+			y: 8.0d
 		}
 	]
 	subtitle: ["Boo! Did I scare you? I'm Andesite Alloy!"]
