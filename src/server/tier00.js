@@ -4,6 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { GT_MACHINE_TIERS } from "../shared/definition";
+
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
     event
@@ -243,4 +245,18 @@ export const doTier00Content = (event) => {
         ])
         .heated()
         .id("nijika:tier00/corinthian_bronze_heated_mixing");
+
+    // alt steam turbine recipe
+    event.shaped(
+        "gtceu:lv_steam_turbine",
+        ["PCP", "WHW", "MTM"],
+        {
+            P: "create:fluid_pipe",
+            C: GT_MACHINE_TIERS.LV.circuitTag,
+            W: "create:whisk",
+            H: GT_MACHINE_TIERS.LV.machineHull,
+            M: "gtceu:lv_electric_motor",
+            T: "gtceu:tin_single_cable",
+        }
+    ).id("nijika:tier00/silly_steam_turbine_recipe");
 };
