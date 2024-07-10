@@ -191,11 +191,6 @@
 			dependencies: ["44F3737CC06E96EB"]
 			description: ["The &dBrass Chunk Loader&r allows you to force load those outpost chunks so that your drills and trains don't stop."]
 			id: "6F3CA9F89012DF62"
-			rewards: [{
-				id: "1C4A33A65DC0294D"
-				item: "bigglobe:rope_anchor"
-				type: "item"
-			}]
 			tasks: [{
 				id: "26F93C2A66582741"
 				item: "create_power_loader:brass_chunk_loader"
@@ -288,7 +283,7 @@
 			description: [
 				"Can't find enough ore underground? Or are you just plain lazy?"
 				""
-				"The Create decorative rocks come in much more useful than before; they can be &dcrushed&r or &dmilled&r into various useful &aearly-game ores&r."
+				"The Create decorative rocks (or orestones) come in much more useful than before; they can be &dcrushed&r or &dmilled&r into various useful &aearly-game ores&r. "
 			]
 			id: "222C90F2D2CF1E89"
 			tasks: [{
@@ -298,7 +293,7 @@
 			}]
 			title: "Early Ores"
 			x: 0.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -316,11 +311,11 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Ochrium can be milled or crushed to get &dRedstone&r ore."]
+			description: ["Ochrium can be milled or crushed to get &dHematite&r ore."]
 			id: "2A2A3990F11A484F"
 			tasks: [{
 				count: 64L
@@ -328,8 +323,8 @@
 				item: "create:ochrum"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -347,11 +342,11 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Scoria can be crushed or milled to get &dSilver&r ore."]
+			description: ["Scoria can be crushed or milled to get &dBauxite&r ore."]
 			id: "77A64F6E53E06202"
 			rewards: [{
 				id: "5DA8D4B62C4313B8"
@@ -364,8 +359,8 @@
 				item: "create:scoria"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -1.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -383,11 +378,11 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Crimsite can be milled or crushed to get &dMagnetite&r ore."]
+			description: ["Crimsite can be milled or crushed to get &dRedstone&r ore."]
 			id: "0C8CFD9420F9E47A"
 			rewards: [{
 				id: "41ACA6F4BD87C3E5"
@@ -400,8 +395,46 @@
 				item: "create:crimsite"
 				type: "item"
 			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["222C90F2D2CF1E89"]
+			description: ["Diorite can be milled or crushed to get &dNether Quartz&r."]
+			id: "14D9C704A4B5E791"
+			tasks: [{
+				count: 64L
+				id: "152F677A614A9C89"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
 			x: 1.5d
 			y: -4.0d
+		}
+		{
+			dependencies: [
+				"222C90F2D2CF1E89"
+				"75C5A58A05A22DC6"
+			]
+			description: [
+				"There's two ways of getting the orestones renewably. Both require finding a &dmolten vent&r somewhere in the overworld; these spawn more often in the ocean but you can find them on the surface too. These vents consist of orestones surrounding a single, &oinactive&r special orestone."
+				""
+				"Once you blow the orestone up with an explosive (such as TNT), it'll turn into an &oactive&r orestone; from there, you can place down lava on top of it and the lava will freeze into the specified orestone."
+				""
+				"Alternatively, you can build the &aRock Synthesiser&r surrounding the active orestone, which you can then pump lava in to make any orestone of your choice at the cost of a bit of power. Just keep in mind that the multiblock &ecannot overclock&r, so it will always take 144 seconds to make 288 blocks (or 2 blocks/s)."
+				""
+				"The multiblock previewer will only show &oone&r type of orestone, but the multiblock will construct correctly with &aany&r of the orestones in the Molten Vents mod. "
+			]
+			id: "6C18AAD4FA64399E"
+			min_width: 350
+			tasks: [{
+				id: "101D36CAFDE39F7F"
+				item: "gtceu:rock_synthesiser"
+				type: "item"
+			}]
+			title: "Rock Creation"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Slug Pharmacy"]
