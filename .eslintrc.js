@@ -88,5 +88,7 @@ module.exports = {
         WorldgenEvents: "readonly",
         GTWorldGenLayers: "readonly",
         GTOres: "readonly",
+        ToolProperty: "readonly",
+        GTToolType: "readonly",
     },
 };

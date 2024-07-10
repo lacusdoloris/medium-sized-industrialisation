@@ -96,6 +96,16 @@ export const getBlastProperty = (material) => {
 };
 
 /**
+ * Gets the tool property for the provided material.
+ *
+ * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} The material to lookup.
+ * @return {ToolProperty}
+ */
+export const getToolProperty = (material) => {
+    return definitelyMaterial(material).getProperty(PropertyKey.TOOL);
+};
+
+/**
  * Adds a new rock breaker recipe.
  *
  * @param {Internal.RecipesEventJS} event

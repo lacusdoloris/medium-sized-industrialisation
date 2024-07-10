@@ -79,6 +79,14 @@ const cleanupManualToolRecipes = (event) => {
         output: /.*_frame/,
         input: "#forge:tools/wrenches",
     });
+
+    // remove all hammer recipes
+    event.remove({
+        id: /gtceu:shaped\/hammer_.*/,
+    });
+    event.remove({
+        input: /.*_hammer/,
+    });
 };
 
 /**

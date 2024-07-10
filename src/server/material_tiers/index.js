@@ -9,10 +9,159 @@ import { addCreateRecipes } from "./create";
 import { adjustExtruderBasePlateRecipe, fixExtruderRecipeTier } from "./extruder";
 import { MODPACK_SETTINGS } from "../../settings";
 import { adjustMachineRecipesForTier } from "./machines";
-import { GT_MACHINE_TIERS } from "../../shared/definition";
+import { GT_MACHINE_TIERS, GT_WIRE_TYPES } from "../../shared/definition";
 import { fixLensRecipes } from "./lenses";
 import { adjustGtGeneratorTiers } from "./generators";
 import { adjustMultiblockComponentsForTier } from "./multiblock";
+import { getToolProperty, iterateOverAllMaterials } from "../../shared/utils";
+import { BASE_ORES } from "../../shared/ores/bocchi";
+
+const PropertyKey = Java.loadClass(
+    "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
+);
+
+/**
+ * Adds automatic recipes for all applicable materials.
+ *
+ * @param {Internal.RecipesEventJS} event
+ */
+const addAutomaticMaterialRecipes = (event) => {
+    /** @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material */
+    const addWireRecipes = (material, addRod) => {
+        // let the record show that I got really fucking confused by this and wondered why
+        // i couldn't find any wiremill recipes for the wires, only to realise I needed to swap
+        // pages on EMI.
+
+        if (material.hasFlag(GTMaterialFlags.GENERATE_FINE_WIRE)) {
+            event.recipes.createaddition
+                .rolling(
+                    `2x gtceu:fine_${material.name}_wire`,
+                    `1x gtceu:${material.name}_single_wire`
+                )
+                .id(`nijika:auto/wires/${material.name}_fine_wire`);
+        }
+
+        // rolling machine recipes for wires from rods
+        if (addRod) {
+            event.recipes.createaddition
+                .rolling(`1x gtceu:${material.name}_single_wire`, `1x #forge:rods/${material.name}`)
+                .id(`nijika:auto/wires/${material.name}`);
+        }
+
+        /** @type {Internal.WireProperties} */
+        let wireProps = material.getProperty(PropertyKey.WIRE);
+
+        // MV and lower wires get a spout filling recipe ONLY
+        if (wireProps.voltage <= GTValues.V[GTValues.MV] && !wireProps.isSuperconductor()) {
+            // additionally, single wires get a deployer covering recipe
+            event.recipes.create
+                .deploying(`1x gtceu:${material.name}_single_cable`, [
+                    "1x gtceu:rubber_plate",
+                    `1x gtceu:${material.name}_single_wire`,
+                ])
+                .id(`nijika:auto/cables/${material.name}_deploying`);
+
+            for (let [multiplier, type] of GT_WIRE_TYPES) {
+                event.recipes.create
+                    .filling(`1x gtceu:${material.name}_${type}_cable`, [
+                        `1x gtceu:${material.name}_${type}_wire`,
+                        Fluid.of("gtceu:rubber").withAmount(144 * FluidAmounts.MB * multiplier),
+                    ])
+                    .id(`nijika:auto/cables/${material.name}_${type}`);
+
+                // make sure there's no rubber plate recipe anymore
+
+                event.remove({ id: `gtceu:shapeless/${material.name}_cable_${multiplier}` });
+            }
+        }
+    };
+
+    iterateOverAllMaterials((material) => {
+        let id = material.name;
+        let modId = material.modid == "nijika" ? "gtceu" : material.modid;
+        let hasWire = material.hasProperty(PropertyKey.WIRE);
+        let hasIngot = material.hasProperty(PropertyKey.INGOT);
+        let hasRod = material.hasFlag(GTMaterialFlags.GENERATE_ROD);
+
+        if (material.hasFlag(GTMaterialFlags.GENERATE_FOIL)) {
+            if (!Item.exists(`${modId}:${id}_foil`)) {
+                console.warn("missing foil for " + modId + ":" + id + "???");
+            } else {
+                event.recipes.createaddition
+                    .rolling(`2x ${modId}:${id}_foil`, `#forge:plates/${id}`)
+                    .id(`nijika:auto/foil/${id}`);
+            }
+        }
+
+        // auto-generate millstone + crushing wheel recipes for mortar recipes.
+        if (material.hasFlag(GTMaterialFlags.MORTAR_GRINDABLE) && id !== "coal") {
+            let recipeId = `nijika:auto/dust/${id}`;
+            if (hasIngot) {
+                event.recipes.create
+                    .milling(`1x ${modId}:${id}_dust`, `#forge:ingots/${id}`)
+                    .id(recipeId);
+            } else if (material.hasProperty(PropertyKey.GEM)) {
+                event.recipes.create
+                    .milling(`1x ${modId}:${id}_dust`, `#forge:gems/${id}`)
+                    .id(recipeId);
+            }
+        }
+
+        // auto-generate crushing wheel recipes for ores
+        if (material.hasProperty(PropertyKey.ORE) && id !== "gold") {
+            event.recipes.create
+                .crushing(`1x ${modId}:crushed_${id}_ore`, `1x #forge:raw_materials/${id}`)
+                .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
+            event.recipes.create
+                .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
+                .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
+
+            // weird if statement lets us combine everything into one chain rather than a nested
+            // if.
+            if (typeof BASE_ORES[id] !== "undefined") {
+                // pass
+            } else if (id === "redstone") {
+                event.recipes.create
+                    .splashing("1x minecraft:redstone", `1x ${modId}:impure_${id}_dust`)
+                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+            } else {
+                event.recipes.create
+                    .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
+                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+            }
+        }
+
+        if (hasRod && hasIngot) {
+            // yeeah, idk either. thanks gtceu.
+            if (Item.exists(`${modId}:${id}_rod`)) {
+                event.recipes.createaddition
+                    .rolling(`1x ${modId}:${id}_rod`, `1x #forge:ingots/${id}`)
+                    .id(`nijika:auto/rods/${id}`);
+            } else if (id !== "wood") {
+                console.log("what the fuck, gtceu? missing a rod for " + id);
+            }
+        }
+
+        // auto-generate mining hammer recipes
+        if (material.hasProperty(PropertyKey.TOOL) && MODPACK_SETTINGS.deleteToolRecipes) {
+            let toolProp = getToolProperty(material);
+            if (toolProp.hasType(GTToolType.MINING_HAMMER)) {
+                let what = hasIngot ? `#forge:ingots/${id}` : `#forge:plates/${id}`;
+
+                event
+                    .shaped(`${modId}:${id}_mining_hammer`, ["WW ", "WWS", "WW "], {
+                        W: what,
+                        S: "#forge:rods/wood",
+                    })
+                    .id(`nijika:auto/tools/mining_hammer/${id}`);
+            }
+        }
+
+        if (hasWire) {
+            addWireRecipes(material, hasRod);
+        }
+    });
+};
 
 /**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.
@@ -39,6 +188,7 @@ export const adjustMaterialTierRecipes = (event) => {
         input: /gtceu:(?:long_)?(?:rod|block|wire|plate|ingot|ring)_extruder_mold/,
     });
 
+    addAutomaticMaterialRecipes(event);
     addCreateRecipes(event);
     rewriteLowerTierComponentRecipes(event);
     fixExtruderRecipeTier(event);
