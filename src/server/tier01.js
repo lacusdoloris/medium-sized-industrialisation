@@ -114,4 +114,15 @@ export const doTier01Content = (event) => {
         .itemOutputs("gtceu:infinite_water_cover")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
+
+    event
+        .shaped("1x gtceu:rock_synthesiser", ["UIU", "CRC", "WPW"], {
+            U: "gtceu:lv_electric_pump",
+            I: "gtceu:heatproof_machine_casing",
+            C: "#gtceu:circuits/lv",
+            R: "create:limestone",
+            W: GT_MACHINE_TIERS.LV.singleCable,
+            P: "gtceu:lv_electric_piston",
+        })
+        .id("nijika:tier01/rock_synthesiser");
 };
