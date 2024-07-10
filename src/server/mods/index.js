@@ -17,18 +17,18 @@ import { adjustPrettyPipesRecipes } from "./prettypipes";
 import { adjustRfToolsRecipes } from "./rftools";
 import { adjustModularRouterRecipes } from "./routers";
 
-/** 
+/**
  * @callback recipeEventCallback
  * @param {Internal.RecipesEventJS} event
  */
 /** @type {Object.<string, recipeEventCallback>} */
 const MOD_TWEAKER_FUNCTIONS = {
-    "create_new_age": adjustCreateNewAgeRecipes,
-    "littlelogistics": adjustLittleLogisticsRecipes,
-    "modularrouters": adjustModularRouterRecipes,
-    "prettypipes": adjustPrettyPipesRecipes,
-    "pack_it_up": adjustPackItUpRecipes,
-    "toolbelt": (event) => {
+    create_new_age: adjustCreateNewAgeRecipes,
+    littlelogistics: adjustLittleLogisticsRecipes,
+    modularrouters: adjustModularRouterRecipes,
+    prettypipes: adjustPrettyPipesRecipes,
+    pack_it_up: adjustPackItUpRecipes,
+    toolbelt: (event) => {
         event
             .shaped("toolbelt:belt", ["SKS", "K K", "KFK"], {
                 S: "minecraft:string",
@@ -46,8 +46,8 @@ const MOD_TWEAKER_FUNCTIONS = {
             .id("toolbelt:pouch");
     },
     // NOT "essential"!
-    "essentials": adjustEssentialsRecipes,
-    "create_power_loader": (event) => {
+    essentials: adjustEssentialsRecipes,
+    create_power_loader: (event) => {
         event.remove({ mod: "create_power_loader" });
         event
             .shaped("create_power_loader:brass_chunk_loader", ["GGG", "GTG", "BBB"], {
@@ -57,9 +57,9 @@ const MOD_TWEAKER_FUNCTIONS = {
             })
             .id("nijika:misc/chunkloader");
     },
-    "ae2": adjustAe2Recipes,
-    "createdieselgenerators": adjustDieselGeneratorRecipes,
-}
+    ae2: adjustAe2Recipes,
+    createdieselgenerators: adjustDieselGeneratorRecipes,
+};
 
 /**
  * Processes recipes for included mods.

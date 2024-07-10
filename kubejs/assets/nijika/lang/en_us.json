@@ -1,5 +1,6 @@
 {
     "nijika.tooltip.umbrella": "Provides slow fall when held open.",
+    "nijika.tooltip.no_overclock": "§cDoes not overclock!§r",
 
     "material.gtceu.rubber": "Natural Rubber",
     "material.gtceu.raw_rubber": "Raw Natural Rubber",
@@ -209,6 +210,8 @@
     "gtceu.ore_sorting": "Ore Sorting",
     "block.gtceu.ion_exchanger": "Ion Exchanger",
     "gtceu.ion_exchange": "Ion Exchange",
+    "block.gtceu.rock_synthesiser": "Rock Synthesiser",
+    "gtceu.rock_synthesis": "Rock Synthesis",
 
     "item.nijika.slag": "Ore Slag",
     "item.nijika.catalysator_brown": "Mineral Catalyst",

@@ -7,6 +7,8 @@
 /* eslint-disable no-unexpected-multiline */
 
 const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
+const TagKey = Java.loadClass("net.minecraft.tags.TagKey");
+const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
 
 export const GasTier = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty$GasTier"
@@ -111,4 +113,14 @@ export const addRockBreakingRecipe = (event, rockType, energy) => {
         .EUt(energy)
         ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
         ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
+};
+
+/**
+ * Creates a new block TagKey.
+ *
+ * @param {string} namespace The namespace this tag is in.
+ * @param {string} name The name of the TagKey to use.
+ */
+export const createBlockTag = (namespace, name) => {
+    return TagKey.create(BuiltInRegistries.BLOCK.key(), new ResourceLocation(namespace, name));
 };

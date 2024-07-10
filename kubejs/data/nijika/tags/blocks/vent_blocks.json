@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "molten_vents:active_molten_asurine",
+        "molten_vents:active_molten_veridium",
+        "molten_vents:active_molten_ochrum",
+        "molten_vents:active_molten_scorchia",
+        "molten_vents:active_molten_scoria",
+        "molten_vents:active_molten_crimsite"
+    ]
+}

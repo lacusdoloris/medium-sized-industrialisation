@@ -9,6 +9,7 @@ import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
 import { addIonExchangerMultiblock, addIonExchangerRecipeType } from "./ion_exchanger";
 import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
+import { addRockSynthesiserMultiblock, addRockSynthesisRecipeType } from "./rock_synthesiser";
 
 // some notes
 //
@@ -38,6 +39,9 @@ export const addAllRecipeTypes = (event) => {
 
     let ionExchanger = event.create("ion_exchange");
     addIonExchangerRecipeType(ionExchanger);
+
+    let rockSynthesis = event.create("rock_synthesis");
+    addRockSynthesisRecipeType(rockSynthesis);
 };
 
 /**
@@ -60,4 +64,7 @@ export const addAllMachineTypes = (event) => {
 
     let ionExchanger = event.create("nijika:ion_exchanger", "multiblock");
     addIonExchangerMultiblock(ionExchanger);
+
+    let rockSynthesiser = event.create("nijika:rock_synthesiser", "multiblock");
+    addRockSynthesiserMultiblock(rockSynthesiser);
 };

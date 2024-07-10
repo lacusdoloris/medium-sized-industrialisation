@@ -247,16 +247,14 @@ export const doTier00Content = (event) => {
         .id("nijika:tier00/corinthian_bronze_heated_mixing");
 
     // alt steam turbine recipe
-    event.shaped(
-        "gtceu:lv_steam_turbine",
-        ["PCP", "WHW", "MTM"],
-        {
+    event
+        .shaped("gtceu:lv_steam_turbine", ["PCP", "WHW", "MTM"], {
             P: "create:fluid_pipe",
             C: GT_MACHINE_TIERS.LV.circuitTag,
             W: "create:whisk",
             H: GT_MACHINE_TIERS.LV.machineHull,
             M: "gtceu:lv_electric_motor",
             T: "gtceu:tin_single_cable",
-        }
-    ).id("nijika:tier00/silly_steam_turbine_recipe");
+        })
+        .id("nijika:tier00/silly_steam_turbine_recipe");
 };
