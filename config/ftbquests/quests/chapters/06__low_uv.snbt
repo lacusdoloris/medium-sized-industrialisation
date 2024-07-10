@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "06__low_uv"
 	group: "657B54F6F8F4476A"
@@ -7,6 +8,18 @@
 	id: "2AA15CBD5BA42A2A"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["309580C111B666D2"]
+		description: ["Sorry, but this chapter isn't finished yet."]
+		id: "69FA5453D9A0251B"
+		tasks: [{
+			id: "392796471C2C1A97"
+			item: "gtceu:nano_processor_mainframe"
+			type: "item"
+		}]
+		title: "Unimplemented"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "LuV - echo_ruler"
 }

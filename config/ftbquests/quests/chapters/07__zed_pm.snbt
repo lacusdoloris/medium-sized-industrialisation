@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "07__zed_pm"
 	group: "19706AF5FF13B9E4"
@@ -7,6 +8,18 @@
 	id: "16148AE1A66AE2AE"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["2AA15CBD5BA42A2A"]
+		description: ["Sorry, but this chapter isn't finished yet."]
+		id: "1BF077D79D5B8FF1"
+		tasks: [{
+			id: "375BEB0BCD264E4B"
+			item: "gtceu:zero_point_module"
+			type: "item"
+		}]
+		title: "Unimplemented"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "ZPM - mematic kill agent"
 }

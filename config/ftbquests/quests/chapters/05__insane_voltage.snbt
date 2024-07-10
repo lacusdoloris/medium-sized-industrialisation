@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "05__insane_voltage"
 	group: "657B54F6F8F4476A"
@@ -7,6 +8,18 @@
 	id: "309580C111B666D2"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["7F2FB255ED44F681"]
+		description: ["Sorry, but this chapter isn't finished yet."]
+		id: "20DB8307582932B8"
+		tasks: [{
+			id: "12C4FDEAEF65C8A1"
+			item: "gtceu:micro_processor_mainframe"
+			type: "item"
+		}]
+		title: "Unimplemented"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "IV - digital³ forever "
 }
