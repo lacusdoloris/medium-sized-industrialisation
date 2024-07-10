@@ -27,6 +27,17 @@
 					item: "minecraft:kelp"
 					type: "item"
 				}
+				{
+					id: "616C14C52EBEC39D"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.luv"
+						tag: {
+							Charge: 1000000000L
+						}
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5C53A347BBB40D7B"
