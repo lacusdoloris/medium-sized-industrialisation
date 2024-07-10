@@ -40,14 +40,14 @@
         "version_id": "NhMILNAm"
     },
     "2u6LRnMa": {
-        "checksum": "13dcddc9b46fdfa93b5752307eb1afc409f37b101becbc8674d8c41e9be871d346fb18ae04cbc1d2bd6725992dc97d676cf411eb4fb8e17dd20e98150cf80c62",
+        "checksum": "abbdae756d12ad301d8587fa57fe77c2fa701b963d12d9457db43ad8a9d086062efa421b2180d60d3a860930fce07e79a96db7463e53743f01f92f17e5e3f214",
         "client_side_only": false,
         "name": "Botarium",
         "pinned": false,
         "project_id": "2u6LRnMa",
         "selected": false,
-        "version": "2.3.3",
-        "version_id": "rkELoRmb"
+        "version": "2.3.4",
+        "version_id": "O7D6FTfW"
     },
     "3DxDmIN5": {
         "checksum": "b1f97ca239433001353e4d7be5b5c583680f9b6d2d718e85478af434edfb8060395f75e4f8bed24552ab670b5904e33f1fdffe917e4752cbc7a267e878d54669",
@@ -110,14 +110,14 @@
         "version_id": "t0uY61gM"
     },
     "7tG215v7": {
-        "checksum": "d8c97efad6330ba5f047dfad555fb9b9ef8d760fc5b523873daf687a8219a1477a4f9d1b70376739f25b66639e30b7c3c3a7f827ba9539b9e5a85ed8ed6a95ae",
+        "checksum": "c7dc9ad66b12a0020d0d01bd971e7768fffecb2c3becafce6964e4cf318a3f44ffc3c5a3fdf528023e3ad0eb3cfb66ed88558f42e089ce75858c216f756d07dd",
         "client_side_only": false,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.3.0-a",
-        "version_id": "ypaGLWFu"
+        "version": "mc1.20.1-1.3.1",
+        "version_id": "AJGsk2Vl"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -260,14 +260,14 @@
         "version_id": "7YudDLPR"
     },
     "FYpiwiBR": {
-        "checksum": "2652494ed50e6dd259ead461d52d5bc73720a7f86edaf60a13d0f93133f8d54aefe917468f49a0967666f3ce2bb37434f6d027d4b51cb338f8ddfcf7429abca5",
+        "checksum": "1660370407a02578d4a96078fb9db86be4d4d5dbeb710cd6b6738d0bdf127f4ac8bc9a8a2b845fa0c59a9e34da5914d1fe8a99f6bb09e20fe16a1b5b585d1415",
         "client_side_only": false,
         "name": "Connector Extras",
         "pinned": false,
         "project_id": "FYpiwiBR",
         "selected": true,
-        "version": "1.11.1+1.20.1",
-        "version_id": "OoUDmJIb"
+        "version": "1.11.2+1.20.1",
+        "version_id": "d28gpPn6"
     },
     "G1hIVOrD": {
         "checksum": "afff5a58b5c79314f3039474319cd77067b128691fb7006a855e3836ac1710adab2da61bd122f949890f2fc4189524d92629281c7d9a0b0f0601ad758262a1b4",
@@ -410,14 +410,14 @@
         "version_id": "8tVulaR5"
     },
     "ResbpANg": {
-        "checksum": "f4796244c4d03eb401d8c1ca068cbe6dcd99ed2a8b96b7534016fd236ce5e1007d9204ba9c93bcfe4779737d94b16763fc6de16904d6658720215c79f8699ff0",
+        "checksum": "9d4c1b2b90e9101fa43c6733e7a6996fcbe706ef40c2afc998000f77fc8c9136d0484ee6257692e164157af07072f47d52d32fd666afcb260043d6245373cfc7",
         "client_side_only": false,
         "name": "Create Ore Excavation",
         "pinned": false,
         "project_id": "ResbpANg",
         "selected": true,
-        "version": "1.20.1-1.4.4",
-        "version_id": "iEoTSE14"
+        "version": "1.20.1-1.5.0",
+        "version_id": "m5bD7RxO"
     },
     "T38eAZQC": {
         "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
@@ -580,14 +580,14 @@
         "version_id": "1TsVpRht"
     },
     "fRiHVvU7": {
-        "checksum": "d56434d3db6585afd39d000b826ae827e27f40983efa91ccbeabcf24fe730dd4fc86ac8568035a4df8b04e660d8f90513262eefa109a32cd036386516c5f73da",
+        "checksum": "de1f48b515f1914bce2c07e06c97b8a20f954c9c8f6f178617df45b9cdf191124207815e3f96dae0a60597657832ced1a723d72528923aab75e42b1f3cb66226",
         "client_side_only": true,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.8+1.20.1+forge",
-        "version_id": "fCSXJrtb"
+        "version": "1.1.10+1.20.1+forge",
+        "version_id": "HhQ69HxF"
     },
     "ftdbN0KK": {
         "checksum": "2456e4876827ba922fa2629c3a7970205a8f9cef08636d78468038433a0cf1d1806d140b20c470fa4b13dbb4800abe32f1a8421c5385c37681d9222f72045310",
@@ -610,14 +610,14 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "353a893decc2b771fbdfeebcfd19e4391917bfdc619f80467aa5b86f79e38f43fe975d234fbdfb3ad7067b16a4199cb7dbff303d1a945411b39d77fc06ee9b71",
+        "checksum": "b8d03a705f65b7ed6dbbbf1c1ceb49d5c493e315de5f6682e6f229015ac044677652d402634c51d22d6a741cf177a038c084bfb7eb71025edbc2451da376f739",
         "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.7.1",
-        "version_id": "UAWpsGGe"
+        "version": "1.7.2",
+        "version_id": "UOdAzPFs"
     },
     "hIO8IsD8": {
         "checksum": "d485a4c944bc2217bba057b716866677cc13c3d0347249faf9c25b0706de63784ba98a2228e11d634d2a383a32810580ea6751bc1c2ffd3c8759a4b987fea8b2",
@@ -680,24 +680,24 @@
         "version_id": "JMtc0mTS"
     },
     "nmDcB62a": {
-        "checksum": "32f6ab167bf7e534519d13dd126ce6bee359f17e5abe6f70efd6f4bd2c52d873e218edbebe2dea69b843e31b496481755cfbe3e0b2c12fdf9008e938001544bc",
+        "checksum": "7ff44b4ae8d8c25a80862d209d9af0e2249bc6e614feaef6c8b83e9a68e0a50fa17b423e1704e4b19e6dd357864b55472dd16758b3d6a3f66c3da54c57643d33",
         "client_side_only": false,
         "name": "ModernFix",
         "pinned": false,
         "project_id": "nmDcB62a",
         "selected": true,
-        "version": "5.15.0+mc1.20.1",
-        "version_id": "u1FOqNCn"
+        "version": "5.18.6+mc1.20.1",
+        "version_id": "QroNBg6X"
     },
     "nvQzSEkH": {
-        "checksum": "4a63b62f46b77a8591b858dc2b293976085e58695d0fb86df513a65d59951c862401b82922a1cdedfe1b9fb97e1ec041158fdeb0ee64df0463e519f8f64e32b5",
+        "checksum": "f24f5668a1ace8ba79b8b05cf5d858ad2af6bb098d083f2eb13eceeba093eb47564922b8dbb59e4f2efb03f101f866069d7f270963e0d1e05f2ce26ecc5d3e6f",
         "client_side_only": false,
         "name": "Jade \ud83d\udd0d",
         "pinned": false,
         "project_id": "nvQzSEkH",
         "selected": true,
-        "version": "11.9.3+forge",
-        "version_id": "NruPjXIH"
+        "version": "11.9.4+forge",
+        "version_id": "MLYKnVCk"
     },
     "o6qsdrrQ": {
         "checksum": "dab133c74c35ecbf1980671f9685b9d84ee6c3965eab33827b51252234fcc7bcd32e2eb080e107b53954cfa3268f2759879f360a5f8fdd3ba6ed44a50c51eaa0",
@@ -741,7 +741,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": false,
+        "client_side_only": true,
         "name": "EMI Loot",
         "pinned": false,
         "project_id": "qbbO7Jns",
@@ -770,14 +770,14 @@
         "version_id": "kC6SY4Zp"
     },
     "sdaSaQEz": {
-        "checksum": "72f7b29afd016549c05d7bee9f53e3515cfba15b0a9d702d98eda18392b90b2a932a2c7d5f013052e2bffb1069adcebd9784b4edc125fb99c2717bf8f5b027b2",
+        "checksum": "8c10013d4bbe9a3ea944eb1979cb0a97e7620b2554cb7e16ba3906bfa5bd16786cad89b533b1ceedc936e147190065ef0791985adf1095422d7f34ba130ada14",
         "client_side_only": false,
         "name": "Almost Unified",
         "pinned": false,
         "project_id": "sdaSaQEz",
         "selected": true,
-        "version": "1.20.1-0.9.3+forge",
-        "version_id": "fscv1Pjy"
+        "version": "1.20.1-0.9.4+forge",
+        "version_id": "oTclC5Xa"
     },
     "sk9knFPE": {
         "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
@@ -790,14 +790,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "d9b0952ba3d8489240e64176a47fa5cc2e1795346c5b907d045c5667341211246cd5b0bda52d71511c9a7a47a81c7853de5c15ff60c49db7f9d09c401cf17c9f",
+        "checksum": "d8ca41b84108abd0565442b7c015381366987be6b44ebabdd55db486f3ffab159a57692a9c7cf173418818f1bfb7d3cffa557ecb07a6a58a1fe314d7e3236e64",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.21+mc1.20.1",
-        "version_id": "OUQ1w3tY"
+        "version": "0.3.24+mc1.20.1",
+        "version_id": "3vBuzH82"
     },
     "soWqucCB": {
         "checksum": "26929e0fe5cfc047e52323129e172daa8caee1529491cc7d4ecaed33d87c26bd1b2545c05eb7b915cfb0639300c16cfecf64c9efda4f9bd1bccb7249084f1008",
@@ -860,14 +860,14 @@
         "version_id": "AhYGbfUn"
     },
     "uuVy6k1s": {
-        "checksum": "cef22d934e04f0de626cef4199ad6f89afb3a9a8aea980d843a01d33a2fca1f61a7dbbb5175eeb3f17fdf174230d09ed9395e08e99c40b9c862cd08a7a1e9a09",
+        "checksum": "1bce0312f49980ebeea1f5873dee735313b00bf407cef2c4e0ea5fb80adc8549d43b6f4ac0ddd99494619fc061ef3ee3abe42ec6907a434e50e9c4baa5fb5968",
         "client_side_only": false,
         "name": "Create: Molten Vents",
         "pinned": false,
         "project_id": "uuVy6k1s",
         "selected": true,
-        "version": "2.0.6",
-        "version_id": "2HJ2GTWD"
+        "version": "2.0.8",
+        "version_id": "poBMa9OK"
     },
     "vvuO3ImH": {
         "checksum": "786c6c34e3f1a5358075cf95330b3e732293861a4ca60e4aa1780b55d32d3ab5b998b014bd521b3567f474a7bab738f821d46b71a7da201e0fa9321bb8e7e03b",
