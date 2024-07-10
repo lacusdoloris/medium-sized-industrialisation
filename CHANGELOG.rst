@@ -53,11 +53,18 @@ Recipe Changes
 
     Liquid rubber can still be made via superheating from both raw rubber and regular rubber pulp.
 
+- Tier 1 (LV) changes:
+
+  - Earlygame power comes from steam turbines, like in base GTCEu, rather than New Age turbines.
+
 Machine Changes
 ~~~~~~~~~~~~~~~
 
-- Added a new Ion Exchanger multiblock. This replaces certain chemical reactor/LCR organic chemistry
-  recipes that were previously introduced in 0.8.
+- A Ion Exchanger multiblock has been added. This replaces certain chemical reactor/LCR organic 
+  chemistry recipes that were previously introduced in 0.8.
+
+- A new Rock Synthesiser multiblock has been added to allow for passive generation of the early game
+  orestones.
 
 World Changes
 ~~~~~~~~~~~~~
@@ -70,8 +77,8 @@ World Changes
   - The Large Biomes preset is recommended to get a good world. The EE built-in presets are not 
     supported.
 
-- Ore veins are provided by GTCEu; they are now significantly bigger and come with mixed ores rather
-  than single ores.
+- Ore veins are now provided by GTCEu; they are now significantly bigger and come with mixed ores 
+  rather than single ores.
 
   - Goethitite, pyrite, cinnabar, hematite, apatite, tricalcium phosphate, pyrochlore, and various 
     salts and lubricants are now available as ores in addition to all of the previous ores.
