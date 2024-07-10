@@ -103,7 +103,7 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         let builder = event.recipes.gtceu
             .rock_synthesis(`nijika:rock_synthesis/${rockType}`)
             .notConsumable(rockId)
-            .inputFluids(Fluid.of("minecraft:lava").withAmount(250 * FluidAmounts.BUCKET))
+            .inputFluids(Fluid.of("minecraft:lava").withAmount(300 * FluidAmounts.BUCKET))
             .EUt(GTValues.VA[GTValues.MV])
             .duration(144 * 20);
 
