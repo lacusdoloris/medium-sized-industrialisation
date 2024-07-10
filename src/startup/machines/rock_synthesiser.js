@@ -26,7 +26,7 @@ export const addRockSynthesiserMultiblock = (builder) => {
             .aisle("BBBBB", "A###A", "A###A", "#####", "#####")
             .aisle("BBBBB", "#AAA#", "#####", "#####", "#####")
             .aisle("BBVBB", "#ABA#", "##B##", "##B##", "##B##")
-            .aisle("BBBBB", "#ACA#", "##C##", "#####", "#####")
+            .aisle("BBBBB", "#ACA#", "#####", "#####", "#####")
             .aisle("BBBBB", "A###A", "A###A", "#####", "#####")
             .where("B", Predicates.blocks("gtceu:heatproof_machine_casing"))
             .where("V", Predicates.blockTag(createBlockTag("nijika", "vent_blocks")))
