@@ -99,13 +99,6 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         )
         .id("create:crushing/tuff");
 
-    event.smelting("1x create:crimsite", "1x create:cut_crimsite");
-    event.smelting("1x create:ochrum", "1x create:cut_ochrum");
-    event.smelting("1x create:veridium", "1x create:cut_veridium");
-    event.smelting("1x create:asurine", "1x create:cut_asurine");
-    event.smelting("1x create:scoria", "1x create:cut_scoria");
-    event.smelting("1x create:scorchia", "1x create:cut_scorchia");
-
     // HV tier rock breaking recipes
     addRockBreakingRecipe(event, "create:crimsite", GTValues.VA[GTValues.MV]);
     addRockBreakingRecipe(event, "create:ochrum", GTValues.VA[GTValues.MV]);
