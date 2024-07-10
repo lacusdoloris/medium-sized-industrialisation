@@ -4,8 +4,6 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { addRockBreakingRecipe } from "../utils";
-
 /**
  * Adjusts the ore rock recipes from Create.
  *
@@ -99,11 +97,21 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         )
         .id("create:crushing/tuff");
 
-    // HV tier rock breaking recipes
-    addRockBreakingRecipe(event, "create:crimsite", GTValues.VA[GTValues.MV]);
-    addRockBreakingRecipe(event, "create:ochrum", GTValues.VA[GTValues.MV]);
-    addRockBreakingRecipe(event, "create:veridium", GTValues.VA[GTValues.MV]);
-    addRockBreakingRecipe(event, "create:asurine", GTValues.VA[GTValues.MV]);
-    addRockBreakingRecipe(event, "create:scoria", GTValues.VA[GTValues.MV]);
-    addRockBreakingRecipe(event, "create:scorchia", GTValues.VA[GTValues.MV]);
+    for (let rockType of ["crimsite", "ochrum", "veridium", "asurine", "scoria", "scorchia"]) {
+        let rockId = `create:${rockType}`;
+
+        let builder = event.recipes.gtceu
+            .rock_synthesis(`nijika:rock_synthesis/${rockType}`)
+            .notConsumable(rockId)
+            .inputFluids(Fluid.of("minecraft:lava").withAmount(250 * FluidAmounts.BUCKET))
+            .EUt(GTValues.VA[GTValues.MV])
+            .duration(144 * 20);
+
+        // apply 64x output four times as either gtceu or EMI doesn't like 288 output.
+        for (let i = 0; i < 4; i++) {
+            builder = builder.itemOutputs(`64x ${rockId}`);
+        }
+
+        builder = builder.itemOutputs(`32x ${rockId}`);
+    }
 };
