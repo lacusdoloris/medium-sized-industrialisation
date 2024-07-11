@@ -164,6 +164,60 @@ const addAutomaticMaterialRecipes = (event) => {
 };
 
 /**
+ * Adjusts recipes relating to the deep storage units (super/quantum chests and tanks).
+ * 
+ * This has to be manually adjusted to fix the internal crate 
+ * 
+ * @param {Internal.RecipesEventJS} event
+ */
+const adjustSuperChestRecipes = (event) => {
+    event.remove({ output: /gtceu:.v_super_chest/ });
+    
+    event.shaped(
+        "gtceu:lv_super_chest",
+        ["CPC", "PKP", "CPC"],
+        {
+            P: GT_MACHINE_TIERS.LV.primaryPlate,
+            C: GT_MACHINE_TIERS.LV.circuitTag,
+            K: "gtceu:bronze_crate",
+        }
+    ).id("nijika:super_chests/lv");
+
+    // lol at how completely wrongly coloured these aree
+    event.shaped(
+        "gtceu:mv_super_chest",
+        ["CPC", "PKP", "CPC"],
+        {
+            P: GT_MACHINE_TIERS.MV.primaryPlate,
+            C: GT_MACHINE_TIERS.MV.circuitTag,
+            K: "gtceu:steel_crate",
+        }
+    ).id("nijika:super_chests/mv");
+
+    event.shaped(
+        "gtceu:hv_super_chest",
+        ["CPC", "PKP", "CFC"],
+        {
+            P: GT_MACHINE_TIERS.HV.primaryPlate,
+            C: GT_MACHINE_TIERS.HV.circuitTag,
+            K: "gtceu:aluminium_crate",
+            F: "gtceu:lv_field_generator"
+        }
+    ).id("nijika:super_chests/hv");
+
+    event.shaped(
+        "gtceu:ev_super_chest",
+        ["CPC", "PKP", "CFC"],
+        {
+            P: GT_MACHINE_TIERS.EV.primaryPlate,
+            C: GT_MACHINE_TIERS.EV.circuitTag,
+            K: "gtceu:titanium_crate",  // TODO: nitinol
+            F: "gtceu:mv_field_generator"
+        }
+    ).id("nijika:super_chests/ev");
+}
+
+/**
  * Adjusts recipes relating to the material system and BI's adjusted tiers.
  *
  * @param {Internal.RecipesEventJS} event
@@ -195,6 +249,7 @@ export const adjustMaterialTierRecipes = (event) => {
     adjustExtruderBasePlateRecipe(event);
     fixLensRecipes(event);
     adjustGtGeneratorTiers(event);
+    adjustSuperChestRecipes(event);
 
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
         adjustMachineRecipesForTier(event, tier);
