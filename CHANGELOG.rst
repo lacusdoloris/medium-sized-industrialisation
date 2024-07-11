@@ -39,6 +39,12 @@ Recipe Changes
 
 - Unified certain extraction mechanisms with a new Solvent Extraction Helper fluid.
 
+- Some GregTech tools have been re-enabled.
+
+  - Mining hammers can now be made like the old hammers, for a working 3x3 mining tool.
+
+- Super Chests now correctly use our new material tier system.
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. This is also mandatory for redstone now
