@@ -13,10 +13,13 @@
 				item = true
 				bee = true
 				donkey = true
+				wither_skeleton = true
 				furnace_minecart = true
 				chest_minecart = true
 				strider = true
+				item_frame = true
 				horse = true
+				skeleton = true
 				minecart = true
 				zombified_piglin = true
 				piglin = true

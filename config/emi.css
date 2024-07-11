@@ -344,7 +344,7 @@
 	/**
 	 * Return to the previous page in EMI.
 	 */
-	back: "key.keyboard.backspace";
+	back: "alt key.keyboard.left";
 
 	/**
 	 * Return to the next page in EMI after going back.
