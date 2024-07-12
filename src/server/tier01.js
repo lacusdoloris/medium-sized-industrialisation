@@ -25,6 +25,16 @@ export const doTier01Content = (event) => {
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(5 * 20);
 
+    // create is still useful throughout the game for e.g. farms and free smelting, so a powered
+    // alloy recipe is also still useful.
+    
+    event.recipes.gtceu
+        .alloy_smelter("nijika:tier01/powered_andesite_alloy")
+        .itemInputs("1x #forge:ingots/iron", "9x minecraft:andesite")
+        .itemOutputs("9x create:andesite_alloy")
+        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(1 * 20);
+
     event
         .shaped("gtceu:bessemer_furnace", ["FFF", "CHC", "WWW"], {
             F: "gtceu:firebricks",
