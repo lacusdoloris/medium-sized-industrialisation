@@ -156,18 +156,10 @@ export const doTier00Content = (event) => {
             event.recipes.create.deploying("gtceu:resin_circuit_board", [
                 "gtceu:resin_circuit_board",
                 "gtceu:copper_single_wire",
-            ]),
-            event.recipes.create.deploying("gtceu:resin_circuit_board", [
-                "gtceu:resin_circuit_board",
-                "gtceu:copper_single_wire",
-            ]),
-            event.recipes.create.deploying("gtceu:resin_circuit_board", [
-                "gtceu:resin_circuit_board",
-                "gtceu:copper_single_wire",
-            ]),
+            ])
         ])
         .transitionalItem("gtceu:resin_circuit_board")
-        .loops(1)
+        .loops(3)
         .id("nijika:tier00/easier_resin_printed_circuits");
 
     // extremely expensive magnetic iron recipe
