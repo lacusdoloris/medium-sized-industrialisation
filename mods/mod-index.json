@@ -649,6 +649,16 @@
         "version": "1.10.53-forge",
         "version_id": "4FXHDE9F"
     },
+    "laX5CckD": {
+        "checksum": "a9648d32b47ae8780f7794945423277f358457ecae05f4f073d48eaabb66548e5e67e3756f607a15cd70ed85fa648b5d9b845c69b2431e4afbdaf0346e802a18",
+        "client_side_only": false,
+        "name": "Accelerated Decay",
+        "pinned": false,
+        "project_id": "laX5CckD",
+        "selected": true,
+        "version": "3.0.1",
+        "version_id": "z90zP9qg"
+    },
     "lhGA9TYQ": {
         "checksum": "fc3a762fd6a7ef7cf9243efd317950bcc6e8e7eca1119aa97fa190fb5f5d4db2d0d53081cd805532e3f080d5c6e9f2b3d051f45f834f5d6f0dba27420a00260a",
         "client_side_only": false,
