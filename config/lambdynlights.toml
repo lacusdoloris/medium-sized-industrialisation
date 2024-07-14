@@ -42,3 +42,8 @@
 				stationary_contraption = true
 				super_glue = true
 
+			[light_sources.settings.entities.littlelogistics]
+				seater_car = true
+				steam_locomotive = true
+				fluid_car = true
+

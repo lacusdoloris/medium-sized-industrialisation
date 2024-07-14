@@ -142,7 +142,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			title: "The Gender Bender"
+			title: "Bending Unit"
 			x: 0.5d
 			y: 0.0d
 		}
@@ -214,8 +214,8 @@
 				type: "item"
 			}]
 			title: "The Inserter"
-			x: -1.0d
-			y: 3.0d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["088540C9AD1B65EA"]
@@ -366,24 +366,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4818B11226B75EEB"]
-			description: [
-				"With the Assembler, you can now create more advanced magnets, with &atwice the power!&r "
-				""
-				"This will get you some extra juice from your turbines, to the tune of 180RF/t per rotor, but at the cost of extra stress used."
-			]
-			id: "3034F479211F3314"
-			optional: true
-			tasks: [{
-				id: "4ADBCBEB2AA63F4C"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			title: "Better Magnets"
-			x: -2.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["4B215E2BA5E3CB58"]
 			description: [
 				"The &aArc Furnace&r's primary usage is to make &dannealed copper&r."
@@ -397,6 +379,7 @@
 				"There's lots of other mechanisms for getting oxygen; it's up to you. It's one of the most common resources for a reason."
 			]
 			id: "6F15C78B0DCAE5EF"
+			optional: true
 			shape: "square"
 			tasks: [{
 				id: "16DE841258FAA9B9"
@@ -450,7 +433,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5A673563025AEFF6"]
 			description: [
 				"&aNickel&r is one of the most important metals of both the LV and MV tier for its usage in &aalloying&r."
 				""
@@ -458,12 +440,12 @@
 				""
 				"- As a &9byproduct&r of &dgold&r and &diron&r ore processing"
 				"- From directly smelting &aGarnierite&r"
-				"- From converting &aPentlanditee&r into &aGarnierite&r, but this requires a blast furnace"
+				"- From converting &aPentlandite&r into &aGarnierite&r, but this requires a blast furnace"
 			]
 			id: "46D70A2B8A0278E2"
 			tasks: [{
-				id: "4638974304A87829"
-				item: "gtceu:nickel_dust"
+				id: "745FBF1986707284"
+				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
 			title: "Taste The Love!"
@@ -497,7 +479,7 @@
 				""
 				"This quest calls for a single &9input bus&r (buses are for item inputs), a single &9input hatch&r (hatches are for fluid inputs), output forms of said buses and hatches, two &9LV Energy Hatches&r, and a &dmuffler hatch&r (&odo not block the output of the muffler hatch!&r). These can be placed anywhere you wish on the structture."
 				""
-				"Why two energy hatches? All EBF recipes take &dmedium voltage&r by default. Energy hatches take in two amps of energy each; this means two hatches (at four amps total) will get you up to Medium Voltage inside the multiblock. "
+				"Why two energy hatches? All EBF recipes take &dmedium voltage&r or higher! Energy hatches take in two amps of energy each; this means two hatches (at four amps total) of Low Voltage energy will get you up to Medium Voltage inside the multiblock. "
 				""
 				"Finally, all multiblocks can &ashare walls&r, meaning that you require significantly less resources to build your second blast furnace if you combine them together. A 2x2 block of EBFs has just enough room to fit all of the required hatches and buses on which will save you a lot of invar and cupronickel. They can even share buses for easier logistics (e.g. one output bus for all four machines)."
 			]
@@ -731,6 +713,7 @@
 			]
 			id: "1B16F5D78B3EDC4D"
 			tasks: [{
+				count: 16L
 				id: "710BFB3CAF3C9416"
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
@@ -934,6 +917,20 @@
 			}]
 			x: -1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["0CC75241080CDBA9"]
+			description: ["The &aPacker&r can turn small or tiny dusts into larger dusts, and vice-versa. It can also cover cables with natural rubber sheets!"]
+			id: "0A5E4C4B320E83CD"
+			shape: "square"
+			tasks: [{
+				id: "4695A7E9CD81A494"
+				item: "gtceu:lv_packer"
+				type: "item"
+			}]
+			title: "#![repr(packed)]"
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["You don't know how much effort it took to make this use Wrought Iron."]
