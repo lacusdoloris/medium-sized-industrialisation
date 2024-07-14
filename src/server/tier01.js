@@ -27,7 +27,7 @@ export const doTier01Content = (event) => {
 
     // create is still useful throughout the game for e.g. farms and free smelting, so a powered
     // alloy recipe is also still useful.
-    
+
     event.recipes.gtceu
         .alloy_smelter("nijika:tier01/powered_andesite_alloy")
         .itemInputs("1x #forge:ingots/iron", "9x minecraft:andesite")
@@ -135,4 +135,67 @@ export const doTier01Content = (event) => {
             P: "gtceu:lv_electric_piston",
         })
         .id("nijika:tier01/rock_synthesiser");
+
+    // move silicon wafers down to LV...
+    // this also doubles their time to make MV cutters still worth it.
+    event.remove({ type: "gtceu:cutter", output: "gtceu:silicon_wafer" });
+
+    event.recipes.gtceu
+        .cutter("nijika:tier01/silicon_wafer_dirt_water")
+        .itemInputs("1x gtceu:silicon_boule")
+        .inputFluids(Fluid.of("minecraft:water").withAmount(60 * FluidAmounts.MB))
+        .itemOutputs("16x gtceu:silicon_wafer")
+        .duration(80 * 20)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu
+        .cutter("nijika:tier01/silicon_wafer_distilled_water")
+        .itemInputs("1x gtceu:silicon_boule")
+        .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(60 * FluidAmounts.MB))
+        .itemOutputs("16x gtceu:silicon_wafer")
+        .duration(60 * 20)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu
+        .cutter("nijika:tier01/silicon_wafer_lubricant")
+        .itemInputs("1x gtceu:silicon_boule")
+        .inputFluids(Fluid.of("gtceu:lubricant").withAmount(20 * FluidAmounts.MB))
+        .itemOutputs("16x gtceu:silicon_wafer")
+        .duration(40 * 20)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    // remove the diode recipes that use small gallium arsenide
+    event.remove({
+        type: "gtceu:assembler",
+        input: "gtceu:small_gallium_arsenide_dust",
+        output: "gtceu:diode",
+    });
+
+    // add back the glass recipes
+    event.recipes.gtceu
+        .assembler("nijika:tier01/diodes_wafer_glass_regular_copper")
+        .itemInputs("4x gtceu:fine_copper_wire", "1x gtceu:silicon_wafer")
+        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:diode")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20 * 20); // wow, really?
+
+    event.recipes.gtceu
+        .assembler("nijika:tier01/diodes_wafer_glass_annealed_copper")
+        .itemInputs("4x gtceu:fine_annealed_copper_wire", "1x gtceu:silicon_wafer")
+        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.BUCKET))
+        .itemOutputs("2x gtceu:diode")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20 * 20);
+
+    // make monosilicon boules require two small gallium arsenide.
+    event.remove({ id: "gtceu:electric_blast_furnace/silicon_boule" });
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier01/silicon_boule")
+        .itemInputs("32x #forge:dusts/silicon", "2x gtceu:small_gallium_arsenide_dust")
+        .itemOutputs("1x gtceu:silicon_boule")
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(450 * 20)
+        .blastFurnaceTemp(1784)
+        .circuit(2);
 };

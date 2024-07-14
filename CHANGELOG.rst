@@ -63,6 +63,15 @@ Recipe Changes
 
   - Earlygame power comes from steam turbines, like in base GTCEu, rather than New Age turbines.
 
+  - Silicon wafers have been moved down from MV to LV. Consequently, diodes are now exclusively 
+    crafted with wafers. Additionally, silicone boules now require twice the amount of gallium
+    arsenide.
+
+- Tier 3 (HV) changes:
+
+  - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
+    of two small dusts).
+
 Machine Changes
 ~~~~~~~~~~~~~~~
 

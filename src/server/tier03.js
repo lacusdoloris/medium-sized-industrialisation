@@ -127,4 +127,19 @@ export const doTier03Content = (event) => {
             H: GT_MACHINE_TIERS.HV.machineHull,
         })
         .id("gtceu:shaped/large_chemical_reactor");
+
+    // fix phosphorus boule with the changes to regular boules
+    event.remove({ id: "gtceu:electric_blast_furnace/phosphorus_boule" });
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier03/phosphorus_boule")
+        .itemInputs(
+            "64x #forge:dusts/silicon",
+            "8x #forge:dusts/phosphorus",
+            "1x gtceu:gallium_arsenide_dust"
+        )
+        .inputFluids(Fluid.of("gtceu:nitrogen").withAmount(8 * FluidAmounts.BUCKET))
+        .itemOutputs("1x gtceu:phosphorus_boule")
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(600 * 20)
+        .blastFurnaceTemp(2484);
 };

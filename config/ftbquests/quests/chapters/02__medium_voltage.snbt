@@ -150,65 +150,6 @@
 		{
 			dependencies: ["535977705E793982"]
 			description: [
-				"The next tier of circuits is going to require &dsilicon wafers&r, which are cut from &amonosilicon boules&r. The only type available currently is the plain old silicone boule, which you make from regular silicon dust and gallium arsenide."
-				""
-				"Silicon is very easy to obtain; a good source is from &9centrifuging&r &dflint&r or &ddeepslate dust&r. You should already have a working gallium arsenide processing line."
-				""
-				"If you haven't already, it's worth getting some ferrochrolumium coils to drastically speed up your blast furnaces."
-			]
-			id: "0683F375C8886EEE"
-			tasks: [{
-				id: "69C4DB930E6409E9"
-				item: "gtceu:silicon_boule"
-				type: "item"
-			}]
-			title: "Monosilicon"
-			x: 3.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"0683F375C8886EEE"
-				"694101C8ED732C65"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Each basic silicon boule will get you &asixteen wafers&r. It's worth getting - at the very least - some &ddistilled water&r to speed this process up; or even better, some &dlubricant&r (which can easily be made from creosote)."
-				""
-				"Whilst the wafers aren't directly useful yet, they vastly reduce the amount of gallium arsenide required for &ddiodes&r, so if you've automated circuits you can switch over to using this."
-			]
-			icon: "gtceu:silicon_wafer"
-			id: "78729F0568BF5AEE"
-			tasks: [{
-				count: 16L
-				id: "13C3663B31A665BE"
-				item: "gtceu:silicon_wafer"
-				type: "item"
-			}]
-			title: "Basic Wafers"
-			x: 3.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"535977705E793982"
-				"641046C8A91952E9"
-			]
-			description: ["In order to produce silicon wafers, you need a &dcutter&r (the mechanical kind) which will slice up your monosilicon into wafers ready to be etched."]
-			id: "694101C8ED732C65"
-			subtitle: "of, Made"
-			tasks: [{
-				id: "7BC624CDDEB65F45"
-				item: "gtceu:mv_cutter"
-				type: "item"
-			}]
-			title: "Styrofoam"
-			x: 2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["535977705E793982"]
-			description: [
 				"&aCircuit Assemblers&r are unique machines in that they take the &onext&r tier of circuit, rather than their own tier. This means an LV Circuit Assembler requires &dMV Circuits&r."
 				""
 				"This isn't so useful for your first circuit theme (&oross scott voice&r more on that later!), but it does reduce material requirements a bit. Instead, it'll come in handy for the &dsecond circuit theme&r onwards."
@@ -221,8 +162,8 @@
 				type: "item"
 			}]
 			title: "An LV Machine?"
-			x: 6.5d
-			y: 2.5d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -246,14 +187,11 @@
 				type: "item"
 			}]
 			title: "LV Circuits Again!"
-			x: 6.5d
+			x: 6.0d
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"03045253789CA043"
-				"30E1F8DE8519B1B9"
-			]
+			dependencies: ["03045253789CA043"]
 			description: ["This is like the LV integrated circuit, only for MV machines. "]
 			id: "000CE46D72931AFD"
 			tasks: [{
@@ -262,7 +200,7 @@
 				type: "item"
 			}]
 			title: "Mv Circuit #2"
-			x: 6.5d
+			x: 6.0d
 			y: 7.0d
 		}
 		{
@@ -350,7 +288,7 @@
 				"7BEE21DF23576B53"
 			]
 			description: [
-				"&aVanadium Steel&r is a steel made from... vanadium. It has a 7:1:1 ratio of iron:chromium:vanadium."
+				"&aVanadium Steel&r is a steel made from... vanadium. It has a 7:1:1 ratio of iron:chromium:vanadium. It's mostly useful for multiblock machines."
 				""
 				"Vanadium is only found as a byproduct of &dslag&r processing, which is made from smelting &dmagnetite dust&r in a blast furnace, in the form of &dvanadium pentoxide&r. Better check EMI. "
 			]
@@ -365,11 +303,11 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["78729F0568BF5AEE"]
+			dependencies: ["0F12DC094370426B"]
 			description: [
-				"Silicon wafers by themselves aren't very useful; they need to be &dengraved&r (using a laser engraver, of course) to get actual useful silicon chips."
+				"Nearly all circuits require the usage of &aengraved wafers&r, which can then be cut into various chips. These come in many different forms, but the most useful ones right now are &aRAM wafers&r (used in most post-MV circuits), and the &aIC chip&r (which is used in the LV and HV integrated circuits)."
 				""
-				"The MV Laser Engraver needs an MV Emitter, which requires a &dflawless emerald&r. You can get one by sifting through &demerald ore&r, or in HV you can directly engrave emeralds. "
+				"You can also make &dsystem-on-chip&r wafers, which replace &oall&r of the other electronic components aside from the wires and PCB used for circuits, but can only be built at tiers far above the circuits they are used for. These are useful for multiblocks that require outdated circuit tiers."
 			]
 			id: "1C7211968F773774"
 			tasks: [
@@ -528,7 +466,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["78729F0568BF5AEE"]
 			description: [
 				"You should consider upgrading your blast furnace and bessemer converter to use &dMV Energy Hatches&r (if not MV hatches for &oall&r I/O) so that you can run HV recipes."
 				""
@@ -545,7 +482,7 @@
 			}]
 			title: "HV Multiblocks"
 			x: 5.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["020FAE71BEDA6B1E"]
@@ -599,7 +536,7 @@
 				""
 				"&lThe ore processing chart is &cnot&f accurate!&r Please ignore it."
 				""
-				"You should consider stockpiling your gold pulp residue until you have the &dLarge Chemical Reactor&r available, as it'll lett you recover some additional gold from your reactants."
+				"You should consider stockpiling your gold pulp residue until you have the &dLarge Chemical Reactor&r available, as it'll let you recover some additional gold from your reactants."
 			]
 			id: "30E1F8DE8519B1B9"
 			min_width: 400
@@ -609,8 +546,8 @@
 				type: "item"
 			}]
 			title: "Gold Processing"
-			x: 8.0d
-			y: 7.0d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4838078FA4C199E3"]
@@ -632,7 +569,7 @@
 				""
 				"Phosphorus-doped silicon wafers get more component-per-input for your gallium arsenide than regular silicon. "
 				""
-				"How do you get phosphorus? Either from &dashes&r (which are a nice byproduct of the EBF) or from glow berries. Later, you'll be able to use the power of alchemy to get apatite."
+				"How do you get phosphorus? Either from &7ashes&r (which are a nice byproduct of the EBF), &6glow berries&r, or from &9apatitg veins&r."
 			]
 			id: "374EC252DC390528"
 			tasks: [{
@@ -643,6 +580,19 @@
 			title: "Phosphor Circuits"
 			x: 5.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["30E1F8DE8519B1B9"]
+			description: ["The &dPrecision Laser Engraver&r is used to engrave silicon chips before they're used in components and circuits. This requires an &dMV Emitter&r, which requires higher-tier emeralds; you can get one from sifting through emerald ores or by laser engraving regular emeralds."]
+			id: "0F12DC094370426B"
+			tasks: [{
+				id: "49B727F1CA0CD1DB"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			title: "Laser Chips"
+			x: 3.5d
+			y: 4.0d
 		}
 	]
 	subtitle: ["The real fun begins here."]
