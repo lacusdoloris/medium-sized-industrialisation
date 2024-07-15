@@ -215,4 +215,13 @@ export const doTier01Content = (event) => {
         .circuit(1)
         .EUt(24)
         .duration(20 + 15);  // 1.5s
+
+    // in base gtceu, buzzsaw blades are MV or higher. which means the LV cutter is *always*
+    // useless. also means there's no non-manual logs -> planks recipe before MV?
+    event.remove({ id: "gtceu:lathe/buzzsaw_gear_bronze" });
+    event.recipes.gtceu.lathe("nijika:tier01/bronze_buzzsaw")
+        .itemInputs("1x #forge:gears/bronze")
+        .itemOutputs("1x gtceu:bronze_buzz_saw_blade")
+        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(15 * 20 + 4);
 };
