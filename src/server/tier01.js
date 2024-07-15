@@ -198,4 +198,13 @@ export const doTier01Content = (event) => {
         .duration(450 * 20)
         .blastFurnaceTemp(1784)
         .circuit(2);
+
+    // add a proper cutting recipe for wood planks
+    event.remove({ output: "#minecraft:slabs", input: "#minecraft:planks", type: "gtceu:cutter" });
+    event.recipes.gtceu
+        .cutter("nijika:tier01/wood_plank_electrical_cutting")
+        .itemInputs("#minecraft:planks")
+        .itemOutputs("4x gtceu:wood_plate")
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(5 * 20);
 };
