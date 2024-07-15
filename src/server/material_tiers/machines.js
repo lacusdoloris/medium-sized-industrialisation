@@ -134,7 +134,11 @@ export const adjustMachineRecipesForTier = (event, tier) => {
         `nijika:auto/machines/${tier.name}/compressor`
     );
 
-    // Cutter: WIP.
+    // Cutter: Replace wires, glass, and buzzsaw blade.
+    event.remove({ id: `gtceu:shaped/${tier.name}_cutter` });
+    lazyShaped(`gtceu:${tier.name}_cutter`, ["WCG", "VHB", "CWM"], {
+        B: tier.materials.buzzsaw.component("buzz_saw_blade"),
+    }).id(`nijika:auto/machines/${tier.name}/cutter`);
 
     // Distillery: Replace Glass, spring.
     event.remove({ id: `gtceu:shaped/${tier.name}_distillery` });
