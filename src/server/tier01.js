@@ -207,4 +207,12 @@ export const doTier01Content = (event) => {
         .itemOutputs("4x gtceu:wood_plate")
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(5 * 20);
+
+    // lol, fuck it
+    event.recipes.gtceu.bender("nijika:tier01/rubber_plate_bending")
+        .itemInputs("1x #forge:ingots/rubber")
+        .itemOutputs("1x gtceu:rubber_plate")
+        .circuit(1)
+        .EUt(24)
+        .duration(20 + 15);  // 1.5s
 };
