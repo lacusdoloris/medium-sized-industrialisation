@@ -63,7 +63,7 @@ export const addGoldProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:sodium_dicyanoaurate").withAmount(1 * FluidAmounts.BUCKET))
         .itemInputs("12x gtceu:coke_dust")
         .itemOutputs("4x minecraft:gold_nugget")
-        .outputFluids(Fluid.of("gtceu:gold_pulp_residue").withAmount(600 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:gold_pulp_residue").withAmount(600 * FluidAmounts.MB))
         .EUt(GTValues.VA[GTValues.LV])
         .duration(10 * 20)
         .circuit(2);
