@@ -362,7 +362,7 @@
 				type: "item"
 			}]
 			title: "Melts In Your Mouth"
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -395,17 +395,19 @@
 			description: [
 				"&aArsenic&r is one of the constituent components of Gallium Arsenide, which is required for the next level of circuits."
 				""
-				"There are two kinds of arsenic ore available; &aRealgar&r ore or(e) &aOrpiment&r ore. Whilst either one will work, this quest calls for Orpiment due unavoidable bias towards custom materials."
+				"You can get it in one of two ways:"
+				"- From &eOrpiment&r or &cRealgar&r ore in the Nether"
+				"- As a byproduct of blasting &1Cobaltite&r, found in nickel veins in the overworld"
 			]
 			id: "6A52BBC86042392D"
 			tasks: [{
 				count: 16L
-				id: "36BF48D39D5B5840"
-				item: { Count: 16, id: "gtceu:raw_orpiment" }
+				id: "5E419D2E29D0E900"
+				item: "gtceu:arsenic_trioxide_dust"
 				type: "item"
 			}]
 			title: "Horrible Science"
-			x: 2.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -477,12 +479,13 @@
 				""
 				"In this case, the buses and hatches replace the &dheat-proof invar casings&r at the top and bottom of the multiblock. "
 				""
-				"This quest calls for a single &9input bus&r (buses are for item inputs), a single &9input hatch&r (hatches are for fluid inputs), output forms of said buses and hatches, two &9LV Energy Hatches&r, and a &dmuffler hatch&r (&odo not block the output of the muffler hatch!&r). These can be placed anywhere you wish on the structture."
+				"This quest calls for a single &9input bus&r (buses are for item inputs), a single &9output bus&r two &9LV Energy Hatches&r, and a &dmuffler hatch&r (&odo not block the output of the muffler hatch!&r). These can be placed anywhere you wish on the structture. You should also craft an &9input hatch&r and &9output hatch&r for fluid inputs and outputs."
 				""
 				"Why two energy hatches? All EBF recipes take &dmedium voltage&r or higher! Energy hatches take in two amps of energy each; this means two hatches (at four amps total) of Low Voltage energy will get you up to Medium Voltage inside the multiblock. "
 				""
 				"Finally, all multiblocks can &ashare walls&r, meaning that you require significantly less resources to build your second blast furnace if you combine them together. A 2x2 block of EBFs has just enough room to fit all of the required hatches and buses on which will save you a lot of invar and cupronickel. They can even share buses for easier logistics (e.g. one output bus for all four machines)."
 			]
+			icon: "gtceu:electric_blast_furnace"
 			id: "0DBEB940868D3DB7"
 			min_width: 500
 			rewards: [{
@@ -530,11 +533,6 @@
 					type: "item"
 				}
 				{
-					id: "06F237CA648A342D"
-					item: "gtceu:lv_input_hatch"
-					type: "item"
-				}
-				{
 					id: "594332F0AC9070B6"
 					item: "gtceu:lv_output_bus"
 					type: "item"
@@ -542,11 +540,6 @@
 				{
 					id: "52C5E2A1ED834251"
 					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "2B441A2B3D9B38E6"
-					item: "gtceu:lv_output_hatch"
 					type: "item"
 				}
 				{
@@ -789,7 +782,7 @@
 			]
 			title: "Assault And Battery"
 			x: 4.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			description: [
