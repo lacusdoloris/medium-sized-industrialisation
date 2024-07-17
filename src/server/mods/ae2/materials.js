@@ -66,7 +66,7 @@ export const adjustAe2MaterialsRecipes = (event) => {
         .chemical_bath("nijika:mods/ae2/vibrant_quartz_glass")
         .itemInputs("1x ae2:quartz_glass")
         .inputFluids(Fluid.of("gtceu:glowstone").withAmount(250 * FluidAmounts.MB))
-        .itemOutputs("1x ae2:vibrant_quartz_glass")
+        .itemOutputs("1x ae2:quartz_vibrant_glass")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20);
 
