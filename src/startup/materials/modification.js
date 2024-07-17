@@ -21,7 +21,6 @@ import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../.
 const DISABLE_DECOMPOSITION = [
     // Sulfur containing materials. These are roasted instead.
     "stibnite",
-    "sphalerite",
     "pyrite",
     "pentlandite",
     "tetrahedrite",
@@ -242,6 +241,12 @@ export const customiseMaterials = () => {
         let oreProp = getOreProperty(tricalcumPhosphate);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts("apatite", "rock_salt", "phosphate");
+    }
+
+    let sphalerite = getMaterial("sphalerite");
+    {
+        let oreProp = getOreProperty(sphalerite);
+        oreProp.setDirectSmeltResult(null);
     }
 
     let palladium = getMaterial("palladium");
