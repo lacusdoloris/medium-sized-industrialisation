@@ -8,8 +8,6 @@
 
 /** @param {Internal.RemoveWorldgenEventJS} event */
 export const adjustWorldgenRemovals = (event) => {
-    event.printFeatures();
-
     // remove all non-GT ores
     // reasonably sure GTCEu itself takes care of deleting the vanilla ones
 
