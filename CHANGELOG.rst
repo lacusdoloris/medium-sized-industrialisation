@@ -100,6 +100,11 @@ World Changes
 
   - Surface ore indicators have been disabled. Use the prospector.
 
+Misc Features
+~~~~~~~~~~~~~
+
+- Added a new "Super Quests" chapter for certain achievements.
+
 Miscellaneous Bugfixes
 ~~~~~~~~~~~~~~~~~~~~~~
 
