@@ -86,13 +86,6 @@ export const adjustCreateRecipes = (event) => {
         .EUt(2)
         .duration(7 * 20 + 10);
 
-    event.recipes.gtceu
-        .macerator("nijika:misc/calcite_from_calcite")
-        .itemInputs("1x minecraft:calcite")
-        .itemOutputs("1x gtceu:calcite_dust")
-        .EUt(2)
-        .duration(7 * 20 + 10);
-
     addRockBreakingRecipe(event, "create:limestone", GTValues.VA[GTValues.MV]);
 
     event
