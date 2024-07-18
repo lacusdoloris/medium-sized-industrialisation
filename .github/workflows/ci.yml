@@ -22,19 +22,20 @@ jobs:
                 # required for Kamuidrome
                 python-version: "3.12" 
 
+            - name: Install PNPM
+              uses: pnpm/action-setup@v4
+
             - name: Install NodeJS
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                 node-version: "latest"
-            
-            - name: Install Yarn
-              run: yarn install
+                cache: "pnpm"
             
             - name: Install Kamuidrome
               run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
             
             - name: Build KubeJS scripts
-              run: yarn run build-dev  # meh, who cares about minaturising.
+              run: pnpm run build-dev  # meh, who cares about minaturising.
             
             - name: Build Quests
               run: ./build_quests.sh
@@ -67,13 +68,14 @@ jobs:
                 # required for Kamuidrome
                 python-version: "3.12" 
 
+            - name: Install PNPM
+              uses: pnpm/action-setup@v4
+
             - name: Install NodeJS
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                 node-version: "latest"
-            
-            - name: Install Yarn
-              run: yarn install
+                cache: "pnpm"
             
             - name: Install Kamuidrome
               run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
