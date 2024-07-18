@@ -126,7 +126,7 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts(
             GTMaterials.Iron,
             GTMaterials.Magnesia,
-            GTMaterials.Calcium  // TODO: Salt?
+            GTMaterials.Calcium // TODO: Salt?
         );
     }
 
@@ -191,7 +191,10 @@ export const customiseMaterials = () => {
 
     let molybdenite = GTMaterials.Molybdenite;
     {
-        molybdenite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_ORE_PROCESSING_TAB);
+        molybdenite.addFlags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_ORE_PROCESSING_TAB
+        );
         let oreProp = getOreProperty(molybdenite);
 
         oreProp.setDirectSmeltResult(null);

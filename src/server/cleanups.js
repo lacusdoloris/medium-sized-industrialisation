@@ -139,7 +139,7 @@ const removeGTGenerators = (event) => {
  * The ones controlled by decomposition flags are already disabled.
  */
 const cleanupGTCEuOreProcessingRecipes = (event) => {
-    // this has a custom electrolysis recipe 
+    // this has a custom electrolysis recipe
     event.remove({ id: "gtceu:electrolyzer/sphalerite_electrolysis" });
 
     // WHY does this give platinum.

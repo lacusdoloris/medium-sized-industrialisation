@@ -18,8 +18,10 @@ export const addGalliumArsenicMaterials = (event) => {
         .addOreByproducts("gtceu:sulfur", "gtceu:antimony", "gtceu:barite")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-    event.create(nijikaId("arsenopyrite"))
-        .dust().ore()
+    event
+        .create(nijikaId("arsenopyrite"))
+        .dust()
+        .ore()
         .color(0xb0a269)
         .iconSet(getMaterial("pyrite").getMaterialIconSet())
         .components("1x gtceu:iron", "1x gtceu:arsenic", "1x gtceu:sulfur")
@@ -70,9 +72,7 @@ export const addGalliumArsenicRecipes = (event) => {
         .electric_blast_furnace("nijika:tier01/arsenic/arsenopyrite_roasting")
         .itemInputs("2x gtceu:arsenopyrite_dust")
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
-        .itemOutputs(
-            "1x gtceu:hematite_dust", "1x gtceu:arsenic_trioxide_dust"
-        )
+        .itemOutputs("1x gtceu:hematite_dust", "1x gtceu:arsenic_trioxide_dust")
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1100)
