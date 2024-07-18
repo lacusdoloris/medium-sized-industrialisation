@@ -30,6 +30,9 @@ jobs:
               with:
                 node-version: "latest"
                 cache: "pnpm"
+
+            - name: Install PNPM packages
+              run: pnpm install
             
             - name: Install Kamuidrome
               run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
@@ -76,6 +79,9 @@ jobs:
               with:
                 node-version: "latest"
                 cache: "pnpm"
+
+            - name: Install PNPM packages
+              run: pnpm install
             
             - name: Install Kamuidrome
               run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
