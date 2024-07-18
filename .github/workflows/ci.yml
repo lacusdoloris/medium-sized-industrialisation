@@ -77,7 +77,7 @@ jobs:
             - name: Install NodeJS
               uses: actions/setup-node@v4
               with:
-                node-version: "latest"
+                node-version: "22.4.1"
                 cache: "pnpm"
 
             - name: Install PNPM packages
@@ -87,7 +87,7 @@ jobs:
               run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
             
             - name: Build KubeJS scripts
-              run: yarn run build-dev 
+              run: pnpm run build-dev  # meh, who cares about minaturising.
             
             - name: Build Quests
               run: ./build_quests.sh
