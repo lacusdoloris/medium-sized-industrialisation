@@ -98,40 +98,40 @@ export const customiseMaterials = () => {
     }
 
     // remove chromium dust as a byproduct of chromite
-    let chromite = getMaterial("chromite");
+    let chromite = GTMaterials.Chromite;
     {
         /** @type {Internal.OreProperty} */
         let oreProp = getOreProperty(chromite);
         // setOreByProducts acttually *appends*, not sets!
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("iron"), getMaterial("magnesium"), chromite);
+        oreProp.setOreByProducts(GTMaterials.Iron, GTMaterials.Magnesia, chromite);
 
         // we have our own processing chain
         chromite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
     }
 
-    let magnetite = getMaterial("magnetite");
+    let magnetite = GTMaterials.Magnetite;
     {
         let oreProp = getOreProperty(magnetite);
         // likewise... actually appends. this is a much easier method for vanadium...
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("magnesia"), getMaterial("vanadium_pentoxide"));
+        oreProp.setOreByProducts(GTMaterials.Magnesia, getMaterial("vanadium_pentoxide"));
         oreProp.setOreByProducts(getMaterial("vanadium_pentoxide"));
     }
 
-    let hematite = getMaterial("hematite");
+    let hematite = GTMaterials.Hematite;
     {
         let oreProp = getOreProperty(hematite);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(
-            getMaterial("iron"),
-            getMaterial("magnesia"),
-            getMaterial("calcium")
+            GTMaterials.Iron,
+            GTMaterials.Magnesia,
+            GTMaterials.Calcium  // TODO: Salt?
         );
     }
 
     // remove direct smelting of pentlandite
-    let pentlandite = getMaterial("pentlandite");
+    let pentlandite = GTMaterials.Pentlandite;
     {
         let oreProp = getOreProperty(pentlandite);
         // this is a nullable property, so we can just directly set it.
@@ -146,25 +146,25 @@ export const customiseMaterials = () => {
     }
 
     // replace aluminium with chromite as a byproduct of emerald refining.
-    let emerald = getMaterial("emerald");
+    let emerald = GTMaterials.Emerald;
     {
         let oreProp = getOreProperty(emerald);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("beryllium"), getMaterial("chromite"));
+        oreProp.setOreByProducts(GTMaterials.Beryllium, GTMaterials.Chromite);
     }
 
     // pyrolusite now produces tantalite and hematite as byproducts.
-    let pyrolusite = getMaterial("pyrolusite");
+    let pyrolusite = GTMaterials.Pyrolusite;
     {
         pyrolusite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
         let oreProp = getOreProperty(pyrolusite);
         oreProp.setDirectSmeltResult(null);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("hematite"), getMaterial("tantalite"));
+        oreProp.setOreByProducts(GTMaterials.Hematite, GTMaterials.Tantalite);
     }
 
-    let tantalite = getMaterial("tantalite");
+    let tantalite = GTMaterials.Tantalite;
     {
         tantalite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
         tantalite.setFormula("(Fe,Mn)Ta2O6");
@@ -178,25 +178,25 @@ export const customiseMaterials = () => {
         );
     }
 
-    let monazite = getMaterial("monazite");
+    let monazite = GTMaterials.Monazite;
     {
         monazite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
         monazite.setFormula("(Ce...)(PO4)");
 
-        let oreProp = getOreProperty("monazite");
+        let oreProp = getOreProperty(monazite);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts("phosphate", "thorium_hydroxide");
+        oreProp.setOreByProducts(GTMaterials.Phosphate, getMaterial("thorium_hydroxide"));
         oreProp.getSeparatedInto().clear();
     }
 
-    let molybdenite = getMaterial("molybdenite");
+    let molybdenite = GTMaterials.Molybdenite;
     {
-        molybdenite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        molybdenite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_ORE_PROCESSING_TAB);
         let oreProp = getOreProperty(molybdenite);
 
         oreProp.setDirectSmeltResult(null);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(getMaterial("chalcopyrite"), getMaterial("fluorite"));
+        oreProp.setOreByProducts(GTMaterials.Chalcopyrite, getMaterial("fluorite"));
     }
 
     let zinc = getMaterial("zinc");
@@ -207,9 +207,9 @@ export const customiseMaterials = () => {
         );
     }
 
-    let gold = getMaterial("gold");
+    GTMaterials.Gold.addFlags(GTMaterialFlags.NO_ORE_PROCESSING_TAB);
     {
-        let oreProp = getOreProperty(gold);
+        let oreProp = getOreProperty(GTMaterials.Gold);
         oreProp.getOreByProducts().clear();
         oreProp.setWashedIn(null);
         oreProp.setDirectSmeltResult(null);
@@ -223,12 +223,12 @@ export const customiseMaterials = () => {
         );
     }
 
-    let redstone = getMaterial("redstone");
+    let redstone = GTMaterials.Redstone;
     {
         redstone.setComponents(
-            new MaterialStack(getMaterial("silicon"), 1),
-            new MaterialStack(getMaterial("pyrite"), 5),
-            new MaterialStack(getMaterial("cinnabar"), 1)
+            new MaterialStack(GTMaterials.Silicon, 1),
+            new MaterialStack(GTMaterials.Pyrite, 5),
+            new MaterialStack(GTMaterials.Cinnabar, 1)
         );
 
         let oreProp = getOreProperty(redstone);
@@ -247,6 +247,12 @@ export const customiseMaterials = () => {
     {
         let oreProp = getOreProperty(sphalerite);
         oreProp.setDirectSmeltResult(null);
+    }
+
+    let arsenoPyrite = getMaterial("arsenopyrite");
+    {
+        let oreProp = getOreProperty(arsenoPyrite);
+        oreProp.setDirectSmeltResult(GTMaterials.Iron);
     }
 
     let palladium = getMaterial("palladium");

@@ -89,12 +89,12 @@ export const fixupBuiltinOreVeins = (event) => {
         );
     });
 
-    // deepslate copper: remove raw iron
+    // deepslate copper: replace raw iron with arsenopyrite
     event.modify("gtceu:copper_vein", (vein) => {
         vein.veinedVeinGenerator((generator) =>
             generator
                 .oreBlock(GTMaterials.Chalcopyrite, 5)
-                .oreBlock(GTMaterials.Pyrite, 2)
+                .oreBlock(getMaterial("arsenopyrite"), 2)
                 .oreBlock(GTMaterials.Copper, 2)
                 .veininessThreshold(0.01)
                 .maxRichnessThreshold(0.175)
@@ -105,13 +105,13 @@ export const fixupBuiltinOreVeins = (event) => {
         );
     });
 
-    // redstone: remove ruby, replace with pyrite
+    // redstone: remove ruby, replace with arsenopyrite
     event.modify("gtceu:redstone_vein_ow", (vein) => {
         vein.layeredVeinGenerator((generator) =>
             generator.withLayerPattern(() =>
                 GTLayerPattern.builder(GTOres.OVERWORLD_RULES)
                     .layer((l) => l.weight(3).mat(GTMaterials.Redstone).size(2, 4))
-                    .layer((l) => l.weight(2).mat(GTMaterials.Pyrite).size(1, 1))
+                    .layer((l) => l.weight(2).mat(getMaterial("arsenopyrite")).size(1, 1))
                     .layer((l) => l.weight(1).mat(GTMaterials.Cinnabar).size(1, 1))
                     .build()
             )

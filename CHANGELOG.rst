@@ -100,6 +100,10 @@ World Changes
 
   - Surface ore indicators have been disabled. Use the prospector.
 
+- New ores have been added:
+
+    - Arsenopyrite is an ore of iron and arsenic. It can be found in copper and redstone veins.
+
 Misc Features
 ~~~~~~~~~~~~~
 
