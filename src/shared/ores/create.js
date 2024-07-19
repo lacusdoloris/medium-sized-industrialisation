@@ -37,6 +37,7 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         .milling(
             [
                 Item.of("gtceu:crushed_tetrahedrite_ore").withChance(0.6),
+                Item.of("gtceu:crushed_cromite_ore").withChance(0.4),
                 Item.of("gtceu:copper_nugget").withChance(0.6),
             ],
             "create:veridium"
@@ -47,6 +48,7 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         .milling(
             [
                 Item.of("gtceu:crushed_cassiterite_ore").withChance(0.6),
+                Item.of("gtceu:crushed_sphalerite_ore").withChance(0.4),
                 Item.of("gtceu:tin_nugget").withChance(0.6),
             ],
             "create:asurine"
@@ -67,6 +69,7 @@ export const adjustCreateDirectOreCrushingRecipes = (event) => {
         .milling(
             [
                 Item.of("gtceu:crushed_galena_ore").withChance(0.6),
+                Item.of("gtceu:crushed_arsenopyrite_ore").withChance(0.4),
                 Item.of("gtceu:lead_nugget").withChance(0.6),
             ],
             "create:scorchia"

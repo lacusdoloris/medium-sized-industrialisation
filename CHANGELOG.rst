@@ -47,8 +47,7 @@ Recipe Changes
 
 - Tier 0 (earlygame) changes:
 
-  - Added crushing wheel recipes for 1-to-1 ore processing. This is also mandatory for redstone now
-    that redstone veins are GTCEu-provided.
+  - Added crushing wheel recipes for 1-to-1 ore processing. 
 
   - Changed the sequenced recipe for Magnetic Iron to use three loops of one deployer, rather than
     one loop of three deployers.
@@ -58,6 +57,9 @@ Recipe Changes
     sheets.
 
     Liquid rubber can still be made via superheating from both raw rubber and regular rubber pulp.
+
+  - Some of the Create orestones now produce multiple crushed ores, allowing for easier ore 
+    automation throughout the early tiers.
 
 - Tier 1 (LV) changes:
 
@@ -71,6 +73,12 @@ Recipe Changes
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
     of two small dusts).
+
+  - Removed ore slag temporarily.
+
+  - Removed combo sorting. This doesn't really work when you have quantum chests.
+
+  - Adjusted some of the ore sorter ores.
 
 Machine Changes
 ~~~~~~~~~~~~~~~
