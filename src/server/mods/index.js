@@ -5,6 +5,7 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import { adjustAe2Recipes } from "./ae2";
+import { adjustCreateCobblestoneRecipes } from "./cobblestone";
 import { adjustCreateRecipes } from "./create";
 import { adjustDieselGeneratorRecipes } from "./diesel";
 import { adjustEssentialsRecipes } from "./essentials";
@@ -59,6 +60,7 @@ const MOD_TWEAKER_FUNCTIONS = {
     },
     ae2: adjustAe2Recipes,
     createdieselgenerators: adjustDieselGeneratorRecipes,
+    createcobblestone: adjustCreateCobblestoneRecipes,
 };
 
 /**
