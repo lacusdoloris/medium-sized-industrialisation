@@ -32,6 +32,8 @@ Mod Changes
   
   - The new hazards feature is disabled entirely.
 
+- Added Create: Cobblestone Generators for (relatively) easy infinite cobblestone generation.
+
 Recipe Changes
 ~~~~~~~~~~~~~~
 
@@ -68,6 +70,11 @@ Recipe Changes
   - Silicon wafers have been moved down from MV to LV. Consequently, diodes are now exclusively 
     crafted with wafers. Additionally, silicone boules now require twice the amount of gallium
     arsenide.
+
+  - Firebricks must now be crafted in the EBF instead of being combined by hand and smelted.
+
+    This reflects their change in position within the game, from the primitive blast furnace to the
+    Bessemer Converter.
 
 - Tier 3 (HV) changes:
 

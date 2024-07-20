@@ -113,6 +113,21 @@ export const doTier01Content = (event) => {
         .EUt(GTValues.VA[GTValues.ULV])
         .duration(2 * 20);
 
+    // this one is straight up unrealistic, but i want the EBF to be ahead of the bessemer
+    // converter!
+    
+    event.remove({ id: "gtceu:smelting/fireclay_brick" });
+    event.remove({ id: "gtceu:compressor/compressed_fireclay" });
+    event.remove({ output: "gtceu:fireclay_dust" });
+
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier01/fireclay")
+        .itemInputs("2x #forge:dusts/clay", "2x #forge:dusts/brick")
+        .itemOutputs("4x gtceu:firebrick")
+        .EUt(GTValues.VHA[GTValues.MV])
+        .blastFurnaceTemp(1787)
+        .duration(10 * 20);  // faster than the furnace!
+
     // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });
     event.remove({ id: "gtceu:assembler/cover_item_voiding" });
