@@ -226,4 +226,11 @@ export const doTier01Content = (event) => {
         .itemOutputs("1x gtceu:bronze_buzz_saw_blade")
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(15 * 20 + 4);
+
+    event.recipes.gtceu
+        .macerator("nijika:tier01/clay_from_dripstone")
+        .itemInputs("minecraft:dripstone_block")
+        .itemOutputs("1x minecraft:clay_ball")
+        .EUt(2)
+        .duration(1 * 20);
 };
