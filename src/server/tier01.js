@@ -115,7 +115,7 @@ export const doTier01Content = (event) => {
 
     // this one is straight up unrealistic, but i want the EBF to be ahead of the bessemer
     // converter!
-    
+
     event.remove({ id: "gtceu:smelting/fireclay_brick" });
     event.remove({ id: "gtceu:compressor/compressed_fireclay" });
     event.remove({ output: "gtceu:fireclay_dust" });
@@ -126,7 +126,7 @@ export const doTier01Content = (event) => {
         .itemOutputs("4x gtceu:firebrick")
         .EUt(GTValues.VHA[GTValues.MV])
         .blastFurnaceTemp(1787)
-        .duration(10 * 20);  // faster than the furnace!
+        .duration(10 * 20); // faster than the furnace!
 
     // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });

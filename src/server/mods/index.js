@@ -7,6 +7,7 @@
 import { adjustAe2Recipes } from "./ae2";
 import { adjustCreateCobblestoneRecipes } from "./cobblestone";
 import { adjustCreateRecipes } from "./create";
+import { adjustCCARecipes } from "./createaddition";
 import { adjustDieselGeneratorRecipes } from "./diesel";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
@@ -61,6 +62,7 @@ const MOD_TWEAKER_FUNCTIONS = {
     ae2: adjustAe2Recipes,
     createdieselgenerators: adjustDieselGeneratorRecipes,
     createcobblestone: adjustCreateCobblestoneRecipes,
+    createaddition: adjustCCARecipes,
 };
 
 /**

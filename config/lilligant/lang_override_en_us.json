@@ -269,6 +269,14 @@
     "tag.item.gtceu.diodes": "Regular Diodes",
     "tag.item.gtceu.transistors": "Regular Transistors",
 
+    "tag.item.forge.fermentable": "Fermentable Foods",
+    "tag.fluid.forge.seed_oil": "Seed Oils",
+    "tag.fluid.forge.ethanol": "Ethanol",
+    "tag.fluid.forge.plant_oil": "Plant Oils",
+    "tag.fluid.forge.plantoil": "Plant Oils",
+
+    "tag.item.createaddition.plant_foods": "Foods from Plants",
+
     "biome.bigglobe.cold_forest": "Cold Forest",
     "biome.bigglobe.cold_plains": "Cold Plains",
     "biome.bigglobe.cold_wasteland": "Cold Wasteland",

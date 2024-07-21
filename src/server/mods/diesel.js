@@ -10,6 +10,7 @@
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustDieselGeneratorRecipes = (event) => {
+    event.remove({ id: "createdieselgenerators:compacting/plant_oil" });
     event.remove({ id: "createdieselgenerators:distillation/crude_oil" });
     event.remove({ id: "createaddition:liquid_burning/crude_oil" });
     event
