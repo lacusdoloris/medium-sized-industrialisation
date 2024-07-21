@@ -372,6 +372,24 @@
 				"If you don't really like Create, you can get by with just putting a handcrank onto the workstation and holding down right click. It's the same level of RSI as the tools."
 			]
 			id: "29823463D2E80DB2"
+			rewards: [
+				{
+					id: "2BE34C35515F531D"
+					item: "gtceu:green_dye_bucket"
+					type: "item"
+				}
+				{
+					id: "37AD7AD999803E5A"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "01D875CB16DCFC43"

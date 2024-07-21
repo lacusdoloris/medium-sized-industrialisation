@@ -559,7 +559,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["39B7626451CD6E3E"]
+			dependencies: ["0DBEB940868D3DB7"]
 			description: [
 				"The &aBessemer Converter&r turns iron into steel. It uses a modified form of the &dbessemer process&r invented by Henry Bessemer known as the Gilchrist-Thomas process (using limestone, rather than clay)."
 				""
@@ -615,7 +615,7 @@
 			]
 			title: "&aBessemer Converter&r"
 			x: 5.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4818B11226B75EEB"]
@@ -714,29 +714,6 @@
 			title: "Multiblock Coils"
 			x: 5.0d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"0DBEB940868D3DB7"
-				"0FCE544C59CD00AA"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"The &aGas Collector&r can be used to gather gases from the atmosphere of a specific dimension."
-				""
-				"This'll be more useful in the MV and HV tiers with &dNether Air&r and &dEnder Air&r, but regular Overworld Air is used for the Bessemer process (and also as an easy source of air)."
-				""
-				"You need Zinc for the item filters, which requires a blast furnace to process the Sphalerite."
-			]
-			id: "39B7626451CD6E3E"
-			tasks: [{
-				id: "3410FEFBDF9BDFE9"
-				item: "gtceu:lv_gas_collector"
-				type: "item"
-			}]
-			title: "Gas Collection"
-			x: 5.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["0DBEB940868D3DB7"]
