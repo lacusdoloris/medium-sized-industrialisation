@@ -89,16 +89,6 @@
         "version": "1.2.18+1.20.4-forge",
         "version_id": "XgQjD9fF"
     },
-    "5ibSyLAz": {
-        "checksum": "f9aec47362b744e7ebe7ec91e0c443a7dd88c5078a53276d78fb549fe3033e34701cfe256e41a3d2fc3c92d6b3a7c75fea3b870c3fea786d8828781a5f0c7bb7",
-        "client_side_only": false,
-        "name": "Inventory Sorting",
-        "pinned": false,
-        "project_id": "5ibSyLAz",
-        "selected": true,
-        "version": "1.9.0-1.20",
-        "version_id": "tr2ZGtz4"
-    },
     "7n3HbHSE": {
         "checksum": "019dcc77ca02507047a20d9e25bf5f538a637d6e22569882d8456f2e0123e729627246faa071a6337b1452160ad6a6c9b18cfade9c34ed18266fd79ea5c7c8b8",
         "client_side_only": false,
