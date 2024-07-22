@@ -78,4 +78,28 @@ export const adjustCCARecipes = (event) => {
             heatRequirement: "heated",
         })
         .id("createaddition:mixing/biomass_from_plant_foods");
+
+    event.recipes.createaddition
+        .liquid_burning(10 * 60 * 20, {
+            fluidTag: "#forge:light_fuel",
+            amount: 1 * FluidAmounts.BUCKET,
+        })
+        .id("nijika:mods/createaddition/light_fuel_blaze_burner");
+
+    // doesn't really make sense for lathing... but who cares?!
+    event.recipes.gtceu
+        .lathe("nijika:mods/createaddition/straw_from_stick")
+        .itemInputs("1x #forge:rods/wood")
+        .itemOutputs("1x createaddition:straw")
+        .circuit(1)
+        .duration(10)
+        .EUt(2);
+
+    event.recipes.gtceu
+        .lathe("nijika:mods/createaddition/straw_from_bamboo")
+        .itemInputs("1x minecraft:bamboo")
+        .itemOutputs("1x createaddition:straw")
+        .circuit(1)
+        .duration(10)
+        .EUt(2);
 };

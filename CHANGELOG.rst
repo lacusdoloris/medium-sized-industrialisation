@@ -132,6 +132,10 @@ Misc Features
 
 - Added a new "Super Quests" chapter for certain achievements.
 
+- Light Fuel can now be burnt in liquid blaze burners.
+
+- Straws can now be made in the GTCEu lathe from sticks or bamboo.
+
 Miscellaneous Bugfixes
 ~~~~~~~~~~~~~~~~~~~~~~
 
