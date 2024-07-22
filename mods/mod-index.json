@@ -210,14 +210,14 @@
         "version_id": "BzwWTsxS"
     },
     "Etqy1Omb": {
-        "checksum": "3485eda0623a3b9e70587225cc06900ccbbc34489ac0ba306f7ae54712f06564d52d45c6bd990d8745c84cf3070a18ce1e757f273f8b180e69f366360bb4c065",
+        "checksum": "b5b660bfa12f2e683f8d8f0470ad695932a3b4ac1556ff7c1eaefea6ae9b35735fb9d4e7a8c3951f93bb166584afa92f041c0fbb668018aa8f44f460e3566c98",
         "client_side_only": false,
         "name": "Integrated Tunnels",
         "pinned": false,
         "project_id": "Etqy1Omb",
         "selected": true,
-        "version": "1.20.1-1.8.28",
-        "version_id": "KWdBHX8t"
+        "version": "1.20.1-1.8.29",
+        "version_id": "gFVIa81Z"
     },
     "EuTS81Z3": {
         "checksum": "5281f7910a9b2d8ea49499894656a43d4180a591383c9cf0ecce755537d21b2da6d49c9f1b624d9325f94a7d6c5789d5e74eae0bbece2ccb7da9030f059d17da",
@@ -500,14 +500,14 @@
         "version_id": "2FlwUOgm"
     },
     "Z9DM0LJ4": {
-        "checksum": "8b4c82d7f60047144aa9b4405ed6d5e5581292bacc5a12a3b4752d43c89d77dddce424ace1bc0f71c2738ba4c27618dd6d0a4f3fba7b7170cf0ca0d340793d9c",
+        "checksum": "c34d1d13bc4255d1457703974cf4a39a87de550f03c975cb1a869e854cb064576e51ea41c3855b51f5f4bca950a21d58e107eaffe8d5f81640a79ef4280439cf",
         "client_side_only": false,
         "name": "Cyclops Core",
         "pinned": false,
         "project_id": "Z9DM0LJ4",
         "selected": false,
-        "version": "1.20.1-1.19.2",
-        "version_id": "TAFTtA4l"
+        "version": "1.20.1-1.19.3",
+        "version_id": "Az0SHdGA"
     },
     "ZM3tt6p1": {
         "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
@@ -600,14 +600,14 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "b8d03a705f65b7ed6dbbbf1c1ceb49d5c493e315de5f6682e6f229015ac044677652d402634c51d22d6a741cf177a038c084bfb7eb71025edbc2451da376f739",
+        "checksum": "f455102cbfff1cd8f9d9fec6233119fb91f240a984eb5a897c02aae1762364032e85b5921af17b9e82766cd7a319952494ca1f6dc3866f346c4714f465ef22ca",
         "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.7.2",
-        "version_id": "UOdAzPFs"
+        "version": "1.7.4",
+        "version_id": "TJf7A440"
     },
     "hIO8IsD8": {
         "checksum": "d485a4c944bc2217bba057b716866677cc13c3d0347249faf9c25b0706de63784ba98a2228e11d634d2a383a32810580ea6751bc1c2ffd3c8759a4b987fea8b2",
@@ -710,14 +710,14 @@
         "version_id": "MLYKnVCk"
     },
     "o6qsdrrQ": {
-        "checksum": "dab133c74c35ecbf1980671f9685b9d84ee6c3965eab33827b51252234fcc7bcd32e2eb080e107b53954cfa3268f2759879f360a5f8fdd3ba6ed44a50c51eaa0",
+        "checksum": "d577feb25dfd7d63811f0a963ec77be255cce2dc323b1aad71a7f21968e1424969c691550123f9be996146bae336e35dfd0d860e33f02a50e6908791dccff161",
         "client_side_only": true,
         "name": "Zume",
         "pinned": false,
         "project_id": "o6qsdrrQ",
         "selected": true,
-        "version": "1.0.0",
-        "version_id": "EDf05717"
+        "version": "1.1.1",
+        "version_id": "ievlqjaq"
     },
     "oFXrCkDI": {
         "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
@@ -920,13 +920,13 @@
         "version_id": "mYl4RvKg"
     },
     "yYzdQHJI": {
-        "checksum": "829986a36efa0a7bede7ab47457c8e9974fae927ec11d8fa4d8e5057b76a4f4421079853e6f099d61a3e3468e29adaba57ea919b9375c60cdc3d6ff74388c7ee",
+        "checksum": "ffc7785565a54d041dadcc8183de6c1eccf3b2adb714884f000158ad350de769ea3099ac2ac53dede1a9ad6538622a9fe386c5860a54c2f6e142535a04a331ad",
         "client_side_only": false,
         "name": "Integrated Dynamics",
         "pinned": false,
         "project_id": "yYzdQHJI",
         "selected": true,
-        "version": "1.20.1-1.22.1",
-        "version_id": "B3zoG8Wv"
+        "version": "1.20.1-1.22.2",
+        "version_id": "lLziDIar"
     }
 }
