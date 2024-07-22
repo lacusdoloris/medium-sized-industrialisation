@@ -14,6 +14,13 @@ export const doTier01Content = (event) => {
     event.remove({ id: "gtceu:shaped/bronze_primitive_blast_furnace" }); // not bronze?
 
     event.recipes.gtceu
+        .alloy_smelter("nijika:tier01/powered_corinthian_bronze")
+        .itemInputs("4x #forge:ingots/copper", "1x #forge:ingots/silver")
+        .itemOutputs("5x gtceu:corinthian_bronze_ingot")
+        .EUt(GTValues.VH[GTValues.LV])
+        .duration(5 * 20);
+
+    event.recipes.gtceu
         .assembler("nijika:tier01/precision_mechanism")
         .itemInputs(
             "2x #forge:plates/gold",
