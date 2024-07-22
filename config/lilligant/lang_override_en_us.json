@@ -252,6 +252,9 @@
     "tag.item.nijika.copper_alloy_plates": "Copper Alloy Plates",
     "tag.item.nijika.bessemer_limestone": "Valid Limestones",
     "tag.item.nijika.rubber_plates": "All Rubber Plates",
+    "tag.item.nijika.copper_alloy_ingots": "Copper Alloy Ingots",
+    "tag.item.nijika.copper_alloy_blocks": "Copper Alloy Blocks",
+    "tag.item.nijika.wafers": "Any Silicon Wafer",
 
     "tag.item.gtceu.circuits.ulv": "ULV Circuits",
     "tag.item.gtceu.circuits.lv": "Low Voltage Circuits",
@@ -270,6 +273,7 @@
     "tag.item.gtceu.transistors": "Regular Transistors",
 
     "tag.item.forge.fermentable": "Fermentable Foods",
+    "tag.item.forge.rods.iron": "Iron Rods",
     "tag.fluid.forge.seed_oil": "Seed Oils",
     "tag.fluid.forge.ethanol": "Ethanol",
     "tag.fluid.forge.plant_oil": "Plant Oils",

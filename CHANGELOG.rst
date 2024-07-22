@@ -18,7 +18,7 @@ Mod Changes
 
 - **Headliner**: Primary world generation is now provided by Ecospherical Expansion.
 
-- Updated to GTCEu 1.3.0. This has a handful of new recipe changes including a built-in iodine 
+- GTCEu has been updated to 1.3.1. This has a handful of new recipe changes including a built-in iodine 
   chain.
 
   - The GTCEu Evaporation Tower is disabled in favour of our own Evaporation Pool. This is not going
@@ -32,7 +32,15 @@ Mod Changes
   
   - The new hazards feature is disabled entirely.
 
-- Added Create: Cobblestone Generators for (relatively) easy infinite cobblestone generation.
+- Create: Cobblestone Generators has been added for (relatively) easy infinite cobblestone generation.
+
+- Create: Diesel Engines has been added. 
+
+  - The pumpjack now produces Heavy Oil instead of DE's Crude Oil.
+
+  - The primitive distillation tower now produces Light Fuel and Heavy Fuel from Heavy Oil.
+
+  - Light Fuel can be burnt inside the diesel engines. This makes pumpjacks nicely self-sufficient.
 
 Recipe Changes
 ~~~~~~~~~~~~~~

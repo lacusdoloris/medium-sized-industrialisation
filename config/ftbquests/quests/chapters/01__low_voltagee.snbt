@@ -762,31 +762,6 @@
 			y: -1.0d
 		}
 		{
-			description: [
-				"You might unlock this quest before getting a blast furnace, as you can get zinc dust as a byproduct of ore processing."
-				""
-				"Shhhh! Don't tell anyone."
-			]
-			id: "0FCE544C59CD00AA"
-			invisible: true
-			optional: true
-			rewards: [{
-				id: "2D954342D62CDC9E"
-				item: "exposure:camera"
-				type: "item"
-			}]
-			subtitle: "... you wanted to live in a world without zinc!"
-			tasks: [{
-				count: 64L
-				id: "4769E875026949AB"
-				item: "gtceu:zinc_dust"
-				type: "item"
-			}]
-			title: "Well, Jimmy..."
-			x: 4.0d
-			y: 3.0d
-		}
-		{
 			can_repeat: true
 			dependencies: ["4B215E2BA5E3CB58"]
 			description: ["Click here to get a fresh set of unbreakable Neutronium tools."]
