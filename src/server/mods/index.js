@@ -63,6 +63,18 @@ const MOD_TWEAKER_FUNCTIONS = {
     createdieselgenerators: adjustDieselGeneratorRecipes,
     createcobblestone: adjustCreateCobblestoneRecipes,
     createaddition: adjustCCARecipes,
+    snad: (event) => {
+        event.remove({ mod: "snad" });
+
+        for (let what of ["", "red_", "soul_"]) {
+            event.recipes.gtceu
+                .compressor(`nijika:mods/snad/${what}snad`)
+                .itemInputs(`64x ${what}sand`)
+                .itemOutputs(`1x snad:${what}snad`)
+                .EUt(GTValues.VA[GTValues.LV])
+                .duration(11 * 20);
+        }
+    },
 };
 
 /**

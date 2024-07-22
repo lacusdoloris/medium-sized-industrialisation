@@ -42,6 +42,8 @@ Mod Changes
 
   - Light Fuel can be burnt inside the diesel engines. This makes pumpjacks nicely self-sufficient.
 
+- Snad has been added.
+
 Recipe Changes
 ~~~~~~~~~~~~~~
 
