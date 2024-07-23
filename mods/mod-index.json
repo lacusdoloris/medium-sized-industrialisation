@@ -409,6 +409,16 @@
         "version": "1.20.1-1.5.0",
         "version_id": "m5bD7RxO"
     },
+    "RfFxanNh": {
+        "checksum": "d5688c46c821e07de05ee0b88a34f2c80ff56d301f4c08a359724a69ec75369bdf343e287a4f7e27f7bbcd1a29c16b11034fc72161cb3ae89fbf72dcdb375919",
+        "client_side_only": false,
+        "name": "Faster Random",
+        "pinned": true,
+        "project_id": "RfFxanNh",
+        "selected": true,
+        "version": "5.1.0",
+        "version_id": "BbFqiKvi"
+    },
     "T38eAZQC": {
         "checksum": "4ec9c04c393938002145f7f5d72b88a78b1a72a5218c5ce34acaa055f079f16a74007a9bd07cfa990c76088930145ac38eec4c45dc7c7d618446bac66e497ceb",
         "client_side_only": false,
@@ -568,6 +578,16 @@
         "selected": true,
         "version": "1.20-6.0.5",
         "version_id": "1TsVpRht"
+    },
+    "fALzjamp": {
+        "checksum": "f27d5e0ccd6772f676ff1fbd7d713c3ec03f3176314d57e3e479c21568643ae120843d655d1314ffc6985b5052766fef3ea43d47da3a762ca9cc43a3ee959e01",
+        "client_side_only": false,
+        "name": "Chunky",
+        "pinned": false,
+        "project_id": "fALzjamp",
+        "selected": true,
+        "version": "1.3.146",
+        "version_id": "4FTDk9wv"
     },
     "fRiHVvU7": {
         "checksum": "de1f48b515f1914bce2c07e06c97b8a20f954c9c8f6f178617df45b9cdf191124207815e3f96dae0a60597657832ced1a723d72528923aab75e42b1f3cb66226",
