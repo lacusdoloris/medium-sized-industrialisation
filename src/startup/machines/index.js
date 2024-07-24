@@ -4,6 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { addBallGrinderMultiblock, addBallGrinderRecipeType } from "./ball_grinder";
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
 import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
@@ -42,6 +43,9 @@ export const addAllRecipeTypes = (event) => {
 
     let rockSynthesis = event.create("rock_synthesis");
     addRockSynthesisRecipeType(rockSynthesis);
+
+    let ballGrinding = event.create("ball_grinding");
+    addBallGrinderRecipeType(ballGrinding);
 };
 
 /**
@@ -67,4 +71,7 @@ export const addAllMachineTypes = (event) => {
 
     let rockSynthesiser = event.create("nijika:rock_synthesiser", "multiblock");
     addRockSynthesiserMultiblock(rockSynthesiser);
+
+    let ballGrinder = event.create("nijika:ball_grinder", "multiblock");
+    addBallGrinderMultiblock(ballGrinder);
 };

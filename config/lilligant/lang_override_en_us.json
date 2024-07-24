@@ -214,6 +214,8 @@
     "gtceu.ion_exchange": "Ion Exchange",
     "block.gtceu.rock_synthesiser": "Rock Synthesiser",
     "gtceu.rock_synthesis": "Rock Synthesis",
+    "block.gtceu.ball_grinder": "Ball Bearing Grinding Mill",
+    "gtceu.ball_grinding": "Ball Grinding",
 
     "item.nijika.slag": "Ore Slag",
     "item.nijika.catalysator_brown": "Mineral Catalyst",
