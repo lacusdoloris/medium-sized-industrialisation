@@ -82,7 +82,7 @@ export const addBessemerMultiblock = (builder) => {
             "gtceu:block/multiblock/primitive_blast_furnace"
         )
         .recipeType("bessemer_smelting")
-        .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
+        .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
         // what could this mean?
         .recipeModifiers([
             GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),

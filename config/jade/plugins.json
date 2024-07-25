@@ -73,6 +73,9 @@
     "cable_info": true,
     "parallel_info": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
