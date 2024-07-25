@@ -51,7 +51,7 @@ export const adjustOrestoneCrushingRecipes = (event) => {
         let createOutputs = [
             Item.of(`gtceu:crushed_${definition.ore70Percent}_ore`).withChance(0.7),
         ];
-        
+
         if (definition.ore40Percent !== null) {
             createOutputs.push(
                 Item.of(`gtceu:crushed_${definition.ore40Percent}_ore`).withChance(0.4)

@@ -4,8 +4,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { addBallGrinderRecipes } from "./ball_grinding";
 import { addBaseOreMaterials, addBaseOreRecipes } from "./bocchi";
-import { adjustCreateDirectOreCrushingRecipes } from "./create";
+import { adjustOrestoneCrushingRecipes } from "./orestones";
 
 // custom ores means the sorted ores,
 
@@ -18,8 +19,11 @@ export const addCustomOreMaterials = (event) => {
 
 /**
  * Adds all of the processing recipes for custom ores.
+ *
+ * @param {Internal.RecipesEventJS} event
  */
 export const addCustomOreProcessingRecipes = (event) => {
-    adjustCreateDirectOreCrushingRecipes(event);
+    adjustOrestoneCrushingRecipes(event);
     addBaseOreRecipes(event);
+    addBallGrinderRecipes(event);
 };

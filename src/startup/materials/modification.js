@@ -42,9 +42,15 @@ const DISABLE_DECOMPOSITION = [
 /** A list of materials to actually add dusts & ingots to. */
 const ADD_METALS = ["rhenium"];
 
+/** A list of materials to add rounds to. */
+const ADD_ROUNDS = ["iron", "steel"];
+
 /** A list of materials to add aqueous properties to. */
 const ADD_AQUEOUS = ["sodium_hydroxide", "calcium_hydroxide"];
 
+/**
+ * Mega-function for customising materials.
+ */
 export const customiseMaterials = () => {
     // add foil flag here, for fluxed magnets
     getMaterial("magnetic_iron").addFlags(GTMaterialFlags.GENERATE_FOIL);
@@ -94,6 +100,13 @@ export const customiseMaterials = () => {
             let prop = new FluidProperty();
             prop.getStorage().enqueueRegistration(FluidStorageKeys.LIQUID, new GTFluidBuilder());
             mat.properties.setProperty(PropertyKey.FLUID, prop);
+        }
+    }
+
+    for (let matName of ADD_ROUNDS) {
+        let mat = getMaterial(matName);
+        if (!mat.hasFlag(GTMaterialFlags.GENERATE_ROUND)) {
+            mat.addFlags(GTMaterialFlags.GENERATE_ROUND);
         }
     }
 

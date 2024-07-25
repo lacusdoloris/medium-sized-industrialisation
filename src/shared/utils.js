@@ -16,11 +16,19 @@ export const GasTier = Java.loadClass(
 export const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
+export const GTUtil = Java.loadClass("com.gregtechceu.gtceu.utils.GTUtil");
 
 let chemicalHelper$get =
     ChemicalHelper[
         "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material)"
     ];
+
+let chemicalHelper$getInt =
+    ChemicalHelper[
+        "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material,int)"
+    ];
+
+let GTUtil$get = GTUtil["copyAmount(int,net.minecraft.world.item.ItemStack[])"];
 
 /** Creates a new ``nijika:${id}`` Identifier. */
 export const nijikaId = (id) => new ResourceLocation("nijika", id);
@@ -60,10 +68,16 @@ export const getMaterial = (name) => {
  *
  * @param {TagPrefix} prefix The tag prefix to use.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material The material to use.
+ * @param {number} count An optional count value.
+ * @returns {Internal.ItemStack}
  */
-export const getStackForTagPrefix = (prefix, material) => {
+export const getStackForTagPrefix = (prefix, material, count) => {
     // fails with a method resolution error unless we use the ``[]`` form.
-    return chemicalHelper$get(prefix, material);
+    if (typeof count === "undefined") {
+        return chemicalHelper$get(prefix, material);
+    } else {
+        return chemicalHelper$getInt(prefix, material, count);
+    }
 };
 
 /** @return {com.gregtechceu.gtceu.api.data.chemical.material.Material} */
@@ -79,10 +93,13 @@ const definitelyMaterial = (mat) => {
  * Gets the ore property for the provided material.
  *
  * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} The material to lookup.
- * @return {Internal.OreProperty}
+ * @return {Internal.OreProperty|null}
  */
 export const getOreProperty = (material) => {
-    return definitelyMaterial(material).getProperty(PropertyKey.ORE);
+    let mat = definitelyMaterial(material);
+    if (!mat.hasProperty(PropertyKey.ORE)) return null;
+
+    return mat.getProperty(PropertyKey.ORE);
 };
 
 /**
@@ -133,4 +150,15 @@ export const addRockBreakingRecipe = (event, rockType, energy) => {
  */
 export const createBlockTag = (namespace, name) => {
     return TagKey.create(BuiltInRegistries.BLOCK.key(), new ResourceLocation(namespace, name));
+};
+
+/**
+ * Wrapper for GTUtils#copyAmount.
+ *
+ * @param {Internal.ItemStack} itemStack The stack to copy.
+ * @param {number} amount The amount of items for the new stack.
+ * @returns {Internal.ItemStack}
+ */
+export const copyAmount = (itemStack, amount) => {
+    return GTUtil$get(amount, itemStack);
 };

@@ -11,7 +11,7 @@
  */
 export const addBallGrinderRecipeType = (type) => {
     type.setEUIO("in")
-        .setMaxIOSize(2, 4, 0, 0)
+        .setMaxIOSize(3, 4, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MACERATOR);
 };

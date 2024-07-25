@@ -90,5 +90,6 @@ module.exports = {
         GTOres: "readonly",
         ToolProperty: "readonly",
         GTToolType: "readonly",
+        Utils: "readonly",
     },
 };
