@@ -255,4 +255,14 @@ export const doTier01Content = (event) => {
         .itemOutputs("1x minecraft:clay_ball")
         .EUt(2)
         .duration(1 * 20);
+
+    // this requirees steel... but it also only requires LV circuits, so it's placed here.
+    event
+        .shaped("gtceu:ball_grinder", ["SSS", "WCW", "RRR"], {
+            S: "#forge:plates/steel",
+            W: "create:cogwheel",
+            C: GT_MACHINE_TIERS.LV.circuitTag,
+            R: "#forge:rings/wrought_iron",
+        })
+        .id("nijika:tier01/ball_bearing_grinding_mill");
 };
