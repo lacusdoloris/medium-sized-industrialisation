@@ -106,6 +106,8 @@ Machine Changes
 - A new Rock Synthesiser multiblock has been added to allow for passive generation of the early game
   orestones.
 
+- A new Ball Bearing Grinding Mill has been added to replace the LV/MV macerator.
+
 World Changes
 ~~~~~~~~~~~~~
 
