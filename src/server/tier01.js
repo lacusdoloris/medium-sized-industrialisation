@@ -152,7 +152,7 @@ export const doTier01Content = (event) => {
             U: "gtceu:lv_electric_pump",
             I: "gtceu:heatproof_machine_casing",
             C: "#gtceu:circuits/lv",
-            R: "create:limestone",
+            R: "#nijika:bessemer_limestone",
             W: GT_MACHINE_TIERS.LV.singleCable,
             P: "gtceu:lv_electric_piston",
         })
