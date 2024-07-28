@@ -30,6 +30,7 @@
 				drowned = true
 				parrot = true
 				experience_orb = true
+				lightning_bolt = true
 				player = true
 
 			[light_sources.settings.entities.surface]

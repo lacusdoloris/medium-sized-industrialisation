@@ -63,7 +63,7 @@
         "checksum": "33591af8c7772a87c4e9b1166b1d8bb1a3b3f7589d1280db75538a13cc3012f157166da9245c16c3cd655805943f588f65ec330123b900f30e149b781d178970",
         "client_side_only": true,
         "name": "Coordinates Display",
-        "pinned": false,
+        "pinned": true,
         "project_id": "3mW8PdUo",
         "selected": true,
         "version": "7.0.0-forge",
@@ -290,14 +290,14 @@
         "version_id": "afsFajDC"
     },
     "HmLJoQ1K": {
-        "checksum": "10d606e23b634b8f860b82309c2e3c2e9efcc00d8c5482f09c5f5b4b1b4876d4b700f78811d047d673d6ff7fb545650e661231e6ceba9aba26c0551a9f1a38cd",
+        "checksum": "6be91532a3fe9c7b0dc85ae6a526654246662edad7702c088796eab06872f2e52048de66dd89bb073afd30c3a4c91ff237d93eb7e458e20f838517f2d79a72d6",
         "client_side_only": false,
         "name": "Integrated Terminals",
         "pinned": false,
         "project_id": "HmLJoQ1K",
         "selected": true,
-        "version": "1.20.1-1.4.15",
-        "version_id": "dbTIXLx6"
+        "version": "1.20.1-1.4.16",
+        "version_id": "efGP9Z2n"
     },
     "IhBYAM6m": {
         "checksum": "4e1d6b6454c13006cdd78f5e8f47bde7c0fce1f5d455e991506e72f529153f7b54454c932c081339844f9b9098e227133de45011f3d0f0bbfd6b9378fb321c0f",
@@ -510,14 +510,14 @@
         "version_id": "2FlwUOgm"
     },
     "Z9DM0LJ4": {
-        "checksum": "c34d1d13bc4255d1457703974cf4a39a87de550f03c975cb1a869e854cb064576e51ea41c3855b51f5f4bca950a21d58e107eaffe8d5f81640a79ef4280439cf",
+        "checksum": "95c601842f59a3aa5be2f786500be208bb88628523e3e364bf718d734d7f4e502379468eef338948e2d9ae04f09ec21fd8d5beab28374c2a4e35f6e1e01538bb",
         "client_side_only": false,
         "name": "Cyclops Core",
         "pinned": false,
         "project_id": "Z9DM0LJ4",
         "selected": false,
-        "version": "1.20.1-1.19.3",
-        "version_id": "Az0SHdGA"
+        "version": "1.20.1-1.19.4",
+        "version_id": "NdjbWutu"
     },
     "ZM3tt6p1": {
         "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
@@ -620,14 +620,14 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "f455102cbfff1cd8f9d9fec6233119fb91f240a984eb5a897c02aae1762364032e85b5921af17b9e82766cd7a319952494ca1f6dc3866f346c4714f465ef22ca",
+        "checksum": "7942e0f41480202fe5f6dc30895017e0eab55b0798ab1e4e67b43fd898e444c262ae9bcc4fd833c7fd8455f1957f28b0be2fcf7b910e2c56f4e92f77c60852b3",
         "client_side_only": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.7.4",
-        "version_id": "TJf7A440"
+        "version": "1.7.5",
+        "version_id": "vNOYdEJg"
     },
     "hIO8IsD8": {
         "checksum": "d485a4c944bc2217bba057b716866677cc13c3d0347249faf9c25b0706de63784ba98a2228e11d634d2a383a32810580ea6751bc1c2ffd3c8759a4b987fea8b2",
@@ -820,14 +820,14 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "2c3c7294cbbaf739f0d04739cc56f18d4734060cf25935a93c625d6d98bf1292687a3a6bf948e5461747e27895297ae57451af0096a388117bb7750630cb4cc2",
+        "checksum": "cd13889ebf3c859e527a5f0dd06b92b906612565dc5d57b28303696a1b0253770c9287567bbf2553926d42a75a6762d214ad543ef8e234339d02a8d0cc8301a4",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.25+mc1.20.1",
-        "version_id": "FI3Xe9Px"
+        "version": "0.3.28+mc1.20.1",
+        "version_id": "lopZqfMw"
     },
     "soWqucCB": {
         "checksum": "8cdae0d39d4a5dcad3818ffd1475ee7b5e50cbd93b9f9feff68b8f7289d0abac6de9eba209203515316bda60d26b7d64413a0c9f369652c45d7a76c17170ef2e",
