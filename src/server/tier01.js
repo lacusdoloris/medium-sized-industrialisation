@@ -197,7 +197,7 @@ export const doTier01Content = (event) => {
     event.recipes.gtceu
         .assembler("nijika:tier01/diodes_wafer_glass_regular_copper")
         .itemInputs("4x gtceu:fine_copper_wire", "1x gtceu:silicon_wafer")
-        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.MB))
         .itemOutputs("1x gtceu:diode")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(20 * 20); // wow, really?
@@ -205,7 +205,7 @@ export const doTier01Content = (event) => {
     event.recipes.gtceu
         .assembler("nijika:tier01/diodes_wafer_glass_annealed_copper")
         .itemInputs("4x gtceu:fine_annealed_copper_wire", "1x gtceu:silicon_wafer")
-        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.BUCKET))
+        .inputFluids(Fluid.of("gtceu:glass").withAmount(144 * FluidAmounts.MB))
         .itemOutputs("2x gtceu:diode")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(20 * 20);
