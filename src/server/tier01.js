@@ -23,7 +23,7 @@ export const doTier01Content = (event) => {
     event.recipes.gtceu
         .assembler("nijika:tier01/precision_mechanism")
         .itemInputs(
-            "2x #forge:plates/gold",
+            "2x #forge:plates/corinthian_bronze",
             "2x create:cogwheel",
             "2x create:large_cogwheel",
             GT_MACHINE_TIERS.LV.singleCable
