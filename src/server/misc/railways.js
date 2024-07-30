@@ -56,4 +56,16 @@ export const rewriteRailwayRecipes = (event) => {
             "minecraft:redstone_torch",
         ])
         .id("nijika:railways/activator_rail");
+
+    event.recipes.gtceu.assembler("nijika:railways/powered_railway_assembly")
+        .itemInputs("1x create:sleepers", "2x #forge:nuggets/iron")
+        .itemOutputs("2x create:track")
+        .EUt(2)
+        .duration(10);
+
+    event.recipes.gtceu.assembler("nijika:railways/super_powered_railway_assembly")
+        .itemInputs("8x create:sleepers", "8x #forge:rods/steel")
+        .itemOutputs("32x create:track")
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20);
 };

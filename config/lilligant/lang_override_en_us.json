@@ -276,10 +276,15 @@
 
     "tag.item.forge.fermentable": "Fermentable Foods",
     "tag.item.forge.rods.iron": "Iron Rods",
+    "tag.item.forge.nuggets.iron": "Iron Nuggets",
+    "tag.item.forge.nuggets.zinc": "Zinc Nuggets",
+    "tag.item.forge.plates.obsidian": "Obsidian Plates",
     "tag.fluid.forge.seed_oil": "Seed Oils",
     "tag.fluid.forge.ethanol": "Ethanol",
     "tag.fluid.forge.plant_oil": "Plant Oils",
     "tag.fluid.forge.plantoil": "Plant Oils",
+
+    "tag.item.create.sleepers": "Any Track Sleeper",
 
     "tag.item.createaddition.plant_foods": "Foods from Plants",
 
