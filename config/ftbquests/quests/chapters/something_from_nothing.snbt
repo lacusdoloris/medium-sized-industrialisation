@@ -119,7 +119,7 @@
 				item: "gtceu:crushed_bocchinium_ore"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
@@ -132,7 +132,7 @@
 				item: "gtceu:crushed_ryoite_ore"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
@@ -145,7 +145,7 @@
 				item: "gtceu:crushed_kitakitaite_ore"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 3.0d
 		}
 		{
@@ -158,7 +158,7 @@
 				item: "gtceu:crushed_nijikaite_ore"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -171,20 +171,7 @@
 				item: "gtceu:crushed_kikurite_ore"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Yoyokite can be sorted into &dBauxite&r and &dChromite&r."]
-			icon: "gtceu:raw_yoyokite"
-			id: "7454B2E506441021"
-			tasks: [{
-				id: "036202E5D17E4788"
-				item: "gtceu:crushed_yoyokite_ore"
-				type: "item"
-			}]
-			x: -1.5d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -210,7 +197,7 @@
 				type: "item"
 			}]
 			title: "Impure Kikurite"
-			x: -2.5d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
@@ -223,7 +210,7 @@
 				type: "item"
 			}]
 			title: "Impure Kitakitaite"
-			x: 0.5d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -236,20 +223,7 @@
 				type: "item"
 			}]
 			title: "Impure Bocchinium"
-			x: -0.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7454B2E506441021"]
-			description: ["Impure Yoyokite gets you Monazite, as well as the result of sorting the crushed ores."]
-			id: "3C75897B75226642"
-			tasks: [{
-				id: "24FB26291D858BDD"
-				item: "gtceu:impure_yoyokite_dust"
-				type: "item"
-			}]
-			title: "Impure Yoyokite"
-			x: -1.5d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -262,7 +236,7 @@
 				type: "item"
 			}]
 			title: "Impure Ryoite"
-			x: 1.5d
+			x: 1.0d
 			y: 4.5d
 		}
 		{
@@ -275,7 +249,7 @@
 				type: "item"
 			}]
 			title: "Impure Nijikaite"
-			x: 2.5d
+			x: 2.0d
 			y: 4.5d
 		}
 		{

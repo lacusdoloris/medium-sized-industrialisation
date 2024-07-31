@@ -414,7 +414,6 @@
 			dependencies: [
 				"6A52BBC86042392D"
 				"562F1FD212BAE2EC"
-				"0DBEB940868D3DB7"
 			]
 			description: [
 				"&aGallium Arsenide&r is used to create diodes (in MV) and silicon wafers (later on). "
@@ -724,6 +723,7 @@
 			]
 			icon: "gtceu:duct_tape"
 			id: "438331959025E8B3"
+			optional: true
 			tasks: [{
 				id: "21B424893C761EB6"
 				title: "A Note On Maintenance"
@@ -878,7 +878,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5769F2603588F0AC"]
+			dependencies: [
+				"5769F2603588F0AC"
+				"0DBEB940868D3DB7"
+			]
 			description: [
 				"&aSilicon&r is the foundation of electronics; it's embedded in every single component in nearly every single electronic device out there. It makes up 28% of the Earth's crust, the second most abundant element after oxygen and the eighth most abundant in the universe."
 				""
