@@ -27,14 +27,21 @@ import { addCustomOreProcessingRecipes } from "../shared/ores";
 ServerEvents.tags("items", setupItemTags);
 
 ServerEvents.recipes((event) => {
-    // == COMMON == //
+    // Warning! This needs to be called in the right order!
+    //
+    // The cleanup and material tier code will do mass recipe deletions which are then replaced with
+    // our own actual recipes. Do not reorder them!
+
+    // == COMMON CLEANUP == //
     doCleanups(event);
     adjustMaterialTierRecipes(event);
+
+    // == COMMON ADDITIONS == //
     adjustVariousMiscRecipes(event);
-    doModRecipes(event);
     addChemicalProcessingRecipes(event);
     addCustomOreProcessingRecipes(event);
     addNonSpecificMachineRecipes(event);
+    doModRecipes(event);
 
     // == TIERED CONTENT == //
 

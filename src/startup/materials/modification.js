@@ -49,6 +49,14 @@ const ADD_ROUNDS = ["iron", "steel"];
 const ADD_AQUEOUS = ["sodium_hydroxide", "calcium_hydroxide"];
 
 /**
+ * A list of materials that have entirely custom processing chains.
+ *
+ * These materials will have their ore processing tab removed, as well as having no material tier
+ * recipes generated for them.
+ */
+const REMOVE_ORE_TAB = ["gold", "scheelite"];
+
+/**
  * Mega-function for customising materials.
  */
 export const customiseMaterials = () => {
@@ -107,6 +115,16 @@ export const customiseMaterials = () => {
         let mat = getMaterial(matName);
         if (!mat.hasFlag(GTMaterialFlags.GENERATE_ROUND)) {
             mat.addFlags(GTMaterialFlags.GENERATE_ROUND);
+        }
+    }
+
+    for (let matName of REMOVE_ORE_TAB) {
+        let mat = getMaterial(matName);
+        if (getOreProperty(mat) === null) {
+            console.warn(`Expected an ore property for material '${matName}'`);
+        } else {
+            mat.addFlags(GTMaterialFlags.NO_ORE_PROCESSING_TAB);
+            mat.addFlags(GTMaterialFlags.NO_ORE_SMELTING);
         }
     }
 

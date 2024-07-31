@@ -107,27 +107,33 @@ const addAutomaticMaterialRecipes = (event) => {
             }
         }
 
-        // auto-generate crushing wheel recipes for ores
-        if (material.hasProperty(PropertyKey.ORE) && id !== "gold") {
-            event.recipes.create
-                .crushing(`1x ${modId}:crushed_${id}_ore`, `1x #forge:raw_materials/${id}`)
-                .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
-            event.recipes.create
-                .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
-                .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
-
-            // weird if statement lets us combine everything into one chain rather than a nested
-            // if.
-            if (typeof BASE_ORES[id] !== "undefined") {
-                // pass
-            } else if (id === "redstone") {
-                event.recipes.create
-                    .splashing("1x minecraft:redstone", `1x ${modId}:impure_${id}_dust`)
-                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+        // automatic ore recipes:
+        // either 1) remove all ore processing as we'll do it ourselves
+        // or 2) add create crushing wheel recipes here.
+        if (material.hasProperty(PropertyKey.ORE)) {
+            if (material.hasFlag(GTMaterialFlags.NO_ORE_PROCESSING_TAB)) {
+                event.remove({ input: `#forge:crushed_ores/${material.getName()}` });
             } else {
                 event.recipes.create
-                    .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
-                    .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+                    .crushing(`1x ${modId}:crushed_${id}_ore`, `1x #forge:raw_materials/${id}`)
+                    .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
+                event.recipes.create
+                    .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
+                    .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
+
+                // weird if statement lets us combine everything into one chain rather than a nested
+                // if.
+                if (typeof BASE_ORES[id] !== "undefined") {
+                    // pass
+                } else if (id === "redstone") {
+                    event.recipes.create
+                        .splashing("1x minecraft:redstone", `1x ${modId}:impure_${id}_dust`)
+                        .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+                } else {
+                    event.recipes.create
+                        .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
+                        .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
+                }
             }
         }
 

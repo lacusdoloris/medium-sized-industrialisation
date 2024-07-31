@@ -192,6 +192,9 @@ export const addBallGrinderRecipes = (event) => {
             if (oreProp === null) return;
 
             addRawToCrushedRecipe(event, ballType, ballMaterial, material, oreProp);
+
+            // these have custom processing that we don't want to intrude on.
+            if (material.hasFlag(GTMaterialFlags.NO_ORE_PROCESSING_TAB)) return;
             addCrushedToImpure(event, ballType, ballMaterial, material, oreProp);
             addPurifiedToPureDust(event, ballType, ballMaterial, material, oreProp);
         });

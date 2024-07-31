@@ -44,8 +44,6 @@ export const addTungstenMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addTungstenRecipes = (event) => {
-    event.remove({ input: "gtceu:crushed_scheelite_ore" });
-    event.remove({ id: "gtceu:smelting/smelt_raw_scheelite_ore_to_ingot" });
     event.remove({ id: "gtceu:electrolyzer/tungstic_acid_electrolysis" });
     event.remove({ id: "gtceu:chemical_bath/tungstic_acid_from_tungstate" });
     event.remove({ id: "gtceu:chemical_bath/tungstic_acid_from_scheelite" });
