@@ -8,7 +8,6 @@ import { GasTier, nijikaId } from "../../shared/utils";
 import { createDustIntermediate } from "../../shared/materials/helpers";
 import { addIntegrationMaterials } from "./integrations";
 import { addChemicalMaterials } from "../../shared/chemicals";
-import { addSlagProcessingMaterials } from "../../server/misc/slag_processing";
 import { addGenericIonExchangerMaterials } from "../../server/machines/ion_exchanger";
 
 /**
@@ -17,7 +16,6 @@ import { addGenericIonExchangerMaterials } from "../../server/machines/ion_excha
 export const addCustomMaterials = (event) => {
     addIntegrationMaterials(event);
     addChemicalMaterials(event);
-    addSlagProcessingMaterials(event);
     addGenericIonExchangerMaterials(event);
 
     // misc stuff.

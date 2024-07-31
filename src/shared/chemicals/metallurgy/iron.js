@@ -19,6 +19,38 @@ export const addIronMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addMiscIronRecipes = (event) => {
+    // have to do this here instead of when tweaking materials to prevent the removal of magnetite
+    // to iron ingots.
+    event.remove({ id: "gtceu:smelting/dust_magnetite__dust_to_ingot" });
+
+    // Magnetite and hematite to iron and slag.
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_magnetite")
+        .itemInputs("32x #forge:crushed_ores/magnetite", "8x #nijika:carbon_rich_dusts")
+        .itemOutputs("24x gtceu:iron_dust", "8x nijika:slag")
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1700)
+        .duration(30 * 20)
+        .circuit(8);
+
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite")
+        .itemInputs("32x #forge:crushed_ores/hematite")
+        .itemOutputs("24x gtceu:iron_oxide_dust", "8x nijika:slag")
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1700)
+        .duration(30 * 20)
+        .circuit(8);
+
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite_reduction")
+        .itemInputs("32x #forge:raw_materials/hematite", "8x #nijika:carbon_rich_dusts")
+        .itemOutputs("24x gtceu:iron_dust", "8x nijika:slag")
+        .EUt(GTValues.VA[GTValues.MV])
+        .blastFurnaceTemp(1700)
+        .duration(30 * 20)
+        .circuit(18);
+
     // Reduction of Magnetite dust with hydrogen to pig iron:
     // Fe3O4 + 4 H2 = 3 Fe + 4 H2O
     event.recipes.gtceu

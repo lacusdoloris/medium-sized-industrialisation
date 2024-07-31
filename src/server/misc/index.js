@@ -5,7 +5,6 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import { rewriteRailwayRecipes } from "./railways";
-import { addSlagProcessingRecipes } from "./slag_processing";
 
 /**
  * Dumping ground for recipes that don't fit cleanly into other categories.
@@ -150,5 +149,4 @@ export const adjustVariousMiscRecipes = (event) => {
         .duration(10 * 20);
 
     rewriteRailwayRecipes(event);
-    addSlagProcessingRecipes(event);
 };
