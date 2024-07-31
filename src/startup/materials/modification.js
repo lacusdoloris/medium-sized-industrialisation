@@ -34,7 +34,9 @@ const DISABLE_DECOMPOSITION = [
     // Arsenic trioxide is flagged because it's only used as an intermediate for Arsenic
     // trichloride.
     "arsenic_trioxide",
+    // Alloys and such that you can't just separate.
     "hsla_steel",
+    "vanadium_steel",
     // Various misc materials.
     "barite",
 ];

@@ -86,6 +86,10 @@ Recipe Changes
     This reflects their change in position within the game, from the primitive blast furnace to the
     Bessemer Converter.
 
+- Tier 2 (MV) changes:
+
+    - Vanadium steel is now made from a mixture of iron, ferrochrome, and ferrovanadium.
+
 - Tier 3 (HV) changes:
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 

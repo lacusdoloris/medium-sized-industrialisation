@@ -21,6 +21,15 @@ export const addVanadiumMaterials = (event) => {
         "1x gtceu:oxygen",
         "3x gtceu:chlorine"
     );
+
+    event
+        .create(new ResourceLocation("nijika:ferrovanadium"))
+        .ingot()
+        .dust()
+        .color(0xc2cc9b)
+        .components("gtceu:iron", "gtceu:vanadium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_WORKING)
+        .iconSet(GTMaterialIconSet.DULL);
 };
 
 /**
@@ -41,6 +50,20 @@ export const addVanadiumChemicalChain = (event) => {
         .duration(30 * 20)
         .blastFurnaceTemp(1700);
 
+    // ferrovanadium production from iron oxide
+    // 3 Fe2O3 + 3 V2O5 + 16 Al = 6 FeV + 8 Al2O3
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier02/vanadium/ferrovanadium")
+        .itemInputs(
+            "3x #forge:dusts/iron_oxide",
+            "3x #forge:dusts/vanadium_pentoxide",
+            "16x #forge:dusts/aluminium"
+        )
+        .itemOutputs("6x gtceu:ferrovanadium_ingot", "8x gtceu:alumina_dust")
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(6 * 12 * 20)
+        .blastFurnaceTemp(1700);
+
     // Vanadiumsteel can be made in the Bessemer Converter as an alloy of chrome, iron, and
     // vanadium.
     event.remove({ id: "gtceu:mixer/vanadiumsteel" });
@@ -51,9 +74,9 @@ export const addVanadiumChemicalChain = (event) => {
     event.recipes.gtceu
         .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel")
         .itemInputs(
-            "47x #forge:ingots/iron",
-            "9x #forge:ingots/chromium",
-            "9x #forge:ingots/vanadium",
+            "46x #forge:ingots/iron",
+            "9x #forge:ingots/ferrochrome",
+            "9x #forge:ingots/ferrovanadium",
             "8x #nijika:bessemer_limestone"
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
@@ -65,9 +88,9 @@ export const addVanadiumChemicalChain = (event) => {
     event.recipes.gtceu
         .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_dusts")
         .itemInputs(
-            "47x #forge:dusts/iron",
-            "9x #forge:dusts/chromium",
-            "9x #forge:dusts/vanadium",
+            "46x #forge:dusts/iron",
+            "9x #forge:dusts/ferrochrome",
+            "9x #forge:dusts/ferrovanadium",
             "8x #nijika:bessemer_limestone"
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(2100 * FluidAmounts.MILLIBUCKET))
@@ -79,9 +102,9 @@ export const addVanadiumChemicalChain = (event) => {
     event.recipes.gtceu
         .bessemer_smelting("nijika:tier02/vanadium/vanadium_steel_from_blocks")
         .itemInputs(
-            "47x #forge:storage_blocks/iron",
-            "9x #forge:storage_blocks/chromium",
-            "9x #forge:storage_blocks/vanadium",
+            "46x #forge:storage_blocks/iron",
+            "9x #forge:storage_blocks/ferrochrome",
+            "9x #forge:storage_blocks/ferrovanadium",
             "64x #nijika:bessemer_limestone"
         )
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18900 * FluidAmounts.MILLIBUCKET))
