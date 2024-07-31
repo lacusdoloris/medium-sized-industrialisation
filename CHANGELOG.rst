@@ -101,6 +101,8 @@ Recipe Changes
 
   - Adjusted some of the ore sorter ores.
 
+  - HSLA steel now uses ferrovanadium instead of raw vanadium.
+
 Machine Changes
 ~~~~~~~~~~~~~~~
 

@@ -18,6 +18,7 @@ const MaterialStack = Java.loadClass(
 import { GT_MACHINE_TIERS } from "../../shared/definition";
 import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
 
+/** A list of materials to disable decomposition recipe generation for. */
 const DISABLE_DECOMPOSITION = [
     // Sulfur containing materials. These are roasted instead.
     "stibnite",
@@ -40,6 +41,9 @@ const DISABLE_DECOMPOSITION = [
     // Various misc materials.
     "barite",
 ];
+
+/** A list of materials to disable alloy blast furnace recipe generation for. */
+const DISABLE_ALLOY_BLAST_FURNACE = ["hsla_steel"];
 
 /** A list of materials to actually add dusts & ingots to. */
 const ADD_METALS = ["rhenium"];
@@ -128,6 +132,11 @@ export const customiseMaterials = () => {
             mat.addFlags(GTMaterialFlags.NO_ORE_PROCESSING_TAB);
             mat.addFlags(GTMaterialFlags.NO_ORE_SMELTING);
         }
+    }
+
+    for (let matName of DISABLE_ALLOY_BLAST_FURNACE) {
+        let mat = getMaterial(matName);
+        mat.addFlags(GTMaterialFlags.DISABLE_ALLOY_BLAST);
     }
 
     // remove chromium dust as a byproduct of chromite

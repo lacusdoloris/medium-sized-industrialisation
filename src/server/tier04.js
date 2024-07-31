@@ -33,9 +33,9 @@ export const doTier04Content = (event) => {
     event.recipes.gtceu
         .bessemer_smelting("nijika:tier04/hsla_steel")
         .itemInputs(
-            "32x #forge:storage_blocks/invar",
+            "28x #forge:storage_blocks/invar",
             "10x #forge:storage_blocks/titanium",
-            "10x #forge:storage_blocks/vanadium",
+            "10x #forge:storage_blocks/ferrovanadium",
             "12x #forge:storage_blocks/ferromolybdenum",
             "64x #nijika:bessemer_limestone"
         )
