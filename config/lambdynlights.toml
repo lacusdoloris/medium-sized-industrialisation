@@ -40,11 +40,14 @@
 				dynamite = true
 
 			[light_sources.settings.entities.create]
+				carriage_contraption = true
 				stationary_contraption = true
 				super_glue = true
 
 			[light_sources.settings.entities.littlelogistics]
+				tug = true
 				seater_car = true
 				steam_locomotive = true
 				fluid_car = true
+				seater_barge = true
 

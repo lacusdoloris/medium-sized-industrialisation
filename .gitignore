@@ -51,3 +51,5 @@ config/worldedit*
 config/moonlight*
 config/supplementaries*
 config/oculus.properties
+
+config/create-track-map.json
