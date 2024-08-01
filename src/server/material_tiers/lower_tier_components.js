@@ -33,7 +33,7 @@ export const applyHullcasingTiers = (event, tier) => {
         .duration(50);
 
     event
-        .shaped(`1x gtceu:${tier.name}_machine_hull`, ["SPS", "CHC"], {
+        .shaped(`2x gtceu:${tier.name}_machine_hull`, ["SPS", "CHC"], {
             S: tier.hullExtraPlate,
             P: tier.primaryPlate,
             C: tier.singleCable,
@@ -51,7 +51,7 @@ export const applyHullcasingTiers = (event, tier) => {
 export const rewriteMotorRecipes = (event, tier) => {
     event.remove({ id: `gtceu:shaped/electric_motor_${tier.name}` });
     event
-        .shaped(`1x gtceu:${tier.name}_electric_motor`, ["CWR", "WMW", "RWC"], {
+        .shaped(`2x gtceu:${tier.name}_electric_motor`, ["CWR", "WMW", "RWC"], {
             C: tier.singleCable,
             W: tier.doubleMotorWire,
             M: tier.magneticRod,
@@ -69,7 +69,7 @@ export const rewriteMotorRecipes = (event, tier) => {
             `2x ${tier.effectiveRodWithLVHardcode}`,
             `${tier.magneticRod}`
         )
-        .itemOutputs(`1x gtceu:${tier.name}_electric_motor`)
+        .itemOutputs(`4x gtceu:${tier.name}_electric_motor`)
         .EUt(30)
         .duration(100);
 };
@@ -86,7 +86,7 @@ export const rewritePistonRecipes = (event, tier) => {
 
     event.remove({ id: `gtceu:shaped/electric_piston_${tier.name}` });
     event
-        .shaped(`1x gtceu:${tier.name}_electric_piston`, ["PPP", "CRR", "CMG"], {
+        .shaped(`2x gtceu:${tier.name}_electric_piston`, ["PPP", "CRR", "CMG"], {
             P: tier.primaryPlate,
             C: tier.singleCable,
             R: tier.effectiveRodWithLVHardcode,
@@ -105,7 +105,7 @@ export const rewritePistonRecipes = (event, tier) => {
             `gtceu:${tier.name}_electric_motor`,
             gear.tagged("small_gears")
         )
-        .itemOutputs(`1x gtceu:${tier.name}_electric_piston`)
+        .itemOutputs(`4x gtceu:${tier.name}_electric_piston`)
         .EUt(30)
         .duration(100);
 };
@@ -122,7 +122,7 @@ export const rewriteConveyorRecipes = (event, tier) => {
     for (let rubber of tier.acceptableRubbers) {
         event.remove({ id: `gtceu:shaped/conveyor_module_${tier.name}_${rubber}` });
         event
-            .shaped(`gtceu:${tier.name}_conveyor_module`, ["RRR", "MCM", "RRR"], {
+            .shaped(`2x gtceu:${tier.name}_conveyor_module`, ["RRR", "MCM", "RRR"], {
                 R: `#forge:plates/${rubber}`,
                 M: `gtceu:${tier.name}_electric_motor`,
                 C: tier.singleCable,
@@ -134,7 +134,7 @@ export const rewriteConveyorRecipes = (event, tier) => {
             .assembler(`nijika:auto/${tier.name}/conveyor/${rubber}/assembler`)
             .itemInputs(tier.singleCable, `2x gtceu:${tier.name}_electric_motor`)
             .inputFluids(Fluid.of(`gtceu:${rubber}`).withAmount(844))
-            .itemOutputs(`1x gtceu:${tier.name}_conveyor_module`)
+            .itemOutputs(`4x gtceu:${tier.name}_conveyor_module`)
             .EUt(30)
             .duration(100);
     }
@@ -161,7 +161,7 @@ const rewritePumpRecipes = (event, tier) => {
                 `2x gtceu:${rubber}_ring`,
                 `gtceu:${tier.name}_electric_motor`
             )
-            .itemOutputs(`gtceu:${tier.name}_electric_pump`)
+            .itemOutputs(`4x gtceu:${tier.name}_electric_pump`)
             .EUt(30)
             .duration(100);
     }
@@ -178,7 +178,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
     event.remove({ id: `gtceu:assembler/robot_arm_${tier.name}` });
 
     event
-        .shaped(`gtceu:${tier.name}_robot_arm`, ["WWW", "MRM", "PCR"], {
+        .shaped(`2x gtceu:${tier.name}_robot_arm`, ["WWW", "MRM", "PCR"], {
             W: tier.singleCable,
             M: `gtceu:${tier.name}_electric_motor`,
             R: tier.primaryRod,
@@ -196,7 +196,7 @@ const rewriteRobotArmRecipes = (event, tier) => {
             `gtceu:${tier.name}_electric_piston`,
             tier.circuitTag
         )
-        .itemOutputs(`gtceu:${tier.name}_robot_arm`)
+        .itemOutputs(`4x gtceu:${tier.name}_robot_arm`)
         .EUt(30)
         .duration(100);
 };
@@ -213,7 +213,7 @@ const rewriteVoltageCoilRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/components/${tier.name}/voltage_coil`)
         .itemInputs(tier.magneticRod, `16x ${tier.materials.motorWire.tagged("fine_wires")}`)
-        .itemOutputs(`gtceu:${tier.name}_voltage_coil`)
+        .itemOutputs(`2x gtceu:${tier.name}_voltage_coil`)
         .circuit(1)
         .duration(10 * 20)
         // notably, the coil durations *are* based on tier.
@@ -231,7 +231,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
     event.remove({ id: `gtceu:assembler/sensor_${tier.name}` });
 
     event
-        .shaped(`gtceu:${tier.name}_sensor`, ["P G", "PR ", "CPP"], {
+        .shaped(`2x gtceu:${tier.name}_sensor`, ["P G", "PR ", "CPP"], {
             P: tier.primaryPlate,
             G: tier.materials.emitterGem,
             R: tier.materials.emitterRod.tagged("rods"),
@@ -247,7 +247,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
             tier.circuitTag,
             tier.materials.emitterGem
         )
-        .itemOutputs(`gtceu:${tier.name}_sensor`)
+        .itemOutputs(`4x gtceu:${tier.name}_sensor`)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
 
@@ -255,7 +255,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
     event.remove({ id: `gtceu:assember/emitter_${tier.name}` });
 
     event
-        .shaped(`gtceu:${tier.name}_emitter`, ["WRC", "RGR", "CRW"], {
+        .shaped(`2x gtceu:${tier.name}_emitter`, ["WRC", "RGR", "CRW"], {
             W: tier.singleCable,
             R: tier.materials.emitterRod.tagged("rods"),
             C: tier.circuitTag,
@@ -271,7 +271,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
             `2x ${tier.circuitTag}`,
             tier.materials.emitterGem
         )
-        .itemOutputs(`gtceu:${tier.name}_emitter`)
+        .itemOutputs(`4x gtceu:${tier.name}_emitter`)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20)
         .circuit(1);

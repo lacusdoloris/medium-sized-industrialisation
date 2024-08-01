@@ -47,6 +47,12 @@ Mod Changes
 Recipe Changes
 ~~~~~~~~~~~~~~
 
+- *Headliner*: Component recipes now give double their output. This removes a significant amount of
+  grind from the early game.
+
+  Specifically, they give twice their output from the crafting table, and four times their output 
+  from the assembler.
+
 - Some LCR recipes have been downgraded to just the Chemical Reactor.
 
 - Unified certain extraction mechanisms with a new Solvent Extraction Helper fluid.
