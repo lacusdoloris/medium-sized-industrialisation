@@ -102,7 +102,7 @@
 			description: [
 				"&aChromium&r (the material, not the fascist browser engine) is used for alloying throughout the early game tiers. This is another material with a complex refining chain from its raw ore (&dchromite&r) to its raw metal form."
 				""
-				"For our MV purposes, we need the &draw chromium metal&r for alloying (as opposed to ferrochrome, which is vastly simpler to make, but mostly useful for stainless steel). "
+				"For MV purposes, you will want both the &draw chromium fetal&r for &9ferrochrolumium&r, as well as &dferrochrome&r for alloying. They both come from reduction of Chromite."
 			]
 			id: "7BEE21DF23576B53"
 			tasks: [{
@@ -288,9 +288,11 @@
 				"7BEE21DF23576B53"
 			]
 			description: [
-				"&aVanadium Steel&r is a steel made from... vanadium. It has a 7:1:1 ratio of iron:chromium:vanadium. It's mostly useful for multiblock machines."
+				"&aVanadium Steel&r is a steel made from a mixture of iron, ferrovanadium, and ferrochrome."
 				""
-				"Vanadium is only found as a byproduct of &dslag&r processing, which is made from smelting &dmagnetite dust&r in a blast furnace, in the form of &dvanadium pentoxide&r. Better check EMI. "
+				"You can get &dferrovanadium&r from the aluminothermic reduction of vanadium pentoxide with iron oxide. You can get vanadium pentoxide as a byproduct of various ore processing steps or from reprocessing slags."
+				""
+				"Vanadium steel is mostly used for multiblock casings, of which you'll need a lot."
 			]
 			id: "641046C8A91952E9"
 			tasks: [{
