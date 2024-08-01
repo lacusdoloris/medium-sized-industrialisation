@@ -146,22 +146,16 @@ const cleanupGTCEuOreProcessingRecipes = (event) => {
     event.remove({ id: "gtceu:centrifuge/endstone_separation" });
 };
 
-/** @param {Internal.RecipesEventJS} event */
+/**
+ * Performs various miscellaneous cleanups that aren't covered by other files.
+ *
+ * @param {Internal.RecipesEventJS} event
+ */
 export const doCleanups = (event) => {
-    if (Platform.isLoaded("integrateddynamics")) {
-        event.remove({ id: "integrateddynamics:smelting/menril_log_coal" });
-        event.remove({ id: "integrateddynamics:smelting/menril_log_filled_coal" });
-        event.remove({ id: "integrateddynamics:blasting/menril_log_coal" });
-
-        event.remove({ type: "integrateddynamics:drying_basin" });
-        event.remove({ type: "integrateddynamics:mechanical_drying_basin" });
-        event.remove({ type: "integrateddynamics:squeezer" });
-        event.remove({ type: "integrateddynamics:mechanical_squeezer" });
-    }
-
     // why?
     event.remove({ id: "gtceu:centrifuge/lava_separation" });
 
+    event.remove({ input: /gtceu:prospector.*/ });
     event.remove({ id: "gtceu:arc_furnace/arc_prospector.luv" });
     event.remove({ id: "gtceu:macerator/macerate_prospector.luv" });
 
@@ -175,12 +169,6 @@ export const doCleanups = (event) => {
     event.remove({ output: /.*battery.*/, type: "gtceu:canner" });
 
     cleanupGTCEuOreProcessingRecipes(event);
-
-    // remove all circuit assembler recipes that use liquid tin. this keeps lead relevant
-    // throughout the entire game.
-    // requires a bit of a hack as KJS seemingly can't match on the fluid input?
-    // event.remove({input: "gtceu:tin", type: "gtceu:circuit_assembler"});
-    event.remove({ type: "gtceu:circuit_assembler", not: { id: /.*_soldering_alloy$/ } });
 
     if (MODPACK_SETTINGS.applyTierAdjustments) {
         // nuke all recycling recipes, they're mismatched to the wrong tier.

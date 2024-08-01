@@ -16,6 +16,15 @@
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustIntegratedDynamicsRecipes = (event) => {
+    event.remove({ id: "integrateddynamics:smelting/menril_log_coal" });
+    event.remove({ id: "integrateddynamics:smelting/menril_log_filled_coal" });
+    event.remove({ id: "integrateddynamics:blasting/menril_log_coal" });
+
+    event.remove({ type: "integrateddynamics:drying_basin" });
+    event.remove({ type: "integrateddynamics:mechanical_drying_basin" });
+    event.remove({ type: "integrateddynamics:squeezer" });
+    event.remove({ type: "integrateddynamics:mechanical_squeezer" });
+
     // first we need to actually re-add the menril processing lol!
     event.recipes.gtceu
         .centrifuge("nijika:mods/id/menril_chunk")
