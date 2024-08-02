@@ -4,6 +4,9 @@ Changelog
 Version 0.9: The Medium Sized Release
 --------------------------------------
 
+This is a release primarily focused around refining gameplay, as well as changing the worldgen
+core mod.
+
 Mod Changes
 ~~~~~~~~~~~
 
@@ -47,11 +50,17 @@ Mod Changes
 Recipe Changes
 ~~~~~~~~~~~~~~
 
-- *Headliner*: Component recipes now give double their output. This removes a significant amount of
+- *Headliner*: Component recipes now give a higher output. This removes a significant amount of
   grind from the early game.
 
   Specifically, they give twice their output from the crafting table, and four times their output 
   from the assembler.
+
+- *Headliner*: LV-EV circuit recipes now give double their output. This, likewise, removes a 
+  significant amount of grind from the early game.
+
+  Additionally, bolts in these recipes have been removed entirely. They added what was essentially
+  pointless microcrafting due to nearly all of the bolts only being used in a single circuit recipe.
 
 - Some LCR recipes have been downgraded to just the Chemical Reactor.
 

@@ -227,10 +227,12 @@
     "block.gtceu.clean_machine_casing": "Clean Vanadium-Steel Casing",
     "block.gtceu.kanthal_coil_block": "Ferrochrolumium Coil",
     "gtceu.machine.pyrolyse_oven.tooltip.1": "§6Cupronickel §7coils are §f25%%§7 slower. Every coil after §bFerrochrolumium§7 increases speed by §f50%%§7.",
-
+    
     "item.gtceu.lv_cadmium_battery": "Small Nickel-Cadmium Battery",
     "item.gtceu.mv_cadmium_battery": "Medium Nickel-Cadmium Battery",
     "item.gtceu.hv_cadmium_battery": "Large Nickel-Cadmium Battery",
+
+    "item.gtceu.resin_printed_circuit_board": "Stripboard",
 
     "item.cheese.cheese_and_crackers": "§eMoon Cheese§r",
     "item.cheese.grilled_cheese": "§eGrilled (End) Cheese§r",

@@ -216,13 +216,6 @@ export const doTier00Content = (event) => {
         })
         .id("nijika:tier00/less_cbt_vacuum_tube");
 
-    // finally, fix circuits.
-    event.replaceInput(
-        { id: "gtceu:shaped/electronic_circuit_lv" },
-        "#forge:plates/steel",
-        "#forge:plates/wrought_iron"
-    );
-
     event
         .shapeless("5x gtceu:corinthian_bronze_dust", [
             "4x #forge:dusts/copper",

@@ -15,6 +15,7 @@ import { adjustGtGeneratorTiers } from "./generators";
 import { adjustMultiblockComponentsForTier } from "./multiblock";
 import { getToolProperty, iterateOverAllMaterials } from "../../shared/utils";
 import { BASE_ORES } from "../../shared/ores/bocchi";
+import { adjustCircuitRecipes } from "./circuits";
 
 const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
@@ -248,6 +249,7 @@ export const adjustMaterialTierRecipes = (event) => {
     fixLensRecipes(event);
     adjustGtGeneratorTiers(event);
     adjustSuperChestRecipes(event);
+    adjustCircuitRecipes(event);
 
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
         adjustMachineRecipesForTier(event, tier);
