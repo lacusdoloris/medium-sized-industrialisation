@@ -95,4 +95,35 @@ export const addOrganicChemRecipes = (event) => {
         )
         .EUt(GTValues.VA[GTValues.EV])
         .duration(2 * 20 + 10);
+
+    // water-gas shift reaction, fast hydrogen from natural gas
+    event.remove({ id: "gtceu:chemical_reactor/carbon_dioxide_from_methane" });
+
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/water_gas_shift_hydrogen_from_raw_gas")
+        .inputFluids(
+            Fluid.of("gtceu:refinery_gas").withAmount(1500 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:steam").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(8 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(7 * 20 + 10)
+        .circuit(8);
+
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/water_gas_shift_hydrogen_from_methane")
+        .inputFluids(
+            Fluid.of("gtceu:methane").withAmount(1000 * FluidAmounts.MB),
+            Fluid.of("gtceu:steam").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(8 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+        .circuit(8);
 };
