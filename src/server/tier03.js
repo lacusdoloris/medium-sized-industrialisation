@@ -110,6 +110,13 @@ export const doTier03Content = (event) => {
     event.remove({ id: "gtceu:gas_collector/ender_air" });
 
     event.recipes.gtceu
+        .mixer("nijika:tier03/mixed_dimensional_shards")
+        .itemInputs("gtceu:emerald_dust", "gtceu:netherrack_dust")
+        .itemOutputs("1x gtceu:dimensional_shard_dust")
+        .EUt(GTValues.VH[GTValues.LV])
+        .duration(10);
+
+    event.recipes.gtceu
         .mixer("nijika:tier03/ender_air")
         .itemInputs("4x gtceu:dimensional_shard_dust")
         .inputFluids(Fluid.of("gtceu:air").withAmount(2 * FluidAmounts.BUCKET))

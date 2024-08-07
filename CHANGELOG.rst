@@ -45,7 +45,12 @@ Mod Changes
 
   - Light Fuel can be burnt inside the diesel engines. This makes pumpjacks nicely self-sufficient.
 
-- Snad has been added.
+- A number of previously provided by default mods have been removed to slim down the pack 
+  footprint. The tweaker scripts for these mods will continue to exist and adding them to the pack
+  continues to be officially supported.
+
+  These mods are Integrated Dynamics (and friends), Modular Routers, Pretty Pipes, More Red, 
+  RFTools, Map Atlases, Create: New Age and Scannable.
 
 Recipe Changes
 ~~~~~~~~~~~~~~

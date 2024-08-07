@@ -1,14 +1,4 @@
 {
-    "1Zu0uTEE": {
-        "checksum": "fd5096cd6cc6cb1eb71f7d888c5101e75b9966210f0393c61953e3c6ca4f4dc8f2bfb83dceaf28ae374ef91321a0605940cb073c444b2d7036220bd9f9897a39",
-        "client_side_only": false,
-        "name": "McJtyLib",
-        "pinned": false,
-        "project_id": "1Zu0uTEE",
-        "selected": false,
-        "version": "1.20-8.0.5",
-        "version_id": "xIiulPos"
-    },
     "1eAoo2KR": {
         "checksum": "fe2ac7569c539b5810cd5fd58e45ebe83a9ea14e235f1f3361d15d62c2f62edf18915794754ee54e108773c11ac8c557a45b36aedc3d352c92dce21e3dc96352",
         "client_side_only": true,
@@ -88,16 +78,6 @@
         "selected": true,
         "version": "1.2.18+1.20.4-forge",
         "version_id": "XgQjD9fF"
-    },
-    "7n3HbHSE": {
-        "checksum": "019dcc77ca02507047a20d9e25bf5f538a637d6e22569882d8456f2e0123e729627246faa071a6337b1452160ad6a6c9b18cfade9c34ed18266fd79ea5c7c8b8",
-        "client_side_only": false,
-        "name": "RFTools Utility",
-        "pinned": false,
-        "project_id": "7n3HbHSE",
-        "selected": true,
-        "version": "1.20-6.0.6",
-        "version_id": "t0uY61gM"
     },
     "7tG215v7": {
         "checksum": "c7dc9ad66b12a0020d0d01bd971e7768fffecb2c3becafce6964e4cf318a3f44ffc3c5a3fdf528023e3ad0eb3cfb66ed88558f42e089ce75858c216f756d07dd",
@@ -179,26 +159,6 @@
         "version": "2.4.0",
         "version_id": "qlDt4clF"
     },
-    "C255PPUX": {
-        "checksum": "f51df4895a532ca332ec213a0d9cfd385012e7030291529ca5c9ba915910330b1c75162aef55c593750180ee0e9b229d6f1482fb09f2795f3300464a665053f6",
-        "client_side_only": false,
-        "name": "Map Atlases",
-        "pinned": false,
-        "project_id": "C255PPUX",
-        "selected": true,
-        "version": "2.6.0",
-        "version_id": "e9Az4uaX"
-    },
-    "DQjhR62z": {
-        "checksum": "7bd4eabb02a13ed3c92394b5eb7bd40d265238e2109d098b633b21f319a764d6caa2bd29e92d26100d2b78ef80bae4e2b08174e08eb4ca3ac4c4c3ee5f96ef92",
-        "client_side_only": false,
-        "name": "RFTools Control",
-        "pinned": false,
-        "project_id": "DQjhR62z",
-        "selected": true,
-        "version": "1.20-7.0.2",
-        "version_id": "86sZOj88"
-    },
     "DYtfQEYj": {
         "checksum": "47599aff77955cfee4f458088a7bc2cd91f7c9c9e70a0afb42c0a23f3c316237a69002f33b38cad756c58a0ffd2762edfbad41f779bc495953b6d0d05585e003",
         "client_side_only": false,
@@ -208,36 +168,6 @@
         "selected": true,
         "version": "3.7",
         "version_id": "BzwWTsxS"
-    },
-    "Etqy1Omb": {
-        "checksum": "b5b660bfa12f2e683f8d8f0470ad695932a3b4ac1556ff7c1eaefea6ae9b35735fb9d4e7a8c3951f93bb166584afa92f041c0fbb668018aa8f44f460e3566c98",
-        "client_side_only": false,
-        "name": "Integrated Tunnels",
-        "pinned": false,
-        "project_id": "Etqy1Omb",
-        "selected": true,
-        "version": "1.20.1-1.8.29",
-        "version_id": "gFVIa81Z"
-    },
-    "EuTS81Z3": {
-        "checksum": "5281f7910a9b2d8ea49499894656a43d4180a591383c9cf0ecce755537d21b2da6d49c9f1b624d9325f94a7d6c5789d5e74eae0bbece2ccb7da9030f059d17da",
-        "client_side_only": false,
-        "name": "Modular Routers",
-        "pinned": false,
-        "project_id": "EuTS81Z3",
-        "selected": true,
-        "version": "12.1.1",
-        "version_id": "3QDNtJUd"
-    },
-    "FTeXqI9v": {
-        "checksum": "b9c785d6d2385f12864db2ed8a232ca5284c7d19249ba90c8f6d142988d8249a65d4fb9308858af26a36eff16b820a40f3346c566d89b61fe26ef0cbc83bc71f",
-        "client_side_only": false,
-        "name": "Create: New Age",
-        "pinned": false,
-        "project_id": "FTeXqI9v",
-        "selected": true,
-        "version": "1.1.1",
-        "version_id": "rvYVvldk"
     },
     "FWtAXlpg": {
         "checksum": "468dadae5df820ce4b67eb503767ae042ae101fa78d58986d9b986aeca4517fd355d74ca35c522afa38ba6a3c6d5d07c6dd187139ac7d43c8f1ae505fe895e6b",
@@ -288,16 +218,6 @@
         "selected": true,
         "version": "1.11.0+kotlin.2.0.0",
         "version_id": "afsFajDC"
-    },
-    "HmLJoQ1K": {
-        "checksum": "6be91532a3fe9c7b0dc85ae6a526654246662edad7702c088796eab06872f2e52048de66dd89bb073afd30c3a4c91ff237d93eb7e458e20f838517f2d79a72d6",
-        "client_side_only": false,
-        "name": "Integrated Terminals",
-        "pinned": false,
-        "project_id": "HmLJoQ1K",
-        "selected": true,
-        "version": "1.20.1-1.4.16",
-        "version_id": "efGP9Z2n"
     },
     "IhBYAM6m": {
         "checksum": "4e1d6b6454c13006cdd78f5e8f47bde7c0fce1f5d455e991506e72f529153f7b54454c932c081339844f9b9098e227133de45011f3d0f0bbfd6b9378fb321c0f",
@@ -429,16 +349,6 @@
         "version": "2001.2.5-build.2+forge",
         "version_id": "hei9cDRa"
     },
-    "UxYNfnfx": {
-        "checksum": "61fb2a73131fdfa5de73b5ed85ef381555f9b6ab6267097494af240666f40cb6fa65d54358e03b013d0a9875f94940401d23f2049cdb537253862862eef9f4bc",
-        "client_side_only": false,
-        "name": "More Red",
-        "pinned": false,
-        "project_id": "UxYNfnfx",
-        "selected": true,
-        "version": "4.0.0.4",
-        "version_id": "nmvr3DB5"
-    },
     "VYRu7qmG": {
         "checksum": "0a97c9fbdcbee7af776ed1a55a89bce42d207534e8213a85767c7b93eff76c26e47a66f4fbb35030b2f18c929a4466b67105ab6409c8204e98da270da073b694",
         "client_side_only": false,
@@ -469,16 +379,6 @@
         "version": "2.4.6",
         "version_id": "5lXIJiba"
     },
-    "XExdLWCQ": {
-        "checksum": "fb6a373ffb84674707c975fe9b9c6493be25ca60fd126b3c48bfeacfc5cb74cc44bd9a8c58b5256c40dfcf4c27272900034fdf257c255cd8234a2db5ae67f61b",
-        "client_side_only": false,
-        "name": "Pretty Pipes",
-        "pinned": false,
-        "project_id": "XExdLWCQ",
-        "selected": true,
-        "version": "1.15.0",
-        "version_id": "LqsTdtjN"
-    },
     "YOs4tZea": {
         "checksum": "6f847db449177235171c1363e77878cda6059aad3d8278257aff0bbf5a6eae2b6c6fa065528bdbb29e772ed7efe902a96c4987d1bcbf3fb0b7faf8fc8714a498",
         "client_side_only": false,
@@ -498,26 +398,6 @@
         "selected": true,
         "version": "1.6.4",
         "version_id": "YhueAXpz"
-    },
-    "YqFnwJHf": {
-        "checksum": "a8406e56f021d8358d36cb5bb06ed38e5de62c9f7f59d0d10e46f3121a8cb7c13bd1dee38f95890bf9bc41bd51f6ac1f39abad27d574863c3b8d968977126c79",
-        "client_side_only": false,
-        "name": "Scannable",
-        "pinned": false,
-        "project_id": "YqFnwJHf",
-        "selected": true,
-        "version": "MC1.20.1-forge-1.7.12",
-        "version_id": "2FlwUOgm"
-    },
-    "Z9DM0LJ4": {
-        "checksum": "95c601842f59a3aa5be2f786500be208bb88628523e3e364bf718d734d7f4e502379468eef338948e2d9ae04f09ec21fd8d5beab28374c2a4e35f6e1e01538bb",
-        "client_side_only": false,
-        "name": "Cyclops Core",
-        "pinned": false,
-        "project_id": "Z9DM0LJ4",
-        "selected": false,
-        "version": "1.20.1-1.19.4",
-        "version_id": "NdjbWutu"
     },
     "ZM3tt6p1": {
         "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
@@ -569,16 +449,6 @@
         "version": "0.3.1+1.20.1",
         "version_id": "ETlZbcSR"
     },
-    "e0IclJLr": {
-        "checksum": "442b870618f309f71fa3172eba18ed893d593136007de277072cd0453cafe8a5d2fb92a015155ef0a9a65866ab729a98d849b12191bc058db693c8a4cab1f287",
-        "client_side_only": false,
-        "name": "RFTools Builder",
-        "pinned": false,
-        "project_id": "e0IclJLr",
-        "selected": true,
-        "version": "1.20-6.0.5",
-        "version_id": "1TsVpRht"
-    },
     "fALzjamp": {
         "checksum": "f27d5e0ccd6772f676ff1fbd7d713c3ec03f3176314d57e3e479c21568643ae120843d655d1314ffc6985b5052766fef3ea43d47da3a762ca9cc43a3ee959e01",
         "client_side_only": false,
@@ -628,16 +498,6 @@
         "selected": true,
         "version": "1.7.5",
         "version_id": "vNOYdEJg"
-    },
-    "hIO8IsD8": {
-        "checksum": "d485a4c944bc2217bba057b716866677cc13c3d0347249faf9c25b0706de63784ba98a2228e11d634d2a383a32810580ea6751bc1c2ffd3c8759a4b987fea8b2",
-        "client_side_only": false,
-        "name": "RFTools Base",
-        "pinned": false,
-        "project_id": "hIO8IsD8",
-        "selected": false,
-        "version": "1.20-5.0.4",
-        "version_id": "aSq3dAzO"
     },
     "ihpnEd80": {
         "checksum": "e89a0b275563baf19cb9f1b6e59e70c5b4afc172fb515037a7bae04979e100ab01fcab0cb368ba5d0338f00c313ef740c284599fa4860a073ba2d6704f4f78aa",
@@ -739,16 +599,6 @@
         "version": "1.1.1",
         "version_id": "ievlqjaq"
     },
-    "oFXrCkDI": {
-        "checksum": "d1a08d90442d8c18954c78382135a41012e795e17ff385055cc1d7d1343f32f26830f40faeca6ab26248cc57a8fdea1e549eb1ba516c396b9db78dbbb4eae507",
-        "client_side_only": false,
-        "name": "Common Capabilities",
-        "pinned": false,
-        "project_id": "oFXrCkDI",
-        "selected": false,
-        "version": "1.20.1-2.9.1",
-        "version_id": "BTl7Q7EH"
-    },
     "oY2B1pjg": {
         "checksum": "5a040831b0c06dd1afe3935a8eadcbed0997118217a5c01aeb189ce9b2ca891270f7ae49adbb581c0b266f821506f6ca3d301056f85efd7ca597fdfc6f98cda1",
         "client_side_only": true,
@@ -778,16 +628,6 @@
         "selected": true,
         "version": "0.6.5+1.20.1+forge",
         "version_id": "91c49w5V"
-    },
-    "qwpACdla": {
-        "checksum": "7d6eee05cc62b008a59961c0475feaee9ab3fb0df35f6abd13dbb81205332b270acc5c7a436539c8fb24258433dcf15cd7f9e4f07e8b23c678403d75a4511cda",
-        "client_side_only": false,
-        "name": " Integrated Crafting",
-        "pinned": false,
-        "project_id": "qwpACdla",
-        "selected": true,
-        "version": "1.20.1-1.1.7",
-        "version_id": "lVNokfA4"
     },
     "r0v8vy1s": {
         "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
@@ -838,16 +678,6 @@
         "selected": true,
         "version": "1.20.1-8d",
         "version_id": "v4GEo93Y"
-    },
-    "tx4M6qRg": {
-        "checksum": "ad39af8cb0834a72adca12b5e8baad61d4ab1104b88e545887bd9ee39ad556396b8b05ddd6c6401dc582892d099d293a43d7e1058f4561a4a43900fb6a1500b6",
-        "client_side_only": false,
-        "name": "RFTools Storage",
-        "pinned": false,
-        "project_id": "tx4M6qRg",
-        "selected": true,
-        "version": "1.20-5.0.3",
-        "version_id": "Ddl2B7wC"
     },
     "u58R1TMW": {
         "checksum": "30dd90593359d17e69212580d4754d8ce1dfff217d6a4dcbdd748da162a2d58baa44800149107d0e4c936cc75374107a1c9ccd72c7cff89e8b33383084e21847",
@@ -938,15 +768,5 @@
         "selected": true,
         "version": "2.3.2+1.20.1",
         "version_id": "mYl4RvKg"
-    },
-    "yYzdQHJI": {
-        "checksum": "ffc7785565a54d041dadcc8183de6c1eccf3b2adb714884f000158ad350de769ea3099ac2ac53dede1a9ad6538622a9fe386c5860a54c2f6e142535a04a331ad",
-        "client_side_only": false,
-        "name": "Integrated Dynamics",
-        "pinned": false,
-        "project_id": "yYzdQHJI",
-        "selected": true,
-        "version": "1.20.1-1.22.2",
-        "version_id": "lLziDIar"
     }
 }

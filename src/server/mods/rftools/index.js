@@ -14,13 +14,6 @@ import { GT_MACHINE_TIERS } from "../../../shared/definition";
 export const adjustRfToolsRecipes = (event) => {
     event.remove({ id: "rftoolsbase:dimensionalshard" });
 
-    event.recipes.gtceu
-        .mixer("nijika:mods/rftools/dimensional_shard_dust")
-        .itemInputs("gtceu:emerald_dust", "gtceu:netherrack_dust")
-        .itemOutputs("1x gtceu:dimensional_shard_dust")
-        .EUt(GTValues.VH[GTValues.LV])
-        .duration(10);
-
     // no implosion compressor in LV and below...
     event.recipes.gtceu
         .autoclave("nijika:mods/rftools/dimensional_shard")

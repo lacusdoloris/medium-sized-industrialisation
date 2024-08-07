@@ -10,13 +10,16 @@
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustAe2MaterialsRecipes = (event) => {
-    event.recipes.gtceu
-        .chemical_bath("nijika:mods/ae2/certus_quartz_dust")
-        .itemInputs("2x #forge:dusts/quartzite")
-        .inputFluids(Fluid.of("integrateddynamics:menril_resin").withAmount(2 * FluidAmounts.INGOT))
-        .itemOutputs("2x gtceu:certus_quartz_dust")
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(5 * 20);
+
+    if (Platform.isLoaded("integrateddynamics")) {
+        event.recipes.gtceu
+            .chemical_bath("nijika:mods/ae2/certus_quartz_dust")
+            .itemInputs("2x #forge:dusts/quartzite")
+            .inputFluids(Fluid.of("integrateddynamics:menril_resin").withAmount(2 * FluidAmounts.INGOT))
+            .itemOutputs("2x gtceu:certus_quartz_dust")
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(5 * 20);
+    }
 
     // add recipes for fluix
     event.recipes.gtceu

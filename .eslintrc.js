@@ -91,5 +91,6 @@ module.exports = {
         ToolProperty: "readonly",
         GTToolType: "readonly",
         Utils: "readonly",
+        ClientEvents: "readonly",
     },
 };

@@ -75,6 +75,8 @@ const MOD_TWEAKER_FUNCTIONS = {
                 .duration(11 * 20);
         }
     },
+    rftoolsbase: adjustRfToolsRecipes,
+    integrateddynamics: adjustIntegratedDynamicsRecipes,
 };
 
 /**
@@ -84,10 +86,8 @@ const MOD_TWEAKER_FUNCTIONS = {
  */
 export const doModRecipes = (event) => {
     adjustCreateRecipes(event);
-    adjustRfToolsRecipes(event);
 
     // not optional due to worldgen.
-    adjustIntegratedDynamicsRecipes(event);
     adjustCreateOreExcavationRecipes(event);
 
     for (let [name, fn] of Object.entries(MOD_TWEAKER_FUNCTIONS)) {
