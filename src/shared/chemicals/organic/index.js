@@ -102,7 +102,7 @@ export const addOrganicChemRecipes = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/water_gas_shift_hydrogen_from_raw_gas")
         .inputFluids(
-            Fluid.of("gtceu:refinery_gas").withAmount(1500 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:refinery_gas").withAmount(1500 * FluidAmounts.MB),
             Fluid.of("gtceu:steam").withAmount(2 * FluidAmounts.BUCKET)
         )
         .outputFluids(
