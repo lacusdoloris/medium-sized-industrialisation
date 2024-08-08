@@ -5,6 +5,10 @@ localpack.toml
 *.zip
 *.mrpack
 
+.pdm-python
+.venv/
+docs/build
+
 kubejs/server_scripts/index.js
 kubejs/startup_scripts/index.js
 kubejs/client_scripts/index.js

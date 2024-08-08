@@ -1,0 +1,21 @@
+[project]
+name = "bigger-industrialisation"
+version = "0.7.0"
+description = "Medium sized industrialisation"
+authors = [
+    {name = "Lura Skye", email = "fuyukaii@proton.me"},
+]
+dependencies = []
+requires-python = "*"
+readme = "README.rst"
+license = {text = "MPL-2.0"}
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "sphinx>=7.1.2",
+    "sphinx-rtd-theme>=2.0.0",
+    "sphinx-inline-tabs>=2023.4.21",
+]
