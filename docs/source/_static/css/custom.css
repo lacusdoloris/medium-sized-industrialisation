@@ -19,9 +19,11 @@ p, li, strong, em, a {
 }
 
 /* get rid of annoying list margins */
-.rst-content .section ol li > *, .rst-content .section ul li > * {
+div.toctree-wrapper ul ul, div.toctree-wrapper ol ol {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
+
 
 .wy-nav-content {
     max-width: 900px;

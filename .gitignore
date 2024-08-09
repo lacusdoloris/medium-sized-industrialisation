@@ -8,6 +8,7 @@ localpack.toml
 .pdm-python
 .venv/
 docs/build
+.pdm-build
 
 kubejs/server_scripts/index.js
 kubejs/startup_scripts/index.js
@@ -21,8 +22,9 @@ config/indium-renderer.properties
 logs/*
 !logs/.gitkeep
 
-.vscode
+.vscode/*
 !.vscode/settings.json
+!.vscode/extensions.json
 # auto-generated from FTB quests
 config/heracles
 

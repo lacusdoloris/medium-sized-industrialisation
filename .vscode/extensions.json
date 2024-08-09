@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "tamasfe.even-better-toml",
+        "mrmlnc.vscode-json5",
+        "dbaeumer.vscode-eslint",
+    ],
+    "unwantedRecommendations": []
+}

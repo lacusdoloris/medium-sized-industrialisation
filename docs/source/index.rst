@@ -9,17 +9,15 @@ Bigger Industrialisation
 This is the additional documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
 focused around industrial chemistry.
 
+.. toctree::
+   :maxdepth: 2
+   :caption: End-User Documentation
 
+   user/installation.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Developer Documentation
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   dev/kamuidrome.rst
+   dev/bundler.rst

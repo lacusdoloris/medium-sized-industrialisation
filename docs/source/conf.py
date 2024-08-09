@@ -6,14 +6,12 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import subprocess
+from importlib.metadata import version as get_version
 
 project = "Bigger Industrialisation"
 copyright = "2024, Lura Skye"
 author = "Lura Skye"
-release = subprocess.check_output(
-    ["git", "describe", "HEAD"]
-).decode("utf-8").removesuffix("\n")
+release = get_version("bigger-industrialisation")
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
