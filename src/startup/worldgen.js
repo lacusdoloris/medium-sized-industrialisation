@@ -12,11 +12,17 @@ export const adjustWorldgenRemovals = (event) => {
     // reasonably sure GTCEu itself takes care of deleting the vanilla ones
 
     if (Platform.isLoaded("create_new_age")) {
-        event.removeFeatureById("underground_ores", ["create_new_age:magnetite", "create_new_age:ore_thorium"]);
+        event.removeFeatureById("underground_ores", [
+            "create_new_age:magnetite",
+            "create_new_age:ore_thorium",
+        ]);
     }
 
     if (Platform.isLoaded("rftoolsbase")) {
-        event.removeFeatureById("underground_ores", [        "rftoolsbase:dimshard_dimensions", "rftoolsbase:dimshard_overworld",])
+        event.removeFeatureById("underground_ores", [
+            "rftoolsbase:dimshard_dimensions",
+            "rftoolsbase:dimshard_overworld",
+        ]);
     }
 
     event.removeFeatureById("underground_ores", [
