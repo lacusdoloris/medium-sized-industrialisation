@@ -18,12 +18,6 @@ p, li, strong, em, a {
     font-family: "Cabin" !important;
 }
 
-/* get rid of annoying list margins */
-div.toctree-wrapper ul ul, div.toctree-wrapper ol ol {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
 
 .wy-nav-content {
     max-width: 900px;
