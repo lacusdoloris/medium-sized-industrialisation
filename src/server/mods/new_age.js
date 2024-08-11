@@ -26,25 +26,26 @@ export const adjustCreateNewAgeRecipes = (event) => {
     event.remove({ type: "create_new_age:energising" });
 
     event
-        .shaped("4x create_new_age:magnetite_block", ["FFF", "FIF", "FFF"], {
+        .shaped("4x create_new_age:redstone_magnet", ["WFW", "FIF", "WFW"], {
             F: "#forge:foils/magnetic_iron",
             I: "#forge:storage_blocks/iron",
+            W: "gtceu:red_alloy_single_wire"
         })
-        .id("nijika:mods/new_age/basic_magnet");
-
-    event.recipes.gtceu
-        .assembler("nijika:mods/new_age/redstone_magnet")
-        .itemInputs("1x create_new_age:magnetite_block", "4x gtceu:red_alloy_single_wire")
-        .itemOutputs("create_new_age:redstone_magnet")
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(40);
+        .id("nijika:mods/new_age/weak_magnet");
 
     event
         .shaped("1x create_new_age:fluxuated_magnetite", ["FFF", "FMF", "FFF"], {
-            F: "#forge:foils/magnetic_neodymium",
-            M: "create_new_age:magnetite_block",
+            F: "#forge:foils/magnetic_steel",
+            M: "create_new_age:redstone_magnet",
         })
         .id("nijika:mods/new_age/fluxated_magnet");
+
+    event
+        .shaped("1x create_new_age:netherite_magnet", ["FFF", "FMF", "FFF"], {
+            F: "#forge:foils/magnetic_neodymium",
+            M: "create_new_age:fluxuated_magnetite",
+        })
+        .id("nijika:mods/new_age/strong_magnet");
 
     event.remove({ id: "create_new_age:shaped/generator_coil" });
     event

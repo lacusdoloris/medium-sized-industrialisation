@@ -241,9 +241,9 @@
 
     "item.create.sand_paper": "Sandpaper",
 
-    "block.create_new_age.magnetite_block": "Basic Magnet",
-    "block.create_new_age.redstone_magnet": "Red Alloy Magnet",
-    "block.create_new_age.fluxuated_magnetite": "Fluxated Magnet",
+    "block.create_new_age.redstone_magnet": "Weak Magnet",
+    "block.create_new_age.fluxuated_magnetite": "Medium Magnet",
+    "block.create_new_age.netherite_magnet": "Strong Magnet",
 
     "block.create.brass_casing": "Copper Alloy Casing",
     "block.create.brass_funnel": "Copper Alloy Funnel",
