@@ -49,6 +49,14 @@ const MOD_TWEAKER_FUNCTIONS = {
     modularrouters: adjustModularRouterRecipes,
     pack_it_up: adjustPackItUpRecipes,
     prettypipes: adjustPrettyPipesRecipes,
+    reinfchest: (event) => {
+        event
+            .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {
+                I: "#forge:ingots/corinthian_bronze",
+                C: "reinfchest:iron_chest",
+            })
+            .id("reinfchest:gold_chest");
+    },
     rftoolsbase: adjustRfToolsRecipes,
     snad: (event) => {
         event.remove({ mod: "snad" });
@@ -97,18 +105,4 @@ export const doModRecipes = (event) => {
             fn(event);
         }
     }
-
-    event
-        .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {
-            I: "#forge:ingots/corinthian_bronze",
-            C: "reinfchest:iron_chest",
-        })
-        .id("reinfchest:gold_chest");
-
-    // why doesn't this work!
-    event.replaceInput(
-        { type: "morered:soldering" },
-        "morered:red_alloy_ingot",
-        "gtceu:red_alloy_ingot"
-    );
 };

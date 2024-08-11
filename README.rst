@@ -51,24 +51,7 @@ Unlike a lot of packs, Applied Energistics 2 is not included by default. BI come
 integration for AE2 and Mega Cells (moving them up to LV and EV, respectively) if you choose to
 install it.
 
-User Installation Guide
------------------------
 
-Bigger Industrialisation is published on `Modrinth`_. You can download both the client and 
-server-only packs there, or install it through your launcher.
-
-You can get the latest tagged release from `the releases page <https://github.com/Fuyukai/bigger-industrialisation/releases>`__
-and the latest development builds `from here <https://nightly.link/Fuyukai/bigger-industrialisation/workflows/ci/mizuki>`__.
-Import the zip into your launcher and all of the required mods will be downloaded.
-
-Server Installation Guide
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You'll need to install (Neo)Forge (47.1.3 for legacy forge) yourself, but you can use 
-`this <https://github.com/nothub/mrpack-install>`__ tool to install the server-only ``mrpack`` 
-file.
-
-Make sure to set the world type to ``bigglobe\:bigglobe`` in your ``server.properties``.
 
 Important Info
 ~~~~~~~~~~~~~~

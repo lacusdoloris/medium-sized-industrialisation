@@ -9,6 +9,9 @@ Bigger Industrialisation
 This is the documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
 focused around industrial chemistry using `GregTech CEu Modern`_.
 
+You should read the :ref:`user-installation` section before playing the pack for important
+information!
+
 Philosophy
 ----------
 
@@ -36,6 +39,7 @@ This is the documentation you want if you're a player of the pack.
    :maxdepth: 2
    :caption: End-User Documentation
 
+   user/regular-installation.rst
    user/dev-installation.rst
    user/mods.rst
 

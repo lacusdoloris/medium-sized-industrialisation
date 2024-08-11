@@ -26,7 +26,7 @@ Removing one of these mods voids any support you might get.
 | [Integrated Dynamics]            | ❌                    | Minimal; needs work, but it's functional.                                       |
 | [Little Logistics]               | ✅                    | Semi; available across tier 0 and LV. Energy tugs/locomotives not yet balanced. |
 | [Mega Cells]                     | ❌                    | Full; requires AE2.                                                             |
-| [Modular Routers]                | ✅                    | Full; available at the HV tier.                                                 |
+| [Modular Routers]                | ❌                    | Full; available at the HV tier.                                                 |
 | [Pack it Up]                     | ✅                    | Full.                                                                           |
 | [Pretty Pipes]                   | ❌                    | Full; available at the LV tier.                                                 |
 | [Reinforced Chests]              | ✅                    | Full; only one recipe needed changing.                                          |
