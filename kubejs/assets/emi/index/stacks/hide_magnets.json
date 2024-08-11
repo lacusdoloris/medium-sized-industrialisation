@@ -1,0 +1,6 @@
+{
+    "filters": [
+        "create_new_age:magnetite_block",
+        "create_new_age:layered_magnet"
+    ]
+}
