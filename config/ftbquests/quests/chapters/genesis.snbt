@@ -125,6 +125,7 @@
 				}
 			}
 			id: "479B9A742EB15E47"
+			optional: true
 			rewards: [{
 				id: "0908A0262E2FF9DE"
 				item: {

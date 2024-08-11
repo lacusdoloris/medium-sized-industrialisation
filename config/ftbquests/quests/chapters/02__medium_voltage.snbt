@@ -6,7 +6,7 @@
 	group: "7C284955C6501D53"
 	icon: "gtceu:mv_electric_motor"
 	id: "282F9DDDF16E6415"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -6,7 +6,7 @@
 	group: "485BC5018A891421"
 	icon: "create_new_age:generator_coil"
 	id: "621F5DCDEC7C827E"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
