@@ -29,4 +29,5 @@ dev = [
     "sphinx-inline-tabs>=2023.4.21",
     "kamuidrome>=0.7.9",
     "furo>=2024.8.6",
+    "myst-parser>=4.0.0",
 ]

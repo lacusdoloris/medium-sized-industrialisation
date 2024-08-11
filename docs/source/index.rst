@@ -6,14 +6,41 @@
 Bigger Industrialisation
 ========================
 
-This is the additional documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
-focused around industrial chemistry.
+This is the documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
+focused around industrial chemistry using `GregTech CEu Modern`_.
+
+Philosophy
+----------
+
+Bigger Industrialisation is about building a large factory to create ever-advancing alloys and 
+circuitry. If you've ever played Factorio; or even better, a Factorio overhaul mod like
+Bobs & Angel's Mods; it's a lot like that, only 3D and more in depth.
+
+Notable features:
+
+- An accelerated earlygame compared to most GregTech packs
+- Mandatory peaceful mode - minimal survival, minimal noise, only industry.
+- Semi-realistic chemical chains with lots of steps, intermediates and byproducts,
+- A bunch of custom multiblocks! Who doesn't love multiblocks!
+- Minimal but interesting world generation powered by `Ecospherical Expansion`_
+- A terse questbook that guides you through progression, but doesn't hold your hand.
+- Designed for both newcomers to GregTech and Nomifactory fans.
+- Doesn't include a single proprietary mod.
+
+End-User Documentation
+======================
+
+This is the documentation you want if you're a player of the pack.
 
 .. toctree::
    :maxdepth: 2
    :caption: End-User Documentation
 
-   user/installation.rst
+   user/dev-installation.rst
+   user/mods.rst
+
+Developer Documentation
+=======================
 
 .. toctree::
    :maxdepth: 2
@@ -21,3 +48,7 @@ focused around industrial chemistry.
 
    dev/kamuidrome.rst
    dev/bundler.rst
+
+
+.. _GregTech CEu Modern: https://modrinth.com/mod/gregtechceu-modern
+.. _Ecospherical Expansion: https://modrinth.com/mod/ecospherical-expansion

@@ -18,6 +18,7 @@ release = get_version("bigger-industrialisation")
 
 extensions = [
     "sphinx_inline_tabs",
+    "myst_parser"
 ]
 
 templates_path = ["_templates"]
