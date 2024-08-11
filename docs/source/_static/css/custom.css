@@ -18,6 +18,9 @@ p, li, strong, em, a {
     font-family: "Cabin" !important;
 }
 
+/* gross hack! */
+section#end-user-documentation div.toctree-wrapper span.caption-text { display: none; }
+section#developer-documentation div.toctree-wrapper span.caption-text { display: none; }
 
 .wy-nav-content {
     max-width: 900px;
