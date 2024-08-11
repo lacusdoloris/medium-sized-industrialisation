@@ -45,6 +45,9 @@ Mod Changes
 
   - Light Fuel can be burnt inside the diesel engines. This makes pumpjacks nicely self-sufficient.
 
+- Create: New Age has been slightly rebalanced; two max-size windmills will produce approximately
+  one amp of MV power. 
+
 - A number of previously provided by default mods have been removed to slim down the pack 
   footprint. The tweaker scripts for these mods will continue to exist and adding them to the pack
   continues to be officially supported.

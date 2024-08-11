@@ -39,6 +39,7 @@ This is the documentation you want if you're a player of the pack.
    :maxdepth: 2
    :caption: End-User Documentation
 
+   changelog.rst
    user/regular-installation.rst
    user/dev-installation.rst
    user/mods.rst
