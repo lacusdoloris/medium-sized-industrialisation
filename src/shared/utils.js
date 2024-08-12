@@ -138,8 +138,8 @@ export const addRockBreakingRecipe = (event, rockType, energy) => {
         .itemOutputs(rockType)
         .duration(16)
         .EUt(energy)
-        ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
-        ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water");
+        .addDataString("fluidA", "minecraft:lava")
+        .addDataString("fluidB", "minecraft:water");
 };
 
 /**
