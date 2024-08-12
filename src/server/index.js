@@ -23,6 +23,7 @@ import { doTier03Content } from "./tier03";
 import { doTier04Content } from "./tier04";
 import { addNonSpecificMachineRecipes } from "./machines";
 import { addCustomOreProcessingRecipes } from "../shared/ores";
+import { adjustFluidVeinDefinitions } from "./fluid_veins";
 
 ServerEvents.tags("items", setupItemTags);
 
@@ -59,4 +60,8 @@ ServerEvents.recipes((event) => {
 GTCEuServerEvents.oreVeins((event) => {
     fixupBuiltinOreVeins(event);
     addFreshOreVeinsEvent(event);
+});
+
+GTCEuServerEvents.fluidVeins((event) => {
+    adjustFluidVeinDefinitions(event);
 });

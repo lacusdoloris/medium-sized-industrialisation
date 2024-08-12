@@ -148,8 +148,7 @@ World Changes
   - The vanilla worldgen engine is significantly slower; it's recommended you use a chunk 
     pre-generator and generate a large area in advance.
 
-  - The Large Biomes preset is recommended to get a good world. The EE built-in presets are not 
-    supported.
+  - The Large Biomes preset is recommended to get a good world.
 
 - Ore veins are now provided by GTCEu; they are now significantly bigger and come with mixed ores 
   rather than single ores.
@@ -162,6 +161,10 @@ World Changes
 - New ores have been added:
 
     - Arsenopyrite is an ore of iron and arsenic. It can be found in copper and redstone veins.
+
+- Fluid veins have been significantly buffed, having an average of 2.5x the amount of fluid per 
+  vein. They also have much higher depleted output than before, to incentivise creating 
+  place-and-forget outposts.
 
 Misc Features
 ~~~~~~~~~~~~~
