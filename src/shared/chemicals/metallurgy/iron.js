@@ -44,7 +44,7 @@ export const addMiscIronRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite_reduction")
-        .itemInputs("32x #forge:raw_materials/hematite", "8x #nijika:carbon_rich_dusts")
+        .itemInputs("32x #forge:crushed_ores/hematite", "8x #nijika:carbon_rich_dusts")
         .itemOutputs("24x gtceu:iron_dust", "8x nijika:slag")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
