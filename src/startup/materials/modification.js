@@ -68,7 +68,7 @@ const REMOVE_ORE_TAB = ["gold", "scheelite"];
 export const customiseMaterials = () => {
     // add foil flag here, for fluxed magnets
     getMaterial("magnetic_iron").addFlags(GTMaterialFlags.GENERATE_FOIL);
-    getMaterial("magnetic_steel").addFlags(GTMaterialFlags.GENERATE_FOIL)
+    getMaterial("magnetic_steel").addFlags(GTMaterialFlags.GENERATE_FOIL);
     getMaterial("magnetic_neodymium").addFlags(GTMaterialFlags.GENERATE_FOIL);
 
     // used for LV pistons

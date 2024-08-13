@@ -29,7 +29,7 @@ export const adjustCreateNewAgeRecipes = (event) => {
         .shaped("4x create_new_age:redstone_magnet", ["WFW", "FIF", "WFW"], {
             F: "#forge:foils/magnetic_iron",
             I: "#forge:storage_blocks/iron",
-            W: "gtceu:red_alloy_single_wire"
+            W: "gtceu:red_alloy_single_wire",
         })
         .id("nijika:mods/new_age/weak_magnet");
 
