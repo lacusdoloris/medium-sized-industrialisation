@@ -63,3 +63,5 @@ config/create-track-map.json
 config/jei/recipe-category-sort-order.ini
 config/jade/plugins.json
 config/jade/sort-order.json
+
+config/bluemap
