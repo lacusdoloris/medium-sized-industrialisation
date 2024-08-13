@@ -116,6 +116,9 @@ Recipe Changes
 
     - Vanadium steel is now made from a mixture of iron, ferrochrome, and ferrovanadium.
 
+    - The distillation tower is now available in MV, rather than HV. This makes setting up oil 
+      outposts more feasible in the early game.
+
 - Tier 3 (HV) changes:
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
