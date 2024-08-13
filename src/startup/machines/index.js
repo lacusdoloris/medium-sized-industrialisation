@@ -26,26 +26,13 @@ import { addRockSynthesiserMultiblock, addRockSynthesisRecipeType } from "./rock
  * @param {Internal.GTRegistryEventJS<string, Internal.GTRecipeType>} event
  */
 export const addAllRecipeTypes = (event) => {
-    let bessemer = event.create("bessemer_smelting");
-    addBessemerRecipeType(bessemer);
-
-    let brine = event.create("evaporation_pool");
-    addEvaporationRecipeType(brine);
-
-    let butcher = event.create("butchering");
-    addButcheringRecipeType(butcher);
-
-    let sorter = event.create("ore_sorting");
-    addOreSortingRecipeType(sorter);
-
-    let ionExchanger = event.create("ion_exchange");
-    addIonExchangerRecipeType(ionExchanger);
-
-    let rockSynthesis = event.create("rock_synthesis");
-    addRockSynthesisRecipeType(rockSynthesis);
-
-    let ballGrinding = event.create("ball_grinding");
-    addBallGrinderRecipeType(ballGrinding);
+    addBessemerRecipeType(event.create("bessemer_smelting"));
+    addEvaporationRecipeType(event.create("evaporation_pool"));
+    addButcheringRecipeType(event.create("butchering"));
+    addOreSortingRecipeType(event.create("ore_sorting"));
+    addIonExchangerRecipeType(event.create("ion_exchange"));
+    addRockSynthesisRecipeType(event.create("rock_synthesis"));
+    addBallGrinderRecipeType(event.create("ball_grinding"));
 };
 
 /**
@@ -54,24 +41,11 @@ export const addAllRecipeTypes = (event) => {
  * @param {Internal.GTRegistryEventJS<string, Internal.MachineDefinition>} event
  */
 export const addAllMachineTypes = (event) => {
-    let bessemer = event.create("nijika:bessemer_furnace", "multiblock");
-    addBessemerMultiblock(bessemer);
-
-    let brine = event.create("nijika:evaporation_pool", "multiblock");
-    addEvaporationPoolMultiblock(brine);
-
-    let butcher = event.create("nijika:butcher", "multiblock");
-    addButcheringMultiblock(butcher);
-
-    let sorter = event.create("nijjika:ore_sorter", "multiblock");
-    addOreSortingMultiblock(sorter);
-
-    let ionExchanger = event.create("nijika:ion_exchanger", "multiblock");
-    addIonExchangerMultiblock(ionExchanger);
-
-    let rockSynthesiser = event.create("nijika:rock_synthesiser", "multiblock");
-    addRockSynthesiserMultiblock(rockSynthesiser);
-
-    let ballGrinder = event.create("nijika:ball_grinder", "multiblock");
-    addBallGrinderMultiblock(ballGrinder);
+    addBessemerMultiblock(event.create("nijika:bessemer_furnace", "multiblock"));
+    addEvaporationPoolMultiblock(event.create("nijika:evaporation_pool", "multiblock"));
+    addButcheringMultiblock(event.create("nijika:butcher", "multiblock"));
+    addOreSortingMultiblock(event.create("nijjika:ore_sorter", "multiblock"));
+    addIonExchangerMultiblock(event.create("nijika:ion_exchanger", "multiblock"));
+    addRockSynthesiserMultiblock(event.create("nijika:rock_synthesiser", "multiblock"));
+    addBallGrinderMultiblock(event.create("nijika:ball_grinder", "multiblock"));
 };

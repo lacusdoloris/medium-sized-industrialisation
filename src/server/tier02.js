@@ -16,7 +16,7 @@ export const doTier02Content = (event) => {
     let mvTier = GT_MACHINE_TIERS.MV;
 
     // the distillation tower being at EV/HV means you can't build effective oil refining outposts
-    // until *well* into the game. moving to MV makes sense as that's when you begin to get 
+    // until *well* into the game. moving to MV makes sense as that's when you begin to get
     // infinite ores, ae2, polyethylene, etc to make mass outpost building easier.
     event.remove({ id: "gtceu:shaped/distillation_tower" });
     event.remove({ id: "gtceu:macerator/macerate_distillation_tower" });
