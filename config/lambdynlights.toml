@@ -42,6 +42,7 @@
 			[light_sources.settings.entities.create]
 				carriage_contraption = true
 				stationary_contraption = true
+				gantry_contraption = true
 				super_glue = true
 
 			[light_sources.settings.entities.littlelogistics]
