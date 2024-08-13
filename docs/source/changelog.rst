@@ -80,6 +80,9 @@ Recipe Changes
 
 - Super Chests now correctly use our new material tier system.
 
+- Readded recipes for void covers. There's no real point crusading against this with how trivial it
+  is to void things in an unperformant way (drill on tank/drop into lava). 
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. 

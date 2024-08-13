@@ -135,9 +135,23 @@ export const doTier01Content = (event) => {
         .blastFurnaceTemp(1787)
         .duration(10 * 20); // faster than the furnace!
 
-    // weh, bored of typing
     event.remove({ id: "gtceu:assembler/cover_fluid_voiding" });
+
+    event.recipes.gtceu
+        .assembler("nijika:tier01/fluid_void")
+        .itemInputs("1x gtceu:fluid_detector_cover", "1x create:fluid_tank", "1x create:mechanical_drill")
+        .itemOutputs("1x gtceu:fluid_voiding_cover")
+        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(2 * 20 + 10);
+
     event.remove({ id: "gtceu:assembler/cover_item_voiding" });
+
+    event.recipes.gtceu
+        .assembler("nijika:tier01/item_void")
+        .itemInputs("1x gtceu:fluid_detector_cover", "1x #forge:barrels", "1x create:mechanical_drill")
+        .itemOutputs("1x gtceu:item_voiding_cover")
+        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(2 * 20 + 10);
 
     event.remove({ id: "gtceu:assembler/cover_infinite_water" });
     event.recipes.gtceu
