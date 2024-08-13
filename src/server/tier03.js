@@ -12,22 +12,6 @@ import { GT_MACHINE_TIERS } from "../shared/definition";
 export const doTier03Content = (event) => {
     // remove heavy oil from logs, to be replaced with our own multiblock.
     event.remove({ id: "gtceu:pyrolyse_oven/log_to_heavy_oil" });
-
-    // for whattever reason, CEu has this at EV.
-    // so let's move it down to HV.
-    event.remove({ id: "gtceu:shaped/distillation_tower" });
-    event.remove({ id: "gtceu:macerator/macerate_distillation_tower" });
-    event.remove({ id: "gtceu:arc_furnace/arc_distillation_tower" });
-
-    event
-        .shaped("gtceu:distillation_tower", ["CFC", "PHP", "CFC"], {
-            C: "#gtceu:circuits/hv",
-            F: "gtceu:vanadium_steel_large_fluid_pipe",
-            P: "gtceu:hv_electric_pump",
-            H: "gtceu:hv_machine_hull",
-        })
-        .id("nijika:tier03/distillation_tower_fixed");
-
     // actual stainless steel production is made from ferromanganese and ferrochrome.
     event.remove({ id: "gtceu:mixer/stainless_steel_from_invar" });
     event.remove({ id: "gtceu:mixer/stainless_steel_from_elements" });
