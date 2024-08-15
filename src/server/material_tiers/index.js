@@ -173,7 +173,7 @@ const addAutomaticMaterialRecipes = (event) => {
 /**
  * Adjusts recipes relating to the deep storage units (super/quantum chests and tanks).
  *
- * This has to be manually adjusted to fix the internal crate
+ * This has to be manually adjusted to match the appropriate crate tier.
  *
  * @param {Internal.RecipesEventJS} event
  */
@@ -214,6 +214,21 @@ const adjustSuperChestRecipes = (event) => {
             F: "gtceu:mv_field_generator",
         })
         .id("nijika:super_chests/ev");
+
+    event.remove({ output: /gtceu:.v_super_tank/ });
+
+    let counter = 1 * FluidAmounts.BUCKET;
+    for (let tier of ["lv", "mv", "hv", "ev"]) {
+        event.recipes.gtceu
+            .assembler(`nijika:super_tanks/${tier}`)
+            .itemInputs(`1x gtceu:${tier}_super_chest`)
+            .inputFluids(Fluid.of("gtceu:creosote").withAmount(counter))
+            .itemOutputs(`1x gtceu:${tier}_super_tank`)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(5 * 20);
+
+        counter *= 2;
+    }
 };
 
 /**

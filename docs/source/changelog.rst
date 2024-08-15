@@ -80,6 +80,8 @@ Recipe Changes
 
 - Super Chests now correctly use our new material tier system.
 
+- Super Tanks now have a simplified recipe that uses Super Chests.
+
 - Readded recipes for void covers. There's no real point crusading against this with how trivial it
   is to void things in an unperformant way (drill on tank/drop into lava). 
 
