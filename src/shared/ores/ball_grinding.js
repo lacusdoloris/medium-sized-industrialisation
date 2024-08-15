@@ -71,10 +71,14 @@ const addRawToCrushedRecipe = (event, ballType, ballMaterial, material, oreProp)
         .ball_grinding(`nijika:${modId}_${matName}/${ballType}/raw_to_crushed`)
         .itemInputs(inputStack, `8x #forge:rounds/${ballType}`)
         .itemOutputs(
-            crushedStack.withCount(64),
-            getMaceratorByproduct(material, oreProp).withCount(14), // 22.5% of 64, rounded down
-            getStackForTagPrefix(TagPrefix.round, ballMaterial, 6)
+            crushedStack.withCount(64)
         )
+        .itemOutputsRanged(
+            getMaceratorByproduct(material, oreProp), 
+            7,  // 22.5% of 64, rounded down
+            21
+        )
+        .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
         .EUt(GTValues.VA[GTValues.MV])
         .duration(Math.ceil(((inputCount * 8) / BALL_TYPES[ballType]) * 20))
         .circuit(2);
@@ -93,8 +97,6 @@ const addCrushedToImpure = (event, ballType, ballMaterial, material, oreProp) =>
     let modId = material.getModid();
     let matName = material.getName();
 
-    let maceratorByproduct = getMaceratorByproduct(material, oreProp);
-
     event.recipes.gtceu
         .ball_grinding(`nijika:${modId}_${matName}/${ballType}/crushed_to_impure`)
         .itemInputs(
@@ -102,10 +104,14 @@ const addCrushedToImpure = (event, ballType, ballMaterial, material, oreProp) =>
             getStackForTagPrefix(TagPrefix.round, ballMaterial).withCount(8)
         )
         .itemOutputs(
-            getStackForTagPrefix(TagPrefix.dustImpure, material).withCount(64),
-            maceratorByproduct.withCount(14), // 22.5% of 64, rounded down
-            getStackForTagPrefix(TagPrefix.round, ballMaterial, 6)
+            getStackForTagPrefix(TagPrefix.dustImpure, material).withCount(64)
         )
+        .itemOutputsRanged(
+            getMaceratorByproduct(material, oreProp), 
+            7,  // 22.5% of 64, rounded down
+            21
+        )
+        .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
         .EUt(GTValues.VA[GTValues.MV])
         .duration(Math.ceil(((64 * 8) / BALL_TYPES[ballType]) * 20)) // TODO: cache
         .circuit(2);
@@ -125,8 +131,6 @@ const addPurifiedToPureDust = (event, ballType, ballMaterial, material, oreProp)
     let modId = material.getModid();
     let matName = material.getName();
 
-    let maceratorByproduct = getMaceratorByproduct(material, oreProp);
-
     event.recipes.gtceu
         .ball_grinding(`nijika:${modId}_${matName}/${ballType}/purified_to_purified`)
         .itemInputs(
@@ -134,10 +138,14 @@ const addPurifiedToPureDust = (event, ballType, ballMaterial, material, oreProp)
             getStackForTagPrefix(TagPrefix.round, ballMaterial).withCount(8)
         )
         .itemOutputs(
-            getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64),
-            maceratorByproduct.withCount(14), // 22.5% of 64, rounded down
-            getStackForTagPrefix(TagPrefix.round, ballMaterial, 6)
+            getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64)
         )
+        .itemOutputsRanged(
+            getMaceratorByproduct(material, oreProp), 
+            7,  // 22.5% of 64, rounded down
+            21
+        )
+        .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
         .EUt(GTValues.VA[GTValues.MV])
         .duration(Math.ceil(((64 * 8) / BALL_TYPES[ballType]) * 20)) // TODO: cache
         .circuit(2);
@@ -154,20 +162,33 @@ export const addBallGrinderRecipes = (event) => {
 
         // grinding mill can also do orestones...
         for (let [name, definition] of Object.entries(ORESTONE_DEFINITIONS)) {
+            console.log(definition);
             let builder = event.recipes.gtceu
                 .ball_grinding(`nijika:${name}/${ballType}`)
                 .itemInputs(`64x create:${name}`, `8x #forge:rounds/${ballType}`)
-                .itemOutputs(`44x gtceu:crushed_${definition.ore70Percent}_ore`)
+                .itemOutputsRanged(
+                    getStackForTagPrefix(TagPrefix.crushed, getMaterial(definition.ore70Percent)),
+                    33, 55
+                )
                 .EUt(GTValues.VA[GTValues.MV])
                 .duration((100 * 20) / divisor); // 100 seconds by default, or 1.5s per block
 
             if (definition.ore40Percent !== null) {
-                builder = builder.itemOutputs(`24x gtceu:crushed_${definition.ore40Percent}_ore`);
+                builder = builder.itemOutputsRanged(
+                    getStackForTagPrefix(TagPrefix.crushed, getMaterial(definition.ore40Percent)),
+                    18, 30
+                );
             }
             if (definition.nugget !== null) {
-                builder = builder.itemOutputs(`18x ${definition.nugget}`);
+                builder = builder.itemOutputsRanged(
+                    definition.nugget,
+                    18, 30
+                );
             }
-            builder.itemOutputs(getStackForTagPrefix(TagPrefix.round, ballMaterial, 6));
+            builder.itemOutputsRanged(
+                getStackForTagPrefix(TagPrefix.round, ballMaterial),
+                4, 8
+            );
         }
 
         // There's two ways of doing this.
