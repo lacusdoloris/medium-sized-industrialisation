@@ -350,7 +350,7 @@ export const customiseMaterials = () => {
     getMaterial("mesityl_oxide").setFormula("CH3C(O)CH=C(CH3)2");
     getMaterial("methyl_isobutyl_ketone").setFormula("(CH3)2CHCH2C(O)CH3");
     getMaterial("chloroethane").setFormula("CH3CH2Cl");
-    getMaterial("ethylene_dichloride").setFormula("ClCH2CH2Cl");
+    getMaterial("dichloroethane").setFormula("ClCH2CH2Cl");
     getMaterial("vinyl_chloride").setFormula("CH2CHCl");
     getMaterial("triethylaluminium").setFormula("Al2(C2H5)6");
     getMaterial("ethylaluminium_sesquichloride").setFormula("(C2H5)3Al2Cl3");

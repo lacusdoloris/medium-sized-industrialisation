@@ -8,7 +8,6 @@ import { createAqueousIntermediate } from "../../materials/helpers";
 
 export const addChloroethaneMaterials = (event) => {
     createAqueousIntermediate(event, "chloroethane", 0xb2f781);
-    createAqueousIntermediate(event, "ethylene_dichloride", 0xc3e3ac);
 };
 
 /**
@@ -23,6 +22,8 @@ export const addChloroethaneRecipes = (event) => {
     event.remove({ id: "gtceu:large_chemical_reactor/vinyl_chloride_from_hydrochloric" });
     event.remove({ id: "gtceu:chemical_reactor/vinyl_chloride_from_ethane" });
     event.remove({ id: "gtceu:large_chemical_reactor/vinyl_chloride_from_ethane" });
+    event.remove({ id: "gtceu:chemical_reactor/dichloroethane" });
+    event.remove({ id: "gtceu:large_chemical_reactor/dichloroethane" });
 
     // Hydrochlorination of ethylene, using aluminium chloride as a catalyst.
     // C2H4 + HCl -> CH3CH2Cl
@@ -47,7 +48,7 @@ export const addChloroethaneRecipes = (event) => {
             Fluid.of("gtceu:chlorine").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:iron_iii_chloride").withAmount(1 * FluidAmounts.NUGGET)
         )
-        .outputFluids(Fluid.of("gtceu:ethylene_dichloride").withAmount(1 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("gtceu:dichloroethane").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .duration(2 * 20 + 10)
         .circuit(1);
@@ -57,7 +58,7 @@ export const addChloroethaneRecipes = (event) => {
     event.recipes.gtceu
         .cracker("nijika:chemicals/chloroethane/vinyl_chloride")
         .inputFluids(
-            Fluid.of("gtceu:ethylene_dichloride").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:dichloroethane").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:steam").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(
@@ -71,7 +72,7 @@ export const addChloroethaneRecipes = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/chloroethane/vinyl_chloride_sucky")
         .inputFluids(
-            Fluid.of("gtceu:ethylene_dichloride").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:dichloroethane").withAmount(1 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:steam").withAmount(1 * FluidAmounts.BUCKET)
         )
         .outputFluids(
