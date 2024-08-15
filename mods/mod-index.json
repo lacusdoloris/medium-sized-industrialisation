@@ -650,24 +650,24 @@
         "version_id": "w5HiejeN"
     },
     "sk9rgfiA": {
-        "checksum": "cd13889ebf3c859e527a5f0dd06b92b906612565dc5d57b28303696a1b0253770c9287567bbf2553926d42a75a6762d214ad543ef8e234339d02a8d0cc8301a4",
+        "checksum": "09a6c42f34ab6cbf6790fbd79fadb40f97c859b8ed27015ba8a8307496e6731b3486b88ac9ad4b5fa003ff9d429b4154d6ecb3593bdd9888f89ed498d29c3671",
         "client_side_only": true,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.28+mc1.20.1",
-        "version_id": "lopZqfMw"
+        "version": "0.3.30+mc1.20.1",
+        "version_id": "EKA4u4Uy"
     },
     "soWqucCB": {
-        "checksum": "8cdae0d39d4a5dcad3818ffd1475ee7b5e50cbd93b9f9feff68b8f7289d0abac6de9eba209203515316bda60d26b7d64413a0c9f369652c45d7a76c17170ef2e",
+        "checksum": "b7ed0a89f019139f29c6af07716748315b408addd0205831b1c3427f0cefdf2d7cc42cf023790a079a0f0e6e8eebdda2cd56bda1b52e134227b427b0d0a60627",
         "client_side_only": false,
         "name": "Reactive Alchemy",
         "pinned": false,
         "project_id": "soWqucCB",
         "selected": true,
-        "version": "1.20.1-8d",
-        "version_id": "v4GEo93Y"
+        "version": "1.20.1-8e",
+        "version_id": "3QnqLhK5"
     },
     "u58R1TMW": {
         "checksum": "0bc1e8835e54ee43275edd0f14ea93d5cbdbdbb1b74ed45c399015e6389bbe781c9553d6e9979b4467376e29e25aa6098b67501aa6a0c646586f0dae307e2309",
@@ -680,14 +680,14 @@
         "version_id": "j0igWmaL"
     },
     "u6dRKJwZ": {
-        "checksum": "a522aadbc9e4bdad184f5d0872a0f8c872399246d73a0a3eacd716dbe4bb8a730627668f5819e29d1b7832d26c3baa309a4ca2f24dce1c66d6d82dd3a942485c",
+        "checksum": "b86fa400032fa8fbc129476f04423ee9f0f57d2a065de047dee3265a8f94724b00aef3f697abd9c98fd39f00becd282a38e6ba96e4d9d37ee7f3d0bf9dbe9033",
         "client_side_only": true,
         "name": "Just Enough Items",
         "pinned": false,
         "project_id": "u6dRKJwZ",
         "selected": true,
-        "version": "15.12.2.47",
-        "version_id": "OHbPYvaA"
+        "version": "15.12.3.54",
+        "version_id": "lTsLGis7"
     },
     "uXXizFIs": {
         "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
