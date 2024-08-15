@@ -139,7 +139,11 @@ export const doTier01Content = (event) => {
 
     event.recipes.gtceu
         .assembler("nijika:tier01/fluid_void")
-        .itemInputs("1x gtceu:fluid_detector_cover", "1x create:fluid_tank", "1x create:mechanical_drill")
+        .itemInputs(
+            "1x gtceu:fluid_detector_cover",
+            "1x create:fluid_tank",
+            "1x create:mechanical_drill"
+        )
         .itemOutputs("1x gtceu:fluid_voiding_cover")
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(2 * 20 + 10);
@@ -148,7 +152,11 @@ export const doTier01Content = (event) => {
 
     event.recipes.gtceu
         .assembler("nijika:tier01/item_void")
-        .itemInputs("1x gtceu:fluid_detector_cover", "1x #forge:barrels", "1x create:mechanical_drill")
+        .itemInputs(
+            "1x gtceu:fluid_detector_cover",
+            "1x #forge:barrels",
+            "1x create:mechanical_drill"
+        )
         .itemOutputs("1x gtceu:item_voiding_cover")
         .EUt(GTValues.VHA[GTValues.LV])
         .duration(2 * 20 + 10);

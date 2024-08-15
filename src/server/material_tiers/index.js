@@ -13,7 +13,7 @@ import { GT_MACHINE_TIERS, GT_WIRE_TYPES } from "../../shared/definition";
 import { fixLensRecipes } from "./lenses";
 import { adjustGtGeneratorTiers } from "./generators";
 import { adjustMultiblockComponentsForTier } from "./multiblock";
-import { getToolProperty, iterateOverAllMaterials } from "../../shared/utils";
+import { getStackForTagPrefix, getToolProperty, iterateOverAllMaterials } from "../../shared/utils";
 import { BASE_ORES } from "../../shared/ores/bocchi";
 import { adjustCircuitRecipes } from "./circuits";
 
@@ -138,14 +138,24 @@ const addAutomaticMaterialRecipes = (event) => {
             }
         }
 
-        if (hasRod && hasIngot) {
-            // yeeah, idk either. thanks gtceu.
-            if (Item.exists(`${modId}:${id}_rod`)) {
-                event.recipes.createaddition
-                    .rolling(`1x ${modId}:${id}_rod`, `1x #forge:ingots/${id}`)
-                    .id(`nijika:auto/rods/${id}`);
-            } else if (id !== "wood") {
-                console.log("what the fuck, gtceu? missing a rod for " + id);
+        if (hasIngot) {
+            event.recipes.gtceu
+                .cutter(`nijika:auto/nuggets/${id}`)
+                .itemInputs(`1x #forge:ingots/${id}`)
+                .inputFluids(Fluid.of("minecraft:water").withAmount(10 * FluidAmounts.MB))
+                .itemOutputs(getStackForTagPrefix(TagPrefix.nugget, material).withCount(9))
+                .EUt(GTValues.VHA[GTValues.ULV])
+                .duration(2 * 20);
+
+            if (hasRod) {
+                // yeeah, idk either. thanks gtceu.
+                if (Item.exists(`${modId}:${id}_rod`)) {
+                    event.recipes.createaddition
+                        .rolling(`1x ${modId}:${id}_rod`, `1x #forge:ingots/${id}`)
+                        .id(`nijika:auto/rods/${id}`);
+                } else if (id !== "wood") {
+                    console.log("what the fuck, gtceu? missing a rod for " + id);
+                }
             }
         }
 
