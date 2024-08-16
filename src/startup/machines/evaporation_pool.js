@@ -21,9 +21,9 @@ export const addEvaporationPoolMultiblock = (builder) => {
     /** @param {Internal.MultiblockMachineDefinition} definition */
     const patternCallback = (definition) => {
         return FactoryBlockPattern.start()
-            .aisle("B".repeat(11), "B".repeat(11))
-            .aisleRepeatable(9, 9, "B".repeat(11), "B" + "X".repeat(9) + "B")
-            .aisle("BBBBBCBBBBB", "B".repeat(11))
+            .aisle("B".repeat(7), "B".repeat(7))
+            .aisleRepeatable(5, 5, "B".repeat(7), "B" + "X".repeat(5) + "B")
+            .aisle("BBBCBBB", "B".repeat(7))
             .where("X", Predicates.blocks("minecraft:water"))
             .where(
                 "B",

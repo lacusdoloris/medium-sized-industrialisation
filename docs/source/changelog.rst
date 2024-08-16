@@ -157,6 +157,9 @@ Machine Changes
 
 - A new Ball Bearing Grinding Mill has been added to replace the LV/MV macerator.
 
+- The Evaporation Pool is now 7x7 rather than 11. This also means you can fit a full FOUR in one
+  chunk easily.
+
 World Changes
 ~~~~~~~~~~~~~
 
