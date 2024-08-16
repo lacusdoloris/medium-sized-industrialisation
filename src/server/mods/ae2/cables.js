@@ -14,7 +14,8 @@ export const adjustAe2CableRecipes = (event) => {
     event.recipes.gtceu
         .extruder("nijika:mods/ae2/quartz_fibre")
         .itemInputs("1x #forge:gems/certus_quartz")
-        .itemOutputs("1x ae2:quartz_fiber")
+        .notConsumable("1x gtceu:normal_pipe_extruder_mold")
+        .itemOutputs("4x ae2:quartz_fiber")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
 
