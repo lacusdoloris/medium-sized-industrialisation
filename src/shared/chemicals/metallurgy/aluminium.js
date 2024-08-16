@@ -71,7 +71,6 @@ export const addAluminiumProcessingRecipes = (event) => {
         .autoclave("nijika:tier02/aluminium/bayer_pt_2")
         .inputFluids(Fluid.of("gtceu:sodium_aluminate").withAmount(1 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:aluminium_hydroxide_dust", "1x gtceu:sodium_hydroxide_dust")
-        .outputFluids("1x gtceu:red_mud")
         .EUt(GTValues.VA[GTValues.MV])
         .duration(10 * 20);
 
