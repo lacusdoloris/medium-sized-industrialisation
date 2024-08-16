@@ -158,7 +158,6 @@ export const doCleanups = (event) => {
     event.remove({ input: /gtceu:prospector.*/ });
     event.remove({ id: "gtceu:arc_furnace/arc_prospector.luv" });
     event.remove({ id: "gtceu:macerator/macerate_prospector.luv" });
-
     event.remove({ id: /gtceu:shaped.*_kinetic_mixer/ });
 
     // too easy!
@@ -190,6 +189,9 @@ export const doCleanups = (event) => {
     if (MODPACK_SETTINGS.deleteToolRecipes) {
         cleanupManualToolRecipes(event);
         cleanupRollingMachineRecipes(event);
+
+        // these just clog up the UI
+        event.remove({ type: "gtceu:forge_hammer", output: "#forge:plates" });
     }
 
     fixupCreate(event);
