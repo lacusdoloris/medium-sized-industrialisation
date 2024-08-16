@@ -28,7 +28,7 @@ export const adjustCCARecipes = (event) => {
     event.remove({ id: "createaddition:mixing/biomass_from_sticks" });
 
     // CCA wires are kinda useful, so let's just add a recipee for some of them
-    event.remove({ id: "createaddition:crafting/copper_spool"});
+    event.remove({ id: "createaddition:crafting/copper_spool" });
 
     event.recipes.gtceu
         .assembler("nijika:mods/cca/copper_spooled_wire")
@@ -38,7 +38,7 @@ export const adjustCCARecipes = (event) => {
         .EUt(2)
         .duration(2 * 20);
 
-    event.remove({ id: "createaddition:crafting/gold_spool"});
+    event.remove({ id: "createaddition:crafting/gold_spool" });
 
     event.recipes.gtceu
         .assembler("nijika:mods/cca/gold_spooled_wire")
@@ -48,7 +48,7 @@ export const adjustCCARecipes = (event) => {
         .EUt(2)
         .duration(2 * 20);
 
-    event.remove({ id: "createaddition:crafting/electrum_spool"});
+    event.remove({ id: "createaddition:crafting/electrum_spool" });
 
     event.recipes.gtceu
         .assembler("nijika:mods/cca/electrum_spooled_wire")

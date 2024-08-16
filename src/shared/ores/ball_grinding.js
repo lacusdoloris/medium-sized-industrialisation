@@ -70,12 +70,10 @@ const addRawToCrushedRecipe = (event, ballType, ballMaterial, material, oreProp)
     event.recipes.gtceu
         .ball_grinding(`nijika:${modId}_${matName}/${ballType}/raw_to_crushed`)
         .itemInputs(inputStack, `8x #forge:rounds/${ballType}`)
-        .itemOutputs(
-            crushedStack.withCount(64)
-        )
+        .itemOutputs(crushedStack.withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp), 
-            7,  // 22.5% of 64, rounded down
+            getMaceratorByproduct(material, oreProp),
+            7, // 22.5% of 64, rounded down
             21
         )
         .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
@@ -103,12 +101,10 @@ const addCrushedToImpure = (event, ballType, ballMaterial, material, oreProp) =>
             getStackForTagPrefix(TagPrefix.crushed, material).withCount(64),
             getStackForTagPrefix(TagPrefix.round, ballMaterial).withCount(8)
         )
-        .itemOutputs(
-            getStackForTagPrefix(TagPrefix.dustImpure, material).withCount(64)
-        )
+        .itemOutputs(getStackForTagPrefix(TagPrefix.dustImpure, material).withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp), 
-            7,  // 22.5% of 64, rounded down
+            getMaceratorByproduct(material, oreProp),
+            7, // 22.5% of 64, rounded down
             21
         )
         .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
@@ -137,12 +133,10 @@ const addPurifiedToPureDust = (event, ballType, ballMaterial, material, oreProp)
             getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64),
             getStackForTagPrefix(TagPrefix.round, ballMaterial).withCount(8)
         )
-        .itemOutputs(
-            getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64)
-        )
+        .itemOutputs(getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp), 
-            7,  // 22.5% of 64, rounded down
+            getMaceratorByproduct(material, oreProp),
+            7, // 22.5% of 64, rounded down
             21
         )
         .itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8)
@@ -168,7 +162,8 @@ export const addBallGrinderRecipes = (event) => {
                 .itemInputs(`64x create:${name}`, `8x #forge:rounds/${ballType}`)
                 .itemOutputsRanged(
                     getStackForTagPrefix(TagPrefix.crushed, getMaterial(definition.ore70Percent)),
-                    33, 55
+                    33,
+                    55
                 )
                 .EUt(GTValues.VA[GTValues.MV])
                 .duration((100 * 20) / divisor); // 100 seconds by default, or 1.5s per block
@@ -176,19 +171,14 @@ export const addBallGrinderRecipes = (event) => {
             if (definition.ore40Percent !== null) {
                 builder = builder.itemOutputsRanged(
                     getStackForTagPrefix(TagPrefix.crushed, getMaterial(definition.ore40Percent)),
-                    18, 30
+                    18,
+                    30
                 );
             }
             if (definition.nugget !== null) {
-                builder = builder.itemOutputsRanged(
-                    definition.nugget,
-                    18, 30
-                );
+                builder = builder.itemOutputsRanged(definition.nugget, 18, 30);
             }
-            builder.itemOutputsRanged(
-                getStackForTagPrefix(TagPrefix.round, ballMaterial),
-                4, 8
-            );
+            builder.itemOutputsRanged(getStackForTagPrefix(TagPrefix.round, ballMaterial), 4, 8);
         }
 
         // There's two ways of doing this.
