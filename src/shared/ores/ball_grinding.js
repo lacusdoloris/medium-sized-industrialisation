@@ -156,7 +156,6 @@ export const addBallGrinderRecipes = (event) => {
 
         // grinding mill can also do orestones...
         for (let [name, definition] of Object.entries(ORESTONE_DEFINITIONS)) {
-            console.log(definition);
             let builder = event.recipes.gtceu
                 .ball_grinding(`nijika:${name}/${ballType}`)
                 .itemInputs(`64x create:${name}`, `8x #forge:rounds/${ballType}`)
