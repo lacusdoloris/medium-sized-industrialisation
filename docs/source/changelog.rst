@@ -85,6 +85,15 @@ Recipe Changes
 - Readded recipes for void covers. There's no real point crusading against this with how trivial it
   is to void things in an unperformant way (drill on tank/drop into lava). 
 
+- Ingot nuggets can now be made with a cutter.
+
+- Recipes for plates have been removed from the forge hammers. These are always inefficient compared
+  to the bending machine or the Create press, and so serve no purpose but to clog up the recipe 
+  viewer.
+
+- Wires from Create: Crafts & Additions are now craftable in an assembler. These work as basic RF
+  carriers e.g. from New Age turbines.
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. 
