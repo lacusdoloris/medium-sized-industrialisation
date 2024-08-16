@@ -18,11 +18,6 @@
 			id: "473EF5FF75ACB3EC"
 			rewards: [
 				{
-					id: "6B291447C3C479AE"
-					item: "integrateddynamics:menril_sapling"
-					type: "item"
-				}
-				{
 					id: "575AF988D08C5D0F"
 					item: "minecraft:kelp"
 					type: "item"
