@@ -63,23 +63,6 @@ export const getMaterial = (name) => {
     return mat;
 };
 
-/**
- * Gets the ItemStack associated with this material for the provided TagPrefix.
- *
- * @param {TagPrefix} prefix The tag prefix to use.
- * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material The material to use.
- * @param {number} count An optional count value.
- * @returns {Internal.ItemStack}
- */
-export const getStackForTagPrefix = (prefix, material, count) => {
-    // fails with a method resolution error unless we use the ``[]`` form.
-    if (typeof count === "undefined") {
-        return chemicalHelper$get(prefix, material);
-    } else {
-        return chemicalHelper$getInt(prefix, material, count);
-    }
-};
-
 /** @return {com.gregtechceu.gtceu.api.data.chemical.material.Material} */
 const definitelyMaterial = (mat) => {
     let realMat = mat; // don't trust rhino!
@@ -87,6 +70,24 @@ const definitelyMaterial = (mat) => {
         realMat = getMaterial(realMat);
     }
     return realMat;
+};
+
+/**
+ * Gets the ItemStack associated with this material for the provided TagPrefix.
+ *
+ * @param {TagPrefix} prefix The tag prefix to use.
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material|string} material The material to use.
+ * @param {number} count An optional count value.
+ * @returns {Internal.ItemStack}
+ */
+export const getStackForTagPrefix = (prefix, material, count) => {
+    let realMat = definitelyMaterial(material);
+    // fails with a method resolution error unless we use the ``[]`` form.
+    if (typeof count === "undefined") {
+        return chemicalHelper$get(prefix, realMat);
+    } else {
+        return chemicalHelper$getInt(prefix, realMat, count);
+    }
 };
 
 /**

@@ -4,6 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { getStackForTagPrefix } from "../../shared/utils";
+
 // Char's: Counter & Attack
 /** @param {Internal.RecipesEventJS} event */
 export const adjustCCARecipes = (event) => {
@@ -24,6 +26,37 @@ export const adjustCCARecipes = (event) => {
     event.remove({ id: "createaddition:mixing/biomass_from_plants" });
     event.remove({ id: "createaddition:mixing/biomass_from_leaves" });
     event.remove({ id: "createaddition:mixing/biomass_from_sticks" });
+
+    // CCA wires are kinda useful, so let's just add a recipee for some of them
+    event.remove({ id: "createaddition:crafting/copper_spool"});
+
+    event.recipes.gtceu
+        .assembler("nijika:mods/cca/copper_spooled_wire")
+        .itemInputs(getStackForTagPrefix(TagPrefix.wireGtSingle, "copper").withCount(4))
+        .itemInputs("createaddition:spool")
+        .itemOutputs("createaddition:copper_spool")
+        .EUt(2)
+        .duration(2 * 20);
+
+    event.remove({ id: "createaddition:crafting/gold_spool"});
+
+    event.recipes.gtceu
+        .assembler("nijika:mods/cca/gold_spooled_wire")
+        .itemInputs(getStackForTagPrefix(TagPrefix.wireGtSingle, "gold").withCount(4))
+        .itemInputs("createaddition:spool")
+        .itemOutputs("createaddition:gold_spool")
+        .EUt(2)
+        .duration(2 * 20);
+
+    event.remove({ id: "createaddition:crafting/electrum_spool"});
+
+    event.recipes.gtceu
+        .assembler("nijika:mods/cca/electrum_spooled_wire")
+        .itemInputs(getStackForTagPrefix(TagPrefix.wireGtSingle, "electrum").withCount(4))
+        .itemInputs("createaddition:spool")
+        .itemOutputs("createaddition:electrum_spool")
+        .EUt(2)
+        .duration(2 * 20);
 
     // require many more crops to be input
     // fucking kubejs. let me use fluid tags
