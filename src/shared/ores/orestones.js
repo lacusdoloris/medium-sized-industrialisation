@@ -27,7 +27,7 @@ export const ORESTONE_DEFINITIONS = {
     },
     scoria: {
         ore70Percent: "bauxite",
-        ore40Percent: null,
+        ore40Percent: "silver",
         nugget: "gtceu:silver_nugget",
     },
     scorchia: {

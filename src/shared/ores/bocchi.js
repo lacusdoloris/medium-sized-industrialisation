@@ -6,6 +6,8 @@
 
 import { nijikaId } from "../utils";
 
+// todo: insert vanadite
+
 export const BASE_ORES = {
     bocchinium: {
         colour: 0xf7a0b5,
