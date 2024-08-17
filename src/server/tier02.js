@@ -63,4 +63,20 @@ export const doTier02Content = (event) => {
         .itemOutputs("1x gtceu:mv_cadmium_battery")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20);
+
+    event.remove({ id: "gtceu:assembler/mv_fluid_drilling_rig" });
+    event.recipes.gtceu
+        .assembler("nijika:tier02/mv_fluid_drilling_rig")
+        .itemInputs(
+            "1x gtceu:mv_machine_hull",
+            `4x ${mvTier.materials.plate.tagged("frames")}`,
+            `4x ${mvTier.circuitTag}`,
+            `4x gtceu:mv_electric_motor`,
+            `4x gtceu:mv_electric_pump`,
+            `4x ${mvTier.materials.gear.tagged("gears")}`
+        )
+        .itemOutputs("gtceu:mv_fluid_drilling_rig")
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(10 * 20)
+        .circuit(2);
 };
