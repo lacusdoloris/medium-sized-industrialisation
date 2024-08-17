@@ -532,11 +532,9 @@
 			description: [
 				"Good Integrated Circuits and certain MV/HV recipes require &dgold&r, either pure or as an alloy with &dsilver&r to form &aelectrum&r. "
 				""
-				"The vanilla/GT gold ore -> gold ingot processing has been replaced with a custom cyanide processing chain, but you can also get small amounts of gold as byproducts of &dMagnetite&r, &dChalcopyrite&r, and &dSilver&r. "
+				"The vanilla/GT gold ore -> gold ingot processing has been replaced with a custom cyanide processing chain, but you can also get small amounts of gold as byproducts of &dMagnetite&r, &dChalcopyrite&r, and &dSilver&r; these require the Arc Furnace to turn the dust into ingots again."
 				""
 				"Look up the recipe for Gold Nuggets in the chemical reactor and work your way backwards for more details. "
-				""
-				"&lThe ore processing chart is &cnot&f accurate!&r Please ignore it."
 				""
 				"You should consider stockpiling your gold pulp residue until you have the &dLarge Chemical Reactor&r available, as it'll let you recover some additional gold from your reactants."
 			]
