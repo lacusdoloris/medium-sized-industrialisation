@@ -26,7 +26,7 @@ import { GT_MACHINE_TIERS } from "../../shared/definition";
 // So, LV circuits would use SoCs at EV or higher.
 
 const SOLDER_FLUID = Fluid.of("gtceu:soldering_alloy").withAmount(72 * FluidAmounts.MB);
-const DOUBLE_SOLDER_FLUID = Fluid.of("gtceu:soldering_alloy").withAmount(144 * FluidAmounts.BUCKET);
+const DOUBLE_SOLDER_FLUID = Fluid.of("gtceu:soldering_alloy").withAmount(144 * FluidAmounts.MB);
 
 /**
  * Adjusts circuits for the "Basic" circuit theme.
