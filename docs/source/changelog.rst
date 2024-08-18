@@ -186,6 +186,10 @@ World Changes
   vein. They also have much higher depleted output than before, to incentivise creating 
   place-and-forget outposts.
 
+- New coal gas fluid veins have been added to the Nether. This provides an easily obtainable 
+  infinite amount of coal gas/coal tar now that the charcoal -> coal gas/coal tar recipes have been
+  removed.
+
 Misc Features
 ~~~~~~~~~~~~~
 

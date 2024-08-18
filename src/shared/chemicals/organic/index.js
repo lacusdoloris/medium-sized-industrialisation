@@ -113,6 +113,7 @@ export const addOrganicChemRecipes = (event) => {
         .duration(7 * 20 + 10)
         .circuit(8);
 
+    // CH4 + 2 H2O = CO2 + 4 H2
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/water_gas_shift_hydrogen_from_methane")
         .inputFluids(

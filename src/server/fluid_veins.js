@@ -4,6 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+import { nijikaId } from "../shared/utils";
+
 // This massively buffs all of the bedrock veins to have a higher base amount, as well as a much
 // higher depleted amount.
 //
@@ -67,5 +69,26 @@ export const adjustFluidVeinDefinitions = (event) => {
         vein.setMinimumYield(500);
         vein.setMaximumYield(750);
         vein.setDepletedYield(200);
+    });
+};
+
+/**
+ * Adds custom fluid veins to the world.
+ *
+ * @param {Internal.GTFluidVeinEventJS} event
+ */
+export const addCustomFluidVeins = (event) => {
+    event.add(nijikaId("nether_coal_gas"), (builder) => {
+        // UNLIMITED GENOCIDE ON MOJANG CODE STYLE
+        // THERE IS NO REASON FOR THIS EVER TO BE A SUPPLIER
+        // FUCKING DIE!
+        builder
+            .fluid(() => GTMaterials.CoalGas.getFluid())
+            .weight(40)
+            .yield(350, 700)
+            .depletedYield(150)
+            .depletionAmount(1)
+            .depletionChance(100)
+            .dimensions("minecraft:the_nether");
     });
 };
