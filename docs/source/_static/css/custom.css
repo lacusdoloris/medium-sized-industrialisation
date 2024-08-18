@@ -19,7 +19,8 @@ p, li, strong, em, a {
 }
 
 /* gross hack! */
-section#end-user-documentation div.toctree-wrapper span.caption-text { display: none; }
+section#setting-up div.toctree-wrapper span.caption-text { display: none; }
+section#progression-guides div.toctree-wrapper span.caption-text { display: none; }
 section#developer-documentation div.toctree-wrapper span.caption-text { display: none; }
 
 .wy-nav-content {

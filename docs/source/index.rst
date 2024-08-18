@@ -37,12 +37,19 @@ This is the documentation you want if you're a player of the pack.
 
 .. toctree::
    :maxdepth: 2
-   :caption: End-User Documentation
+   :caption: Setting up
 
    changelog.rst
    user/regular-installation.rst
    user/dev-installation.rst
    user/mods.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Progression Guides
+
+   user/guides/energy.rst
+   user/guides/basic-elements.rst
 
 Developer Documentation
 =======================
