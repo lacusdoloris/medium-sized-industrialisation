@@ -52,6 +52,8 @@ There's a few ways of producing steam:
 In the HV tier you can build large steam turbines which can be significantly more efficient than
 singleblock steam turbines with the right rotors.
 
+.. _fossil-fuel-power:
+
 Fossil Fuel Power
 -----------------
 
