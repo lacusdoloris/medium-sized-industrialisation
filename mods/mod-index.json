@@ -539,15 +539,15 @@
         "version_id": "nUnYQlF8"
     },
     "hB899VmG": {
-        "checksum": "7942e0f41480202fe5f6dc30895017e0eab55b0798ab1e4e67b43fd898e444c262ae9bcc4fd833c7fd8455f1957f28b0be2fcf7b910e2c56f4e92f77c60852b3",
+        "checksum": "ad3025b7dd272d3b7e42f3dca4cba993302f8d49acd8fe99c6b22bf0bf817a75b7b6f4c728ea58d2ad7a9a6ff6b5651017e11df5cd2fd8456f040dc7a611a0d5",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Exposure",
         "pinned": false,
         "project_id": "hB899VmG",
         "selected": true,
-        "version": "1.7.5",
-        "version_id": "vNOYdEJg"
+        "version": "1.7.6",
+        "version_id": "6tNXzXkA"
     },
     "ihpnEd80": {
         "checksum": "e89a0b275563baf19cb9f1b6e59e70c5b4afc172fb515037a7bae04979e100ab01fcab0cb368ba5d0338f00c313ef740c284599fa4860a073ba2d6704f4f78aa",
@@ -638,15 +638,15 @@
         "version_id": "QroNBg6X"
     },
     "nvQzSEkH": {
-        "checksum": "f24f5668a1ace8ba79b8b05cf5d858ad2af6bb098d083f2eb13eceeba093eb47564922b8dbb59e4f2efb03f101f866069d7f270963e0d1e05f2ce26ecc5d3e6f",
+        "checksum": "c92e4e931f022c50bd66abe6b7127c1c55940be5309c2d5537d74ca40809349c4c04ad14df558e113551691af3ed3f1eed5f54e22598b53c138a07e97f7df835",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Jade \ud83d\udd0d",
         "pinned": false,
         "project_id": "nvQzSEkH",
         "selected": true,
-        "version": "11.9.4+forge",
-        "version_id": "MLYKnVCk"
+        "version": "11.10.1+forge",
+        "version_id": "dldgfOqB"
     },
     "o6qsdrrQ": {
         "checksum": "d577feb25dfd7d63811f0a963ec77be255cce2dc323b1aad71a7f21968e1424969c691550123f9be996146bae336e35dfd0d860e33f02a50e6908791dccff161",
