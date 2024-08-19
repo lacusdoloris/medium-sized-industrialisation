@@ -69,9 +69,9 @@ export const adjustOrestoneCrushingRecipes = (event) => {
         let builder = event.recipes.gtceu
             .rock_synthesis(`nijika:${name}`)
             .notConsumable(rockId)
-            .inputFluids(Fluid.of("minecraft:lava").withAmount(300 * FluidAmounts.BUCKET))
+            .inputFluids(Fluid.of("minecraft:lava").withAmount(100 * FluidAmounts.BUCKET))
             .EUt(GTValues.VA[GTValues.MV])
-            .duration(144 * 20);
+            .duration(72 * 20);
 
         // apply 64x output four times as either gtceu or EMI doesn't like 288 output.
         for (let i = 0; i < 4; i++) {

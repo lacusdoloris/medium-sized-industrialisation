@@ -13,7 +13,7 @@ export const BASE_ORES = {
         colour: 0xf7a0b5,
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
-        intoOres: ["ilmenite", "silver", "realgar"],
+        intoOres: ["ilmenite", "monazite", "realgar"],
         gem: "amethyst",
     },
 
