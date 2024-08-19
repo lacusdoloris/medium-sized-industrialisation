@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:83930f766f461319eaa18812861ab22f3ae0f7aa2f40ff5137afdce43131258a"
+content_hash = "sha256:d5beab6d5a33fd661bb6bd640e5140da1533142398ea3df91c6867ffcd2b978c"
 
 [[metadata.targets]]
 requires_python = ">=3.12"
@@ -258,7 +258,7 @@ files = [
 
 [[package]]
 name = "kamuidrome"
-version = "0.7.9"
+version = "0.8.0"
 requires_python = ">=3.12"
 summary = "Modern Minecraft modpack builder"
 groups = ["dev"]
@@ -269,12 +269,12 @@ dependencies = [
     "more-itertools>=10.4.0",
     "platformdirs>=4.2.2",
     "rich>=13.7.1",
-    "tomlkit>=0.13.0",
+    "tomlkit>=0.13.2",
     "whenever>=0.6.7",
 ]
 files = [
-    {file = "kamuidrome-0.7.9-py3-none-any.whl", hash = "sha256:bcaf89aa1a3f733e99b952738ae027c0077c4bb511c7c6534142bb692cf63524"},
-    {file = "kamuidrome-0.7.9.tar.gz", hash = "sha256:75942ba2ce5dedfa21f1ab0b0a986a1c38b19820c9e36de64cc28fcca4cb0096"},
+    {file = "kamuidrome-0.8.0-py3-none-any.whl", hash = "sha256:f42ab92361efbfa6b3d6999eaaa5e3a6e0cbe655a2bc59ffd98988a36188acbb"},
+    {file = "kamuidrome-0.8.0.tar.gz", hash = "sha256:fa0d94eba3eb93ae77d9edda053a841fbf5bdb3e756d179e18303147afafad48"},
 ]
 
 [[package]]
@@ -619,13 +619,13 @@ files = [
 
 [[package]]
 name = "tomlkit"
-version = "0.13.0"
+version = "0.13.2"
 requires_python = ">=3.8"
 summary = "Style preserving TOML library"
 groups = ["dev"]
 files = [
-    {file = "tomlkit-0.13.0-py3-none-any.whl", hash = "sha256:7075d3042d03b80f603482d69bf0c8f345c2b30e41699fd8883227f89972b264"},
-    {file = "tomlkit-0.13.0.tar.gz", hash = "sha256:08ad192699734149f5b97b45f1f18dad7eb1b6d16bc72ad0c2335772650d7b72"},
+    {file = "tomlkit-0.13.2-py3-none-any.whl", hash = "sha256:7a974427f6e119197f670fbbbeae7bef749a6c14e793db934baefc1b5f03efde"},
+    {file = "tomlkit-0.13.2.tar.gz", hash = "sha256:fff5fe59a87295b278abd31bec92c15d9bc4a06885ab12bcea52c71119392e79"},
 ]
 
 [[package]]

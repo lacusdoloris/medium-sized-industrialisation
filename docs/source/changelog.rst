@@ -21,7 +21,7 @@ Mod Changes
 
 - **Headliner**: Primary world generation is now provided by Ecospherical Expansion.
 
-- GTCEu has been updated to 1.3.1. This has a handful of new recipe changes including a built-in iodine 
+- GTCEu has been updated to 1.4. This has a handful of new recipe changes including a built-in iodine 
   chain.
 
   - The GTCEu Evaporation Tower is disabled in favour of our own Evaporation Pool. This is not going
