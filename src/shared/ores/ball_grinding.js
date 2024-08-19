@@ -135,7 +135,7 @@ const addPurifiedToPureDust = (event, ballType, ballMaterial, material, oreProp)
         )
         .itemOutputs(getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp),
+            getMaceratorByproduct(material, oreProp, 1),
             7, // 22.5% of 64, rounded down
             21
         )
