@@ -288,19 +288,23 @@
 				"7BEE21DF23576B53"
 			]
 			description: [
-				"&aVanadium Steel&r is a steel made from a mixture of iron, ferrovanadium, and ferrochrome."
+				"&aVanadium&r is used nearly entirely for &dvanadium steel&r used in multiblock casings, with a small amount of it used in electronics as the vanadium-gallium alloy later in the game."
 				""
-				"You can get &dferrovanadium&r from the aluminothermic reduction of vanadium pentoxide with iron oxide. You can get vanadium pentoxide as a byproduct of various ore processing steps or from reprocessing slags."
+				"Vanadium steel is made from &7ferrovanadium&r, which is made from the aluminothermic reduction of &dvanadium pentoxide&r alongside iron. You can get vanadium pentoxide in two ways:"
 				""
-				"Vanadium steel is mostly used for multiblock casings, of which you'll need a lot."
+				"- As a byproduct of processing magnetite."
+				"- From reprocessing slag produced when directly blasting crushed iron ores."
+				""
+				"The latter is the most easily automatable, as only hematite is automatable as an iron ore, from &eOchrum orestone&r."
 			]
 			id: "641046C8A91952E9"
+			min_width: 400
 			tasks: [{
 				id: "55D67CFC1BBB6BC7"
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			title: "Vanadium?"
+			title: "LM312V04 Victory Gundam"
 			x: 2.0d
 			y: 4.0d
 		}

@@ -224,7 +224,7 @@
 			description: [
 				"&dAZ91&r is an alloy of magnesium (88%), aluminium (9%) and zinc (1%). It's one of the secondary tier materials for EV. (Well, those are the rough numbers anyway.)"
 				""
-				"You can get magnesium from &dbrine evaporation&r, or as a byproduct of certain ore processing."
+				"The eeasiest way to get magnesium is from either &ebyproduct processing&r of &dhematite&r or &dmagnetite&r; or, you can reprocess iron slags produced when blasting crushed ore to get magnesium trichloride."
 			]
 			id: "491804C9A1FE230D"
 			tasks: [{

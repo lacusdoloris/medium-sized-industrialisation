@@ -128,17 +128,20 @@ Recipe Changes
 
 - Tier 2 (MV) changes:
 
-    - Vanadium steel is now made from a mixture of iron, ferrochrome, and ferrovanadium.
+  - Vanadium and Magnesium can now be recovered from iron slag residue, created by blasting crushed
+    iron ores.
 
-    - The distillation tower is now available in MV, rather than HV. This makes setting up oil 
-      outposts more feasible in the early game.
+    This replaces the old ore slag system, which was half-baked and half-implemented anyway.
+
+  - Vanadium steel is now made from a mixture of iron, ferrochrome, and ferrovanadium.
+
+  - The distillation tower is now available in MV, rather than HV. This makes setting up oil 
+    outposts more feasible in the early game.
 
 - Tier 3 (HV) changes:
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
     of two small dusts).
-
-  - Removed ore slag temporarily.
 
   - Removed combo sorting. This doesn't really work when you have quantum chests.
 

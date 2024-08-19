@@ -7,10 +7,13 @@
 // Ref: Vanadium and Vanadium Compounds
 // https://doi.org/10.1002/14356007.a27_367
 
-import { createChemicalIntermediate, createDustIntermediate } from "../../materials/helpers";
+import {
+    createAcidicIntermediate,
+    createChemicalIntermediate,
+    createDustIntermediate,
+} from "../../materials/helpers";
 
 export const addVanadiumMaterials = (event) => {
-    // == Vanadium == //
     createDustIntermediate(event, "vanadium_pentoxide", 0xd5bf6b).components(
         "2x gtceu:vanadium",
         "5x gtceu:oxygen"
@@ -20,6 +23,12 @@ export const addVanadiumMaterials = (event) => {
         "1x gtceu:vanadium",
         "1x gtceu:oxygen",
         "3x gtceu:chlorine"
+    );
+
+    createAcidicIntermediate(event, "sodium_vanadate", 0xd1ac77).components(
+        "1x gtceu:sodium",
+        "1x gtceu:vanadium",
+        "3x gtceu:oxygen"
     );
 
     event
@@ -136,8 +145,8 @@ export const addVanadiumChemicalChain = (event) => {
         )
         .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("gtceu:vanadium_pentoxide_dust")
-        .EUt(GTValues.VH[GTValues.HV])
-        .duration(5 * 20)
+        .EUt(GTValues.VH[GTValues.MV])
+        .duration(10 * 20)
         .circuit(1);
 
     event.recipes.gtceu
@@ -146,7 +155,7 @@ export const addVanadiumChemicalChain = (event) => {
         .itemInputs("2x gtceu:vanadium_oxytrichloride_dust")
         .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("gtceu:vanadium_pentoxide_dust")
-        .EUt(GTValues.VH[GTValues.HV])
-        .duration(5 * 20)
+        .EUt(GTValues.VH[GTValues.MV])
+        .duration(10 * 20)
         .circuit(1);
 };

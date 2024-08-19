@@ -32,6 +32,28 @@ export const createAqueousIntermediate = (event, id, colour, allowDecomposition)
 };
 
 /**
+ * @callback fluidCallback
+ * @param {GTFluidBuilder} builder
+ * @returns {GTFluidBuilder}
+ */
+
+/**
+ * Adds a new aqueous intermediate with a custom builder.
+ *
+ * @param {fluidCallback} callback
+ */
+export const addCustomAqueousIntermediate = (event, id, colour, callback, allowDecomposition) => {
+    let fluid = callback(new GTFluidBuilder());
+    let builder = event.create(nijikaId(id)).liquid(fluid).color(colour);
+
+    if (typeof allowDecomposition !== "boolean" || !allowDecomposition) {
+        builder = builder.flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+    }
+
+    return builder;
+};
+
+/**
  * Creates a new acidic intermediate (an aqueous intermediate with the acidic flag).
  */
 export const createAcidicIntermediate = (event, id, colour) => {

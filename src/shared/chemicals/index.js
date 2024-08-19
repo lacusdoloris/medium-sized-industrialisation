@@ -30,6 +30,7 @@ import { addIodineMaterials, addIodineRecipes } from "./metallurgy/iodine";
 import { addPlatinumGroupMaterials, addPlatinumGroupRecipes } from "./metallurgy/platinum";
 import { addAmmoniaMaterials, addAmmoniaRecipes } from "./ammonia";
 import { addRheniumMaterials, addRheniumRecipes } from "./metallurgy/rhenium";
+import { addIronSlagMaterials, addIronSlagReprocessingRecipes } from "./metallurgy/iron_slag";
 
 export const addChemicalMaterials = (event) => {
     addBaseOreMaterials(event);
@@ -44,6 +45,7 @@ export const addChemicalMaterials = (event) => {
     addGalliumArsenicMaterials(event);
     addGoldMaterials(event);
     addIronMaterials(event);
+    addIronSlagMaterials(event);
     addIodineMaterials(event);
     addMagnesiumMaterials(event);
     addManganeseMaterials(event);
@@ -93,6 +95,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addIodineRecipes(event);
     addPlatinumGroupRecipes(event);
     addRheniumRecipes(event);
+    addIronSlagReprocessingRecipes(event);
 
     addAmmoniaRecipes(event);
     addCatalystRecipes(event);

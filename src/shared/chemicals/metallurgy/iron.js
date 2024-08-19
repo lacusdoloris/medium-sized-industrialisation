@@ -5,12 +5,20 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import { createDustIntermediate } from "../../materials/helpers";
+import { nijikaId } from "../../utils";
 
 export const addIronMaterials = (event) => {
     createDustIntermediate(event, "iron_oxide", 0x5f412f).components(
         "2x gtceu:iron",
         "3x gtceu:oxygen"
     );
+
+    event
+        .create(nijikaId("iron_slag"))
+        .gem()
+        .dust()
+        .color(0xbacfc9)
+        .iconSet(GTMaterialIconSet.GLASS);
 };
 
 /**
@@ -27,7 +35,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_magnetite")
         .itemInputs("32x #forge:crushed_ores/magnetite", "8x #nijika:carbon_rich_dusts")
-        .itemOutputs("24x gtceu:iron_dust", "8x nijika:slag")
+        .itemOutputs("24x gtceu:iron_dust", "8x gtceu:iron_slag_gem")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
@@ -36,7 +44,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite")
         .itemInputs("32x #forge:crushed_ores/hematite")
-        .itemOutputs("24x gtceu:iron_oxide_dust", "8x nijika:slag")
+        .itemOutputs("24x gtceu:iron_oxide_dust", "8x gtceu:iron_slag_gem")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
@@ -45,7 +53,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite_reduction")
         .itemInputs("32x #forge:crushed_ores/hematite", "8x #nijika:carbon_rich_dusts")
-        .itemOutputs("24x gtceu:iron_dust", "8x nijika:slag")
+        .itemOutputs("24x gtceu:iron_dust", "8x gtceu:iron_slag_gem")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)

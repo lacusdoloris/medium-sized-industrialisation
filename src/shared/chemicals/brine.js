@@ -67,15 +67,4 @@ export const addBrineRecipes = (event) => {
         .itemOutputs("1x gtceu:calcium_chloride_dust")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(2 * 20);
-
-    // magnesium hydroxide precipitation with calcium hydroxide
-    event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/brine/magnesium_hydroxide")
-        .inputFluids(
-            Fluid.of("gtceu:calcium_hydroxide").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:brine").withAmount(12 * FluidAmounts.BUCKET)
-        )
-        .itemOutputs("1x gtceu:magnesium_hydroxide_dust")
-        .duration(5 * 20)
-        .EUt(GTValues.VA[GTValues.HV]);
 };

@@ -208,6 +208,9 @@
     "material.nijika.sky_steel": "Sky Steel",
     "material.nijika.solvent_extraction_helper": "Solvent Extraction Helper",
     "material.nijika.ferrovanadium": "Ferrovanadium",
+    "material.nijika.iron_slag": "Iron Slag",
+    "material.nijika.vanadium_magnesium_slag_mixture": "Vanadium-Magnesium Slag Mixture",
+    "material.nijika.vanadium_magnesium_leach_mixture": "Vanadium-Magnesium Leach Mixture",
 
     "block.gtceu.bessemer_furnace": "Bessemer Converter",
     "gtceu.bessemer_smelting": "Bessemer Converter",
