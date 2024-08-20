@@ -45,7 +45,7 @@ export const addManganeseProcessingRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/manganese/pyrolusite_reduction_carbon")
         .itemInputs("1x gtceu:pyrolusite_dust", "1x #nijika:carbon_rich_dusts")
-        .itemOutputs("1x gtceu:manganese_dust")
+        .itemOutputs("1x gtceu:manganese_ingot")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
         .circuit(2)
         .EUt(GTValues.VA[GTValues.HV])
@@ -54,8 +54,8 @@ export const addManganeseProcessingRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/manganese/pyrolusite_reduction_alumina")
-        .itemInputs("3x gtceu:pyrolusite_dust", "4x gtceu:aluminium_dust")
-        .itemOutputs("3x gtceu:manganese_dust", "2x gtceu:alumina_dust")
+        .itemInputs("3x gtceu:pyrolusite_dust", "4x #nijika:blast_recipes/aluminothermics")
+        .itemOutputs("3x gtceu:manganese_ingot", "2x gtceu:alumina_dust")
         .circuit(2)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(10 * 20)
@@ -68,7 +68,11 @@ export const addManganeseProcessingRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/manganese/ferromanganese_aluminium")
-        .itemInputs("gtceu:pyrolusite_dust", "4x gtceu:iron_dust", "2x gtceu:aluminium_dust")
+        .itemInputs(
+            "gtceu:pyrolusite_dust",
+            "4x #nijika:blast_recipes/basic_irons",
+            "2x #nijika:blast_recipes/aluminothermics"
+        )
         .itemOutputs("2x gtceu:ferromanganese_ingot", "1x gtceu:alumina_dust")
         .circuit(1)
         .EUt(GTValues.VA[GTValues.HV])
@@ -80,7 +84,7 @@ export const addManganeseProcessingRecipes = (event) => {
         .itemInputs(
             "1x gtceu:pyrolusite_dust",
             "2x gtceu:iron_oxide_dust",
-            "6x gtceu:aluminium_dust"
+            "6x #nijika:blast_recipes/aluminothermics"
         )
         .itemOutputs("2x gtceu:ferromanganese_ingot", "3x gtceu:alumina_dust")
         .circuit(1)

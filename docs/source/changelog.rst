@@ -96,6 +96,9 @@ Recipe Changes
 
 - Compressor recipes for nuggets -> ingots and ingots -> blocks are no longer punitively long.
 
+- Reduction recipes using iron or aluminium can now use either ingots or dusts. Additionally, most
+  of the blast furnace reduction recipes that produced dusts now produce ingots directly.
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. 

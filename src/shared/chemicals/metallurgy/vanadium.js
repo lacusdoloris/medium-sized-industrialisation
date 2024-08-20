@@ -66,7 +66,7 @@ export const addVanadiumChemicalChain = (event) => {
         .itemInputs(
             "3x #forge:dusts/iron_oxide",
             "3x #forge:dusts/vanadium_pentoxide",
-            "16x #forge:dusts/aluminium"
+            "16x #nijika:blast_recipes/aluminothermics"
         )
         .itemOutputs("6x gtceu:ferrovanadium_ingot", "8x gtceu:alumina_dust")
         .EUt(GTValues.VA[GTValues.MV])

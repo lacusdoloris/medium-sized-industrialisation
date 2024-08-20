@@ -269,6 +269,8 @@
     "tag.item.nijika.copper_alloy_ingots": "Copper Alloy Ingots",
     "tag.item.nijika.copper_alloy_blocks": "Copper Alloy Blocks",
     "tag.item.nijika.wafers": "Any Silicon Wafer",
+    "tag.item.nijika.blast_recipes.basic_iron": "Any Iron",
+    "tag.item.nijika.blast_recipes.aluminothermics": "Any Aluminium",
 
     "tag.item.gtceu.circuits.ulv": "ULV Circuits",
     "tag.item.gtceu.circuits.lv": "Low Voltage Circuits",

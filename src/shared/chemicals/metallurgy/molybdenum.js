@@ -235,8 +235,8 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .electric_blast_furnace("nijika:chemicals/molybednum/ferromolybenum")
         .itemInputs(
             "3x gtceu:molybdenum_trioxide_dust",
-            "2x gtceu:iron_dust",
-            "6x gtceu:aluminium_dust"
+            "2x #nijika:blast_recipes/basic_irons",
+            "6x #nijika:blast_recipes/aluminothermics"
         )
         .itemOutputs("3x gtceu:ferromolybdenum_ingot", "3x gtceu:alumina_dust")
         .EUt(GTValues.V[GTValues.EV])

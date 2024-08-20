@@ -73,7 +73,7 @@ export const addChromiteProcessingRecipes = (event) => {
     // Na2Cr2O7 + S = Cr2O3 + Na2SO4
 
     // Chromium(III) oxide destined for aluminothermic production of pure chromium metal
-    // must be heated additionally at 1000 �C to increase its grain size.
+    // must be heated additionally at 1000C to increase its grain size.
     // (see Chromium(III) oxides section)
 
     event.recipes.gtceu
@@ -90,14 +90,13 @@ export const addChromiteProcessingRecipes = (event) => {
 
     event.recipes.gtceu
         .electric_blast_furnace("nijika:tier02/chromium/chromium_aluminothermic")
-        .itemInputs("1x gtceu:chromium_iii_oxide_dust", "2x #forge:dusts/aluminium")
-        .itemOutputs("2x gtceu:chromium_dust", "1x gtceu:alumina_dust")
+        .itemInputs("1x gtceu:chromium_iii_oxide_dust", "2x #nijika:blast_recipes/aluminothermics")
+        .itemOutputs("2x gtceu:chromium_ingot", "1x gtceu:alumina_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .blastFurnaceTemp(1300)
         .duration(5 * 20);
 
     // Side recipe: FeCr2O4 + 2C -> FeCr + 2 CO2, for stainless steel later on.
-
     event.recipes.gtceu
         .electric_blast_furnace("nijika:tier02/chromium/ferrochrome")
         .itemInputs("1x gtceu:chromite_dust", "#nijika:carbon_rich_dusts")

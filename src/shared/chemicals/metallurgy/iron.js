@@ -65,7 +65,7 @@ export const addMiscIronRecipes = (event) => {
         .electric_blast_furnace("nijika:chemicals/iron/magnetite_reduction")
         .itemInputs("1x gtceu:magnetite_dust")
         .inputFluids(Fluid.of("gtceu:hydrogen").withAmount(8 * FluidAmounts.BUCKET))
-        .itemOutputs("3x gtceu:iron_dust")
+        .itemOutputs("3x minecraft:iron_ingot")
         .outputFluids(Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20)
@@ -75,8 +75,8 @@ export const addMiscIronRecipes = (event) => {
     // 8 Al + 3 Fe3O4 = 4 Al2O3 + 9 Fe
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/magnetite_aluminothermic")
-        .itemInputs("8x gtceu:aluminium_dust", "3x gtceu:magnetite_dust")
-        .itemOutputs("4x gtceu:alumina_dust", "9x gtceu:iron_dust")
+        .itemInputs("8x #nijika:blast_recipes/aluminothermics", "3x gtceu:magnetite_dust")
+        .itemOutputs("4x gtceu:alumina_dust", "9x minecraft:iron_ingot")
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20)
         .blastFurnaceTemp(1100);
@@ -86,7 +86,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/hematite_reduction")
         .itemInputs("2x gtceu:hematite_dust", "3x #nijika:carbon_rich_dusts")
-        .itemOutputs("4x gtceu:iron_dust")
+        .itemOutputs("4x minecraft:iron_ingot")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(3 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20)
@@ -95,7 +95,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/iron_oxide_reduction")
         .itemInputs("2x gtceu:iron_oxide_dust", "3x #nijika:carbon_rich_dusts")
-        .itemOutputs("4x gtceu:iron_dust")
+        .itemOutputs("4x minecraft:iron_ingot")
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(3 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(5 * 20)
