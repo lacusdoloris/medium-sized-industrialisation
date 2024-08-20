@@ -94,6 +94,8 @@ Recipe Changes
 - Wires from Create: Crafts & Additions are now craftable in an assembler. These work as basic RF
   carriers e.g. from New Age turbines.
 
+- Compressor recipes for nuggets -> ingots and ingots -> blocks are no longer punitively long.
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. 
@@ -183,7 +185,7 @@ World Changes
 
 - New ores have been added:
 
-    - Arsenopyrite is an ore of iron and arsenic. It can be found in copper and redstone veins.
+  - Arsenopyrite is an ore of iron and arsenic. It can be found in copper and redstone veins.
 
 - Fluid veins have been significantly buffed, having an average of 2.5x the amount of fluid per 
   vein. They also have much higher depleted output than before, to incentivise creating 

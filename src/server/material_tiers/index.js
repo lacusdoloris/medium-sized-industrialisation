@@ -147,6 +147,20 @@ const addAutomaticMaterialRecipes = (event) => {
                 .EUt(GTValues.VHA[GTValues.ULV])
                 .duration(2 * 20);
 
+            event.recipes.gtceu
+                .compressor(`nijika:auto/compressor/${id}/nugget_to_ingot`)
+                .itemInputs(`9x #forge:nuggets/${id}`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.ingot, material))
+                .EUt(2)
+                .duration(10);
+
+            event.recipes.gtceu
+                .compressor(`nijika:auto/compressor/${id}/ingot_to_block`)
+                .itemInputs(`9x #forge:ingots/${id}`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.block, material))
+                .EUt(2)
+                .duration(10);
+
             if (hasRod) {
                 // yeeah, idk either. thanks gtceu.
                 if (Item.exists(`${modId}:${id}_rod`)) {
@@ -265,6 +279,11 @@ export const adjustMaterialTierRecipes = (event) => {
         type: "gtceu:extruder",
         input: /gtceu:(?:long_)?(?:rod|block|wire|plate|ingot|ring)_extruder_mold/,
     });
+
+    // remove the fucking FIFTEEN SECOND compressor recipe which I'm sure is only there
+    // to punish you for wrought iron. this will be replaced with a nice ten tick one
+    event.remove({ type: "gtceu:compressor", input: "#forge:nuggets" });
+    event.remove({ type: "gtceu:compressor", input: "#forge:ingots" });
 
     addAutomaticMaterialRecipes(event);
     addCreateRecipes(event);
