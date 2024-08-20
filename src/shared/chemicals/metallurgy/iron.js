@@ -35,7 +35,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_magnetite")
         .itemInputs("32x #forge:crushed_ores/magnetite", "8x #nijika:carbon_rich_dusts")
-        .itemOutputs("24x gtceu:iron_dust", "8x gtceu:iron_slag_gem")
+        .itemOutputs("24x minecraft:iron_ingot", "8x gtceu:iron_slag_gem")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
@@ -53,7 +53,7 @@ export const addMiscIronRecipes = (event) => {
     event.recipes.gtceu
         .electric_blast_furnace("nijika:chemicals/iron/bulk_crushed_hematite_reduction")
         .itemInputs("32x #forge:crushed_ores/hematite", "8x #nijika:carbon_rich_dusts")
-        .itemOutputs("24x gtceu:iron_dust", "8x gtceu:iron_slag_gem")
+        .itemOutputs("24x minecraft:iron_ingot", "8x gtceu:iron_slag_gem")
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1700)
         .duration(30 * 20)
