@@ -7,12 +7,12 @@
 export const ORESTONE_DEFINITIONS = {
     crimsite: {
         ore70Percent: "redstone",
-        ore40Percent: null,
+        ore40Percent: "pentlandite",
         nugget: "minecraft:redstone",
     },
     ochrum: {
         ore70Percent: "hematite",
-        ore40Percent: null,
+        ore40Percent: "hematite",
         nugget: "minecraft:iron_nugget",
     },
     veridium: {
