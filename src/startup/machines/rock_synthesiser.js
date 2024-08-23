@@ -25,7 +25,7 @@ export const addRockSynthesiserMultiblock = (builder) => {
         return FactoryBlockPattern.start()
             .aisle("BBBBB", "A###A", "A###A", "#####", "#####")
             .aisle("BBBBB", "#AAA#", "#####", "#####", "#####")
-            .aisle("BBVBB", "#ABA#", "##B##", "##B##", "##B##")
+            .aisle("BBVBB", "#ABA#", "##A##", "##A##", "##A##")
             .aisle("BBBBB", "#ACA#", "#####", "#####", "#####")
             .aisle("BBBBB", "A###A", "A###A", "#####", "#####")
             .where("B", Predicates.blocks("gtceu:heatproof_machine_casing"))
