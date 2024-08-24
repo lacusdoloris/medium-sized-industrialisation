@@ -113,18 +113,18 @@ export const addAluminiumProcessingRecipes = (event) => {
     // Red Mud Slurry -> various outputs
     event.recipes.gtceu
         .centrifuge("nijika:tier02/aluminium/red_mud_centrifuging")
-        .inputFluids(Fluid.of("gtceu:red_mud_slurry").withAmount(1 * FluidAmounts.BUCKET))
-        .chancedOutput("1x gtceu:sodium_hydroxide_dust", 8000.0, 0.0) // 80%, never boosted
-        .chancedOutput("1x gtceu:rutile_dust", 1500.0, 800.0) // 15%, 8% boost per tier
-        .chancedOutput("1x gtceu:iron_oxide_dust", 8000.0, 0.0) // 80%, never boosted
-        .chancedOutput("1x gtceu:alumina_dust", 3000.0, 500.0) // 30%, 5% boost
-        .chancedOutput("1x gtceu:silicon_dioxide_dust", 5000, 0.0) // 50%, never boosted
-        .chancedOutput("1x gtceu:gallium_dust", 1100.0, 800.0) // 11%, 8% boost per tier
+        .inputFluids(Fluid.of("gtceu:red_mud_slurry").withAmount(10 * FluidAmounts.BUCKET))
+        .itemOutputsRanged("gtceu:sodium_hydroxide_dust", 0, 8)
+        .itemOutputsRanged("gtceu:iron_oxide_dust", 0, 8)
+        .itemOutputsRanged("gtceu:gallium_dust", 0, 6)
+        .itemOutputsRanged("gtceu:rutile_dust", 0, 5)
+        .itemOutputsRanged("gtceu:alumina_dust", 0, 5)
+        .itemOutputsRanged("gtceu:silicon_dioxide_dust", 1, 5)
         .outputFluids(
-            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(8 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.VA[GTValues.MV])
-        .duration(20);
+        .duration(2 * 20);
 
     // Aluminium Chloride synthesis via chlorine gas
     // 2 Al + 3 Cl2 = 2 AlCl3
