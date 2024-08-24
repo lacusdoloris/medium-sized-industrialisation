@@ -48,7 +48,7 @@ export const doTier02Content = (event) => {
         .evaporation_pool("nijika:tier02/basic_salt_water_production")
         .inputFluids(Fluid.of("minecraft:water").withAmount(250 * FluidAmounts.BUCKET))
         .outputFluids(Fluid.of("gtceu:salt_water").withAmount(50 * FluidAmounts.BUCKET))
-        .chancedOutput("8x gtceu:sodium_hydroxide_dust", 5000.0, 0.0)
+        .itemOutputsRanged("gtceu:sodium_hydroxide_dust", 0, 16)
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20 * 60);
 
