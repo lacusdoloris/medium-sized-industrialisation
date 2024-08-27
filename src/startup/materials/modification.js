@@ -182,7 +182,7 @@ export const customiseMaterials = () => {
     }
 
     // remove all byproducts of bauxite, as we have our own custom bayer process for it.
-    let bauxite = getMaterial("bauxite");
+    let bauxite = GTMaterials.Bauxite;
     {
         bauxite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
         getOreProperty(bauxite).getOreByProducts().clear();
@@ -261,7 +261,7 @@ export const customiseMaterials = () => {
         oreProp.setDirectSmeltResult(null);
     }
 
-    let mosi = getMaterial("molybdenum_disilicide");
+    let mosi = GTMaterials.MolybdenumDisilicide;
     {
         mosi.properties.setProperty(
             PropertyKey.WIRE,
@@ -289,7 +289,7 @@ export const customiseMaterials = () => {
         oreProp.setOreByProducts("apatite", "rock_salt", "phosphate");
     }
 
-    let sphalerite = getMaterial("sphalerite");
+    let sphalerite = GTMaterials.Sphalerite;
     {
         let oreProp = getOreProperty(sphalerite);
         oreProp.setDirectSmeltResult(null);
@@ -301,9 +301,16 @@ export const customiseMaterials = () => {
         oreProp.setDirectSmeltResult(GTMaterials.Iron);
     }
 
-    let palladium = getMaterial("palladium");
+    let palladium = GTMaterials.Palladium;
     palladium.setMaterialARGB(0xe4340c);
     palladium.setMaterialSecondaryARGB(0xf45c34);
+    
+    let silver = GTMaterials.Silver;
+    {
+        let oreProp = getOreProperty(silver);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(GTMaterials.Gold, GTMaterials.Sulfur, GTMaterials.Sulfur, GTMaterials.Gold);
+    }
 
     // have to do this here, because the material builder doesn't seem to have a way to override
     // it.
