@@ -51,7 +51,7 @@ export const addRheniumRecipes = (event) => {
         .mixer("nijika:chemicals/rhenium/sulfuric_molybdenite_runoff")
         .inputFluids(
             Fluid.of("gtceu:molybdenum_flue").withAmount(6 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:distilled_water").withAmount(4 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:distilled_water").withAmount(4 * FluidAmounts.BUCKET)
         )
         .outputFluids(
             Fluid.of("gtceu:sulfuric_molybdenite_runoff").withAmount(6 * FluidAmounts.BUCKET)
