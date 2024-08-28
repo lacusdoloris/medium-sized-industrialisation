@@ -58,11 +58,12 @@ export const addBrineRecipes = (event) => {
     // calcium hydroxide neutralisation
     // 2 HCl + Ca(OH)2 = CaCl2 + 2 H2O
     // TODO: Ammonia recipe?
+    event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_calcium_hydroxide" });
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/misc/calcium_hydroxide_neutralisation")
+        .itemInputs("gtceu:calcium_hydroxide_dust")
         .inputFluids(
-            Fluid.of("gtceu:calcium_hydroxide").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(2)
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
         )
         .itemOutputs("1x gtceu:calcium_chloride_dust")
         .EUt(GTValues.VA[GTValues.LV])
