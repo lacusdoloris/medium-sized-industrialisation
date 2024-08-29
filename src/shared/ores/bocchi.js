@@ -63,7 +63,12 @@ export const BASE_ORES = {
  */
 export const addBaseOreMaterials = (event) => {
     for (let [name, data] of Object.entries(BASE_ORES)) {
-        event.create(nijikaId(name)).color(data.colour).ore().dust().iconSet(data.iconSet)
+        event
+            .create(nijikaId(name))
+            .color(data.colour)
+            .ore()
+            .dust()
+            .iconSet(data.iconSet)
             .flags(GTMaterialFlags.NO_ORE_PROCESSING_TAB, GTMaterialFlags.NO_ORE_SMELTING);
     }
 };

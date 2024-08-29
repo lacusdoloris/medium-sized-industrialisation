@@ -214,7 +214,7 @@ export const addBallGrinderRecipes = (event) => {
 
 /**
  * Adds the recipes for the bulk washing channel.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const addWashingChannelRecipes = (event) => {
@@ -229,17 +229,14 @@ export const addWashingChannelRecipes = (event) => {
 
         // ore washing byproducts are in the same slot as macerator byproducts ?_?
         let byproduct = getByproduct(material, oreProp);
-        event.recipes.gtceu.bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
+        event.recipes.gtceu
+            .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
             .itemInputs(getStackForTagPrefix(TagPrefix.crushed, material).withCount(64))
             .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(9600 * FluidAmounts.MB))
             .itemOutputs(getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64))
-            .itemOutputsRanged(
-                byproduct,
-                7,
-                21
-            )
+            .itemOutputsRanged(byproduct, 7, 21)
             .itemOutputsRanged("gtceu:stone_dust", 48, 64)
             .EUt(GTValues.VA[GTValues.MV])
             .duration(25 * 20);
-    })
-}
+    });
+};

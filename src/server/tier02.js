@@ -81,11 +81,13 @@ export const doTier02Content = (event) => {
         .circuit(2);
 
     // *does* require MV circuits, unlike the ball bearing mill.
-    event.shaped("gtceu:washing_channel", ["GGG", "FCF", "SMS"], {
-        G: mvTier.materials.glass,
-        F: "gtceu:item_filter",
-        C: mvTier.circuitTag,
-        S: "#forge:plates/steel",
-        M: "gtceu:mv_electric_motor"
-    }).id("nijika:tier02/ore_washing_channel");
+    event
+        .shaped("gtceu:washing_channel", ["GGG", "FCF", "SMS"], {
+            G: mvTier.materials.glass,
+            F: "gtceu:item_filter",
+            C: mvTier.circuitTag,
+            S: "#forge:plates/steel",
+            M: "gtceu:mv_electric_motor",
+        })
+        .id("nijika:tier02/ore_washing_channel");
 };
