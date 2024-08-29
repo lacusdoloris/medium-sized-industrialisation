@@ -39,8 +39,8 @@
 				}
 			]
 			title: "Burner mining drill"
-			x: 0.0d
-			y: 0.0d
+			x: 3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5E69A3F286C7E546"]
@@ -52,8 +52,8 @@
 				type: "item"
 			}]
 			title: "Kessoku Location Wand"
-			x: 1.5d
-			y: 0.0d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5E69A3F286C7E546"]
@@ -71,8 +71,8 @@
 				type: "item"
 			}]
 			title: "Electric Motors"
-			x: -1.5d
-			y: 0.0d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5E69A3F286C7E546"]
@@ -84,8 +84,8 @@
 				type: "item"
 			}]
 			title: "Ore Sorting Facility"
-			x: 0.0d
-			y: 1.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["310811C821F6F90A"]
@@ -106,8 +106,8 @@
 				type: "item"
 			}]
 			title: "Motor Extender"
-			x: -1.5d
-			y: 1.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
@@ -119,8 +119,8 @@
 				item: "gtceu:crushed_bocchinium_ore"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
@@ -132,8 +132,8 @@
 				item: "gtceu:crushed_ryoite_ore"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
@@ -145,8 +145,8 @@
 				item: "gtceu:crushed_kitakitaite_ore"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
@@ -158,8 +158,8 @@
 				item: "gtceu:crushed_nijikaite_ore"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["705095DDB708BA9D"]
@@ -171,8 +171,8 @@
 				item: "gtceu:crushed_kikurite_ore"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["44F3737CC06E96EB"]
@@ -184,8 +184,8 @@
 				type: "item"
 			}]
 			title: "Chunk Loading"
-			x: 1.5d
-			y: 1.5d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6A7DE62BB369C244"]
@@ -197,8 +197,8 @@
 				type: "item"
 			}]
 			title: "Impure Kikurite"
-			x: -2.0d
-			y: 4.5d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1E3C65D5ABBFEE25"]
@@ -210,8 +210,8 @@
 				type: "item"
 			}]
 			title: "Impure Kitakitaite"
-			x: 0.0d
-			y: 4.5d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6C7B57A6456C017C"]
@@ -223,8 +223,8 @@
 				type: "item"
 			}]
 			title: "Impure Bocchinium"
-			x: -1.0d
-			y: 4.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["226F73A245BB3CD5"]
@@ -236,8 +236,8 @@
 				type: "item"
 			}]
 			title: "Impure Ryoite"
-			x: 1.0d
-			y: 4.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6FA74A42A00CFD4F"]
@@ -249,8 +249,8 @@
 				type: "item"
 			}]
 			title: "Impure Nijikaite"
-			x: 2.0d
-			y: 4.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["473EF5FF75ACB3EC"]
@@ -266,8 +266,8 @@
 				type: "item"
 			}]
 			title: "Early Ores"
-			x: 0.0d
-			y: -4.5d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -284,8 +284,8 @@
 				item: "create:veridium"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -297,8 +297,8 @@
 				item: "create:ochrum"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -315,8 +315,8 @@
 				item: "create:asurine"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -333,8 +333,8 @@
 				item: "create:scoria"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -6.0d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -351,8 +351,8 @@
 				item: "create:scorchia"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.0d
+			x: -1.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -369,8 +369,8 @@
 				item: "create:crimsite"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -6.0d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["222C90F2D2CF1E89"]
@@ -382,8 +382,8 @@
 				item: "minecraft:diorite"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -407,10 +407,47 @@
 				type: "item"
 			}]
 			title: "Rock Creation"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35769AB6DF5D584B"]
+			description: [
+				"The &aBall-Bearing Grinding Mill&r is a steel multiblock made in late LV/early MV that acts as a first stage macerator, It can grind up &9raw ores&r into &acrushed ores&r, but unlike the LV/MV macerators it can actually produce &abyproducts&r."
+				""
+				"By reading this quest, you have agreed to the terms and conditions that follow: If you make a joke about CBT, you will be imminently smited."
+			]
+			id: "62CD691A2392C26A"
+			subtitle: "Grinding Mill"
+			tasks: [{
+				id: "7856F31DE862DA86"
+				item: "gtceu:ball_grinder"
+				type: "item"
+			}]
+			title: "Ball Bearing"
 			x: 0.0d
-			y: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["62CD691A2392C26A"]
+			description: [
+				"The &aBulk Washing Channel&r is an earlygame multiblock version of the ore washer. Similarly to the Ball Bearing Grinding Mill, it operates on large amounts of ores at once instead of single items like the singleblock machines."
+				""
+				"This is &edramatically faster&r than MV ore washers at the cost of requiring significantly more distilled water; it is designed to synergise with the grinding mill well. "
+				""
+				"Please note that the Washing Channel can only produce &dpurified ores&r; you need to use the singleblock washer for anything else."
+			]
+			id: "3D7694FCD64C3AD0"
+			tasks: [{
+				id: "41EFD48076B5E36B"
+				item: "gtceu:washing_channel"
+				type: "item"
+			}]
+			title: "Large Ore Washer"
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Slug Pharmacy"]
-	title: "Passive Ore Generation"
+	title: "Ore Processing \\& Generation"
 }

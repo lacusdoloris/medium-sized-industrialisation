@@ -453,24 +453,6 @@
 			x: 8.0d
 			y: 0.0d
 		}
-		{
-			dependencies: ["35769AB6DF5D584B"]
-			description: [
-				"The &aBall-Bearing Grinding Mill&r is a steel multiblock made in late LV/early MV that acts as a first stage macerator, It can grind up &9raw ores&r into &acrushed ores&r, but unlike the LV/MV macerators it can actually produce &abyproducts&r."
-				""
-				"By reading this quest, you have agreed to the terms and conditions that follow: If you make a joke about CBT, you will be imminently smited."
-			]
-			id: "62CD691A2392C26A"
-			subtitle: "Grinding Mill"
-			tasks: [{
-				id: "7856F31DE862DA86"
-				item: "gtceu:ball_grinder"
-				type: "item"
-			}]
-			title: "Ball Bearing"
-			x: 3.0d
-			y: 2.0d
-		}
 	]
 	subtitle: ["Isopod Collection"]
 	title: "Multiblock Info"
