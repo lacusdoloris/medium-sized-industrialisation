@@ -35,7 +35,7 @@ export const addWashingChannelMultiblock = (builder) => {
                 "B",
                 Predicates.abilities(PartAbility.IMPORT_ITEMS)
                     .setExactLimit(1)
-                    .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setExactLimit(1))
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setExactLimit(1))
             )
             .where(
                 "A",
