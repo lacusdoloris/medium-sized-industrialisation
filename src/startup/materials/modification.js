@@ -304,12 +304,17 @@ export const customiseMaterials = () => {
     let palladium = GTMaterials.Palladium;
     palladium.setMaterialARGB(0xe4340c);
     palladium.setMaterialSecondaryARGB(0xf45c34);
-    
+
     let silver = GTMaterials.Silver;
     {
         let oreProp = getOreProperty(silver);
         oreProp.getOreByProducts().clear();
-        oreProp.setOreByProducts(GTMaterials.Gold, GTMaterials.Sulfur, GTMaterials.Sulfur, GTMaterials.Gold);
+        oreProp.setOreByProducts(
+            GTMaterials.Gold,
+            GTMaterials.Sulfur,
+            GTMaterials.Sulfur,
+            GTMaterials.Gold
+        );
     }
 
     // have to do this here, because the material builder doesn't seem to have a way to override

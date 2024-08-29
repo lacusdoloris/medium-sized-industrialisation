@@ -62,9 +62,7 @@ export const addBrineRecipes = (event) => {
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/misc/calcium_hydroxide_neutralisation")
         .itemInputs("gtceu:calcium_hydroxide_dust")
-        .inputFluids(
-            Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET)
-        )
+        .inputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(2 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:calcium_chloride_dust")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(2 * 20);
