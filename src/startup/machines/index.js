@@ -11,6 +11,7 @@ import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evapor
 import { addIonExchangerMultiblock, addIonExchangerRecipeType } from "./ion_exchanger";
 import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
 import { addRockSynthesiserMultiblock, addRockSynthesisRecipeType } from "./rock_synthesiser";
+import { addWashingChannelMultiblock, addWashingChannelRecipeType } from "./washing_channel";
 
 // some notes
 //
@@ -33,6 +34,7 @@ export const addAllRecipeTypes = (event) => {
     addIonExchangerRecipeType(event.create("ion_exchange"));
     addRockSynthesisRecipeType(event.create("rock_synthesis"));
     addBallGrinderRecipeType(event.create("ball_grinding"));
+    addWashingChannelRecipeType(event.create("bulk_washing"));
 };
 
 /**
@@ -48,4 +50,5 @@ export const addAllMachineTypes = (event) => {
     addIonExchangerMultiblock(event.create("nijika:ion_exchanger", "multiblock"));
     addRockSynthesiserMultiblock(event.create("nijika:rock_synthesiser", "multiblock"));
     addBallGrinderMultiblock(event.create("nijika:ball_grinder", "multiblock"));
+    addWashingChannelMultiblock(event.create("nijika:washing_channel", "multiblock"));
 };
