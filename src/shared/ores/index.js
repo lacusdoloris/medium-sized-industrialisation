@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { addBallGrinderRecipes } from "./ball_grinding";
+import { addBallGrinderRecipes, addWashingChannelRecipes } from "./bulk_processing";
 import { addBaseOreMaterials, addBaseOreRecipes } from "./bocchi";
 import { adjustOrestoneCrushingRecipes } from "./orestones";
 
@@ -26,4 +26,5 @@ export const addCustomOreProcessingRecipes = (event) => {
     adjustOrestoneCrushingRecipes(event);
     addBaseOreRecipes(event);
     addBallGrinderRecipes(event);
+    addWashingChannelRecipes(event);
 };

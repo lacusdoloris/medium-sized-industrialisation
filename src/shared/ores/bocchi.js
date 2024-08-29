@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { nijikaId } from "../utils";
+import { getMaterial, getStackForTagPrefix, nijikaId } from "../utils";
 
 // todo: insert vanadite
 
@@ -123,11 +123,15 @@ export const addBaseOreRecipes = (event) => {
         // TODO: Wastewaterr.
         event.remove({ input: `gtceu:impure_${name}_dust` });
         event.recipes.gtceu
-            .ore_washer(`nijika:base_ores/${name}/washing`)
-            .itemInputs(`1x gtceu:crushed_${name}_ore`)
-            .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(2 * FluidAmounts.BUCKET))
-            .itemOutputs(`1x gtceu:impure_${name}_dust`)
-            .chancedOutput(`1x gtceu:raw_${oreData.gem}`, 5000.0, 0.0)
+            .bulk_washing(`nijika:base_ores/${name}/washing`)
+            .itemInputs(`64x gtceu:crushed_${name}_ore`)
+            .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(9600 * FluidAmounts.MB))
+            .itemOutputs(`64x gtceu:impure_${name}_dust`)
+            .itemOutputsRanged(
+                getStackForTagPrefix(TagPrefix.rawOre, getMaterial(oreData.gem)),
+                15,
+                35
+            )
             .EUt(GTValues.VHA[GTValues.EV])
             .duration(20 * 20);
 

@@ -22,13 +22,14 @@ const BALL_TYPES = {
 };
 
 /**
- * Gets the byproduct material for macerator recipes (i.e. the first byproduct).
+ * Gets the byproduct material for ore processing recipes.
  *
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
  * @param {Internal.OreProperty} oreProp
  * @param {Internal.OreProperty} oreProp
+ * @returns {Internal.ItemStack}
  */
-const getMaceratorByproduct = (material, oreProp, slot) => {
+const getByproduct = (material, oreProp, slot) => {
     let realSlot = typeof slot === "undefined" ? 0 : slot;
 
     let byproductMat;
@@ -72,7 +73,7 @@ const addRawToCrushedRecipe = (event, ballType, ballMaterial, material, oreProp)
         .itemInputs(inputStack, `8x #forge:rounds/${ballType}`)
         .itemOutputs(crushedStack.withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp),
+            getByproduct(material, oreProp),
             7, // 22.5% of 64, rounded down
             21
         )
@@ -103,7 +104,7 @@ const addCrushedToImpure = (event, ballType, ballMaterial, material, oreProp) =>
         )
         .itemOutputs(getStackForTagPrefix(TagPrefix.dustImpure, material).withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp),
+            getByproduct(material, oreProp),
             7, // 22.5% of 64, rounded down
             21
         )
@@ -135,7 +136,7 @@ const addPurifiedToPureDust = (event, ballType, ballMaterial, material, oreProp)
         )
         .itemOutputs(getStackForTagPrefix(TagPrefix.dustPure, material).withCount(64))
         .itemOutputsRanged(
-            getMaceratorByproduct(material, oreProp, 1),
+            getByproduct(material, oreProp, 1),
             7, // 22.5% of 64, rounded down
             21
         )
@@ -210,3 +211,35 @@ export const addBallGrinderRecipes = (event) => {
         });
     }
 };
+
+/**
+ * Adds the recipes for the bulk washing channel.
+ * 
+ * @param {Internal.RecipesEventJS} event
+ */
+export const addWashingChannelRecipes = (event) => {
+    // TODO: Wastewater
+
+    iterateOverAllMaterials((material) => {
+        // this follows the same idea as the macerator recipes.
+        if (material.hasFlag(GTMaterialFlags.NO_ORE_PROCESSING_TAB)) return;
+
+        let oreProp = getOreProperty(material);
+        if (oreProp === null) return;
+
+        // ore washing byproducts are in the same slot as macerator byproducts ?_?
+        let byproduct = getByproduct(material, oreProp);
+        event.recipes.gtceu.bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
+            .itemInputs(getStackForTagPrefix(TagPrefix.crushed, material).withCount(64))
+            .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(9600 * FluidAmounts.MB))
+            .itemOutputs(getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64))
+            .itemOutputsRanged(
+                byproduct,
+                7,
+                21
+            )
+            .itemOutputsRanged("gtceu:stone_dust", 48, 64)
+            .EUt(GTValues.VA[GTValues.MV])
+            .duration(25 * 20);
+    })
+}
