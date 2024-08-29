@@ -1,11 +1,11 @@
 Changelog
 =========
 
-Version 0.9: The Medium Sized Release
+Version 0.9: The Ore Processing Update
 --------------------------------------
 
-This is a release primarily focused around refining gameplay, as well as changing the worldgen
-core mod.
+This update focuses on refining gameplay, and introducing bulk ore processing systems across 
+late LV/early MV.
 
 Mod Changes
 ~~~~~~~~~~~
@@ -98,6 +98,10 @@ Recipe Changes
 
 - Reduction recipes using iron or aluminium can now use either ingots or dusts. Additionally, most
   of the blast furnace reduction recipes that produced dusts now produce ingots directly.
+
+- A number of recipes now use ranged outputs, instead of chanced outputs. This makes them feel more
+  fair with relation to larger stack sizes than the "all-or-nothing" approach of the previous 
+  system.
 
 - Tier 0 (earlygame) changes:
 
