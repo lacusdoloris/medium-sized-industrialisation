@@ -238,5 +238,21 @@ export const addWashingChannelRecipes = (event) => {
             .itemOutputsRanged("gtceu:stone_dust", 48, 64)
             .EUt(GTValues.VA[GTValues.MV])
             .duration(25 * 20);
+
+        let washedIn = oreProp.getWashedIn();
+        if (washedIn.first != null) {
+            let washedMat = washedIn.first;
+            let washedAmountMb = washedIn.second * 96;
+            let washedInByproduct = getByproduct(material, getOreProperty(material), 3);
+
+            event.recipes.gtceu
+                .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing_special`)
+                .itemInputs(getStackForTagPrefix(TagPrefix.crushed, material).withCount(64))
+                .inputFluids(Fluid.of(washedMat.getFluid()).withAmount(washedAmountMb * FluidAmounts.MB))
+                .itemOutputs(getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64))
+                .itemOutputsRanged(washedInByproduct, 41, 48)
+                .EUt(GTValues.VA[GTValues.MV])
+                .duration(25 * 20);
+        }
     });
 };
