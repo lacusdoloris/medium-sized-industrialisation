@@ -73,14 +73,6 @@ export const addBaseOreMaterials = (event) => {
     }
 };
 
-const goldify = (what) => {
-    if (what == "gold") {
-        return "minecraft:raw_gold";
-    } else {
-        return `gtceu:raw_${what}`;
-    }
-};
-
 /**
  * Creates and adjusts the recipes for the base ores.
  *
@@ -118,8 +110,11 @@ export const addBaseOreRecipes = (event) => {
         event.remove({ input: `gtceu:crushed_${name}_ore` });
         event.recipes.gtceu
             .ore_sorting(`nijika:base_ores/${name}/sorting_tier_1`)
-            .itemInputs(`4x gtceu:crushed_${name}_ore`)
-            .itemOutputs(`2x ${goldify(oreData.intoOres[0])}`, `1x ${goldify(oreData.intoOres[1])}`)
+            .itemInputs(`32x gtceu:crushed_${name}_ore`)
+            .itemOutputs(
+                getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[0]).withCount(16),
+                getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[1]).withCount(8)
+            )
             .duration(5 * 20)
             .EUt(GTValues.VA[GTValues.HV])
             .circuit(1);
@@ -137,16 +132,16 @@ export const addBaseOreRecipes = (event) => {
                 15,
                 35
             )
-            .EUt(GTValues.VHA[GTValues.EV])
+            .EUt(GTValues.VHA[GTValues.MV])
             .duration(20 * 20);
 
         event.recipes.gtceu
             .ore_sorting(`nijika:base_ores/${name}/sorting_tier_2`)
-            .itemInputs(`4x gtceu:impure_${name}_dust`)
+            .itemInputs(`32x gtceu:impure_${name}_dust`)
             .itemOutputs(
-                `3x ${goldify(oreData.intoOres[0])}`,
-                `1x ${goldify(oreData.intoOres[1])}`,
-                `1x ${goldify(oreData.intoOres[2])}`
+                getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[0]).withCount(16),
+                getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[1]).withCount(16),
+                getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[2]).withCount(8)
             )
             .duration(5 * 20)
             .EUt(GTValues.VA[GTValues.EV])
