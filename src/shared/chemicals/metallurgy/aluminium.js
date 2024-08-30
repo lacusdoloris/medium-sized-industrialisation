@@ -56,7 +56,7 @@ export const addAluminiumProcessingRecipes = (event) => {
     // Chemical reactor only supports two outputs, so just skip on the water output.
     event.recipes.gtceu
         .chemical_reactor("nijika:tier02/aluminium/bayer_pt_1")
-        .itemInputs("2x #forge:dusts/bauxite", "2x #forge:dusts/sodium_hydroxide")
+        .itemInputs("2x #forge:crushed_ores/bauxite", "2x #forge:dusts/sodium_hydroxide")
         .inputFluids(Fluid.of("minecraft:water").withAmount(4 * FluidAmounts.BUCKET))
         .outputFluids(
             Fluid.of("gtceu:sodium_aluminate").withAmount(2 * FluidAmounts.BUCKET),

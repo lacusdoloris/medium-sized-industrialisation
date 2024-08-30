@@ -185,6 +185,7 @@ export const customiseMaterials = () => {
     let bauxite = GTMaterials.Bauxite;
     {
         bauxite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+        bauxite.addFlags(GTMaterialFlags.NO_ORE_PROCESSING_TAB, GTMaterialFlags.NO_ORE_SMELTING);
         getOreProperty(bauxite).getOreByProducts().clear();
     }
 
