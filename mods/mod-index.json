@@ -77,15 +77,15 @@
         "version_id": "8w9SsgMR"
     },
     "5ZwdcRci": {
-        "checksum": "93662adb02f29e6cbd9e6c6a0264566fd45e6fb6e2d6387bcb858f1e39dfa524782484e42d38f67432a8659d6ce6bf7b1f8b589cb0faa52b388e1fdc5e45145a",
+        "checksum": "355798bf03d2187df322042432a079889f3f61700872b49029b1508db59b50fccc61e8534bc29e5ab1fae40c36a2316ac43ce9aa77f607e49cae98e385dd4e19",
         "client_side_only": true,
         "ignore_dependencies": false,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
         "selected": true,
-        "version": "1.2.20+1.20.4-forge",
-        "version_id": "RTOwYh47"
+        "version": "1.2.21+1.20.4-forge",
+        "version_id": "t7nOFG1k"
     },
     "7tG215v7": {
         "checksum": "48e3520f04fe2789ae9b8bc52c04cf33c160dc7bb388dbb704037b2b2e3bf112f4a9a4bd4964ebaa2e698aa5f613533f7ccd16b3f1532fad1425097b6682b553",
@@ -231,15 +231,15 @@
         "version_id": "NR94PqgD"
     },
     "Ha28R6CL": {
-        "checksum": "dd6b4c17238104ed03f7d3cea678087d9fb5e277cfd6348b2677252bb303cd0eb3320bd586ea0315edb8f042761a2278749ce4182c07b3f9d85bf5dece67c84c",
+        "checksum": "ed4c797ccd827c1df9ef0953f4bf44c5d23849e696e839a93d4eaa694de29959e9d875a2d843c724fd5ac4d4aadfea09405b403b48eb514c4bcbfb74af365b4e",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Fabric Language Kotlin",
         "pinned": false,
         "project_id": "Ha28R6CL",
         "selected": true,
-        "version": "1.12.0+kotlin.2.0.10",
-        "version_id": "kdDGGNEt"
+        "version": "1.12.1+kotlin.2.0.20",
+        "version_id": "FayzGq0c"
     },
     "IhBYAM6m": {
         "checksum": "4e1d6b6454c13006cdd78f5e8f47bde7c0fce1f5d455e991506e72f529153f7b54454c932c081339844f9b9098e227133de45011f3d0f0bbfd6b9378fb321c0f",
@@ -275,15 +275,15 @@
         "version_id": "iQqivQMQ"
     },
     "KuNKN7d2": {
-        "checksum": "968c13e9509db0117d6cb8fb9266b0bf438100f52c46930cd210c9756d3278f4f4f86cc1a5840cedff3d5908fe25e5c89b9b85f63f03907af5e82b766e6c3f34",
+        "checksum": "91560e2d81759d7776b853825519c40b309b573d2c7af7f4604e01da7bc7e86855d0e06bccef31bb11cbf80b41fe3a7d200b20d6a165ae1bda023b9b0b9d494d",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Noisium",
         "pinned": false,
         "project_id": "KuNKN7d2",
         "selected": true,
-        "version": "2.2.2+mc1.20-1.20.1",
-        "version_id": "xwm7o9FD"
+        "version": "2.3.0+mc1.20-1.20.1",
+        "version_id": "gbYUKrDP"
     },
     "LNytGWDc": {
         "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
@@ -561,15 +561,15 @@
         "version_id": "szlzj05H"
     },
     "kU1G12Nn": {
-        "checksum": "be4fb5d0a640e594275251064ae97f80ce9e09e56b95e798e88af2a9f11e423d623f29372815ce1bdb31cfd57d18b40e9e4e6fa84644eef0634d6622994f1c35",
+        "checksum": "738abc1b80b4559a05260bf341bf7d3a96db106d325d7c0864470c8161df95b2f5f26c855b82c07469f5f53edc852096dc31debc5e2e49bd1408419b3bfe23bf",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Create Crafts & Additions",
         "pinned": false,
         "project_id": "kU1G12Nn",
         "selected": true,
-        "version": "1.20.1-1.2.4d",
-        "version_id": "eh2ccol5"
+        "version": "1.20.1-1.2.4e",
+        "version_id": "4DW3pAsX"
     },
     "l6YH9Als": {
         "checksum": "5ff352600d5ffac7511e171db2e51b9a0b6b669db0349141b8eaa626b5950043bf8806b695b29126766d0a9c7697083f61609d906d2609a3039b5cbe5b77db41",
@@ -638,26 +638,26 @@
         "version_id": "QroNBg6X"
     },
     "nvQzSEkH": {
-        "checksum": "c92e4e931f022c50bd66abe6b7127c1c55940be5309c2d5537d74ca40809349c4c04ad14df558e113551691af3ed3f1eed5f54e22598b53c138a07e97f7df835",
+        "checksum": "7cf8a4f5b7c948778e319947ab82d022b4ec53d000f65d1e1dd10fef642d93ae7c523b459d8fcc1c8bd1b4f34c75ee212c8d40a7d21b6641516821134676b56c",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Jade \ud83d\udd0d",
         "pinned": false,
         "project_id": "nvQzSEkH",
         "selected": true,
-        "version": "11.10.1+forge",
-        "version_id": "dldgfOqB"
+        "version": "11.11.1+forge",
+        "version_id": "UmuG0hq8"
     },
     "o6qsdrrQ": {
-        "checksum": "d577feb25dfd7d63811f0a963ec77be255cce2dc323b1aad71a7f21968e1424969c691550123f9be996146bae336e35dfd0d860e33f02a50e6908791dccff161",
+        "checksum": "bab302f70ed26d4991ee1c38b78f13d7283e0bb628211834d455f77a1a55f9093c8861c17ed2e65d02c887450d533ea0be73a4c5c098c0c194090379456a8a15",
         "client_side_only": true,
         "ignore_dependencies": false,
         "name": "Zume",
         "pinned": false,
         "project_id": "o6qsdrrQ",
         "selected": true,
-        "version": "1.1.1",
-        "version_id": "ievlqjaq"
+        "version": "1.1.2",
+        "version_id": "MfArQnMJ"
     },
     "oY2B1pjg": {
         "checksum": "5a040831b0c06dd1afe3935a8eadcbed0997118217a5c01aeb189ce9b2ca891270f7ae49adbb581c0b266f821506f6ca3d301056f85efd7ca597fdfc6f98cda1",
@@ -715,15 +715,15 @@
         "version_id": "oTclC5Xa"
     },
     "sk9knFPE": {
-        "checksum": "38c4046d08cd8190ceb55e0630a3b0a132393bf1e4f6d87dc211417be8c54223995a90c7810909e2f8825e951aeebab6275b4dd9da424a835d6f21bb8b56cfd8",
+        "checksum": "238772f78b21106cc2a4d9d8e2e41e0c0a0d95fe4d3aabfa7ed2d10bcd2252f69a48386ab283fb8ff29f6bf04a43e46afac914a7519621cf586cabd5de689162",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Rhino",
         "pinned": false,
         "project_id": "sk9knFPE",
         "selected": false,
-        "version": "2001.2.2-build.18+forge",
-        "version_id": "w5HiejeN"
+        "version": "2001.2.3-build.6+forge",
+        "version_id": "maCpsT70"
     },
     "sk9rgfiA": {
         "checksum": "09a6c42f34ab6cbf6790fbd79fadb40f97c859b8ed27015ba8a8307496e6731b3486b88ac9ad4b5fa003ff9d429b4154d6ecb3593bdd9888f89ed498d29c3671",
@@ -761,9 +761,9 @@
     "u6dRKJwZ": {
         "checksum": "b86fa400032fa8fbc129476f04423ee9f0f57d2a065de047dee3265a8f94724b00aef3f697abd9c98fd39f00becd282a38e6ba96e4d9d37ee7f3d0bf9dbe9033",
         "client_side_only": true,
-        "ignore_dependencies": false,
+        "ignore_dependencies": true,
         "name": "Just Enough Items",
-        "pinned": false,
+        "pinned": true,
         "project_id": "u6dRKJwZ",
         "selected": true,
         "version": "15.12.3.54",
