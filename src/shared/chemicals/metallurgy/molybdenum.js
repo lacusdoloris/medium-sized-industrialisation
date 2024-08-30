@@ -83,6 +83,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
     event.remove({ input: "gtceu:crushed_wulfenite_ore" });
     event.remove({ id: "gtceu:smelting/smelt_raw_wulfenite_ore_to_ingot" });
     event.remove({ id: "gtceu:smelting/smelt_raw_molybdenite_ore_to_ingot" });
+    event.remove({ id: "gtceu:extractor/extract_cyanotic_molybdenum_trioxide_dust" });
 
     // Wulfenite processing.
     // PbMoO4 + 2 NaOH = Pb(OH)2 + Na2MoO4
