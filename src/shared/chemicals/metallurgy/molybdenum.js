@@ -164,7 +164,7 @@ export const addMolybdenumProcessingRecipes = (event) => {
             5.0
         )
         .chancedOutput("3x gtceu:small_copper_cyanide_dust", 7800, 134.0)
-        .outputFluids(Fluid.of("gtceu:water").withAmount(6 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VH[GTValues.MV])
         .duration(10);
 
