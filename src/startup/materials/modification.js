@@ -38,12 +38,13 @@ const DISABLE_DECOMPOSITION = [
     // Alloys and such that you can't just separate.
     "hsla_steel",
     "vanadium_steel",
+    "stainless_steel",
     // Various misc materials.
     "barite",
 ];
 
 /** A list of materials to disable alloy blast furnace recipe generation for. */
-const DISABLE_ALLOY_BLAST_FURNACE = ["hsla_steel"];
+const DISABLE_ALLOY_BLAST_FURNACE = ["hsla_steel", "stainless_steel"];
 
 /** A list of materials to actually add dusts & ingots to. */
 const ADD_METALS = ["rhenium"];
@@ -60,7 +61,7 @@ const ADD_AQUEOUS = ["sodium_hydroxide", "calcium_hydroxide"];
  * These materials will have their ore processing tab removed, as well as having no material tier
  * recipes generated for them.
  */
-const REMOVE_ORE_TAB = ["gold", "scheelite"];
+const REMOVE_ORE_TAB = ["gold", "scheelite", "wulfenite"];
 
 /**
  * Mega-function for customising materials.
