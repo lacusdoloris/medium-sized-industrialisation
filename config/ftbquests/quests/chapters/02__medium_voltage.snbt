@@ -10,26 +10,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["535977705E793982"]
 			description: [
-				"The tier material for HV is &aaluminium&r (moved up one tier, again). Unlike Iron, however, Aluminium is not found free in the earth; instead, it's found locked up in ores such as &dBauxite&r."
+				"The &aBayer Process&r is the process for getting alumina (aluminium oxides) from bauxite. The bauxite will first need to be &ddigesteed&r with sodium hydroxide to form &dsodium aluminate&r, which is then heated to get &daluminium hydroxide&r, and that can finally be blasted to get your alumina dusts."
 				""
-				"A good starting point would be to actually gather some bauxite; it's found in large deposits relatively close to the surface. You can maximise the amount of dust you get by going through the standard process."
+				"This also produces a significant amount of &dred mud&r as a byproduct, which can be reprocessed into valuable materials such as &agallium&r."
+				""
+				"Note that the smelting of aluminium hydroxide requires &dhigh voltage energy&r, so you will need to upgrade your EBF. You can't use a 4x4 EBF block until you have HV Energy Hatches either."
 			]
-			id: "37186A0EA1942511"
-			tasks: [{
-				count: 64L
-				id: "5D6506E41D8C5D1D"
-				item: "gtceu:bauxite_dust"
-				type: "item"
-			}]
-			title: "Carl Josef Bayer"
-			x: -1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["37186A0EA1942511"]
-			description: ["The &aBayer process&r is the primary industrial process used to produce &dalumina&r from raw bauxite. Check EMI for more details."]
 			id: "06665F1BAC395C89"
 			tasks: [{
 				id: "0C6F11C332A519FF"
@@ -43,14 +30,12 @@
 		{
 			dependencies: ["06665F1BAC395C89"]
 			description: [
-				"&aRed Mud&r is a byproduct of aluminium production; it contains all of the \"junk\" that was in the bauxite."
+				"&aRed Mud&r is a byproduct of aluminium production; it contains all of the extra mineral waste that was processed out of your bauxite."
 				""
-				"You can choose to just void it and not care about it but then you miss out on the primary source of &drutile dust&r, as well as additional &dgallium dust&r and some extra alumina. "
-				""
-				"The processing chain is entirely fictional and has no basis in reality. Nevertheless! It can help buff up your aluminium production chains. You should also stockpile the Rutile dust, as it'll come in handy later."
+				"Reprocessing it produces some extra ferrous materials as well as additional &dgallium&r. "
 			]
 			id: "4DDC23EE2215011C"
-			min_width: 400
+			min_width: 300
 			optional: true
 			shape: "diamond"
 			tasks: [{
@@ -86,23 +71,27 @@
 				"06665F1BAC395C89"
 			]
 			dependency_requirement: "one_completed"
-			description: ["You can get Aluminium dust from simply electrolysing aluminium. No messing around with Cryolite here!"]
+			description: [
+				"In the real world, the &eelectroylsis of alumina&r to straight aluminium is impossible due to the oxidisation of aluminium ions from a salt solution. Electrolysis of molten alumina is also impractical due to the melting point of alumina being too high. "
+				""
+				"Instead, alumina is dissolved into &9molten cryolite&r, a halide mineral containing fluorine. BI doesn't have cryolite; instead, you can directly electrolyse alumina into aluminium. Count yourself lucky."
+			]
 			id: "08330D01C36B3545"
 			tasks: [{
 				id: "6366590B9C5E2FD9"
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			title: "Hall-Hérout?"
+			title: "The Hall-Hérout Process"
 			x: -1.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["08330D01C36B3545"]
 			description: [
-				"&aChromium&r (the material, not the fascist browser engine) is used for alloying throughout the early game tiers. This is another material with a complex refining chain from its raw ore (&dchromite&r) to its raw metal form."
+				"&aChromium&r is a metal used nearly entirely for alloying. In its ferrous form, it's an additive to steels such as &dstainless steel&r and &dvanadium steel&r, and in its raw form it makes up part of the &dferrochrolumium&r coil alloy."
 				""
-				"For MV purposes, you will want both the &draw chromium fetal&r for &9ferrochrolumium&r, as well as &dferrochrome&r for alloying. They both come from reduction of Chromite."
+				"&dFerrochrome&r is made from direct blasting of &dchromite ore&r, whereas reduction to the raw metal has a multiple-step process involving alkalines."
 			]
 			id: "7BEE21DF23576B53"
 			tasks: [{
@@ -135,7 +124,7 @@
 		}
 		{
 			dependencies: ["08330D01C36B3545"]
-			description: ["Aluminium ingots can be obtained from your blast furnace, and then bent into aluminium plate for HV machinery. Wow!"]
+			description: ["&aAluminium&r is the material for the HV tier, moved up from MV in base GTCEu. Once you have a bauxite processing line set up, you can smelt the aluminium dusts in your blast furnace and bend the ingots into plates for your machines."]
 			id: "14FCD4CDDDB798BC"
 			shape: "diamond"
 			tasks: [{
@@ -348,7 +337,7 @@
 			}]
 			title: "It's Not Quite Latex..."
 			x: -1.0d
-			y: 7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["535977705E793982"]
@@ -597,6 +586,22 @@
 			title: "Laser Chips"
 			x: 3.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6946A93109A56A1B"
+				"14FCD4CDDDB798BC"
+			]
+			description: ["You might previously have noticed that LV and MV hulls have an assembler recipe that requires &dpolyethylene&r. HV hulls onwards will &oall require&r a tiered plastic; for HV, this is polyethylene. Using polyethylene sheets is inefficient; you should use the assembler recipe instead. "]
+			id: "0F3DBB11014A4709"
+			tasks: [{
+				id: "179C973E978F2E08"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "High Voltage Hulls"
+			x: -1.0d
+			y: 7.0d
 		}
 	]
 	subtitle: ["The real fun begins here."]
