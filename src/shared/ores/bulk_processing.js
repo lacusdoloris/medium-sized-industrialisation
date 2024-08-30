@@ -13,6 +13,7 @@ import {
     PropertyKey,
 } from "../utils";
 import { ORESTONE_DEFINITIONS } from "./orestones";
+import { shouldCrushedOreGiveByproducts } from "./utils";
 
 // TODO: Allow modifying byproduct rate based on ball type.
 /** A mapping of {ball type: tick count divisor} for grinding recipes. */
@@ -68,12 +69,23 @@ const addRawToCrushedRecipe = (event, ballType, ballMaterial, material, oreProp)
     let inputCount = Math.ceil(64 / oreProp.getOreMultiplier() / 2);
     let inputStack = getStackForTagPrefix(TagPrefix.rawOre, material, inputCount);
 
+    // special logic: some chains *only* work on the crushed ore, not the resulting dust.
+    // if these recipes were to give dust as a byproduct, the dust would be useless.
+    // so, only drop crushed ore.
+
+    let byproductStack;
+    if (shouldCrushedOreGiveByproducts(material, oreProp)) {
+        byproductStack = getByproduct(material, oreProp);
+    } else {
+        byproductStack = crushedStack;
+    }
+
     event.recipes.gtceu
         .ball_grinding(`nijika:${modId}_${matName}/${ballType}/raw_to_crushed`)
         .itemInputs(inputStack, `8x #forge:rounds/${ballType}`)
         .itemOutputs(crushedStack.withCount(64))
         .itemOutputsRanged(
-            getByproduct(material, oreProp),
+            byproductStack,
             7, // 22.5% of 64, rounded down
             21
         )
@@ -246,10 +258,16 @@ export const addWashingChannelRecipes = (event) => {
             let washedInByproduct = getByproduct(material, getOreProperty(material), 3);
 
             event.recipes.gtceu
-                .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing_special`)
+                .bulk_washing(
+                    `nijika:${material.getModid()}_${material.getName()}/crushed_washing_special`
+                )
                 .itemInputs(getStackForTagPrefix(TagPrefix.crushed, material).withCount(64))
-                .inputFluids(Fluid.of(washedMat.getFluid()).withAmount(washedAmountMb * FluidAmounts.MB))
-                .itemOutputs(getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64))
+                .inputFluids(
+                    Fluid.of(washedMat.getFluid()).withAmount(washedAmountMb * FluidAmounts.MB)
+                )
+                .itemOutputs(
+                    getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64)
+                )
                 .itemOutputsRanged(washedInByproduct, 41, 48)
                 .EUt(GTValues.VA[GTValues.MV])
                 .duration(25 * 20);

@@ -5,6 +5,8 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import { MODPACK_SETTINGS } from "../settings";
+import { shouldCrushedOreGiveByproducts } from "../shared/ores/utils";
+import { getOreProperty, iterateOverAllMaterials } from "../shared/utils";
 import { unfuckCoalRecipes } from "./misc/coal";
 
 const SWAP_BRASS_PLATES = [
@@ -137,6 +139,8 @@ const removeGTGenerators = (event) => {
  * Cleans up some ore processing recipes that are manually added by GTCEu.
  *
  * The ones controlled by decomposition flags are already disabled.
+ *
+ * @param {Internal.RecipesEventJS} event
  */
 const cleanupGTCEuOreProcessingRecipes = (event) => {
     // this has a custom electrolysis recipe
@@ -144,6 +148,20 @@ const cleanupGTCEuOreProcessingRecipes = (event) => {
 
     // WHY does this give platinum.
     event.remove({ id: "gtceu:centrifuge/endstone_separation" });
+
+    // remove macerator recipes for custom ore processors with invalid byproducts
+    iterateOverAllMaterials((material) => {
+        let oreProp = getOreProperty(material);
+        if (oreProp === null) return;
+        if (!material.hasFlag(GTMaterialFlags.NO_ORE_PROCESSING_TAB)) return;
+
+        if (!shouldCrushedOreGiveByproducts(material, oreProp)) {
+            event.remove({
+                type: "gtceu:macerator",
+                output: `#forge:crushed_ores/${material.name}`,
+            });
+        }
+    });
 };
 
 /**
