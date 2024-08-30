@@ -257,16 +257,19 @@ export const addMolybdenumProcessingRecipes = (event) => {
         .blastFurnaceTemp(1100);
 
     // I saw the word "shock synthesis" in a paper and immediately knew that this is what I needed
-    // to implement. Fuck everything else. I'm going to kill myself when I'm done with this project.
-    // My life has no meaning outside of my creations.
+    // to implement.
     event.remove({ id: "gtceu:mixer/molybdenum_disilicide" });
     event.recipes.gtceu
         .implosion_compressor("nijika:chemicals/molybdenum/fuck_it_we_boom")
-        .itemInputs(
-            "1x gtceu:molybdenum_dust",
-            "2x gtceu:silicon_dust",
-            "1x minecraft:tnt" // TODO: Tags?
-        )
+        .itemInputs("1x gtceu:molybdenum_dust", "2x gtceu:silicon_dust", "1x minecraft:tnt")
+        .itemOutputs("1x gtceu:molybdenum_disilicide_ingot")
+        .chancedOutput("1x gtceu:dark_ash_dust", 2500.0, 0.0)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(2 * 20);
+
+    event.recipes.gtceu
+        .implosion_compressor("nijika:chemicals/molybdenum/fuck_it_we_boom_dynamic")
+        .itemInputs("1x gtceu:molybdenum_dust", "2x gtceu:silicon_dust", "2x gtceu:dynamite")
         .itemOutputs("1x gtceu:molybdenum_disilicide_ingot")
         .chancedOutput("1x gtceu:dark_ash_dust", 2500.0, 0.0)
         .EUt(GTValues.VHA[GTValues.HV])
