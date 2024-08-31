@@ -4,7 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { Tier } from "../../shared/definition";
+import { Tier } from "../../shared/tier";
+import { getStackForTagPrefix } from "../../shared/utils";
 
 /**
  * Adjusts multiblock component recipes for a single tier.
@@ -19,8 +20,8 @@ export const adjustMultiblockComponentsForTier = (event, tier) => {
         .shaped(`gtceu:${tier.name}_muffler_hatch`, ["CM", "PR"], {
             C: tier.machineHull,
             M: `gtceu:${tier.name}_electric_motor`,
-            P: tier.materials.pipe.component("normal_fluid_pipe"),
-            R: tier.materials.rotor.component("rotor"),
+            P: getStackForTagPrefix(TagPrefix.pipeNormalFluid, tier.materials.pipe),
+            R: getStackForTagPrefix(TagPrefix.rotor, tier.materials.rotor),
         })
         .id(`nijika:auto/multiblock/${tier.name}/muffler`);
 };

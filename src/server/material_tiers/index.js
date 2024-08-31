@@ -9,7 +9,7 @@ import { addCreateRecipes } from "./create";
 import { adjustExtruderBasePlateRecipe, fixExtruderRecipeTier } from "./extruder";
 import { MODPACK_SETTINGS } from "../../settings";
 import { adjustMachineRecipesForTier } from "./machines";
-import { GT_MACHINE_TIERS, GT_WIRE_TYPES } from "../../shared/definition";
+import { GT_MACHINE_TIERS, GT_WIRE_TYPES } from "../../shared/tier";
 import { fixLensRecipes } from "./lenses";
 import { adjustGtGeneratorTiers } from "./generators";
 import { adjustMultiblockComponentsForTier } from "./multiblock";
@@ -36,8 +36,8 @@ const addAutomaticMaterialRecipes = (event) => {
         if (material.hasFlag(GTMaterialFlags.GENERATE_FINE_WIRE)) {
             event.recipes.createaddition
                 .rolling(
-                    `2x gtceu:fine_${material.name}_wire`,
-                    `1x gtceu:${material.name}_single_wire`
+                    getStackForTagPrefix(TagPrefix.wireFine, material, 2),
+                    getStackForTagPrefix(TagPrefix.wireGtSingle, material)
                 )
                 .id(`nijika:auto/wires/${material.name}_fine_wire`);
         }
@@ -45,7 +45,10 @@ const addAutomaticMaterialRecipes = (event) => {
         // rolling machine recipes for wires from rods
         if (addRod) {
             event.recipes.createaddition
-                .rolling(`1x gtceu:${material.name}_single_wire`, `1x #forge:rods/${material.name}`)
+                .rolling(
+                    getStackForTagPrefix(TagPrefix.wireGtSingle, material),
+                    getStackForTagPrefix(TagPrefix.rod, material)
+                )
                 .id(`nijika:auto/wires/${material.name}`);
         }
 
@@ -56,16 +59,16 @@ const addAutomaticMaterialRecipes = (event) => {
         if (wireProps.voltage <= GTValues.V[GTValues.MV] && !wireProps.isSuperconductor()) {
             // additionally, single wires get a deployer covering recipe
             event.recipes.create
-                .deploying(`1x gtceu:${material.name}_single_cable`, [
+                .deploying(getStackForTagPrefix(TagPrefix.cableGtSingle, material), [
                     "1x gtceu:rubber_plate",
-                    `1x gtceu:${material.name}_single_wire`,
+                    getStackForTagPrefix(TagPrefix.wireGtSingle, material),
                 ])
                 .id(`nijika:auto/cables/${material.name}_deploying`);
 
             for (let [multiplier, type] of GT_WIRE_TYPES) {
                 event.recipes.create
-                    .filling(`1x gtceu:${material.name}_${type}_cable`, [
-                        `1x gtceu:${material.name}_${type}_wire`,
+                    .filling(getStackForTagPrefix(TagPrefix.cableGtSingle, material), [
+                        getStackForTagPrefix(TagPrefix.wireGtSingle, material),
                         Fluid.of("gtceu:rubber").withAmount(144 * FluidAmounts.MB * multiplier),
                     ])
                     .id(`nijika:auto/cables/${material.name}_${type}`);
@@ -89,7 +92,10 @@ const addAutomaticMaterialRecipes = (event) => {
                 console.warn("missing foil for " + modId + ":" + id + "???");
             } else {
                 event.recipes.createaddition
-                    .rolling(`2x ${modId}:${id}_foil`, `#forge:plates/${id}`)
+                    .rolling(
+                        getStackForTagPrefix(TagPrefix.foil, material, 2),
+                        `#forge:plates/${id}`
+                    )
                     .id(`nijika:auto/foil/${id}`);
             }
         }
@@ -99,11 +105,11 @@ const addAutomaticMaterialRecipes = (event) => {
             let recipeId = `nijika:auto/dust/${id}`;
             if (hasIngot) {
                 event.recipes.create
-                    .milling(`1x ${modId}:${id}_dust`, `#forge:ingots/${id}`)
+                    .milling(getStackForTagPrefix(TagPrefix.dust, material), `#forge:ingots/${id}`)
                     .id(recipeId);
             } else if (material.hasProperty(PropertyKey.GEM)) {
                 event.recipes.create
-                    .milling(`1x ${modId}:${id}_dust`, `#forge:gems/${id}`)
+                    .milling(getStackForTagPrefix(TagPrefix.dust, material), `#forge:gems/${id}`)
                     .id(recipeId);
             }
         }
@@ -116,23 +122,25 @@ const addAutomaticMaterialRecipes = (event) => {
                 event.remove({ input: `#forge:crushed_ores/${material.getName()}` });
             } else {
                 event.recipes.create
-                    .crushing(`1x ${modId}:crushed_${id}_ore`, `1x #forge:raw_materials/${id}`)
+                    .crushing(
+                        getStackForTagPrefix(TagPrefix.crushed, material),
+                        `1x #forge:raw_materials/${id}`
+                    )
                     .id(`nijika:auto/create/ore/${id}_raw_to_crushed`);
                 event.recipes.create
-                    .crushing(`1x ${modId}:impure_${id}_dust`, `1x ${modId}:crushed_${id}_ore`)
+                    .crushing(
+                        getStackForTagPrefix(TagPrefix.dust, material),
+                        getStackForTagPrefix(TagPrefix.crushed, material)
+                    )
                     .id(`nijika:auto/create/ore/${id}_crushed_to_impure`);
 
-                // weird if statement lets us combine everything into one chain rather than a nested
-                // if.
-                if (typeof BASE_ORES[id] !== "undefined") {
-                    // pass
-                } else if (id === "redstone") {
+                // ignore recipes for the base ores
+                if (typeof BASE_ORES[id] === "undefined") {
                     event.recipes.create
-                        .splashing("1x minecraft:redstone", `1x ${modId}:impure_${id}_dust`)
-                        .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
-                } else {
-                    event.recipes.create
-                        .splashing(`1x ${modId}:${id}_dust`, `1x ${modId}:impure_${id}_dust`)
+                        .splashing(
+                            getStackForTagPrefix(TagPrefix.dust, material),
+                            getStackForTagPrefix(TagPrefix.dustImpure, material)
+                        )
                         .id(`nijika:auto/create/ore/${id}_impure_to_dust`);
                 }
             }
@@ -162,14 +170,12 @@ const addAutomaticMaterialRecipes = (event) => {
                 .duration(10);
 
             if (hasRod) {
-                // yeeah, idk either. thanks gtceu.
-                if (Item.exists(`${modId}:${id}_rod`)) {
-                    event.recipes.createaddition
-                        .rolling(`1x ${modId}:${id}_rod`, `1x #forge:ingots/${id}`)
-                        .id(`nijika:auto/rods/${id}`);
-                } else if (id !== "wood") {
-                    console.log("what the fuck, gtceu? missing a rod for " + id);
-                }
+                event.recipes.createaddition
+                    .rolling(
+                        getStackForTagPrefix(TagPrefix.rod, material),
+                        `1x #forge:ingots/${id}`
+                    )
+                    .id(`nijika:auto/rods/${id}`);
             }
         }
 

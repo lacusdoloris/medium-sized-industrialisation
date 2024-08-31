@@ -15,7 +15,7 @@ const MaterialStack = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.stack.MaterialStack"
 );
 
-import { GT_MACHINE_TIERS } from "../../shared/definition";
+import { GT_MACHINE_TIERS } from "../../shared/tier";
 import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
 
 /** A list of materials to disable decomposition recipe generation for. */
@@ -81,17 +81,17 @@ export const customiseMaterials = () => {
     // make sure that all the materials we need for various tier based recipes have the appropriate
     // flags.
     for (let tier of Object.values(GT_MACHINE_TIERS)) {
-        getMaterial(tier.materials.motorWire.id).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
+        getMaterial(tier.materials.motorWire).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
 
         let gearMaterial = tier.materials.gear;
         if (typeof gearMaterial !== "undefined") {
-            getMaterial(gearMaterial.id).addFlags(
+            getMaterial(gearMaterial).addFlags(
                 GTMaterialFlags.GENERATE_GEAR,
                 GTMaterialFlags.GENERATE_SMALL_GEAR
             );
         }
 
-        getMaterial(tier.materials.rotor.id).addFlags(
+        getMaterial(tier.materials.rotor).addFlags(
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROTOR
         );

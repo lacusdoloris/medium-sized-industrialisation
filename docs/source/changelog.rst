@@ -217,3 +217,8 @@ Miscellaneous Bugfixes
 - Fixed usages of the old ``#forge:sticks/wood`` tag.
 
 - Fixed broken rolling machine recipes being created for rods that don't have an ingot.
+
+- The material tier system now uses GTCEu's built-in system for getting ItemStacks from materials.
+
+  This cuts out a significant amount of duplication, as well as making things more future-proof for
+  modded materials.

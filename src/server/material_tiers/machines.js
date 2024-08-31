@@ -4,7 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { TIER_TO_HIGHER_TIER_MAP, Tier } from "../../shared/definition";
+import { TIER_TO_HIGHER_TIER_MAP, Tier } from "../../shared/tier";
+import { getStackForTagPrefix } from "../../shared/utils";
 
 // As a side note, a lot of these simply re-create the recipes; this is to allow us to more
 // easily replace materials in the future.
@@ -19,7 +20,7 @@ const standardReplacements = (tier, extra) => {
         H: tier.machineHull,
         W: tier.singleCable,
         G: tier.materials.glass,
-        R: tier.materials.rotor.tagged("rotors"),
+        R: getStackForTagPrefix(TagPrefix.rotor, tier.materials.rotor),
         P: `gtceu:${tier.name}_electric_piston`,
         M: `gtceu:${tier.name}_electric_motor`,
         V: `gtceu:${tier.name}_conveyor_module`,
@@ -94,14 +95,14 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Bender: Replace the wrench.
     event.remove({ id: `gtceu:shaped/${tier.name}_bender` });
     lazyShaped(`gtceu:${tier.name}_bender`, ["PGP", "CHC", "MWM"], {
-        G: tier.materials.gear.tagged("gears"),
+        G: tier.gear,
     }).id(`nijika:auto/machines/${tier.name}/bender`);
 
     // Brewer: Replace Glass, Brewing "rods", cables.
     event.remove({ id: `gtceu:shaped/${tier.name}_brewery` });
     lazyShaped(`gtceu:${tier.name}_brewery`, ["GPG", "WHW", "CSC"], {
         P: `gtceu:${tier.name}_electric_pump`,
-        S: tier.materials.heating.tagged("springs"),
+        S: getStackForTagPrefix(TagPrefix.spring, tier.materials.heating),
     }).id(`nijika:auto/machines/${tier.name}/brewer`);
 
     // Canner: Replace Glass, cables.
@@ -137,28 +138,28 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Cutter: Replace wires, glass, and buzzsaw blade.
     event.remove({ id: `gtceu:shaped/${tier.name}_cutter` });
     lazyShaped(`gtceu:${tier.name}_cutter`, ["WCG", "VHB", "CWM"], {
-        B: tier.materials.buzzsaw.component("buzz_saw_blade"),
+        B: getStackForTagPrefix(TagPrefix.toolHeadBuzzSaw, tier.materials.buzzsaw),
     }).id(`nijika:auto/machines/${tier.name}/cutter`);
 
     // Distillery: Replace Glass, spring.
     event.remove({ id: `gtceu:shaped/${tier.name}_distillery` });
     lazyShaped(`gtceu:${tier.name}_distillery`, ["GSG", "CHC", "WPW"], {
-        S: tier.materials.heating.tagged("springs"),
+        S: getStackForTagPrefix(TagPrefix.spring, tier.materials.heating),
         P: `gtceu:${tier.name}_electric_pump`,
     }).id(`nijika:auto/machines/${tier.name}/distillery`);
 
     // Electrolyzer: Replace glass, wires.
     event.remove({ id: `gtceu:shaped/${tier.name}_electrolyzer` });
     lazyShaped(`gtceu:${tier.name}_electrolyzer`, ["ZGZ", "ZHZ", "CWC"], {
-        Z: tier.materials.electricWire.component("single_wire"),
+        Z: getStackForTagPrefix(TagPrefix.wireGtSingle, tier.materials.electricWire),
     }).id(`nijika:auto/machines/${tier.name}/electrolyzer`);
 
-    // Electromagnetic separator: WIP
-    let nonMagneticRod = tier.materials.magnetic.materialName.slice("magnetic_".length);
+    // Electromagnetic separator: Replace magnetic rod, wires.
+    let nonMagneticRod = tier.materials.magnetic.slice("magnetic_".length);
     event.remove({ id: `gtceu:shaped/${tier.name}_electromagnetic_separator` });
     lazyShaped(`gtceu:${tier.name}_electromagnetic_separator`, ["VW1", "WHZ", "CW1"], {
-        Z: `#forge:rods/${nonMagneticRod}`,
-        1: tier.materials.electricWire.component("double_wire"),
+        Z: getStackForTagPrefix(TagPrefix.rod, nonMagneticRod),
+        1: getStackForTagPrefix(TagPrefix.wireGtDouble, tier.materials.electricWire),
     }).id(`nijika:auto/machines/${tier.name}/electromagnetic_separator`);
 
     // Extractor: Replace glass.
@@ -233,7 +234,7 @@ export const adjustMachineRecipesForTier = (event, tier) => {
     // Polarizer: Straight up fix the recipe.
     event.remove({ id: `gtceu:shaped/${tier.name}_polarizer` });
     lazyShaped(`gtceu:${tier.name}_polarizer`, ["ZMZ", "WHW", "ZMZ"], {
-        Z: tier.materials.electricWire.component("double_wire"),
+        Z: getStackForTagPrefix(TagPrefix.wireGtDouble, tier.materials.electricWire),
         M: tier.magneticRod,
     }).id(`nijika:auto/machines/${tier.name}/polariser`);
 

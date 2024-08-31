@@ -4,7 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { GT_MACHINE_TIERS } from "../shared/definition";
+import { GT_MACHINE_TIERS } from "../shared/tier";
+import { getStackForTagPrefix } from "../shared/utils";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier04Content = (event) => {
@@ -63,7 +64,7 @@ export const doTier04Content = (event) => {
             "1x gtceu:hv_machine_hull",
             "4x gtceu:titanium_frame",
             "8x #gtceu:circuits/hv",
-            `4x ${GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors")}`,
+            getStackForTagPrefix(TagPrefix.rotor, GT_MACHINE_TIERS.HV.materials.rotor, 4),
             "2x gtceu:hv_conveyor_module",
             "1x minecraft:diamond_shovel"
         )

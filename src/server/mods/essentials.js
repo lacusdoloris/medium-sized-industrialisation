@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { GT_MACHINE_TIERS } from "../../shared/definition";
+import { GT_MACHINE_TIERS } from "../../shared/tier";
 
 /** @param {Internal.RecipesEventJS} event */
 export const adjustEssentialsRecipes = (event) => {

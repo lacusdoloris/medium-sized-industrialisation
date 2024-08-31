@@ -23,10 +23,6 @@ let chemicalHelper$get =
         "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material)"
     ];
 
-let chemicalHelper$getInt =
-    ChemicalHelper[
-        "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material,int)"
-    ];
 
 let GTUtil$get = GTUtil["copyAmount(int,net.minecraft.world.item.ItemStack[])"];
 
@@ -86,7 +82,7 @@ export const getStackForTagPrefix = (prefix, material, count) => {
     if (typeof count === "undefined") {
         return chemicalHelper$get(prefix, realMat);
     } else {
-        return chemicalHelper$getInt(prefix, realMat, count);
+        return chemicalHelper$get(prefix, realMat).withCount(count);
     }
 };
 

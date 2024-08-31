@@ -6,7 +6,8 @@
 
 // MV!
 
-import { GT_MACHINE_TIERS } from "../shared/definition";
+import { GT_MACHINE_TIERS } from "../shared/tier";
+import { getStackForTagPrefix } from "../shared/utils";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier02Content = (event) => {
@@ -35,7 +36,7 @@ export const doTier02Content = (event) => {
     event.remove({ id: "gtceu:shaped/evaporation_plant" });
     event
         .shaped("gtceu:evaporation_pool", ["RGR", "CHC", "PBP"], {
-            R: mvTier.materials.rotor.tagged("rotors"),
+            R: getStackForTagPrefix(TagPrefix.rotor, mvTier.materials.rotor),
             G: mvTier.materials.glass,
             C: "#gtceu:circuits/mv",
             H: "gtceu:mv_machine_hull",
@@ -69,11 +70,11 @@ export const doTier02Content = (event) => {
         .assembler("nijika:tier02/mv_fluid_drilling_rig")
         .itemInputs(
             "1x gtceu:mv_machine_hull",
-            `4x ${mvTier.materials.plate.tagged("frames")}`,
+            getStackForTagPrefix(TagPrefix.frameGt, mvTier.materials.plate, 4),
             `4x ${mvTier.circuitTag}`,
             `4x gtceu:mv_electric_motor`,
             `4x gtceu:mv_electric_pump`,
-            `4x ${mvTier.materials.gear.tagged("gears")}`
+            mvTier.gear.withCount(4)
         )
         .itemOutputs("gtceu:mv_fluid_drilling_rig")
         .EUt(GTValues.VA[GTValues.MV])

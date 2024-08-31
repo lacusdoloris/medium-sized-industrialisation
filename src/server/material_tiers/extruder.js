@@ -14,6 +14,7 @@
 import { getStackForTagPrefix, iterateOverAllMaterials } from "../../shared/utils";
 
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
+// TODO: Tagprefixify this all. 
 
 const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
@@ -95,7 +96,6 @@ export const fixExtruderRecipeTier = (event) => {
     iterateOverAllMaterials((material) => {
         /** @type {Internal.ItemStack} */
         let inputType = getStackForTagPrefix(TagPrefix.ingot, material);
-        let modid = material.modid == "nijika" ? "gtceu" : material.modid;
 
         // don't try and auto-generate recipes for non-ingot materials
         if (inputType.isEmpty()) return;
@@ -106,7 +106,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/gears/regular/${material.name}`)
                 .itemInputs(`4x #forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_GEAR.get())
-                .itemOutputs(`${modid}:${material.name}_gear`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.gear, material))
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass * 5);
         }
@@ -116,7 +116,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/gears/small/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_GEAR_SMALL.get())
-                .itemOutputs(`${modid}:small_${material.name}_gear`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.gearSmall, material))
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass);
         }
@@ -126,7 +126,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/rings/${material.name}`)
                 .itemInputs(`#forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_RING.get())
-                .itemOutputs(`4x ${modid}:${material.name}_ring`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.ring, material, 4))
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass);
         }
@@ -136,7 +136,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/rotors/${material.name}`)
                 .itemInputs(`4x #forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_ROTOR.get())
-                .itemOutputs(`${modid}:${material.name}_rotor`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.rotor, material))
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(material.mass);
         }
@@ -146,7 +146,7 @@ export const fixExtruderRecipeTier = (event) => {
                 .extruder(`nijika:auto/bolts/${material.name}`)
                 .itemInputs(`1x #forge:ingots/${material.name}`)
                 .notConsumable(GTItems.SHAPE_EXTRUDER_BOLT.get())
-                .itemOutputs(`8x ${modid}:${material.name}_bolt`)
+                .itemOutputs(getStackForTagPrefix(TagPrefix.bolt, material, 8))
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(15);
         }

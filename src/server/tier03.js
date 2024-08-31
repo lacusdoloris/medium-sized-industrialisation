@@ -6,7 +6,8 @@
 
 // HV!
 
-import { GT_MACHINE_TIERS } from "../shared/definition";
+import { GT_MACHINE_TIERS } from "../shared/tier";
+import { getStackForTagPrefix } from "../shared/utils";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier03Content = (event) => {
@@ -53,7 +54,7 @@ export const doTier03Content = (event) => {
     event
         .shaped("gtceu:cleanroom", ["FFF", "RHR", "MCM"], {
             F: "gtceu:item_filter",
-            R: GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors"),
+            R: getStackForTagPrefix(TagPrefix.rotor, GT_MACHINE_TIERS.HV.materials.rotor),
             H: GT_MACHINE_TIERS.HV.machineHull,
             M: "gtceu:hv_electric_motor",
             C: GT_MACHINE_TIERS.HV.circuitTag,
@@ -83,7 +84,7 @@ export const doTier03Content = (event) => {
             "4x #gtceu:circuits/hv",
             "4x gtceu:hv_electric_motor",
             "4x gtceu:hv_electric_pump",
-            GT_MACHINE_TIERS.HV.materials.gear.tagged("gears")
+            GT_MACHINE_TIERS.HV.gear
         )
         .itemOutputs("gtceu:hv_fluid_drilling_rig")
         .EUt(GTValues.VA[GTValues.HV])
@@ -112,7 +113,7 @@ export const doTier03Content = (event) => {
     event
         .shaped("gtceu:large_chemical_reactor", ["CRC", "PMP", "CHC"], {
             C: GT_MACHINE_TIERS.HV.circuitTag,
-            R: GT_MACHINE_TIERS.HV.materials.rotor.tagged("rotors"),
+            R:  getStackForTagPrefix(TagPrefix.rotor, GT_MACHINE_TIERS.HV.materials.rotor),
             P: "gtceu:polytetrafluoroethylene_large_fluid_pipe",
             M: "gtceu:hv_electric_motor",
             H: GT_MACHINE_TIERS.HV.machineHull,

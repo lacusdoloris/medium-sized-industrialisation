@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { GT_MACHINE_TIERS } from "../../shared/definition";
+import { GT_MACHINE_TIERS } from "../../shared/tier";
 
 /**
  * Adjusts recipes for the Create: New Age mod.
@@ -103,7 +103,7 @@ export const adjustCreateNewAgeRecipes = (event) => {
             "4x gtceu:mv_electric_motor",
             "2x create_new_age:basic_motor",
             "2x #gtceu:circuits/mv",
-            `4x ${GT_MACHINE_TIERS.MV.doubleMotorWire}`,
+            GT_MACHINE_TIERS.MV.doubleMotorWire.withCount(4),
             "1x create:rotation_speed_controller"
         )
         .itemOutputs("1x create_new_age:basic_motor_extension")
@@ -117,7 +117,7 @@ export const adjustCreateNewAgeRecipes = (event) => {
             "4x gtceu:ev_electric_motor",
             "2x create_new_age:reinforced_motor",
             "2x #gtceu:circuits/ev",
-            `4x ${GT_MACHINE_TIERS.EV.doubleMotorWire}`,
+            GT_MACHINE_TIERS.EV.doubleMotorWire.withCount(4),
             "1x create:rotation_speed_controller"
         )
         .itemOutputs("1x create_new_age:advanced_motor_extension")

@@ -6,7 +6,7 @@
 
 // LV, that is.
 
-import { GT_MACHINE_TIERS } from "../shared/definition";
+import { GT_MACHINE_TIERS } from "../shared/tier";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier01Content = (event) => {

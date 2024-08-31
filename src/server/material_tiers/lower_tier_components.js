@@ -4,7 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { GT_MACHINE_TIERS, Tier } from "../../shared/definition";
+import { GT_MACHINE_TIERS, Tier } from "../../shared/tier";
+import { getStackForTagPrefix } from "../../shared/utils";
 
 /**
  * Rewrites machine hulls and casing to move their materials up an additional tier.
@@ -26,7 +27,7 @@ export const applyHullcasingTiers = (event, tier) => {
 
     event.recipes.gtceu
         .assembler(`gtceu:assembler/casing_${tier.name}`)
-        .itemInputs(`8x ${tier.primaryPlate}`)
+        .itemInputs(tier.primaryPlate.withCount(8))
         .itemOutputs(tier.machineCasing)
         .circuit(8)
         .EUt(16)
@@ -64,10 +65,10 @@ export const rewriteMotorRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/${tier.name}/motor/assembler`)
         .itemInputs(
-            `2x ${tier.singleCable}`,
-            `4x ${tier.doubleMotorWire}`,
-            `2x ${tier.effectiveRodWithLVHardcode}`,
-            `${tier.magneticRod}`
+            tier.singleCable.withCount(2),
+            tier.doubleMotorWire.withCount(4),
+            tier.effectiveRodWithLVHardcode.withCount(2),
+            tier.magneticRod
         )
         .itemOutputs(`4x gtceu:${tier.name}_electric_motor`)
         .EUt(30)
@@ -81,9 +82,6 @@ export const rewriteMotorRecipes = (event, tier) => {
  * @param {Tier} tier
  */
 export const rewritePistonRecipes = (event, tier) => {
-    let gear =
-        typeof tier.materials.gear === "undefined" ? tier.materials.plate : tier.materials.gear;
-
     event.remove({ id: `gtceu:shaped/electric_piston_${tier.name}` });
     event
         .shaped(`2x gtceu:${tier.name}_electric_piston`, ["PPP", "CRR", "CMG"], {
@@ -91,7 +89,7 @@ export const rewritePistonRecipes = (event, tier) => {
             C: tier.singleCable,
             R: tier.effectiveRodWithLVHardcode,
             M: `gtceu:${tier.name}_electric_motor`,
-            G: gear.tagged("small_gears"),
+            G: tier.smallGear,
         })
         .id(`nijika:auto/${tier.name}/piston/shaped`);
 
@@ -99,11 +97,11 @@ export const rewritePistonRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/${tier.name}/piston/assembler`)
         .itemInputs(
-            `3x ${tier.primaryPlate}`,
-            `2x ${tier.singleCable}`,
-            `2x ${tier.effectiveRodWithLVHardcode}`,
+            tier.primaryPlate.withCount(3),
+            tier.singleCable.withCount(2),
+            tier.effectiveRodWithLVHardcode.withCount(2),
             `gtceu:${tier.name}_electric_motor`,
-            gear.tagged("small_gears")
+            tier.smallGear
         )
         .itemOutputs(`4x gtceu:${tier.name}_electric_piston`)
         .EUt(30)
@@ -155,10 +153,10 @@ const rewritePumpRecipes = (event, tier) => {
             .assembler(`nijika:auto/components/${tier.name}/pump/${rubber}`)
             .itemInputs(
                 tier.singleCable,
-                tier.materials.pipe.component("normal_fluid_pipe"),
-                tier.materials.rotor.component("screw"),
-                tier.materials.rotor.component("rotor"),
-                `2x gtceu:${rubber}_ring`,
+                getStackForTagPrefix(TagPrefix.pipeNormalFluid, tier.materials.pipe),
+                getStackForTagPrefix(TagPrefix.screw, tier.materials.rotor),
+                getStackForTagPrefix(TagPrefix.rotor, tier.materials.rotor),
+                getStackForTagPrefix(TagPrefix.ring, rubber).withCount(2),
                 `gtceu:${tier.name}_electric_motor`
             )
             .itemOutputs(`4x gtceu:${tier.name}_electric_pump`)
@@ -190,9 +188,9 @@ const rewriteRobotArmRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/components/${tier.name}/robot_arm/assembler`)
         .itemInputs(
-            `3x ${tier.singleCable}`,
+            tier.singleCable.withCount(3),
             `2x gtceu:${tier.name}_electric_motor`,
-            `2x ${tier.primaryRod}`,
+            tier.primaryRod.withCount(2),
             `gtceu:${tier.name}_electric_piston`,
             tier.circuitTag
         )
@@ -212,7 +210,10 @@ const rewriteVoltageCoilRecipes = (event, tier) => {
 
     event.recipes.gtceu
         .assembler(`nijika:auto/components/${tier.name}/voltage_coil`)
-        .itemInputs(tier.magneticRod, `16x ${tier.materials.motorWire.tagged("fine_wires")}`)
+        .itemInputs(
+            tier.magneticRod,
+            getStackForTagPrefix(TagPrefix.wireFine, tier.materials.motorWire).withCount(16)
+        )
         .itemOutputs(`2x gtceu:${tier.name}_voltage_coil`)
         .circuit(1)
         .duration(10 * 20)
@@ -234,7 +235,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
         .shaped(`2x gtceu:${tier.name}_sensor`, ["P G", "PR ", "CPP"], {
             P: tier.primaryPlate,
             G: tier.materials.emitterGem,
-            R: tier.materials.emitterRod.tagged("rods"),
+            R: getStackForTagPrefix(TagPrefix.rod, tier.materials.emitterRod),
             C: tier.circuitTag,
         })
         .id(`nijika:auto/components/${tier.name}/sensor/shaped`);
@@ -242,8 +243,8 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/components/${tier.name}/sensor/assembler`)
         .itemInputs(
-            tier.materials.emitterRod.tagged("rods"),
-            `4x ${tier.primaryPlate}`,
+            getStackForTagPrefix(TagPrefix.rod, tier.materials.emitterRod),
+            tier.primaryPlate.withCount(4),
             tier.circuitTag,
             tier.materials.emitterGem
         )
@@ -257,7 +258,7 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
     event
         .shaped(`2x gtceu:${tier.name}_emitter`, ["WRC", "RGR", "CRW"], {
             W: tier.singleCable,
-            R: tier.materials.emitterRod.tagged("rods"),
+            R: getStackForTagPrefix(TagPrefix.rod, tier.materials.emitterRod),
             C: tier.circuitTag,
             G: tier.materials.emitterGem,
         })
@@ -266,8 +267,8 @@ const rewriteSensorEmitterRecipes = (event, tier) => {
     event.recipes.gtceu
         .assembler(`nijika:auto/components/${tier.name}/emitter/assembler`)
         .itemInputs(
-            `4x ${tier.materials.emitterRod.tagged("rods")}`,
-            `2x ${tier.singleCable}`,
+            getStackForTagPrefix(TagPrefix.rod, tier.materials.emitterRod).withCount(4),
+            tier.singleCable.withCount(2),
             `2x ${tier.circuitTag}`,
             tier.materials.emitterGem
         )
