@@ -16,9 +16,9 @@ export const adjustCreateOreExcavationRecipes = (event) => {
     event.recipes.gtceu
         .assembler("nijika:oreexcavation/drill")
         .itemInputs(
-            "8x gtceu:hsla_steel_plate",
-            "4x gtceu:hsla_steel_rod",
-            "1x gtceu:hsla_steel_block",
+            "8x gtceu:stainless_steel_plate",
+            "4x gtceu:stainless_steel_rod",
+            "1x gtceu:stainless_steel_block",
             "8x gtceu:titanium_carbide_dust"
         )
         .itemOutputs("createoreexcavation:drill")
@@ -41,7 +41,7 @@ export const adjustCreateOreExcavationRecipes = (event) => {
 
     event
         .shaped("1x createoreexcavation:vein_finder", ["EA ", "RS ", "  S"], {
-            E: "#forge:gems/ender_eye",
+            E: "#forge:gems/emerald",
             R: "#forge:foils/red_alloy",
             A: "#forge:gems/amethyst",
             S: "#forge:rods/wood",
