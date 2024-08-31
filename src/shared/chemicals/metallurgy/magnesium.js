@@ -33,7 +33,7 @@ export const addMagnesiumProcessingRecipes = (event) => {
         .electric_blast_furnace("nijika:chemicals/magnesium/pigeon_process")
         .itemInputs("2x gtceu:magnesia_dust", "2x gtceu:quicklime_dust", "1x gtceu:silicon_dust")
         .itemOutputs("2x gtceu:magnesium_dust", "1x gtceu:calcium_silicate_dust")
-        .EUt(GTValues.VH[GTValues.EV])
+        .EUt(GTValues.VH[GTValues.HV])
         .duration(7 * 20 + 10)
         .blastFurnaceTemp(1700)
         .circuit(1);
