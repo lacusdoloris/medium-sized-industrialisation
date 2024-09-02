@@ -23,7 +23,6 @@ let chemicalHelper$get =
         "get(com.gregtechceu.gtceu.api.data.tag.TagPrefix,com.gregtechceu.gtceu.api.data.chemical.material.Material)"
     ];
 
-
 let GTUtil$get = GTUtil["copyAmount(int,net.minecraft.world.item.ItemStack[])"];
 
 /** Creates a new ``nijika:${id}`` Identifier. */

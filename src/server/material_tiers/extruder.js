@@ -14,7 +14,7 @@
 import { getStackForTagPrefix, iterateOverAllMaterials } from "../../shared/utils";
 
 // TODO: Consider keeping the tier multiplier for above-2800K items only.
-// TODO: Tagprefixify this all. 
+// TODO: Tagprefixify this all.
 
 const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"

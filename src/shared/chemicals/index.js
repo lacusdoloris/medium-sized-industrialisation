@@ -31,6 +31,7 @@ import { addPlatinumGroupMaterials, addPlatinumGroupRecipes } from "./metallurgy
 import { addAmmoniaMaterials, addAmmoniaRecipes } from "./ammonia";
 import { addRheniumMaterials, addRheniumRecipes } from "./metallurgy/rhenium";
 import { addIronSlagMaterials, addIronSlagReprocessingRecipes } from "./metallurgy/iron_slag";
+import { addWastewaterMaterials, addWastewaterRecipes } from "./wastewater";
 
 export const addChemicalMaterials = (event) => {
     addBaseOreMaterials(event);
@@ -65,6 +66,7 @@ export const addChemicalMaterials = (event) => {
     addHydrogenPeroxideMaterials(event);
 
     addPhosphorusMaterials(event);
+    addWastewaterMaterials(event);
 };
 
 /**
@@ -100,6 +102,8 @@ export const addChemicalProcessingRecipes = (event) => {
     addAmmoniaRecipes(event);
     addCatalystRecipes(event);
     addOrganicChemRecipes(event);
+
+    addWastewaterRecipes(event);
 
     event.recipes.gtceu
         .mixer("nijika:chemicals/misc/diluted_hydrochloric_acid")

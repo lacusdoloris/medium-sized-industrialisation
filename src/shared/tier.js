@@ -65,7 +65,7 @@ export class Tier {
 
     /**
      * A list of acceptable rubber materials for cable coverings.
-     * 
+     *
      * @returns {string[]}
      */
     get acceptableRubbers() {
@@ -84,18 +84,18 @@ export class Tier {
     }
 
     // == Tier Name Helpers == //
-    /** 
-     * The machine hull ID for this tier. 
-     * 
+    /**
+     * The machine hull ID for this tier.
+     *
      * @returns {string}
      */
     get machineHull() {
         return `gtceu:${this.name}_machine_hull`;
     }
 
-    /** 
-     * The machine casing ID for this tier. 
-     * 
+    /**
+     * The machine casing ID for this tier.
+     *
      * @returns {string}
      */
     get machineCasing() {
@@ -104,7 +104,7 @@ export class Tier {
 
     /**
      * The circuit tag for this tier, to be used in recipes.
-     * 
+     *
      * @returns {string}
      */
     get circuitTag() {
@@ -113,9 +113,9 @@ export class Tier {
 
     // == Plates == //
     /**
-     * The "primary" plate for this tier. Used to make machine casings and used for various 
+     * The "primary" plate for this tier. Used to make machine casings and used for various
      * components and other machines.
-     * 
+     *
      * @return {Internal.ItemStack}
      */
     get primaryPlate() {
@@ -124,7 +124,7 @@ export class Tier {
 
     /**
      * The "extra" hull plate for this tier. Used to make machine hulls.
-     * 
+     *
      * @returns {Internal.ItemStack}
      */
     get hullExtraPlate() {
@@ -135,7 +135,7 @@ export class Tier {
 
     /**
      * The primary rod for this tier. Used to make things such as electric motors.
-     * 
+     *
      * @returns {Internal.ItemStack}
      */
     get primaryRod() {
@@ -144,7 +144,7 @@ export class Tier {
 
     /**
      * The primary rod, but with a hardcode for the LV tier that forces returning regular iron rods.
-     * 
+     *
      * @returns {Internal.ItemStack}
      */
     get effectiveRodWithLVHardcode() {
@@ -157,7 +157,7 @@ export class Tier {
 
     /**
      * The magnetic rod, used to make various electronic components.
-     * 
+     *
      * @returns {Internal.ItemStack}
      */
     get magneticRod() {

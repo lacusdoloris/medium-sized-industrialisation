@@ -24,7 +24,7 @@ export const addWashingChannelMultiblock = (builder) => {
     const patternCallback = (definition) => {
         return FactoryBlockPattern.start()
             .aisle("CCCCCCCCC", "CGGGGGGGC", "#########")
-            .aisle("CCCCCCCCC", "BFWWWWWFB", "CCCCCCCCC")
+            .aisle("1CCCCCCC1", "BFWWWWWFB", "CCCCCCCCC")
             .aisle("AAAAHAAAA", "CGGGGGGGC", "#########")
             .where("C", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             .where("G", Predicates.blockTag(createBlockTag("forge", "glass/colorless")))
@@ -42,6 +42,12 @@ export const addWashingChannelMultiblock = (builder) => {
                 Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setExactLimit(1))
                     .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+            )
+            .where(
+                "1",
+                Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).or(
+                    Predicates.abilities(PartAbility.EXPORT_FLUIDS).setExactLimit(1)
+                )
             )
             .where("#", Predicates.any())
             .build();

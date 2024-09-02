@@ -113,7 +113,7 @@ export const doTier03Content = (event) => {
     event
         .shaped("gtceu:large_chemical_reactor", ["CRC", "PMP", "CHC"], {
             C: GT_MACHINE_TIERS.HV.circuitTag,
-            R:  getStackForTagPrefix(TagPrefix.rotor, GT_MACHINE_TIERS.HV.materials.rotor),
+            R: getStackForTagPrefix(TagPrefix.rotor, GT_MACHINE_TIERS.HV.materials.rotor),
             P: "gtceu:polytetrafluoroethylene_large_fluid_pipe",
             M: "gtceu:hv_electric_motor",
             H: GT_MACHINE_TIERS.HV.machineHull,

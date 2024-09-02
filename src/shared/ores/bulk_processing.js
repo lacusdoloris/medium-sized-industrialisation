@@ -241,6 +241,16 @@ export const addWashingChannelRecipes = (event) => {
 
         // ore washing byproducts are in the same slot as macerator byproducts ?_?
         let byproduct = getByproduct(material, oreProp);
+        let wastewater = Fluid.of("minecraft:water");
+
+        for (let comp of material.getMaterialComponents()) {
+            if (comp.material() == GTMaterials.Sulfur) {
+                wastewater = Fluid.of(getMaterial("sulfuric_wastewater").getFluid());
+            } else if (comp.material() == GTMaterials.Fluorine) {
+                wastewater = Fluid.of(getMaterial("fluoric_wastewater").getFluid());
+            }
+        }
+
         event.recipes.gtceu
             .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
             .itemInputs(getStackForTagPrefix(TagPrefix.crushed, material).withCount(64))
@@ -248,6 +258,7 @@ export const addWashingChannelRecipes = (event) => {
             .itemOutputs(getStackForTagPrefix(TagPrefix.crushedPurified, material).withCount(64))
             .itemOutputsRanged(byproduct, 7, 21)
             .itemOutputsRanged("gtceu:stone_dust", 48, 64)
+            .outputFluids(wastewater.withAmount(4800 * FluidAmounts.MB))
             .EUt(GTValues.VA[GTValues.MV])
             .duration(25 * 20);
 
