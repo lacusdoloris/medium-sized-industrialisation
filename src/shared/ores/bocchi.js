@@ -21,7 +21,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.BRIGHT,
         seed: 809651466,
         intoOres: ["hematite", "ilmenite", "diamond"],
-        runoff: "hydrochloric",
+        runoff: "sulfuric",
     },
 
     nijikaite: {
@@ -45,7 +45,7 @@ export const BASE_ORES = {
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
         intoOres: ["silver", "gold", "tricalcium_phosphate"],
-        runoff: "nitric",
+        runoff: "sulfuric",
     },
 
     kikurite: {
@@ -53,7 +53,7 @@ export const BASE_ORES = {
         colour: 0x995678,
         iconSet: GTMaterialIconSet.DULL,
         intoOres: ["bauxite", "tantalite", "salt"],
-        runoff: "hydrochloric",
+        runoff: "fluoric",
     },
 
     /*yoyokite: {
@@ -132,13 +132,15 @@ export const addBaseOreRecipes = (event) => {
             .circuit(1);
 
         // Washing of crushed ore with distilled water.
-        // TODO: Wastewaterr.
         event.remove({ input: `gtceu:impure_${name}_dust` });
         event.recipes.gtceu
             .bulk_washing(`nijika:base_ores/${name}/washing`)
             .itemInputs(`64x gtceu:crushed_${name}_ore`)
             .inputFluids(Fluid.of("gtceu:distilled_water").withAmount(9600 * FluidAmounts.MB))
             .itemOutputs(`64x gtceu:impure_${name}_dust`)
+            .outputFluids(
+                Fluid.of(`gtceu:${oreData.runoff}_wastewater`).withAmount(4800 * FluidAmounts.MB)
+            )
             .EUt(GTValues.VHA[GTValues.MV])
             .duration(20 * 20);
 
