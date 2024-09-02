@@ -35,9 +35,13 @@ const getByproduct = (material, oreProp, slot) => {
 
     let byproductMat;
     let byproducts = oreProp.getOreByProducts();
-    if (byproducts.isEmpty() || byproducts.size() <= slot) {
+
+    if (byproducts.isEmpty()) {
         // ores with empty byproducts just get their dust as an extra byproduct.
         byproductMat = material;
+    } else if (byproducts.size() <= realSlot) {
+        // clamp byproducts to the end of the list 
+        byproductMat = byproducts.getLast();
     } else {
         byproductMat = oreProp.getOreByProducts()[realSlot];
     }
@@ -266,7 +270,7 @@ export const addWashingChannelRecipes = (event) => {
         if (washedIn.first != null) {
             let washedMat = washedIn.first;
             let washedAmountMb = washedIn.second * 96;
-            let washedInByproduct = getByproduct(material, getOreProperty(material), 3);
+            let washedInByproduct = getByproduct(material, oreProp, 3);
 
             event.recipes.gtceu
                 .bulk_washing(
