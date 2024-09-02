@@ -32,9 +32,9 @@ export const addOreSortingMultiblock = (builder) => {
             .aisle(
                 // Inner wall: Casing floor, frame middle
                 "CCCxxxCCC",
-                "CAFFFFFAC",
-                "CAFFMFFAC",
-                "CAFFFFFAC",
+                "HAFEEEFAH",
+                "HAFFMFFAH",
+                "HAFFFFFAH",
                 "CFCxxxCFC"
             )
             .aisle(
@@ -47,11 +47,19 @@ export const addOreSortingMultiblock = (builder) => {
             )
             .where("A", Predicates.air())
             .where("x", Predicates.any())
+            .where("C", Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()))
             .where(
-                "C",
-                Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).or(
-                    Predicates.autoAbilities(definition.getRecipeTypes())
-                )
+                "H",
+                Predicates.abilities(PartAbility.IMPORT_ITEMS)
+                    .setMinGlobalLimited(1)
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMinGlobalLimited(1))
+                    .or(Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()))
+            )
+            .where(
+                "E",
+                Predicates.abilities(PartAbility.INPUT_ENERGY)
+                    .setMinGlobalLimited(1)
+                    .or(Predicates.frames(GTMaterials.Titanium))
             )
             .where("F", Predicates.frames(GTMaterials.Titanium))
             .where("M", Predicates.controller(Predicates.blocks(definition.get())))
