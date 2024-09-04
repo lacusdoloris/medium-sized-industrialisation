@@ -236,6 +236,9 @@ export const addBallGrinderRecipes = (event) => {
 export const addWashingChannelRecipes = (event) => {
     // TODO: Wastewater
 
+    let sulfuricWastewater = getMaterial("sulfuric_wastewater").getFluid();
+    let fluoricWastewater = getMaterial("fluoric_wastewater").getFluid();
+
     iterateOverAllMaterials((material) => {
         // this follows the same idea as the macerator recipes.
         if (material.hasFlag(GTMaterialFlags.NO_ORE_PROCESSING_TAB)) return;
@@ -247,13 +250,20 @@ export const addWashingChannelRecipes = (event) => {
         let byproduct = getByproduct(material, oreProp);
         let wastewater = Fluid.of("minecraft:water");
 
-        for (let comp of material.getMaterialComponents()) {
-            if (comp.material() == GTMaterials.Sulfur) {
-                wastewater = Fluid.of(getMaterial("sulfuric_wastewater").getFluid());
-            } else if (comp.material() == GTMaterials.Fluorine) {
-                wastewater = Fluid.of(getMaterial("fluoric_wastewater").getFluid());
+        for (let byproduct of oreProp.getOreByProducts()) {
+            if (byproduct == GTMaterials.Sulfur) {
+                wastewater = Fluid.of(sulfuricWastewater);
             }
         }
+
+        for (let comp of material.getMaterialComponents()) {
+            if (comp.material() == GTMaterials.Sulfur) {
+                wastewater = Fluid.of(sulfuricWastewater);
+            } else if (comp.material() == GTMaterials.Fluorine) {
+                wastewater = Fluid.of(fluoricWastewater);
+            }
+        }
+
 
         event.recipes.gtceu
             .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
