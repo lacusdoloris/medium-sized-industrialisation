@@ -127,4 +127,40 @@ export const addOrganicChemRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(5 * 20)
         .circuit(8);
+
+    // both of these recipes are fake?
+    event.remove({ output: Fluid.of("gtceu:tetranitromethane") });
+
+    // Derivation: By action of fuming nitric acid on benzene, acetic anhydride, or acetylene.
+    // 4 C6H6 + 60 HNO3 = 15 C(NO2)4 + 42 H2O + 9 CO2
+    event.recipes.gtceu
+        .large_chemical_reactor("nijika:chemicals/tetranitromethane/from_benzene")
+        .inputFluids(
+            Fluid.of("gtceu:benzene").withAmount(4 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:nitric_acid").withAmount(60 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:tetranitromethane").withAmount(15 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(42 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:carbon_dioxide").withAmount(9 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(12 * 20)
+        .circuit(2);
+
+    // (CH3CO)2O + 8 HNO3 = 2 C(NO2)4 + 7 H2O + 2 CO2
+    event.recipes.gtceu
+        .chemical_reactor("nijika:chemicals/tetranitromethane/from_acetic_anhydride")
+        .inputFluids(
+            Fluid.of("gtceu:acetic_anhydride").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:nitric_acid").withAmount(8 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:tetranitromethane").withAmount(2 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(7 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:carbon_dioxide").withAmount(2 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(24 * 20)
+        .circuit(1);
 };

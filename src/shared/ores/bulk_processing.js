@@ -40,7 +40,7 @@ const getByproduct = (material, oreProp, slot) => {
         // ores with empty byproducts just get their dust as an extra byproduct.
         byproductMat = material;
     } else if (byproducts.size() <= realSlot) {
-        // clamp byproducts to the end of the list 
+        // clamp byproducts to the end of the list
         byproductMat = byproducts.getLast();
     } else {
         byproductMat = oreProp.getOreByProducts()[realSlot];
@@ -263,7 +263,6 @@ export const addWashingChannelRecipes = (event) => {
                 wastewater = Fluid.of(fluoricWastewater);
             }
         }
-
 
         event.recipes.gtceu
             .bulk_washing(`nijika:${material.getModid()}_${material.getName()}/crushed_washing`)
