@@ -52,8 +52,7 @@ Mod Changes
   footprint. The tweaker scripts for these mods will continue to exist and adding them to the pack
   continues to be officially supported.
 
-  These mods are Integrated Dynamics (and friends), Modular Routers, Pretty Pipes, More Red, 
-  RFTools, Map Atlases, Create: New Age and Scannable.
+  These mods are Pretty Pipes, More Red, RFTools, Map Atlases, and Scannable.
 
 Recipe Changes
 ~~~~~~~~~~~~~~
@@ -102,6 +101,9 @@ Recipe Changes
 - A number of recipes now use ranged outputs, instead of chanced outputs. This makes them feel more
   fair with relation to larger stack sizes than the "all-or-nothing" approach of the previous 
   system.
+
+- Wastewater has been added as a byproduct of ore processing, which also works as a source for 
+  sulfur and fluorine.
 
 - Tier 0 (earlygame) changes:
 
@@ -168,6 +170,8 @@ Machine Changes
   orestones.
 
 - A new Ball Bearing Grinding Mill has been added to replace the LV/MV macerator.
+
+- A new Bulk Washing Channel has been added which can be used to do large amounts of ore washing.
 
 - The Evaporation Pool is now 7x7 rather than 11. This also means you can fit a full FOUR in one
   chunk easily.
