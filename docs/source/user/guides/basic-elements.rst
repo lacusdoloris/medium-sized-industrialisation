@@ -68,3 +68,14 @@ derivatives such as sulfuric acid are very useful throughout the entire game.
 
 - Coal gas veins from the Nether can be distilled into coal tar, which can be distilled into 
   hydrogen sulfide. 
+
+- Sulfuric wastewater from the washing of sulfur-bearing minerals is a good source of sulfur
+  that can produce a lot of H2S.
+
+Fluorine
+--------
+
+The primary usage for fluorine is essentially for polytetrafluoroethylene for multiblock 
+manufacture. It only has one viable source - flourite - which is made from the electrolysis of
+fluorite. Fluorite can be found as an ore sorting byproduct, or by reacting calcium hydroxide
+with fluoric wastewater.
