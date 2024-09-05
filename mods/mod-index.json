@@ -252,17 +252,6 @@
         "version": "2.1.24",
         "version_id": "l4YYn2wS"
     },
-    "G41VOlFe": {
-        "checksum": "c31ac64ac4cbac2d0d4463355d734d441f2a6bf1723e954691857c0c6ef7e490a1656ac6f7c4f4a0ff439d5fc7e6204493cade47c30bacd78cb16e8e665d07d2",
-        "client_side_only": false,
-        "ignore_dependencies": false,
-        "name": "Cheese",
-        "pinned": false,
-        "project_id": "G41VOlFe",
-        "selected": true,
-        "version": "1.2.0",
-        "version_id": "NR94PqgD"
-    },
     "Ha28R6CL": {
         "checksum": "ed4c797ccd827c1df9ef0953f4bf44c5d23849e696e839a93d4eaa694de29959e9d875a2d843c724fd5ac4d4aadfea09405b403b48eb514c4bcbfb74af365b4e",
         "client_side_only": false,
@@ -372,17 +361,6 @@
         "selected": true,
         "version": "1.20.1-1.0.0+forge",
         "version_id": "UyNuFWXF"
-    },
-    "NtlsPMR3": {
-        "checksum": "d48be372aa7a9f5a306577957d7013ee70b999f5e0ddad0bb40c1e768de0c42cbdcf2d67c08ab38b40c016340b0205dfe1a13838651e90beb9eb0f2efc672c33",
-        "client_side_only": false,
-        "ignore_dependencies": false,
-        "name": "Endrous Edibles",
-        "pinned": false,
-        "project_id": "NtlsPMR3",
-        "selected": true,
-        "version": "1.1.0+1.20",
-        "version_id": "pG5rD3S9"
     },
     "QXU3UqPY": {
         "checksum": "b05d7f61974a08ceea814ff593aa73add8a386b87bc8cbf26541ddbf64a226ec78e86b9e42bb6440ca50df8ddb79c9496f38634634e27d5e1e79b333abdf30c9",

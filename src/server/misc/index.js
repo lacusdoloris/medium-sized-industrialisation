@@ -87,33 +87,6 @@ export const adjustVariousMiscRecipes = (event) => {
         .shapeless("woolytrees:wooly_sapling", ["#minecraft:saplings", "#minecraft:wool"])
         .id("nijika:misc/wooly_sapling");
 
-    event.remove({ id: "cheese:cheese" });
-    event.remove({ id: "cheese:cheese_and_crackers" });
-    event.remove({ id: "cheese:grilled_cheese" });
-
-    event.recipes.gtceu
-        .fermenter("nijika:misc/grommit")
-        .inputFluids(Fluid.of("minecraft:milk").withAmount(250 * FluidAmounts.MB))
-        .itemOutputs("cheese:cheese")
-        .EUt(GTValues.VA[GTValues.ULV])
-        .duration(20);
-
-    event.recipes.gtceu
-        .chemical_bath("nijika:misc/moon_cheese")
-        .inputFluids(Fluid.of("gtceu:rocket_fuel").withAmount(1 * FluidAmounts.B))
-        .itemInputs("cheese:cheese")
-        .itemOutputs("cheese:cheese_and_crackers")
-        .EUt(GTValues.VA[GTValues.HV])
-        .duration(5);
-
-    event.recipes.gtceu
-        .electric_blast_furnace("nijika:misc/end_cheese")
-        .itemInputs("2x cheese:cheese", "1x minecraft:bread", "1x #forge:dusts/ender_pearl")
-        .itemOutputs("cheese:grilled_cheese")
-        .EUt(GTValues.VA[GTValues.MV])
-        .duration(20)
-        .blastFurnaceTemp(453.15);
-
     // easier books and maps
     event
         .shaped("4x minecraft:map", ["PPP", "PCP", "PPP"], {
