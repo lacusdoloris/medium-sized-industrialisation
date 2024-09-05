@@ -1,7 +1,7 @@
 {
     "1eAoo2KR": {
         "checksum": "fe2ac7569c539b5810cd5fd58e45ebe83a9ea14e235f1f3361d15d62c2f62edf18915794754ee54e108773c11ac8c557a45b36aedc3d352c92dce21e3dc96352",
-        "client_side_only": true,
+        "client_side_only": false,
         "ignore_dependencies": false,
         "name": "YetAnotherConfigLib",
         "pinned": false,
@@ -57,7 +57,7 @@
     "3mW8PdUo": {
         "checksum": "33591af8c7772a87c4e9b1166b1d8bb1a3b3f7589d1280db75538a13cc3012f157166da9245c16c3cd655805943f588f65ec330123b900f30e149b781d178970",
         "client_side_only": true,
-        "ignore_dependencies": false,
+        "ignore_dependencies": true,
         "name": "Coordinates Display",
         "pinned": true,
         "project_id": "3mW8PdUo",
@@ -213,7 +213,7 @@
         "client_side_only": false,
         "ignore_dependencies": true,
         "name": "Create: New Age",
-        "pinned": false,
+        "pinned": true,
         "project_id": "FTeXqI9v",
         "selected": true,
         "version": "1.1.2",
@@ -330,15 +330,15 @@
         "version_id": "gbYUKrDP"
     },
     "LNytGWDc": {
-        "checksum": "7b04f3d0d53de93b50bbd6c25828667b758ec7ca7dcce8e2fed63c0523cb8cde23e4849f9538078039aecaa4e1168daa0ded90199e297628e12ea0651cf130c2",
+        "checksum": "0e2cfc0bfb379b5a69698827ba3e4e191b510678dcca3edfd1c491984c779ff9fa5f5f4436313a9d43d5e2e4cdc4cfe9df10f418976e4761453ec2fe0e7a5c23",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Create",
         "pinned": false,
         "project_id": "LNytGWDc",
         "selected": true,
-        "version": "1.20.1-0.5.1.f",
-        "version_id": "HNYrbfZZ"
+        "version": "0.5.1.h",
+        "version_id": "ZZW2y7nG"
     },
     "M09T0qPI": {
         "checksum": "95898aa246d880db91c41f49265812e62995dfab597e7a72ebcf5c295b3eabcb45d2d6dccbd59c9cd0b0d1377ca6ba284a81f5b1cf0bfe02cc7060fcf4fe640d",
@@ -396,15 +396,15 @@
         "version_id": "8tVulaR5"
     },
     "ResbpANg": {
-        "checksum": "9d4c1b2b90e9101fa43c6733e7a6996fcbe706ef40c2afc998000f77fc8c9136d0484ee6257692e164157af07072f47d52d32fd666afcb260043d6245373cfc7",
+        "checksum": "899f562951b902a1aeb8360cb6a596e91f255762adb0a233bfc5fbe6f749f2b6cebf232079184aaf62ecfcf5408bfff493e372a34ae8186c12070ab83210f61d",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Create Ore Excavation",
         "pinned": false,
         "project_id": "ResbpANg",
         "selected": true,
-        "version": "1.20.1-1.5.0",
-        "version_id": "m5bD7RxO"
+        "version": "1.20.1-1.5.2",
+        "version_id": "JoRQ9ZCh"
     },
     "RfFxanNh": {
         "checksum": "d5688c46c821e07de05ee0b88a34f2c80ff56d301f4c08a359724a69ec75369bdf343e287a4f7e27f7bbcd1a29c16b11034fc72161cb3ae89fbf72dcdb375919",
@@ -685,7 +685,7 @@
         "checksum": "325010ffb1b48c1adef4c7e490cc9542ced951ca98fdfbc72516cba560d4eb0ead8557554413ad40c6644754ef97c899630d6899e6a50571ec88f8986a14bec4",
         "client_side_only": false,
         "ignore_dependencies": false,
-        "name": "Heracles",
+        "name": "Heracles (Questing)",
         "pinned": false,
         "project_id": "lo90fZoB",
         "selected": true,
@@ -771,7 +771,7 @@
     },
     "qbbO7Jns": {
         "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": true,
+        "client_side_only": false,
         "ignore_dependencies": false,
         "name": "EMI Loot",
         "pinned": false,
@@ -825,26 +825,26 @@
         "version_id": "maCpsT70"
     },
     "sk9rgfiA": {
-        "checksum": "09a6c42f34ab6cbf6790fbd79fadb40f97c859b8ed27015ba8a8307496e6731b3486b88ac9ad4b5fa003ff9d429b4154d6ecb3593bdd9888f89ed498d29c3671",
+        "checksum": "55d6c2b3e9d3ecab9155dc0f2ee8fbc8feb15898920e957c0b40e9f561751dd45956f9ef35480ac43e7e308267f8f436d8f04a090b8ad1111d55da15169b4891",
         "client_side_only": true,
         "ignore_dependencies": false,
         "name": "Embeddium",
         "pinned": false,
         "project_id": "sk9rgfiA",
         "selected": true,
-        "version": "0.3.30+mc1.20.1",
-        "version_id": "EKA4u4Uy"
+        "version": "0.3.31+mc1.20.1",
+        "version_id": "UTbfe5d1"
     },
     "soWqucCB": {
-        "checksum": "b7ed0a89f019139f29c6af07716748315b408addd0205831b1c3427f0cefdf2d7cc42cf023790a079a0f0e6e8eebdda2cd56bda1b52e134227b427b0d0a60627",
+        "checksum": "2dc9617cb2ca0977979b3115a146bb9839bcbc588c927345390eedee77b0d81c457481610fe9c943e7680e76d3daa2bc248a5ba0c787b059b2c188e7943f4269",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Reactive Alchemy",
         "pinned": false,
         "project_id": "soWqucCB",
         "selected": true,
-        "version": "1.20.1-8e",
-        "version_id": "3QnqLhK5"
+        "version": "1.20.1-8f",
+        "version_id": "zlZfEyJa"
     },
     "u58R1TMW": {
         "checksum": "0bc1e8835e54ee43275edd0f14ea93d5cbdbdbb1b74ed45c399015e6389bbe781c9553d6e9979b4467376e29e25aa6098b67501aa6a0c646586f0dae307e2309",
@@ -913,15 +913,15 @@
         "version_id": "poBMa9OK"
     },
     "vvuO3ImH": {
-        "checksum": "786c6c34e3f1a5358075cf95330b3e732293861a4ca60e4aa1780b55d32d3ab5b998b014bd521b3567f474a7bab738f821d46b71a7da201e0fa9321bb8e7e03b",
+        "checksum": "0beaf1ce8df01b80535511bbcc7f7e41a40c77402f4056cbe68022c17c6ceafb6558fd6b25eaaee8691530fd7b5e89ca81038f13b47aa159153ea19aeeec8866",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Curios API",
         "pinned": false,
         "project_id": "vvuO3ImH",
         "selected": false,
-        "version": "5.9.1+1.20.1",
-        "version_id": "moWmAnjY"
+        "version": "5.10.0+1.20.1",
+        "version_id": "8HlBRHsc"
     },
     "wPQ6GgFE": {
         "checksum": "eb05f0f5f3fb4e3fbc6b998d7eafe45574822656102cf4526a5ae8dded9287188709cec69ecad3bf9da5d09db6af2ee9983dee710987e0abcbe76a1e87ee7908",
