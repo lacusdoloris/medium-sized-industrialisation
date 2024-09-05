@@ -186,6 +186,39 @@
         "version": "3.7",
         "version_id": "BzwWTsxS"
     },
+    "Etqy1Omb": {
+        "checksum": "6a2f53f082d173bb4f911051662546cf52edca15f6a30ba36bcf368a65e5a8b6f71187e59442138f58545e3a23495425b3a9530b9441eb794ea19efae1abf8a3",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Integrated Tunnels",
+        "pinned": false,
+        "project_id": "Etqy1Omb",
+        "selected": true,
+        "version": "1.20.1-1.8.31",
+        "version_id": "VWkNplXJ"
+    },
+    "EuTS81Z3": {
+        "checksum": "5281f7910a9b2d8ea49499894656a43d4180a591383c9cf0ecce755537d21b2da6d49c9f1b624d9325f94a7d6c5789d5e74eae0bbece2ccb7da9030f059d17da",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Modular Routers",
+        "pinned": false,
+        "project_id": "EuTS81Z3",
+        "selected": true,
+        "version": "12.1.1",
+        "version_id": "3QDNtJUd"
+    },
+    "FTeXqI9v": {
+        "checksum": "0f17666aab7ba800dc268168aa3b0bfc9a4bc457c4deec666aa8ea3f3a39075c17d684f1652a5b93300b8bbae0678defb18f4632397ac455ddf2f25987f54246",
+        "client_side_only": false,
+        "ignore_dependencies": true,
+        "name": "Create: New Age",
+        "pinned": false,
+        "project_id": "FTeXqI9v",
+        "selected": true,
+        "version": "1.1.2",
+        "version_id": "2BEeSV7E"
+    },
     "FWtAXlpg": {
         "checksum": "468dadae5df820ce4b67eb503767ae042ae101fa78d58986d9b986aeca4517fd355d74ca35c522afa38ba6a3c6d5d07c6dd187139ac7d43c8f1ae505fe895e6b",
         "client_side_only": false,
@@ -240,6 +273,17 @@
         "selected": true,
         "version": "1.12.1+kotlin.2.0.20",
         "version_id": "FayzGq0c"
+    },
+    "HmLJoQ1K": {
+        "checksum": "e91c7307a82a6faf30c1a48b0076d4081b54080914253dd74ecda6b3d0467076359875c69db011d596b83439fed677d8433cba36a165e83a7aa80312dc76e8df",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Integrated Terminals",
+        "pinned": false,
+        "project_id": "HmLJoQ1K",
+        "selected": true,
+        "version": "1.20.1-1.5.1",
+        "version_id": "5fahofPO"
     },
     "IhBYAM6m": {
         "checksum": "4e1d6b6454c13006cdd78f5e8f47bde7c0fce1f5d455e991506e72f529153f7b54454c932c081339844f9b9098e227133de45011f3d0f0bbfd6b9378fb321c0f",
@@ -417,6 +461,17 @@
         "version": "2.4.6",
         "version_id": "5lXIJiba"
     },
+    "XxWD5pD3": {
+        "checksum": "dde7e1c25efd5f8516dd4d4b0586298222b98a7d8165b0d2242f3d21e2cae54343837c1e9f7cd38c73a18238e1737d775123b0a78056e5318f9792b3b2440af8",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Applied Energistics 2",
+        "pinned": false,
+        "project_id": "XxWD5pD3",
+        "selected": true,
+        "version": "15.2.13",
+        "version_id": "VGMDHpdE"
+    },
     "YOs4tZea": {
         "checksum": "fcad2fbe1dbbc02fdcf5bd5544d66d57080ff91ce40de116965c61c20da99ed10dd76fe18c485b5dbb9037af29b92fafe78d69d8f72fa3c0f965dd52047f4137",
         "client_side_only": false,
@@ -438,6 +493,17 @@
         "selected": true,
         "version": "1.6.4",
         "version_id": "YhueAXpz"
+    },
+    "Z9DM0LJ4": {
+        "checksum": "29c5dc0c514b5db083c295751a766957afc023ffc9f7554b52edc6f21591ae2226029e68bc58ea72a930d144ae2c14fa9ac9ab193d1647248c34bc43b3ed7089",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Cyclops Core",
+        "pinned": false,
+        "project_id": "Z9DM0LJ4",
+        "selected": false,
+        "version": "1.20.1-1.19.5",
+        "version_id": "elAdftA9"
     },
     "ZM3tt6p1": {
         "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
@@ -560,6 +626,17 @@
         "version": "1.3.1+forge-1.20.1-36",
         "version_id": "szlzj05H"
     },
+    "jjuIRIVr": {
+        "checksum": "53d58be2e761cde0b7ae0fb43075b07395dc0e816a37cb31dcdca0503e935643160f8655ea6f2aebf274bfc805b6d59c1e38b5b95f7b72285235e945bd1db221",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "MEGA Cells",
+        "pinned": false,
+        "project_id": "jjuIRIVr",
+        "selected": true,
+        "version": "forge-2.4.4",
+        "version_id": "Jeg9Zxud"
+    },
     "kU1G12Nn": {
         "checksum": "738abc1b80b4559a05260bf341bf7d3a96db106d325d7c0864470c8161df95b2f5f26c855b82c07469f5f53edc852096dc31debc5e2e49bd1408419b3bfe23bf",
         "client_side_only": false,
@@ -659,6 +736,17 @@
         "version": "1.1.2",
         "version_id": "MfArQnMJ"
     },
+    "oFXrCkDI": {
+        "checksum": "f1cf35e163518ff803ad9901cfc1c4907b61ac81e0391af33af8af487955a666ca6729cb156da71e24fc2ed267f497b868ce8b12057d0dca53791fada3111c6d",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Common Capabilities",
+        "pinned": false,
+        "project_id": "oFXrCkDI",
+        "selected": false,
+        "version": "1.20.1-2.9.3",
+        "version_id": "Dd40mSpD"
+    },
     "oY2B1pjg": {
         "checksum": "5a040831b0c06dd1afe3935a8eadcbed0997118217a5c01aeb189ce9b2ca891270f7ae49adbb581c0b266f821506f6ca3d301056f85efd7ca597fdfc6f98cda1",
         "client_side_only": true,
@@ -691,6 +779,17 @@
         "selected": true,
         "version": "0.6.5+1.20.1+forge",
         "version_id": "91c49w5V"
+    },
+    "qwpACdla": {
+        "checksum": "07695d28eeff246a4b2fa32f8132aff2ddcf13852d693e37829dd4b940164f7eaafa71d7d47f53d00d788e9906a4839fbe29bd1afab069dfea74f414d1752b82",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": " Integrated Crafting",
+        "pinned": false,
+        "project_id": "qwpACdla",
+        "selected": true,
+        "version": "1.20.1-1.1.8",
+        "version_id": "qIe9ou2a"
     },
     "r0v8vy1s": {
         "checksum": "522048f5452e171e75f5de886f56c50f8f729ebeeac31eacd810bf062bf3355bff211fa4f30bd2761d38e35299ee743d2ef61aaadf1374cd97796a9a9c6169f3",
@@ -769,6 +868,17 @@
         "version": "15.12.3.54",
         "version_id": "lTsLGis7"
     },
+    "uDJkuFRe": {
+        "checksum": "e5ad9452a8a79f7ccf7146a372b06cd5e3ec68c2252ada4e1915a23b81ecee1621c8f7f56c6c6214b20fe785266885f7c3e93b0fb54dba5f5878dfe21ed44d08",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Integrated Scripting",
+        "pinned": false,
+        "project_id": "uDJkuFRe",
+        "selected": true,
+        "version": "1.20.1-1.0.4",
+        "version_id": "QIWr7Ge5"
+    },
     "uXXizFIs": {
         "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
         "client_side_only": false,
@@ -845,5 +955,16 @@
         "selected": true,
         "version": "2.3.2+1.20.1",
         "version_id": "mYl4RvKg"
+    },
+    "yYzdQHJI": {
+        "checksum": "d0a417a68dba07f8ce0569fa3a779e5cd2fe5987ed6d2438c8d67eacdfa5d160e42c7b26fabe875d801151a08fb6b5189d8d5726ffb4085d6f2ba672e9402a0c",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "Integrated Dynamics",
+        "pinned": false,
+        "project_id": "yYzdQHJI",
+        "selected": true,
+        "version": "1.20.1-1.23.3",
+        "version_id": "2ZKSUGIO"
     }
 }

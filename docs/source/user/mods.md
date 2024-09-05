@@ -18,15 +18,15 @@ Removing one of these mods voids any support you might get.
 
 | Mod Name                         | Included by default? | Integration status                                                              |
 |----------------------------------|----------------------|---------------------------------------------------------------------------------|
-| [AE2]                            | ❌                    | Full; available at the LV tier.                                                 |
-| [Create: New Age]                | ❌                    | Semi; available in tier 0. Some recipes deliberately removed.                   |
+| [AE2]                            | ✅                    | Full; available at the LV tier.                                                 |
+| [Create: New Age]                | ✅                    | Semi; available in tier 0. Some recipes deliberately removed.                   |
 | [Create: Cobblestone Generators] | ✅                    | Full.                                                                           |
 | [Create: Diesel Generators]      | ✅                    | Full.                                                                           |
 | [Essentials]                     | ✅                    | Minimal; most recipes didn't need changing.                                     |
-| [Integrated Dynamics]            | ❌                    | Minimal; needs work, but it's functional.                                       |
+| [Integrated Dynamics]            | ✅                    | Minimal; needs work, but it's functional.                                       |
 | [Little Logistics]               | ✅                    | Semi; available across tier 0 and LV. Energy tugs/locomotives not yet balanced. |
-| [Mega Cells]                     | ❌                    | Full; requires AE2.                                                             |
-| [Modular Routers]                | ❌                    | Full; available at the HV tier.                                                 |
+| [Mega Cells]                     | ✅                    | Full; requires AE2.                                                             |
+| [Modular Routers]                | ✅                    | Full; available at the HV tier.                                                 |
 | [Pack it Up]                     | ✅                    | Full.                                                                           |
 | [Pretty Pipes]                   | ❌                    | Full; available at the LV tier.                                                 |
 | [Reinforced Chests]              | ✅                    | Full; only one recipe needed changing.                                          |
