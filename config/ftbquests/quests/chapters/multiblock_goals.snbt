@@ -22,7 +22,7 @@
 				"- &bWood Vinegar&r's best byproducts are methanol and acetic acid, both useful for petrochemical production."
 				"- &bWood Gas&r distills into carbon gasses and methane; alternatively, it can be burnt directly for energy."
 				"- &bCoal Tar&r's is useful for hydrogen sulfide production."
-				"- &bCoal Gas&r is an easy source for ammonia and ethylbenzene."
+				"- &bCoal Gas&r is an easy source for ammonia and xylene."
 				"- &bCharcoal Byproducts&r distills into various other wood chemicals less efficiently than just burning the wood."
 				"- &bHeavy Oil&r can be produced for a renewable alternative to fluid drilling rigs."
 				"- &bCreosote&r is used to make minecart rails or as an extremely easy source of lubricant."
@@ -112,21 +112,23 @@
 			description: [
 				"Oil. It's a wonderful substance - nicknamed black gold for a reason."
 				""
-				"How do you get it? With oil drills. Obviously. The &dAdvanced Fluid Drilling Rig&r will drill up oil from below bedrock (it's magic!)."
+				"You get it using fluid drills. The &dAdvanced Fluid Drilling Rig&r will drill up oil from below bedrock (it's magic!)."
 				""
 				"There's four types of oil:"
 				""
 				"- &aHeavy Oil&r, which gets you lots of &dheavy fuel&r"
 				"- &aLight Oil&r, which gets you lots of &dsulfuric gas&r"
-				"- &aRaw Oil&r, which gets you lots of &dnaphtha&r"
+				"- &aRaw Oil&r, which gets you lots of &dnaphtha&r (and coincidentally a perfect LF:HF ratio for diesel)"
 				"- Plain old &aOil&r, which gets you a mixture of each."
+				"- &aNatural Gas&r, which is not oil but can still be drilled up."
 				""
 				"You can also drill for &dNatural Gas&r, which can be processed further for various petrochemical resources. (Let us not talk about salt water.)"
 				""
-				"The first tier of drill is slow and depletes resources fully, but it's still worthwhile building a few."
+				"If you're used to base GT5 drills, the ones in BI have been massively buffed; all deposits have much higher base amounts and an actually usable depletion amount, making building permanent outposts using the first tier of drills still worthwhile."
 			]
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "2A88522EE04505E5"
+			min_width: 300
 			subtitle: "What? Of course not! Why would it be about oil? I don't even like oil!"
 			tasks: [
 				{
@@ -195,6 +197,7 @@
 				""
 				"The cracker is another machine that uses &dcoils&r; this time, Cupronickel doesn't give you a speed penalty, but you should have ferrochrolumium production ready to make ferrochrolumium coils for a 10% speed boost."
 			]
+			icon: "gtceu:cracker"
 			id: "160463341B1B2B99"
 			tasks: [
 				{
@@ -229,7 +232,7 @@
 				""
 				"The tower is a unique multiblock, however: it can be arbitrarily tall to fit its recipes. Each layer of the tower adds another output from a recipe in its &doutput hatch&r."
 				""
-				"For example, when distilling Coal Gas, the first layer has &dCoal Tar&r, the second layer has &dAmmonia&r, the third layer has &dEthylbenzene&r, and the fourth layer has &dcarbon dioxide&r. Any layer other than the first layer is &acompletely optional&r; if you don't have a usage for that chemical, you can ignore building the layer!"
+				"For example, when distilling Coal Gas, the first layer has &dCoal Tar&r, the second layer has &dAmmonia&r, the third layer has &dXylene&r, and the fourth layer has &dcarbon dioxide&r. Any layer other than the first layer is &acompletely optional&r; if you don't have a usage for that chemical, you can ignore building the layer!"
 				""
 				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues); and a top layer with a muffler hatch."
 			]
