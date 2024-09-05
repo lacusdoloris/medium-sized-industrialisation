@@ -130,10 +130,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"6FA74A42A00CFD4F"
-				"0988AA5905F04AD2"
-			]
+			dependencies: ["0988AA5905F04AD2"]
 			description: [
 				"In Factorio, there's a difficulty spike in the midgame where you need to start doing oil processing to create Blue Science packs; this was even more true in the olden days before they changed oil processing to be simpler at first, and it's even truer for those of us who love big overhaul packs."
 				""

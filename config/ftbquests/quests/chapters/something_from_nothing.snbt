@@ -12,11 +12,11 @@
 		{
 			dependencies: ["10A18BA06D165985"]
 			description: [
-				"By this point, you've likely exploited all of the local ore veins in both the overworld and the Nether. (If you haven't, then you're not really in the spirit of industrialisation)."
+				"The second way of getting infinite ores is with a &dmechanical drill&r, that drills out ore deposits from underground. These drills produce a set of &abase ores&r, which can't be processed directly; they need to be turned into actual mineral ores via sorting before you can use them."
 				""
-				"Yet, there are some ores missing. Where are they? They can only be found as mixtures inside the &abase ores&r, which are found in infinite veins mined via drilling machines."
+				"The base ores are a source of the &dEV tier&r metals and minerals, such as molybdenum or tantalum. These minerals aren't available in overworld veins, and must be produced from a drill."
 				""
-				"These drills require &dHSLA Steel&r to manufacture, locking them behind molybdenum processing. "
+				"Whilst the actual drill itself is available in early HV, you need &dtitanium&r to create the ore sorter itself."
 			]
 			icon: "createoreexcavation:drilling_machine"
 			id: "5E69A3F286C7E546"
@@ -39,7 +39,7 @@
 				}
 			]
 			title: "Burner mining drill"
-			x: 3.5d
+			x: 2.5d
 			y: -6.5d
 		}
 		{
@@ -52,31 +52,12 @@
 				type: "item"
 			}]
 			title: "Kessoku Location Wand"
-			x: 5.0d
-			y: -6.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5E69A3F286C7E546"]
-			description: [
-				"These drills are Create-powered; setting up boiler infrastructure at an outpost is a lot of work for a set of drills."
-				""
-				"You can use New Age &aelectric motors&r to convert GTEU directly to rotational power instead. Since you're likely going to need boats or minecarts to get the ore back to base, consider using the empty carts out there to ship batteries in."
-			]
-			id: "310811C821F6F90A"
-			subtitle: "All the physical labor is now done by a single Australian man."
-			tasks: [{
-				id: "11ACC5FB39632998"
-				item: "create_new_age:basic_motor"
-				title: "Electric Motors"
-				type: "item"
-			}]
-			title: "Electric Motors"
-			x: 2.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["5E69A3F286C7E546"]
-			description: ["The &aOre Sorter&r is a multiblock machine that sorts the six &dbase ores&r into their constituent ores, alongside some &dore slag&r."]
+			description: ["The &aOre Sorter&r is a multiblock machine that sorts the six &dbase ores&r into their constituent ores. Not much more to say."]
 			id: "705095DDB708BA9D"
 			tasks: [{
 				id: "165711E0C0358C13"
@@ -84,194 +65,12 @@
 				type: "item"
 			}]
 			title: "Ore Sorting Facility"
-			x: 3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["310811C821F6F90A"]
-			description: [
-				"Got too much energy, but your motors aren't strong enough?"
-				""
-				"The &dMotor Extension&r will let you pump in additional energy to produce more stress."
-			]
-			id: "0A97BFD23864412D"
-			rewards: [{
-				id: "150F6D39F5CCB0B5"
-				item: "create:large_cogwheel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "023B35C87EDFD82C"
-				item: "create_new_age:basic_motor_extension"
-				type: "item"
-			}]
-			title: "Motor Extender"
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Bocchinium can be sorted into &dIlmenite&r and &dOrpiment&r ore."]
-			icon: "gtceu:raw_bocchinium"
-			id: "6C7B57A6456C017C"
-			tasks: [{
-				id: "7226AB9CEABD8A29"
-				item: "gtceu:crushed_bocchinium_ore"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Ryoite can be sorted into &dPyrolusite&r and &dGold&r."]
-			icon: "gtceu:raw_ryoite"
-			id: "226F73A245BB3CD5"
-			tasks: [{
-				id: "1A1654E6EA88775A"
-				item: "gtceu:crushed_ryoite_ore"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Kitakitaite can be sorted into &dPentlandite&r and &dSphalerite&r."]
-			icon: "gtceu:raw_kitakitaite"
-			id: "1E3C65D5ABBFEE25"
-			tasks: [{
-				id: "0C97DB608E2B543B"
-				item: "gtceu:crushed_kitakitaite_ore"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed &eNijikaite&r can be be sorted into &dBeryillium&r and &dScheelite&r."]
-			icon: "gtceu:raw_nijikaite"
-			id: "6FA74A42A00CFD4F"
-			tasks: [{
-				id: "1D6C4BE65A70F253"
-				item: "gtceu:crushed_nijikaite_ore"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["705095DDB708BA9D"]
-			description: ["Crushed Kikurite can be sorted into &dMolybenite&r and &dAsbestos&r."]
-			icon: "gtceu:raw_kikurite"
-			id: "6A7DE62BB369C244"
-			tasks: [{
-				id: "41DB1BEB7B9CDDE8"
-				item: "gtceu:crushed_kikurite_ore"
-				type: "item"
-			}]
 			x: 1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["44F3737CC06E96EB"]
-			description: ["The &dBrass Chunk Loader&r allows you to force load those outpost chunks so that your drills and trains don't stop."]
-			id: "6F3CA9F89012DF62"
-			tasks: [{
-				id: "26F93C2A66582741"
-				item: "create_power_loader:brass_chunk_loader"
-				type: "item"
-			}]
-			title: "Chunk Loading"
-			x: 5.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["6A7DE62BB369C244"]
-			description: ["Impure Kikurite gets you &dStibnite&r, as well as the result of sorting the crushed ores."]
-			id: "2F69A1FA48AF9E49"
-			tasks: [{
-				id: "05CD1E4DD8CD5D58"
-				item: "gtceu:impure_kikurite_dust"
-				type: "item"
-			}]
-			title: "Impure Kikurite"
-			x: 1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1E3C65D5ABBFEE25"]
-			description: ["Impure Kitakitaite gets you &dTricalcium phosphate&r, as well as the result of sorting the crushed ores."]
-			id: "636278BBADABB9A2"
-			tasks: [{
-				id: "1B3D6C7AD85C8FBF"
-				item: "gtceu:impure_kitakitaite_dust"
-				type: "item"
-			}]
-			title: "Impure Kitakitaite"
-			x: 3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6C7B57A6456C017C"]
-			description: ["Impure Bocchinium gets you &dRealgar&r, as well as the result of sorting the crushed ores."]
-			id: "57C055EE02BA49D4"
-			tasks: [{
-				id: "46A8E80A6518B54F"
-				item: "gtceu:impure_bocchinium_dust"
-				type: "item"
-			}]
-			title: "Impure Bocchinium"
-			x: 2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["226F73A245BB3CD5"]
-			description: ["Impure Ryoite gets you &dHematite&r, as well as the result of sorting the crushed ores."]
-			id: "38C797CC3DCF3A33"
-			tasks: [{
-				id: "0BA8608F29CAA90E"
-				item: "gtceu:impure_ryoite_dust"
-				type: "item"
-			}]
-			title: "Impure Ryoite"
-			x: 4.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6FA74A42A00CFD4F"]
-			description: ["Impure Nijikaite gets you &dFluorite&r, as well as the result of sorting the crushed ores."]
-			id: "6706582D572DCB34"
-			tasks: [{
-				id: "4818F45E3FDC31E1"
-				item: "gtceu:impure_nijikaite_dust"
-				type: "item"
-			}]
-			title: "Impure Nijikaite"
-			x: 5.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["473EF5FF75ACB3EC"]
-			description: [
-				"Can't find enough ore underground? Or are you just plain lazy?"
-				""
-				"The Create decorative rocks (or orestones) come in much more useful than before; they can be &dcrushed&r or &dmilled&r into various useful &aearly-game ores&r. "
-			]
-			id: "222C90F2D2CF1E89"
-			tasks: [{
-				id: "7EFB6BB86B450D1B"
-				item: "create:millstone"
-				type: "item"
-			}]
-			title: "Early Ores"
-			x: -1.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Veridium can be crushed or milled to get &dTetrahedrite&r ore."]
+			dependencies: ["6C18AAD4FA64399E"]
+			description: ["Veridium can be crushed or milled to get &dTetrahedrite&r and &dChromite&r ore."]
 			id: "7CAE94E81AFF2573"
 			rewards: [{
 				id: "33ADBCE8C75CEA51"
@@ -288,7 +87,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["222C90F2D2CF1E89"]
+			dependencies: ["6C18AAD4FA64399E"]
 			description: ["Ochrium can be milled or crushed to get &dHematite&r ore."]
 			id: "2A2A3990F11A484F"
 			tasks: [{
@@ -301,8 +100,8 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Asurine can be crushed or milled to get &dCassiterite&r ore."]
+			dependencies: ["6C18AAD4FA64399E"]
+			description: ["Asurine can be crushed or milled to get &dCassiterite&r and &dSphalerite&r ore."]
 			id: "75DEE8831FBA67F8"
 			rewards: [{
 				id: "6A5CC708D45CC343"
@@ -316,11 +115,11 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Scoria can be crushed or milled to get &dBauxite&r ore."]
+			dependencies: ["6C18AAD4FA64399E"]
+			description: ["Scoria can be crushed or milled to get &dBauxite&r andd &dSilver&r ore."]
 			id: "77A64F6E53E06202"
 			rewards: [{
 				id: "5DA8D4B62C4313B8"
@@ -333,12 +132,12 @@
 				item: "create:scoria"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Scorchia can be crushed or milled to get &dGalena&r ore."]
+			dependencies: ["6C18AAD4FA64399E"]
+			description: ["Scorchia can be crushed or milled to get &dGalena&r and &dArsenopyrite&r ore."]
 			id: "1138542B4203975D"
 			rewards: [{
 				id: "09CEEAA0FE9EDE94"
@@ -351,12 +150,12 @@
 				item: "create:scorchia"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -6.5d
 		}
 		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Crimsite can be milled or crushed to get &dRedstone&r ore."]
+			dependencies: ["6C18AAD4FA64399E"]
+			description: ["Crimsite can be milled or crushed to get &dRedstone&r and &dPentlandite&r ore."]
 			id: "0C8CFD9420F9E47A"
 			rewards: [{
 				id: "41ACA6F4BD87C3E5"
@@ -369,28 +168,14 @@
 				item: "create:crimsite"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["222C90F2D2CF1E89"]
-			description: ["Diorite can be milled or crushed to get &dNether Quartz&r."]
-			id: "14D9C704A4B5E791"
-			tasks: [{
-				count: 64L
-				id: "152F677A614A9C89"
-				item: "minecraft:diorite"
-				type: "item"
-			}]
 			x: 0.0d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
-			dependencies: [
-				"222C90F2D2CF1E89"
-				"75C5A58A05A22DC6"
-			]
+			dependencies: ["75C5A58A05A22DC6"]
 			description: [
+				"The first major source of infinite ores in BI is from the &aCreate decorative orestones&r. Whilst these can be found overground in large deposits, you'll want to acquire them in bulk to sustain your industrial developments."
+				""
 				"There's two ways of getting the orestones renewably. Both require finding a &dmolten vent&r somewhere in the overworld; these spawn more often in the ocean but you can find them on the surface too. These vents consist of orestones surrounding a single, &oinactive&r special orestone."
 				""
 				"Once you blow the orestone up with an explosive (such as TNT), it'll turn into an &oactive&r orestone; from there, you can place down lava on top of it and the lava will freeze into the specified orestone."
@@ -408,7 +193,7 @@
 			}]
 			title: "Rock Creation"
 			x: -1.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["35769AB6DF5D584B"]
@@ -425,8 +210,8 @@
 				type: "item"
 			}]
 			title: "Ball Bearing"
-			x: 0.0d
-			y: 0.5d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62CD691A2392C26A"]
@@ -435,17 +220,18 @@
 				""
 				"This is &edramatically faster&r than MV ore washers at the cost of requiring significantly more distilled water; it is designed to synergise with the grinding mill well. "
 				""
-				"Please note that the Washing Channel can only produce &dpurified ores&r; you need to use the singleblock washer for anything else."
+				"Please note that the Washing Channel can only produce &dpurified ores&r; you need to use the singleblock washer for anything else. It may also produce waste water products, which can be reprocessed into various useful elements."
 			]
 			id: "3D7694FCD64C3AD0"
+			min_width: 300
 			tasks: [{
 				id: "41EFD48076B5E36B"
 				item: "gtceu:washing_channel"
 				type: "item"
 			}]
 			title: "Large Ore Washer"
-			x: 1.5d
-			y: -0.5d
+			x: 1.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Slug Pharmacy"]
