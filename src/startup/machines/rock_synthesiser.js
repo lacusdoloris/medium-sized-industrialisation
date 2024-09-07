@@ -50,5 +50,6 @@ export const addRockSynthesiserMultiblock = (builder) => {
         )
         .recipeType("rock_synthesis")
         .tooltips(Component.translatable("nijika.tooltip.no_overclock"))
+        .recipeModifiers([])
         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF);
 };
