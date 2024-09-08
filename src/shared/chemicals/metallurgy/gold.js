@@ -115,4 +115,7 @@ export const addGoldProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("minecraft:water").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .duration(2 * 20 + 10);
+
+    // readd gold dust -> gold ingot recipe that got deleted by recipe changes
+    event.smelting("1x minecraft:gold_ingot", "#forge:dusts/gold").id("nijika:smelting/gold");
 };
