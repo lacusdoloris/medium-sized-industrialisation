@@ -72,7 +72,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:sodium_aluminate").withAmount(1 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:aluminium_hydroxide_dust", "1x gtceu:sodium_hydroxide_dust")
         .EUt(GTValues.VHA[GTValues.MV])
-        .duration(10 * 20);
+        .duration(5 * 20);
 
     // Step 3: 2 Al(OH)3 → Al2O3 + 3 H2O
     event.recipes.gtceu
