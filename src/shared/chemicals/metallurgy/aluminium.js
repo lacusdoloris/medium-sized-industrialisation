@@ -62,7 +62,7 @@ export const addAluminiumProcessingRecipes = (event) => {
             Fluid.of("gtceu:sodium_aluminate").withAmount(2 * FluidAmounts.BUCKET),
             Fluid.of("gtceu:red_mud").withAmount(2.5 * FluidAmounts.BUCKET)
         )
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VHA[GTValues.MV])
         .duration(10 * 20);
 
     // Step 2: 2 H2O + NaAlO2 → Al(OH)3 + NaOH
@@ -71,7 +71,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .autoclave("nijika:tier02/aluminium/bayer_pt_2")
         .inputFluids(Fluid.of("gtceu:sodium_aluminate").withAmount(1 * FluidAmounts.BUCKET))
         .itemOutputs("1x gtceu:aluminium_hydroxide_dust", "1x gtceu:sodium_hydroxide_dust")
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VHA[GTValues.MV])
         .duration(10 * 20);
 
     // Step 3: 2 Al(OH)3 → Al2O3 + 3 H2O
@@ -93,7 +93,6 @@ export const addAluminiumProcessingRecipes = (event) => {
         .duration(15 * 20);
 
     // Bonus: Red Mud -> Red Mud Dust
-    // event.recipes.gtceu.brine_tower()
     event.recipes.gtceu
         .evaporation_pool("nijika:tier02/aluminium/red_mud_dust")
         .inputFluids(Fluid.of("gtceu:red_mud").withAmount(100 * FluidAmounts.BUCKET))
