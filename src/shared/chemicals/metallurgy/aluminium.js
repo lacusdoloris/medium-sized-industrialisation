@@ -77,10 +77,10 @@ export const addAluminiumProcessingRecipes = (event) => {
     // Step 3: 2 Al(OH)3 → Al2O3 + 3 H2O
     event.recipes.gtceu
         .electric_blast_furnace("nijika:tier02/aluminium/bayer_pt_3")
-        .itemInputs("2x gtceu:aluminium_hydroxide_dust")
-        .itemOutputs("1x gtceu:alumina_dust")
+        .itemInputs("64x gtceu:aluminium_hydroxide_dust")
+        .itemOutputs("32x gtceu:alumina_dust")
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(6 * 20)
+        .duration(96 * 20)
         .blastFurnaceTemp(1470);
 
     // Step 4: 2 Al2O3 = 4 Al + 3 O2
