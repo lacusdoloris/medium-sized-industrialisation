@@ -144,4 +144,8 @@ export const addAluminiumProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:hydrogen").withAmount(6 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.LV])
         .duration(2 * 20);
+
+    // now that aluminium has a *proper* crafting chain, it doesn't need to be EBF'd.
+    event.smelting("1x gtceu:aluminium_ingot", "#forge:dusts/aluminium")
+        .id("nijika:chemicals/aluminium/regular_smelting");
 };
