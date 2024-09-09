@@ -149,6 +149,13 @@ Recipe Changes
   - The distillation tower is now available in MV, rather than HV. This makes setting up oil 
     outposts more feasible in the early game.
 
+  - The large steel boiler is now available in MV, rather than HV.
+
+  - Aluminium dust can be smelted directly to ingots, instead of requiring the EBF. 
+
+    Originally, this was to gate MV and aluminium behind the EBF, but now firebricks and steel
+    serves that purpose, so this adds no purpose.
+
 - Tier 3 (HV) changes:
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
