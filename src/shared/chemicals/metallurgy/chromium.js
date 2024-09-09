@@ -83,7 +83,7 @@ export const addChromiteProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:carbon_monoxide").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.V[GTValues.MV])
         .blastFurnaceTemp(1300)
-        .duration(20 * 20);
+        .duration(5 * 20);
 
     // Step 4: Aluminothermic reaction to get raw elemental Chromium.
     // 2 Al + Cr2O3 = Al2O3 + 2 Cr
