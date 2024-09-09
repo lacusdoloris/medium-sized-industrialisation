@@ -32,6 +32,7 @@ import { addAmmoniaMaterials, addAmmoniaRecipes } from "./ammonia";
 import { addRheniumMaterials, addRheniumRecipes } from "./metallurgy/rhenium";
 import { addIronSlagMaterials, addIronSlagReprocessingRecipes } from "./metallurgy/iron_slag";
 import { addWastewaterMaterials, addWastewaterRecipes } from "./wastewater";
+import { addArsenopyriteMaterials, addArsenopyriteRecipes } from "./metallurgy/arsenopyrite";
 
 export const addChemicalMaterials = (event) => {
     addBaseOreMaterials(event);
@@ -39,6 +40,7 @@ export const addChemicalMaterials = (event) => {
     addCatalystMaterials(event);
 
     addAluminiumMaterials(event);
+    addArsenopyriteMaterials(event);
     addBariumMaterials(event);
     addChromiumMaterials(event);
     addCopperMaterials(event);
@@ -98,6 +100,7 @@ export const addChemicalProcessingRecipes = (event) => {
     addPlatinumGroupRecipes(event);
     addRheniumRecipes(event);
     addIronSlagReprocessingRecipes(event);
+    addArsenopyriteRecipes(event);
 
     addAmmoniaRecipes(event);
     addCatalystRecipes(event);

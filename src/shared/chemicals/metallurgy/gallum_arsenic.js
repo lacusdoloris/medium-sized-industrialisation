@@ -5,7 +5,6 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import { createAqueousIntermediate } from "../../materials/helpers";
-import { getMaterial, nijikaId } from "../../utils";
 
 export const addGalliumArsenicMaterials = (event) => {
     event
@@ -16,16 +15,6 @@ export const addGalliumArsenicMaterials = (event) => {
         .iconSet(GTMaterialIconSet.EMERALD)
         .components("2x gtceu:arsenic", "3x gtceu:sulfur")
         .addOreByproducts("gtceu:sulfur", "gtceu:antimony", "gtceu:barite")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
-
-    event
-        .create(nijikaId("arsenopyrite"))
-        .dust()
-        .ore()
-        .color(0xb0a269)
-        .iconSet(getMaterial("pyrite").getMaterialIconSet())
-        .components("1x gtceu:iron", "1x gtceu:arsenic", "1x gtceu:sulfur")
-        .addOreByproducts("gtceu:arsenic_trioxide", "gtceu:sulfur")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     createAqueousIntermediate(event, "arsenic_trichloride", 0xfffec8).components(
@@ -62,18 +51,6 @@ export const addGalliumArsenicRecipes = (event) => {
         .inputFluids(Fluid.of("gtceu:oxygen").withAmount(18 * FluidAmounts.BUCKET))
         .itemOutputs("2x gtceu:arsenic_trioxide_dust")
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(6 * FluidAmounts.BUCKET))
-        .EUt(GTValues.VA[GTValues.MV])
-        .blastFurnaceTemp(1100)
-        .duration(120);
-
-    // Arsenopyrite roasting.
-    // 2 FeAsS + 5 O2 = Fe2O3 + As2O3 + 2 SO2
-    event.recipes.gtceu
-        .electric_blast_furnace("nijika:tier01/arsenic/arsenopyrite_roasting")
-        .itemInputs("2x gtceu:arsenopyrite_dust")
-        .inputFluids(Fluid.of("gtceu:oxygen").withAmount(10 * FluidAmounts.BUCKET))
-        .itemOutputs("1x gtceu:hematite_dust", "1x gtceu:arsenic_trioxide_dust")
-        .outputFluids(Fluid.of("gtceu:sulfur_dioxide").withAmount(2 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.MV])
         .blastFurnaceTemp(1100)
         .duration(120);
