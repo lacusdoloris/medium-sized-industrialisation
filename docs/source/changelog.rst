@@ -156,6 +156,11 @@ Recipe Changes
     Originally, this was to gate MV and aluminium behind the EBF, but now firebricks and steel
     serves that purpose, so this adds no purpose.
 
+  - Bauxite processing now uses a 1:1 ratio of chemical reactor to autoclave recipe speeds, 
+    to make things work a bit nicer.
+
+  - Chromite processing now uses a 1:2 ratio of chromite:sodium dichromate blasting speed.
+
 - Tier 3 (HV) changes:
 
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
