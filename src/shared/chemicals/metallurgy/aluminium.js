@@ -96,7 +96,7 @@ export const addAluminiumProcessingRecipes = (event) => {
     event.recipes.gtceu
         .evaporation_pool("nijika:tier02/aluminium/red_mud_dust")
         .inputFluids(Fluid.of("gtceu:red_mud").withAmount(100 * FluidAmounts.BUCKET))
-        .itemOutputs("20x gtceu:red_mud_dust")
+        .itemOutputs("40x gtceu:red_mud_dust")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(60 * 20);
 
