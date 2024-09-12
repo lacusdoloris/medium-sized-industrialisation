@@ -747,17 +747,6 @@
         "version": "4.11.0",
         "version_id": "hmeyC41q"
     },
-    "qbbO7Jns": {
-        "checksum": "dc32b8411d87e19c53bcff7e6cf392a4268c1a948e8661c63b9e1896a5377bedb2a2c579881ef8e140daf93896d54b9411799b9cbad2c2547fd248993ac3eed9",
-        "client_side_only": false,
-        "ignore_dependencies": false,
-        "name": "EMI Loot",
-        "pinned": false,
-        "project_id": "qbbO7Jns",
-        "selected": true,
-        "version": "0.6.5+1.20.1+forge",
-        "version_id": "91c49w5V"
-    },
     "qwpACdla": {
         "checksum": "07695d28eeff246a4b2fa32f8132aff2ddcf13852d693e37829dd4b940164f7eaafa71d7d47f53d00d788e9906a4839fbe29bd1afab069dfea74f414d1752b82",
         "client_side_only": false,
