@@ -243,6 +243,16 @@ export const doTier01Content = (event) => {
         .blastFurnaceTemp(1784)
         .circuit(2);
 
+    // or, use even *more* silicon!
+    event.recipes.gtceu
+        .electric_blast_furnace("nijika:tier01/silicon_boule_easier")
+        .itemInputs("64x #forge:dusts/silicon", "1x #forge:dusts/gallium_arsenide")
+        .itemOutputs("2x gtceu:silicon_boule")
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(450 * 2 * 20)
+        .blastFurnaceTemp(1784)
+        .circuit(2);
+
     // add a proper cutting recipe for wood planks
     event.remove({ output: "#minecraft:slabs", input: "#minecraft:planks", type: "gtceu:cutter" });
     event.recipes.gtceu
