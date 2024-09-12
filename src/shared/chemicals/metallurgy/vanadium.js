@@ -56,7 +56,7 @@ export const addVanadiumChemicalChain = (event) => {
         .itemInputs("1x gtceu:vanadium_pentoxide_dust", "5x gtceu:calcium_dust")
         .itemOutputs("5x gtceu:quicklime_dust", "2x gtceu:vanadium_dust")
         .EUt(GTValues.VA[GTValues.MV])
-        .duration(30 * 20)
+        .duration(5 * 20)
         .blastFurnaceTemp(1700);
 
     // ferrovanadium production from iron oxide
@@ -70,7 +70,7 @@ export const addVanadiumChemicalChain = (event) => {
         )
         .itemOutputs("6x gtceu:ferrovanadium_ingot", "8x gtceu:alumina_dust")
         .EUt(GTValues.VA[GTValues.MV])
-        .duration(6 * 12 * 20)
+        .duration(12 * 20)
         .blastFurnaceTemp(1700);
 
     // Vanadiumsteel can be made in the Bessemer Converter as an alloy of chrome, iron, and
