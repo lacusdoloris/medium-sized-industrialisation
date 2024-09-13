@@ -292,7 +292,11 @@
 		}
 		{
 			dependencies: ["224D936C415AA016"]
-			description: ["&dFerrochrolumium&r coils will give your EBFs a nice speed boost, as well as finally get rid of the penalty for your Pyrolyse Ovens."]
+			description: [
+				"&dFerrochrolumium&r coils will finally get rid of the speed penalty for your pyrolyse ovens, but they don't give much of a speed boost to your EBFs yet."
+				""
+				"Only recipes with temperatures below 1000K will get a boost when upgrading from cupronickel coils."
+			]
 			id: "57950935D5B5C5DE"
 			tasks: [{
 				id: "4ADF17FEB1B55656"
