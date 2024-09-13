@@ -118,7 +118,6 @@ export const addAluminiumProcessingRecipes = (event) => {
         .itemOutputsRanged("gtceu:gallium_dust", 0, 6)
         .itemOutputsRanged("gtceu:rutile_dust", 0, 5)
         .itemOutputsRanged("gtceu:alumina_dust", 0, 5)
-        .itemOutputsRanged("gtceu:silicon_dioxide_dust", 1, 5)
         .outputFluids(
             Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(8 * FluidAmounts.BUCKET)
         )
