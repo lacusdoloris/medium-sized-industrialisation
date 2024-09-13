@@ -70,7 +70,7 @@ export const addAmmoniaRecipes = (event) => {
         .duration(20 * 20) // or 1 second per bucket, vs 15.
         .circuit(10);
 
-    // Solvay process for ammonium chloride.
+    // Solvay process for ammonium chloride & soda ash.
     // CO2 + 2 NH3 + 2 NaCl + H2O => 2 NH4Cl + Na2CO3
     event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/ammonia/solvay_process")
@@ -82,5 +82,6 @@ export const addAmmoniaRecipes = (event) => {
         )
         .itemOutputs("2x gtceu:ammonium_chloride_dust", "1x gtceu:soda_ash_dust")
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
         .duration(2 * 20);
 };

@@ -162,4 +162,20 @@ export const addChemicalProcessingRecipes = (event) => {
         .chancedOutput("gtceu:metal_mixture_dust", 650.0, 0.0)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(6 * 20 + 10);
+
+    // formic acid needs a circuit to avoid conflicting with solvay
+    // I don't think this is a real reaction... come back to this.
+    event.recipes.gtceu
+        .chemical_reactor("gtceu:formic_acid")
+        .inputFluids(
+            Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("minecraft:water").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .outputFluids(
+            Fluid.of("gtceu:formic_acid").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:oxygen").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20);
 };
