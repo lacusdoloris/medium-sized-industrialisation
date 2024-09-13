@@ -105,6 +105,8 @@ Recipe Changes
 - Wastewater has been added as a byproduct of ore processing, which also works as a source for 
   sulfur and fluorine.
 
+- Red Alloy has been phased out from the upper tiers of circuit.
+
 - Tier 0 (earlygame) changes:
 
   - Added crushing wheel recipes for 1-to-1 ore processing. 

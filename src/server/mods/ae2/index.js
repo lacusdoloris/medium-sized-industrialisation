@@ -39,7 +39,7 @@ export const adjustAe2Recipes = (event) => {
         .shaped("2x ae2:basic_card", ["SI ", "RCI", "SI "], {
             S: "#forge:plates/silver",
             I: "#forge:plates/iron",
-            R: "gtceu:fine_red_alloy_wire",
+            R: "gtceu:fine_copper_wire",
             C: "ae2:calculation_processor",
         })
         .id("ae2:materials/basiccard");

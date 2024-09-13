@@ -187,7 +187,7 @@ const adjustMicroprocessorRecipes = (event) => {
             "4x #gtceu:resistors",
             "4x #gtceu:capacitors",
             "4x #gtceu:transistors",
-            "16x gtceu:fine_red_alloy_wire"
+            "16x gtceu:fine_copper_wire"
         )
         .inputFluids(SOLDER_FLUID)
         .itemOutputs("4x gtceu:micro_processor")
@@ -200,7 +200,7 @@ const adjustMicroprocessorRecipes = (event) => {
         .itemInputs(
             "1x gtceu:plastic_printed_circuit_board",
             "1x gtceu:soc",
-            "4x gtceu:fine_red_alloy_wire"
+            "4x gtceu:fine_copper_wire"
         )
         .inputFluids(SOLDER_FLUID)
         .itemOutputs("12x gtceu:micro_processor")
@@ -217,7 +217,7 @@ const adjustMicroprocessorRecipes = (event) => {
             "4x #gtceu:inductors",
             "8x #gtceu:capacitors",
             "4x gtceu:ram_chip",
-            "16x gtceu:fine_red_alloy_wire"
+            "16x gtceu:fine_electrum_wire"
         )
         .inputFluids(DOUBLE_SOLDER_FLUID)
         .itemOutputs("4x gtceu:micro_processor_assembly")

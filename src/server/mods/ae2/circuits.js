@@ -37,7 +37,7 @@ export const adjustAe2CircuitRecipes = (event) => {
             mode: "press",
             ingredients: {
                 top: { item: "ae2:printed_logic_processor" },
-                middle: { item: "gtceu:fine_red_alloy_wire" },
+                middle: { item: "gtceu:fine_copper_wire" },
                 bottom: { tag: "nijika:wafers" },
             },
             result: { item: "ae2:logic_processor" },
@@ -50,7 +50,7 @@ export const adjustAe2CircuitRecipes = (event) => {
             mode: "press",
             ingredients: {
                 top: { item: "ae2:printed_engineering_processor" },
-                middle: { item: "gtceu:fine_red_alloy_wire" },
+                middle: { item: "gtceu:fine_copper_wire" },
                 bottom: { tag: "nijika:wafers" },
             },
             result: { item: "ae2:engineering_processor" },
@@ -63,7 +63,7 @@ export const adjustAe2CircuitRecipes = (event) => {
             mode: "press",
             ingredients: {
                 top: { item: "ae2:printed_calculation_processor" },
-                middle: { item: "gtceu:fine_red_alloy_wire" },
+                middle: { item: "gtceu:fine_copper_wire" },
                 bottom: { tag: "nijika:wafers" },
             },
             result: { item: "ae2:calculation_processor" },
