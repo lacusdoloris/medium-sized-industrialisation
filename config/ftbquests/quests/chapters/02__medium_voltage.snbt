@@ -91,12 +91,20 @@
 			description: [
 				"&aChromium&r is a metal used nearly entirely for alloying. In its ferrous form, it's an additive to steels such as &dstainless steel&r and &dvanadium steel&r, and in its raw form it makes up part of the &dferrochrolumium&r coil alloy."
 				""
-				"&dFerrochrome&r is made from direct blasting of &dchromite ore&r, whereas reduction to the raw metal has a multiple-step process involving alkalines."
+				"Raw Chromium requires going through the &eSolvay&r process to produce &dsodium carbonate&r (also known as soda ash). This requires a small initial feedstock of ammonia, which you can get from distilling coal gas. This ammonia is infinitely recycled and serves as a catalyst during the reaction."
+				""
+				"1. &dChromite&r is blasted alongside soda ash to get &dsodium chromate&r."
+				"2. &dSodium Chromate&r is leached using hydrochloric acid to get and &dsodium dichromate&r. This produces salt as a byproduct, which takes part in said Solvay process."
+				"3. &dSodium dichromate&r is reduced into chromium trioxide and soda ash. This step and the previous step is a closed cycle with respect to the soda ash."
+				"4. Finally, &dchromium trioxide&r is reduced into &achromium metal&r using aluminium."
+				""
+				"This is the most complex chemical chain of the MV tier; but be warned: things are only just starting. You should put your new ferrochroluminium coils to good use."
 			]
 			id: "7BEE21DF23576B53"
+			min_width: 400
 			tasks: [{
-				id: "45EC0C9C99D641C7"
-				item: "gtceu:chromium_dust"
+				id: "5D073635FE894805"
+				item: "gtceu:chromium_ingot"
 				type: "item"
 			}]
 			title: "Install Firefox"
