@@ -41,6 +41,8 @@ const DISABLE_DECOMPOSITION = [
     "stainless_steel",
     // Various misc materials.
     "barite",
+    // Decomposition recipe deletes the extra ammonia, wtf?
+    "ammonium_chloride",
 ];
 
 /** A list of materials to disable alloy blast furnace recipe generation for. */

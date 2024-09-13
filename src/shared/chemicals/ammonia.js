@@ -84,4 +84,15 @@ export const addAmmoniaRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.MV])
         .circuit(2)
         .duration(2 * 20);
+
+    // fix the ammonium chloride decomposition to not eat all the ammonia
+    event.recipes.gtceu
+        .electrolyzer("nijika:chemicals/ammonia/ammonium_chloride_decomposition")
+        .itemInputs("1x gtceu:ammonium_chloride_dust")
+        .outputFluids(
+            Fluid.of("gtceu:ammonia").withAmount(1 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrochloric_acid").withAmount(1 * FluidAmounts.BUCKET)
+        )
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(1 * 20);
 };
