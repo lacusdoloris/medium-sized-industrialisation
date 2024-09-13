@@ -22,15 +22,15 @@
         "version_id": "TgyyhU8M"
     },
     "2gvRmQXx": {
-        "checksum": "2c857bdc6a7ba0fdfac0875a9aade7cf3247d9f62b25a95c237051e674c05a0028ffdfe6ef8b5cc431b943a28a508cb1d51d2919dac1be6739e8b5b99f9ae8f7",
+        "checksum": "c0a8bfbca692324caaee37af77fc618ec3baf4fc076e2cb89f558b97a49b5133f426fda1b4fa1a5980888ed59c6ecbbbb7d7fa222b9cdccd8a77c4a2d25d159a",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Radium",
         "pinned": false,
         "project_id": "2gvRmQXx",
         "selected": true,
-        "version": "0.12.3",
-        "version_id": "NhMILNAm"
+        "version": "0.12.4",
+        "version_id": "n947JjJH"
     },
     "2u6LRnMa": {
         "checksum": "abbdae756d12ad301d8587fa57fe77c2fa701b963d12d9457db43ad8a9d086062efa421b2180d60d3a860930fce07e79a96db7463e53743f01f92f17e5e3f214",
@@ -88,15 +88,15 @@
         "version_id": "t7nOFG1k"
     },
     "7tG215v7": {
-        "checksum": "48e3520f04fe2789ae9b8bc52c04cf33c160dc7bb388dbb704037b2b2e3bf112f4a9a4bd4964ebaa2e698aa5f613533f7ccd16b3f1532fad1425097b6682b553",
+        "checksum": "7d7242e9229e5e0100cfb2f703c3623ca35a37a6ba6c910f245ac2e9e7920306d0631840b11109e5a4e115e16651da6c44f6d5b2ed66cfb8039be79f5a9d9816",
         "client_side_only": false,
         "ignore_dependencies": true,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.4.0",
-        "version_id": "TZq2HVPL"
+        "version": "mc1.20.1-1.4.1+patch.2",
+        "version_id": "LOtyrDbz"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -550,15 +550,15 @@
         "version_id": "4FTDk9wv"
     },
     "fRiHVvU7": {
-        "checksum": "b08a81bd67540569a9a2d1034261010051f815325e7f65c5226f7c67e9e805da21dd8ebe4584bb3b2c834a6f2f8d93b31c4536d01779a0795f8c73383a6168f7",
+        "checksum": "cc9f52ebf2ce61625375108ed90eaabdb04f33260d66d9c8e99af62279efaa3c7c0792af965bababbd6339842f7951ec041fd8bca513e7092e2126855a647e8b",
         "client_side_only": true,
         "ignore_dependencies": false,
         "name": "EMI",
         "pinned": false,
         "project_id": "fRiHVvU7",
         "selected": true,
-        "version": "1.1.12+1.20.1+forge",
-        "version_id": "X6p68pI0"
+        "version": "1.1.13+1.20.1+forge",
+        "version_id": "9BeUhlBt"
     },
     "ftdbN0KK": {
         "checksum": "2456e4876827ba922fa2629c3a7970205a8f9cef08636d78468038433a0cf1d1806d140b20c470fa4b13dbb4800abe32f1a8421c5385c37681d9222f72045310",
