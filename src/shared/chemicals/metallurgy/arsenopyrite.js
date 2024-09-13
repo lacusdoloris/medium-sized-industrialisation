@@ -1,5 +1,5 @@
 // Copyright (c) 2024 Lura Skye
-// 
+//
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -16,11 +16,11 @@ export const addArsenopyriteMaterials = (event) => {
         .components("1x gtceu:iron", "1x gtceu:arsenic", "1x gtceu:sulfur")
         .addOreByproducts("gtceu:arsenic_trioxide", "gtceu:sulfur")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
-}
+};
 
 /**
  * Adds recipes for arsenopyrite processing.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const addArsenopyriteRecipes = (event) => {
@@ -37,4 +37,4 @@ export const addArsenopyriteRecipes = (event) => {
         .duration(3 * 20);
 
     // TODO: Some sort of reduction recipe for the crusheed ore that produces slag
-}
+};

@@ -21,15 +21,13 @@ export const doTier02Content = (event) => {
     event.remove({ id: "gtceu:arc_furnace/arc_steel_large_boiler" });
     event.remove({ id: "gtceu:macerator/macerate_steel_large_boiler" });
 
-    event.shaped(
-        "gtceu:steel_large_boiler",
-        ["WCW", "CFC", "WCW"],
-        {
+    event
+        .shaped("gtceu:steel_large_boiler", ["WCW", "CFC", "WCW"], {
             W: mvTier.heatingWire,
             C: mvTier.circuitTag,
-            F: "gtceu:steel_firebox_casing"
-        }
-    ).id("nijika:tier02/steel_boiler");
+            F: "gtceu:steel_firebox_casing",
+        })
+        .id("nijika:tier02/steel_boiler");
 
     // the distillation tower being at EV/HV means you can't build effective oil refining outposts
     // until *well* into the game. moving to MV makes sense as that's when you begin to get

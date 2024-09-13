@@ -145,6 +145,7 @@ export const addAluminiumProcessingRecipes = (event) => {
         .duration(2 * 20);
 
     // now that aluminium has a *proper* crafting chain, it doesn't need to be EBF'd.
-    event.smelting("1x gtceu:aluminium_ingot", "#forge:dusts/aluminium")
+    event
+        .smelting("1x gtceu:aluminium_ingot", "#forge:dusts/aluminium")
         .id("nijika:chemicals/aluminium/regular_smelting");
 };
