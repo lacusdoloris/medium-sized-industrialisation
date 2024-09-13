@@ -30,7 +30,7 @@ export const adjustAe2Recipes = (event) => {
         .shaped("2x ae2:blank_pattern", ["QGQ", "GCG", "VVV"], {
             Q: "ae2:quartz_glass",
             G: "#forge:dusts/glowstone",
-            V: "#forge:plates/polyvinyl_chloride",
+            V: "#forge:plates/polyethylene",
             C: "#forge:gems/certus_quartz",
         })
         .id("ae2:network/crafting/patterns_blank");

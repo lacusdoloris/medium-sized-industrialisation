@@ -61,7 +61,7 @@ export const adjustAe2NetworkRecipes = (event) => {
 
     event
         .shaped("ae2:crafting_unit", ["P1P", "W2W", "P1P"], {
-            P: "#forge:plates/polyvinyl_chloride",
+            P: "#forge:plates/polyethylene",
             W: "ae2:fluix_glass_cable",
             1: "ae2:calculation_processor",
             2: "ae2:logic_processor",
