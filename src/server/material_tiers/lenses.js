@@ -28,5 +28,12 @@ export const fixLensRecipes = (event) => {
             .itemOutputs(`gtceu:${colourName}_glass_lens`)
             .EUt(GTValues.VA[GTValues.MV])
             .duration(10 * 20);
+
+        event
+            .shapeless(
+                `gtceu:${colourName}_glass_lens`,
+                ["#forge:lenses"].concat(Array(8).fill(`#forge:dyes/${colourName}`))
+            )
+            .id(`nijika:auto/glass_lens/${colourName}/easy_mode`);
     }
 };
