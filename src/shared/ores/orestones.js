@@ -7,7 +7,7 @@
 export const ORESTONE_DEFINITIONS = {
     crimsite: {
         ore70Percent: "redstone",
-        ore40Percent: "pentlandite",
+        ore40Percent: "sphalerite",
         nugget: "minecraft:redstone",
     },
     ochrum: {
@@ -22,7 +22,7 @@ export const ORESTONE_DEFINITIONS = {
     },
     asurine: {
         ore70Percent: "cassiterite",
-        ore40Percent: "sphalerite",
+        ore40Percent: "garnierite",
         nugget: "gtceu:tin_nugget",
     },
     scoria: {
