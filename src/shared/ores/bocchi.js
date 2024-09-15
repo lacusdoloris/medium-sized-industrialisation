@@ -149,9 +149,9 @@ export const addBaseOreRecipes = (event) => {
             event.recipes.gtceu
                 .ore_sorting(`nijika:base_ores/${name}/sorting_tier_2`)
                 .itemInputs(
-                    `64x gtceu:crushed_${name}_ore`,
-                    `64x gtceu:crushed_${name}_ore`,
-                    `64x gtceu:crushed_${name}_ore`
+                    `64x gtceu:impure_${name}_dust`,
+                    `64x gtceu:impure_${name}_dust`,
+                    `64x gtceu:impure_${name}_dust`
                 )
                 .itemOutputs(
                     getStackForTagPrefix(TagPrefix.rawOre, oreData.intoOres[0]).withCount(64),
