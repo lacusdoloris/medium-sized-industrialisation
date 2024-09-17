@@ -49,10 +49,10 @@ const DISABLE_DECOMPOSITION = [
 const DISABLE_ALLOY_BLAST_FURNACE = ["hsla_steel", "stainless_steel"];
 
 /** A list of materials to actually add dusts & ingots to. */
-const ADD_METALS = ["rhenium"];
+const ADD_METALS = ["rhenium", "magnesium"];
 
 /** A list of materials to add rounds to. */
-const ADD_ROUNDS = ["iron", "steel"];
+const ADD_ROUNDS = ["iron", "steel", "titanium"];
 
 /** A list of materials to add aqueous properties to. */
 const ADD_AQUEOUS = ["sodium_hydroxide", "calcium_hydroxide"];
