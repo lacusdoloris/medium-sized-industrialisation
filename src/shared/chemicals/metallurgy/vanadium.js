@@ -138,24 +138,12 @@ export const addVanadiumChemicalChain = (event) => {
     // oxytrichloride hydrolysis
     // 2 VOCl3 + 3 H2O = V2O5 + 6 HCl
     event.recipes.gtceu
-        .chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_hydrolysis")
-        .inputFluids(
-            Fluid.of("gtceu:vanadium_oxytrichloride").withAmount(2 * FluidAmounts.BUCKET),
-            Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET)
-        )
-        .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
-        .itemOutputs("gtceu:vanadium_pentoxide_dust")
-        .EUt(GTValues.VH[GTValues.MV])
-        .duration(10 * 20)
-        .circuit(1);
-
-    event.recipes.gtceu
         .chemical_reactor("nijika:chemicals/vanadium/oxytrichloride_dust_hydrolysis")
         .inputFluids(Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET))
         .itemInputs("2x gtceu:vanadium_oxytrichloride_dust")
         .outputFluids(Fluid.of("gtceu:hydrochloric_acid").withAmount(6 * FluidAmounts.BUCKET))
         .itemOutputs("gtceu:vanadium_pentoxide_dust")
         .EUt(GTValues.VH[GTValues.MV])
-        .duration(10 * 20)
+        .duration(2 * 20 + 10)
         .circuit(1);
 };
