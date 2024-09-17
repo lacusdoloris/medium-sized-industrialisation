@@ -27,6 +27,17 @@ import { addCustomFluidVeins, adjustFluidVeinDefinitions } from "./fluid_veins";
 
 ServerEvents.tags("items", setupItemTags);
 
+ServerEvents.tags("block", (evt) => {
+    evt.remove("create:non_movable", [
+        "molten_vents:dormant_molten_asurine",
+        "molten_vents:dormant_molten_veridium",
+        "molten_vents:dormant_molten_ochrum",
+        "molten_vents:dormant_molten_scorchia",
+        "molten_vents:dormant_molten_scoria",
+        "molten_vents:dormant_molten_crimsite"
+    ]);
+});
+
 ServerEvents.recipes((event) => {
     // Warning! This needs to be called in the right order!
     //
