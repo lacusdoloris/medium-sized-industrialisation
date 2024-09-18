@@ -61,19 +61,11 @@
 			]
 			icon: "gtceu:evaporation_pool"
 			id: "2B347248F320B8F2"
-			tasks: [
-				{
-					id: "1BB1924B066B1FE9"
-					item: "gtceu:evaporation_pool"
-					type: "item"
-				}
-				{
-					count: 156L
-					id: "1E9D2AF4E16C2357"
-					item: "gtceu:steam_machine_casing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1BB1924B066B1FE9"
+				item: "gtceu:evaporation_pool"
+				type: "item"
+			}]
 			title: "Not Safe For Swimming"
 			x: 1.0d
 			y: 0.0d
@@ -105,10 +97,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"641046C8A91952E9"
-				"535977705E793982"
-			]
+			dependencies: ["535977705E793982"]
 			description: [
 				"Oil. It's a wonderful substance - nicknamed black gold for a reason."
 				""
@@ -234,7 +223,7 @@
 				""
 				"For example, when distilling Coal Gas, the first layer has &dCoal Tar&r, the second layer has &dAmmonia&r, the third layer has &dXylene&r, and the fourth layer has &dcarbon dioxide&r. Any layer other than the first layer is &acompletely optional&r; if you don't have a usage for that chemical, you can ignore building the layer!"
 				""
-				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues); and a top layer with a muffler hatch."
+				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues). &lThe top layer must be the last output hatch layer&r."
 			]
 			id: "64CDC217C4073379"
 			min_width: 400
