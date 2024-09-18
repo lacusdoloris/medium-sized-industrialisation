@@ -34,7 +34,7 @@ ServerEvents.tags("block", (evt) => {
         "molten_vents:dormant_molten_ochrum",
         "molten_vents:dormant_molten_scorchia",
         "molten_vents:dormant_molten_scoria",
-        "molten_vents:dormant_molten_crimsite"
+        "molten_vents:dormant_molten_crimsite",
     ]);
 });
 

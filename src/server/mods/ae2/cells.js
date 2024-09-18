@@ -4,10 +4,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-
 /**
  * Adjusts the recipes for AE2 storage cells.
- * 
+ *
  * @param {Internal.RecipesEventJS} event
  */
 export const adjustAe2StorageCellRecipes = (event) => {
@@ -37,7 +36,7 @@ export const adjustAe2StorageCellRecipes = (event) => {
         .duration(5 * 20);
 
     // Similar to how fluid tanks are made, these are just coated in creosote.
-    event.remove({id: "ae2:network/cells/fluid_cell_housing"});
+    event.remove({ id: "ae2:network/cells/fluid_cell_housing" });
     event.recipes.gtceu
         .assembler("nijika:mods/ae2/fluid_cell_housing")
         .itemInputs("1x ae2:item_cell_housing")
