@@ -96,7 +96,7 @@ export const addChromiteProcessingRecipes = (event) => {
         .blastFurnaceTemp(1300)
         .duration(5 * 20);
 
-    // Side recipe: FeCr2O4 + 2C -> FeCr + 2 CO2, for stainless steel later on.
+    // Side recipe: FeCr2O4 + 2C -> FeCr + 2 CO2, for steel and vanadium steel.
     event.recipes.gtceu
         .electric_blast_furnace("nijika:tier02/chromium/ferrochrome")
         .itemInputs("1x gtceu:chromite_dust", "#nijika:carbon_rich_dusts")
@@ -104,5 +104,5 @@ export const addChromiteProcessingRecipes = (event) => {
         .outputFluids(Fluid.of("gtceu:carbon_dioxide").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .blastFurnaceTemp(2700)
-        .duration(30 * 20);
+        .duration(7 * 20 + 10);
 };
