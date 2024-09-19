@@ -25,9 +25,9 @@ export const addIonExchangerMultiblock = (builder) => {
                 // Back wall
                 "#VVVVVVV#",
                 "VGGGGGGGV",
-                "VVVVVVVVV",
-                "VV     VV",
-                "VV     VV",
+                "IVVVVVVVO",
+                "IV     VO",
+                "IV     VO",
                 "VV     VV"
             )
             .aisle(
@@ -43,9 +43,9 @@ export const addIonExchangerMultiblock = (builder) => {
                 // Front wall
                 "#VVVEVVV#",
                 "VGGGCGGGV",
-                "VVVVEVVVV",
-                "VV     VV",
-                "VV     VV",
+                "IVVVEVVVO",
+                "IV     VO",
+                "IV     VO",
                 "VV     VV"
             )
             .where("#", Predicates.any())
@@ -61,18 +61,16 @@ export const addIonExchangerMultiblock = (builder) => {
                 "I",
                 Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(
                     Predicates.abilities(PartAbility.IMPORT_FLUIDS)
-                        .setMinGlobalLimited(1, 4)
-                        .setMaxGlobalLimited(6)
-                        .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(6))
+                        .setMinGlobalLimited(1, 6)
+                        .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 )
             )
             .where(
                 "O",
                 Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(
                     Predicates.abilities(PartAbility.EXPORT_FLUIDS)
-                        .setMinGlobalLimited(1, 4)
-                        .setMaxGlobalLimited(6)
-                        .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(6))
+                        .setMinGlobalLimited(1, 6)
+                        .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 )
             )
             .where(
