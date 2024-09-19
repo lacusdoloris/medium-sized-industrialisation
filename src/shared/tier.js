@@ -248,12 +248,12 @@ export const GT_MACHINE_TIERS = {
     HV: new Tier("hv", {
         plate: "aluminium",
         hullPlate: "polyethylene",
-        cable: "gold", // Note: The motor recipe has this (incorrectly as Silver.
+        cable: "gold", // Note: The motor recipe has this incorrectly as Silver.
         electricWire: "electrum",
         motorWire: "electrum",
         magnetic: "magnetic_steel",
         glass: "gtceu:tempered_glass",
-        pipe: "steel",
+        pipe: "vanadium_steel",
         heating: "kanthal",
         // Changed from steel, gives a use to the otherwise unused Chromium rotor.
         rotor: "chromium",
@@ -268,11 +268,11 @@ export const GT_MACHINE_TIERS = {
         plate: "nitinol",
         hullPlate: "polyethylene",
         cable: "aluminium",
-        electricWire: "black_steel",
+        electricWire: "aluminium",
         motorWire: "kanthal",
         magnetic: "magnetic_steel",
         glass: "gtceu:tempered_glass",
-        pipe: "stainless_steel",
+        pipe: "tungsten_carbide",
         heating: "nichrome",
         rotor: "az_91",
         grinder: "gtceu:diamond_grinding_head",
