@@ -16,7 +16,13 @@ const MaterialStack = Java.loadClass(
 );
 
 import { GT_MACHINE_TIERS } from "../../shared/tier";
-import { PropertyKey, getBlastProperty, getMaterial, getOreProperty } from "../../shared/utils";
+import {
+    PropertyKey,
+    getBlastProperty,
+    getFluidPipeProperty,
+    getMaterial,
+    getOreProperty,
+} from "../../shared/utils";
 
 /** A list of materials to disable decomposition recipe generation for. */
 const DISABLE_DECOMPOSITION = [
@@ -141,6 +147,16 @@ export const customiseMaterials = () => {
     for (let matName of DISABLE_ALLOY_BLAST_FURNACE) {
         let mat = getMaterial(matName);
         mat.addFlags(GTMaterialFlags.DISABLE_ALLOY_BLAST);
+    }
+
+    // make VaSteel have the same fluid pipe throughput & max temp as stainless
+    let vanadiumSteel = GTMaterials.VanadiumSteel;
+    let stainlessSteel = GTMaterials.StainlessSteel;
+    {
+        let fluidProp = getFluidPipeProperty(vanadiumSteel);
+        let otherFluidProp = getFluidPipeProperty(stainlessSteel);
+        fluidProp.setThroughput(otherFluidProp.getThroughput());
+        fluidProp.setMaxFluidTemperature(otherFluidProp.getMaxFluidTemperature());
     }
 
     // remove chromium dust as a byproduct of chromite

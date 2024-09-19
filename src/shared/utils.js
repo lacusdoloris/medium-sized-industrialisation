@@ -88,7 +88,7 @@ export const getStackForTagPrefix = (prefix, material, count) => {
 /**
  * Gets the ore property for the provided material.
  *
- * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} The material to lookup.
+ * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} material The material to lookup.
  * @return {Internal.OreProperty|null}
  */
 export const getOreProperty = (material) => {
@@ -96,6 +96,19 @@ export const getOreProperty = (material) => {
     if (!mat.hasProperty(PropertyKey.ORE)) return null;
 
     return mat.getProperty(PropertyKey.ORE);
+};
+
+/**
+ * Gets the fluid pipe property for the provided material.
+ *
+ * @param {(string|com.gregtechceu.gtceu.api.data.chemical.material.Material)} material The material to lookup.
+ * @return {Internal.FluidPipeProperties|null}
+ */
+export const getFluidPipeProperty = (material) => {
+    let mat = definitelyMaterial(material);
+    if (!mat.hasProperty(PropertyKey.FLUID_PIPE)) return null;
+
+    return mat.getProperty(PropertyKey.FLUID_PIPE);
 };
 
 /**
