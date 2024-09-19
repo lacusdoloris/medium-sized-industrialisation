@@ -373,17 +373,6 @@
         "version": "2.0.1",
         "version_id": "8tVulaR5"
     },
-    "ResbpANg": {
-        "checksum": "899f562951b902a1aeb8360cb6a596e91f255762adb0a233bfc5fbe6f749f2b6cebf232079184aaf62ecfcf5408bfff493e372a34ae8186c12070ab83210f61d",
-        "client_side_only": false,
-        "ignore_dependencies": false,
-        "name": "Create Ore Excavation",
-        "pinned": false,
-        "project_id": "ResbpANg",
-        "selected": true,
-        "version": "1.20.1-1.5.2",
-        "version_id": "JoRQ9ZCh"
-    },
     "RfFxanNh": {
         "checksum": "d5688c46c821e07de05ee0b88a34f2c80ff56d301f4c08a359724a69ec75369bdf343e287a4f7e27f7bbcd1a29c16b11034fc72161cb3ae89fbf72dcdb375919",
         "client_side_only": false,

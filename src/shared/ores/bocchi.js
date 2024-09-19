@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { getStackForTagPrefix, nijikaId } from "../utils";
+import { getMaterial, getStackForTagPrefix, nijikaId } from "../utils";
 
 // todo: insert vanadite
 //
@@ -22,6 +22,7 @@ export const BASE_ORES = {
         seed: 809651466,
         intoOres: ["hematite", "ilmenite", "diamond"],
         runoff: "sulfuric",
+        sortedFrom: ["asurine", "crimsite"],
     },
 
     nijikaite: {
@@ -30,6 +31,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.BRIGHT,
         intoOres: ["tetrahedrite", "molybdenite", "emerald"],
         runoff: "sulfuric",
+        sortedFrom: ["crimsite", "ochrum"],
     },
 
     ryoite: {
@@ -38,6 +40,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.BRIGHT,
         intoOres: ["cassiterite", "scheelite", "topaz"],
         runoff: "fluoric",
+        sortedFrom: ["ochrum", "scorchia"],
     },
 
     kitakitaite: {
@@ -46,6 +49,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.BRIGHT,
         intoOres: ["silver", "gold", "tricalcium_phosphate"],
         runoff: "sulfuric",
+        sortedFrom: ["scorchia", "scoria"],
     },
 
     kikurite: {
@@ -54,6 +58,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.DULL,
         intoOres: ["bauxite", "tantalite", "salt"],
         runoff: "fluoric",
+        sortedFrom: ["scoria", "veridium"],
     },
 
     /*yoyokite: {
@@ -86,26 +91,20 @@ export const addBaseOreMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addBaseOreRecipes = (event) => {
-    event.remove({ type: "createoreexcavation:vein" });
-    event.remove({ type: "createoreexcavation:drilling" });
-    event.remove({ type: "createoreexcavation:extracting" });
-
     for (let [name, oreData] of Object.entries(BASE_ORES)) {
-        event.recipes.createoreexcavation
-            .vein(Component.translatable(`vein.nijika.${name}`), `gtceu:raw_${name}`)
-            .biomeWhitelist("minecraft:is_overworld")
-            .placement(128, 32, oreData.seed)
-            .id(`nijika:veins/overworld_vanilla/${name}`);
-
-        event.recipes.createoreexcavation
-            .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld/${name}`, 200)
-            .fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET))
-            .id(`nijika:drilling/overworld/${name}`);
-
-        event.recipes.createoreexcavation
-            .drilling(`gtceu:raw_${name}`, `nijika:veins/overworld_vanilla/${name}`, 200)
-            .fluid(Fluid.of("gtceu:drilling_fluid").withAmount(165 * FluidAmounts.MILLIBUCKET))
-            .id(`nijika:drilling/overworld_vanilla/${name}`);
+        event.recipes.gtceu
+            .ore_sorting(`nijika:base_ores/${name}/from_orestones`)
+            .itemInputs(
+                `64x create:${oreData.sortedFrom[0]}`,
+                `64x create:${oreData.sortedFrom[1]}`
+            )
+            .itemOutputs(
+                getStackForTagPrefix(TagPrefix.rawOre, getMaterial(name)).withCount(64),
+                getStackForTagPrefix(TagPrefix.rawOre, getMaterial(name)).withCount(64)
+            )
+            .duration(30 * 20)
+            .EUt(GTValues.VA[GTValues.HV])
+            .circuit(1);
 
         // Similar to Angel's Refining, but with only one extra ore per tier.
         //

@@ -4,60 +4,23 @@
 	default_quest_shape: ""
 	filename: "something_from_nothing"
 	group: "14EE7AEE0EF05AEE"
-	icon: "createoreexcavation:drilling_machine"
+	icon: {
+		Count: 1
+		id: "minecraft:elytra"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "324D625AAECB0B22"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["10A18BA06D165985"]
-			description: [
-				"The second way of getting infinite ores is with a &dmechanical drill&r, that drills out ore deposits from underground. These drills produce a set of &abase ores&r, which can't be processed directly; they need to be turned into actual mineral ores via sorting before you can use them."
-				""
-				"The base ores are a source of the &dEV tier&r metals and minerals, such as molybdenum or tantalum. These minerals aren't available in overworld veins, and must be produced from a drill."
-				""
-				"Whilst the actual drill itself is available in early HV, you need &dtitanium&r to create the ore sorter itself."
+			dependencies: [
+				"6C18AAD4FA64399E"
+				"5C95727EAA395038"
 			]
-			icon: "createoreexcavation:drilling_machine"
-			id: "5E69A3F286C7E546"
-			rewards: [{
-				count: 64
-				id: "7112B6B488C314BA"
-				item: "gtceu:raw_molybdenite"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "4E1E22D164CD15A1"
-					item: "createoreexcavation:drilling_machine"
-					type: "item"
-				}
-				{
-					id: "749137AC614ABFD1"
-					item: "createoreexcavation:drill"
-					type: "item"
-				}
-			]
-			title: "Burner mining drill"
-			x: 2.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["5E69A3F286C7E546"]
-			description: ["Infinite ore veins are spaced around the world. It's unlikely that you'll have settled directly on top of the vein you need, so the &aOre Vein Finder&r will tell you what veins are where."]
-			id: "44F3737CC06E96EB"
-			tasks: [{
-				id: "33B6E70151FC7E27"
-				item: "createoreexcavation:vein_finder"
-				type: "item"
-			}]
-			title: "Kessoku Location Wand"
-			x: 3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["5E69A3F286C7E546"]
-			description: ["The &aOre Sorter&r is a multiblock machine that sorts the six &dbase ores&r into their constituent ores. Not much more to say."]
+			description: ["The &aOre Sorter&r is how you get the next tier of ores. It takes in the old orestones and sorts them to get the Base Ores, a set of six special ores that can be processed further to get later tier metals and minerals."]
 			id: "705095DDB708BA9D"
 			tasks: [{
 				id: "165711E0C0358C13"
@@ -65,8 +28,8 @@
 				type: "item"
 			}]
 			title: "Ore Sorting Facility"
-			x: 1.5d
-			y: -5.0d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6C18AAD4FA64399E"]

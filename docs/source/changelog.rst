@@ -165,6 +165,8 @@ Recipe Changes
 
 - Tier 3 (HV) changes:
 
+  - Ore drills have been removed. The ore sorter now sorts the orestones instead.
+
   - Phosphorus-doped silicon now requires twice the amount of gallium arsenide (one dust instead 
     of two small dusts).
 

@@ -15,7 +15,6 @@ import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
 import { adjustCreateNewAgeRecipes } from "./new_age";
-import { adjustCreateOreExcavationRecipes } from "./oreexcavation";
 import { adjustPackItUpRecipes } from "./packitup";
 import { adjustPrettyPipesRecipes } from "./prettypipes";
 import { adjustRfToolsRecipes } from "./rftools";
@@ -96,9 +95,6 @@ const MOD_TWEAKER_FUNCTIONS = {
  */
 export const doModRecipes = (event) => {
     adjustCreateRecipes(event);
-
-    // not optional due to worldgen.
-    adjustCreateOreExcavationRecipes(event);
 
     for (let [name, fn] of Object.entries(MOD_TWEAKER_FUNCTIONS)) {
         if (Platform.isLoaded(name)) {
