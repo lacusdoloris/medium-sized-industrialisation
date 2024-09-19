@@ -19,6 +19,8 @@ so this is a guide of what to use and when.
     will consume one millibucket every half a second of light fuel, an MV generator will consume
     four millibuckets, and a HV generator will consume sixteen millibuckets.
 
+.. _gen-steam-power:
+
 Steam Power
 -----------
 
