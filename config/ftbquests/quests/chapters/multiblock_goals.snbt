@@ -217,13 +217,13 @@
 				"535977705E793982"
 			]
 			description: [
-				"The &aDistillation Tower&r is undoubtedly one of the most important multiblocks in the entire pack, behind perhaps only the EBF. It acts as a multiblock &ddistiller&r, separating out elements from various chemical compounds."
+				"The &aDistillation Tower&r is a multiblock responsible for fractional distillation of various chemicals - usually, hydrocarbons from oil production."
 				""
-				"The tower is a unique multiblock, however: it can be arbitrarily tall to fit its recipes. Each layer of the tower adds another output from a recipe in its &doutput hatch&r."
+				"Different distillation towers can be different sizes; a tower for &9distilling oil&r should be &efive blocks tall&r, whereas one for distilling cracked hydrocarbons should be a whopping &efourteen blocks tall&r. Each layer should have its own output hatch, which outputs &dexactly one output&r from the recipe. "
 				""
-				"For example, when distilling Coal Gas, the first layer has &dCoal Tar&r, the second layer has &dAmmonia&r, the third layer has &dXylene&r, and the fourth layer has &dcarbon dioxide&r. Any layer other than the first layer is &acompletely optional&r; if you don't have a usage for that chemical, you can ignore building the layer!"
+				"The output hatches output in a &especific order&r; the bottom-most hatch outputs the &dfirst&r fluid in the recipe, and the top-most hatch outputs &dthe last&r fluid. This remains consistent for all the fluids inbetween the first and last."
 				""
-				"The tower is capped off with a bottom layer that contains the &dinput hatches&r as well as an &doutput item bus&r (as some recipes may have item outputs, too, for leftover residues). &lThe top layer must be the last output hatch layer&r."
+				"Not all products from a distillation tower are useful; you should just put a fluid void cover on the output for anything you don't want."
 			]
 			id: "64CDC217C4073379"
 			min_width: 400

@@ -241,9 +241,9 @@
 		{
 			dependencies: ["6946A93109A56A1B"]
 			description: [
-				"Exciting! You can finally move on from using stripboards for your circuits and make some real PCBs!"
+				"Polyethylene based &dprinted circuit boards&r are the next tier of circuit boards, and are available as soon as you have polyethylene."
 				""
-				"These are &dplastic sheets&r (polyethylene or PVC, at this stage) wrapped in &dcopper foil&r and etched with either Iron(III) Chloride or &dSodium Persulfate&r."
+				"These are used for the microprocessor theme of circuits."
 			]
 			id: "082FB972D2FFFF5D"
 			tasks: [{
@@ -258,7 +258,6 @@
 		{
 			dependencies: [
 				"3F52C49E18F7B1BE"
-				"082FB972D2FFFF5D"
 				"000CE46D72931AFD"
 				"1C7211968F773774"
 			]
@@ -345,7 +344,7 @@
 			}]
 			title: "It's Not Quite Latex..."
 			x: -1.0d
-			y: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["535977705E793982"]
