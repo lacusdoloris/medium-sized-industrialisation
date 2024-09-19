@@ -57,7 +57,8 @@ export const addPolyvinylButyralRecipes = (event) => {
         )
         .outputFluids(Fluid.of("gtceu:butyraldehyde").withAmount(1 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
-        .duration(5 * 20);
+        .duration(5 * 20)
+        .circuit(2);
 
     // In 1970, Monsanto commercialized an improved homogeneous methanol carbonylation process
     // using a methyl-iodide-promoted Rh catalyst [3–6]. Compared to other acetic acid synthesis
