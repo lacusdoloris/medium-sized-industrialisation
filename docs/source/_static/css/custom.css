@@ -11,17 +11,22 @@ div.highlight pre, span.pre {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Cabin";
+    font-family: "Quicksand";
 }
 
 p, li, strong, em, a {
     font-family: "Cabin" !important;
 }
 
+html {
+    font-size: 100%;
+}
+
 /* gross hack! */
 section#setting-up div.toctree-wrapper span.caption-text { display: none; }
 section#progression-guides div.toctree-wrapper span.caption-text { display: none; }
 section#developer-documentation div.toctree-wrapper span.caption-text { display: none; }
+section#multiblock-guides div.toctree-wrapper span.caption-text { display: none; }
 
 .wy-nav-content {
     max-width: 900px;
