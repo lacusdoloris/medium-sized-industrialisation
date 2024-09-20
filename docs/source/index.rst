@@ -46,11 +46,28 @@ This is the documentation you want if you're a player of the pack.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Progression Guides
+   :caption: User Guides
 
    user/guides/energy.rst
    user/guides/basic-elements.rst
    user/guides/ore-automation.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Progression Guides
+
+Multiblock Guides
+=================
+
+This is documentation for the various multiblock machines used in Bigger Industrialisation, either
+custom ones or the ones built-in to GTCEu.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Multiblock Guides
+
+   user/multiblocks/modular-multiblocks.rst
+   user/multiblocks/fluid-drilling-rig.rst
 
 Developer Documentation
 =======================
