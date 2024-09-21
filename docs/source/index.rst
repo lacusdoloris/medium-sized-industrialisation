@@ -51,6 +51,7 @@ This is the documentation you want if you're a player of the pack.
    user/guides/energy.rst
    user/guides/basic-elements.rst
    user/guides/ore-automation.rst
+   user/guides/oil-processing.rst
 
 .. toctree::
    :maxdepth: 2
