@@ -51,8 +51,11 @@ There's a few ways of producing steam:
   be fetched through a portal using trains; if you combine some deep underground lava lakes they 
   will be considered infinite by the Hose Pulley too.
 
-In the HV tier you can build large steam turbines which can be significantly more efficient than
-singleblock steam turbines with the right rotors.
+Whilst steam becomes unviable at the end of LV, it becomes very viable again in early EV due to 
+getting the Large Steam Turbine. Two Large Steel Boilers can easily power four turbines, and with
+a basic Chromium rotor these will produce over 1A of IV power between them. With lava being 
+essentially free, this makes steam turbines the practical choice for powering outposts and fuel
+refineries, or anything else that can't run off of your main power source.
 
 .. _fossil-fuel-power:
 
