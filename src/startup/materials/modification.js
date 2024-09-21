@@ -404,6 +404,7 @@ export const customiseMaterials = () => {
     getMaterial("mcb").setFormula("C8H8Cl3NO2");
     getMaterial("morpholine_hydrochloride").setFormula("C4H10ClNO");
     getMaterial("squaric_acid").setFormula("C4O2(OH)2");
+    getMaterial("two_ethylhexyl_nitrate").setFormula("C8H17NO3");
 
     // alloys shouldn't have formulas!
     // false means it's sent straight to the property, without trying to decapitalise it
