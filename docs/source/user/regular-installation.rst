@@ -82,15 +82,14 @@ Additional Mods
 ---------------
 
 Bigger Industrialisation is 100% playable in its default state, but the main modpack is 
-(relatively) minimalist. You may wish to install :ref:`additional content mods <additional-mods>`
-before you start playing to fill in some gaps such as logistics.
-
-There are also some mods that are common in most modpacks, but are not included in 
+(relatively) minimalist. Some mods are common in most modpacks, but are not included in 
 Bigger Industrialisation; you may wish to install these first:
 
-- A minimap mod. BI has relatively less focus on exploring, so this is less necessary.
+- A minimap mod. BI has less focus on exploring, so this is not as necessary as in most packs.
+
 - A veinminer. Bluntly, the best veinminer mod (FTB Ultimine) is both proprietary and not available
   on Modrinth.
+  
 - Additional world generation mods. The only worldgen mod included is Ecospherical Expansion for the
   base overworld layout. If you wish to change up the overworld, you need to install these yourself.
 
