@@ -20,6 +20,7 @@ extensions = [
     "sphinx_inline_tabs",
     "myst_parser",
     "sphinx.ext.mathjax",
+    "sphinx_toolbox.collapse"
 ]
 
 templates_path = ["_templates"]

@@ -3,6 +3,10 @@
 Ore Automation
 ==============
 
+.. admonition:: Tier
+
+    This document is relevant for the LV tier and later.
+
 As your factory grows larger, mining ores by hand from the world becomes significantly less 
 feasible; large multiblocks require a large amount of metals to build the individual casings
 and even individual machines require eight of their tier's ingots to build.
@@ -103,6 +107,3 @@ stack of crushed ore you would get in the Ball Bearing Grinding Mill.
 +----------+--------------+--------------+---------------+
 | Veridium | Tetrahedrite | Chromite     | Copper        |
 +----------+--------------+--------------+---------------+
-
-
-
