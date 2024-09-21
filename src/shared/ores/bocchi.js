@@ -38,7 +38,7 @@ export const BASE_ORES = {
         seed: 155659298,
         colour: 0x49679f,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["cassiterite", "scheelite", "topaz"],
+        intoOres: ["garnierite", "scheelite", "topaz"],
         runoff: "fluoric",
         sortedFrom: ["ochrum", "scorchia"],
     },
@@ -47,7 +47,7 @@ export const BASE_ORES = {
         seed: 649130079,
         colour: 0xd2625a,
         iconSet: GTMaterialIconSet.BRIGHT,
-        intoOres: ["silver", "gold", "tricalcium_phosphate"],
+        intoOres: ["silver", "gold", "cobaltite"],
         runoff: "sulfuric",
         sortedFrom: ["scorchia", "scoria"],
     },
@@ -56,18 +56,19 @@ export const BASE_ORES = {
         seed: 1321746503,
         colour: 0x995678,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: ["bauxite", "tantalite", "salt"],
+        intoOres: ["bauxite", "tantalite", "blue_topaz"],
         runoff: "fluoric",
         sortedFrom: ["scoria", "veridium"],
     },
 
-    /*yoyokite: {
+    yoyokite: {
         seed: 1191360869,
         colour: 0x5a3c2d,
         iconSet: GTMaterialIconSet.DULL,
-        intoOres: ["bauxite", "chromite", "monazite"],
-        gem: "realgar",
-    },*/
+        intoOres: ["pyrolusite", "apatite", "monazite"],
+        runoff: "sulfuric",
+        sortedFrom: ["veridium", "asurine"]
+    },
 };
 
 /**
