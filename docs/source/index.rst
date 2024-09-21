@@ -68,6 +68,7 @@ custom ones or the ones built-in to GTCEu.
 
    user/multiblocks/modular-multiblocks.rst
    user/multiblocks/fluid-drilling-rig.rst
+   user/multiblocks/cracker.rst
 
 Developer Documentation
 =======================
