@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand";
 }
 
-p, li, strong, em, a {
-    font-family: "Cabin" !important;
-}
+/*p, li, strong, em, a {
+    font-family: "Cabin", "FontAwesome", sans-serif !important;
+}*/
 
 html {
     font-size: 100%;
@@ -50,4 +50,8 @@ section#multiblock-guides div.toctree-wrapper span.caption-text { display: none;
 .wy-side-nav-search > a img.logo {
     display: inline !important;
     padding: 0 !important;
+}
+
+summary {
+    margin-bottom: 1rem;
 }
