@@ -27,23 +27,31 @@ export const adjustMultiblockComponentsForTier = (event, tier) => {
 
     // undo gtceu PR 1791
     // who asked for this? fucking kill yourself!
-    event.shaped(`gtceu:${tier.name}_input_bus`, [" C ", " H "], {
-        C: "#forge:chests/wooden",
-        H: tier.machineHull
-    }).id(`nijika:auto/multiblock/${tier.name}/input_bus`);
+    event
+        .shaped(`gtceu:${tier.name}_input_bus`, [" C ", " H "], {
+            C: "#forge:chests/wooden",
+            H: tier.machineHull,
+        })
+        .id(`nijika:auto/multiblock/${tier.name}/input_bus`);
 
-    event.shaped(`gtceu:${tier.name}_output_bus`, [" H ", " C "], {
-        C: "#forge:chests/wooden",
-        H: tier.machineHull
-    }).id(`nijika:auto/multiblock/${tier.name}/output_bus`);
+    event
+        .shaped(`gtceu:${tier.name}_output_bus`, [" H ", " C "], {
+            C: "#forge:chests/wooden",
+            H: tier.machineHull,
+        })
+        .id(`nijika:auto/multiblock/${tier.name}/output_bus`);
 
-    event.shaped(`gtceu:${tier.name}_input_hatch`, [" C ", " H "], {
-        C: "#forge:glass",
-        H: tier.machineHull
-    }).id(`nijika:auto/multiblock/${tier.name}/input_hatch`);
+    event
+        .shaped(`gtceu:${tier.name}_input_hatch`, [" C ", " H "], {
+            C: "#forge:glass",
+            H: tier.machineHull,
+        })
+        .id(`nijika:auto/multiblock/${tier.name}/input_hatch`);
 
-    event.shaped(`gtceu:${tier.name}_output_hatch`, [" H ", " C "], {
-        C: "#forge:glass",
-        H: tier.machineHull
-    }).id(`nijika:auto/multiblock/${tier.name}/output_hatch`);
+    event
+        .shaped(`gtceu:${tier.name}_output_hatch`, [" H ", " C "], {
+            C: "#forge:glass",
+            H: tier.machineHull,
+        })
+        .id(`nijika:auto/multiblock/${tier.name}/output_hatch`);
 };

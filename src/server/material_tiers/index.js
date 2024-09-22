@@ -21,6 +21,11 @@ const PropertyKey = Java.loadClass(
     "com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey"
 );
 
+const hasVanillaTool = (material) => {
+    let ingotType = getStackForTagPrefix(TagPrefix.ingot, material);
+    return ingotType.getMod() == "minecraft";
+};
+
 /**
  * Adds automatic recipes for all applicable materials.
  *
@@ -179,7 +184,7 @@ const addAutomaticMaterialRecipes = (event) => {
             }
         }
 
-        // auto-generate mining hammer recipes
+        // auto-generate mining hammer recipes4
         if (material.hasProperty(PropertyKey.TOOL) && MODPACK_SETTINGS.deleteToolRecipes) {
             let toolProp = getToolProperty(material);
             if (toolProp.hasType(GTToolType.MINING_HAMMER)) {
@@ -190,7 +195,45 @@ const addAutomaticMaterialRecipes = (event) => {
                         W: what,
                         S: "#forge:rods/wood",
                     })
-                    .id(`nijika:auto/tools/mining_hammer/${id}`);
+                    .id(`nijika:auto/tools/${id}/mining_hammer`);
+            }
+
+            if (!hasVanillaTool(material)) {
+                if (toolProp.hasType(GTToolType.PICKAXE)) {
+                    event
+                        .shaped(`${modId}:${id}_pickaxe`, ["III", " R ", " R "], {
+                            I: `#forge:ingots/${id}`,
+                            R: "#forge:rods/wood",
+                        })
+                        .id(`nijika:auto/tools/${id}/pickaxe`);
+                }
+
+                if (toolProp.hasType(GTToolType.SHOVEL)) {
+                    event
+                        .shaped(`${modId}:${id}_shovel`, [" I ", " R ", " R "], {
+                            I: `#forge:ingots/${id}`,
+                            R: "#forge:rods/wood",
+                        })
+                        .id(`nijika:auto/tools/${id}/shovel`);
+                }
+
+                if (toolProp.hasType(GTToolType.AXE)) {
+                    event
+                        .shaped(`${modId}:${id}_axe`, ["II ", "IR ", " R "], {
+                            I: `#forge:ingots/${id}`,
+                            R: "#forge:rods/wood",
+                        })
+                        .id(`nijika:auto/tools/${id}/axe`);
+                }
+            }
+
+            if (toolProp.hasType(GTToolType.SCYTHE)) {
+                event
+                    .shaped(`${modId}:${id}_scythe`, ["III", "I R", "  R"], {
+                        I: `#forge:ingots/${id}`,
+                        R: "#forge:rods/wood",
+                    })
+                    .id(`nijika:auto/tools/${id}/scythe`);
             }
         }
 

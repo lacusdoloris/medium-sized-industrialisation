@@ -67,7 +67,7 @@ export const BASE_ORES = {
         iconSet: GTMaterialIconSet.DULL,
         intoOres: ["pyrolusite", "apatite", "monazite"],
         runoff: "sulfuric",
-        sortedFrom: ["veridium", "asurine"]
+        sortedFrom: ["veridium", "asurine"],
     },
 };
 
