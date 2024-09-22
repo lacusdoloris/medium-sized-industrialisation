@@ -1,0 +1,9 @@
+
+#Server settings
+[Server]
+	#When enabled you get the Wooly sapling from right-clicking a sheep (default: true)
+	saplingFromSheep = true
+	#The percentage in which you get the sapling [0.1 = 10%] (default: 0.1)
+	#Range: 0.0 ~ 1.0
+	saplingPercentage = 0.1
+
