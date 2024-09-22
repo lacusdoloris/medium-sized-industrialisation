@@ -8,6 +8,13 @@ import { GT_MACHINE_TIERS } from "../shared/tier";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
+    event.recipes.create
+        .mixing("1x minecraft:gunpowder", [
+            "#forge:dusts/saltpeter",
+            "#forge:dusts/sulfur",
+        ])
+        .id("nijika:tier00/earlygame_gunpowder");
+
     event
         .shaped("4x gtceu:bronze_brick_casing", ["BBB", "BRB", "BBB"], {
             B: "#nijika:copper_alloy_plates",
