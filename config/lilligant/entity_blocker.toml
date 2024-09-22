@@ -24,4 +24,8 @@ blockedEntities = [
     "minecraft:fox",
     "minecraft:frog",
     "minecraft:strider",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:zombified_piglin",
+    "minecraft:bee",
 ]
