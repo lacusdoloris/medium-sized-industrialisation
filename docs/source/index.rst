@@ -10,7 +10,8 @@ This is the documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpa
 focused around industrial chemistry using `GregTech CEu Modern`_.
 
 You should read the :ref:`user-installation` section before playing the pack for important
-information!
+information, and then begin reading :ref:`progression-tier0` to get started with playing the
+pack!
 
 Philosophy
 ----------
@@ -26,7 +27,6 @@ Notable features:
 - Semi-realistic chemical chains with lots of steps, intermediates and byproducts,
 - A bunch of custom multiblocks! Who doesn't love multiblocks!
 - Minimal but interesting world generation powered by `Ecospherical Expansion`_
-- A terse questbook that guides you through progression, but doesn't hold your hand.
 - Designed for both newcomers to GregTech and Nomifactory fans.
 - Doesn't include a single proprietary mod.
 
@@ -56,6 +56,8 @@ This is the documentation you want if you're a player of the pack.
 .. toctree::
    :maxdepth: 2
    :caption: Progression Guides
+
+   user/progression/pre-electricity.rst
 
 Multiblock Guides
 =================
