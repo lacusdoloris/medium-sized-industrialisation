@@ -59,16 +59,15 @@ export const addAmmoniaRecipes = (event) => {
     // Catalytic synthesis of ammonia with Iron (III) oxide.
     // This is significantly faster than the regular method.
     event.recipes.gtceu
-        .large_chemical_reactor("nijika:chemicals/ammonia/haber_process_catalysed")
+        .haber_bosch_process("nijika:chemicals/ammonia/haber_process_catalysed")
         .itemInputs("1x gtceu:tiny_iron_oxide_dust")
         .inputFluids(
-            Fluid.of("gtceu:nitrogen").withAmount(20 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:hydrogen").withAmount(60 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:nitrogen").withAmount(30 * FluidAmounts.BUCKET),
+            Fluid.of("gtceu:hydrogen").withAmount(80 * FluidAmounts.BUCKET)
         )
-        .outputFluids(Fluid.of("gtceu:ammonia").withAmount(20 * FluidAmounts.BUCKET))
-        .EUt(GTValues.VHA[GTValues.HV])
-        .duration(20 * 20) // or 1 second per bucket, vs 15.
-        .circuit(10);
+        .outputFluids(Fluid.of("gtceu:ammonia").withAmount(30 * FluidAmounts.BUCKET))
+        .EUt(GTValues.VHA[GTValues.EV])
+        .duration(60 * 20);
 
     // Solvay process for ammonium chloride & soda ash.
     // CO2 + 2 NH3 + 2 NaCl + H2O => 2 NH4Cl + Na2CO3

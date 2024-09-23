@@ -46,7 +46,7 @@ export const addBallGrinderMultiblock = (builder) => {
             "gtceu:block/machines/macerator"
         )
         .recipeType("ball_grinding")
-        .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeModifiers([
             GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK),
         ]);

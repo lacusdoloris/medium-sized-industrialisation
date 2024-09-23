@@ -11,6 +11,8 @@ import { getStackForTagPrefix } from "../shared/utils";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier03Content = (event) => {
+    const hvTier = GT_MACHINE_TIERS.HV;
+
     // remove heavy oil from logs, to be replaced with our own multiblock.
     event.remove({ id: "gtceu:pyrolyse_oven/log_to_heavy_oil" });
     // actual stainless steel production is made from ferromanganese and ferrochrome.
@@ -118,4 +120,12 @@ export const doTier03Content = (event) => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(600 * 20)
         .blastFurnaceTemp(2484);
+
+    event
+        .shaped("gtceu:haber_bosch_chamber", ["PPP", "CRC", "PPP"], {
+            P: getStackForTagPrefix(TagPrefix.pipeNormalFluid, hvTier.materials.pipe),
+            C: hvTier.heatingWire,
+            R: "gtceu:hv_chemical_reactor",
+        })
+        .id("nijika:tier03/haber_bosch_chamber");
 };

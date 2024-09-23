@@ -234,6 +234,8 @@
     "gtceu.ball_grinding": "Ball Grinding",
     "block.gtceu.washing_channel": "Bulk Washing Channel",
     "gtceu.bulk_washing": "Bulk Ore Washing",
+    "block.gtceu.haber_bosch_chamber": "Haber-Bosch Chamber",
+    "gtceu.haber_bosch_process": "Haber-Bosch Process",
 
     "item.nijika.slag": "Ferrous Slag",
     "item.nijika.catalysator_brown": "Mineral Catalyst",

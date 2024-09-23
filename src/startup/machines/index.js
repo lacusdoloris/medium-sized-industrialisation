@@ -8,6 +8,7 @@ import { addBallGrinderMultiblock, addBallGrinderRecipeType } from "./ball_grind
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
 import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
+import { addHaberBoschChamberMultiblock, addHaberBoschChamberRecipeType } from "./haber_bosch_chamber";
 import { addIonExchangerMultiblock, addIonExchangerRecipeType } from "./ion_exchanger";
 import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
 import { addRockSynthesiserMultiblock, addRockSynthesisRecipeType } from "./rock_synthesiser";
@@ -35,6 +36,7 @@ export const addAllRecipeTypes = (event) => {
     addRockSynthesisRecipeType(event.create("rock_synthesis"));
     addBallGrinderRecipeType(event.create("ball_grinding"));
     addWashingChannelRecipeType(event.create("bulk_washing"));
+    addHaberBoschChamberRecipeType(event.create("haber_bosch_process"));
 };
 
 /**
@@ -51,4 +53,5 @@ export const addAllMachineTypes = (event) => {
     addRockSynthesiserMultiblock(event.create("nijika:rock_synthesiser", "multiblock"));
     addBallGrinderMultiblock(event.create("nijika:ball_grinder", "multiblock"));
     addWashingChannelMultiblock(event.create("nijika:washing_channel", "multiblock"));
+    addHaberBoschChamberMultiblock(event.create("nijika:haber_bosch_chamber", "multiblock"));
 };
