@@ -92,7 +92,7 @@
         "client_side_only": false,
         "ignore_dependencies": true,
         "name": "GregTechCEu Modern",
-        "pinned": false,
+        "pinned": true,
         "project_id": "7tG215v7",
         "selected": true,
         "version": "mc1.20.1-1.4.1+patch.2",
