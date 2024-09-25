@@ -8,8 +8,8 @@ import { GT_MACHINE_TIERS } from "../shared/tier";
 
 /** @param {Internal.RecipesEventJS} event */
 export const doTier00Content = (event) => {
-    event.remove({id: "gtceu:assembler/casing_ulv"});
-    event.shaped("gtceu:ulv_machine_casing", ["PPP", "P P", "PPP"], {P: "#forge:plates/iron"});
+    event.remove({ id: "gtceu:assembler/casing_ulv" });
+    event.shaped("gtceu:ulv_machine_casing", ["PPP", "P P", "PPP"], { P: "#forge:plates/iron" });
 
     event.recipes.create
         .mixing("1x minecraft:gunpowder", [
@@ -158,7 +158,7 @@ export const doTier00Content = (event) => {
     event.recipes.create
         .mixing("1x gtceu:red_alloy_dust", ["1x #forge:dusts/copper", "4x #forge:dusts/redstone"])
         .id("nijika:tier00/red_alloy_mixing");
-    
+
     event.recipes.create
         .mixing("1x gtceu:red_alloy_ingot", ["1x #forge:ingots/copper", "4x #forge:dusts/redstone"])
         .heated()

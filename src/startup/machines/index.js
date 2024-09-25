@@ -8,7 +8,10 @@ import { addBallGrinderMultiblock, addBallGrinderRecipeType } from "./ball_grind
 import { addBessemerMultiblock, addBessemerRecipeType } from "./bessemer";
 import { addButcheringMultiblock, addButcheringRecipeType } from "./butcher";
 import { addEvaporationPoolMultiblock, addEvaporationRecipeType } from "./evaporation_pool";
-import { addHaberBoschChamberMultiblock, addHaberBoschChamberRecipeType } from "./haber_bosch_chamber";
+import {
+    addHaberBoschChamberMultiblock,
+    addHaberBoschChamberRecipeType,
+} from "./haber_bosch_chamber";
 import { addIonExchangerMultiblock, addIonExchangerRecipeType } from "./ion_exchanger";
 import { addOreSortingMultiblock, addOreSortingRecipeType } from "./ore_sorter";
 import { addRockSynthesiserMultiblock, addRockSynthesisRecipeType } from "./rock_synthesiser";

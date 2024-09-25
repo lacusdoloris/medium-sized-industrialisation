@@ -38,7 +38,11 @@ export const addHaberBoschChamberMultiblock = (builder) => {
                 Predicates.abilities(PartAbility.IMPORT_FLUIDS)
                     .setMinGlobalLimited(2)
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1))
-                    .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMinGlobalLimited(1).setMaxGlobalLimited(1))
+                    .or(
+                        Predicates.abilities(PartAbility.IMPORT_ITEMS)
+                            .setMinGlobalLimited(1)
+                            .setMaxGlobalLimited(1)
+                    )
                     .or(Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             )
             .where(
