@@ -73,6 +73,8 @@ custom ones or the ones built-in to GTCEu.
    user/multiblocks/fluid-drilling-rig.rst
    user/multiblocks/cracker.rst
    user/multiblocks/distillation.rst
+   user/multiblocks/haber-bosch-chamber.rst
+   user/multiblocks/large-boiler.rst
 
 Developer Documentation
 =======================
