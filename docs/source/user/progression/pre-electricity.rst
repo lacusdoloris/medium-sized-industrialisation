@@ -36,16 +36,8 @@ Pre-Base
   If you're interested in why it's so slow, it's mostly due to GTCEu ore vein generation. Removing
   all of them will get a respectable 12 chunks per second generated.
 
-- Once that's done, you can actually play the game. Open your starter pack, which will
-  get you the following:
-
-  - A full set of neutronium machine tools (not mining tools).
-  - An LuV prospector. The battery in this should last you... well, forever. 
-  - A handful of wooly saplings. There's no mobs available for wool, so this is your only source.
-  - A handful of rubber saplings. This isn't an exploration focused pack; if you get unlucky and
-    spawn in a cold biome, it would be unfair to force you to try and find a warm biome for 
-    rubber trees.
-  - A handful of kelp for your item belts.
+- Once that's done, you can actually play the game. Check out the quest book (you may need to bind
+  a key) and open the starter quest to get some useful starting items.
 
 - Find a spot for your permanent base. There's no mobs or hunger so you can take your time here.
   You want a spot with the following:

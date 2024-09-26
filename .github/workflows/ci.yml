@@ -6,7 +6,7 @@ on:
         branches: [mizuki, ena]
 
 jobs:
-    build-mrpack-client:
+    build-mrpack:
         name: "Build .mrpack file"
         runs-on: "ubuntu-latest"
 
@@ -34,9 +34,9 @@ jobs:
             - name: Install PNPM packages
               run: pnpm install
             
-            - name: Install Kamuidrome
-              run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
-            
+            - name: Install PDM and virtualenv
+              run: pip install -U pdm && pdm install
+
             - name: Build KubeJS scripts
               run: pnpm run build-dev  # meh, who cares about minaturising.
             
@@ -44,61 +44,15 @@ jobs:
               run: ./build_quests.sh
             
             # TODO: add CI mode to Kamuidrome
-            - name: Export Client-Side Modpack
-              run: kamuidrome export --ci-mode BI-client
+            - name: Export client-side modpack
+              run: mkdir -p ./output && pdm run kamuidrome export "output/Bigger Industrialisation (Client)"
+
+            - name: Export server-side modpack
+              run: pdm run kamuidrome export "output/Bigger Industrialisation (Server-Only)"
     
-            - name: Upload client zip
+            - name: Upload combined zip
               uses: "actions/upload-artifact@v4"
               with:
                 name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}.mrpack"
-                path: "BI-client"
-                compression-level: 9 
-            
-  
-    build-mrpack-server:
-        name: "Build .mrpack file (Server-side)"
-        runs-on: "ubuntu-latest"
-
-        steps:
-            - name: "Checkout repository"
-              uses: "actions/checkout@v4"
-              with:
-                fetch-depth: 0
-
-            - name: "Install Python"
-              uses: actions/setup-python@v5
-              with:
-                # required for Kamuidrome
-                python-version: "3.12" 
-
-            - name: Install PNPM
-              uses: pnpm/action-setup@v4
-
-            - name: Install NodeJS
-              uses: actions/setup-node@v4
-              with:
-                node-version: "22.4.1"
-                cache: "pnpm"
-
-            - name: Install PNPM packages
-              run: pnpm install
-            
-            - name: Install Kamuidrome
-              run: pip install -U git+https://github.com/Fuyukai/Kamuidrome.git
-            
-            - name: Build KubeJS scripts
-              run: pnpm run build-dev  # meh, who cares about minaturising.
-            
-            - name: Build Quests
-              run: ./build_quests.sh
-            
-            # TODO: add CI mode to Kamuidrome
-            - name: Export Server-Side Modpack
-              run: kamuidrome export BI-server --server-only --ci-mode
-    
-            - name: Upload server zip
-              uses: "actions/upload-artifact@v4"
-              with:
-                name: "BI-${{ github.head_ref || github.ref_name }}-${{ github.sha }}-server.mrpack"
-                path: "BI-server"
-                compression-level: 9 
+                path: "output"
+                compression-level: 0
