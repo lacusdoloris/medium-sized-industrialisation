@@ -6,7 +6,7 @@
 Bigger Industrialisation
 ========================
 
-*`Get the pack on Modrinth! <https://modrinth.com/modpack/bigger-industrialisation>`_*
+* `Get the pack on Modrinth! <https://modrinth.com/modpack/bigger-industrialisation>`_ *
 
 This is the documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
 focused around industrial chemistry using `GregTech CEu Modern`_.
