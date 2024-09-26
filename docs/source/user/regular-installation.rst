@@ -1,11 +1,11 @@
 .. _user-installation:
 
-User Installation & Getting Started
-===================================
+Client Installation & Getting Started
+=====================================
 
-Bigger Industrialisation is published exclusively on Modrinth; stable releases can be downloaded
-from there from within your launcher. You should read this entire page before running the instance
-for the first time.
+Bigger Industrialisation is published exclusively on `Modrinth <https://modrinth.com/modpack/bigger-industrialisation>`_; 
+stable releases can be downloaded from there from within your launcher. You should read this 
+entire page before running the instance for the first time.
 
 .. warning::
 
@@ -24,12 +24,6 @@ This is the instructions for the stable releases. If you're brave, stupid, or bo
 4. Select your desired version in the drop-down bar (usually the latest) and press OK to install
    the pack.
 
-Server Installation
-~~~~~~~~~~~~~~~~~~~
-
-Server-only ``mrpack`` files are uploaded to Modrinth and built by CI for developer builds. You can 
-use a tool such as `mrpack-install <https://github.com/nothub/mrpack-install>`_ to then create
-a server setup from it.
 
 Java Settings
 -------------
