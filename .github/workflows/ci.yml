@@ -4,6 +4,7 @@ name: Automatic Build
 on:
     push:
         branches: [mizuki, ena]
+    tags: ["*"]
 
 jobs:
     build-mrpack:
