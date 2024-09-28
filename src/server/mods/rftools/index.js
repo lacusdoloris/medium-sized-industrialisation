@@ -34,29 +34,32 @@ export const adjustRfToolsRecipes = (event) => {
         .id("nijika:mods/rftools/machine_frame");
 
     // very provisional, WIP recipes here
-    event.remove({ id: "rftoolscontrol:card_base" });
-    event.recipes.gtceu
-        .circuit_assembler("nijika:mods/rftools/card_base")
-        .itemInputs(
-            "gtceu:resin_printed_circuit_board",
-            "1x #gtceu:circuits/lv",
-            "1x rftools:dimensionalshard",
-            "2x gtceu:red_alloy_single_wire"
-        )
-        .inputFluids(Fluid.of("gtceu:soldering_alloy").withAmount(72 * FluidAmounts.MB))
-        .itemOutputs("2x rftoolscontrol:card_base")
-        .EUt(GTValues.V[GTValues.LV])
-        .duration(10 * 20);
+    
+    if (Platform.isLoaded("rftoolscontrol")) {
+        event.remove({ id: "rftoolscontrol:card_base" });
+        event.recipes.gtceu
+            .circuit_assembler("nijika:mods/rftools/card_base")
+            .itemInputs(
+                "gtceu:resin_printed_circuit_board",
+                "1x #gtceu:circuits/lv",
+                "1x rftools:dimensionalshard",
+                "2x gtceu:red_alloy_single_wire"
+            )
+            .inputFluids(Fluid.of("gtceu:soldering_alloy").withAmount(72 * FluidAmounts.MB))
+            .itemOutputs("2x rftoolscontrol:card_base")
+            .EUt(GTValues.V[GTValues.LV])
+            .duration(10 * 20);
 
-    event.remove({ id: "rftoolscontrol:cpu_core_500" });
-    event
-        .shaped("rftoolscontrol:cpu_core_500", ["RGR", "PCP", "RGR"], {
-            R: "#forge:dusts/redstone",
-            G: "#forge:nuggets/gold",
-            P: "gtceu:polyethylene_plate",
-            C: "rftoolscontrol:card_base",
-        })
-        .id("nijika:mods/rftools/arm4tdmi");
+        event.remove({ id: "rftoolscontrol:cpu_core_500" });
+        event
+            .shaped("rftoolscontrol:cpu_core_500", ["RGR", "PCP", "RGR"], {
+                R: "#forge:dusts/redstone",
+                G: "#forge:nuggets/gold",
+                P: "gtceu:polyethylene_plate",
+                C: "rftoolscontrol:card_base",
+            })
+            .id("nijika:mods/rftools/arm4tdmi");
+    }
 
     event.remove({ id: "rftoolsbase:machine_base" });
     event
