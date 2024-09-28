@@ -1,0 +1,12 @@
+{
+    "filters": [
+        "/.*_chainsaw.*/",
+        "/.*_(?:screwdriver|wrench)_tip.*/",
+        "/.*_buzzsaw$/",
+        "/.*_drill$/",
+        "/.*_sword$/",
+        "/.*_knife$/",
+        "/gtceu:.*_saw$/",
+        "/[lhi]v_.*_(?:wirecutter|wrench|screwdriver)/"
+    ]
+}

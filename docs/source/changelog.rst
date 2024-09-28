@@ -4,6 +4,8 @@ Changelog
 Version 0.9: The Ore Processing Update
 --------------------------------------
 
+*0.9-RC1 was released on 2024-09-26*.
+
 This update focuses on refining gameplay, and introducing bulk ore processing systems across 
 late LV/early MV.
 
