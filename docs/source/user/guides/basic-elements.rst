@@ -7,7 +7,11 @@ This page is a guide to the large scale manufacturing of the basic elements that
 in the industrial chemistry within the modpack. "Basic" elements refers to non-metallic single 
 elements that are used in larger compounds.
 
-.. _element-hydrogen:
+.. figure:: screenshots/chlorine-production.avif
+
+    A chlorine production plant, one of the basic elements.
+
+.. _el-hydrogen:
 
 Hydrogen
 --------
@@ -25,6 +29,8 @@ main ways of producing hydrogen on a mass scale:
 
 Hydrogen is also produced in small amounts from various metallurgical and miscellaneous 
 petrochemical processes, but this is nowhere near enough to satisfy demand for hydrocracking.
+
+.. _el-oxygen:
 
 Oxygen
 ------
@@ -45,6 +51,8 @@ There's a few ways to get it:
   The leftover silicon can be used for silicon boules. This is the easiest and most practical way
   to get massive amounts of oxygen, albeit a bit involved for the early game requiring five separate
   steps.
+
+.. _el-sulfur:
 
 Sulfur
 ------
@@ -71,6 +79,18 @@ derivatives such as sulfuric acid are very useful throughout the entire game.
 
 - Sulfuric wastewater from the washing of sulfur-bearing minerals is a good source of sulfur
   that can produce a lot of H2S.
+
+.. _el-chlorine:
+
+Chlorine
+--------
+
+Chlorine is a basic chemical building block for a lot of chemicals including hydrochloric acid
+and the organochloric compounds. The best way of getting chlorine is from the electrolysis of
+salt, which comes from centrifuging stone dust (as a byproduct of ore washing) or from centrifuging
+salt water (which comes from evaporating dirt water).
+
+.. _el-fluorine:
 
 Fluorine
 --------
