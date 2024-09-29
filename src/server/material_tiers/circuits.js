@@ -187,7 +187,7 @@ const adjustMicroprocessorRecipes = (event) => {
             "4x #gtceu:resistors",
             "4x #gtceu:capacitors",
             "4x #gtceu:transistors",
-            "16x gtceu:fine_copper_wire"
+            "16x gtceu:fine_annealed_copper_wire"
         )
         .inputFluids(SOLDER_FLUID)
         .itemOutputs("4x gtceu:micro_processor")
