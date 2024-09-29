@@ -105,3 +105,55 @@ input bucket.
     | Heavy Fuel | Light hydro  | N/A                    | 150.0             | N/A              | 100            | N/A            | 18.75         | 268.75mB     |
     +------------+--------------+------------------------+-------------------+------------------+----------------+----------------+---------------+--------------+
 
+.. _plastic-production-pvc:
+
+Poly(vinyl chloride)
+--------------------
+
+Poly(vinyl chloride) - more commonly known as PVC - is a plastic mostly used in the real world for 
+construction including pipings, doors, and sidings. In Bigger Industrialisation it is used for
+the insulation of higher-tier cables, as an alternative for basic circuit boards, and as an early
+set of fast item pipes. 
+
+As the name suggests, poly(vinyl chloride) is the polymerised form of the vinyl chloride mononer,
+and the only usage of vinyl chloride. Vinyl chloride is made from ethylene via 1,2-Dichloroethane:
+
+.. math::
+
+    \ce{C2H4 + 2 Cl ->[\ce{FeCl3}] ClCH2CH2Cl}  
+    \\
+    \\
+    \ce{ClCH2CH2Cl ->[\ce{H2O}] CH2CHCl + HCl}
+
+From there, the vinyl chloride is mechnically polymerised using air or oxygen to get the polymer.
+See the previous section for how to acquire ethylene, and see :ref:`el-chlorine` for how to get
+the chlorine.
+
+.. _plastic-production-ptfe:
+
+Poly(tetrafluoroethylene)
+-------------------------
+
+Poly(tetrafluoroethylene) - more commonly known as PTFE or Teflon - is an inert plastic primarily
+used as a casing material, both for singleblock machine casings and for multiblocks. It is
+the polymerised form of the tetrafluoroethylene radical.
+
+There are two ways of making tetrafluoroethylene. The first is via chloroform:
+
+.. math::
+
+    \xce{CH4 + 3 Cl2 \Rightarrow CHCl3 + 3 HCl}
+    \\
+    \\
+    \xce{2 CHCl3 + 4 HF \Rightarrow C2F4 + 6 HCl}
+
+This method can be done in singeblock chemical reactors as soon as you have a source of fluorine.
+Alternatively, as soon as EV energy hatches are available, this can be done as a single-step 
+process in the Large Chemical Reactor:
+
+.. math::
+
+    \xce{4 HF + 2 CH4 + 6 Cl2 \Rightarrow C2F4 + 12 HCl}
+
+Regardless of which method you use for tetrafluoroethylene, it is polymerised using a small
+amount of sodium persulfate, up to 0.3% for the bulk recipe made inside the Large Chemical Reactor.
