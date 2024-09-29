@@ -12,6 +12,7 @@ import { addDieselMaterials, addDieselRecipes } from "./diesel";
 import { addZieglerProcessMaterials, addZieglerProcessRecipes } from "./fatty_alcohols";
 import { addMIBKMaterials, addMIBKProcess } from "./mibk";
 import { addPolystyreneMaterials, addPolysytreneRecipes } from "./polystyrene";
+import { adjustPtfeRecipes } from "./ptfe";
 import { addPolyvinylButyralMaterials, addPolyvinylButyralRecipes } from "./pvb";
 import { addSquaricAcidMaterials, addSquaricAcidRecipes } from "./squaric";
 import { addTributylPhosphateMaterials, addTributylPhosphateRecipes } from "./tributyl_phosphate";
@@ -47,6 +48,7 @@ export const addOrganicChemRecipes = (event) => {
     addSquaricAcidRecipes(event);
     addTributylPhosphateRecipes(event);
     addDieselRecipes(event);
+    adjustPtfeRecipes(event);
 
     event.remove({ id: "gtceu:chemical_reactor/cyclohexane" });
     event.remove({ id: "gtceu:large_chemical_reactor/cyclohexane" });
