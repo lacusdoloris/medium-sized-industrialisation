@@ -105,7 +105,7 @@ export const addWilkinsonsCatalystRecipes = (event) => {
             Fluid.of("gtceu:diluted_hydrochloric_acid").withAmount(12 * FluidAmounts.BUCKET)
         )
         .itemOutputs("2x gtceu:rhodium_trichloride_trihydrate_dust")
-        .outputFluids(Fluid.of("gtceu:water").withAmount(3 * FluidAmounts.BUCKET))
+        .outputFluids(Fluid.of("minecraft:water").withAmount(3 * FluidAmounts.BUCKET))
         .EUt(GTValues.VA[GTValues.HV])
         .duration(6 * 20 + 10);
 
@@ -156,7 +156,7 @@ export const addWilkinsonsCatalystRecipes = (event) => {
         )
         .outputFluids(
             Fluid.of("gtceu:hydrochloric_acid").withAmount(32 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:water").withAmount(32 * FluidAmounts.BUCKET)
+            Fluid.of("minecraft:water").withAmount(32 * FluidAmounts.BUCKET)
         )
         .EUt(GTValues.V[GTValues.EV])
         .duration(60 * 20)
