@@ -8,6 +8,9 @@
 
 from importlib.metadata import version as get_version
 
+import sphinx
+import sphinx.application
+
 project = "Bigger Industrialisation"
 copyright = "2024, Lura Skye"
 author = "Lura Skye"
@@ -33,3 +36,7 @@ exclude_patterns = []
 html_theme = "furo"
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
+
+def setup(app: sphinx.application.Sphinx):
+    app.add_js_file("mathjax-config.js")
+    pass

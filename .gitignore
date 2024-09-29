@@ -9,6 +9,8 @@ localpack.toml
 .venv/
 docs/build
 .pdm-build
+*.pyc
+__pycache__/
 
 kubejs/server_scripts/index.js
 kubejs/startup_scripts/index.js
