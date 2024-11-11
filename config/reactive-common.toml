@@ -25,4 +25,6 @@
 	#The maximum distance that a block like Copper can convey a displacement pulse [Default: 8]
 	#Range: 1 ~ 4096
 	copperDisplaceConductRange = 8
+	#Whether to register the /reactive command on startup. [Default: true]
+	registerCommand = true
 

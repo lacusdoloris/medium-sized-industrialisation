@@ -19,21 +19,26 @@
 
 	#.
 	#Cobblestone generator types
-	#(Requires relaunch)
 	[common.generatorsEnabled]
 		#.
-		#Enable cobblestone generator
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		cobblestoneGeneratorEnabled = true
 		#.
-		#Enable basalt generator
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		basaltGeneratorEnabled = false
 		#.
-		#Enable stone generator
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		stoneGeneratorEnabled = false
 		#.
-		#Enable limestone generator
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		limestoneGeneratorEnabled = false
 		#.
-		#Enable stone generator
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		scoriaGeneratorEnabled = false
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		deepslateGeneratorEnabled = false
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		cobbledDeepslateGeneratorEnabled = false
 

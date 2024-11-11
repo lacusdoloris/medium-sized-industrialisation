@@ -7,14 +7,14 @@
     "license": "MPL-2.0",
     "private": true,
     "devDependencies": {
-        "@babel/core": "^7.24.9",
-        "@babel/plugin-transform-classes": "^7.24.8",
-        "@babel/plugin-transform-new-target": "^7.24.7",
-        "@babel/plugin-transform-numeric-separator": "^7.24.7",
-        "@babel/plugin-transform-runtime": "^7.24.7",
-        "eslint": "^8.57.0",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-jsdoc": "^48.7.0",
+        "@babel/core": "^7.26.0",
+        "@babel/plugin-transform-classes": "^7.25.9",
+        "@babel/plugin-transform-new-target": "^7.25.9",
+        "@babel/plugin-transform-numeric-separator": "^7.25.9",
+        "@babel/plugin-transform-runtime": "^7.25.9",
+        "eslint": "^8.57.1",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-jsdoc": "^48.11.0",
         "parcel": "^2.12.0",
         "prettier": "^3.3.3"
     },
@@ -51,5 +51,5 @@
             }
         }
     },
-    "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
+    "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }

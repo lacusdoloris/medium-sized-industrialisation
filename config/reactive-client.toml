@@ -7,4 +7,6 @@
 	doNotChangeWaterTexture = false
 	#Whether to allow Litmus Paper to use multicolored text. Disable if the colored text is hard to read.
 	colorizeLitmusOutput = true
+	#Whether to hide the icons of Powers in JEI. This is on by default because otherwise the menu looks redundant due to how Power icons work.
+	hidePowersFromJEI = true
 

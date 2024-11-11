@@ -6,7 +6,7 @@
 //
 /* eslint-disable no-unexpected-multiline */
 
-const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
+export const GTCEuAPI = Java.loadClass("com.gregtechceu.gtceu.api.GTCEuAPI");
 const TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
 
