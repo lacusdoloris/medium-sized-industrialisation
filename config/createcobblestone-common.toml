@@ -1,20 +1,23 @@
 
 #.
-#Common settings
+#Common config
 [common]
 	#.
-	#Cobblestone generator stress
+	#Default generator stress
 	#stress * rpm = total stress
-	#Range: > -2147483648
+	#(Can be overridden by custom generator types)
+	#Range: > 0
 	generatorStress = 8
 	#.
-	#Cobblestone generator ratio
+	#Default generator ratio
 	#Cobblestone/tick = rpm/ratio
+	#(Can be overridden by custom generator types)
 	#Range: 0.009999999776482582 ~ 3.4028234663852886E38
 	generatorRatio = 8.0
 	#.
-	#Maximum storage of the generators (in items)
-	#Range: > -2147483648
+	#Default maximum storage of the generators in items
+	#(Can be overridden by custom generator types)
+	#Range: > 1
 	maxGeneratorStorage = 256
 
 	#.
@@ -37,8 +40,10 @@
 		scoriaGeneratorEnabled = false
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		#(Also requires deepslate generators datapack, https://modrinth.com/datapack/create-cobblestone-deepslate-generators)
 		deepslateGeneratorEnabled = false
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		#(Also requires deepslate generators datapack, https://modrinth.com/datapack/create-cobblestone-deepslate-generators)
 		cobbledDeepslateGeneratorEnabled = false
 

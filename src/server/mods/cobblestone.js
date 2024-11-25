@@ -6,10 +6,10 @@
 
 /** @param {Internal.RecipesEventJS} event */
 export const adjustCreateCobblestoneRecipes = (event) => {
-    event.remove({ input: "createcobblestone:cobblestone_generator" });
+    event.remove({ id: "createcobblestone:crafting/mechanical_generator" });
 
     event
-        .shaped("createcobblestone:cobblestone_generator", ["CRC", "1D2", "AAA"], {
+        .shaped("createcobblestone:mechanical_generator", ["CRC", "1D2", "AAA"], {
             C: "#nijika:copper_alloy_plates",
             R: "create:electron_tube",
             1: "minecraft:water_bucket",
