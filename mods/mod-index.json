@@ -77,26 +77,26 @@
         "version_id": "8w9SsgMR"
     },
     "5ZwdcRci": {
-        "checksum": "aadd82cb380c9e5cce856c7f6f160651a3e34a6adde43481e2fd9ae7d7dee4b2447affc9250d11625e095a47d5c4682368812762f8bf470962adc0b0d3abd557",
+        "checksum": "7345f85e7948fc1eac6ca7628b0b5b3e74f40fc8d46db4015b42c6cbf6bc251f4c44c02e4e20a9d37c46deb257cbb9d46970c13475e37d3e571fd57d183136df",
         "client_side_only": true,
         "ignore_dependencies": false,
         "name": "ImmediatelyFast",
         "pinned": false,
         "project_id": "5ZwdcRci",
         "selected": true,
-        "version": "1.3.2+1.20.4-forge",
-        "version_id": "DCUYwauY"
+        "version": "1.3.3+1.20.4-forge",
+        "version_id": "abfWjwdT"
     },
     "7tG215v7": {
-        "checksum": "b773892fd7f6c6ef7347979e6aa851fd3be239b617c9096416a04a0e7350fbccb1572f1a1f87a969f28b5f270629e7d56b92b8990fc1158701198caca06c19c4",
+        "checksum": "1ba84608c83587dc384d1bb65497fb72aa06a9fafd9e2a284a2dd7fb159d8f61a141b1a57380bf4dc505d75e404cba1563e87edb846f3d82ca6d9eb288a96056",
         "client_side_only": false,
         "ignore_dependencies": true,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
         "selected": true,
-        "version": "mc1.20.1-1.5.3",
-        "version_id": "z8IkRQ7N"
+        "version": "mc1.20.1-1.6.1",
+        "version_id": "xj5yam4d"
     },
     "8shC1gFX": {
         "checksum": "1ae64dc8d0b8e42aea0bc630e2ffa162c4c4d15d02e72d38cb24a22a12a7a10a103e636ed13c3f29ea926a0a809e5d85ae117539816a6a8354f39cdd475d09f0",
@@ -132,15 +132,15 @@
         "version_id": "t8TXrZvZ"
     },
     "Aqlf1Shp": {
-        "checksum": "c92ebe2c7425bec3181673c17970804a9228d65521eb98c7e5e74e7a79bab50c07053d1599026baeb39123a1b3d346f74f5b50b1bae954e385f7930fa8e3ad40",
+        "checksum": "f89785ab5787f5339d8f912677146f21ce224590a7bcce54b9d2e40c9a409abbaa51dbfe121ddc7d4370f03611f071e4aab105558d790434b3bc16b760839134",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Forgified Fabric API",
         "pinned": false,
         "project_id": "Aqlf1Shp",
         "selected": false,
-        "version": "0.92.2+1.11.8+1.20.1",
-        "version_id": "D3EZO1Kr"
+        "version": "0.92.2+1.11.9+1.20.1",
+        "version_id": "2Jm6cdbX"
     },
     "B3Eg0WhA": {
         "checksum": "740ee6fb5cf4b2cec2b3e5c06aa19b7fb2ea30b0b8f401a6a0f9477b89fe379f7d5ff64f9ebeca38b85ec5d8366b95ee62590b68c387718db53b4b879fbde2a4",
@@ -253,26 +253,26 @@
         "version_id": "l4YYn2wS"
     },
     "Ha28R6CL": {
-        "checksum": "69bf219caeadea67cc31718db02fd2933d09b5ffd687e5d49c0701298ca1ef1f3c940144d5997bc19909a46493ec6b694ae0db9f86d2072a88e5883076fe66d6",
+        "checksum": "da8d54bb5602213342a207e0905284dcf890a3635eb81bec28632d048de7d61e4bdd8a48337c5194c47a67724e36fde176085ff50069c3f7c93ce3f163a3a0bb",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Fabric Language Kotlin",
         "pinned": false,
         "project_id": "Ha28R6CL",
         "selected": true,
-        "version": "1.12.3+kotlin.2.0.21",
-        "version_id": "B0fZidZi"
+        "version": "1.13.0+kotlin.2.1.0",
+        "version_id": "csX9r2wS"
     },
     "HmLJoQ1K": {
-        "checksum": "637e4f6768b8fbacc7b819d14d029bc77dd62262686e19668fb9eeed1d49509e2547d4ad6d1b9daf905366cd76d908968894b556f404023d4a079a8ad44bed99",
+        "checksum": "f5c24304e6ee77ed8b7099e9686e4393771ac133fd152ea18eff1974041a2431ea69ad6e1801e665f1d847848ce4d1b133aa6581a742d79eb7402ce85b193823",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Integrated Terminals",
         "pinned": false,
         "project_id": "HmLJoQ1K",
         "selected": true,
-        "version": "1.20.1-1.6.2",
-        "version_id": "kJbO8LUo"
+        "version": "1.20.1-1.6.3",
+        "version_id": "aND6fE2M"
     },
     "IhBYAM6m": {
         "checksum": "4e1d6b6454c13006cdd78f5e8f47bde7c0fce1f5d455e991506e72f529153f7b54454c932c081339844f9b9098e227133de45011f3d0f0bbfd6b9378fb321c0f",
@@ -429,15 +429,15 @@
         "version_id": "5lXIJiba"
     },
     "XxWD5pD3": {
-        "checksum": "dde7e1c25efd5f8516dd4d4b0586298222b98a7d8165b0d2242f3d21e2cae54343837c1e9f7cd38c73a18238e1737d775123b0a78056e5318f9792b3b2440af8",
+        "checksum": "3d1dba0887c9f32a955bbea55f0f9e224321866cebf10e05461542f9e30f69d5bca9ecf68f6c134849f4b21cf1acfc0e3bd8c9f74b916e7392b29c94c261af09",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Applied Energistics 2",
         "pinned": false,
         "project_id": "XxWD5pD3",
         "selected": true,
-        "version": "15.2.13",
-        "version_id": "VGMDHpdE"
+        "version": "15.2.16",
+        "version_id": "zywmowQO"
     },
     "YOs4tZea": {
         "checksum": "fcad2fbe1dbbc02fdcf5bd5544d66d57080ff91ce40de116965c61c20da99ed10dd76fe18c485b5dbb9037af29b92fafe78d69d8f72fa3c0f965dd52047f4137",
@@ -451,26 +451,26 @@
         "version_id": "Ia6GOvCO"
     },
     "YWGP4Y1d": {
-        "checksum": "1e7f343e4ec049618fab4bce12ae431fb44cd1a5b8330f05d728eacb460118fd7e4995b75970caaf59865e5f1b8508f92427f67e35ac925aebfce63ca08932e2",
+        "checksum": "0c5b5bf4e3847b40ea68b51c95682ad3d872ec206fc131f0c19ae7aca16d6479ebe3888a2b494d602cb8d6833ef655a8638e60ef8a6b8b630a4aa55bd1950bd9",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Chalk",
         "pinned": false,
         "project_id": "YWGP4Y1d",
         "selected": true,
-        "version": "1.6.4",
-        "version_id": "YhueAXpz"
+        "version": "1.6.5",
+        "version_id": "HA8yrJaB"
     },
     "Z9DM0LJ4": {
-        "checksum": "29c5dc0c514b5db083c295751a766957afc023ffc9f7554b52edc6f21591ae2226029e68bc58ea72a930d144ae2c14fa9ac9ab193d1647248c34bc43b3ed7089",
+        "checksum": "5b42ff2dfbbc67bc77d452e44e7fac0bb272210e7a615dfd85153fbf24793da0a124f87188025fb15ca7a66fa1696af27127a4f03e3e27439a0336034098b1c3",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Cyclops Core",
         "pinned": false,
         "project_id": "Z9DM0LJ4",
         "selected": false,
-        "version": "1.20.1-1.19.5",
-        "version_id": "elAdftA9"
+        "version": "1.20.1-1.19.6",
+        "version_id": "DecmuACQ"
     },
     "ZM3tt6p1": {
         "checksum": "e1e1604779173ea1e96fac21934e952878fb8f376d495b5897376305b3aef0d3f9c256b451769cf28f21ea9284332888511ba201c7eb8f884e28a40daca78b57",
@@ -583,15 +583,15 @@
         "version_id": "3o0pJdF1"
     },
     "ihpnEd80": {
-        "checksum": "7010fcb94b58d8290c5d535577134bd6cae1019e642f2e718da8898b5096d80dedc4e53adb5342a28aa357b79b8e2bd0b68f03dba4dcc6871129201100dd8b4a",
+        "checksum": "f93e21bf5f1d823bfe777063f62e3dd8989ed9893e54108d691036a4545e65675f1044e29998619dce5e8692077bbb938339a498377ac8c99b252b380ec14dde",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Create Cobblestone",
         "pinned": false,
         "project_id": "ihpnEd80",
         "selected": true,
-        "version": "1.4.1+forge-1.20.1-73",
-        "version_id": "HsAb44aC"
+        "version": "1.4.2+forge-1.20.1-74",
+        "version_id": "PH9a0847"
     },
     "jjuIRIVr": {
         "checksum": "50a3adee455b51ce5f628bdf7e59408437274065a2a0359d04901c1f53846b3089ab271347438a7cdad11256fe1806c7a3b10a4e6bcd5b1fd91a7a3eac60daaf",
@@ -704,15 +704,15 @@
         "version_id": "5J6WsndO"
     },
     "oFXrCkDI": {
-        "checksum": "f1cf35e163518ff803ad9901cfc1c4907b61ac81e0391af33af8af487955a666ca6729cb156da71e24fc2ed267f497b868ce8b12057d0dca53791fada3111c6d",
+        "checksum": "9c2bddaee6ed30a1dd3e1870f5987b85f41d76d2d80cb3d945a5254892f2c213278eb7581ac2dd92f5bc7036f61f96f642f0f4c91d7e9734b6c7a1ec75bab2f4",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Common Capabilities",
         "pinned": false,
         "project_id": "oFXrCkDI",
         "selected": false,
-        "version": "1.20.1-2.9.3",
-        "version_id": "Dd40mSpD"
+        "version": "1.20.1-2.9.4",
+        "version_id": "VV1mGB3A"
     },
     "oY2B1pjg": {
         "checksum": "5a040831b0c06dd1afe3935a8eadcbed0997118217a5c01aeb189ce9b2ca891270f7ae49adbb581c0b266f821506f6ca3d301056f85efd7ca597fdfc6f98cda1",
@@ -792,15 +792,15 @@
         "version_id": "UTbfe5d1"
     },
     "soWqucCB": {
-        "checksum": "5d4de6afb51dc5edbec675251e1074bc367c8b6285dd8e9f4a8bd7d354f37a2dea6559cd42e79608141f49f06382f3ca69489bf01cc7978bdf55dc22981c225e",
+        "checksum": "483eebcfd0b9188ebd80fac80199f6aca96e48584cd88f0919a1e5bc3dff5a0e270d1006930bb905fd7a8a8b82b983c8e3380cbe52a9f88df6d4890e885c2296",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Reactive Alchemy",
         "pinned": false,
         "project_id": "soWqucCB",
         "selected": true,
-        "version": "1.20.1-9.13.1",
-        "version_id": "UJ5AwiOr"
+        "version": "1.20.1-9.14.1",
+        "version_id": "wPzw0NRn"
     },
     "u58R1TMW": {
         "checksum": "7a8171806c8cb5e2b593cf73f4d1bf068490deeb7e05d942c9fd8332d68798a76d425571608c986f8a9601266d6bbcc8305b763b8af0d0f8556398e732df260f",
@@ -825,15 +825,15 @@
         "version_id": "iNv5B1Zj"
     },
     "uDJkuFRe": {
-        "checksum": "7d0adf79ec5ad29e0c97dc160f3f09d55ced64087dfdd52d25a823b6d22e7d86d56161e7ae5eae315ed29de570d1363532e5efa2f3d0fc08072e3a6d9fe415d0",
+        "checksum": "143525a221aa7b39453ad75250273922420e1c2bc2aeca2d1335cbce1d56c03d773a5bf8951e9ba5fd6929432cdc769a0425a984db13f8abaf814ada17fa5ec3",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Integrated Scripting",
         "pinned": false,
         "project_id": "uDJkuFRe",
         "selected": true,
-        "version": "1.20.1-1.0.5",
-        "version_id": "U8QHX3D1"
+        "version": "1.20.1-1.0.8",
+        "version_id": "rxjs340B"
     },
     "uXXizFIs": {
         "checksum": "0267f37feab383991403e3f22effd26f6e530cbe71ab11e406e97b303ee3baee3ee7fe85e463e258813aa32d92a920f2ed137dad15fc15012e5cd0a3ae85be1c",
@@ -858,15 +858,15 @@
         "version_id": "AhYGbfUn"
     },
     "uuVy6k1s": {
-        "checksum": "1bce0312f49980ebeea1f5873dee735313b00bf407cef2c4e0ea5fb80adc8549d43b6f4ac0ddd99494619fc061ef3ee3abe42ec6907a434e50e9c4baa5fb5968",
+        "checksum": "6287795ecc4fbc0951580080ee168e6bddd19f49ac97d79bcab7ba8ed8892aee752343f0250399ff0109aafb120beb60ff3c7ea02fdaaada78d437ee44d209ea",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Create: Molten Vents",
         "pinned": false,
         "project_id": "uuVy6k1s",
         "selected": true,
-        "version": "2.0.8",
-        "version_id": "poBMa9OK"
+        "version": "2.0.9",
+        "version_id": "kWQo1jiq"
     },
     "vvuO3ImH": {
         "checksum": "aa03c3c0459f9732ab30cf58a98257df99e72242f76242864ca4daad6b57a4b6e6d16019068d199947449568c5d94d5dd702f19d2a6b3eff157dcf822d9f0608",
@@ -913,14 +913,14 @@
         "version_id": "mYl4RvKg"
     },
     "yYzdQHJI": {
-        "checksum": "6f5887325c1027d9829eaa4dc24a6dd3898e12364ec3ef421fd597fac82f0da42fc25ef80bcb78430c11c6f1258afc63be66dbd2cda34cfdbac08d24832e6566",
+        "checksum": "d6aacff86157e14c7a630570333ac2ba76177b7aeb06aa236a84102909a62d4c03d3450c09f111798be51255aae03bcbb1538736b43b0463378c5184d7827647",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Integrated Dynamics",
         "pinned": false,
         "project_id": "yYzdQHJI",
         "selected": true,
-        "version": "1.20.1-1.23.13",
-        "version_id": "11CvpftG"
+        "version": "1.20.1-1.24.2",
+        "version_id": "1dFOdy0Q"
     }
 }

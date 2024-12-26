@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry("gtceu:material", addCustomMaterials);
 GTCEuStartupEvents.materialModification(() => {
     // this is definitely ran before item generation.
     // dirty hack: vaporise this hashmap so that cauldron behaviours are never registered.
-    GTItems.purifyMap.clear();
+    GTMaterialItems.purifyMap.clear();
 
     // event has... no properties. ok
     customiseMaterials();

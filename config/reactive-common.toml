@@ -27,4 +27,6 @@
 	copperDisplaceConductRange = 8
 	#Whether to register the /reactive command on startup. [Default: true]
 	registerCommand = true
+	#This enables the GUI for Litmus Paper. Disabling it restores the original chat-based reporting. [Default: true]
+	litmusScreen = true
 
