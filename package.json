@@ -1,9 +1,9 @@
 {
-    "name": "bigger-industry",
+    "name": "medium-sized-industrialisation",
     "version": "0.7.0",
-    "description": "bi modpack",
-    "repository": "https://github.com/Fuyukai/Bigger-Industrialisation.git",
-    "author": "Lura Skye <l@veriny.tf>",
+    "description": "MSI modpack",
+    "repository": "https://github.com/lacusdoloris/medium-sized-industrialisation.git",
+    "author": "Loris Lacuna <doriloris@protonmail.com>",
     "license": "MPL-2.0",
     "private": true,
     "devDependencies": {

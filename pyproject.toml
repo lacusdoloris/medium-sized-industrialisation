@@ -3,13 +3,13 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-name = "bigger-industrialisation"
+name = "medium-sized-industrialisation"
 dynamic = ["version"]
 description = "Medium sized industrialisation"
 authors = [
-    {name = "Lura Skye", email = "fuyukaii@proton.me"},
+    {name = "Loris Lacuna", email = "fuyukaii@proton.me"},
 ]
-dependencies = []
+dependencies = ["kamuidrome>=0.8.1"]
 requires-python = ">=3.12"
 readme = "README.rst"
 license = {text = "MPL-2.0"}
