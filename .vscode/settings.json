@@ -17,10 +17,9 @@
         "**/node_modules": true
     },
     "eslint.lintTask.enable": true,
-    "licenser.author": "Lura Skye",
-    "licenser.license": "MPLv2",
-    "licenser.projectName": "Bigger Industrialisation",
     "esbonio.server.pythonPath": ".venv/bin/python3",
     "python.defaultInterpreterPath": ".venv/bin/python3",
-    "esbonio.sphinx.pythonCommand": [".venv/bin/python3"]
+    "esbonio.sphinx.pythonCommand": [
+        ".venv/bin/python3"
+    ]
 }
