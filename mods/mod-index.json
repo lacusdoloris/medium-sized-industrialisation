@@ -186,6 +186,17 @@
         "version": "2.4.0",
         "version_id": "qlDt4clF"
     },
+    "DCWEXia7": {
+        "checksum": "e56549d2b10c2cc145d2b43c0f78ff82daaa9356f02aa266b59cb8dcd68d44caa06dccce30081ea3b5085bbfdefaad5b6115c0b71f0c71f3ac440136aa1094bb",
+        "client_side_only": true,
+        "ignore_dependencies": false,
+        "name": "Astrocraft",
+        "pinned": false,
+        "project_id": "DCWEXia7",
+        "selected": true,
+        "version": "1.4.5+1.20.1",
+        "version_id": "ggNG0iQZ"
+    },
     "DYtfQEYj": {
         "checksum": "a3177751f5350208a2ed78cfcc79a9dfbc6e3d8a3ad94629f3184367005770c67bcf9cc963b8ce06484393af6e9b107d7d45e3bfc46dc3ad1c9e598342b2407f",
         "client_side_only": false,
