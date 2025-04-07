@@ -1,0 +1,136 @@
+{
+  "entries": [
+    {
+      "item": "#forge:ingots",
+      "emc": 0
+    },
+    {
+      "item": "#forge:gems",
+      "emc": 0
+    },
+    {
+      "item": "#forge:dusts",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:logs",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:wool",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:leaves",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:dirt",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:planks",
+      "emc": 0
+    },
+    {
+      "item": "#forge:seeds",
+      "emc": 0
+    },
+    {
+      "item": "#forge:foods",
+      "emc": 0
+    },
+    {
+      "item": "#forge:stone",
+      "emc": 0
+    },
+    {
+      "item": "#forge:cobblestone",
+      "emc": 0
+    },
+    {
+      "item": "#forge:netherrack",
+      "emc": 0
+    },
+    {
+      "item": "#forge:endstone",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:ice",
+      "emc": 0
+    },
+    {
+      "item": "#nijika:bessemer_limestone",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:flowers",
+      "emc": 0
+    },
+    {
+      "item": "#createaddition:plants",
+      "emc": 0
+    },
+    {
+      "item": "#forge:basalt",
+      "emc": 0
+    },
+    {
+      "item": "#forge:obsidian",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:sand",
+      "emc": 0
+    },
+    {
+      "item": "#minecraft:saplings",
+      "emc": 0
+    },
+    {
+      "item": "#forge:gravel",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:pumpkin",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:jack_o_lantern",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:cocoa_beans",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:nether_brick",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:nether_wart",
+      "emc": 0
+    },
+    {
+      "item": "#forge:heads",
+      "emc": 0
+    },
+    {
+      "item": "#forge:crops",
+      "emc": 0
+    },
+    {
+      "item": "#nijika:glues",
+      "emc": 0
+    },
+    {
+      "item": "#forge:blackstone",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "emc": 384
+    }
+  ]
+}

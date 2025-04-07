@@ -11,6 +11,7 @@ import { adjustCreateCobblestoneRecipes } from "./cobblestone";
 import { adjustCreateRecipes } from "./create";
 import { adjustCCARecipes } from "./createaddition";
 import { adjustDieselGeneratorRecipes } from "./diesel";
+import { adjustEe2Recipes } from "./ee2";
 import { adjustEssentialsRecipes } from "./essentials";
 import { adjustIntegratedDynamicsRecipes } from "./integrated_dynamics";
 import { adjustLittleLogisticsRecipes } from "./littlelogistics";
@@ -48,6 +49,7 @@ const MOD_TWEAKER_FUNCTIONS = {
     modularrouters: adjustModularRouterRecipes,
     pack_it_up: adjustPackItUpRecipes,
     prettypipes: adjustPrettyPipesRecipes,
+    projecte: adjustEe2Recipes,
     reinfchest: (event) => {
         event
             .shaped("reinfchest:gold_chest", ["III", "ICI", "III"], {

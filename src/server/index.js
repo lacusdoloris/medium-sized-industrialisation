@@ -24,6 +24,7 @@ import { doTier04Content } from "./tier04";
 import { addNonSpecificMachineRecipes } from "./machines";
 import { addCustomOreProcessingRecipes } from "../shared/ores";
 import { addCustomFluidVeins, adjustFluidVeinDefinitions } from "./fluid_veins";
+import { adjustEmcValues } from "./mods/ee2";
 
 ServerEvents.tags("items", setupItemTags);
 
@@ -77,3 +78,7 @@ GTCEuServerEvents.fluidVeins((event) => {
     addCustomFluidVeins(event);
     adjustFluidVeinDefinitions(event);
 });
+
+ProjectEEvents.setEMC(event => {
+    adjustEmcValues(event);
+})

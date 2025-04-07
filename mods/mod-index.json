@@ -21,6 +21,17 @@
         "version": "1.20.1.1",
         "version_id": "TgyyhU8M"
     },
+    "2M11Juic": {
+        "checksum": "9cbf431b531333401d2a8d7734319d474cf509f4cef0e160ddd735cabd150226f03dc5bf2b145cc2c974a1498c7fa65c4426f264c5fb539dfd6fb480ded3099c",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "KubeJS ProjectE Fork",
+        "pinned": false,
+        "project_id": "2M11Juic",
+        "selected": true,
+        "version": "1.0",
+        "version_id": "KLeYooZr"
+    },
     "2gvRmQXx": {
         "checksum": "c0a8bfbca692324caaee37af77fc618ec3baf4fc076e2cb89f558b97a49b5133f426fda1b4fa1a5980888ed59c6ecbbbb7d7fa222b9cdccd8a77c4a2d25d159a",
         "client_side_only": false,
@@ -383,6 +394,17 @@
         "selected": true,
         "version": "5.1.0",
         "version_id": "BbFqiKvi"
+    },
+    "SyKS54UY": {
+        "checksum": "b0f95352f7c7ef58a3ecc78847020a379e0fcbf4bf7459ea0df88851a335c75c1052fe44f72bfe2e087a30e698b5801b9f7fba3b46b784f4492213386923a5b6",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "AppliedE",
+        "pinned": false,
+        "project_id": "SyKS54UY",
+        "selected": true,
+        "version": "0.14.3",
+        "version_id": "aDzdbexR"
     },
     "T38eAZQC": {
         "checksum": "9e666949d299e24304b976631989effc5e1aa8d01ef3e14f724e9cb357e4913f530efe602170788e5ad1a78ecdf3b3a0025ad535c1acf23a764182349bf14d73",
