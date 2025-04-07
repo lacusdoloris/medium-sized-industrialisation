@@ -28,4 +28,8 @@ blockedEntities = [
     "minecraft:piglin_brute",
     "minecraft:zombified_piglin",
     "minecraft:bee",
+    "minecraft:cat",
+    "minecraft:horse",
 ]
+
+blockBeeSpawning = true

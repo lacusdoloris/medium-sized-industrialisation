@@ -913,15 +913,15 @@
         "version_id": "4LadWtSk"
     },
     "y7ACoOzz": {
-        "checksum": "3ee989327d3b48d5c0c680468bbf559554554190760528ba2590cc166e818c87a2e43b51ff8825451f01dbba788d903864031b868d2ca7b1285a83af7107c292",
+        "checksum": "ee537f121301fb9c958747e1e96884574831564e507cf3eb191ab57ff746ecf46159da49906aff28ca0e6b7b95b028f8b2e4a6d95339adfabc724189f4367ec3",
         "client_side_only": false,
         "ignore_dependencies": false,
         "name": "Lilligant",
         "pinned": false,
         "project_id": "y7ACoOzz",
         "selected": true,
-        "version": "0.8.1",
-        "version_id": "rfuYuGKd"
+        "version": "0.8.2",
+        "version_id": "rtLXCJZs"
     },
     "yBW8D80W": {
         "checksum": "1650f8800fdb4d31cc3034a43593cb4d05344847ec29374e7afe1463fc09ec5f43a5b0b501c7a689e6aaee4e0b7c5bc0c9caab9d059bfd8a661220fd955d99af",
