@@ -30,6 +30,17 @@ blockedEntities = [
     "minecraft:bee",
     "minecraft:cat",
     "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:parrot",
+    "minecraft:allay",
+    "minecraft:axolotl",
+    "minecraft:camel",
+    "minecraft:mooshroom",
+    "minecraft:snow_golem",
+    "minecraft:tadpole",
+    "minecraft:tropical_fish",
+    "minecraft:trader_llama",
+    "minecraft:wandering_trader",
 ]
 
 blockBeeSpawning = true
