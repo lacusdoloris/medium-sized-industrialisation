@@ -27,8 +27,9 @@ export const adjustCreateRecipes = (event) => {
 
     event.remove({ id: "create:crafting/kinetics/empty_blaze_burner" });
     event
-        .shaped("create:empty_blaze_burner", ["PPP", "P P", "WWW"], {
+        .shaped("create:blaze_burner", ["PPP", "PSP", "WWW"], {
             P: "#forge:plates/iron",
+            S: "minecraft:soul_soil",
             W: "#minecraft:logs_that_burn",
         })
         .id("nijika:mods/create/easier_blaze_burner");
@@ -44,10 +45,6 @@ export const adjustCreateRecipes = (event) => {
         .itemOutputs("2x minecraft:blaze_powder")
         .EUt(GTValues.VH[GTValues.LV])
         .duration(10);
-
-    event
-        .shapeless("create:blaze_burner", ["create:empty_blaze_burner", "#forge:dusts/blaze"])
-        .id("nijika:mods/create/blaze_burner");
 
     // for some fucking reason the precision mechanism doesn't show up in game!
     // so, let's just recreate it!
