@@ -83,10 +83,6 @@ export const adjustVariousMiscRecipes = (event) => {
         .shaped("minecraft:red_wool", ["VV", "VV"], { V: "minecraft:weeping_vines" })
         .id("nijika:misc/red_wool_from_vines");
 
-    event
-        .shapeless("woolytrees:wooly_sapling", ["#minecraft:saplings", "#minecraft:wool"])
-        .id("nijika:misc/wooly_sapling");
-
     // easier books and maps
     event
         .shaped("4x minecraft:map", ["PPP", "PCP", "PPP"], {

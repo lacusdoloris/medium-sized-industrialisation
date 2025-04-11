@@ -67,3 +67,5 @@ config/jade/plugins.json
 config/jade/sort-order.json
 
 config/bluemap
+
+config/ipn-rejects/

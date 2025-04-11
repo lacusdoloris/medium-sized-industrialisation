@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	default_quest_shape: ""
+	filename: "fire_escape_by_the_sea"
+	group: ""
+	icon: "minecraft:spyglass"
+	id: "1203F8BCFE412E39"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"You wake up to a barren world. You do not know how you made it here. Your last memories are of &cpain&r, flashes of light, being cast away. The emptiness fills your ears; the missing sound of nature refusing to interrupt your thoughts. "
+				""
+				"Did the fauna of this place disappear &obecause of you&r, or was it never there? It doesn't really matter. Such knowledge would not bring it back. The &aplants and the trees&r are still here to keep you company, a scarce comforting thought in your situation."
+				""
+				"You search through your pockets to find a &9small assortment&r of items that survived your trips. A firestarter; a handful of buckets; and, curiously, an umbrella. Yet, you feel in your wings that it does not rain in this place. "
+				""
+				"It is &csurely a mistake&r that you have found your way to this world. You must move quickly to find your way back to your home, the &dCelestial Realm&r. "
+			]
+			id: "512093EBBAD16E4A"
+			min_width: 400
+			rewards: [
+				{
+					count: 6
+					id: "7E99FF695E812F56"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "5DC8FA2AAA7CDCD9"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AEF66DDC449CB50"
+					item: "minecraft:yellow_bed"
+					type: "item"
+				}
+				{
+					id: "268C0EFA9C2846B6"
+					item: {
+						Count: 1
+						id: "wenospeakumbrellarino:umbrella"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EE72568A97CF427"
+				type: "checkmark"
+			}]
+			title: "A Barren World"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["512093EBBAD16E4A"]
+			description: [
+				"As you settle in to this world, you notice an abberation; it is missing something. &dResources.&r There are none underground, none in the hills, none on the cliffs, and none anywhere else. "
+				""
+				"This is not normally a problem; every being of your status knows the mechanisms of &bbasic alchemy&r. The &dPhilosopher's Stone&r can be used to transmute basic resources into &fNeutronium&r, the material that the gateway to &bCelestia&r is built out of. But in order to build such a stone, you require a small amount of these resources to bootstrap the process."
+				""
+				"There is a solution; the &4Underside&r. A second realm, accessible through a portal made of obsidian. It should have the materials you need."
+			]
+			id: "64DEECB44FBA8C61"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "3834B78C68C49429"
+				type: "dimension"
+			}]
+			title: "Celestial Gateway"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["64DEECB44FBA8C61"]
+			description: [
+				"Visting the &4Underside&r confirms your suspicions; something truly terrible has happened here. The endless ice rivers have been replaced with hellish lakes of lava, the bricks have been stained with blood, and gigantic ruins scour the horizon encased in basalt sculptures."
+				""
+				"But the connection to your realm is &athere still&r, albeit weak; the &eglowstone&r still radiates with residual magicka and the &dsoul sands&r hum with long lost inhabitants. These will work as a substitute for your alchemical needs."
+			]
+			id: "66AC44431B85A348"
+			tasks: [{
+				id: "3F7846FF8C92B216"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "projecte:philosophers_stone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Dark Stone"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66AC44431B85A348"]
+			description: [
+				"As you hold your &bphilosopher's stone&r in your hands, you notice that it is significantly &9weaker&r than the ones you have used before. The connection between this realm and your realm is &cbeing severed&r."
+				""
+				"It can still transmute, but most resources will be &dunobtainable&r using the transmutation table. The rules for alchemy are &dmuch different&r in this world; you will surely learn them soon. For now, focus on transmuting &dandesite alloy&r using your stone and your table."
+			]
+			id: "0CC4153F33A3812A"
+			rewards: [
+				{
+					id: "45ED73CD1417970A"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24736AE9454DB96D"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BC3692732A40AB6"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5F3508AFED5B746F"
+				item: "projecte:transmutation_table"
+				type: "item"
+			}]
+			title: "Discerning the Transmundane"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0CC4153F33A3812A"]
+			description: [
+				"As you dig through both worlds, you notice some &dcoloured stones&r. When you take them in your hands, you can feel it; these are the remnants of this world's &anatural resources&r, magically bound into rock form."
+				""
+				"For magical beings, &aunwinding this curse&r would normally be trivial; but cut off from your source of magicka, you will need to use &dbrute force&r, one block at a time. Your philosopher's stone can &dtransmute&r the orestones in a loop, but you will need &dmachinery&r to free the ores within."
+			]
+			id: "7D1790B5901CA56A"
+			tasks: [{
+				count: 64L
+				id: "1D83F697042BF5A1"
+				item: "create:ochrum"
+				type: "item"
+			}]
+			title: "Iron Clay"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0CC4153F33A3812A"]
+			description: ["The &dMillstone&r is a good option for forcibly ripping ores out of their bindings. It requires rotational force, which you can provide with a &dhand crank&r."]
+			id: "6039A29A93A9D3DE"
+			tasks: [{
+				id: "7D706F6D6CADD146"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Brute Force"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["512093EBBAD16E4A"]
+			id: "037443F4CB10CEE6"
+			invisible: true
+			subtitle: "I'll Give You Power..."
+			tasks: [{
+				id: "61979A8ACF911293"
+				item: "minecraft:spyglass"
+				type: "item"
+			}]
+			title: "Is There A Moon?"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D1790B5901CA56A"
+				"6039A29A93A9D3DE"
+			]
+			description: [
+				"Even with the raw resources available, you still cannot make &dneutronium&r with your limited magick."
+				""
+				"In the past, lesser societies have advanced to the make the &bcelestial gateway&r and find &bCelestia&r entirely independently. &dNeutronium&r is available via conventional, industrial means. It's time to industrialise this world."
+			]
+			id: "2B3FA4459EF528BA"
+			tasks: [{
+				count: 64L
+				id: "41B135F70DEC619B"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Unbound"
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+	title: "Fire Escape in the Sea"
+}

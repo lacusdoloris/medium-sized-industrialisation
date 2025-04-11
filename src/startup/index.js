@@ -13,6 +13,7 @@ import { addAllMachineTypes, addAllRecipeTypes } from "./machines";
 import { addCustomMaterials } from "./materials";
 import { customiseMaterials } from "./materials/modification";
 import { adjustWorldgenRemovals } from "./worldgen";
+import { ORESTONE_DEFINITIONS } from "../shared/ores/orestones";
 
 /**
  * @param {Internal.GTRegistryEventJS<string, com.gregtechceu.gtceu.api.data.chemical.material.Material>} event
@@ -45,4 +46,15 @@ StartupEvents.registry("item", (ev) => {
 
 WorldgenEvents.remove((evt) => {
     adjustWorldgenRemovals(evt);
+});
+
+ProjectEEvents.registerWorldTransmutations((evt) => {
+    let rockKeys = Object.keys(ORESTONE_DEFINITIONS);
+    console.log("adding world transmutations;");
+
+    for (let [idx, el] of rockKeys.entries()) {
+        let into = rockKeys[(idx + 1) % rockKeys.length];
+        console.log(`create:${el} -> create:${into}`);
+        evt.transform(`create:${el}`, `create:${into}`);
+    }
 });

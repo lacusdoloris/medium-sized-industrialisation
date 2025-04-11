@@ -6,7 +6,7 @@
 
 import { addBallGrinderRecipes, addWashingChannelRecipes } from "./bulk_processing";
 import { addBaseOreMaterials, addBaseOreRecipes } from "./bocchi";
-import { adjustOrestoneCrushingRecipes } from "./orestones";
+import { adjustOrestoneTransformationRecipes } from "./orestones";
 
 // custom ores means the sorted ores,
 
@@ -23,7 +23,7 @@ export const addCustomOreMaterials = (event) => {
  * @param {Internal.RecipesEventJS} event
  */
 export const addCustomOreProcessingRecipes = (event) => {
-    adjustOrestoneCrushingRecipes(event);
+    adjustOrestoneTransformationRecipes(event);
     addBaseOreRecipes(event);
     addBallGrinderRecipes(event);
     addWashingChannelRecipes(event);

@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "02__medium_voltage"
-	group: "7C284955C6501D53"
+	group: "0C6DEAB6DF689884"
 	icon: "gtceu:mv_electric_motor"
 	id: "282F9DDDF16E6415"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -612,5 +612,5 @@
 		}
 	]
 	subtitle: ["The real fun begins here."]
-	title: "MV \\& HV - jiyugaoka rebirth"
+	title: "Duel in Texas"
 }

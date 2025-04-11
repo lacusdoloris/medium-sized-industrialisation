@@ -3,14 +3,13 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "00__the_primitive_age"
-	group: "485BC5018A891421"
+	group: "0C6DEAB6DF689884"
 	icon: "create_new_age:generator_coil"
 	id: "621F5DCDEC7C827E"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["714A323489D928B7"]
 			description: [
 				"Iron has a long history throughout human society, from the &dmeteorite iron&r of the early Iron Age to thee complex &dironworking&r processes of the early modern era."
 				""
@@ -50,7 +49,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
+			dependencies: ["2B3FA4459EF528BA"]
 			description: [
 				"&aSticky Resin&r is a byproduct of chopping down &arubber trees&r. These trees naturally grow in hotter parts of the overworld."
 				""
@@ -69,7 +68,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
+			dependencies: ["2B3FA4459EF528BA"]
 			description: [
 				"Sulfur is required for &dvulcanisation of rubber&r, amongst other, more useful things later in the game. You can intially find it in large veins throughout the Nether."
 				""
@@ -143,7 +142,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
+			dependencies: ["2B3FA4459EF528BA"]
 			description: [
 				"&aRed Alloy&r is an extremely important alloy for the early game. It's made by mixing &dcopper dust&r and &dredstone dust&r together in a mixer and then smelting the result. Despite the recipe viewer, you need &efour redstone&r to make one red alloy dust in a &dcreate-based mixer&r."
 				""
@@ -161,7 +160,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
 			dependency_requirement: "one_started"
 			description: [
 				"The old reliable &aCoke Oven&r... everyone's used one of these. From the ancient &dRailcraft&r coke ovens (ironically, a mod mostly known for its multiblock machines and not its minecart functionality) to the more modern &dImmersive Engineering&r ones, they're a staple of functionally every single progression modpack ever made."
@@ -344,7 +342,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
+			dependencies: ["2B3FA4459EF528BA"]
 			description: [
 				"\"Brass\" and \"Bronze\" can both be thought of as closer to &dcategories&r of &dcopper alloys&r, rather than specific alloys in themselves."
 				""
@@ -363,7 +361,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["714A323489D928B7"]
+			dependencies: ["2B3FA4459EF528BA"]
 			description: [
 				"GregTech uses &dplates&r instead of ingots and &dwires&r instead of redstone. The original way to make these was with the hand-crafting tools, but those are entirely &cdisabled!&r"
 				""
@@ -448,5 +446,5 @@
 		}
 	]
 	subtitle: ["Boo! Did I scare you? I'm Andesite Alloy!"]
-	title: "intro1"
+	title: "Fateful Encounter"
 }

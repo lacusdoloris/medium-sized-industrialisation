@@ -6,10 +6,11 @@
 	default_reward_team: false
 	detection_delay: 20
 	disable_gui: false
+	drop_book_on_death: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "gtceu:opv_circuit_assembler"
+	icon: "create:limestone"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -18,6 +19,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
-	title: "Bigger Industrialisation"
+	title: "MSI"
 	version: 13
 }

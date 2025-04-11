@@ -1,10 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "485BC5018A891421", title: "Vanish Into The Air" }
-		{ id: "7C284955C6501D53", title: "Wallow" }
-		{ id: "657B54F6F8F4476A", title: "Insane" }
-		{ id: "14EE7AEE0EF05AEE", title: "Limpid" }
-		{ id: "19706AF5FF13B9E4", title: "Only Respire" }
-		{ id: "4B6689C226BF8EED", title: "Soft Wing" }
-	]
+	chapter_groups: [{ id: "0C6DEAB6DF689884", title: "Progression" }]
 }

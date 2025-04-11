@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "05__insane_voltage"
-	group: "657B54F6F8F4476A"
+	group: "0C6DEAB6DF689884"
 	icon: "gtceu:micro_processor_mainframe"
 	id: "309580C111B666D2"
-	order_index: 0
+	order_index: 4
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["7F2FB255ED44F681"]
@@ -21,5 +21,5 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "IV - digital³ forever "
+	title: "Escape"
 }

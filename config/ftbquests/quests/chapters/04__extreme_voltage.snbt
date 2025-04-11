@@ -3,10 +3,10 @@
 	default_min_width: 300
 	default_quest_shape: ""
 	filename: "04__extreme_voltage"
-	group: "7C284955C6501D53"
+	group: "0C6DEAB6DF689884"
 	icon: "gtceu:micro_processor_computer"
 	id: "7F2FB255ED44F681"
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -86,7 +86,6 @@
 				"310A71616F1157C0"
 				"4385F85BBCEF5490"
 				"224D936C415AA016"
-				"232472832AA5E201"
 			]
 			description: [
 				"The &aAlloy Blast Smelter&r is a machine much like the Electric Blast Furnace, but for the sole purpose of making alloys out of input dusts instead of single ingots."
@@ -107,10 +106,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"020FAE71BEDA6B1E"
-				"232472832AA5E201"
-			]
+			dependencies: ["020FAE71BEDA6B1E"]
 			description: [
 				"&aTantalum Carbide&r is one of the required materials in the ABF. Raw Tantalum is also required for SMD components, which will be needed for later circuits."
 				""
@@ -130,7 +126,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["0988AA5905F04AD2"]
 			description: [
 				"In Factorio, there's a difficulty spike in the midgame where you need to start doing oil processing to create Blue Science packs; this was even more true in the olden days before they changed oil processing to be simpler at first, and it's even truer for those of us who love big overhaul packs."
 				""
@@ -165,10 +160,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"14B2C1E8215B74AC"
-				"487FEDDA6D681D9F"
-			]
+			dependencies: ["14B2C1E8215B74AC"]
 			description: [
 				"I read the words \"shock synthesis\" in a paper whilst researching molybdenum disilicate and knew instantly what I had to do."
 				""
@@ -475,5 +467,5 @@
 			y: 8.0d
 		}
 	]
-	title: "EV - void//core"
+	title: "A Cosmic Glow"
 }

@@ -42,7 +42,7 @@ export const ORESTONE_DEFINITIONS = {
  *
  * @param {Internal.RecipesEventJS} event
  */
-export const adjustOrestoneCrushingRecipes = (event) => {
+export const adjustOrestoneTransformationRecipes = (event) => {
     event.remove({ output: "#create:crushed_raw_materials" });
     event.remove({ input: "#create:crushed_raw_materials" });
 
@@ -81,6 +81,15 @@ export const adjustOrestoneCrushingRecipes = (event) => {
         builder = builder.itemOutputs(`32x ${rockId}`);
     }
 
+    let rockKeys = Object.keys(ORESTONE_DEFINITIONS);
+    for (let [idx, el] of rockKeys.entries()) {
+        let into = rockKeys[(idx + 1) % rockKeys.length];
+        event.recipes.create.mixing(`create:${into}`, [
+            Fluid.of("minecraft:lava").withAmount(100 * FluidAmounts.MB),
+            `create:${el}`,
+        ]);
+    }
+
     event.recipes.create
         .crushing(
             [
@@ -104,4 +113,6 @@ export const adjustOrestoneCrushingRecipes = (event) => {
             "minecraft:tuff"
         )
         .id("create:crushing/tuff");
+
+    // transmutation recipes
 };
