@@ -1,6 +1,32 @@
 Changelog
 =========
 
+Version 1.0: The Medium Sized Update
+------------------------------------
+
+This update features a total rebrand from "Bigger Industrialisation" to "Medium Sized 
+Industrialisation", as well as working ProjectE into the newly redesigned earlygame.
+
+Mod Changes
+~~~~~~~~~~~
+
+- Added ProjectE for early-game transmutation and magic.
+
+- Added `Astrocraft <https://modrinth.com/mod/astrocraft>`_, because why not?
+
+Recipe Changes
+~~~~~~~~~~~~~~
+
+- Blaze Burners are now accessible directly via crafting instead of requiring an empty blaze burner.
+
+- The orestone rocks are now transmutable via mixing with 100mb of lava, or via the philosopher's
+  stone.
+
+World Changes
+~~~~~~~~~~~~~
+
+- Regular ores no longer generate in any form. 
+
 Version 0.9: The Ore Processing Update
 --------------------------------------
 

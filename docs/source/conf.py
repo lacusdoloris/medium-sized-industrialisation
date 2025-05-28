@@ -11,10 +11,12 @@ from importlib.metadata import version as get_version
 import sphinx
 import sphinx.application
 
-project = "Bigger Industrialisation"
-copyright = "2024, Lura Skye"
-author = "Lura Skye"
-release = get_version("bigger-industrialisation")
+project = "Medium Sized Industrialisation"
+copyright = "2024-2025, Loris Lacuna"
+author = "Loris Lacuna"
+
+raw_version = get_version("medium-sized-industrialisation")
+release = raw_version.split("+", 1)[0]
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

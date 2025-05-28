@@ -3,7 +3,7 @@
 Server Installation
 ====================
 
-Bigger Industrialisation doesn't come in the typical copyright-violating "server pack"; you need
+MSI doesn't come in the typical copyright-violating "server pack"; you need
 to install it yourself. You'll need a bit of command line knowledge to set things up, but it's
 not that hard, I promise.
 
@@ -20,7 +20,7 @@ not that hard, I promise.
 
 .. code-block:: shell
 
-    # For windows, this might be something like "C:\Users\MyUser\Documents\Bigger-Industrialisation".
+    # For windows, this might be something like "C:\Users\MyUser\Documents\Medium-Sized-Industrialisation".
     # Obviously, change it to your actual server directory.
     $ cd <path to your server directory>
 
@@ -39,4 +39,4 @@ not that hard, I promise.
 
 5. Run the ``start.sh`` or ``start.bat`` files to boot your server.
 
-.. _mrpack-installer: https://github.com/nothub/mrpack-install/releases/tag/v0.17.2-beta
+.. _mrpack-installer: https://github.com/nothub/mrpack-install/releases/tag/v0.20.0-beta

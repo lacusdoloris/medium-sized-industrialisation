@@ -3,29 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bigger Industrialisation
-========================
+Medium Sized Industrialisation
+==============================
 
-* `Get the pack on Modrinth! <https://modrinth.com/modpack/bigger-industrialisation>`_ *
+*`Get the pack on Modrinth! <https://modrinth.com/modpack/bigger-industrialisation>`_*
 
-This is the documentation for Bigger Industrialisation, a Minecraft 1.20.1 modpack 
-focused around industrial chemistry using `GregTech CEu Modern`_.
+This is the documentation for Medium Sized Industrialisation, a Minecraft 1.20.1 modpack 
+focused around industrial chemistry using `GregTech CEu Modern`_. The current content extends up to
+the end of the Extreme Voltage tier, with content planned for up to the end of the ZPM tier (but
+no further).
 
 You should read the :ref:`user-installation` section before playing the pack for important
-information, and then begin reading :ref:`progression-tier0` to get started with playing the
-pack!
+information!
 
 Philosophy
 ----------
 
-Bigger Industrialisation is about building a large factory to create ever-advancing alloys and 
-circuitry. If you've ever played Factorio; or even better, a Factorio overhaul mod like
-Bobs & Angel's Mods; it's a lot like that, only 3D and more in depth.
+MSI is about building a large factory with deep chemical chains, alloys, and circuit fabrication,
+in order to build a portal back to your home dimension.
 
 Notable features:
 
-- An accelerated earlygame compared to most GregTech packs
-- Mandatory peaceful mode - minimal survival, minimal noise, only industry.
+- A massively accelerated earlygame compared to most GregTech pack- Mandatory peaceful mode; you're working in a barren world.
 - Semi-realistic chemical chains with lots of steps, intermediates and byproducts,
 - A bunch of custom multiblocks! Who doesn't love multiblocks!
 - Minimal but interesting world generation powered by `Ecospherical Expansion`_
@@ -57,17 +56,11 @@ This is the documentation you want if you're a player of the pack.
    user/guides/oil-processing.rst
    user/guides/plastic-production.rst
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Progression Guides
-
-   user/progression/pre-electricity.rst
-
 Multiblock Guides
 =================
 
-This is documentation for the various multiblock machines used in Bigger Industrialisation, either
-custom ones or the ones built-in to GTCEu.
+This is documentation for the various multiblock machines used in MSI, either custom ones or the 
+ones built-in to GTCEu.
 
 .. toctree::
    :maxdepth: 1

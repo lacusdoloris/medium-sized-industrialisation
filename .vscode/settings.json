@@ -21,5 +21,6 @@
     "python.defaultInterpreterPath": ".venv/bin/python3",
     "esbonio.sphinx.pythonCommand": [
         ".venv/bin/python3"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "strict"
 }

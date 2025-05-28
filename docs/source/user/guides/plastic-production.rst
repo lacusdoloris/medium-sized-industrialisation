@@ -7,7 +7,7 @@ Plastics are hard, ductile materials that in the real world have a significant n
 from packaging to toys to piping.
 
 In your factory, plastics will be primarily used for electronic components, machinery, multiblock
-machine casings, and cabling. Bigger Industrialisation has multiple types of plastic, each one with
+machine casings, and cabling. MSI has multiple types of plastic, each one with
 its own set of usages. 
 
 All plastics are *polymers*; they are the result of a chemical known as a monomer undergoing 
@@ -111,7 +111,7 @@ Poly(vinyl chloride)
 --------------------
 
 Poly(vinyl chloride) - more commonly known as PVC - is a plastic mostly used in the real world for 
-construction including pipings, doors, and sidings. In Bigger Industrialisation it is used for
+construction including pipings, doors, and sidings. In MSI it is used for
 the insulation of higher-tier cables, as an alternative for basic circuit boards, and as an early
 set of fast item pipes. 
 

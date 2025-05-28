@@ -16,7 +16,7 @@ CI Version Installation
 
 Every push of the modpack is built by CI into a downloadable ``mrpack`` that can be installed into
 a local Prism Launcher instance. These are available on the 
-`GitHub repository <https://github.com/Fuyukai/bigger-industrialisation/actions>`__ actions page.
+`GitHub repository <https://github.com/lacusdoloris/medium-sized-industrialisation/actions>`__ actions page.
 
 These versions may be desirable to test out new changes, updated mods, or bugfixes that haven't made
 it to the maintenance branch yet.
@@ -38,13 +38,12 @@ it to the maintenance branch yet.
     The default instance name will be ``BI-<branch>-<commit hash>``. It's recommended to change this
     when creating the instance.
 
-
 .. _branches: 
 
 Branches
 --------
 
-Bigger Industrialisation uses two mainline branches for development:
+MSI uses two mainline branches for development:
 
 - The `Mizuki <https://www.sekaipedia.org/wiki/Akiyama_Mizuki>`__ branch is the main development
   branch that contains major content changes.

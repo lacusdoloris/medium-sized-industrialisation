@@ -26,9 +26,10 @@ source = "scm"
 [tool.pdm.build]
 package-dir = "pysrc"
 
-[tool.pdm.dev-dependencies]
+
+[dependency-groups]
 dev = [
-    "sphinx>=7.1.2,<8.0",
+    "sphinx>=7.1.2",
     "sphinx-inline-tabs>=2023.4.21",
     "kamuidrome>=0.8.0",
     "furo>=2024.8.6",
