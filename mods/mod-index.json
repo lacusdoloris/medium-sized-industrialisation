@@ -101,7 +101,7 @@
     "7tG215v7": {
         "checksum": "2fd844b2ffc1a94ffe7a52506913c9ed60e5cbdaf690ba3d97a471d666d1a7003d69a4bc3838338cb359d0ba717283c613945106397c4ac10e93a51f576064d6",
         "client_side_only": false,
-        "ignore_dependencies": true,
+        "ignore_dependencies": false,
         "name": "GregTechCEu Modern",
         "pinned": false,
         "project_id": "7tG215v7",
@@ -626,6 +626,17 @@
         "version": "1.4.5+forge-1.20.1-106",
         "version_id": "sKxIOl5O"
     },
+    "jIPykDYO": {
+        "checksum": "7e4d89b0d55b84f787d7043090203fd63687413cf2f8bd1799af34d6235994d32f06ff74e420de7e0811d915137ca11c3d46038a4673e3cd6309e6ccadda5307",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "GT Community Additions",
+        "pinned": false,
+        "project_id": "jIPykDYO",
+        "selected": true,
+        "version": "1.3-hotfix2",
+        "version_id": "4ZxwDjdL"
+    },
     "jjuIRIVr": {
         "checksum": "e8fa825d3811eb0a5eacb4c3aa63c45eca98236a496cdba983b49e2397f7eaea9d56bcb967d16d5a4903a462573c71e0c4c957388cd512fd0ed318bccfde1dba",
         "client_side_only": false,
@@ -757,6 +768,17 @@
         "selected": true,
         "version": "0.5.4.4+mc1.20.1-build.131",
         "version_id": "F06DXCMX"
+    },
+    "onpJaUJ0": {
+        "checksum": "668aaf94f9b5eefb78ee7f79aec77ba4161a2cc62f1f43cbd8176b966da25fc74e11209697cdb8b621feb68df2291507c7cee06dc6a0ad01c4ff858a64008133",
+        "client_side_only": false,
+        "ignore_dependencies": false,
+        "name": "GT--",
+        "pinned": false,
+        "project_id": "onpJaUJ0",
+        "selected": true,
+        "version": "1.1.8",
+        "version_id": "ldQxjogP"
     },
     "ordsPcFz": {
         "checksum": "7251fd60cd3929ec11b1709807c0d3d24c33f341dfb756eb59c4dc6db392402213ab062736f9354ebdfb184e4ed1df7b589bafbd491134f47023b9f0135e5ac4",

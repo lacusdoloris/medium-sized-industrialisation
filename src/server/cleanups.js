@@ -216,4 +216,24 @@ export const doCleanups = (event) => {
 
     fixupCreate(event);
     unfuckCoalRecipes(event);
+
+    // Temporarily remove the extra machine recipes from GT-- and community additions
+    // until they're reworked and rebalanced.
+    event.remove({ id: "gtceu:shaped/thermal_reactor" });
+    event.remove({ id: "gtceu:assembler/chemical_plant" });
+    event.remove({ id: /gtnn:(.*)_dehydrator/, type: "minecraft:crafting_shaped" });
+    event.remove({ id: /gtca:.*_matter_fabricator/, type: "minecraft:crafting_shaped" });
+    event.remove({ id: /gtca:.*_recycler/, type: "minecraft:crafting_shaped" });
+    event.remove({ id: "gtceu:assembly_line/nanoforge_controller" });
+
+    // unlikely to ever be re-added because of create farms
+    event.remove({ id: "gtceu:shaped/greenhouse" });
+
+    event.remove({ id: "gtceu:shaped/thermal_reactor" });
+    event.remove({ id: "gtceu:assembler/comet_controller" });
+
+    event.remove({ id: "gtceu:assembly_line/isamill_controller" });
+    event.remove({ id: "gtceu:scanner/1_x_gtceu_luv_macerator" });
+    event.remove({ id: "gtceu:scanner/1_x_gtceu_distillation_tower" });
+    event.remove({ id: "gtceu:assembly_line/flcr_controller" });
 };
