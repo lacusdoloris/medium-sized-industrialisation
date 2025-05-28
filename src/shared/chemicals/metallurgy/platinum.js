@@ -248,7 +248,7 @@ export const addPlatinumGroupRecipes = (event) => {
         .itemInputs("1x gtceu:small_sodium_hydroxide_dust")
         .outputFluids(
             Fluid.of("gtceu:ammonium_hexachloroplatinate").withAmount(1 * FluidAmounts.BUCKET),
-            Fluid.of("gtceu:trioctylamine").withAmount(1200 * FluidAmounts.BUCKET)
+            Fluid.of("gtceu:trioctylamine").withAmount(1200 * FluidAmounts.MB)
         )
         .EUt(GTValues.VHA[GTValues.EV])
         .duration(5 * 20);
