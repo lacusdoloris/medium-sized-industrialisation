@@ -193,7 +193,7 @@ export const doCleanups = (event) => {
         event.remove({ type: "gtceu:macerator", id: /macerate_(?:(?:u?[lmheiu]|lu)v|zpm)_.*/ });
         event.remove({ type: "gtceu:arc_furnace", input: /.*(?:extruder|casting|empty)_mold/ });
         event.remove({ type: "gtceu:macerator", input: /.*(?:extruder|casting|empty)_mold/ });
-        event.remove({ type: "gtceu:arc_furnace", id: /arc_.*steam.*/});
+        event.remove({ type: "gtceu:arc_furnace", id: /arc_.*steam.*/ });
         event.remove({ type: "gtceu:macerator", id: /macerate_.*steam.*/ });
 
         event.remove({ input: "gtceu:pyrolyse_oven" });

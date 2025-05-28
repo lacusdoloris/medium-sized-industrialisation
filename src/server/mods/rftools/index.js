@@ -34,7 +34,7 @@ export const adjustRfToolsRecipes = (event) => {
         .id("nijika:mods/rftools/machine_frame");
 
     // very provisional, WIP recipes here
-    
+
     if (Platform.isLoaded("rftoolscontrol")) {
         event.remove({ id: "rftoolscontrol:card_base" });
         event.recipes.gtceu

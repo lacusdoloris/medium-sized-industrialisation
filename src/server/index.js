@@ -79,6 +79,6 @@ GTCEuServerEvents.fluidVeins((event) => {
     adjustFluidVeinDefinitions(event);
 });
 
-ProjectEEvents.setEMC(event => {
+ProjectEEvents.setEMC((event) => {
     adjustEmcValues(event);
-})
+});
