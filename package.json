@@ -12,7 +12,7 @@
         "@babel/plugin-transform-new-target": "^7.25.9",
         "@babel/plugin-transform-numeric-separator": "^7.25.9",
         "@babel/plugin-transform-runtime": "^7.25.9",
-        "eslint": "^9.24.0",
+        "eslint": "=8.57.0",
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-jsdoc": "^48.11.0",
         "parcel": "^2.13.3",
