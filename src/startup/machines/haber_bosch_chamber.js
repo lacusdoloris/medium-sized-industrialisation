@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Lura Skye
+// Copyright (c) 2024-2025 Loris Lacuna
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
