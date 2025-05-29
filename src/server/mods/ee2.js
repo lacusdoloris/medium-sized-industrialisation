@@ -54,6 +54,61 @@ export const adjustEe2Recipes = (event) => {
         })
         .id("nijika:mods/ee2/alt_transmutation_table");
 
+    // mk1 collectors are cheap, mk2 requires wrought iron, mk 3 are unavailable
+    event.remove({ id: "projecte:collector_mk1" });
+    event
+        .shaped("projecte:collector_mk1", ["SGS", "SMS", "SFS"], {
+            S: "#forge:storage_blocks/glowstone",
+            G: "#forge:glass",
+            M: "minecraft:magma_block",
+            F: "minecraft:furnace",
+        })
+        .id("nijika:mods/ee2/magma_collector");
+
+    event.remove({ id: "projecte:collector_mk2" });
+    event
+        .shaped("projecte:collector_mk2", ["GSG", "G1G", "GCG"], {
+            G: "#forge:storage_blocks/glowstone",
+            S: "#forge:plates/wrought_iron",
+            1: "projecte:collector_mk1",
+            C: "#gtceu:circuits/lv",
+        })
+        .id("nijika:mods/ee2/lv_collector");
+
+    event.remove({ id: "projecte:collector:mk3" });
+
+    // relays are likewise cheap
+    event.remove({ id: "projecte:relay_mk1" });
+    event
+        .shaped("projecte:relay_mk1", ["OGO", "OMO", "OPO"], {
+            O: "#forge:obsidian",
+            G: "#forge:glass",
+            M: "minecraft:magma_block",
+            P: "create:fluid_pipe",
+        })
+        .id("nijika:mods/ee2/magma_relay");
+
+    event.remove({ id: "projecte:relay_mk2" });
+    event
+        .shaped("projecte:relay_mk2", ["OSO", "O1O", "OCO"], {
+            O: "#forge:obsidian",
+            S: "#forge:plates/wrought_iron",
+            1: "projecte:relay_mk1",
+            C: "#gtceu:circuits/lv",
+        })
+        .id("nijika:mods/ee2/lv_relay");
+
+    // finally, the energy condenser
+    event.remove({ id: "projecte:condenser_mk1" });
+    event
+        .shaped("projecte:condenser_mk1", ["SOS", "MCM", "SOS"], {
+            S: "#reactive:soul_sources",
+            C: "#forge:chests",
+            O: "#forge:obsidian",
+            M: "minecraft:magma_block",
+        })
+        .id("nijika:mods/ee2/condenser_mk1");
+
     let rockKeys = Object.keys(ORESTONE_DEFINITIONS);
     for (let [idx, el] of rockKeys.entries()) {
         let into = rockKeys[(idx + 1) % rockKeys.length];
