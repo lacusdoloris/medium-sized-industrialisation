@@ -131,6 +131,10 @@
     {
       "item": "minecraft:glowstone_dust",
       "emc": 384
+    },
+    {
+      "item": "#forge:rods/wooden",
+      "emc": 0
     }
   ]
 }
