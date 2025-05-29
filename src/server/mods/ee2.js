@@ -17,6 +17,7 @@ export const adjustEe2Recipes = (event) => {
     event.remove({ id: "projecte:conversions/gold_ingot_to_iron_ingot" });
     event.remove({ id: "projecte:conversions/emerald_to_diamond" });
     event.remove({ id: "projecte:conversions/diamond_to_emerald" });
+    event.remove({ id: "projecte:alchemical_coal" });
 
     // Underside philosopher's stone
     event
@@ -75,7 +76,7 @@ export const adjustEe2Recipes = (event) => {
         })
         .id("nijika:mods/ee2/lv_collector");
 
-    event.remove({ id: "projecte:collector:mk3" });
+    event.remove({ id: "projecte:collector_mk3" });
 
     // relays are likewise cheap
     event.remove({ id: "projecte:relay_mk1" });
