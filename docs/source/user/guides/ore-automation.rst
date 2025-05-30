@@ -11,16 +11,6 @@ As your factory grows larger, mining ores by hand from the world becomes signifi
 feasible; large multiblocks require a large amount of metals to build the individual casings
 and even individual machines require eight of their tier's ingots to build.
 
-World Eaters
-------------
-
-In a technical sense, these are an option. Create drills attached to a rope pulley or piston and
-placed above or alongside ore chunks can gather hundreds of ores in a single go. Nevertheless, 
-these are *very* slow, require moving manually after eating a chunk, produce lots of waste, and
-leave gigantic holes in your world. 
-
-You can also use the GTCEu miners; these mine a smaller area much faster, but still require ore
-chunks in the overworld and a significant amount of actual EU power.
 
 Orestone Synthesis
 ------------------

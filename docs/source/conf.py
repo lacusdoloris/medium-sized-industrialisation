@@ -38,6 +38,12 @@ exclude_patterns = []
 html_theme = "furo"
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
+html_theme_options = {
+    "light_css_variables": {
+        "font-stack": "B612,sans-serif",
+        "font-stack--monospace": "Iosevka SS14, Iosevka, JetBrains Mono, monospace"
+    },
+}
 
 def setup(app: sphinx.application.Sphinx):
     app.add_js_file("mathjax-config.js")

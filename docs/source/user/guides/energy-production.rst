@@ -74,7 +74,7 @@ There's a few options as to which liquid fuel you use that varies throughout the
   doing. 
 
 - LPG can be centrifuged from Refinery Gas alongside Methane as a byproduct; as methane is your 
-  best shot for hydrogen production (see :ref:`element-hydrogen`) you will be needing a lot of it anyway.
+  best shot for hydrogen production (see :ref:`el-hydrogen`) you will be needing a lot of it anyway.
 
   One bucket of LPG burns for 320k EU, and one bucket of methane burns for 112k EU, for a total of 
   432k EU per bucket of refinery gas (minus processing costs).
